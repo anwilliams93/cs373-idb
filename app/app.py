@@ -2,12 +2,24 @@ from flask import Flask, render_template, jsonify
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-	return render_template('home.html') 
+def landing():
+	return render_template('index.html') 
 
-@app.route('/welcome')
-def welcome():
-	return render_template('welcome.html') 
+@app.route('/funruns')
+def funruns():
+	return render_template('funruns.html') 
+
+@app.route('/themes')
+def themes():
+    return render_template('themes.html') 
+
+@app.route('/challenges')
+def challenges():
+    return render_template('challenges.html') 
+
+@app.route('/locations')
+def locations():
+    return render_template('locations.html') 
 
 funruns = [
     {
