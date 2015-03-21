@@ -14,5 +14,12 @@
       <p><a href="/challenges">Challenges</a></p>
       <p><a href="/locations">Locations</a></p>
     </div>
+    <div>
+      <ul>
+      {% for run in funruns %}
+        <li>{{run.name}}</li>
+      {% endfor %}
+      </ul>
+    </div>
   </body>
 </html>
