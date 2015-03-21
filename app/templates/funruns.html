@@ -17,8 +17,11 @@
       <p><a href="/locations">Locations</a></p>
     </div>
     <div ng-controller="FunRuns">
-      <p>The ID is {{funruns.id}}</p>
-      <p>The Name is {{funruns.name}}</p>
+      <ul>
+      {% for run in funruns%}
+       <p>The ID is {{run.id}}</p>
+       <p>The Name is {{run.name}}</p>
+     </ul>
     </div>
   </body>
 </html>
