@@ -163,7 +163,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #3333EE;
 }
 
 a {
@@ -652,8 +652,8 @@ h6 small {
 }
 
 h1 {
-  font-size: 100px;
-  line-height: 110px;
+  font-size: 36px;
+  line-height: 40px;
 }
 
 h2 {
