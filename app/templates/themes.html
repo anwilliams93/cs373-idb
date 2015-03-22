@@ -1,23 +1,239 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Fun Run Themes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="static/bootstrap.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="span7 navigation">
-      <h1>Fun Run Themes</h1>
-      <br>
-      <div class="navbar">
-        <ul class="nav">
-          <li><a href="/">Home</a></li>
-          <li><a href="/funruns">Fun Runs</a></li>
-          <li class="active"><a href="/themes">Themes</a></li>
-          <li><a href="/challenges">Challenges</a></li>
-          <li><a href="/locations">Locations</a></li>
-        </ul>
-      </div>
-    </div>
-  </body>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fun Runs 2015: Fun Runs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS
+================================================== -->
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-responsive.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/prettyPhoto.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/custom-styles.css') }}">
+
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/style-ie.css"/>
+<![endif]--> 
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/apple-touch-icon-72x72.png') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/apple-touch-icon-114x114.png') }}">
+
+<!-- JS
+================================================== -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.prettyPhoto.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.quicksand.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.custom.js') }}"></script>
+
+
+</head>
+
+<body>
+  <div class="color-bar-1"></div>
+    <div class="color-bar-2 color-bg"></div>
+    
+    <div class="container main-container">
+    
+      <div class="row header"><!-- Begin Header -->
+      
+        <!-- Logo
+        ================================================== -->
+        <div class="span5 logo">
+          <a href="/"><img src="{{ url_for('static', filename='img/piccolo-logo.png') }}"/></a>
+            <h5>Fun Run Themes</h5>
+        </div>
+        
+        <!-- Main Navigation
+        ================================================== -->
+        <div class="span7 navigation">
+          <div class="navbar hidden-phone">
+          
+            <ul class="nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/funruns">Fun Runs</a></li>
+              <li class="active"><a href="/themes">Fun Themes</a></li>
+              <li><a href="/challenges">Fun Challenges</a></li>
+              <li><a href="/locations">Fun Locations</a></li>
+              <li><a href="/about">About</a></li>
+            </ul>
+         
+          </div>
+
+            <!-- Mobile Nav
+            ================================================== -->
+            <form action="#" id="mobile-nav" class="visible-phone">
+              <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Navigate...</option>
+                    <option value="/">Home</option>
+                    <option value="/funruns">Fun Runs</option>
+                    <option value="/themes">Fun Themes</option>
+                    <option value="/challenges">Fun Challenges</option>
+                    <option value="/locations">Fun Locations</option>
+                    <option value="/about">About</option>
+                </select>
+              </div>
+            </form>
+            
+        </div>
+      
+    </div><!-- End Header -->
+     
+    <!-- Page Content
+    ================================================== --> 
+    <div class="row">
+
+        <!-- Gallery Items
+        ================================================== --> 
+        <div class="span12 gallery">
+
+            <!-- <ul id="filterOptions" class="gallery-cats clearfix">
+                <li class="active"><a href="#" class="all">All</a></li> 
+                <li><a href="#" class="illustration">Illustration</a></li>
+                <li><a href="#" class="design">Design</a></li>
+                <li><a href="#" class="video">Video</a></li>
+                <li><a href="#" class="web">Web</a></li>
+            </ul> -->
+
+            <div class="row clearfix">
+                <ul class="gallery-post-grid holder">
+
+                    <!-- Gallery Item 1 -->
+                    <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
+                      <a href="/">
+                        <span class="gallery-hover-3col hidden-phone hidden-tablet">
+                        </span>
+                        <img src="{{ url_for('static', filename='img/gallery/gallery-img-1-3col.jpg') }}" alt="Gallery">
+                      </a>
+                      <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international add campaign.</span>
+                    </li>
+
+                    <!-- Gallery Item 2 -->
+                    <li  class="span4 gallery-item" data-id="id-2" data-type="illustration">
+                      <a href="/">
+                        <span class="gallery-hover-3col hidden-phone hidden-tablet">
+                        </span>
+                        <img src="{{ url_for('static', filename='img/gallery/gallery-img-1-3col.jpg') }}" alt="Gallery">
+                      </a>
+                      <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international add campaign.</span>
+                    </li>
+
+                    <!-- Gallery Item 3 -->
+                    <li  class="span4 gallery-item" data-id="id-3" data-type="illustration">
+                      <a href="/">
+                        <span class="gallery-hover-3col hidden-phone hidden-tablet">
+                        </span>
+                        <img src="{{ url_for('static', filename='img/gallery/gallery-img-1-3col.jpg') }}" alt="Gallery">
+                      </a>
+                      <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international add campaign.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Pagination -->
+<!--         <div class="pagination">
+                <ul>
+                <li class="active"><a href="#">Prev</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">Next</a></li>
+                </ul>
+            </div> -->
+
+        </div><!-- End gallery list-->
+
+    </div><!-- End container row -->
+    
+    </div> <!-- End Container -->
+
+  <!-- Footer Area
+  ================================================== -->
+
+  <div class="footer-container"><!-- Begin Footer -->
+      <div class="container">
+          <div class="row footer-row">
+                <div class="span3 footer-col">
+                    <h5>About Us</h5>
+                   <img src="{{ url_for('static', filename='img/piccolo-footer-logo.png') }}" alt="Piccolo" /><br /><br />
+                    <address>
+                        <strong>The Austin Isms</strong><br />
+                        2317 Speedway, Stop D9500<br />
+                        Austin, TX 78712<br />
+                    </address>
+                    <ul class="social-icons">
+                        <li><a href="#" class="social-icon facebook"></a></li>
+                        <li><a href="#" class="social-icon twitter"></a></li>
+                        <li><a href="#" class="social-icon dribble"></a></li>
+                        <li><a href="#" class="social-icon rss"></a></li>
+                        <li><a href="#" class="social-icon forrst"></a></li>
+                    </ul>
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Latest Tweets</h5>
+                    <ul>
+                        <li><a href="#">@room122</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li><a href="#">@room122</a> In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices.</li>
+                        <li><a href="#">@room122</a> Vivamus nec lectus sed orci molestie molestie. Etiam mattis neque eu orci rutrum aliquam.</li>
+                    </ul>
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Latest Posts</h5>
+                     <ul class="post-list">
+                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        <li><a href="#">Consectetur adipiscing elit est lacus gravida</a></li>
+                        <li><a href="#">Lectus sed orci molestie molestie etiam</a></li>
+                        <li><a href="#">Mattis consectetur adipiscing elit est lacus</a></li>
+                        <li><a href="#">Cras rutrum, massa non blandit convallis est</a></li>
+                    </ul>
+                </div>
+                <div class="span3 footer-col">
+                    <h5>Flickr Photos</h5>
+                    <ul class="img-feed">
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                        <li><a href="#"><img src="{{ url_for('static', filename='img/gallery/flickr-img-1.jpg') }}" alt="Image Feed"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row"><!-- Begin Sub Footer -->
+                <div class="span12 footer-col footer-sub">
+                    <div class="row no-margin">
+                        <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
+                        <div class="span6">
+                            <span class="right">
+                            <a href="/">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/funruns">Fun Events</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/themes">Fun Themes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/challenges">Fun Challenges</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/locations">Fun Locations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/about">About</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Sub Footer -->
+
+        </div>
+    </div><!-- End Footer -->
+
+    <!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>    
+    
+</body>
 </html>
