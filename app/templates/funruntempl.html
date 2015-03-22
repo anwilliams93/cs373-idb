@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <title>Fun Run Races</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="static/bootstrap.css" rel="stylesheet">  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="{{ url_for('static', filename='angular/funruns.js') }}"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fun Run Races</h1>
+      <br>
+      <p><a href="/funruns">Fun Runs</a></p>
+      <p><a href="/themes">Themes</a></p>
+      <p><a href="/challenges">Challenges</a></p>
+      <p><a href="/locations">Locations</a></p>
+    </div>
+    <div ng-controller="FunRunGet">
+
+      <div ng-repeat="run in funrun">
+       <p>The ID is {{run.id}}</p>
+       <p>The Name is {{run.name}}</p>
+      </div>
+
+    </div>
+  </body>
+</html>

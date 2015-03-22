@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def landing():
-	return render_template('index.html') 
+    return render_template('index.html') 
 
 @app.route('/funruns')
 def funruns():
-	return render_template('funruns.html', funruns = funruns) 
+    return render_template('funruns.html', funruns = funruns) 
 
 @app.route('/themes')
 def themes():
@@ -22,6 +22,10 @@ def challenges():
 @app.route('/locations')
 def locations():
     return render_template('locations.html') 
+
+@app.route('/funruntempl')
+def funruntempl():
+    return render_template('funruntempl.html')
 
 ### REST API CALLS ###
 
@@ -50,4 +54,4 @@ funruns = [
 
 
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=8000, debug=True)
+    app.run(host='0.0.0.0', port=8000, debug=True)
