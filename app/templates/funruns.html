@@ -33,11 +33,23 @@
 <script src="{{ url_for('static', filename='js/jquery.prettyPhoto.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.quicksand.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.custom.js') }}"></script>
+<script>
+  var myApp = angular.module('FunRunModule', [], function($interpolateProvider) {
+      $interpolateProvider.startSymbol('[[');
+      $interpolateProvider.endSymbol(']]');
+  });
 
+  myApp.controller('AllFunRunsGetter', function($scope, $http) {
+    $http.get("http://104.239.139.43:8000/api/funruns/").success(function(data) {
+      $scope.funruns = data.funruns;
+      console.log($scope.run);
+    });
+  });
+ </script>
 
 </head>
 
-<body>
+<body ng-app="FunRunModule" ng-controller="AllFunRunsGetter"> 
   <div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
     
@@ -106,6 +118,9 @@
 
             <div class="row clearfix">
                 <ul class="gallery-post-grid holder">
+                    <div for-each="run in funruns">
+                        [[run.name]]
+                    </div>
 
                     <!-- Gallery Item 1 -->
                     <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
