@@ -9,7 +9,7 @@ def landing():
 
 @app.route('/funruns')
 def funruns():
-    return render_template('funruns.html', funruns = funruns) 
+    return render_template('funruns.html') 
 
 @app.route('/themes')
 def themes():
@@ -22,6 +22,10 @@ def challenges():
 @app.route('/locations')
 def locations():
     return render_template('locations.html') 
+
+@app.route('/about')
+def about():
+    return render_template('about.html') 
 
 @app.route('/funruntempl')
 def funruntempl():
@@ -51,6 +55,7 @@ funruns = [
         'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!'
     }
 ]
+
 
 
 if __name__ == '__main__':
