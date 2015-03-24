@@ -33,18 +33,19 @@
 <script src="{{ url_for('static', filename='js/jquery.prettyPhoto.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.quicksand.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.custom.js') }}"></script>
-
-
-</head>
-
-<body><div id="fb-root"></div>
-    <script>(function(d, s, id) {
+<script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+</head>
+
+<body>
   <div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
     
@@ -163,7 +164,7 @@
     </div><!-- End container row -->
 
     <div class="row">
-        <div class="span7">
+        <div class="span12">
           <iframe src="https://mapsengine.google.com/map/embed?mid=z2e_3jYGktFU.kvMIujBcWI-A" width="640" height="480"></iframe>
         </div>
         <div class="span4">
