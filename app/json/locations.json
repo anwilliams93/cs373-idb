@@ -13,3 +13,18 @@
     'annual_rainfall': u'40.72in',
     'landmarks': u'National Aquarium in Baltimore, Fort McHenry'
 }
+{
+    'id':           2,
+    'location':      	u'Dallas, Texas',
+    'winter_avgTemp':	u'59',
+    'spring_avgTemp':  u'77',
+    'summer_avgTemp':  u'95',
+    'fall_avgTemp':  u'78',
+    'winter_avgHumidity':   u'52',
+    'spring_avgHumidity':  u'49,
+    'summer_avgHumidity':  u'44',
+    'fall_avgHumidity':  u'47',
+    'altitude':  u'430ft',
+    'annual_rainfall': u'40.55in',
+    'landmarks': u'Sixth Floor Museum at Dealey Plaza, Dallas World Aquarium'
+}
