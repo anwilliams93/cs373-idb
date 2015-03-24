@@ -46,6 +46,14 @@
     });
   });
  </script>
+<script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
 
 </head>
 
@@ -118,36 +126,51 @@
 
             <div class="row clearfix">
                 <ul class="gallery-post-grid holder">
-                    <!-- Gallery Item 1 -->
+                    <!-- Wipeout -->
                     <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
                       <a href="/funruns/0">
                         <span class="gallery-hover-3col hidden-phone hidden-tablet">
                         </span>
-                        <img src="{{ url_for('static', filename='img/gallery/gallery-img-1-3col.jpg') }}" alt="Gallery">
+                        <div style="height: 300px; width: 370px; overflow: hidden">
+                          <img src="{{ url_for('static', filename='img/landing/wipeoutLanding.jpg') }}" alt="Gallery">
+                        </div>
                       </a>
-                      <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international add campaign.</span>
+                      <span class="project-details"><a href="/funruns/0">Wipeout Run</a>5k course inspired by the hit TV show Wipeout.</span>
                     </li>
 
-                    <!-- Gallery Item 2 -->
+                    <!-- Christmas Story -->
                     <li  class="span4 gallery-item" data-id="id-2" data-type="illustration">
                       <a href="/funruns/1">
                         <span class="gallery-hover-3col hidden-phone hidden-tablet">
                         </span>
-                        <img src="{{ url_for('static', filename='img/gallery/gallery-img-1-3col.jpg') }}" alt="Gallery">
+                        <div style="height: 300px; width: 370px; overflow: hidden">
+                          <img src="{{ url_for('static', filename='img/landing/christmasStoryRunLanding.jpg') }}" alt="Gallery">
+                        </div>
                       </a>
-                      <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international add campaign.</span>
+                      <span class="project-details"><a href="/funruns/1">A Christmas Story Run</a>Enjoy a 5K or 10K run from Higbee's to A Christmas Story House.</span>
                     </li>
 
-                    <!-- Gallery Item 3 -->
+                    <!-- Dallas Turkey Trot -->
                     <li  class="span4 gallery-item" data-id="id-3" data-type="illustration">
                       <a href="/funruns/2">
                         <span class="gallery-hover-3col hidden-phone hidden-tablet">
                         </span>
-                        <img src="{{ url_for('static', filename='img/gallery/gallery-img-1-3col.jpg') }}" alt="Gallery">
+                        <div style="height: 300px; width: 370px; overflow: hidden">
+                          <img src="{{ url_for('static', filename='img/landing/dallasTurkeyTrotLanding.jpg') }}" alt="Gallery">
+                        </div>
                       </a>
-                      <span class="project-details"><a href="gallery-single.htm">Custom Illustration</a>For an international add campaign.</span>
+                      <span class="project-details"><a href="/funruns/2">Dallas Turkey Trot</a>The Turkey Trot is the largest Thanksgiving Day event of its kind.</span>
                     </li>
                 </ul>
+            </div>
+            <!-- Embedding Turkey Trot Facebook page -->
+            <div class="row">
+                <div class="span4">
+                    <div class="fb-like-box" data-href="https://www.facebook.com/DallasYMCATrot?fref=nf" data-width="250" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                </div>
+                <div class="span4">
+                    <div class="fb-like-box" data-href="https://www.facebook.com/AChristmasStoryRun" data-width="250" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                </div>
             </div>
 
             <!-- Pagination -->
@@ -165,12 +188,6 @@
         </div><!-- End gallery list-->
 
     </div><!-- End container row -->
-
-    <div class="row">
-        <div class="span4">
-          <iframe src="https://mapsengine.google.com/map/embed?mid=z2e_3jYGktFU.kvMIujBcWI-A" width="640" height="480"></iframe>
-        </div>
-    </div>
     
     </div> <!-- End Container -->
 
