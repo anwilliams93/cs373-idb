@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="FunRunModule" ng-controller="FunRunGetter">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Piccolo Theme</title>
+<title>Fun Runs 2015: [[run.name]]</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS
@@ -93,7 +93,7 @@ $(document).ready(function () {
 </div> -->
 
 
-<body ng-app="FunRunModule" ng-controller="FunRunGetter">
+<body>
   <div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
     
@@ -104,7 +104,7 @@ $(document).ready(function () {
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-          <a href="/"><img src="{{ url_for('static', filename='img/piccolo-logo.png') }}" alt="" /></a>
+<!--           <a href="/"><img src="{{ url_for('static', filename='img/piccolo-logo.png') }}" alt="" /></a> -->
             <h5>Fun Run Event: [[run.name]]</h5>
         </div>
         
