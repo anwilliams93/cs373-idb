@@ -14,6 +14,7 @@
     'quote1':       u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!'
     'quote2':       u'Had a great time participating in the WIPEOUTRUN!'
     'quote3':       u'Such a blast!! Let\'s do it again next year!!'
+    'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235'
 }
 {
     'id':           2,
@@ -31,6 +32,7 @@
     'quote1':       u'I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.'
     'quote2':       u'Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.'
     'quote3':       u'All in all Pepper gives this fun run an A+!'
+    'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965'
 }
 {
     'id':           3,
@@ -48,4 +50,4 @@
     'quote1':       u'This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!'
     'quote2':       u'This event is by far the best family friendly event that takes place in Dallas each year!'
     'quote3':       u'I had a blast running the Turkey Trot this year. Even though it\'s my first time doing it, I will definitely make it a tradition every year'
-}
+    'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.251274220785!2d-96.79709!3d32.777333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83854fdfdad6162!2sDallas+City+Hall!5e0!3m2!1sen!2sus!4v1427228610474'
