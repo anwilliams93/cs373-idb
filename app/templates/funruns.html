@@ -46,6 +46,18 @@
     });
   });
  </script>
+<script type="text/javascript">
+     $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+</script>
 
 </head>
 
@@ -148,6 +160,12 @@
                       <span class="project-details"><a href="/funruns/2">Custom Illustration</a>For an international add campaign.</span>
                     </li>
                 </ul>
+            </div>
+            <!-- Embedding Turkey Trot Facebook page -->
+            <div class="row">
+                <div class="span4">
+                    <div class="fb-like-box" data-href="https://www.facebook.com/DallasYMCATrot?fref=nf" data-width="250" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+                </div>
             </div>
 
             <!-- Pagination -->
