@@ -37,7 +37,14 @@
 
 </head>
 
-<body>
+<body><div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
   <div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
     
@@ -159,6 +166,7 @@
         <div class="span4">
           <iframe src="https://mapsengine.google.com/map/embed?mid=z2e_3jYGktFU.kvMIujBcWI-A" width="640" height="480"></iframe>
         </div>
+        <div class="fb-like-box" data-href="https://www.facebook.com/DallasYMCATrot?fref=nf" data-width="250" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
     </div>
     </div> <!-- End Container -->
 
