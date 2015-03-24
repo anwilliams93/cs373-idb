@@ -11,6 +11,9 @@
     'charities':    u'N/A',
     'website':      u'http://wipeoutrun.com/',
     'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!'
+    'quote1':       u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!'
+    'quote2':       u'Had a great time participating in the WIPEOUTRUN!'
+    'quote3':       u'Such a blast!! Let\'s do it again next year!!'
 }
 {
     'id':           2,
@@ -18,13 +21,16 @@
     'city':         u'Cleveland, Ohio',
     'address':      u'Cleveland Public Square\\nCleveland, OH 44113',
     'date':         u'December 5th, 2015',
-    'distance':     u'5K, 10K'
+    'distance':     u'5K, 10K',
     'price':        u'Before September 30th: $45\\nOctober 1st - December 5th: $55',
     'hosts':        u'A Christmas Story House & Museum',
     'sponsors':     u'Ovaltine, Renaissance HOtels, Dannon, Walmart, McDonalds, The Home Depot',
     'charities':    u'A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects',
     'website':      u'http://achristmasstoryrun.com/',
-    'description':  u'The movie producers must have been runners, because the distance between the former Higbee’s Department Store and the A Christmas Story House & Museum is about 5K. Ralphie’s dad, The Old Man must have used the 1938 Oldsmobile to track the distance No GPS in the 1940′s. To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.'
+    'description':  u'The movie producers must have been runners, because the distance between the former Higbee\'s Department Store and the A Christmas Story House & Museum is about 5K. Ralphie’s dad, The Old Man must have used the 1938 Oldsmobile to track the distance No GPS in the 1940′s. To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.'
+    'quote1':       u'I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.'
+    'quote2':       u'Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.'
+    'quote3':       u'All in all Pepper gives this fun run an A+!'
 }
 {
     'id':           3,
@@ -32,11 +38,14 @@
     'city':         u'Dallas, Texas',
     'address':      u'City Hall Plaza\\n500 Marilla St.\\nDallas, TX 75201',
     'date':         u'November 26th, 2015',
-    'distance':     u'5K, 8mi'
+    'distance':     u'5K, 8mi',
     'price':        u'Before September 30th: $30\\nSeptember 31st - November 25th: $35\\nNovember 26th: $45',
     'hosts':        u'YMCA, Capital One Bank',
     'sponsors':     u'The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys',
     'charities':    u'The Y Community Programs',
     'website':      u'http://thetrot.org/',
     'description':  u'The Dallas Turkey Trot really proves that everything\'s bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol\' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.'
+    'quote1':       u'This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!'
+    'quote2':       u'This event is by far the best family friendly event that takes place in Dallas each year!'
+    'quote3':       u'I had a blast running the Turkey Trot this year. Even though it\'s my first time doing it, I will definitely make it a tradition every year'
 }
