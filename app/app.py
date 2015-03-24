@@ -31,17 +31,40 @@ def about():
 def funruntempl(runID):
     return render_template('funruntempl.html', runID = runID)
 
+@app.route('/themes/<themeID>')
+def themetempl(themeID):
+    return render_template('themetempl.html', themeID = themeID)
+
+@app.route('/challenges/<challengeID>')
+def challengetempl(challengeID):
+    return render_template('challengetempl.html', challengeID = challengeID)
+
 
 ### REST API CALLS ###
 
 @app.route('/api/funruns', methods=['GET'])
 def get_funruns():
-
     return jsonify({'funruns': funruns})
 
 @app.route('/api/funruns/<int:id>', methods=['GET'])
-def get_funruns_id(id):
+def get_funrun_id(id):
     return jsonify({'funruns': funruns[id]})
+
+@app.route('/api/themes', methods=['GET'])
+def get_themes():
+    return jsonify({'themes': themes})
+
+@app.route('/api/themes/<int:id>', methods=['GET'])
+def get_theme_id(id):
+    return jsonify({'themes': themes[id]})
+
+@app.route('/api/challenges', methods=['GET'])
+def get_challenges():
+    return jsonify({'challenges': challenges})
+
+@app.route('/api/challenges/<int:id>', methods=['GET'])
+def get_challenge_id(id):
+    return jsonify({'challenges': challenges[id]})
 
 funruns = [
     {
@@ -88,6 +111,47 @@ funruns = [
     }
 ]
 
+themes = [
+    {
+        'id':           1,
+        'name':         u'Holiday',
+        'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
+        'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.'
+    },
+    {
+        'id':           2,
+        'name':         u'Intense',
+        'buzzwords':    u'Training, Diet, Hardcore, Recovery, Cutthroat',
+        'description':  u'More interested in proving how much you can take than how much fun you\'ll actually have? Intense runs are exactly what you need - a good dose of body-numbing, soul-crushing exercise to show your stuff. See if you can survive the brutal difficulty of these events.'
+    },
+    {
+        'id':           3,
+        'name':         u'Costume',
+        'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
+        'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!'
+    }
+]
+
+challenges = [
+    {
+        'id':           1,
+        'name':         u'Running On Odd Ground',
+        'flavors':      u'Ice, Inflatable Balls, Mud',
+        'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.'
+    },
+    {
+        'id':           2,
+        'name':         u'Running In A Costume',
+        'flavors':      u'Mascot Costumes, Halloween Outfits, Tutus, Nude, Banana Outfit',
+        'description':  u'Ideally, running should be done in comfortable shorts and shirt. Instead, some dare to run in costumes - or a lack of costume - in self expression and, oftentimes, silliness.'
+    },
+    {
+        'id':           3,
+        'name':         u'Running In Cold Weather',
+        'flavors':      u'Snow, Ice, Freezing Temperatures',
+        'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?'
+    }
+]
 
 
 if __name__ == '__main__':
