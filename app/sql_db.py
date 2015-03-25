@@ -50,12 +50,11 @@ class Themes(db.Model):
     description = db.Column(db.String(600), unique=False)
     challenges = db.relationship('Challenges', secondary = theams_challanges, backref = db.backref('Themes'))
 
-
     def __init__(self, id, name, address, date):
-		self.id = id
-        self.name = name
-        self.buzzwords = buzzwords
-        self.description = description 
+	    self.id = id
+	    self.name = name
+	    self.buzzwords = buzzwords
+	    self.description = description
 
     def __repr__(self):
         return '<Id %r>' % self.id
@@ -69,10 +68,10 @@ class Challenges(db.Model):
 
 
     def __init__(self, id, name, flavors, description):
-		self.id = id
-        self.name = name
-        self.flavors = flavors
-        self.description = description 
+    	self.id = id
+    	self.name = name
+    	self.flavors = flavors
+    	self.description = description 
 
     def __repr__(self):
         return '<Id %r>' % self.id
