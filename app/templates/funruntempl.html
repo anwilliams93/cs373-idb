@@ -46,6 +46,7 @@
       $scope.run = data.funruns;
       $scope.map_url = $sce.trustAsResourceUrl($scope.run.map_url); 
       $scope.video_url = $sce.trustAsResourceUrl($scope.run.video_url);
+      $scope.fb_url = $sce.trustAsHtml($scope.run.fb_url);
       $scope.imgs = $scope.run.imgs;
       console.log($scope.run);
       console.log($scope.map_url);
@@ -87,7 +88,6 @@ $(document).ready(function () {
 });
 
 </script>
-</head>
 
 
 <!-- <div ng-app="FunRunModule">
@@ -101,6 +101,18 @@ $(document).ready(function () {
 
 
 <body>
+  <!-- Facebook stuff -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  </head>
+  <!-- End FB stuff -->
+
   <div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
     
@@ -214,6 +226,13 @@ $(document).ready(function () {
                     <p> [[run.charities]]</p>
                 </div>
             </div>
+
+            <!--Facebook-->
+            <h5 class="title-bg">Facebook</h5>
+              <div class="span4">
+                  <div class="fb-like-box" data-href="[[fb_url]]" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
+              </div>
+            
 
         </div><!-- End sidebar column -->
 
