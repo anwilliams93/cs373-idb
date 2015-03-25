@@ -41,13 +41,17 @@
       $interpolateProvider.endSymbol(']]');
   });
 
-  myApp.controller('FunRunGetter', function($scope, $http, $sce) {
+  myApp.controller('FunRunGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
     $http.get("http://104.239.139.43:8000/api/funruns/" + {{runID}}).success(function(data) {
       $scope.run = data.funruns;
-      $scope.runURL = $scope.run.map_url;
+      $scope.runAddress = $scope.run.address;
+      $scope.runAddress = $scope.runAddress.replace(/\\n/g, "\n");
+      
+      $scope.runURL = $sce.trustAsResourceUrl($scope.run.map_url); 
+      console.log($scope.runURL);
       console.log($scope.run);
     });
-  });
+  }]);
 </script>
 
 <script type="text/javascript">
@@ -182,11 +186,13 @@ $(document).ready(function () {
 
             <!--Address-->
             <h5 class="title-bg">Address</h5>
-    
-            <p class="quote-text side">[[run.address]]</p>
+            
+              <pre class="quote-text side">[[runAddress]]</pre>
+            
             <!-- <iframe src= "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235" width="400" height="300" frameborder="0" style="border:0"></iframe>
  -->
              <iframe ng-src= "[[runURL]]" width="400" height="300" frameborder="0" style="border:0"></iframe>
+             <!-- <source ng-src="[[runURL | trusted]]"/> -->
 
             <!--Tabbed Content-->
             <h5 class="title-bg">Involved Parties</h5>

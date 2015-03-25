@@ -18,13 +18,6 @@
     <link rel="stylesheet" href="css/style-ie.css"/>
 <![endif]--> 
 
-<!-- Favicons
-================================================== -->
-<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
-<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
-<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/apple-touch-icon-72x72.png') }}">
-<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/apple-touch-icon-114x114.png') }}">
-
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
@@ -90,12 +83,24 @@
      
     <!-- Page Content
     ================================================== --> 
-    <div class="row">
+    
+        <!-- Map
+        ================================================== --> 
+        <div class="row">
+            <div class="span12">
+                <h2 class="title-bg"> Map of fun</h2>
+
+              <iframe src="https://mapsengine.google.com/map/embed?mid=z2e_3jYGktFU.kvMIujBcWI-A" style="width: 80vw; height: 40vw; border: none"></iframe>
+            </div>
+        </div>
 
         <!-- Gallery Items
         ================================================== --> 
+        <div class="row">            
         <div class="span12 gallery">
+            <h2 class="title-bg"> Cities</h2>
 
+            <!-- Possible Filter -->
             <!-- <ul id="filterOptions" class="gallery-cats clearfix">
                 <li class="active"><a href="#" class="all">All</a></li> 
                 <li><a href="#" class="illustration">Illustration</a></li>
@@ -113,7 +118,7 @@
                         <span class="gallery-hover-3col hidden-phone hidden-tablet">
                         </span>
                         <div style="height: 300px; width: 370px; overflow: hidden">
-                            <img src="{{ url_for('static', filename='img/cityPhotos/baltimoreMD.jpg') }}" alt="Gallery">
+                            <img src="{{ url_for('static', filename='img/landing/locations/baltimoreMDLanding.jpg') }}" alt="Gallery">
                         </div>
                       </a>
                       <span class="project-details"><a href="gallery-single.htm">Baltimore, Maryland</a>The Charm City.</span>
@@ -125,7 +130,7 @@
                         <span class="gallery-hover-3col hidden-phone hidden-tablet">
                         </span>
                         <div style="height: 300px; width: 370px; overflow: hidden">
-                            <img src="{{ url_for('static', filename='img/cityPhotos/clevelandOH.jpg') }}" alt="Gallery">
+                            <img src="{{ url_for('static', filename='img/landing/locations/clevelandOHLanding.jpg') }}" alt="Gallery">
                         </div>
                       </a>
                       <span class="project-details"><a href="gallery-single.htm">Cleveland, Ohio</a>The Forest City.</span>
@@ -137,7 +142,7 @@
                         <span class="gallery-hover-3col hidden-phone hidden-tablet">
                         </span>
                         <div style="height: 300px; width: 370px; overflow: hidden">
-                            <img src="{{ url_for('static', filename='img/cityPhotos/dallasTX.png') }}" alt="Gallery">
+                            <img src="{{ url_for('static', filename='img/landing/locations/dallasTXLanding.jpg') }}" alt="Gallery">
                         </div>
                       </a>
                       <span class="project-details"><a href="gallery-single.htm">Dallas, Texas</a>Home of the Cowboys.</span>
@@ -160,13 +165,7 @@
         </div><!-- End gallery list-->
 
     </div><!-- End container row -->
-
-    <div class="row">
-        <div class="span12">
-          <iframe src="https://mapsengine.google.com/map/embed?mid=z2e_3jYGktFU.kvMIujBcWI-A" style="position: absolute; width: 75%; height: 40%; border: none"></iframe>
-        </div>
-    </div>
-    </div> <!-- End Container -->
+  </div> <!-- End Container -->
 
   <!-- Footer Area
   ================================================== -->
@@ -176,7 +175,6 @@
           <div class="row footer-row">
                 <div class="span3 footer-col">
                     <h5>About Us</h5>
-                   <img src="{{ url_for('static', filename='img/piccolo-footer-logo.png') }}" alt="Piccolo" /><br /><br />
                     <address>
                         <strong>The Austin Isms</strong><br />
                         2317 Speedway, Stop D9500<br />
