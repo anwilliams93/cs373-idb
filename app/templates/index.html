@@ -256,8 +256,8 @@ $(document).ready(function () {
     ================================================== -->
     <div class="span6">
 
-        <h5 class="title-bg">More Area
-            <small> Where We Can Put Stuff</small>
+        <h5 class="title-bg">Featured run
+            <small></small>
             <button id="btn-client-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
             <button id="btn-client-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
         </h5>
@@ -267,9 +267,18 @@ $(document).ready(function () {
         <!-- Carousel items -->
         <div class="carousel-inner">
 
-            <div class="active item">
-                <p class="quote-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie."<cite>- Client Name, Big Company</cite></p>
-            </div>
+               <!-- Blog Item 1 -->
+              <div class="active item">
+                  <a href="blog-single.htm"><img src="{{ url_for('static', filename='img/racePhotos/wipeout1.jpg') }}" alt="" class="align-left blog-thumb-preview" width=60% height=60%/></a>
+                  <div class="post-info clearfix">
+                      <h4><a href="funruns/0">Wipeout Run</a></h4>
+                      <ul class="blog-details-preview">
+                          <li><i class="icon-calendar"></i><strong>Posted on:</strong> March 24, 2015<li>
+                          <li><i class="icon-comment"></i><strong>Description:</strong> Try out the obstacles from the hit TV show "Wipeout"!<li>
+
+                      </ul>
+                  </div>
+              </div>
 
             <div class="item">
                 <p class="quote-text">"Adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie."<cite>- Another Client Name, Company Name</cite></p>
