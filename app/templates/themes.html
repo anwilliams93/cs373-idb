@@ -18,6 +18,13 @@
     <link rel="stylesheet" href="css/style-ie.css"/>
 <![endif]--> 
 
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/icon.jpg') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/icon.jpg') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/icon.jpg') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/icon.jpg') }}">
+
 <!-- JS
 ================================================== -->
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
@@ -105,7 +112,7 @@
                       <a href="/">
                         <span class="gallery-hover-3col hidden-phone hidden-tablet">
                         </span>
-                        <div style="height: 300px; width: 370px; overflow: hidden">
+                        <div style="max-height: 300px; max-width: 370px; overflow: hidden">
                             <img src="{{ url_for('static', filename='img/themesPhotos/holiday1.jpg') }}" alt="Gallery">
                         </div>
                       </a>
@@ -117,7 +124,7 @@
                       <a href="/">
                         <span class="gallery-hover-3col hidden-phone hidden-tablet">
                         </span>
-                        <div style="height: 300px; width: 370px; overflow: hidden">
+                        <div style="max-height: 300px; max-width: 370px; overflow: hidden">
                             <img src="{{ url_for('static', filename='img/themesPhotos/intense1.jpg') }}" alt="Gallery">
                         </div>
                       </a>
@@ -129,7 +136,7 @@
                       <a href="/">
                         <span class="gallery-hover-3col hidden-phone hidden-tablet">
                         </span>
-                        <div style="height: 300px; width: 370px; overflow: hidden">
+                        <div style="max-height: 300px; max-width: 370px; overflow: hidden">
                             <img src="{{ url_for('static', filename='img/themesPhotos/costume1.jpg') }}" alt="Gallery">
                         </div>
                       </a>

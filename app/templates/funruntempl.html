@@ -22,10 +22,10 @@
 
 <!-- Favicons
 ================================================== -->
-<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
-<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
-<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/apple-touch-icon-72x72.png') }}">
-<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/apple-touch-icon-114x114.png') }}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/icon.jpg') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/icon.jpg') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/icon.jpg') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/icon.jpg') }}">
 
 <!-- JS
 ================================================== -->
@@ -44,12 +44,14 @@
   myApp.controller('FunRunGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
     $http.get("http://104.239.139.43:8000/api/funruns/" + {{runID}}).success(function(data) {
       $scope.run = data.funruns;
-      $scope.runAddress = $scope.run.address;
-      $scope.runAddress = $scope.runAddress.replace(/\\n/g, "\n");
-      
-      $scope.runURL = $sce.trustAsResourceUrl($scope.run.map_url); 
-      console.log($scope.runURL);
+      $scope.map_url = $sce.trustAsResourceUrl($scope.run.map_url); 
+      $scope.video_url = $sce.trustAsResourceUrl($scope.run.video_url);
+      $scope.imgs = $scope.run.imgs;
       console.log($scope.run);
+      console.log($scope.map_url);
+      console.log($scope.video_url);
+      console.log($scope.imgs[0]);
+
     });
   }]);
 </script>
@@ -109,7 +111,6 @@ $(document).ready(function () {
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-<!--           <a href="/"><img src="{{ url_for('static', filename='img/piccolo-logo.png') }}" alt="" /></a> -->
             <h1>Fun Run Event: [[run.name]]</h1>
         </div>
         
@@ -156,28 +157,23 @@ $(document).ready(function () {
     <!-- Title Header -->
         <div class="span8"><!--Begin page content column-->
 
-            <h2>[[run.name]] &nbsp&nbsp | &nbsp&nbsp [[run.city]]</h2>
-            <p class="lead">[[run.description]]</p>
-
-        <!-- Slider Carousel
+        <h2>[[run.name]] &nbsp&nbsp | &nbsp&nbsp [[run.city]]</h2>
+        
+        <!-- Thumbnail Grid
         ================================================== -->
-        <h3 class="title-bg">Photos Of The Fun!</h3>
-          <div class="flexslider">
-              <ul class="slides">
-                <li><a href="gallery-single.htm"><img src="{{ url_for('static', filename='img/gallery/AbbyArt.jpg') }}" alt="slider" /></a></li>
-                <li><a href="gallery-single.htm"><img src="{{ url_for('static', filename='img/gallery/AbbyArt.jpg') }}" alt="slider" /></a></li>
-                <li><a href="gallery-single.htm"><img src="{{ url_for('static', filename='img/gallery/AbbyArt.jpg') }}" alt="slider" /></a></li>
-                <li><a href="gallery-single.htm"><img src="{{ url_for('static', filename='img/gallery/AbbyArt.jpg') }}" alt="slider" /></a></li>
-                <li><a href="gallery-single.htm"><img src="{{ url_for('static', filename='img/gallery/AbbyArt.jpg') }}" alt="slider" /></a></li>
-              </ul>
-            </div>
+        <ul class="thumbnails">
+            <li class="span4"><img ng-src="[[ imgs[0] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+            <li class="span4"><img ng-src="[[ imgs[1] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+            <li class="span8"><img ng-src="[[ imgs[2] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+        </ul>
+        <p class="lead">[[run.description]]</p>
 
-            <br />
 
         <!-- Video Section
         ================================================== -->
-        <h3 class="title-bg">Check Out The Video!</h3>
-<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/QILiHiTD3uc' frameborder='0' allowfullscreen></iframe></div>
+        <h3 class="title-bg">Video For Getting Hyped</h3>
+         <iframe ng-src= "[[video_url]]" style="width: 100%; height: 500px; max-height: 500px; frameborder: 0; border: 0"></iframe>
+
         </div> <!--End page content column-->
 
         <!-- Blog Sidebar
@@ -186,16 +182,21 @@ $(document).ready(function () {
 
             <!--Address-->
             <h5 class="title-bg">Address</h5>
-            
-              <pre class="quote-text side">[[runAddress]]</pre>
-            
-            <!-- <iframe src= "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235" width="400" height="300" frameborder="0" style="border:0"></iframe>
- -->
-             <iframe ng-src= "[[runURL]]" width="400" height="300" frameborder="0" style="border:0"></iframe>
-             <!-- <source ng-src="[[runURL | trusted]]"/> -->
+    
+            <pre class="quote-text side">[[run.address]]</pre>
 
-            <!--Tabbed Content-->
-            <h5 class="title-bg">Involved Parties</h5>
+            <br/>
+
+            <!--Map-->
+             <iframe ng-src= "[[map_url]]" style="width: 100%; height: 400px; max-height: 400px; frameborder: 0; border: 0"></iframe>
+
+            <!--Prices-->
+            <h5 class="title-bg">Prices</h5>
+    
+            <pre class="quote-text side">[[run.price]]</pre>
+
+            <!--Affiliated Orgs-->
+            <h5 class="title-bg">Affiliated Organizations</h5>
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#hosts" data-toggle="tab">Hosts</a></li>
                 <li><a href="#sponsors" data-toggle="tab">Sponsors</a></li>
@@ -214,11 +215,6 @@ $(document).ready(function () {
                 </div>
             </div>
 
-            <!--Prices-->
-            <h5 class="title-bg">Prices</h5>
-    
-            <pre class="quote-text side">[[run.price]]</pre>
-
         </div><!-- End sidebar column -->
 
     </div><!-- End container row -->
@@ -233,7 +229,6 @@ $(document).ready(function () {
           <div class="row footer-row">
                 <div class="span3 footer-col">
                     <h5>About Us</h5>
-                   <img src="{{ url_for('static', filename='img/piccolo-footer-logo.png') }}" alt="Piccolo" /><br /><br />
                     <address>
                         <strong>The Austin Isms</strong><br />
                         2317 Speedway, Stop D9500<br />
