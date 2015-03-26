@@ -10,6 +10,7 @@ ASSUME THAT ALL PARAMETERS EXCEPT MIN and MAX CAN BE USED ANY NUMBER OF TIMES
 
 # Root Section of API
 
+@runs_api.route('', methods = ['GET'])
 @runs_api.route('/', methods = ['GET'])
 def get_entry_points():
 	root_urls = retrieve_entry_points()
@@ -20,6 +21,7 @@ def get_entry_points():
 run_query_parameters = {'theme', 'challenge', 'location', 'min_price', 'max_price', 'min_length', 'max_length'}
 
 @runs_api.route('/runs', methods = ['GET'])
+@runs_api.route('/runs/', methods = ['GET'])
 def get_runs():
 	filtered_params = filter_query_parameters(run_query_parameters, request.args)
 	
@@ -40,11 +42,13 @@ def get_runs():
 	return jsonify({'runs': filtered_runs})
 
 @runs_api.route('/runs/<int:id>', methods = ['GET'])
+@runs_api.route('/runs/<int:id>/', methods = ['GET'])
 def get_run_by_id(id):
     runs = api_helpers.retrieve_runs()
     return jsonify({'run': runs[id]})
 
 @runs_api.route('/runs/<int:id>/themes', methods = ['GET'])
+@runs_api.route('/runs/<int:id>/themes/', methods = ['GET'])
 def get_run_themes(id):
 	# ASSUMING THEMES IS THE LIST OF THEMES
 	# ASSUMING RUNS IS THE ENTIRE LIST OF RUNS
@@ -56,6 +60,7 @@ def get_run_themes(id):
 	return jsonify({'themes': chosen_themes})
 
 @runs_api.route('/runs/<int:id>/challenges', methods = ['GET'])
+@runs_api.route('/runs/<int:id>/challenges/', methods = ['GET'])
 def get_run_challenges(id):
 	# ASSUMING CHALLENGES IS THE ENTIRE LIST OF CHALLENGES
 	# ASSUMING RUNS IS THE ENTIRE LIST OF RUNS
