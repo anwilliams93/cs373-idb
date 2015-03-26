@@ -189,10 +189,69 @@ $(document).ready(function () {
 
         <!-- Blog Sidebar
         ================================================== --> 
-        <div class="span4 sidebar page-sidebar"><!-- Begin sidebar column -->
+        <div class="span6 sidebar page-sidebar"><!-- Begin sidebar column -->
+          <h5 class="title-bg">More Pictures
+          <button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
+          <button id="btn-blog-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
+      </h5>
 
+      <div id="blogCarousel" class="carousel slide ">
+
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+
+               <!-- Sidebar Pic 1 -->
+              <div class="active item">
+
+                  <div class="post-info clearfix">
+                      <ul style="border:1px; solid #000">
+                          <li class="span6"><img ng-src="[[ imgs[4] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- Sidebar Pic 2 -->
+              <div class="active item">
+
+                  <div class="post-info clearfix">
+                      <ul style="border:1px; solid #000">
+                          <li class="span6"><img ng-src="[[ imgs[5] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- Sidebar Pic 3 -->
+              <div class="active item">
+
+                  <div class="post-info clearfix">
+                      <ul style="border:1px; solid #000">
+                          <li class="span6"><img ng-src="[[ imgs[6] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- Sidebar Pic 4 -->
+              <div class="active item">
+
+                  <div class="post-info clearfix">
+                      <ul style="border:1px; solid #000">
+                          <li class="span6"><img ng-src="[[ imgs[7] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- Sidebar Pic 5 -->
+              <div class="active item">
+
+                  <div class="post-info clearfix">
+                      <ul style="border:1px; solid #000">
+                          <li class="span6"><img ng-src="[[ imgs[8] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>  
 
         </div><!-- End sidebar column -->
+
+
+      
 
     </div><!-- End container row -->
     
