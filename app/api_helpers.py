@@ -123,7 +123,7 @@ def retrieve_runs():
 			]
 	return runs
 
-def retireve_themes():
+def retrieve_themes():
 	themes = [
 			    {
 			        'id':           0,
