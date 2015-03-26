@@ -39,55 +39,62 @@ def get_run_by_id(id):
 
 @app.route('/api/runs/<int:id>/themes', methods = ['GET'])
 def get_run_themes(id):
-	# Assuming themes is the list of themes
+	# ASSUMING THEMES IS THE LIST OF THEMES
+	# ASSUMING RUNS IS THE ENTIRE LIST OF RUNS
 	chosen_themes = []
-	for r in runs:
-		for i in r[theme]:
-			chosen_themes += [themes[i]]
+	for i in runs[id][theme]:
+		chosen_themes += [themes[i]]
 	return jsonify({'themes': chosen_themes})
 
 @app.route('/api/runs/<int:id>/challenges', methods = ['GET'])
 def get_run_challenges(id):
-	# Assuming challenges is the entire list of challenges
+	# ASSUMING CHALLENGES IS THE ENTIRE LIST OF CHALLENGES
+	# ASSUMING RUNS IS THE ENTIRE LIST OF RUNS
 	chosen_challenges = []
-	for r in runs:
-		for i in r[challenge]:
-			chosen_challenges += [challenges[i]]
+	for i in runs[challenge]:
+		chosen_challenges += [challenges[i]]
 	return jsonify({'challenges': chosen_challenges})
 
-# Theme Section of API
+# # Theme Section of API
 
-theme_query_parameters = {'run', 'challenge', 'name', 'buzzword'}
+# theme_query_parameters = {'run', 'challenge', 'name', 'buzzword'}
 
-@app.route('/api/themes', methods = ['GET'])
-def get_themes():
-	request.args
-	return jsonify({'runs': runs})
+# @app.route('/api/themes', methods = ['GET'])
+# def get_themes():
+# 	request.args
+# 	return jsonify({'runs': runs})
 
-@app.route('/api/themes/<int:id>', methods = ['GET'])
-def get_theme_by_id(id):
-    return jsonify({'theme': themes[id]})
+# @app.route('/api/themes/<int:id>', methods = ['GET'])
+# def get_theme_by_id(id):
+#     return jsonify({'theme': themes[id]})
 
-@app.route('/api/themes/<int:id>/runs', methods = ['GET'])
-def get_theme_runs(id):
+# @app.route('/api/themes/<int:id>/runs', methods = ['GET'])
+# def get_theme_runs(id):
 
-@app.route('/api/themes/<int:id>/challenges', methods = ['GET'])
-def get_theme_challenges(id):
+# @app.route('/api/themes/<int:id>/challenges', methods = ['GET'])
+# def get_theme_challenges(id):
 
-# Challenge Section of API
-	challenge_query_parameters = {'run', 'theme', 'name'}
+# # Challenge Section of API
 
-@app.route('/api/challenges', methods = ['GET'])
-def get_runs():
-	request.args
-    return jsonify({'runs': runs})
+# challenge_query_parameters = {'run', 'theme', 'name'}
 
-@app.route('/api/challenges/<int:id>', methods = ['GET'])
-def get_challenge_by_id(id):
-    return jsonify({'challenge': challenges[id]})
+# @app.route('/api/challenges', methods = ['GET'])
+# def get_runs():
+# 	request.args
+#     return jsonify({'runs': runs})
 
-@app.route('/api/challenges/<int:id>/runs', methods = ['GET'])
-def get_challenge_runs(id):
+# @app.route('/api/challenges/<int:id>', methods = ['GET'])
+# def get_challenge_by_id(id):
+#     return jsonify({'challenge': challenges[id]})
 
-@app.route('/api/challenges/<int:id>/themes', methods = ['GET'])
-def get_challenge_themes(id):
+# @app.route('/api/challenges/<int:id>/runs', methods = ['GET'])
+# def get_challenge_runs(id):
+
+# @app.route('/api/challenges/<int:id>/themes', methods = ['GET'])
+# def get_challenge_themes(id):
+# 	# Assuming themes is the list of themes
+# 	chosen_themes = []
+# 	for challenge in challenges:
+# 		for i in c[theme]:
+# 			chosen_themes += [themes[i]]
+# 	return jsonify({'themes': chosen_themes})
