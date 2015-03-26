@@ -1,8 +1,8 @@
-from flask import Flask, render_template, jsonify, url_for, redirect
+from flask import Flask, render_template, jsonify, url_for, url_map, redirect
 from api import runs_api
 
 app = Flask(__name__)
-
+app.url_map.strict_slashes = False
 app.register_blueprint(runs_api)
 
 ### PAGES ###
