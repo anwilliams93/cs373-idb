@@ -29,7 +29,7 @@ def get_runs():
 	# THIS NEEDS TO BE CHANGED TO BE MORE GENERIC AND REUSABLE
 	for k in filtered_params:
 		if k == 'theme' or k == 'challenge' or k == 'location':
-			filtered_runs = select(runs, lambda e : p in e[k] for p in filtered_params[k])
+			filtered_runs = select(runs, (lambda e : p in e[k] for p in filtered_params[k]))
 		elif k == 'min_price' or k == 'min_length':
 			filtered_runs = select(runs, lambda e : filtered_params[k] <= e[k])
 		elif k == 'max_price' or k == 'max_length':
