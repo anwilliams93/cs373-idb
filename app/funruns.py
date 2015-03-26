@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, url_for, url_map, redirect
+from flask import Flask, render_template, jsonify, url_for, redirect
 from api import runs_api
 
 app = Flask(__name__)
