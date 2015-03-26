@@ -62,7 +62,7 @@ theme_query_parameters = {'run', 'challenge', 'name', 'buzzword'}
 @app.route('/api/themes', methods = ['GET'])
 def get_themes():
 	request.args
-    return jsonify({'runs': runs})
+	return jsonify({'runs': runs})
 
 @app.route('/api/themes/<int:id>', methods = ['GET'])
 def get_theme_by_id(id):
