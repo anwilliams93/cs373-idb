@@ -155,19 +155,34 @@ themes = [
         'id':           0,
         'name':         u'Holiday',
         'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
-        'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.'
+        'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.',
+        'imgs':         [
+                            u'/static/img/themeTempl/holiday1.jpg',
+                            u'/static/img/themeTempl/holiday2.jpg',
+                            u'/static/img/themeTempl/holiday3.jpg'
+                        ]
     },
     {
         'id':           1,
         'name':         u'Intense',
         'buzzwords':    u'Training, Diet, Hardcore, Recovery, Cutthroat',
-        'description':  u'More interested in proving how much you can take than how much fun you\'ll actually have? Intense runs are exactly what you need - a good dose of body-numbing, soul-crushing exercise to show your stuff. See if you can survive the brutal difficulty of these events.'
+        'description':  u'More interested in proving how much you can take than how much fun you\'ll actually have? Intense runs are exactly what you need - a good dose of body-numbing, soul-crushing exercise to show your stuff. See if you can survive the brutal difficulty of these events.',
+        'imgs':         [
+                            u'/static/img/themeTempl/intense1.jpg',
+                            u'/static/img/themeTempl/intense2.jpg',
+                            u'/static/img/themeTempl/intense3.jpg'
+                        ]
     },
     {
         'id':           2,
         'name':         u'Costume',
         'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
-        'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!'
+        'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
+        'imgs':         [
+                            u'/static/img/themeTempl/costume1.jpg',
+                            u'/static/img/themeTempl/costume2.jpg',
+                            u'/static/img/themeTempl/costume3.jpg'
+                        ]
     }
 ]
 
@@ -177,21 +192,36 @@ challenges = [
         'name':         u'Running On Awkward Ground',
         'difficulty':   60,
         'flavors':      u'Ice, Inflatable Balls, Mud',
-        'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.'
+        'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.',
+        'imgs':         [
+                            u'/static/img/challengeTempl/cold1.jpg',
+                            u'/static/img/challengeTempl/cold2.jpg',
+                            u'/static/img/challengeTempl/cold3.jpg'
+                        ]
     },
     {
         'id':           1,
         'name':         u'Running In A Costume',
         'difficulty':   40,
         'flavors':      u'Mascots, Nude, Speedos, Costumes',
-        'description':  u'Ideally, running should be done in comfortable shorts and shirt. Instead, some dare to run in costumes - or a lack of costume - in self expression and, oftentimes, silliness.'
+        'description':  u'Ideally, running should be done in comfortable shorts and shirt. Instead, some dare to run in costumes - or a lack of costume - in self expression and, oftentimes, silliness.',
+        'imgs':         [
+                            u'/static/img/challengeTempl/costume1.jpg',
+                            u'/static/img/challengeTempl/costume2.jpg',
+                            u'/static/img/challengeTempl/costume3.jpg'
+                        ]
     },
     {
         'id':           2,
         'name':         u'Running In Cold Weather',
         'difficulty':   80,
         'flavors':      u'Snow, Ice, Freezing Temperatures',
-        'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?'
+        'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?',
+        'imgs':         [
+                            u'/static/img/challengeTempl/oddGround1.jpg',
+                            u'/static/img/challengeTempl/oddGround2.jpg',
+                            u'/static/img/challengeTempl/oddGround3.jpg'
+                        ]
     }
 ]
 

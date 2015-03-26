@@ -102,7 +102,7 @@ $(document).ready(function () {
 
 <body>
   <!-- Facebook stuff -->
-  <div id="fb-root"></div>
+  <!-- <div id="fb-root"></div>
   <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
@@ -110,7 +110,7 @@ $(document).ready(function () {
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));</script>
-  </head>
+  </head>-->
   <!-- End FB stuff -->
 
   <div class="color-bar-1"></div>
@@ -123,7 +123,7 @@ $(document).ready(function () {
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-            <h1>Fun Run Event: [[challenge.name]]</h1>
+            <h1>Challenge: [[challenge.name]]</h1>
         </div>
         
         <!-- Main Navigation
@@ -178,61 +178,19 @@ $(document).ready(function () {
             <li class="span4"><img ng-src="[[ imgs[1] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
             <li class="span8"><img ng-src="[[ imgs[2] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
         </ul>
-        <p class="lead">[[run.description]]</p>
+        <p class="lead">[[challenge.description]]</p>
 
 
         <!-- Video Section
         ================================================== -->
-        <h3 class="title-bg">Video For Getting Hyped</h3>
-         <iframe ng-src= "[[video_url]]" style="width: 100%; height: 500px; max-height: 500px; frameborder: 0; border: 0"></iframe>
-
+        <!-- <h3 class="title-bg">Video For Getting Hyped</h3>
+         <iframe ng-src= "[[video_url]]" style="width: 100%; height: 500px; max-height: 500px; frameborder: 0; border: 0"></iframe> -->
         </div> <!--End page content column-->
 
         <!-- Blog Sidebar
         ================================================== --> 
         <div class="span4 sidebar page-sidebar"><!-- Begin sidebar column -->
 
-            <!--Address-->
-            <h5 class="title-bg">Address</h5>
-    
-            <pre class="quote-text side">[[run.address]]</pre>
-
-            <br/>
-
-            <!--Map-->
-             <iframe ng-src= "[[map_url]]" style="width: 100%; height: 400px; max-height: 400px; frameborder: 0; border: 0"></iframe>
-
-            <!--Prices-->
-            <h5 class="title-bg">Prices</h5>
-    
-            <pre class="quote-text side">[[run.price]]</pre>
-
-            <!--Affiliated Orgs-->
-            <h5 class="title-bg">Affiliated Organizations</h5>
-            <ul class="nav nav-tabs">
-                <li class="active"><a href="#hosts" data-toggle="tab">Hosts</a></li>
-                <li><a href="#sponsors" data-toggle="tab">Sponsors</a></li>
-                <li><a href="#charities" data-toggle="tab">Charities</a></li>
-            </ul>
-
-            <div class="tab-content">
-                <div class="tab-pane active" id="hosts">
-                    <p> [[run.hosts]]</p>
-                </div>
-                <div class="tab-pane" id="sponsors">
-                    <p> [[run.sponsors]]</p>
-                </div>
-                <div class="tab-pane" id="charities">
-                    <p> [[run.charities]]</p>
-                </div>
-            </div>
-
-            <!--Facebook-->
-            <h5 class="title-bg">Facebook</h5>
-              <div class="span4">
-                  <div class="fb-like-box" data-href="[[fb_url]]" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
-              </div>
-            
 
         </div><!-- End sidebar column -->
 
