@@ -164,7 +164,8 @@ themes = [
                             u'/static/img/themeTempl/holiday1.jpg',
                             u'/static/img/themeTempl/holiday2.jpg',
                             u'/static/img/themeTempl/holiday3.jpg'
-                        ]
+                        ],
+        'relatedruns': u'1'
     },
     {
         'id':           1,
@@ -175,7 +176,8 @@ themes = [
                             u'/static/img/themeTempl/intense1.jpg',
                             u'/static/img/themeTempl/intense2.jpg',
                             u'/static/img/themeTempl/intense3.jpg'
-                        ]
+                        ],
+        'relatedruns': u'0'
     },
     {
         'id':           2,
@@ -186,7 +188,8 @@ themes = [
                             u'/static/img/themeTempl/costume1.jpg',
                             u'/static/img/themeTempl/costume2.jpg',
                             u'/static/img/themeTempl/costume3.jpg'
-                        ]
+                        ],
+        'relatedruns': u'2'
     }
 ]
 
@@ -198,10 +201,11 @@ challenges = [
         'flavors':      u'Ice, Inflatable Balls, Mud',
         'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.',
         'imgs':         [
-                            u'/static/img/challengeTempl/cold1.jpg',
-                            u'/static/img/challengeTempl/cold2.jpg',
-                            u'/static/img/challengeTempl/cold3.jpg'
-                        ]
+                            u'/static/img/challengeTempl/oddGround1.jpg',
+                            u'/static/img/challengeTempl/oddGround2.jpg',
+                            u'/static/img/challengeTempl/oddGround3.jpg'
+                        ],
+        'relatedruns': u'0'
     },
     {
         'id':           1,
@@ -213,7 +217,8 @@ challenges = [
                             u'/static/img/challengeTempl/costume1.jpg',
                             u'/static/img/challengeTempl/costume2.jpg',
                             u'/static/img/challengeTempl/costume3.jpg'
-                        ]
+                        ],
+        'relatedruns': u'2'
     },
     {
         'id':           2,
@@ -222,10 +227,11 @@ challenges = [
         'flavors':      u'Snow, Ice, Freezing Temperatures',
         'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?',
         'imgs':         [
-                            u'/static/img/challengeTempl/oddGround1.jpg',
-                            u'/static/img/challengeTempl/oddGround2.jpg',
-                            u'/static/img/challengeTempl/oddGround3.jpg'
-                        ]
+                             u'/static/img/challengeTempl/cold1.jpg',
+                            u'/static/img/challengeTempl/cold2.jpg',
+                            u'/static/img/challengeTempl/cold3.jpg'
+                        ],
+        'relatedruns': u'2'
     }
 ]
 

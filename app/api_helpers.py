@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def filter_query_parameters(allowed_parameters, request_parameters):
 	filtered_parameters = {}
 	for k in allowed_parameters:
@@ -56,7 +58,7 @@ def retrieve_runs():
 			        'hosts':        u'A Christmas Story House & Museum',
 			        'sponsors':     u'Ovaltine, Renaissance HOtels, Dannon, Walmart, McDonalds, The Home Depot',
 			        'charities':    u'A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects',
-			        'description':  u'BLAH',#u'The movie producers must have been runners, because the distance between the former Higbee\'s Department Store and the A Christmas Story House & Museum is about 5K. Ralphie’s dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940\'s. To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.',
+			        'description':	u'BLAH',#u'The movie producers must have been runners, because the distance between the former Higbee\'s Department Store and the A Christmas Story House & Museum is about 5K. Ralphie’s dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940\'s. To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.',
 			        'quotes':       [
 			                            u'I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.',
 			                            u'Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.',
