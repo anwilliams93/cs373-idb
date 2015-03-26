@@ -129,7 +129,7 @@ def get_challenges():
 	challenges = api_helpers.retrieve_challenges()
 
 	filtered_challenges = challenges
-
+	
 	# THIS NEEDS TO BE CHANGED TO BE MORE GENERIC AND REUSABLE
 	# for k in filtered_params:
 	# 	if k == 'theme' or k == 'challenge' or k == 'location':
@@ -138,13 +138,12 @@ def get_challenges():
 	# 		filtered_challenges = api_helpers.select(challenges, lambda e : filtered_params[k] <= e[k])
 	# 	elif k == 'max_price' or k == 'max_length':
 	# 		filtered_challenges = api_helpers.select(challenges, lambda e : e[k] <= filtered_params[k])
-
 	return jsonify({'challenges': filtered_challenges})
 
 @funruns.route('/challenges/<int:id>', methods = ['GET'])
 def get_challenge_by_id(id):
-   	challenges = api_helpers.retrieve_challenges()
-    return jsonify({'challenges': challenges[id]})
+	challenges = api_helpers.retrieve_challenges()
+	return jsonify({'challenges': challenges[id]})
 
 @funruns.route('/api/challenges/<int:id>/runs', methods = ['GET'])
 def get_challenge_runs(id):
