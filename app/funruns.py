@@ -1,5 +1,5 @@
 from flask import Flask, render_template, jsonify, url_for, redirect
-import api import runs_api
+from api import runs_api
 
 app = Flask(__name__)
 
