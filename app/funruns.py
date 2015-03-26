@@ -102,7 +102,7 @@ funruns = [
         'themes':       [
                             1
                         ],
-        'challenges:'   [
+        'challenges':   [
                             0
                         ]
     },

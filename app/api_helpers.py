@@ -49,7 +49,7 @@ def retrieve_runs():
 			        'themes':       [
 			                            1
 			                        ],
-			        'challenges:'   [
+			        'challenges':   [
 			                            0
 			                        ]
 			    },  
