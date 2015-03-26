@@ -83,7 +83,7 @@ def retrieve_funruns():
 			                            0
 			                        ],
 			        'challenges':   [
-			                            
+			                            2
 			                        ]
 			    },
 			    {
@@ -247,6 +247,7 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold3.jpg'
 				                        ],
 				        'funruns':         [
+				        					1,
 				                            2
 				                        ],
 				        'themes':       [
