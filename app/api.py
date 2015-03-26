@@ -145,7 +145,7 @@ def get_challenge_by_id(id):
 	challenges = api_helpers.retrieve_challenges()
 	return jsonify({'challenges': challenges[id]})
 
-@funruns_api.route('/api/challenges/<int:id>/runs', methods = ['GET'])
+@funruns_api.route('/api/challenges/<int:id>/funruns', methods = ['GET'])
 def get_challenge_runs(id):
 	# ASSUMING THEMES IS THE LIST OF THEMES
 	# ASSUMING FUNRUNS IS THE ENTIRE LIST OF FUNRUNS
