@@ -9,27 +9,28 @@ db = SQLAlchemy(app)
 #many to many table, FunRuns to Themes
 # --------------------------------
 funRuns_themes = db.Table('funRuns_themes', 
-    db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
-    db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id')
+    db.Column('funrun_id', db.Integer, db.ForeignKey('funrun.id')),
+    db.Column('theme_id', db.Integer, db.ForeignKey('theme.id'))
 )
 
 # ----------------------------------
 #many to many table, FunRuns to Challenges
 # ----------------------------------
-funRuns_challanges = db.Table('funRuns_challanges', 
-    db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
-    db.Column('Challenges.id'), db.Integer, db.ForeignKey('Challenges.id')
+funRuns_challenges = db.Table('funRuns_challenges', 
+    db.Column('funrun_id', db.Integer, db.ForeignKey('funrun.id')),
+    db.Column('challenge_id', db.Integer, db.ForeignKey('challenge.id'))
 )
 
 # ---------------------------------
 #many to many table, Themes to Challenges
 # ---------------------------------
-themes_challanges = db.Table('themes_challanges', 
-    db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id'),
-    db.Column('Challenges.id'), db.Integer, db.ForeignKey('Challenges.id')
+themes_challenges = db.Table('themes_challenges', 
+    db.Column('theme_id', db.Integer, db.ForeignKey('theme.id')),
+    db.Column('challenge_id', db.Integer, db.ForeignKey('challenge.id'))
 )
+
 # -------------
-#FunRuns Table 
+# FunRuns Table 
 # -------------
 class FunRuns(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -46,7 +47,7 @@ class FunRuns(db.Model):
     map_url =db.Column(db.String(350), unique=False)
     location_id = db.Column(db.Integer, db.ForeignKey('Location.id'))
     themes = db.relationship('Themes', secondary = funRuns_themes, backref = db.backref('FunRuns'))
-    challenges = db.relationship('Challenges', secondary = funRuns_challanges, backref = db.backref('FunRuns'))
+    challenges = db.relationship('Challenges', secondary = funRuns_challenges, backref = db.backref('FunRuns'))
 
     def __init__(self, id, name, address, date, distance, price, hosts, sponsors, charities, website, description, map_url):
         self.id = id
@@ -75,7 +76,7 @@ class Themes(db.Model):
     name = db.Column(db.String(80), unique=False)
     buzzwords= db.Column(db.String(300), unique=False)
     description = db.Column(db.String(600), unique=False)
-    challenges = db.relationship('Challenges', secondary = theams_challanges, backref = db.backref('Themes'))
+    challenges = db.relationship('Challenges', secondary = themes_challenges, backref = db.backref('Themes'))
 
     def __init__(self, id, name, address, date):
         self.id = id
@@ -87,7 +88,7 @@ class Themes(db.Model):
         return '<Id %r>' % self.id
 
 # ---------------
-#Challanges table
+#challenges table
 # ---------------
 class Challenges(db.Model):
     id = db.Column(db.Integer, primary_key=True)
