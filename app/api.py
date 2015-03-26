@@ -13,7 +13,7 @@ ASSUME THAT ALL PARAMETERS EXCEPT MIN and MAX CAN BE USED ANY NUMBER OF TIMES
 @runs_api.route('', methods = ['GET'])
 @runs_api.route('/', methods = ['GET'])
 def get_entry_points():
-	root_urls = retrieve_entry_points()
+	root_urls = api_helpers.retrieve_entry_points()
 	return jsonify({'urls': root_urls})
 
 # Run Section of API
@@ -26,7 +26,7 @@ def get_runs():
 	filtered_params = filter_query_parameters(run_query_parameters, request.args)
 	
 	# ASSUMING RUNS IS THE ENTIRE LIST OF RUNS
-	runs = retrieve_runs()
+	runs = api_helpers.retrieve_runs()
 
 	filtered_runs = runs
 
@@ -44,7 +44,7 @@ def get_runs():
 @runs_api.route('/runs/<int:id>', methods = ['GET'])
 @runs_api.route('/runs/<int:id>/', methods = ['GET'])
 def get_run_by_id(id):
-    runs = api_helpers.retrieve_runs()
+    runs = api_helpers.api_helpers.retrieve_runs()
     return jsonify({'run': runs[id]})
 
 @runs_api.route('/runs/<int:id>/themes', methods = ['GET'])
@@ -52,8 +52,8 @@ def get_run_by_id(id):
 def get_run_themes(id):
 	# ASSUMING THEMES IS THE LIST OF THEMES
 	# ASSUMING RUNS IS THE ENTIRE LIST OF RUNS
-	runs = retrieve_runs()
-	themes = retrieve_themes()
+	runs = api_helpers.retrieve_runs()
+	themes = api_helpers.retrieve_themes()
 	chosen_themes = []
 	for i in runs[id][theme]:
 		chosen_themes += [themes[i]]
@@ -64,8 +64,8 @@ def get_run_themes(id):
 def get_run_challenges(id):
 	# ASSUMING CHALLENGES IS THE ENTIRE LIST OF CHALLENGES
 	# ASSUMING RUNS IS THE ENTIRE LIST OF RUNS
-	runs = retrieve_runs()
-	challenges = retrieve_challenges()
+	runs = api_helpers.retrieve_runs()
+	challenges = api_helpers.retrieve_challenges()
 	chosen_challenges = []
 	for i in runs[id][challenge]:
 		chosen_challenges += [challenges[i]]
