@@ -133,8 +133,7 @@ def challengetempl(challengeID):
 #         'themes':       [
 #                             0
 #                         ],
-#         'challenges':   [
-                            
+#         'challenges':   [                            
 #                         ]
 #     },
 #     {
