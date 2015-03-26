@@ -14,7 +14,7 @@ def retrieve_entry_points():
                 	"themes_url": "/themes",
                 	"challenges_url": "/challenges"
             	}
-    return root_urls
+	return root_urls
 
 def retrieve_runs():
 	runs = 	[
