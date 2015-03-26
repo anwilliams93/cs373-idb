@@ -16,7 +16,7 @@ class ApiTestCase(unittest.TestCase):
     #   os.unlink(api.app.config['DATABASE'])
 
     def test_empty_db(self):
-    	rv = api.get_run_themes(0)
+    	rv = api.get_run_by_id(0)
     	assert list({
 			        'id':           0,
 			        'name':         u'Wipeout Run',
