@@ -213,8 +213,8 @@ def retrieve_challenges():
 				                            0
 				                        ],
 				        'themes':       [
-				                            1,
-				                            0
+				                            0,
+				                            1
 				                        ]
 				    },
 				    {
