@@ -12,14 +12,14 @@ def select(table, predicate):
 
 def retrieve_entry_points():
 	root_urls = {
-              		"runs_url": "/runs",
+              		"funruns_url": "/funruns",
                 	"themes_url": "/themes",
                 	"challenges_url": "/challenges"
             	}
 	return root_urls
 
-def retrieve_runs():
-	runs = 	[
+def retrieve_funruns():
+	funruns = 	[
 			    {
 			        'id':           0,
 			        'name':         u'Wipeout Run',
@@ -121,7 +121,7 @@ def retrieve_runs():
 			                        ]
 			    }
 			]
-	return runs
+	return funruns
 
 def retrieve_themes():
 	themes = [
@@ -135,7 +135,7 @@ def retrieve_themes():
 			                            u'/static/img/themeTempl/holiday2.jpg',
 			                            u'/static/img/themeTempl/holiday3.jpg'
 			                        ],
-			        'runs':         [
+			        'funruns':         [
 			                            1
 			                        ],
 			        'challenges':   [
@@ -153,7 +153,7 @@ def retrieve_themes():
 			                            u'/static/img/themeTempl/intense2.jpg',
 			                            u'/static/img/themeTempl/intense3.jpg'
 			                        ],
-			        'runs':         [
+			        'funruns':         [
 			                            0
 			                        ],
 			        'challenges':   [
@@ -171,7 +171,7 @@ def retrieve_themes():
 			                            u'/static/img/themeTempl/costume2.jpg',
 			                            u'/static/img/themeTempl/costume3.jpg'
 			                        ],
-			        'runs':         [
+			        'funruns':         [
 			                            2
 			                        ],
 			        'challenges':   [
@@ -194,7 +194,7 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/oddGround2.jpg',
 				                            u'/static/img/challengeTempl/oddGround3.jpg'
 				                        ],
-				        'runs':         [
+				        'funruns':         [
 				                            0
 				                        ],
 				        'themes':       [
@@ -213,7 +213,7 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/costume2.jpg',
 				                            u'/static/img/challengeTempl/costume3.jpg'
 				                        ],
-				        'runs':         [
+				        'funruns':         [
 				                            2
 				                        ],
 				        'themes':       [
@@ -231,7 +231,7 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
 				                        ],
-				        'runs':         [
+				        'funruns':         [
 				                            2
 				                        ],
 				        'themes':       [
