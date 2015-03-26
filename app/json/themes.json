@@ -12,7 +12,8 @@
                             u'/static/img/themeTempl/holiday6.jpg',
                             u'/static/img/themeTempl/holiday7.jpg',
                             u'/static/img/themeTempl/holiday8.jpg'
-                        ]
+                        ],
+    'relatedruns': u'1'
 }
 {
     'id':           2,
@@ -28,7 +29,8 @@
                             u'/static/img/themeTempl/intense6.jpg',
                             u'/static/img/themeTempl/intense7.jpg',
                             u'/static/img/themeTempl/intense8.jpg'
-                        ]
+                        ],
+    'relatedruns': u'0'    
     }
 {
     'id':           3,
@@ -44,5 +46,6 @@
                             u'/static/img/themeTempl/costume6.jpg',
                             u'/static/img/themeTempl/costume7.jpg',
                             u'/static/img/themeTempl/costume8.jpg'
-                        ]
+                        ],
+    'relatedruns': u'2'
 }
