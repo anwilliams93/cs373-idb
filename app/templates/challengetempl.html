@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="ChallengeModule" ng-controller="ChallengeGetter">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Fun Runs 2015: Fun Runs</title>
+<title>Fun Runs 2015: [[challenge.name]]</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS
@@ -10,8 +10,10 @@
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-responsive.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/prettyPhoto.css') }}" />
-<link rel="stylesheet" href="{{ url_for('static', filename='css/custom-styles.css') }}">
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.lightbox-0.5.css') }}">
+ -->
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/flexslider.css') }}" />
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/custom-styles.css') }}">
 
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,15 +29,90 @@
 
 <!-- JS
 ================================================== -->
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
+<!-- Changed to latest to work with Angular ! -->
+<script src="{{ url_for('static', filename='angular/angular.js') }}"></script>
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script> 
 <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
-<script src="{{ url_for('static', filename='js/jquery.prettyPhoto.js') }}"></script>
-<script src="{{ url_for('static', filename='js/jquery.quicksand.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.custom.js') }}"></script>
-</head>
+<script>
+  var myApp = angular.module('ChallengeModule', [], function($interpolateProvider) {
+      $interpolateProvider.startSymbol('[[');
+      $interpolateProvider.endSymbol(']]');
+  });
 
-<body ng-app="FunRunModule" ng-controller="AllFunRunsGetter"> 
+  myApp.controller('ChallengeGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
+    $http.get("http://104.239.139.43:8000/api/challenges/" + {{challengeID}}).success(function(data) {
+      $scope.challenge = data.challenges;
+      // $scope.map_url = $sce.trustAsResourceUrl($scope.run.map_url); 
+      // $scope.video_url = $sce.trustAsResourceUrl($scope.run.video_url);
+      // $scope.fb_url = $sce.trustAsHtml($scope.run.fb_url);
+      $scope.imgs = $scope.challenge.imgs;
+      // console.log($scope.run);
+      // console.log($scope.map_url);
+      // console.log($scope.video_url);
+      console.log($scope.imgs[0]);
+
+    });
+  }]);
+</script>
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+    $("#btn-blog-next").click(function () {
+      $('#blogCarousel').carousel('next')
+    });
+     $("#btn-blog-prev").click(function () {
+      $('#blogCarousel').carousel('prev')
+    });
+
+     $("#btn-client-next").click(function () {
+      $('#clientCarousel').carousel('next')
+    });
+     $("#btn-client-prev").click(function () {
+      $('#clientCarousel').carousel('prev')
+    });
+    
+});
+
+ $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+
+</script>
+
+
+<!-- <div ng-app="ChallengeModule">
+  <div ng-controller="ChallengeGetter">
+        <ul ng-repeat="run in funlist">
+       <li>The ID is [[run.id]]</li>
+       <li>The Name is [[run.name]]</li>
+      </ul>
+  </div>
+</div> -->
+
+
+<body>
+  <!-- Facebook stuff -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  </head>
+  <!-- End FB stuff -->
+
   <div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
     
@@ -46,8 +123,7 @@
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-          <!-- <a href="/"><img src="{{ url_for('static', filename='img/piccolo-logo.png') }}"/></a> -->
-            <h1>Fun Runs 2015: Events</h1>
+            <h1>Fun Run Event: [[challenge.name]]</h1>
         </div>
         
         <!-- Main Navigation
@@ -57,9 +133,9 @@
           
             <ul class="nav">
               <li><a href="/">Home</a></li>
-              <li class="active"><a href="/funruns">Fun Runs</a></li>
+              <li><a href="/funruns">Fun Runs</a></li>
               <li><a href="/themes">Fun Themes</a></li>
-              <li><a href="/challenges">Fun Challenges</a></li>
+              <li class="active"><a href="/challenges">Fun Challenges</a></li>
               <li><a href="/locations">Fun Locations</a></li>
               <li><a href="/about">About</a></li>
             </ul>
@@ -83,78 +159,82 @@
             </form>
             
         </div>
-      
-    </div><!-- End Header -->
+        
+      </div><!-- End Header -->
      
     <!-- Page Content
     ================================================== --> 
-    <div class="row">
+    <div class="row"><!--Container row-->
 
-        <!-- Gallery Items
+    <!-- Title Header -->
+        <div class="span8"><!--Begin page content column-->
+
+        <h2>[[run.name]] &nbsp&nbsp | &nbsp&nbsp [[run.city]]</h2>
+        
+        <!-- Thumbnail Grid
+        ================================================== -->
+        <ul class="thumbnails">
+            <li class="span4"><img ng-src="[[ imgs[0] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+            <li class="span4"><img ng-src="[[ imgs[1] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+            <li class="span8"><img ng-src="[[ imgs[2] ]]" alt="Thumbnail" class="thumbnail" size="width: 100%"/></li>
+        </ul>
+        <p class="lead">[[run.description]]</p>
+
+
+        <!-- Video Section
+        ================================================== -->
+        <h3 class="title-bg">Video For Getting Hyped</h3>
+         <iframe ng-src= "[[video_url]]" style="width: 100%; height: 500px; max-height: 500px; frameborder: 0; border: 0"></iframe>
+
+        </div> <!--End page content column-->
+
+        <!-- Blog Sidebar
         ================================================== --> 
-        <div class="span12 gallery">
+        <div class="span4 sidebar page-sidebar"><!-- Begin sidebar column -->
 
-            <!-- <ul id="filterOptions" class="gallery-cats clearfix">
-                <li class="active"><a href="#" class="all">All</a></li> 
-                <li><a href="#" class="illustration">Illustration</a></li>
-                <li><a href="#" class="design">Design</a></li>
-                <li><a href="#" class="video">Video</a></li>
-                <li><a href="#" class="web">Web</a></li>
-            </ul> -->
+            <!--Address-->
+            <h5 class="title-bg">Address</h5>
+    
+            <pre class="quote-text side">[[run.address]]</pre>
 
-            <div class="row clearfix">
-                <ul class="gallery-post-grid holder">
-                    <!-- Wipeout -->
-                    <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
-                      <a href="/funruns/0">
-                        <span class="gallery-hover-3col hidden-phone hidden-tablet">
-                        </span>
-                        <div style="max-height: 300px; max-width: 370px; overflow: hidden">
-                          <img src="{{ url_for('static', filename='img/landing/funruns/wipeoutLanding.jpg') }}" alt="Gallery">
-                        </div>
-                      </a>
-                      <span class="project-details"><a href="/funruns/0">Wipeout Run</a>5k course<br/>Try out the obstacles from the hit TV show "Wipeout"!</span>
-                    </li>
+            <br/>
 
-                    <!-- Christmas Story -->
-                    <li  class="span4 gallery-item" data-id="id-2" data-type="illustration">
-                      <a href="/funruns/1">
-                        <span class="gallery-hover-3col hidden-phone hidden-tablet">
-                        </span>
-                        <div style="max-height: 300px; max-width: 370px; overflow: hidden">
-                          <img src="{{ url_for('static', filename='img/landing/funruns/christmasStoryRunLanding.jpg') }}" alt="Gallery">
-                        </div>
-                      </a>
-                      <span class="project-details"><a href="/funruns/1">A Christmas Story Run</a>5K/10K course<br/>Experience the classic movie "A Christmas Story" in person.</span>
-                    </li>
+            <!--Map-->
+             <iframe ng-src= "[[map_url]]" style="width: 100%; height: 400px; max-height: 400px; frameborder: 0; border: 0"></iframe>
 
-                    <!-- Dallas Turkey Trot -->
-                    <li  class="span4 gallery-item" data-id="id-3" data-type="illustration">
-                      <a href="/funruns/2">
-                        <span class="gallery-hover-3col hidden-phone hidden-tablet">
-                        </span>
-                        <div style="max-height: 300px; max-width: 370px; overflow: hidden">
-                          <img src="{{ url_for('static', filename='img/landing/funruns/dallasTurkeyTrotLanding.jpg') }}" alt="Gallery">
-                        </div>
-                      </a>
-                      <span class="project-details"><a href="/funruns/2">Dallas Turkey Trot</a>5K/8K course<br/>Run in the largest Thanksgiving Day event of its kind.</span>
-                    </li>
-                </ul>
+            <!--Prices-->
+            <h5 class="title-bg">Prices</h5>
+    
+            <pre class="quote-text side">[[run.price]]</pre>
+
+            <!--Affiliated Orgs-->
+            <h5 class="title-bg">Affiliated Organizations</h5>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#hosts" data-toggle="tab">Hosts</a></li>
+                <li><a href="#sponsors" data-toggle="tab">Sponsors</a></li>
+                <li><a href="#charities" data-toggle="tab">Charities</a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="hosts">
+                    <p> [[run.hosts]]</p>
+                </div>
+                <div class="tab-pane" id="sponsors">
+                    <p> [[run.sponsors]]</p>
+                </div>
+                <div class="tab-pane" id="charities">
+                    <p> [[run.charities]]</p>
+                </div>
             </div>
 
-            <!-- Pagination -->
-<!--         <div class="pagination">
-                <ul>
-                <li class="active"><a href="#">Prev</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">Next</a></li>
-                </ul>
-            </div> -->
+            <!--Facebook-->
+            <h5 class="title-bg">Facebook</h5>
+              <div class="span4">
+                  <div class="fb-like-box" data-href="[[fb_url]]" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
+              </div>
+            
 
-        </div><!-- End gallery list-->
+        </div><!-- End sidebar column -->
 
     </div><!-- End container row -->
     

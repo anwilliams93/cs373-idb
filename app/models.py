@@ -5,8 +5,32 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 db = SQLAlchemy(app)
 
+# --------------------------------
+#many to many, FunRuns to Themes
+# --------------------------------
+funRuns_themes = db.Table('funRuns_themes', 
+    db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
+    db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id')
+)
 
+# ----------------------------------
+#many to many, FunRuns to Challenges
+# ----------------------------------
+funRuns_challanges = db.Table('funRuns_challanges', 
+    db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
+    db.Column('Challenges.id'), db.Integer, db.ForeignKey('Challenges.id')
+)
+
+# ---------------------------------
+#many to many, Themes to Challenges
+# ---------------------------------
+themes_challanges = db.Table('themes_challanges', 
+    db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id'),
+    db.Column('Challenges.id'), db.Integer, db.ForeignKey('Challenges.id')
+)
+# -------------
 #FunRuns Table 
+# -------------
 class FunRuns(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=False)
@@ -42,7 +66,10 @@ class FunRuns(db.Model):
     def __repr__(self):
         return '<Id %r>' % self.id
 
-#Themes table 
+
+# -----------
+#Themes table
+# ----------- 
 class Themes(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=False)
@@ -50,17 +77,18 @@ class Themes(db.Model):
     description = db.Column(db.String(600), unique=False)
     challenges = db.relationship('Challenges', secondary = theams_challanges, backref = db.backref('Themes'))
 
-
     def __init__(self, id, name, address, date):
-		self.id = id
+        self.id = id
         self.name = name
         self.buzzwords = buzzwords
-        self.description = description 
+        self.description = description
 
     def __repr__(self):
         return '<Id %r>' % self.id
 
+# ---------------
 #Challanges table
+# ---------------
 class Challenges(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=False)
@@ -69,7 +97,7 @@ class Challenges(db.Model):
 
 
     def __init__(self, id, name, flavors, description):
-		self.id = id
+        self.id = id
         self.name = name
         self.flavors = flavors
         self.description = description 
@@ -77,7 +105,9 @@ class Challenges(db.Model):
     def __repr__(self):
         return '<Id %r>' % self.id
 
+# -------------
 #Location table
+# -------------
 class Location(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     city = db.Column(db.String(80), unique=False)
@@ -95,7 +125,7 @@ class Location(db.Model):
     fun_runs_id = db.relationship('FunRuns', backref='location',lazy='dynamic')
 
     def __init__(self, id, city, winter_avgTemp, spring_avgTemp, summer_avgTemp, fall_avgTemp, winter_avgHumidity, spring_avgHumidity, summer_avgHumidity, 
-    			fall_avgHumidity, altitude, annual_rainfall, landmarks):
+                fall_avgHumidity, altitude, annual_rainfall, landmarks):
         self.id = id
         self.city = city
         self.winter_avgTemp = winter_avgTemp
@@ -114,20 +144,3 @@ class Location(db.Model):
     def __repr__(self):
         return '<Id %r>' % self.id
 
-#many to many, FunRuns to Themes
-funRuns_themes = db.Table('funRuns_themes', 
-	db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
-	db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id')
-)
-
-#many to many, FunRuns to Challenges
-funRuns_challanges = db.Table('funRuns_challanges', 
-	db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
-	db.Column('Challenges.id'), db.Integer, db.ForeignKey('Challenges.id')
-)
-
-#many to many, Themes to Challenges
-themes_challanges = db.Table('themes_challanges', 
-	db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id'),
-	db.Column('Challenges.id'), db.Integer, db.ForeignKey('Challenges.id')
-	)

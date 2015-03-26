@@ -1,45 +1,56 @@
-{
-    'id':                   1,
-    'location':      	      u'Baltimore, Maryland',
-    'winter_avgTemp':       u'45',
-    'spring_avgTemp':       u'65',
-    'summer_avgTemp':       u'87',
-    'fall_avgTemp':         u'69',
-    'winter_avgHumidity':   u'63%',
-    'spring_avgHumidity':   u'61%',
-    'summer_avgHumidity':   u'69%',
-    'fall_avgHumidity':     u'69%',
-    'altitude':             u'33ft',
-    'annual_rainfall':      u'40.72in',
-    'landmarks':            u'National Aquarium in Baltimore, Fort McHenry'
-}
-{
-    'id':                   2,
-    'location':      	      u'Dallas, Texas',
-    'winter_avgTemp':	      u'59',
-    'spring_avgTemp':       u'77',
-    'summer_avgTemp':       u'95',
-    'fall_avgTemp':         u'78',
-    'winter_avgHumidity':   u'52%',
-    'spring_avgHumidity':   u'49%',
-    'summer_avgHumidity':   u'44%',
-    'fall_avgHumidity':     u'47%',
-    'altitude':             u'430ft',
-    'annual_rainfall':      u'40.55in',
-    'landmarks':            u'Sixth Floor Museum at Dealey Plaza, Dallas World Aquarium'
-}
-{
-    'id':                   3,
-    'location':             u'Cleveland, Ohio',
-    'winter_avgTemp':       u'37',
-    'spring_avgTemp':       u'58',
-    'summer_avgTemp':       u'81',
-    'fall_avgTemp':         u'72',
-    'winter_avgHumidity':   u'71%',
-    'spring_avgHumidity':   u'59%',
-    'summer_avgHumidity':   u'55%',
-    'fall_avgHumidity':     u'58%',
-    'altitude':             u'653ft',
-    'annual_rainfall':      u'39.12in',
-    'landmarks':            u'Rock and Roll Hall of Fame, Cleveland Metroparks Zoo'
-}
+[
+    {
+        'id':                   1,
+        'name':                 u'Baltimore, Maryland',
+        'spring_avgTemp':       65,
+        'summer_avgTemp':       87,
+        'fall_avgTemp':         69,
+        'winter_avgTemp':       45,
+        'spring_avgHumidity':   61,
+        'summer_avgHumidity':   69,
+        'fall_avgHumidity':     69,
+        'winter_avgHumidity':   63,
+        'altitude':             33,
+        'annual_rainfall':      41,
+        'landmarks':            [
+                                    u'National Aquarium in Baltimore',
+                                    u'Fort McHenry'
+                                ]
+    },
+    {
+        'id':                   2,
+        'name':                 u'Dallas, Texas',
+        'spring_avgTemp':       77,
+        'summer_avgTemp':       95,
+        'fall_avgTemp':         78,
+        'winter_avgTemp':       59,
+        'spring_avgHumidity':   49,
+        'summer_avgHumidity':   44,
+        'fall_avgHumidity':     47,
+        'winter_avgHumidity':   52,
+        'altitude':             430,
+        'annual_rainfall':      41,
+        'landmarks':            [
+                                    u'Sixth Floor Museum at Dealey Plaza',
+                                    u'Dallas World Aquarium'
+                                ]
+    },
+    {
+        'id':                   3,
+        'name':                 u'Cleveland, Ohio',
+        'spring_avgTemp':       58,
+        'summer_avgTemp':       81,
+        'fall_avgTemp':         72,
+        'winter_avgTemp':       37,
+        'spring_avgHumidity':   59,
+        'summer_avgHumidity':   55,
+        'fall_avgHumidity':     58,
+        'winter_avgHumidity':   71,
+        'altitude':             653,
+        'annual_rainfall':      39,
+        'landmarks':            [
+                                    u'Rock and Roll Hall of Fame',
+                                    u'Cleveland Metroparks Zoo'
+                                ]
+    }
+]
