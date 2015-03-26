@@ -1,5 +1,5 @@
 from flask import Request
-import api_helpers.py
+import api_helpers
 
 
 '''
