@@ -1,4 +1,4 @@
-from flask import Request
+from flask import Request, jsonify
 import api_helpers
 from funruns import app 
 
