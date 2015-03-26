@@ -1,6 +1,5 @@
 from flask import Request, jsonify, Blueprint
 import api_helpers
-from funruns import app
 
 runs_api = Blueprint('runs_api', __name__, url_prefix='/api')
 
