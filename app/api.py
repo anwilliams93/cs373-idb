@@ -43,7 +43,7 @@ def get_funruns():
 def get_run_by_id(id):
     print "Help"
     funruns = api_helpers.retrieve_funruns()
-    return jsonify({'run': funruns[id]})
+    return jsonify({'funrun': funruns[id]})
 
 @funruns_api.route('/funruns/<int:id>/themes/', methods = ['GET'])
 def get_run_themes(id):
