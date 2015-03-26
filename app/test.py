@@ -9,7 +9,7 @@ class ApiTestCase(unittest.TestCase):
         self.db_fd, api.app.config['DATABASE'] = tempfile.mkstemp()
         api.app.config['TESTING'] = True
         self.app = api.app.test_client()
-        api.init_db()
+        #api.init_db()
 
     def tearDown(self):
         os.close(self.db_fd)
