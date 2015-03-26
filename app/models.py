@@ -6,7 +6,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 db = SQLAlchemy(app)
 
 # --------------------------------
-#many to many, FunRuns to Themes
+#many to many table, FunRuns to Themes
 # --------------------------------
 funRuns_themes = db.Table('funRuns_themes', 
     db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
@@ -14,7 +14,7 @@ funRuns_themes = db.Table('funRuns_themes',
 )
 
 # ----------------------------------
-#many to many, FunRuns to Challenges
+#many to many table, FunRuns to Challenges
 # ----------------------------------
 funRuns_challanges = db.Table('funRuns_challanges', 
     db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
@@ -22,7 +22,7 @@ funRuns_challanges = db.Table('funRuns_challanges',
 )
 
 # ---------------------------------
-#many to many, Themes to Challenges
+#many to many table, Themes to Challenges
 # ---------------------------------
 themes_challanges = db.Table('themes_challanges', 
     db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id'),
