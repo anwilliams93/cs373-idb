@@ -49,6 +49,7 @@
       // $scope.video_url = $sce.trustAsResourceUrl($scope.run.video_url);
       // $scope.fb_url = $sce.trustAsHtml($scope.run.fb_url);
       $scope.imgs = $scope.theme.imgs;
+      $scope.runs = $scope.theme.runs;
       console.log($scope.theme);
       // console.log($scope.map_url);
       // console.log($scope.video_url);
@@ -189,7 +190,15 @@ $(document).ready(function () {
         </div> <!--End page content column-->
 
         <!-- Blog Sidebar
-        ================================================== --> 
+        ================================================== -->
+
+        <div class="span4 sidebar page-sidebar">
+            <h5 class="title-bg">Related Runs</h5>
+            <pre class="quote-text side">[[ runs[0] ]]</pre>
+
+            <br/>
+        </div>
+        
         <div class="span8 sidebar page-sidebar"><!-- Begin sidebar column -->
           <h5 class="title-bg">More Pictures
           <button id="btn-blog-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
