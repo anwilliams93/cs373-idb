@@ -6,6 +6,24 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 db = SQLAlchemy(app)
 
 
+#many to many, FunRuns to Themes
+funRuns_themes = db.Table('funRuns_themes', 
+	db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
+	db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id')
+)
+
+#many to many, FunRuns to Challenges
+funRuns_challanges = db.Table('funRuns_challanges', 
+	db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
+	db.Column('Challenges.id'), db.Integer, db.ForeignKey('Challenges.id')
+)
+
+#many to many, Themes to Challenges
+themes_challanges = db.Table('themes_challanges', 
+	db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id'),
+	db.Column('Challenges.id'), db.Integer, db.ForeignKey('Challenges.id')
+)
+
 #FunRuns Table 
 class FunRuns(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -113,20 +131,3 @@ class Location(db.Model):
     def __repr__(self):
         return '<Id %r>' % self.id
 
-#many to many, FunRuns to Themes
-funRuns_themes = db.Table('funRuns_themes', 
-	db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
-	db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id')
-)
-
-#many to many, FunRuns to Challenges
-funRuns_challanges = db.Table('funRuns_challanges', 
-	db.Column('FunRuns.id'), db.Integer, db.ForeignKey('FunRuns.id'),
-	db.Column('Challenges.id'), db.Integer, db.ForeignKey('Challenges.id')
-)
-
-#many to many, Themes to Challenges
-themes_challanges = db.Table('themes_challanges', 
-	db.Column('Themes.id'), db.Integer, db.ForeignKey('Themes.id'),
-	db.Column('Challenges.id'), db.Integer, db.ForeignKey('Challenges.id')
-	)
