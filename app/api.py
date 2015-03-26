@@ -1,6 +1,11 @@
 from flask import Request
 import api_helpers.py
 
+
+'''
+ASSUME THAT ALL PARAMETERS EXCEPT MIN and MAX CAN BE USED ANY NUMBER OF TIMES
+'''
+
 # Root Section of API
 
 @app.route('/api', methods = ['GET'])
@@ -14,7 +19,7 @@ run_query_parameters = {'theme', 'challenge', 'location', 'min_price', 'max_pric
 def get_runs():
 	filtered_params = filter_query_parameters(run_query_parameters, request.args)
 	
-	# Assuming runs is the entire list of runs
+	# ASSUMING RUNS IS THE ENTIRE LIST OF RUNS
 	filtered_runs = runs
 
 	# THIS NEEDS TO BE CHANGED TO BE MORE GENERIC AND REUSABLE
@@ -52,6 +57,8 @@ def get_run_challenges(id):
 
 # Theme Section of API
 
+theme_query_parameters = {'run', 'challenge', 'name', 'buzzword'}
+
 @app.route('/api/themes', methods = ['GET'])
 def get_themes():
 	request.args
@@ -68,6 +75,8 @@ def get_theme_runs(id):
 def get_theme_challenges(id):
 
 # Challenge Section of API
+
+challenge_query_parameters = {'run', 'theme', 'name'}
 
 @app.route('/api/challenges', methods = ['GET'])
 def get_runs():
