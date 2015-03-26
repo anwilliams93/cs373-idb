@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 from flask import Flask, render_template, jsonify, url_for, redirect
 from api import runs_api
 
@@ -102,10 +100,10 @@ funruns = [
         'themes':       [
                             1
                         ],
-        'challenges':   [
+        'challenges:'   [
                             0
                         ]
-    },
+    },  
     {
         'id':           1,
         'name':         u'A Christmas Story Run',
@@ -184,7 +182,12 @@ themes = [
         'imgs':         [
                             u'/static/img/themeTempl/holiday1.jpg',
                             u'/static/img/themeTempl/holiday2.jpg',
-                            u'/static/img/themeTempl/holiday3.jpg'
+                            u'/static/img/themeTempl/holiday3.jpg',
+                            u'/static/img/themeTempl/holiday4.jpg',
+                            u'/static/img/themeTempl/holiday5.jpg',
+                            u'/static/img/themeTempl/holiday6.jpg',
+                            u'/static/img/themeTempl/holiday7.jpg',
+                            u'/static/img/themeTempl/holiday8.jpg'
                         ],
         'runs':         [
                             1
@@ -202,7 +205,12 @@ themes = [
         'imgs':         [
                             u'/static/img/themeTempl/intense1.jpg',
                             u'/static/img/themeTempl/intense2.jpg',
-                            u'/static/img/themeTempl/intense3.jpg'
+                            u'/static/img/themeTempl/intense3.jpg',
+                            u'/static/img/themeTempl/intense4.jpg',
+                            u'/static/img/themeTempl/intense5.jpg',
+                            u'/static/img/themeTempl/intense6.jpg',
+                            u'/static/img/themeTempl/intense7.jpg',
+                            u'/static/img/themeTempl/intense8.jpg'
                         ],
         'runs':         [
                             0
@@ -220,7 +228,12 @@ themes = [
         'imgs':         [
                             u'/static/img/themeTempl/costume1.jpg',
                             u'/static/img/themeTempl/costume2.jpg',
-                            u'/static/img/themeTempl/costume3.jpg'
+                            u'/static/img/themeTempl/costume3.jpg',
+                            u'/static/img/themeTempl/costume4.jpg',
+                            u'/static/img/themeTempl/costume5.jpg',
+                            u'/static/img/themeTempl/costume6.jpg',
+                            u'/static/img/themeTempl/costume7.jpg',
+                            u'/static/img/themeTempl/costume8.jpg'
                         ],
         'runs':         [
                             2
