@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify, url_for, redirect
 app = Flask(__name__)
+from api import get_*
 
 ### PAGES ###
 
