@@ -71,6 +71,7 @@ def get_theme_by_id(id):
 @app.route('/api/themes/<int:id>/runs', methods = ['GET'])
 def get_theme_runs(id):
 
+
 @app.route('/api/themes/<int:id>/challenges', methods = ['GET'])
 def get_theme_challenges(id):
 
@@ -91,3 +92,4 @@ def get_challenge_runs(id):
 
 @app.route('/api/challenges/<int:id>/themes', methods = ['GET'])
 def get_challenge_themes(id):
+	
