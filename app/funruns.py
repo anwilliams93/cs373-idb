@@ -1,9 +1,9 @@
 from flask import Flask, render_template, jsonify, url_for, redirect
-from api import runs_api
+from api import funruns_api
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
-app.register_blueprint(runs_api)
+app.register_blueprint(funruns_api)
 
 ### PAGES ###
 
@@ -189,7 +189,7 @@ themes = [
                             u'/static/img/themeTempl/holiday7.jpg',
                             u'/static/img/themeTempl/holiday8.jpg'
                         ],
-        'runs':         [
+        'funruns':         [
                             1
                         ],
         'challenges':   [
@@ -212,7 +212,7 @@ themes = [
                             u'/static/img/themeTempl/intense7.jpg',
                             u'/static/img/themeTempl/intense8.jpg'
                         ],
-        'runs':         [
+        'funruns':         [
                             0
                         ],
         'challenges':   [
@@ -235,7 +235,7 @@ themes = [
                             u'/static/img/themeTempl/costume7.jpg',
                             u'/static/img/themeTempl/costume8.jpg'
                         ],
-        'runs':         [
+        'funruns':         [
                             2
                         ],
         'challenges':   [
@@ -256,7 +256,7 @@ challenges = [
                             u'/static/img/challengeTempl/oddGround2.jpg',
                             u'/static/img/challengeTempl/oddGround3.jpg'
                         ],
-        'runs':         [
+        'funruns':         [
                             0
                         ],
         'themes':       [
@@ -275,7 +275,7 @@ challenges = [
                             u'/static/img/challengeTempl/costume2.jpg',
                             u'/static/img/challengeTempl/costume3.jpg'
                         ],
-        'runs':         [
+        'funruns':         [
                             2
                         ],
         'themes':       [
@@ -293,7 +293,7 @@ challenges = [
                             u'/static/img/challengeTempl/cold2.jpg',
                             u'/static/img/challengeTempl/cold3.jpg'
                         ],
-        'runs':         [
+        'funruns':         [
                             2
                         ],
         'themes':       [
