@@ -1,6 +1,9 @@
 from flask import Flask, render_template, jsonify, url_for, redirect
+import api import runs_api
+
 app = Flask(__name__)
-import api
+
+app.register_blueprint(runs_api)
 
 ### PAGES ###
 
