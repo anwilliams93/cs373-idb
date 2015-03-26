@@ -45,6 +45,12 @@ def retrieve_runs():
 			                            u'/static/img/runTempl/wipeout1.jpg',
 			                            u'/static/img/runTempl/wipeout2.jpg',
 			                            u'/static/img/runTempl/wipeout3.jpg'
+			                        ],
+			        'themes':       [
+			                            1
+			                        ],
+			        'challenges:'   [
+			                            0
 			                        ]
 			    },  
 			    {
@@ -58,7 +64,7 @@ def retrieve_runs():
 			        'hosts':        u'A Christmas Story House & Museum',
 			        'sponsors':     u'Ovaltine, Renaissance HOtels, Dannon, Walmart, McDonalds, The Home Depot',
 			        'charities':    u'A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects',
-			        'description':	u'BLAH',#u'The movie producers must have been runners, because the distance between the former Higbee\'s Department Store and the A Christmas Story House & Museum is about 5K. Ralphie’s dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940\'s. To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.',
+			        'description':  u'BLAH',
 			        'quotes':       [
 			                            u'I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.',
 			                            u'Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.',
@@ -72,6 +78,12 @@ def retrieve_runs():
 			                            u'/static/img/runTempl/christmasstory1.jpg',
 			                            u'/static/img/runTempl/christmasstory2.jpg',
 			                            u'/static/img/runTempl/christmasstory3.jpg'
+			                        ],
+			        'themes':       [
+			                            0
+			                        ],
+			        'challenges':   [
+			                            
 			                        ]
 			    },
 			    {
@@ -99,6 +111,13 @@ def retrieve_runs():
 			                            u'/static/img/runTempl/dallasturkey1.jpg',
 			                            u'/static/img/runTempl/dallasturkey2.jpg',
 			                            u'/static/img/runTempl/dallasturkey3.jpg'
+			                        ],
+			        'themes':       [
+			                            2
+			                        ],
+			        'challenges':   [
+			                            1,
+			                            2
 			                        ]
 			    }
 			]
@@ -115,6 +134,13 @@ def retireve_themes():
 			                            u'/static/img/themeTempl/holiday1.jpg',
 			                            u'/static/img/themeTempl/holiday2.jpg',
 			                            u'/static/img/themeTempl/holiday3.jpg'
+			                        ],
+			        'runs':         [
+			                            1
+			                        ],
+			        'challenges':   [
+			                            0,
+			                            2
 			                        ]
 			    },
 			    {
@@ -126,6 +152,13 @@ def retireve_themes():
 			                            u'/static/img/themeTempl/intense1.jpg',
 			                            u'/static/img/themeTempl/intense2.jpg',
 			                            u'/static/img/themeTempl/intense3.jpg'
+			                        ],
+			        'runs':         [
+			                            0
+			                        ],
+			        'challenges':   [
+			                            0,
+			                            2
 			                        ]
 			    },
 			    {
@@ -137,6 +170,12 @@ def retireve_themes():
 			                            u'/static/img/themeTempl/costume1.jpg',
 			                            u'/static/img/themeTempl/costume2.jpg',
 			                            u'/static/img/themeTempl/costume3.jpg'
+			                        ],
+			        'runs':         [
+			                            2
+			                        ],
+			        'challenges':   [
+			                            1
 			                        ]
 			    }
 			]
@@ -151,9 +190,16 @@ def retrieve_challenges():
 				        'flavors':      u'Ice, Inflatable Balls, Mud',
 				        'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/oddGround1.jpg',
+				                            u'/static/img/challengeTempl/oddGround2.jpg',
+				                            u'/static/img/challengeTempl/oddGround3.jpg'
+				                        ],
+				        'runs':         [
+				                            0
+				                        ],
+				        'themes':       [
+				                            1,
+				                            0
 				                        ]
 				    },
 				    {
@@ -166,6 +212,12 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/costume1.jpg',
 				                            u'/static/img/challengeTempl/costume2.jpg',
 				                            u'/static/img/challengeTempl/costume3.jpg'
+				                        ],
+				        'runs':         [
+				                            2
+				                        ],
+				        'themes':       [
+				                            2
 				                        ]
 				    },
 				    {
@@ -175,9 +227,16 @@ def retrieve_challenges():
 				        'flavors':      u'Snow, Ice, Freezing Temperatures',
 				        'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/oddGround1.jpg',
-				                            u'/static/img/challengeTempl/oddGround2.jpg',
-				                            u'/static/img/challengeTempl/oddGround3.jpg'
+				                             u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'runs':         [
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
 				                        ]
 				    }
 				]

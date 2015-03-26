@@ -96,6 +96,12 @@ funruns = [
                             u'/static/img/runTempl/wipeout1.jpg',
                             u'/static/img/runTempl/wipeout2.jpg',
                             u'/static/img/runTempl/wipeout3.jpg'
+                        ],
+        'themes':       [
+                            1
+                        ],
+        'challenges:'   [
+                            0
                         ]
     },  
     {
@@ -123,6 +129,12 @@ funruns = [
                             u'/static/img/runTempl/christmasstory1.jpg',
                             u'/static/img/runTempl/christmasstory2.jpg',
                             u'/static/img/runTempl/christmasstory3.jpg'
+                        ],
+        'themes':       [
+                            0
+                        ],
+        'challenges':   [
+                            
                         ]
     },
     {
@@ -150,6 +162,13 @@ funruns = [
                             u'/static/img/runTempl/dallasturkey1.jpg',
                             u'/static/img/runTempl/dallasturkey2.jpg',
                             u'/static/img/runTempl/dallasturkey3.jpg'
+                        ],
+        'themes':       [
+                            2
+                        ],
+        'challenges':   [
+                            1,
+                            2
                         ]
     }
 ]
@@ -165,7 +184,13 @@ themes = [
                             u'/static/img/themeTempl/holiday2.jpg',
                             u'/static/img/themeTempl/holiday3.jpg'
                         ],
-        'relatedruns': u'1'
+        'runs':         [
+                            1
+                        ],
+        'challenges':   [
+                            0,
+                            2
+                        ]
     },
     {
         'id':           1,
@@ -177,7 +202,13 @@ themes = [
                             u'/static/img/themeTempl/intense2.jpg',
                             u'/static/img/themeTempl/intense3.jpg'
                         ],
-        'relatedruns': u'0'
+        'runs':         [
+                            0
+                        ],
+        'challenges':   [
+                            0,
+                            2
+                        ]
     },
     {
         'id':           2,
@@ -189,7 +220,12 @@ themes = [
                             u'/static/img/themeTempl/costume2.jpg',
                             u'/static/img/themeTempl/costume3.jpg'
                         ],
-        'relatedruns': u'2'
+        'runs':         [
+                            2
+                        ],
+        'challenges':   [
+                            1
+                        ]
     }
 ]
 
@@ -205,7 +241,13 @@ challenges = [
                             u'/static/img/challengeTempl/oddGround2.jpg',
                             u'/static/img/challengeTempl/oddGround3.jpg'
                         ],
-        'relatedruns': u'0'
+        'runs':         [
+                            0
+                        ],
+        'themes':       [
+                            1,
+                            0
+                        ]
     },
     {
         'id':           1,
@@ -218,7 +260,12 @@ challenges = [
                             u'/static/img/challengeTempl/costume2.jpg',
                             u'/static/img/challengeTempl/costume3.jpg'
                         ],
-        'relatedruns': u'2'
+        'runs':         [
+                            2
+                        ],
+        'themes':       [
+                            2
+                        ]
     },
     {
         'id':           2,
@@ -231,7 +278,13 @@ challenges = [
                             u'/static/img/challengeTempl/cold2.jpg',
                             u'/static/img/challengeTempl/cold3.jpg'
                         ],
-        'relatedruns': u'2'
+        'runs':         [
+                            2
+                        ],
+        'themes':       [
+                            0,
+                            1
+                        ]
     }
 ]
 
