@@ -127,13 +127,18 @@ def retrieve_themes():
 	themes = [
 			    {
 			        'id':           0,
-			        'name':         u'Holiday',
+			        'name':         u'Holiday', 
 			        'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
-			        'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.',
+			        'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\'re a sure way of making any holiday a memorable one.',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/holiday1.jpg',
 			                            u'/static/img/themeTempl/holiday2.jpg',
-			                            u'/static/img/themeTempl/holiday3.jpg'
+			                            u'/static/img/themeTempl/holiday3.jpg',
+			                            u'/static/img/themeTempl/holiday4.jpg',
+			                            u'/static/img/themeTempl/holiday5.jpg',
+			                            u'/static/img/themeTempl/holiday6.jpg',
+			                            u'/static/img/themeTempl/holiday7.jpg',
+			                            u'/static/img/themeTempl/holiday8.jpg'
 			                        ],
 			        'funruns':         [
 			                            1
@@ -151,7 +156,12 @@ def retrieve_themes():
 			        'imgs':         [
 			                            u'/static/img/themeTempl/intense1.jpg',
 			                            u'/static/img/themeTempl/intense2.jpg',
-			                            u'/static/img/themeTempl/intense3.jpg'
+			                            u'/static/img/themeTempl/intense3.jpg',
+			                            u'/static/img/themeTempl/intense4.jpg',
+			                            u'/static/img/themeTempl/intense5.jpg',
+			                            u'/static/img/themeTempl/intense6.jpg',
+			                            u'/static/img/themeTempl/intense7.jpg',
+			                            u'/static/img/themeTempl/intense8.jpg'
 			                        ],
 			        'funruns':         [
 			                            0
@@ -169,7 +179,12 @@ def retrieve_themes():
 			        'imgs':         [
 			                            u'/static/img/themeTempl/costume1.jpg',
 			                            u'/static/img/themeTempl/costume2.jpg',
-			                            u'/static/img/themeTempl/costume3.jpg'
+			                            u'/static/img/themeTempl/costume3.jpg',
+			                            u'/static/img/themeTempl/costume4.jpg',
+			                            u'/static/img/themeTempl/costume5.jpg',
+			                            u'/static/img/themeTempl/costume6.jpg',
+			                            u'/static/img/themeTempl/costume7.jpg',
+			                            u'/static/img/themeTempl/costume8.jpg'
 			                        ],
 			        'funruns':         [
 			                            2
