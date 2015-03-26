@@ -31,7 +31,7 @@ def get_runs():
 	# THIS NEEDS TO BE CHANGED TO BE MORE GENERIC AND REUSABLE
 	for k in filtered_params:
 		if k == 'theme' or k == 'challenge' or k == 'location':
-			filtered_runs = api_helpers.select(runs, (lambda e : p in e[k + str('s')] for p in filtered_params[k + str('s')]))
+			filtered_runs = api_helpers.select(runs, (lambda e : p in e[k + str('s')] for p in filtered_params[k]))
 		elif k == 'min_price' or k == 'min_length':
 			filtered_runs = api_helpers.select(runs, lambda e : filtered_params[k] <= e[k])
 		elif k == 'max_price' or k == 'max_length':
@@ -41,7 +41,8 @@ def get_runs():
 
 @runs_api.route('/runs/<int:id>/', methods = ['GET'])
 def get_run_by_id(id):
-    runs = api_helpers.api_helpers.retrieve_runs()
+    print "Help"
+    runs = api_helpers.retrieve_runs()
     return jsonify({'run': runs[id]})
 
 @runs_api.route('/runs/<int:id>/themes/', methods = ['GET'])
@@ -51,7 +52,7 @@ def get_run_themes(id):
 	runs = api_helpers.retrieve_runs()
 	themes = api_helpers.retrieve_themes()
 	chosen_themes = []
-	for i in runs[id][theme]:
+	for i in runs[id]['themes']:
 		chosen_themes += [themes[i]]
 	return jsonify({'themes': chosen_themes})
 
@@ -62,7 +63,8 @@ def get_run_challenges(id):
 	runs = api_helpers.retrieve_runs()
 	challenges = api_helpers.retrieve_challenges()
 	chosen_challenges = []
-	for i in runs[id][challenge]:
+	for i in runs[id]['challenges']:
+		print str(i)
 		chosen_challenges += [challenges[i]]
 	return jsonify({'challenges': chosen_challenges})
 
