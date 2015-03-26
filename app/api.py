@@ -13,7 +13,7 @@ def get_entry_points():
 
 # Run Section of API
 
-run_query_parameters = {'theme', 'challenge', 'location', 'min_price', 'max_price', 'min_length', 'max_length'}
+	run_query_parameters = {'theme', 'challenge', 'location', 'min_price', 'max_price', 'min_length', 'max_length'}
 
 @app.route('/api/runs', methods = ['GET'])
 def get_runs():
