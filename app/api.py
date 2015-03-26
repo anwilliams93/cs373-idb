@@ -101,10 +101,10 @@ def get_theme_runs(id):
 	# ASSUMING THEMES IS THE LIST OF THEMES
 	funruns = api_helpers.retrieve_funruns()
 	themes = api_helpers.retrieve_themes()
-	funruns = []
+	chosen_funruns = []
 	for i in themes[id]['funruns']:
-		funruns += [funruns[i]]
-	return jsonify({'themes': funruns})
+		chosen_funruns += [funruns[i]]
+	return jsonify({'themes': chosen_funruns})
 
 @funruns_api.route('/themes/<int:id>/challenges', methods = ['GET'])
 def get_theme_challenges(id):
