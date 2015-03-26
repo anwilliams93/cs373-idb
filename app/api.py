@@ -51,7 +51,7 @@ def get_run_challenges(id):
 	# ASSUMING CHALLENGES IS THE ENTIRE LIST OF CHALLENGES
 	# ASSUMING RUNS IS THE ENTIRE LIST OF RUNS
 	chosen_challenges = []
-	for i in runs[challenge]:
+	for i in runs[id][challenge]:
 		chosen_challenges += [challenges[i]]
 	return jsonify({'challenges': chosen_challenges})
 
