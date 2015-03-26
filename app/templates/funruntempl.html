@@ -48,12 +48,27 @@
       $scope.video_url = $sce.trustAsResourceUrl($scope.run.video_url);
       $scope.fb_url = $sce.trustAsHtml($scope.run.fb_url);
       $scope.imgs = $scope.run.imgs;
-      console.log($scope.run);
-      console.log($scope.map_url);
-      console.log($scope.video_url);
-      console.log($scope.imgs[0]);
+
+      $scope.themesIDs = $scope.run.themes;
+      $scope.challengesIDs = $scope.run.challenges;
+      // console.log($scope.run);
+      // console.log($scope.map_url);
+      // console.log($scope.video_url);
+      // console.log($scope.imgs[0]);
+      console.log($scope.themesIDs);
 
     });
+    $http.get("http://104.239.139.43:8000/api/challenges").success(function(data) {
+      $scope.challenges = data.challenges;
+      console.log($scope.challenges);
+
+    });
+    $http.get("http://104.239.139.43:8000/api/themes").success(function(data) {
+      $scope.themes = data.themes;
+      console.log($scope.themes);
+
+    });
+
   }]);
 </script>
 
@@ -191,6 +206,20 @@ $(document).ready(function () {
         <!-- Blog Sidebar
         ================================================== --> 
         <div class="span4 sidebar page-sidebar"><!-- Begin sidebar column -->
+
+          <!--Related Runs-->
+          <h5 class="title-bg">Related Themes</h5>
+          <div ng-repeat="tidx in themesIDs">
+            <a ng-href="http://104.239.139.43:8000/themes/[[ themes[tidx].id ]]">
+              <p class="quote-text side">[[ themes[tidx].name ]]</p>
+            </a>
+          </div>
+          <h5 class="title-bg">Related Challenges</h5>
+          <div ng-repeat="cidx in challengesIDs">
+            <a ng-href="http://104.239.139.43:8000/challenges/[[ challenges[cidx].id ]]">
+              <p class="quote-text side">[[ challenges[cidx].name ]]</p>
+            </a>
+          </div>
 
             <!--Address-->
             <h5 class="title-bg">Address</h5>
