@@ -75,8 +75,7 @@ def get_theme_runs(id):
 def get_theme_challenges(id):
 
 # Challenge Section of API
-
-challenge_query_parameters = {'run', 'theme', 'name'}
+	challenge_query_parameters = {'run', 'theme', 'name'}
 
 @app.route('/api/challenges', methods = ['GET'])
 def get_runs():
