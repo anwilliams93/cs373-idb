@@ -1,4 +1,4 @@
-from flask import Request, jsonify, Blueprint
+from flask import request, jsonify, Blueprint
 import api_helpers
 
 runs_api = Blueprint('runs_api', __name__, url_prefix='/api')
