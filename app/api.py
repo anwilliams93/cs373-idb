@@ -31,7 +31,7 @@ def get_runs():
 		elif k == 'max_price' or k == 'max_length':
 			filtered_runs = select(runs, lambda e : e[k] <= filtered_params[k])
 
-    return jsonify({'runs': filtered_runs})
+	return jsonify({'runs': filtered_runs})
 
 @app.route('/api/runs/<int:id>', methods = ['GET'])
 def get_run_by_id(id):
