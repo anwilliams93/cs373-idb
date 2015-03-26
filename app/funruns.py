@@ -115,7 +115,7 @@ funruns = [
         'hosts':        u'A Christmas Story House & Museum',
         'sponsors':     u'Ovaltine, Renaissance HOtels, Dannon, Walmart, McDonalds, The Home Depot',
         'charities':    u'A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects',
-        'description':  u'This holiday season, why not take a run down movie memory lane? Register for either a 5K or 10K that takes participants through A Christmas Story\’s set locations in picturesque Cleveland, OH.',
+        'description':  u'This holiday season, why not take a run down movie memory lane? Register for either a 5K or 10K that takes participants through A Christmas Story\'s set locations in picturesque Cleveland, OH.',
         'quotes':       [
                             u'I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.',
                             u'Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.',
