@@ -129,7 +129,7 @@ def get_challenges():
 	challenges = api_helpers.retrieve_challenges()
 
 	filtered_challenges = challenges
-	
+
 	# THIS NEEDS TO BE CHANGED TO BE MORE GENERIC AND REUSABLE
 	# for k in filtered_params:
 	# 	if k == 'theme' or k == 'challenge' or k == 'location':
@@ -140,12 +140,12 @@ def get_challenges():
 	# 		filtered_challenges = api_helpers.select(challenges, lambda e : e[k] <= filtered_params[k])
 	return jsonify({'challenges': filtered_challenges})
 
-@funruns.route('/challenges/<int:id>', methods = ['GET'])
+@funruns_api.route('/challenges/<int:id>', methods = ['GET'])
 def get_challenge_by_id(id):
 	challenges = api_helpers.retrieve_challenges()
 	return jsonify({'challenges': challenges[id]})
 
-@funruns.route('/api/challenges/<int:id>/runs', methods = ['GET'])
+@funruns_api.route('/api/challenges/<int:id>/runs', methods = ['GET'])
 def get_challenge_runs(id):
 	# ASSUMING THEMES IS THE LIST OF THEMES
 	# ASSUMING FUNRUNS IS THE ENTIRE LIST OF FUNRUNS
@@ -156,7 +156,7 @@ def get_challenge_runs(id):
 		chosen_funruns += [funruns[i]]
 	return jsonify({'funruns': chosen_funruns})
 
-@funruns.route('/api/challenges/<int:id>/themes', methods = ['GET'])
+@funruns_api.route('/api/challenges/<int:id>/themes', methods = ['GET'])
 def get_challenge_themes(id):
 	# ASSUMING CHALLENGES IS THE ENTIRE LIST OF CHALLENGES
 	# ASSUMING FUNRUNS IS THE ENTIRE LIST OF FUNRUNS
