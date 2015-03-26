@@ -104,7 +104,7 @@ class TestAPI (TestCase) :
 												                            0
 												                        ],
 												        'challenges':   [
-												                            
+												                            2
 												                        ]
 												    },
 												    {
@@ -213,7 +213,7 @@ class TestAPI (TestCase) :
 												                            0
 												                        ],
 												        'challenges':   [
-												                            
+												                            2
 												                        ]
 												    },
 												    {
@@ -369,7 +369,7 @@ class TestAPI (TestCase) :
 												                            0
 												                        ],
 												        'challenges':   [
-												                            
+												                            2
 												                        ]
 												    }
 							    	}))
@@ -538,7 +538,26 @@ class TestAPI (TestCase) :
 		url = server_address + '/api/funruns/1/challenges/'
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
-		expected = 	json.loads(json.dumps({'challenges': []
+		expected = 	json.loads(json.dumps({'challenges': [{
+													        'id':           2,
+													        'name':         u'Running In Cold Weather',
+													        'difficulty':   80,
+													        'flavors':      u'Snow, Ice, Freezing Temperatures',
+													        'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?',
+													        'imgs':         [
+													                             u'/static/img/challengeTempl/cold1.jpg',
+													                            u'/static/img/challengeTempl/cold2.jpg',
+													                            u'/static/img/challengeTempl/cold3.jpg'
+													                        ],
+													        'funruns':         [
+													        					1,
+													                            2
+													                        ],
+													        'themes':       [
+													                            0,
+													                            1
+													                        ]
+													    }]
 							    	}))
 		self.assertEqual(response_object, expected)
 
@@ -577,6 +596,7 @@ class TestAPI (TestCase) :
 													                            u'/static/img/challengeTempl/cold3.jpg'
 													                        ],
 													        'funruns':         [
+													                            1,
 													                            2
 													                        ],
 													        'themes':       [
@@ -927,7 +947,7 @@ class TestAPI (TestCase) :
 												                            0
 												                        ],
 												        'challenges':   [
-												                            
+												                            2
 												                        ]
 												    }]
 							    	}))
@@ -1050,6 +1070,7 @@ class TestAPI (TestCase) :
 														                            u'/static/img/challengeTempl/cold3.jpg'
 														                        ],
 														        'funruns':         [
+														                            1,
 														                            2
 														                        ],
 														        'themes':       [
@@ -1097,6 +1118,7 @@ class TestAPI (TestCase) :
 														                            u'/static/img/challengeTempl/cold3.jpg'
 														                        ],
 														        'funruns':         [
+														        					1,
 														                            2
 														                        ],
 														        'themes':       [
@@ -1144,6 +1166,7 @@ class TestAPI (TestCase) :
 														                            u'/static/img/challengeTempl/cold3.jpg'
 														                        ],
 														        'funruns':         [
+														                            1,
 														                            2
 														                        ],
 														        'themes':       [
@@ -1238,6 +1261,7 @@ class TestAPI (TestCase) :
 														                            u'/static/img/challengeTempl/cold3.jpg'
 														                        ],
 														        'funruns':         [
+														                            1,
 														                            2
 														                        ],
 														        'themes':       [
@@ -1303,6 +1327,7 @@ class TestAPI (TestCase) :
 														                            u'/static/img/challengeTempl/cold3.jpg'
 														                        ],
 														        'funruns':         [
+														                            1,
 														                            2
 														                        ],
 														        'themes':       [
@@ -1382,6 +1407,7 @@ class TestAPI (TestCase) :
 													                            u'/static/img/challengeTempl/cold3.jpg'
 													                        ],
 													        'funruns':         [
+													                            1,
 													                            2
 													                        ],
 													        'themes':       [
@@ -1479,6 +1505,39 @@ class TestAPI (TestCase) :
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
 		expected = 	json.loads(json.dumps({'funruns': [{
+												        'id':           1,
+												        'name':         u'A Christmas Story Run',
+												        'city':         u'Cleveland, Ohio',
+												        'address':      u'Cleveland Public Square\nCleveland, OH 44113',
+												        'date':         u'December 5th, 2015',
+												        'distance':     u'5K, 10K',
+												        'price':        u'Before September 30th: $45\nOctober 1st - December 5th: $55',
+												        'hosts':        u'A Christmas Story House & Museum',
+												        'sponsors':     u'Ovaltine, Renaissance HOtels, Dannon, Walmart, McDonalds, The Home Depot',
+												        'charities':    u'A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects',
+												        'description':  u'The movie producers must have been runners, because the distance between the former Higbee\'s Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie\'s dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940\'s.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.',
+												        'quotes':       [
+												                            u'I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.',
+												                            u'Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.',
+												                            u'All in all Pepper gives this fun run an A+!'
+												                        ],
+												        'website':      u'http://achristmasstoryrun.com/',
+												        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965',
+												        'video_url':    u'https://www.youtube.com/embed/uPiN-_p7q2k',
+												        'fb_url':       u'https://www.facebook.com/AChristmasStoryRun',
+												        'imgs':         [
+												                            u'/static/img/runTempl/christmasstory1.jpg',
+												                            u'/static/img/runTempl/christmasstory2.jpg',
+												                            u'/static/img/runTempl/christmasstory3.jpg'
+												                        ],
+												        'themes':       [
+												                            0
+												                        ],
+												        'challenges':   [
+												                            2
+												                        ]
+												    },
+												    {
 												        'id':           2,
 												        'name':         u'Dallas Turkey Trot',
 												        'city':         u'Dallas, Texas',
