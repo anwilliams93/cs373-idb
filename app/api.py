@@ -23,7 +23,7 @@ run_query_parameters = {'theme', 'challenge', 'location', 'min_price', 'max_pric
 @runs_api.route('/runs', methods = ['GET'])
 @runs_api.route('/runs/', methods = ['GET'])
 def get_runs():
-	filtered_params = filter_query_parameters(run_query_parameters, request.args)
+	filtered_params = api_helpers.filter_query_parameters(run_query_parameters, request.args)
 	
 	# ASSUMING RUNS IS THE ENTIRE LIST OF RUNS
 	runs = api_helpers.retrieve_runs()
@@ -33,11 +33,11 @@ def get_runs():
 	# THIS NEEDS TO BE CHANGED TO BE MORE GENERIC AND REUSABLE
 	for k in filtered_params:
 		if k == 'theme' or k == 'challenge' or k == 'location':
-			filtered_runs = select(runs, (lambda e : p in e[k] for p in filtered_params[k]))
+			filtered_runs = api_helpers.select(runs, (lambda e : p in e[k] for p in filtered_params[k]))
 		elif k == 'min_price' or k == 'min_length':
-			filtered_runs = select(runs, lambda e : filtered_params[k] <= e[k])
+			filtered_runs = api_helpers.select(runs, lambda e : filtered_params[k] <= e[k])
 		elif k == 'max_price' or k == 'max_length':
-			filtered_runs = select(runs, lambda e : e[k] <= filtered_params[k])
+			filtered_runs = api_helpers.select(runs, lambda e : e[k] <= filtered_params[k])
 
 	return jsonify({'runs': filtered_runs})
 
