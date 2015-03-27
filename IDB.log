@@ -1,0 +1,2044 @@
+commit 9e3a3c29496159659a25183c402016c68af8a241
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Mar 27 02:31:43 2015 +0000
+
+    Added report
+
+commit 8bfc9406c61042a7ccf470f64cf680eb403a3a11
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Mar 27 02:29:39 2015 +0000
+
+    Updated README.md with file locations
+
+commit 72aa1fd7332f3e3227a81aadaa8fc2ea43e62f90
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 21:28:52 2015 -0500
+
+    Created test output
+
+commit 86db992e639e46087b67b3e4f3fb494de1eee0d6
+Author: fuzzyassassin <kurtbixby@mac.com>
+Date:   Thu Mar 26 21:26:29 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit aaf8685fa76901733b510eb231bc30cc8788826a
+Merge: 01a7732 20f02b4
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Mar 27 02:14:32 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 01a7732569126eac8d24b4cc3fecdcb4cad89aa3
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Mar 27 02:13:37 2015 +0000
+
+    adding all of the vm changes
+
+commit 20f02b413baee999483eaca8b8da6d2f63f9d6e8
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 21:09:34 2015 -0500
+
+    Fixed tests for Hotel
+
+commit 99cdc354c0aa713d309c479578fdf5a6fb63d47f
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 20:49:51 2015 -0500
+
+    Updated HOtels
+
+commit 083b99ee5fea821f172193c7a02690b25f399718
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Mar 27 00:44:00 2015 +0000
+
+    Fixed footers again and then added angular and jinja
+
+commit 1501d02ab985b2ad41311314789fcbf18a6ba06f
+Merge: ce2a2a6 ae001ad
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 19:27:16 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit ce2a2a66064b323983b3312712d167bacb35192f
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 19:27:10 2015 -0500
+
+    Created documentation
+
+commit ae001ad86445b75263425a5d8e242cf75fe00e07
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Mar 26 19:18:57 2015 -0500
+
+    Fixed grammar
+
+commit 7b9be786122cb78eb00415344a5ab22cc7fe539c
+Author: Kurt Bixby <kbixby@cs.utexas.edu>
+Date:   Thu Mar 26 19:16:13 2015 -0500
+
+    Created documentation
+
+commit 25f0abc1c5581e837b4c237024d9ee8368842767
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Mar 26 19:00:10 2015 -0500
+
+    Added names to readme
+
+commit fe080bf9b644e0e16c5ea8be3e9fb6fee83d1244
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Mar 26 18:55:42 2015 -0500
+
+    Fixed footed area in about.html to match other pages
+
+commit a5a3cc2499e0ab20a053f816c8df422ba710f4ac
+Merge: 853f55f 49cc084
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 23:45:58 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 853f55f121068c2467a3c3021ee573a1cde80a3c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 23:45:49 2015 +0000
+
+    Kurt messin with shiz
+
+commit 49cc0845367302027f1223408aa7367068d4ba57
+Author: anwilliams93 <anwilliams93@gmail.com>
+Date:   Thu Mar 26 18:45:17 2015 -0500
+
+    Created Readme
+    
+    jaklsd;fjkl;asdjfkla
+
+commit 96ef9f1bce17ba8b600b14507c645dcb4cda893e
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Mar 26 18:28:31 2015 -0500
+
+    Fixed typos and bolded text in about.html
+
+commit fac09d321d7984ffdfe7d84545f9c180cbed4726
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Mar 26 18:21:38 2015 -0500
+
+    Fixed span size
+
+commit d3bc3031857c1c78eb7e553b82ca141974e3f7bc
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 23:18:35 2015 +0000
+
+    Fixed footer
+
+commit 5a19e12a74115d8c206deadcbb27b44e9b24fb18
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Mar 26 18:17:25 2015 -0500
+
+    Updated the tools we used section and linked our repo
+
+commit 8d739415b1d7d4fa8677ff3bb1cd428e9f9e5925
+Merge: d6c0891 0b8ec90
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 22:54:45 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit d6c089140e919b365d1f847f62a4aa799ef1ac13
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 22:53:26 2015 +0000
+
+    Moved models.py
+
+commit 0b8ec9099cacf038257b2b65b467bf986ab96ea8
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 17:42:10 2015 -0500
+
+    Fixed unit tests to reflect fixed data
+
+commit f62fe27ade5840cd167cc31d0d1f52a9f44ecaea
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 22:38:51 2015 +0000
+
+    All have relations now
+
+commit 0a245f1fd3442320a2918dd7edd4b5f35fc7baff
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 17:35:47 2015 -0500
+
+    Finished unit tests and fixed data error.
+
+commit 53243cd6f59f672316150fcf76fdf201febf1942
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Mar 26 17:23:51 2015 -0500
+
+    moved models.py
+
+commit 854ccdd58fa4c576cc86299aa215d9f092bcc3d9
+Merge: b3e2d8d ef00d07
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Mar 26 17:22:38 2015 -0500
+
+    moved models to root
+
+commit b3e2d8de902706d647f64758c5d76dacdf06b4b1
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Mar 26 17:19:55 2015 -0500
+
+    moved models to root
+
+commit ef00d07d21a33ef73d633e01bef89c6b093d8751
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 17:18:30 2015 -0500
+
+    Changed the ordering of challenge 0's themes
+
+commit 1ab24f2efae8cc34d1e9a6cb54d0332f6bd5f59d
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 22:14:10 2015 +0000
+
+    Removed footer on mobile
+
+commit 134d20744dcc1753000b8711388de720fb8e1ed4
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 17:05:16 2015 -0500
+
+    Fixed challenge themes and runs API calls
+
+commit f4690e13939463251c4adc400a84db8cf7973fad
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 17:03:00 2015 -0500
+
+    Added more unit tests
+
+commit ed61d95a13aba130cf58d27d754cfdeee3a5bd8d
+Merge: 42fb071 7c36a1e
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 21:53:18 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 42fb071fd76ac95b3e793425550d87f829d8393d
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 21:53:07 2015 +0000
+
+    Added to about and fixed some links and got repeats to work
+
+commit 7c36a1e323acd2e6c788244fcc0d726b5812e394
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Mar 26 16:23:19 2015 -0500
+
+    Updated info for Hector
+
+commit 858ac28cb6059cb8b46f100e014c45a3ba288bd5
+Merge: d9a12b4 1dde6aa
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 21:11:53 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit d9a12b4e91f51dbe22ee21d2f24e78feec2617a3
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 21:11:43 2015 +0000
+
+    Fiddled with pictures and themetempl
+
+commit 1dde6aad6d567db342e8de6fb7232884c0f8541f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Mar 26 14:58:56 2015 -0500
+
+    tests.py added tests
+
+commit f122911390b9a6686be56dcd3b99f19c45f2db30
+Merge: 6deb021 b6229ae
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 19:51:11 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit b6229aeb19632b40b7736a03542a5aa17eaa383b
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 14:50:57 2015 -0500
+
+    Fixed get_theme_challenges
+
+commit 0a1bacc72ecc4b67e69a25a756fba5b259049320
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Mar 26 14:38:59 2015 -0500
+
+    models.py comments
+
+commit 6deb021badae70c9bed822e352447b6d894f0eb2
+Merge: bb05e99 405bccc
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 19:33:30 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 405bcccc560754242a991e141fd542154eaa1853
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 14:33:20 2015 -0500
+
+    Fixed decorators
+
+commit bb05e992d603228c77abf597688fbe6d3ed707ed
+Merge: e7e4bf6 b886ace
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 19:32:30 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit b886ace25be484d62c1846fa98ca0a59879b88bc
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 14:32:16 2015 -0500
+
+    Fixed indentation error?
+
+commit e7e4bf6fa192598e71a30ab94a5bf562a841a038
+Merge: f1e0b0f a1ec6d0
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 19:28:13 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit a1ec6d06397500f9301922a90f45fc46eec32206
+Merge: f832a05 dc94d6d
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 14:26:02 2015 -0500
+
+    Finished fleshing out API and commented out bottom half of app.py
+
+commit f832a055adced3d7555802f5c90c25f5f83a0fbe
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 14:24:24 2015 -0500
+
+    Finished fleshing out API and commented out bottom half of app.py
+
+commit f1e0b0f94a931f96cddd62d3539d5b1e9750da7c
+Merge: cf2218c dc94d6d
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 19:15:14 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit dc94d6ddf7386b7fc8c8210641d764a34a99784c
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 14:15:00 2015 -0500
+
+    hopefully this time the description changes
+
+commit cf2218c0df98dc21eba2219a0d8a234aec725473
+Merge: 9336b26 c27b56a
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 19:07:21 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit c27b56a7a15704eb66ea297afeea271487e9fb6d
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 14:07:04 2015 -0500
+
+    updating the a christmas story runs description
+
+commit 9336b26f820987ad3a459a4e7e4195984422446d
+Merge: eb79dec 81ea5e5
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 18:56:35 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 81ea5e5ef0651a6ad48f1eaa5abf35e898d61d8c
+Merge: fd7f5d7 1bcd9b1
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 13:56:15 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit fd7f5d7739fb6592238c77226ddb86ec18c397d7
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 13:55:58 2015 -0500
+
+    got a larger picture for oddGround1
+
+commit 1bcd9b112f409c891c54eacb92a63f8f49183690
+Merge: 4d56fef 6a01c6c
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 13:47:27 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 4d56fef732553eb8cd7a9f1f55c820d992edd0bc
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 13:47:24 2015 -0500
+
+    Added initial unit test
+
+commit eb79dec2935e032a68520f716c10df76a3278bab
+Merge: 74e1c4e 6a01c6c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 18:36:24 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 6a01c6c59abb97a54fd5ed6918b16ce4144d298e
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 13:36:07 2015 -0500
+
+    theme.buzzwords instead of themes...
+
+commit 74e1c4e29c3d4bc988d859b2592ded8ea2eb7eac
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 18:35:14 2015 +0000
+
+    Fixed footer
+
+commit 121c7c0fa1cc59949bfd546ead72389061d12100
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 13:28:55 2015 -0500
+
+    hopefully buzzwords load in there
+
+commit cf038c8ba4cd23840187be1e610aec31fb66df74
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 13:23:22 2015 -0500
+
+    got rid of 404 error for the logo image on about page
+
+commit e1c6d974463d15c9ede4a3519b68f161d4aa0527
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 13:13:54 2015 -0500
+
+    fixing buzz words
+
+commit 51d05550ecc67c0a6cb4214afea36dbceea15120
+Merge: d39d344 8950058
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 13:02:40 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit d39d3444b592f972cf126d09f591086a3ae08dae
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 13:02:28 2015 -0500
+
+    adding buzz words to theme pages
+
+commit 8950058125d8015074cd6aca9cf15f1fdc0f4f8e
+Merge: ac3c832 8fe1f92
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 17:58:36 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit ac3c83229410f8c170c229ea3f42008be2b8b32f
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 17:56:43 2015 +0000
+
+    hopefully they are done with themetempl
+
+commit 8fe1f92d16ea9fc91ea307a2a1865cd2442f2d88
+Merge: 557a36d de98343
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 12:46:57 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 557a36d9772bafdad0cbc0ebb669680deb5160eb
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 12:46:55 2015 -0500
+
+    Changed all references to runs to funruns
+
+commit de983438c6c94d5be17b9c234dc719a73f89e513
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 17:44:07 2015 +0000
+
+    someone added related runs to the theme pages
+
+commit 42cedf33bfe8a4b8c90a091a47bfeccdcb76aebc
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 08:25:24 2015 +0000
+
+    Alyssa will get credit for this, since it is being pushed from the vm, (last push of the night from the vm) --Kevin
+
+commit 570f42697247aa1fbd6de293e212942daea6fd40
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 03:18:46 2015 -0500
+
+    changed description for christmas story page back to BLAH
+
+commit d7772a8268110ade918f8e9e317e87b6292f79fe
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 03:17:31 2015 -0500
+
+    hopefully fixed the description this time, I think it was a hyperlink being copied issue
+
+commit 0271f6891db36dd256fa9cf21cfb7a5eecc39ce5
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 03:11:33 2015 -0500
+
+    still trying to fix description for christmas story page
+
+commit f49c04da76f8fd5991af2f3789550fc8f477cbf8
+Merge: cd2d1a4 4b012a5
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 03:07:17 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit cd2d1a4683324a12f704392c8360131920b5f297
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 03:07:06 2015 -0500
+
+    hopefully fixed christmas story run description
+
+commit 4b012a52a8ccbe49fcb36b1859dad8453d2d2e4f
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 02:53:05 2015 -0500
+
+    Fixed typo
+
+commit ec9b16c44dc8a7e2c05c850b31059f114acb4966
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 02:38:42 2015 -0500
+
+    trying center again
+
+commit b739e462ce1a22e7e36dcc2703a871753ec124c0
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 02:35:34 2015 -0500
+
+    centering images in slideshow
+
+commit 67f935b316d1fbe3ee476063d569ea1823bbfa85
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 02:32:42 2015 -0500
+
+    changed image sizes for slideshow and span6 to span8
+
+commit 8c648c1cc4c102df2a1129cb1e24672cf0abd181
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 02:19:33 2015 -0500
+
+    fixed indexing of images off by one error
+
+commit 6578ea41e081ec0e9806daa63ca639b90f9640aa
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 02:14:42 2015 -0500
+
+    added prettyPhoto.js, which hopefully makes the next button work in the slideshow
+
+commit 43983475a40dbe31283a766cdbace566268672c7
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 02:10:50 2015 -0500
+
+    fixed colon bug
+
+commit 920bd5d5d8384706439b990d02510a1709664807
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 02:08:00 2015 -0500
+
+    debuggin images
+
+commit 7b1c8eaa3909bb0f9e776352ebc83a11f99efaf0
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 02:05:16 2015 -0500
+
+    added images to funruns.py and fixed themes.json
+
+commit 88f447219ce2ddb6297de7b79bd6afe095d69e1b
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 02:04:00 2015 -0500
+
+    Fixed the syntax in helper and funruns
+
+commit 0ecc4b691c52d1c60b116e74082246681a13639f
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 02:02:49 2015 -0500
+
+    Removed spaces
+
+commit f2377f78ca7502e735a46520cb1a2911310ecb1f
+Merge: 0f5f0bc 7b018d1
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:57:48 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 0f5f0bca8373cc2476f29f3114c63b88d501a0fe
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:57:29 2015 -0500
+
+    checking if intense4.jpg is getting grabbed
+
+commit 7b018d1947d5482d92d6999952e14325c431f5dc
+Merge: 70053d7 3fad5b1
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 01:53:26 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 70053d7dcbd5be780125a3b0058136cd4eafb8f7
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Mar 26 01:53:23 2015 -0500
+
+    Fixed the data in funruns and api_helper
+
+commit 3fad5b133bbe095846fa1e88add470d4fc56918e
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:51:50 2015 -0500
+
+    there was more than one bug with challenges/themes, fixed the third bug
+
+commit 94a2593fda28b692208e98e42a15181a1a2ad7d4
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:50:28 2015 -0500
+
+    actually fixed fun challenges/fun themes bug
+
+commit a9c015187a6f575708897d1ffd1a6fa94eabb32d
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:49:06 2015 -0500
+
+    fixed fun challenges/fun themes bug
+
+commit 03ae421a0c4517e56a6a9ad00a79c9389f67f7ac
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:44:58 2015 -0500
+
+    got rid of thumbnails, hopefully the pictures show in the slideSHOW
+
+commit e2981c1bf665a993fc8d2f5f8036011fb68e41e4
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:37:43 2015 -0500
+
+    still working on slideshow pictures
+
+commit 3811fff4b7d960f1ef18e00c312503445fda96d6
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:34:22 2015 -0500
+
+    hopefully pictures show up and it does not just say thumbnail
+
+commit d1963963a8f748b48aa7f6f9c8caa2b6701ab32d
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:31:06 2015 -0500
+
+    fixed drop down navigation menu
+
+commit fa951d892e8bab1fd2e219d8a77ba8e80d248aaa
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:24:37 2015 -0500
+
+    hopefully the pictures show up this time
+
+commit 00c30fcc80870af211b36baebf8eb64a8b7ade4a
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:21:05 2015 -0500
+
+    trying to fix sidebar slideshow
+
+commit 5cbea77556a5feb5b8baf7d624497a2bd36d754c
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:18:20 2015 -0500
+
+    hopefully adding sidebar slideshow for themes
+
+commit 4ed8f5279e780949bb81d15a916678486f7801c3
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 06:09:29 2015 +0000
+
+    adding vm changes (not my changes, but they have not been pushed)
+
+commit 652f9fa0c0a075403f5ba2eb35855225ea130b34
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 01:07:06 2015 -0500
+
+    added relatedruns...
+
+commit 100b6e9f6b7b89fb49ccb09985d6818b133080a1
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 00:57:58 2015 -0500
+
+    made sure themes has 8 pictures for each theme, fixed Alyssas copy-paste errors haha
+
+commit b54f1cf0137d2d10ea2af09639584a2bc6149518
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 05:32:03 2015 +0000
+
+    themetempl.html had not been pushed yet
+
+commit f97d959c338cd59c642807984ebf4dd868cdf4d4
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 00:22:46 2015 -0500
+
+    not hiding the other two descriptions now
+
+commit 72b460fd10e610462307c4a188a2e3baae7f15a2
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 00:21:04 2015 -0500
+
+    hopefully not hiding the descriptions now
+
+commit f5e69ca36b405930408dcf892361a9b08a1a329a
+Merge: a4d28f8 4f605b0
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 00:17:42 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit a4d28f8d258c234f525a0605731e7550e477ccac
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Thu Mar 26 00:17:28 2015 -0500
+
+    fixed a title and got rid of the link to a non-existent photo
+
+commit 4f605b052f81dbb22d85b605dbf31444af456fcb
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Mar 26 00:01:36 2015 -0500
+
+    added about info about david
+
+commit a084d230b80bd64d83fce469ab6279c802fc8aaf
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 23:58:59 2015 -0500
+
+    modify uml diagram
+
+commit 4f184daf1105404de90135c0258fe9414c5ba3c5
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 23:38:46 2015 -0500
+
+    modify uml diagram
+
+commit b27d5d70fe34d634d324021b622c804d9756916f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 23:36:37 2015 -0500
+
+    modify uml diagram
+
+commit 3bf1a78431c08eb96c7c720ed3a8c56b3a6f5cf8
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:31:52 2015 -0500
+
+    Fixed request import in api.py
+
+commit b49922aaf3c13c32c980205f17b4557973515931
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:30:24 2015 -0500
+
+    Fixed flask url_map import
+
+commit 054a6709bf6c30870986826314500bb65b0e3300
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:29:02 2015 -0500
+
+    Removed strict slashes
+
+commit 212c81af5db524e7d08240ccc8b279fe721f379e
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:24:26 2015 -0500
+
+    Finished fixing import
+
+commit 8c2cd93280bab0bdb2c136c9f92fbe4da3b0c10c
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:21:06 2015 -0500
+
+    Fixed import from api-helpers?
+
+commit e080b8196e8ce8cd1e3452a740fbe3f9c07c842b
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:17:37 2015 -0500
+
+    Added / and no slash compatibility
+
+commit 813cc7ca1c1357faf074f4b97110b89bebf711cc
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:14:13 2015 -0500
+
+    Added comma
+
+commit 49263990d507697db2afae77991200d150fdd26b
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:13:12 2015 -0500
+
+    Fixed helpers
+
+commit c786300eb4333cdefc3348fe1384237ada18b7f2
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:11:41 2015 -0500
+
+    Fixed circular import
+
+commit fe69bc8c7799ac2aaa8b45d9df463239539e16c2
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:10:40 2015 -0500
+
+    Fix blueprint in api
+
+commit 834e9774fd1726a4cfe6e7c43da3c340223f7753
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:09:35 2015 -0500
+
+    Fixed comma
+
+commit d36639b57145171ab9ddca31be03e93742948c9e
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:08:58 2015 -0500
+
+    Fixed import
+
+commit f6437b6547fc9faba5b06f93c408b2d30175434a
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 23:08:12 2015 -0500
+
+    Added api.py as a Blueprint
+
+commit 0840e27c7017f42f7356997786499154ff3878b5
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 22:54:54 2015 -0500
+
+    imported jsonify
+
+commit 1d240d089f00a6fb896a737dbf1b76a42acad280
+Merge: 7767fb8 d95b733
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 22:53:49 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 7767fb82ba148267af77f253b841ccbd0a25758d
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 22:53:45 2015 -0500
+
+    Fixed API import
+
+commit d95b733bf9a64c9ce0e459ab43a1378890092dd5
+Merge: b1866ac 1f28590
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:52:34 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit b1866ac42e6ffae4d68158c60f9c170a032badf6
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:52:16 2015 -0500
+
+    adding test.py for testing api
+
+commit 1f2859091603ff1df4479f31379b8ef6e6f42eac
+Merge: b00534a 442a40b
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 22:50:22 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 442a40b1e41216462f948d88a5fa8075106f8830
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:50:07 2015 -0500
+
+    adding test.py for testing api
+
+commit b00534a35c8b6280de785ef0577e9431c63c52b4
+Merge: 92066df dd623c1
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 22:49:15 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 92066df4080a8335a8652bd7c29376b792885fda
+Merge: 7927e06 a0670eb
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 22:48:55 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 7927e06044636065e68a7d61451ee1776a63f550
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 22:48:53 2015 -0500
+
+    Imported the API
+
+commit dd623c1ec85dc4c6a7ca018d099aaeb4e089b5ae
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:48:51 2015 -0500
+
+    adding test.py for testing api
+
+commit a0670eb4e8fd956bc2bb2a1fadfa3b8d648e735d
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:43:42 2015 -0500
+
+    adding test.py for testing api
+
+commit 83b1f3f7fcd3b22a429791797967822520735714
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:41:56 2015 -0500
+
+    adding test.py for testing api
+
+commit f76d89cac7f2233927d5d03333f01da8780cf959
+Merge: 5f5746b 7139fae
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 03:37:24 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 5f5746b5328924c984979043b8c388209e608e18
+Merge: 1c3be5a 5468f39
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 03:37:18 2015 +0000
+
+    fixing conflict
+
+commit 7139faef67eca2e4e2390f42af70638fa55ba398
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Wed Mar 25 22:36:50 2015 -0500
+
+    added more images for the different themes we are using
+
+commit 1c3be5a86a71069a725ef1cdfd065ef715f799fc
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 03:36:02 2015 +0000
+
+    fixing conflict
+
+commit 5468f396a448feca2a8465b7fe8959a2c4c66c6c
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:33:21 2015 -0500
+
+    adding test.py for testing api
+
+commit f8071412fd4b50a762726487883527b621479f1b
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:30:58 2015 -0500
+
+    adding test.py for testing api
+
+commit e3b5aaf226639c298c593efe38c4e08738a5e485
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:30:02 2015 -0500
+
+    adding test.py for testing api
+
+commit 1c1d640f16147b52b4cc972c0585778d50d7380e
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:27:34 2015 -0500
+
+    adding test.py for testing api
+
+commit 283d74e5867c71e93d79cd1a80ad6cf1f9f5efaf
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 22:25:32 2015 -0500
+
+    adding test.py for testing api
+
+commit 66b4971c1b89122d5f58f7b5d7b21fb085bbbbd1
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 21:56:40 2015 -0500
+
+    Added helper wrapper functions
+
+commit e1e6edef7fe5cf1b6357d8e6b4c821ce5d0dc544
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 21:43:26 2015 -0500
+
+    Fixed get_runs_challenges
+
+commit d8640dfb8deb279024106c4fc06a0b596ee3b8ef
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 21:39:59 2015 -0500
+
+    Commented out all but run section, and fixed some fxns.
+
+commit dc7fb83dee2c688e9dbc3deb8765d1cd95c108a2
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 21:28:13 2015 -0500
+
+    adding test.py for testing api
+
+commit 980b349af3c1ef721d4b0f27e33451f5b48e4966
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 21:27:34 2015 -0500
+
+    adding test.py for testing api
+
+commit 50620b994218c83b3febd09b7510a7af5a01dc60
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 21:26:31 2015 -0500
+
+    adding test.py for testing api
+
+commit 41c35735b0ed8258cb6ae4bfb3093d54a93d8b23
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 21:25:18 2015 -0500
+
+    adding test.py for testing api
+
+commit aa3a87dddc9281a8090856209ed06f6a3b52579f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 21:24:41 2015 -0500
+
+    adding test.py for testing api
+
+commit fbd15f5ad5b19d867b7f76e7f76f19f2a2408afb
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 21:23:46 2015 -0500
+
+    adding test.py for testing api
+
+commit 98bbb6fd6a88b8e3c95cce14915653039e841c8f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 21:20:19 2015 -0500
+
+    adding test.py for testing api
+
+commit 0b3748a15f02bb05431a5ea68e7a238432bddea9
+Merge: 9d563e6 50b1391
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 02:08:35 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 9d563e67dd56a268b699e16781be5e2ce45af0df
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Mar 26 02:08:22 2015 +0000
+
+    Messing with nginx
+
+commit 50b139104d5b11d73d04120fd7a0da21ef081273
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 21:04:45 2015 -0500
+
+    Added some comments to API.
+
+commit 6a88d523bb86b7143ff17a9b2fb3f51ecf7c4cf5
+Merge: 1c39785 88b45e5
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 20:55:20 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 1c39785b1d9b53cb72ae88f8c5ecb31d4557d0b1
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Mar 25 20:55:01 2015 -0500
+
+    Started implementation of the API. We need unit tests.
+
+commit 88b45e53303ad4ac3b96417f246d9541a1372289
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 19:21:30 2015 -0500
+
+    debugging models
+
+commit 56b18c6e4e14a4511a62016139de702adeb59ef9
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 19:16:10 2015 -0500
+
+    change name to models.py
+
+commit c9ec23f83bc46fd63f63425f8b1be70513227ed3
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 19:11:01 2015 -0500
+
+    debugging sql_db 2
+
+commit fbe2012a71b249a7b756dc67893404aa6395a821
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 19:04:04 2015 -0500
+
+    debugging sql_db
+
+commit 536779111af38dda3f92a60451df3bbe88cbfb90
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 18:58:08 2015 -0500
+
+    adding testing
+
+commit ef932aa67828603bffde71bbb28b807a8eb1862b
+Merge: 53fcdc8 e598f74
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Mar 25 23:52:05 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 53fcdc872ee6fecb5e1be079f715e1787f764c74
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Mar 25 23:51:50 2015 +0000
+
+    Adding templs and photos
+
+commit e598f749edbba8c163f54bb9d07c3ab1dfb189ae
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Mar 25 18:10:36 2015 -0500
+
+    added sql_db file for the models
+
+commit 15de65568b44321655b41ed52800ab4ad011d19a
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Mar 25 20:56:16 2015 +0000
+
+    Changes...?
+
+commit e97735875fe07b2147246309c3e711284c37d4f3
+Author: fuzzyassassin <kurtbixby@mac.com>
+Date:   Wed Mar 25 15:33:41 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 4f2ff00a3148f062e271fda15b64b512887bb799
+Author: fuzzyassassin <kurtbixby@mac.com>
+Date:   Wed Mar 25 15:33:29 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit eedcda58eef1aafc156ec29d23dc310635edc560
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Mar 25 07:05:46 2015 +0000
+
+    Fun Runs pages almost done
+
+commit 5fa939e6a4340181a1339a0c0b356126264f9028
+Merge: 8086bfb 86668ae
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Mar 25 04:09:33 2015 +0000
+
+    Fixed merge conflicts
+
+commit 8086bfb0190bb37b95b026a9d4127bab5a0ad9b8
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Mar 25 04:07:27 2015 +0000
+
+    Moved things around, fixed maps, fixed angular for urls
+
+commit d8a8a2a776b49085f39b911b3485189a7cc7c169
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Mar 25 04:03:42 2015 +0000
+
+    Added featured run
+
+commit 86668ae5e196f107009646f4cb9a2189c467e0f8
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 22:44:37 2015 -0500
+
+    Added featured run
+
+commit 0cf594236e62b99c4bf0ee89e95100e4c772760c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Mar 25 02:35:48 2015 +0000
+
+    Updated funruns
+
+commit 3608ffcdd2d2ab806229c0e806c0a1e21975fc5b
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 21:31:47 2015 -0500
+
+    Updated landings for funruns, locations
+
+commit e685006e5a979580e4425a3b0267356241dce8b8
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 21:24:53 2015 -0500
+
+    Added folder for location photos
+
+commit 881145ca3a7a37bab6c5fe025c085bf118992c65
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 21:23:04 2015 -0500
+
+    Fix thumbnails
+
+commit 5f3ccea3313d26284f37f9a9599e33790d913280
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 21:17:19 2015 -0500
+
+    Updated pictures and descriptions for locations.
+
+commit 06ffd20d9dfbd3db6d3de581d808f295f1c334d7
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 20:55:14 2015 -0500
+
+    fixing maps problem try 7 fingers crossed
+
+commit c984cf6c6b47e13aa67a6ed42fb5fb175797ec1c
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 20:49:42 2015 -0500
+
+    fixing maps problem try 7 fingers crossed
+
+commit 0fcf67b885cd546c02d7a44b90e9f94b1db0c576
+Merge: 6119382 c7055aa
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 20:48:48 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 6119382c4c5e8b48ce24ec0b1b7d4cb58a3be3f1
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 20:48:08 2015 -0500
+
+    fixing maps problem try 7 fingers crossed
+
+commit 1ec67d6f58b641ef2038441d6d83b3e5db9f376f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 20:44:52 2015 -0500
+
+    fixing maps problem try 6 fingers crossed
+
+commit c7055aa6e318ee106a4df51735c2bb92630940a5
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 20:42:44 2015 -0500
+
+    Fixed e-mail for me
+
+commit 526541c98930f1ca20136866f65b668e08f30a24
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 20:36:12 2015 -0500
+
+    fixing maps problem try 5 fingers crossed
+
+commit 7f43a46330ac0ced7e3f09b05a9571ced94d116b
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 20:30:41 2015 -0500
+
+    fixing maps problem try 4
+
+commit dc3b8727c07523de87d6ac9fc49641589a9d5f21
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 20:29:19 2015 -0500
+
+    fixing maps problem try 3
+
+commit 7e82a001a4b3859c74b9d53a0c4c3bad97b5d3a4
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 20:27:30 2015 -0500
+
+    fixing maps problem try 2
+
+commit 2f301533a55af2428cb98856af3d4301d7b7375e
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 20:25:00 2015 -0500
+
+    fixing maps problem
+
+commit fe83998f1ac2fbea53e157f09741433131d5463e
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 20:06:45 2015 -0500
+
+    Edited my info
+
+commit f38fedde729fd4d305cc2c00998b09f21c0962a4
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 19:56:04 2015 -0500
+
+    Added % signs to humidity
+
+commit a54d21af880f4cdd7d48a60b7142f7d825f7b8cd
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 19:13:52 2015 -0500
+
+    Information updated for all 3 cities.
+
+commit 109ddc81ad3a4158a8a5441f286b873fc6acde27
+Merge: 07863d9 3c318b7
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 17:08:49 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 07863d991e63f0db290820a193a21a6db8ac4367
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Mar 24 17:08:43 2015 -0500
+
+    Added info for Dallas, Texas
+
+commit 3c318b7dd3001d421a57079ea13d8f0246191d34
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 16:52:57 2015 -0500
+
+    adding google maps try 4, working static, not sure how to send value to src
+
+commit 93b860cf1aa0a2eefeda6dadfd117cbf67076be8
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 16:49:52 2015 -0500
+
+    adding google maps try 4, working static, not sure how to send value to src
+
+commit f23366bb26269e878dc9d3f3d20d51c574f35966
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 16:46:52 2015 -0500
+
+    adding google maps try 4, working static, not sure how to send value to src
+
+commit 5cc4551db0b769b81062f7994b635950c9e91335
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 16:45:44 2015 -0500
+
+    adding google maps try 4, testing map_url to app.py
+
+commit 25c33b3935c058683c178cd11170f844abfc2adf
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 16:44:12 2015 -0500
+
+    adding google maps try 4, added map_url to app.py
+
+commit 9e97b584d6d80ae25d725127a76028f25d00f164
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 16:42:04 2015 -0500
+
+    adding google maps try 4, added map_url to app.py
+
+commit e0a4cba4fa4cd0bd386904852f72d68c837ee2b7
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 16:39:06 2015 -0500
+
+    adding google maps try 3, testing if map_url is working 2
+
+commit b60efe917a0b03d5e6b88e1727321b1a6b2a89da
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 16:37:23 2015 -0500
+
+    adding google maps try 3, testing if map_url is working
+
+commit 113522752539d33ea9cb95bd064042a2507f3487
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 16:00:54 2015 -0500
+
+    adding google maps try 2 added map_url in json for funruns
+
+commit 86179175bcdd4fa73ee238aacace840b7dfd5569
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Mar 24 15:25:48 2015 -0500
+
+    adding google maps try 1
+
+commit b6509f8aa163d8fe6d165876329ba7140119bfd7
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Tue Mar 24 00:34:28 2015 -0500
+
+    Shortened wipeout run label, so it does not use two lines
+
+commit 5270afb39d69c79c35685a8f2c518f0eeb7fe894
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Tue Mar 24 00:32:02 2015 -0500
+
+    Added photos to challenges page
+
+commit 2ddf77b1b415ab658323f75363976ecae8659daf
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Tue Mar 24 00:23:42 2015 -0500
+
+    hopefully fixed themes photos
+
+commit 6aa4500030b8a09763f8c6468a0ce8180f3ee2a4
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Tue Mar 24 00:22:06 2015 -0500
+
+    added photos to themes, feel free to change actual photo
+
+commit 2969ff6092ab2c64a12171be3eb1f955f43b263e
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Mar 24 05:05:03 2015 +0000
+
+    Alyssa done for the night. Added a photo on front
+
+commit 026e50a988f8bb1d11a554f15500276d9c26d6dd
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Mar 24 04:55:37 2015 +0000
+
+    Added the landing page photos
+
+commit cd12c4f261b1a22f87b7b5fe4e31fc80a5360e6b
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 23:46:02 2015 -0500
+
+    updating titles and descriptions for challenges
+
+commit ce4559ce49118e928e1984d3ac0d9c4bca81beb5
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 23:39:11 2015 -0500
+
+    updated titles and descriptions of our three themes
+
+commit 7de9e13cd1e23c699c62bddc650f9f84dbccc541
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 23:28:09 2015 -0500
+
+    fixed christmas story title
+
+commit b20d2d03bcdb2ec6609f10203b1d841b3af42f06
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 23:23:25 2015 -0500
+
+    changed the titles and descriptions of the runs
+
+commit c7778a0a2830e2d4030bb6f290c6b4a781897fbf
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 23:13:37 2015 -0500
+
+    removed wipeout run fb, because it did not have an actual page
+
+commit ee191ef01d98b52acd0fa3ae56516799253f9424
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 23:04:17 2015 -0500
+
+    adding two more embedded facebook things
+
+commit db2bbcafb9aa5b5ea46be730b5d212eb83017ade
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 22:52:20 2015 -0500
+
+    fixed the script mistake, now the actual facebook script has been moved and abouts has been put back
+
+commit 518a6a01b42475474f8200e3c8ce09ce996384e7
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 22:48:30 2015 -0500
+
+    moved facebook script and embedded frame to funruns
+
+commit 05be46b792e15b6696033de41818ef2cdc040d72
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Mar 24 03:40:52 2015 +0000
+
+    working on google maps size
+
+commit 1e910594f7d2fda1b4afdabe889399698e9ca700
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 22:28:06 2015 -0500
+
+    created new row for fb
+
+commit e80b13a647343940618b240d7ac5a32a693097c2
+Merge: f9b15b3 67f33bb
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 22:26:18 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit f9b15b32c01187b88c7d16512084c69a2d5ff0e9
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 22:26:06 2015 -0500
+
+    messing with fb script
+
+commit 67f33bb745a1929edc2edcfed6eb4d0893609736
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Mar 24 03:21:33 2015 +0000
+
+    hopefully did not mess everything up
+
+commit c82e70b2cfb38d194d7533e49c0a0493c96324ce
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Mar 24 03:07:06 2015 +0000
+
+    fixed overlap, sorry for all the commits (from now on I will tweak stuff like that directly on the vm)
+
+commit ac6355be6183d221ed6b515add1c490d5d5f4ac0
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 22:02:55 2015 -0500
+
+    span6, these spspan sizes are not proportional!
+
+commit 4101cf3d4e07d7f0a3ea7a00faa207d64e792e6a
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 22:00:29 2015 -0500
+
+    changed span 4 to span 9, hopefully the map and fb do not overlap now
+
+commit aec516dd80fc8309ae8c39139d65fcce55fdadbb
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 21:54:03 2015 -0500
+
+    hopefully fixing overlap of map and fb
+
+commit ebe9194e2df493f00e9d6523c6947081d02a7bc5
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 21:52:17 2015 -0500
+
+    trying to embedd facebook page of turkey trot
+
+commit b3fdb8531391af37d0ecfabafc5d65ce56324702
+Merge: 4431424 1e3f2d6
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 21:27:01 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 443142409d2aa511adf0ec5217ea890f87daa21c
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 21:26:38 2015 -0500
+
+    changed funruns back
+
+commit 1e3f2d693f2f41349c5a35010b136e3d37b4289c
+Merge: 05d29db 07853cc
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Mar 23 21:24:51 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 05d29db6c552ca82b62d8238331c8c79f4df4c58
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Mar 23 21:24:41 2015 -0500
+
+    Started locations.json. Currently only 1 city
+
+commit 07853ccd75b3489f3f2414f193246c448ff5f9d9
+Merge: 26a9f03 8313b09
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 21:24:25 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 26a9f03e6a29d0aa44299ab834ff35c8b8e4d21d
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 21:23:58 2015 -0500
+
+    updated map and added it to funruns page also
+
+commit 8313b0908aaf88b654f0ad32e038da61c3838579
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Mar 24 02:05:23 2015 +0000
+
+    updated kevins about
+
+commit d32fca17afef9cb19f28b2974854d856f703299b
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 21:02:36 2015 -0500
+
+    updated Kevins about profile
+
+commit 2e7261f7a572c049812564a1d822c5f7b85876b1
+Merge: 2f94c56 471891e
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Mar 23 20:33:41 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 471891e7d51a3f51cc97ccffbea5e4b3fb775712
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Mar 24 01:33:35 2015 +0000
+
+    Put the template for descriptions
+
+commit 2f94c56a654acd94d2b8104cbaa5194a69453184
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Mar 23 20:33:26 2015 -0500
+
+    Added folder that contains 3 pictures for each race
+
+commit 38b722c61947694984655fcaca8e18d4c5e28d65
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 20:30:08 2015 -0500
+
+    made the map square
+
+commit 79f8abe98cd76ffc6c3bcc956d13e54145613b01
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Mar 23 20:27:51 2015 -0500
+
+    trying to embed google maps
+
+commit 7280668b07c5892734a863b8009874a8cbe9b49d
+Merge: a416cbd 9b1b57b
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Mar 23 20:05:42 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit a416cbd9729344e27fa06c33be0cbb87b62b9b8d
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Mar 23 20:04:56 2015 -0500
+
+    Added 3 quotes for each race
+
+commit 9b1b57b0d9251150490e2ee4fad8488f57fd1fa2
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Mar 24 01:03:03 2015 +0000
+
+    Fixed up about page and headers. Changed the css a little.
+
+commit 8d6d29dadd966a72b17149c4ad893c6e59d9f74b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Mar 23 22:21:30 2015 +0000
+
+    alyssa funny modifications
+
+commit 4e8369af80be7fdb467dba96ce60ac782011fe8b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Mar 23 05:01:10 2015 +0000
+
+    Filled in the fun run pages!
+
+commit 3b5d1f1db39679da15e35d7c05e0bbadfef83722
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Mar 23 03:19:37 2015 +0000
+
+    Got angular finally working
+
+commit 85df6b4d387d5283ab9d1f6755264d068ecc5a50
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sun Mar 22 20:00:56 2015 -0500
+
+    changed Kevins photo dimensions
+
+commit ba1a9292bbb56483455ce20ac1853a8ff5601087
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sun Mar 22 19:35:33 2015 -0500
+
+    fixed picture problem
+
+commit d2e634706abe69098214642c93cb993929cf9316
+Author: Kurt Bixby <kbixby@cs.utexas.edu>
+Date:   Sun Mar 22 19:30:54 2015 -0500
+
+    Added my photo
+
+commit 58dbe31a709240063ef0f9ace084756cbe00d220
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sun Mar 22 19:28:33 2015 -0500
+
+    Removed read more buttons and added links to everyone elses picture
+
+commit 03fb7c1e692aeb75f3b6de84930c20c2d69ba039
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sun Mar 22 19:21:09 2015 -0500
+
+    added teamMemberPics folder, trying to use pic of David and me
+
+commit ffae7fda5d70727da25d58ae2c95a4ff3f00bb62
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sun Mar 22 19:13:03 2015 -0500
+
+    added three more columns and names for everybody
+
+commit 260966d69985a4bc0ea1866f8633e8a5a695090f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sun Mar 22 19:07:54 2015 -0500
+
+    added uml diagram
+
+commit 86ee147320401ba35735213f4558e4f2a8474c2a
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sun Mar 22 18:56:37 2015 -0500
+
+    updating about.html
+
+commit 279655bb779e9a4c41634eb2e45a23d2f13130e9
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sun Mar 22 18:31:51 2015 -0500
+
+    added about.html
+
+commit 3ce7d67b111be52ecf81472f81af04ba8d9cc680
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Mar 22 23:08:47 2015 +0000
+
+    Spec + messing with angular
+
+commit dfad933840d61e2078641fe4aad66e0c79026dc0
+Merge: 7a22d0f cc09c4c
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sun Mar 22 17:14:20 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 7a22d0f8e73356ee4a081d6e8bd979a1ba2435e6
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sun Mar 22 17:14:00 2015 -0500
+
+     added images for races
+
+commit cc09c4c9e4e5204e3174e4a03f17bd5f9bb96286
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Mar 22 21:58:03 2015 +0000
+
+    Basic pages done except about
+
+commit 724f46dd74ba359106b7335790cbc3f7ff5ed8cf
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Mar 22 21:33:14 2015 +0000
+
+    Added a landing page folder
+
+commit bb4fd6e95c38c350c28692e3b2c0183f877857c9
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Mar 22 20:59:08 2015 +0000
+
+    Getting more bootstrap working
+
+commit 1249dea7747b5bc980e83dada4471603ff8422af
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Mar 22 12:29:00 2015 +0000
+
+    Got bootstrap working! Really rough right now, need to tinker more
+
+commit a2e1dd0a9841bf6bec55886827b4617ef3981921
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 20:18:23 2015 -0500
+
+    fixed active stuff
+
+commit ae98c56b88927269a72c447d0fbb58190b55b206
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Mar 22 01:14:05 2015 +0000
+
+    Finished hardcoding 3 for each pillar except locations
+
+commit d065916cdd17cd74fc99cc0d6823897ed327eca7
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 20:12:13 2015 -0500
+
+    experimenting with active class
+
+commit fa64106a6b8a52d7a103b63e3224e9a3acda95bd
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:59:12 2015 -0500
+
+    removed title-bg
+
+commit 205bce0f5331fdcd387b391110a4744d8c0b2eac
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:50:43 2015 -0500
+
+    now, trying to make the title of a page title-bg
+
+commit cfbea685f9cfaebf0c6ff8109a631fc9575e5088
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:46:54 2015 -0500
+
+    making the tile of the page a row
+
+commit b09b91d200279c62090fe4e2cc0303de9fab5a6a
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:42:17 2015 -0500
+
+    got rid of color bar stuff
+
+commit 3f514fc1b8b0fbab39d05733063dd2f60702973f
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:40:41 2015 -0500
+
+    still trying to add color bars
+
+commit 63caac2516a454231fe9e9a4131d4a33c1cfc169
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:31:29 2015 -0500
+
+    trying to add color bars
+
+commit 0aaab0925ed11c8139dc85ec2c40b436dad619a6
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:28:59 2015 -0500
+
+    fixed homepage link
+
+commit 78c606919b78c37c12788a54f4b8ae5fad523cde
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:26:38 2015 -0500
+
+    added link to homepage
+
+commit b452f5b0f585832495976a80cb8df26a53d2cb1f
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:23:21 2015 -0500
+
+    fixed titles back  to what they should be (they were all fun run challenges)
+
+commit 865ae57a7fe6553a792de848c643661d9717e03a
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:20:40 2015 -0500
+
+    using navbar for all of the pages now
+
+commit a94644f68aa570d634a5143fbd620bb98b70fce6
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Mar 22 00:16:36 2015 +0000
+
+    Fixed a spacing
+
+commit 59b044797b2d30f92901cbac6c050b9a35698d96
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:14:37 2015 -0500
+
+    added div class=navbar
+
+commit 142c40b2dcbf0224aed8c9b1a6735de89b6edbfe
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 19:06:09 2015 -0500
+
+    still messing with challenges
+
+commit f7d1e1c46f26c7f95596037b2eb163b4a0dbbc55
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 19:01:58 2015 -0500
+
+    testing api
+
+commit 289f7184f5f2bdc828f3e796b73d011fa79064d6
+Merge: 580b463 9380f38
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 19:00:13 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 580b463c948c49e1a417baf973431bdaca3689c8
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 18:59:04 2015 -0500
+
+    testing api
+
+commit 9380f38656c3aee1557a2017190a8c173dcadeda
+Merge: b741653 1ebd625
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 18:57:52 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit b7416534e255dd9ba13948f9ea73417a7944dd18
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 18:57:39 2015 -0500
+
+    span7 navigation
+
+commit 1ebd625f40aea495cb9831b536b211a4caea3368
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Mar 21 23:51:04 2015 +0000
+
+    Almost got angular working
+
+commit f2a61abcc92fa6e379d2c5c697a2f3bd444e710d
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 18:48:46 2015 -0500
+
+    trying class=active
+
+commit 0ee7da32ba1a8e7f1d191e4de868a17cba14a5df
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 18:41:35 2015 -0500
+
+    adding color bar
+
+commit a083bce9ca284addc21fccba29a9862724afa08d
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 18:37:20 2015 -0500
+
+    trying span5
+
+commit 854804b27333f5054fdeb425d6cd53262468b98d
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 18:33:53 2015 -0500
+
+    hopefully challenges looks more like picollo page now
+
+commit 2b5194e4a340e9fd783d8bac58f06af63f96c314
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 18:30:58 2015 -0500
+
+    background will not be blue anymore
+
+commit 5a2c01a81d1e79dc3ae651f252c984da48319af8
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Mar 21 23:29:52 2015 +0000
+
+    Trying out angular
+
+commit ee1b2811804ca854b06ccc1652f72f94a710c98d
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 18:24:09 2015 -0500
+
+    test-changing background color of body
+
+commit cb8cce597d6dd511d11f7bbbec1482e434e169a3
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 18:19:21 2015 -0500
+
+    testing font size for h1
+
+commit 53149ee7f9aae707c960fb58633f23bcdeb3a1df
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 18:12:01 2015 -0500
+
+    deleted media=screen for the bootstrap line
+
+commit 63ef0f31497b56808f03abde0b3af66b04ceac1c
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 17:58:19 2015 -0500
+
+    changed challenges back to the way it was (media=screen)
+
+commit 89149c2e3b6e6225077b481ee9780caa90b4edf8
+Merge: 6e424f8 bde13fe
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 17:52:48 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit bde13fe0f77045fb2f87675a9841689ac2fcfc54
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Mar 21 22:52:33 2015 +0000
+
+    Fixing files
+
+commit 6e424f8d24995b0471dd51c0ea60e65110090dd6
+Merge: fc47895 2f2e40e
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 17:51:20 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 2f2e40ee3e42403cd79099ba7f2573db5941b79a
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 17:51:02 2015 -0500
+
+    testing api
+
+commit fc478950fa29b50b8c2cfcc63deca230e3516146
+Merge: b93491f ee7a4d7
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 17:49:34 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit b93491fb831fb31d3bfb465d7718b168b4dd9a51
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 17:49:11 2015 -0500
+
+    added type=text/css, removed media=screen
+
+commit ee7a4d7251e32da8cb4e3a481b1cf9a21f5b66e9
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 17:45:51 2015 -0500
+
+    testing api
+
+commit ef54a2f45f6ef525e831581072866a179d87de3a
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 17:30:29 2015 -0500
+
+    testing api
+
+commit b5e8c2fe904a0ac301b4f4c997e3e6a49fea4378
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 17:19:25 2015 -0500
+
+    trying picolo bootstrap
+
+commit 7338a3b4e42d5d909ad779658cd5c8992816f531
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Mar 21 22:15:07 2015 +0000
+
+    One fun run is in :D
+
+commit e2807a3f696df00e3df4c52f6a833a8dc21c3ad6
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Mar 21 21:15:46 2015 +0000
+
+    Set up the basic html files we need
+
+commit 762fdc81a5e17190632709b9f95df10bf19cb5a5
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Mar 21 20:52:07 2015 +0000
+
+    Messing wit hthe html files a tad
+
+commit 5569c645574ea52aa7570faa20705b531e90e971
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 15:45:28 2015 -0500
+
+    updated our bootstrap
+
+commit 9f5ef9d6626818809daaa24432bd15395a236506
+Merge: 7f7229c 70ff68d
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Mar 21 20:30:23 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 7f7229c39135923d3de9ece2adc9ac487304e3c4
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Mar 21 20:30:18 2015 +0000
+
+    Got the hardcoded get working
+
+commit 70ff68d8d8ee8072432783964d56ed3732535149
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 15:28:11 2015 -0500
+
+    updated .html files to use bootstrap
+
+commit 39c7cf6de5a3725397d067e92e76d7c422a43a9a
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 15:25:24 2015 -0500
+
+    removed bootstrap.min files and added the solid bootstrap
+
+commit 9bd49e67c1e6a67525de4ddd97ec6562a8ea3a3a
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Mar 21 20:17:52 2015 +0000
+
+    Fixed extra files - deleted them hehe
+
+commit 28a2a216ae078e18a4d4a1a3e7d32e58a14cd93f
+Author: anwilliams93 <anwilliams93@gmail.com>
+Date:   Sat Mar 21 14:57:53 2015 -0500
+
+    Renamed hello to app and trying the rest api
+
+commit c21b895c78355f62df955799dddae065107f39d4
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Mar 21 14:56:11 2015 -0500
+
+    added static folder with bootstrap files inside
+
+commit 31a8400d96b2b332ea9bdcb3e41e6f6cb1842b8f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 14:37:15 2015 -0500
+
+    testing another page 3
+
+commit 120e97aef34e8674fa97e98621388ff822761f9b
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 14:14:38 2015 -0500
+
+    testing another page 3
+
+commit 37fca47079039f7c158d47c8004dfb9b8de1d0e0
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 14:11:29 2015 -0500
+
+    testing another page try 2.2
+
+commit 211d36bac3c61d1417e172cff2448d285946f974
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 14:05:34 2015 -0500
+
+    testing another page try 2.1
+
+commit 3437dabece661a12ae7c160aa7abafd67fa358eb
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 14:01:51 2015 -0500
+
+    testing another page try 2
+
+commit f7f7f7afb9bcfa542e56c3a829c2985f227ff15b
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sat Mar 21 13:55:09 2015 -0500
+
+    testing another page
+
+commit 407c653e6b449154ebd029a0dc3260f435044e9c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Mar 20 02:01:49 2015 +0000
+
+    Got flask and nginx working to show a page YAY
+
+commit fcf3e360da879ede6afc88b3796cd0f1002f813f
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Mar 20 00:45:22 2015 +0000
+
+    Set up virtual env and starter packages
+
+commit e53e8d85973a34631987167bf11def1c88e7ac8c
+Author: anwilliams93 <anwilliams93@gmail.com>
+Date:   Sun Mar 1 17:01:24 2015 -0600
+
+    Initial commit
