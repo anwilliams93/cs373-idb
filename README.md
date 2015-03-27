@@ -12,3 +12,13 @@ David Aguirre | Team Member
 Edgar Treto | Team Member
 
 Hector Garcia | Team Member
+
+File Locations
+	*.py files: 	/app
+	apiary.apib: 	/
+	models.html: 	/app
+		This is an HTML file that redirects to /app/html/index.html
+	Report.pdf:		/
+	tests.out:		/app
+	tests.py:		/app
+	UML.pdf:		/
