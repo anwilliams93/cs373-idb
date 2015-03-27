@@ -43,10 +43,6 @@ def themetempl(themeID):
 def challengetempl(challengeID):
     return render_template('challengetempl.html', challengeID = challengeID)
 
-@app.route('/tests')
-def test():
-    return render_template('test.html')
-
 ### REST API CALLS ###
 
 # @app.route('/api/funruns', methods=['GET'])
