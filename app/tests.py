@@ -1501,6 +1501,7 @@ class TestAPI (TestCase) :
 		self.assertEqual(response_object, expected)
 
 	def test_challenge_run_2 (self) :
+		self.maxDiff = None
 		url = server_address + '/api/challenges/2/funruns'
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
