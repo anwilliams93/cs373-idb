@@ -1,9 +1,9 @@
 FORMAT: 1A
 HOST: 104.239.139.43:8000
 
-# Austinisms Fun Runs API
+# Fun Runs 2K15 API
 
-This is our fun runs API. This description is placeholder.
+This is our Fun Runs API. This description is placeholder.
 
 # API Root [/]
 
@@ -13,183 +13,195 @@ Retrieves a JSON object containing the top-level resources for the rest of the A
 + Response 200 (application/json)
 
         {
-            "runs_url": "/runs",
-            "themes_url": "/themes",
-            "challenges_url": "/challenges"
+            'urls': {
+                        "runs_url": "/runs",
+                        "themes_url": "/themes",
+                        "challenges_url": "/challenges"
+                    }
         }
 
-## Group Run
+## Group Fun Run
 
-Runs are fun
+Fun Runs are fun
 
-A Run object has the following attributes:
+A Fun Run object has the following attributes:
 
 ### Attributes
 
-+ id: (integer) The unique ID of the Run.
-+ name: (string) The name of the Run.
-+ location: (integer) The ID of the Location of the Run.
-+ address: (string) The address of the Run's starting line.
-+ date: (object) The date of the Run. Keys are 'day', 'month', and 'year'.
-+ distance: (float) The distance of the Run in miles.
-+ price: (string) The price of the Run in dollars. The string must be parsed to determine price.
-+ hosts: (array of string) The names of the hosts who are putting on the Run. 
-+ sponsors: (arary of string) The names of the sponsors who are sponsoring the Run.
-+ charities: (array of string) The names of the charities who are involved with the Run.
-+ description: (string) The description of the Run.
-+ quotes: (array of string) A few chosen quotes about the Run.
-+ website: (string) The URL of the homepage of the Run.
++ id: (integer) The unique ID of the Fun Run.
++ name: (string) The name of the Fun Run.
++ city: (string) The name of the city the Fun Run is in, in the format 'City, State'.
++ address: (string) The address of the Fun Run's starting line.
++ date: (string) The date of the Fun Run, in the format 'January 24th, 2015'
++ distance: (float) The distance of the Fun Run. There could be multiple distances separated by commas.
++ price: (string) The price of the Fun Run in dollars. The string must be parsed to determine price.
++ hosts: (string) The names of the hosts who are putting on the Fun Run, separated by commas.
++ sponsors: (string) The names of the sponsors who are sponsoring the Fun Run, separated by commas.
++ charities: (string) The names of the charities who are involved with the Fun Run, separated by commas.
++ description: (string) The description of the Fun Run.
++ quotes: (array of string) A few chosen quotes about the Fun Run.
++ website: (string) The URL of the homepage of the Fun Run.
 + map_url: (string) The URL of a Google Maps widget centered on the starting line.
-+ video_url: (string) The URL of a video of the Run.
-+ imgs: (array of string) The relative locations of pictures of the Run.
++ video_url: (string) The URL of a video of the Fun Run.
++ imgs: (array of string) The relative locations of pictures of the Fun Run.
++ theme: (array of integer) The IDs of the Themes associated with this Fun Run.
++ challenge: (array of integer) The IDs of the Challenges associated with this Fun Run.
 
-## Run [/runs/{id}]
+## Fun Run [/funruns/{id}]
 
 + Parameters
-    + id (required, integer, `1`) ... ID of the Run object
+    + id (required, integer, `1`) ... ID of the Fun Run object
 
-### Retrieve a Specific Run Object [GET]
-Retrieves the single Run object with the specified ID.
+### Retrieve a Specific Fun Run Object [GET]
+Retrieves the single Fun Run object with the specified ID.
 
 + Response 200
 
         {
-            'id':           1,
-            'name':         u'Wipeout Run',
-            'city':         u'Baltimore, Maryland',
-            'address':      u'Camden Yards\\n333 W Camden St.\\nBaltimore, MD 21201',
-            'date':         u'June 6th, 2015',
-            'distance':     u'5K',
-            'price':        u'March 6th - April 9th: $56\\nApril 10th - May 7th: $61\\nMay 8th - May 21st: $66\\nMay 22nd - June 5th: $71\\nJune 6th: $81',
-            'hosts':        u'Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.',
-            'sponsors':     u'VaVi Sport & Social',
-            'charities':    u'N/A',
-            'website':      u'http://wipeoutrun.com/',
-            'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!'
-            'quotes':       [
-                                u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!',
-                                u'Had a great time participating in the WIPEOUTRUN!',
-                                u'Such a blast!! Let\'s do it again next year!!'
+            'funruns':  {
+                        'id':           1,
+                        'name':         u'Wipeout Run',
+                        'city':         u'Baltimore, Maryland',
+                        'address':      u'Camden Yards\\n333 W Camden St.\\nBaltimore, MD 21201',
+                        'date':         u'June 6th, 2015',
+                        'distance':     u'5K',
+                        'price':        u'March 6th - April 9th: $56\\nApril 10th - May 7th: $61\\nMay 8th - May 21st: $66\\nMay 22nd - June 5th: $71\\nJune 6th: $81',
+                        'hosts':        u'Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.',
+                        'sponsors':     u'VaVi Sport & Social',
+                        'charities':    u'N/A',
+                        'website':      u'http://wipeoutrun.com/',
+                        'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!'
+                        'quotes':       [
+                                            u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!',
+                                            u'Had a great time participating in the WIPEOUTRUN!',
+                                            u'Such a blast!! Let\'s do it again next year!!'
+                                        ]
+                    }
+        }
+
+## Fun Run Themes [/funruns/{id}/themes]
+
++ Parameters
+    + id (required, integer, `1`) ... ID of the Fun Run object
+
+### Retrieve All Themes Related to a Fun Run [GET]
+Retrieves an array of all the Theme objects associated with the specified Fun Run.
+
++ Response 200
+
+        {
+            'themes':   [
+                            {
+                                'id':           1,
+                                'name':         u'Holiday',
+                                'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
+                                'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.'
+                            }
+                        ]
+        }
+
+## Fun Run Challenges [/funruns/{id}/challenges]
+
++ Parameters
+    + id (required, integer, `1`) ... ID of the Fun Run object
+
+### Retrieve All Challenges Related to a Fun Run [GET]
+Retrieves an array of all the Challenge objects associated with the specified Fun Run.
+
++ Response 200
+
+        {
+            'challenges':   [
+                                {
+                                    'id':           1,
+                                    'name':         u'Running On Odd Ground',
+                                    'flavors':      u'Ice, Inflatable Balls, Mud',
+                                    'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.'
+                                }
                             ]
         }
 
-## Run Themes [/runs/{id}/themes]
-
-+ Parameters
-    + id (required, integer, `1`) ... ID of the Run object
-
-### Retrieve All Themes Related to a Run [GET]
-Retrieves an array of all the Theme objects associated with the specified Run.
-
-+ Response 200
-
-        [
-            {
-                'id':           1,
-                'name':         u'Holiday',
-                'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
-                'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.'
-            }
-        ]
-
-## Run Challenges [/runs/{id}/challenges]
-
-+ Parameters
-    + id (required, integer, `1`) ... ID of the Run object
-
-### Retrieve All Challenges Related to a Run [GET]
-Retrieves an array of all the Challenge objects associated with the specified Run.
-
-+ Response 200
-
-        [
-            {
-                'id':           1,
-                'name':         u'Running On Odd Ground',
-                'flavors':      u'Ice, Inflatable Balls, Mud',
-                'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.'
-            }
-        ]
-
-## Run Collection [/runs{?theme,challenge,location,min_price,max_price,min_length,max_length}]
+## Fun Run Collection [/funruns{?theme,challenge,location,min_price,max_price,min_length,max_length}]
 
 + Parameters
     + theme (optional, integer, `1`) ... ID of the theme to match
     + challenge (optional, integer, `2`) ... ID of the challenge to match
     + location (optional, integer, `3`) ... ID of the location to match
-    + min_price (optional, integer, `200`) ... Minimum price in dollars of the runs to match
-    + max_price (optional, integer, `2000`) ... Maximum price in dollars of the runs to match
-    + min_length (optional, integer, `200`) ... Minimum length in miles of the runs to match
-    + max_length (optional, integer, `200`) ... Maximum length in miles of the runs to match
+    + min_price (optional, integer, `200`) ... Minimum price in dollars of the Fun Runs to match
+    + max_price (optional, integer, `2000`) ... Maximum price in dollars of the Fun Runs to match
+    + min_length (optional, integer, `200`) ... Minimum length in miles of the Fun Runs to match
+    + max_length (optional, integer, `200`) ... Maximum length in miles of the Fun Runs to match
 
-### Retrieve a Collection of Run Objects [GET]
-This returns an array of all the Runs that fit the parameters specified.
+### Retrieve a Collection of Fun Run Objects [GET]
+This returns an array of all the Fun Runs that fit the parameters specified.
 
 All parameters are optional, but can be used at most once.
 
-If no parameters are specified, this will return a list of every Run.
+If no parameters are specified, this will return a list of every Fun Run.
 
 + Response 200
 
-        [
-            {
-                'id':           1,
-                'name':         u'Wipeout Run',
-                'city':         u'Baltimore, Maryland',
-                'address':      u'Camden Yards\\n333 W Camden St.\\nBaltimore, MD 21201',
-                'date':         u'June 6th, 2015',
-                'distance':     u'5K',
-                'price':        u'March 6th - April 9th: $56\\nApril 10th - May 7th: $61\\nMay 8th - May 21st: $66\\nMay 22nd - June 5th: $71\\nJune 6th: $81',
-                'hosts':        u'Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.',
-                'sponsors':     u'VaVi Sport & Social',
-                'charities':    u'N/A',
-                'website':      u'http://wipeoutrun.com/',
-                'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!'
-                'quotes':       [
-                                    u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!',
-                                    u'Had a great time participating in the WIPEOUTRUN!',
-                                    u'Such a blast!! Let\'s do it again next year!!'
-                                ]
-            },
-            {
-                'id':           2,
-                'name':         u'A Christmas Story Run',
-                'city':         u'Cleveland, Ohio',
-                'address':      u'Cleveland Public Square\\nCleveland, OH 44113',
-                'date':         u'December 5th, 2015',
-                'distance':     u'5K, 10K',
-                'price':        u'Before September 30th: $45\\nOctober 1st - December 5th: $55',
-                'hosts':        u'A Christmas Story House & Museum',
-                'sponsors':     u'Ovaltine, Renaissance HOtels, Dannon, Walmart, McDonalds, The Home Depot',
-                'charities':    u'A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects',
-                'website':      u'http://achristmasstoryrun.com/',
-                'description':  u'The movie producers must have been runners, because the distance between the former Higbee\'s Department Store and the A Christmas Story House & Museum is about 5K. Ralphie’s dad, The Old Man must have used the 1938 Oldsmobile to track the distance No GPS in the 1940′s. To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.'
-                'quotes':       [
-                                    u'I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.',
-                                    u'Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.',
-                                    u'All in all Pepper gives this fun run an A+!'
-                                ]
-            },
-            {
-                'id':           3,
-                'name':         u'Dallas Turkey Trot',
-                'city':         u'Dallas, Texas',
-                'address':      u'City Hall Plaza\\n500 Marilla St.\\nDallas, TX 75201',
-                'date':         u'November 26th, 2015',
-                'distance':     u'5K, 8mi',
-                'price':        u'Before September 30th: $30\\nSeptember 31st - November 25th: $35\\nNovember 26th: $45',
-                'hosts':        u'YMCA, Capital One Bank',
-                'sponsors':     u'The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys',
-                'charities':    u'The Y Community Programs',
-                'website':      u'http://thetrot.org/',
-                'description':  u'The Dallas Turkey Trot really proves that everything\'s bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol\' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.'
-                'quotes':       [
-                                    u'This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!',
-                                    u'This event is by far the best family friendly event that takes place in Dallas each year!',
-                                    u'I had a blast running the Turkey Trot this year. Even though it\'s my first time doing it, I will definitely make it a tradition every year'
-                                ]
-            }
-        ]
+        {
+            'funruns': [
+                        {
+                            'id':           1,
+                            'name':         u'Wipeout Run',
+                            'city':         u'Baltimore, Maryland',
+                            'address':      u'Camden Yards\\n333 W Camden St.\\nBaltimore, MD 21201',
+                            'date':         u'June 6th, 2015',
+                            'distance':     u'5K',
+                            'price':        u'March 6th - April 9th: $56\\nApril 10th - May 7th: $61\\nMay 8th - May 21st: $66\\nMay 22nd - June 5th: $71\\nJune 6th: $81',
+                            'hosts':        u'Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.',
+                            'sponsors':     u'VaVi Sport & Social',
+                            'charities':    u'N/A',
+                            'website':      u'http://wipeoutrun.com/',
+                            'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!'
+                            'quotes':       [
+                                                u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!',
+                                                u'Had a great time participating in the WIPEOUTRUN!',
+                                                u'Such a blast!! Let\'s do it again next year!!'
+                                            ]
+                        },
+                        {
+                            'id':           2,
+                            'name':         u'A Christmas Story Run',
+                            'city':         u'Cleveland, Ohio',
+                            'address':      u'Cleveland Public Square\\nCleveland, OH 44113',
+                            'date':         u'December 5th, 2015',
+                            'distance':     u'5K, 10K',
+                            'price':        u'Before September 30th: $45\\nOctober 1st - December 5th: $55',
+                            'hosts':        u'A Christmas Story House & Museum',
+                            'sponsors':     u'Ovaltine, Renaissance HOtels, Dannon, Walmart, McDonalds, The Home Depot',
+                            'charities':    u'A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects',
+                            'website':      u'http://achristmasstoryrun.com/',
+                            'description':  u'The movie producers must have been runners, because the distance between the former Higbee\'s Department Store and the A Christmas Story House & Museum is about 5K. Ralphie’s dad, The Old Man must have used the 1938 Oldsmobile to track the distance No GPS in the 1940′s. To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.'
+                            'quotes':       [
+                                                u'I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.',
+                                                u'Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.',
+                                                u'All in all Pepper gives this fun run an A+!'
+                                            ]
+                        },
+                        {
+                            'id':           3,
+                            'name':         u'Dallas Turkey Trot',
+                            'city':         u'Dallas, Texas',
+                            'address':      u'City Hall Plaza\\n500 Marilla St.\\nDallas, TX 75201',
+                            'date':         u'November 26th, 2015',
+                            'distance':     u'5K, 8mi',
+                            'price':        u'Before September 30th: $30\\nSeptember 31st - November 25th: $35\\nNovember 26th: $45',
+                            'hosts':        u'YMCA, Capital One Bank',
+                            'sponsors':     u'The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys',
+                            'charities':    u'The Y Community Programs',
+                            'website':      u'http://thetrot.org/',
+                            'description':  u'The Dallas Turkey Trot really proves that everything\'s bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol\' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.'
+                            'quotes':       [
+                                                u'This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!',
+                                                u'This event is by far the best family friendly event that takes place in Dallas each year!',
+                                                u'I had a blast running the Turkey Trot this year. Even though it\'s my first time doing it, I will definitely make it a tradition every year'
+                                            ]
+                        }
+                    ]
+        }
 
 ## Group Theme
 
@@ -207,7 +219,7 @@ A Theme object has the following attributes:
 ## Theme [/themes/{id}]
 
 + Parameters
-    + id (required, integer, `1`) ... ID of the Run object
+    + id (required, integer, `1`) ... ID of the Theme object
     
 ### Retrieve a Specific Theme Object [GET]
 Retrieves the single Theme object with the specified ID.
@@ -215,43 +227,47 @@ Retrieves the single Theme object with the specified ID.
 + Response 200
 
         {
-            'id':           1,
-            'name':         u'Holiday',
-            'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
-            'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.'
+            'themes':    {
+                            'id':           1,
+                            'name':         u'Holiday',
+                            'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
+                            'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.'
+                        }
         }
 
-## Theme Runs [/themes/{id}/runs]
+## Theme Fun Runs [/themes/{id}/funruns]
 
 + Parameters
     + id (required, integer, `1`) ... ID of the Theme object
 
-### Retrieve All Runs Related to a Theme [GET]
-Retrieves an array of all the Run objects associated with the specified Theme.
+### Retrieve All Fun Runs Related to a Theme [GET]
+Retrieves an array of all the Fun Run objects associated with the specified Theme.
 
 + Response 200
 
-        [
-            {
-                'id':           1,
-                'name':         u'Wipeout Run',
-                'city':         u'Baltimore, Maryland',
-                'address':      u'Camden Yards\\n333 W Camden St.\\nBaltimore, MD 21201',
-                'date':         u'June 6th, 2015',
-                'distance':     u'5K',
-                'price':        u'March 6th - April 9th: $56\\nApril 10th - May 7th: $61\\nMay 8th - May 21st: $66\\nMay 22nd - June 5th: $71\\nJune 6th: $81',
-                'hosts':        u'Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.',
-                'sponsors':     u'VaVi Sport & Social',
-                'charities':    u'N/A',
-                'website':      u'http://wipeoutrun.com/',
-                'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!'
-                'quotes':       [
-                                    u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!',
-                                    u'Had a great time participating in the WIPEOUTRUN!',
-                                    u'Such a blast!! Let\'s do it again next year!!'
-                                ]
-            }
-        ]
+        {
+            'funruns': [
+                        {
+                            'id':           1,
+                            'name':         u'Wipeout Run',
+                            'city':         u'Baltimore, Maryland',
+                            'address':      u'Camden Yards\\n333 W Camden St.\\nBaltimore, MD 21201',
+                            'date':         u'June 6th, 2015',
+                            'distance':     u'5K',
+                            'price':        u'March 6th - April 9th: $56\\nApril 10th - May 7th: $61\\nMay 8th - May 21st: $66\\nMay 22nd - June 5th: $71\\nJune 6th: $81',
+                            'hosts':        u'Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.',
+                            'sponsors':     u'VaVi Sport & Social',
+                            'charities':    u'N/A',
+                            'website':      u'http://wipeoutrun.com/',
+                            'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!'
+                            'quotes':       [
+                                                u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!',
+                                                u'Had a great time participating in the WIPEOUTRUN!',
+                                                u'Such a blast!! Let\'s do it again next year!!'
+                                            ]
+                        }
+                    ]
+        }
 
 ## Theme Challenges [/themes/{id}/challenges]
 
@@ -263,19 +279,21 @@ Retrieves an array of all the Challenge objects associated with the specified Th
 
 + Response 200
 
-        [
-            {
-                'id':           1,
-                'name':         u'Running On Odd Ground',
-                'flavors':      u'Ice, Inflatable Balls, Mud',
-                'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.'
-            }
-        ]
+        {
+            'challenges':   [
+                                {
+                                    'id':           1,
+                                    'name':         u'Running On Odd Ground',
+                                    'flavors':      u'Ice, Inflatable Balls, Mud',
+                                    'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.'
+                                }
+                            ]
+        }
 
-## Theme Collection [/themes{?run,challenge,name}{?buzzword*}]
+## Theme Collection [/themes{?funrun,challenge,name}{?buzzword*}]
 
 + Parameters
-    + run (optional, integer, `1`) ... ID of the run to match
+    + funrun (optional, integer, `1`) ... ID of the funrun to match
     + challenge (optional, integer, `2`) ... ID of the challenge to match
     + name (optional, string, `3`) ... Name of theme to match
     + buzzword (optional, string, `200`) ... Buzzwords to filter the Themes with
@@ -285,36 +303,38 @@ This returns an array of all the Themes that fit the parameters specified.
 
 All parameters are optional.
 
-'run', 'challenge', and 'name' can be used at most once. 'buzzword' can be any number of times.
+'funrun', 'challenge', and 'name' can be used at most once. 'buzzword' can be any number of times.
 
-If no parameters are specified, this will return a list of every Run.
+If no parameters are specified, this will return a list of every Theme.
 
 + Response 200
 
-        [
-            {
-                'id':           1,
-                'name':         u'Holiday',
-                'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
-                'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.'
-            },
-            {
-                'id':           2,
-                'name':         u'Intense',
-                'buzzwords':    u'Training, Diet, Hardcore, Recovery, Cutthroat',
-                'description':  u'More interested in proving how much you can take than how much fun you\'ll actually have? Intense runs are exactly what you need - a good dose of body-numbing, soul-crushing exercise to show your stuff. See if you can survive the brutal difficulty of these events.'
-            },
-            {
-                'id':           3,
-                'name':         u'Costume',
-                'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
-                'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!'
-            }
-        ]
+        {
+            'themes':   [
+                            {
+                                'id':           1,
+                                'name':         u'Holiday',
+                                'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
+                                'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.'
+                            },
+                            {
+                                'id':           2,
+                                'name':         u'Intense',
+                                'buzzwords':    u'Training, Diet, Hardcore, Recovery, Cutthroat',
+                                'description':  u'More interested in proving how much you can take than how much fun you\'ll actually have? Intense runs are exactly what you need - a good dose of body-numbing, soul-crushing exercise to show your stuff. See if you can survive the brutal difficulty of these events.'
+                            },
+                            {
+                                'id':           3,
+                                'name':         u'Costume',
+                                'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
+                                'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!'
+                            }
+                        ]
+        }
 
 ## Group Challenge
 
-Challenges are challenging things that people must do during a Themed Run.
+Challenges are challenging things that people must do during a Themed Fun Run.
 
 A Challenge object has the following attributes:
 
@@ -331,48 +351,52 @@ A Challenge object has the following attributes:
     + id (required, integer, `1`) ... ID of the Challenge object
     
 ### Retrieve a Specific Challenge Object [GET]
-Retrieves the single Theme object with the specified ID.
+Retrieves the single Challenge object with the specified ID.
 
 + Response 200
 
         {
-            'id':           1,
-            'name':         u'Running On Odd Ground',
-            'flavors':      u'Ice, Inflatable Balls, Mud',
-            'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.'
+            'challenge':    {
+                                'id':           1,
+                                'name':         u'Running On Odd Ground',
+                                'flavors':      u'Ice, Inflatable Balls, Mud',
+                                'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.'
+                            }
         }
         
-## Challenge Runs [/challenges/{id}/runs]
+## Challenge Fun Runs [/challenges/{id}/funruns]
 
 + Parameters
     + id (required, integer, `1`) ... ID of the Challenge object
 
-### Retrieve All Runs Related to a Challenge [GET]
-Retrieves an array of all the Run objects associated with the specified Challenge.
+### Retrieve All Fun Runs Related to a Challenge [GET]
+Retrieves an array of all the Fun Run objects associated with the specified Challenge.
 
 + Response 200
 
-        [
-            {
-                'id':           1,
-                'name':         u'Wipeout Run',
-                'city':         u'Baltimore, Maryland',
-                'address':      u'Camden Yards\\n333 W Camden St.\\nBaltimore, MD 21201',
-                'date':         u'June 6th, 2015',
-                'distance':     u'5K',
-                'price':        u'March 6th - April 9th: $56\\nApril 10th - May 7th: $61\\nMay 8th - May 21st: $66\\nMay 22nd - June 5th: $71\\nJune 6th: $81',
-                'hosts':        u'Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.',
-                'sponsors':     u'VaVi Sport & Social',
-                'charities':    u'N/A',
-                'website':      u'http://wipeoutrun.com/',
-                'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!'
-                'quotes':       [
-                                    u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!',
-                                    u'Had a great time participating in the WIPEOUTRUN!',
-                                    u'Such a blast!! Let\'s do it again next year!!'
-                                ]
-            }
-        ]
+        {
+            'funruns': [
+                        {
+                            'id':           1,
+                            'name':         u'Wipeout Run',
+                            'city':         u'Baltimore, Maryland',
+                            'address':      u'Camden Yards\\n333 W Camden St.\\nBaltimore, MD 21201',
+                            'date':         u'June 6th, 2015',
+                            'distance':     u'5K',
+                            'price':        u'March 6th - April 9th: $56\\nApril 10th - May 7th: $61\\nMay 8th - May 21st: $66\\nMay 22nd - June 5th: $71\\nJune 6th: $81',
+                            'hosts':        u'Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.',
+                            'sponsors':     u'VaVi Sport & Social',
+                            'charities':    u'N/A',
+                            'website':      u'http://wipeoutrun.com/',
+                            'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!'
+                            'quotes':       [
+                                                u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!',
+                                                u'Had a great time participating in the WIPEOUTRUN!',
+                                                u'Such a blast!! Let\'s do it again next year!!'
+                                            ]
+                        }
+                    ]
+        }
 
 ## Challenge Themes [/challenges/{id}/themes]
 
@@ -384,19 +408,21 @@ Retrieves an array of all the Theme objects associated with the specified Challe
 
 + Response 200
 
-        [
-            {
-                'id':           1,
-                'name':         u'Holiday',
-                'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
-                'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.'
-            }
-        ]
+        {
+            'themes':   [
+                            {
+                                'id':           1,
+                                'name':         u'Holiday',
+                                'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
+                                'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\re a sure way of making any holiday a memorable one.'
+                            }
+                        ]
+        }
         
-## Challenge Collection [/themes{?run,theme,name}]
+## Challenge Collection [/themes{?funrun,theme,name}]
 
 + Parameters
-    + run (optional, integer, `1`) ... ID of the Run to match
+    + funrun (optional, integer, `1`) ... ID of the Fun Run to match
     + theme (optional, integer, `2`) ... ID of the Theme to match
     + name (optional, string, `3`) ... Name of Challenge to match
 
@@ -405,29 +431,31 @@ This returns an array of all the Challenges that fit the parameters specified.
 
 All parameters are optional.
 
-'run', 'theme', and 'name' can be used at most once.
+'funrun', 'theme', and 'name' can be used at most once.
 
-If no parameters are specified, this will return a list of every Run.
+If no parameters are specified, this will return a list of every Challenge.
 
 + Response 200
 
-        [
-            {
-                'id':           1,
-                'name':         u'Running On Odd Ground',
-                'flavors':      u'Ice, Inflatable Balls, Mud',
-                'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.'
-            },
-            {
-                'id':           2,
-                'name':         u'Running In A Costume',
-                'flavors':      u'Mascot Costumes, Halloween Outfits, Tutus, Nude, Banana Outfit',
-                'description':  u'Ideally, running should be done in comfortable shorts and shirt. Instead, some dare to run in costumes - or a lack of costume - in self expression and, oftentimes, silliness.'
-            },
-            {
-                'id':           3,
-                'name':         u'Running In Cold Weather',
-                'flavors':      u'Snow, Ice, Freezing Temperatures',
-                'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?'
-            }
-        ]
+        {
+            'challenges':   [
+                                {
+                                    'id':           1,
+                                    'name':         u'Running On Odd Ground',
+                                    'flavors':      u'Ice, Inflatable Balls, Mud',
+                                    'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.'
+                                },
+                                {
+                                    'id':           2,
+                                    'name':         u'Running In A Costume',
+                                    'flavors':      u'Mascot Costumes, Halloween Outfits, Tutus, Nude, Banana Outfit',
+                                    'description':  u'Ideally, running should be done in comfortable shorts and shirt. Instead, some dare to run in costumes - or a lack of costume - in self expression and, oftentimes, silliness.'
+                                },
+                                {
+                                    'id':           3,
+                                    'name':         u'Running In Cold Weather',
+                                    'flavors':      u'Snow, Ice, Freezing Temperatures',
+                                    'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?'
+                                }
+                            ]
+        }
