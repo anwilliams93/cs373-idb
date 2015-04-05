@@ -5,29 +5,29 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://bear@localhost/models'
 db = SQLAlchemy(app)
 
-# # --------------------------------
-# #many to many table, FunRuns to Themes
-# # --------------------------------
-# funRuns_themes = db.Table('funRuns_themes', 
-#     db.Column('funrun_id', db.Integer, db.ForeignKey('funruns.id')),
-#     db.Column('theme_id', db.Integer, db.ForeignKey('themes.id'))
-# )
+# --------------------------------
+#many to many table, FunRuns to Themes
+# --------------------------------
+funRuns_themes = db.Table('funRuns_themes', 
+    db.Column('funrun_id', db.Integer, db.ForeignKey('funruns.id')),
+    db.Column('theme_id', db.Integer, db.ForeignKey('themes.id'))
+)
 
-# # ----------------------------------
-# #many to many table, FunRuns to Challenges
-# # ----------------------------------
-# funRuns_challenges = db.Table('funRuns_challenges', 
-#     db.Column('funrun_id', db.Integer, db.ForeignKey('funruns.id')),
-#     db.Column('challenge_id', db.Integer, db.ForeignKey('challenges.id'))
-# )
+# ----------------------------------
+#many to many table, FunRuns to Challenges
+# ----------------------------------
+funRuns_challenges = db.Table('funRuns_challenges', 
+    db.Column('funrun_id', db.Integer, db.ForeignKey('funruns.id')),
+    db.Column('challenge_id', db.Integer, db.ForeignKey('challenges.id'))
+)
 
-# # ---------------------------------
-# #many to many table, Themes to Challenges
-# # ---------------------------------
-# themes_challenges = db.Table('themes_challenges', 
-#     db.Column('theme_id', db.Integer, db.ForeignKey('themes.id')),
-#     db.Column('challenge_id', db.Integer, db.ForeignKey('challenges.id'))
-# )
+# ---------------------------------
+#many to many table, Themes to Challenges
+# ---------------------------------
+themes_challenges = db.Table('themes_challenges', 
+    db.Column('theme_id', db.Integer, db.ForeignKey('themes.id')),
+    db.Column('challenge_id', db.Integer, db.ForeignKey('challenges.id'))
+)
 
 # -------------
 # FunRuns Table 
@@ -46,9 +46,9 @@ class FunRun(db.Model):
     website = db.Column(db.String(300), unique=False)
     description =db.Column(db.String(600), unique=False)
     map_url =db.Column(db.String(350), unique=False)
-    # location_id = db.Column(db.Integer, db.ForeignKey('location.id'))
-    # themes = db.relationship('themes', secondary = funRuns_themes, backref = db.backref('funruns'))
-    # challenges = db.relationship('challenges', secondary = funRuns_challenges, backref = db.backref('funruns'))
+    locations = db.relationship('Location', backref='funrun', lazy ='dynamic')
+    funRuns_themes = db.relationship('themes', secondary = funRuns_themes, backref = db.backref('funruns'))
+    funRuns_challenges = db.relationship('challenges', secondary = funRuns_challenges, backref = db.backref('funruns'))
 
     def __init__(self, id, name, address, date, distance, price, hosts, sponsors, charities, website, description, map_url):
         self.id = id
@@ -78,7 +78,7 @@ class Theme(db.Model):
     name = db.Column(db.String(80), unique=False)
     buzzwords= db.Column(db.String(300), unique=False)
     description = db.Column(db.String(600), unique=False)
-    # challenges = db.relationship('challenges', secondary = themes_challenges, backref = db.backref('themes'))
+    themes_challenges = db.relationship('challenges', secondary = themes_challenges, backref = db.backref('themes'))
     def __init__(self, id, name, address, date):
         self.id = id
         self.name = name
@@ -125,7 +125,7 @@ class Location(db.Model):
     altitude = db.Column(db.Integer, unique=False)
     annual_rainfall = db.Column(db.Integer, unique=False)
     landmarks =db.Column(db.String(350), unique=False)
-    # fun_runs_id = db.relationship('funruns', backref='location',lazy='dynamic')
+    fun_runs_id = db.Column(db.Integer, db.ForeignKey('funruns.id'))
     def __init__(self, id, city, winter_avgTemp, spring_avgTemp, summer_avgTemp, fall_avgTemp, winter_avgHumidity, spring_avgHumidity, summer_avgHumidity, 
                 fall_avgHumidity, altitude, annual_rainfall, landmarks):
         self.id = id
