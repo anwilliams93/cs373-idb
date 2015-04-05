@@ -48,7 +48,7 @@ class FunRun(db.Model):
     map_url =db.Column(db.String(350), unique=False)
     
     # Fun Runs & Locations are many to one
-    locations = db.relationship('Location', backref='funruns')
+    location_id = db.Column(db.Integer, db.ForeignKey('locations.id'))
     
     # Fun Runs & Themes are many to many
     funRuns_themes = db.relationship('themes', secondary = funRuns_themes, backref = db.backref('funruns'))
@@ -138,7 +138,7 @@ class Location(db.Model):
     landmarks =db.Column(db.String(350), unique=False)
     
     # Locations & Fun Runs are one to many
-    fun_runs_id = db.Column(db.Integer, db.ForeignKey('funruns.id'))
+    funruns = db.relationship('FunRun', backref='location')
     
     def __init__(self, id, city, winter_avgTemp, spring_avgTemp, summer_avgTemp, fall_avgTemp, winter_avgHumidity, spring_avgHumidity, summer_avgHumidity, 
                 fall_avgHumidity, altitude, annual_rainfall, landmarks):
@@ -159,4 +159,8 @@ class Location(db.Model):
         return '<Id %r>' % self.id
 
 db.create_all()
+
+loc1 = Location("blah", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, "LANDMARK", )
+db.session.add()
+
 db.session.commit()
