@@ -196,6 +196,41 @@ def retrieve_funruns():
 			        'challenges':   [
 			                            0
 			                        ]
+			    },
+					{
+			        'id':           5,
+			        'name':         u'Blacklight Run',
+			        'city':         u'Memphis, Tennessee',
+			        'address':      u'Memphis International Raceway\n5500 Victory Ln\nMillington, TN 38053',
+			        'date':         u'May 9th, 2015',
+			        'distance':     u'5K',
+			        'price':        u'Before April 8th: $55\nAfter April 8th: $40',
+			        'hosts':        u'Blacklight Run Corporate',
+			        'sponsors':     u'Local sponsors',
+			        'charities':    u'Children\'s Hospital',
+			        'description':  u'Blacklight Run™ is a unique night 5K fun run focused less on speed and more on UV Neon Glowing fun with friends and family.Glowing participants come from all different ages, shapes, sizes, and speeds; every participant will get Glowed and will have the time of their life!',
+			        'short':		u'The 3 miles of the Blacklight Run course will have you glowing and waiting for the next one!',
+			        'quotes':       [
+			                            u'Survived another 5k! Finished the Blacklight Run - I love fun runs because there\'s less pressure and the obstacles make the race that much more challenging!',
+			                            u'I loved tonight\'s run at Qualcomm stadium in San Diego! California knows how to party! Can\'t wait to have you guys here again and do it again!',
+			                            u'This run leaves runners looking like they fell into a Ghost Buster\s movie (minus the slime).'
+			                        ],
+			        'website':      u'http://www.blacklightrun.com/',
+			        'map_url':      u'https://www.google.com/maps/place/Memphis+International+Raceway/@35.282994,-89.9476,17z/data=!3m1!4b1!4m2!3m1!1s0x887f7ec1c0a48aa5:0x7ef6ea23d0ad044a',
+			        'video_url':    u'https://www.youtube.com/watch?v=TgMgEtXjSUk',
+			        'fb_url':       u'https://www.facebook.com/BlacklightRun',
+			        'landing_img':	u'/static/img/landing/funruns/blacklightrunLanding.jpg',
+			        'imgs':         [
+			                            u'/static/img/runTempl/blacklight1.jpg',
+			                            u'/static/img/runTempl/blacklight2.jpg',
+			                            u'/static/img/runTempl/blacklight3.jpg'
+			                        ],
+			        'themes':       [
+			                            1
+			                        ],
+			        'challenges':   [
+			                            0
+			                        ]
 			    }
 			]
 	return funruns
