@@ -213,7 +213,7 @@ def retrieve_funruns():
 			        'quotes':       [
 			                            u'Survived another 5k! Finished the Blacklight Run - I love fun runs because there\'s less pressure and the obstacles make the race that much more challenging!',
 			                            u'I loved tonight\'s run at Qualcomm stadium in San Diego! California knows how to party! Can\'t wait to have you guys here again and do it again!',
-			                            u'This run leaves runners looking like they fell into a Ghost Buster\s movie (minus the slime).'
+			                            u'This run leaves runners looking like they fell into a Ghost Buster\'s movie (minus the slime).'
 			                        ],
 			        'website':      u'http://www.blacklightrun.com/',
 			        'map_url':      u'https://www.google.com/maps/place/Memphis+International+Raceway/@35.282994,-89.9476,17z/data=!3m1!4b1!4m2!3m1!1s0x887f7ec1c0a48aa5:0x7ef6ea23d0ad044a',
