@@ -126,6 +126,41 @@ def retrieve_funruns():
 			                            1,
 			                            2
 			                        ]
+			    },
+					{
+			        'id':           3,
+			        'name':         u'Bay to Breakers',
+			        'city':         u'San Francisco, California',
+			        'address':      u'219 Howard St.\nSan Francisco, CA 94105',
+			        'date':         u'May 17, 2015',
+			        'distance':     u'12 km',
+			        'price':        u'Adult: $59 \nChild: $29.50\n VIP: $139\nGroup: $54',
+			        'hosts':        u'Zappos.com',
+			        'sponsors':     u'Zappos.com, Under Armour, mapmyrun, Geico',
+			        'charities':    u'Mo\'Magic, United Way of the Bay Area, National Kidney Foundation',
+			        'description':  u'The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coast’s Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.',
+			        'short':		u'Run along alongside Ocean Beach.',
+			        'quotes':       [
+			                            u'Bay to Breakers is a direct route to the city\'s heart and soul.',
+			                            u'This 12k seriously looks like a party!',
+			                            u'This is an amazing experience that will last forever. It is not only a race, but an incredible party throughout the streets of San Francisco.'
+			                        ],
+			        'website':      u'http://zapposbaytobreakers.com/',
+			        'map_url':      u'https://www.google.com/maps/place/219+Howard+St,+San+Francisco,+CA+94105/@37.7905136,-122.3935597,17z/data=!3m1!4b1!4m2!3m1!1s0x80858064dca37cb7:0x3509f87b15b8eae5',
+			        'video_url':    u'https://www.youtube.com/watch?v=NVEVGSEJmOc',
+			        'fb_url':       u'https://www.facebook.com/zapposbaytobreakers',
+			        'landing_img':	u'/static/img/landing/funruns/baytobreakersLanding.jpg',
+			        'imgs':         [
+			                            u'/static/img/runTempl/baytobreakers1.jpg',
+			                            u'/static/img/runTempl/baytobreakers2.jpg',
+			                            u'/static/img/runTempl/baytobreakers3.jpg'
+			                        ],
+			        'themes':       [
+			                            2
+			                        ],
+			        'challenges':   [
+			                            1
+			                        ]
 			    }
 			]
 	return funruns
