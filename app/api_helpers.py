@@ -33,6 +33,7 @@ def retrieve_funruns():
 			        'sponsors':     u'VaVi Sport & Social',
 			        'charities':    u'N/A',
 			        'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!',
+			        'short':		u'Try out the obstacles from the hit TV show "Wipeout"!',
 			        'quotes':       [
 			                            u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!',
 			                            u'Had a great time participating in the WIPEOUTRUN!',
@@ -42,6 +43,7 @@ def retrieve_funruns():
 			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235',
 			        'video_url':    u'https://www.youtube.com/embed/1uOII9K5c0c',
 			        'fb_url':       u'https://www.facebook.com/WIPEOUTRUN',
+			        'landing_img':	u'/static/img/landing/funruns/wipeoutLanding.jpg',
 			        'imgs':         [
 			                            u'/static/img/runTempl/wipeout1.jpg',
 			                            u'/static/img/runTempl/wipeout2.jpg',
@@ -66,6 +68,7 @@ def retrieve_funruns():
 			        'sponsors':     u'Ovaltine, Renaissance Hotels, Dannon, Walmart, McDonalds, The Home Depot',
 			        'charities':    u'A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects',
 			        'description':  u'The movie producers must have been runners, because the distance between the former Higbee\'s Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie\'s dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940\'s.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.',
+			        'short':		u'Experience the classic movie "A Christmas Story" in person.',
 			        'quotes':       [
 			                            u'I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.',
 			                            u'Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.',
@@ -75,6 +78,7 @@ def retrieve_funruns():
 			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965',
 			        'video_url':    u'https://www.youtube.com/embed/uPiN-_p7q2k',
 			        'fb_url':       u'https://www.facebook.com/AChristmasStoryRun',
+			        'landing_img':	u'/static/img/landing/funruns/christmasStoryRunLanding.jpg',
 			        'imgs':         [
 			                            u'/static/img/runTempl/christmasstory1.jpg',
 			                            u'/static/img/runTempl/christmasstory2.jpg',
@@ -99,6 +103,7 @@ def retrieve_funruns():
 			        'sponsors':     u'The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys',
 			        'charities':    u'The Y Community Programs',
 			        'description':  u'The Dallas Turkey Trot really proves that everything\'s bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol\' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.',
+			        'short':		u'Run in the largest Thanksgiving Day event of its kind.',
 			        'quotes':       [
 			                            u'This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!',
 			                            u'This event is by far the best family friendly event that takes place in Dallas each year!',
@@ -108,6 +113,7 @@ def retrieve_funruns():
 			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.251274220785!2d-96.79709!3d32.777333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83854fdfdad6162!2sDallas+City+Hall!5e0!3m2!1sen!2sus!4v1427228610474',
 			        'video_url':    u'https://www.youtube.com/embed/qdnzjhWgCOg',
 			        'fb_url':       u'https://www.facebook.com/DallasYMCATrot',
+			        'landing_img':	u'/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg',
 			        'imgs':         [
 			                            u'/static/img/runTempl/dallasturkey1.jpg',
 			                            u'/static/img/runTempl/dallasturkey2.jpg',
@@ -210,7 +216,7 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/oddGround2.jpg',
 				                            u'/static/img/challengeTempl/oddGround3.jpg'
 				                        ],
-				        'funruns':         [
+				        'funruns':      [
 				                            0
 				                        ],
 				        'themes':       [
@@ -229,7 +235,7 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/costume2.jpg',
 				                            u'/static/img/challengeTempl/costume3.jpg'
 				                        ],
-				        'funruns':         [
+				        'funruns':      [
 				                            2
 				                        ],
 				        'themes':       [
@@ -243,11 +249,11 @@ def retrieve_challenges():
 				        'flavors':      u'Snow, Ice, Freezing Temperatures',
 				        'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?',
 				        'imgs':         [
-				                             u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
 				                        ],
-				        'funruns':         [
+				        'funruns':      [
 				        					1,
 				                            2
 				                        ],
@@ -259,52 +265,62 @@ def retrieve_challenges():
 				]
 	return challenges
 
+### NOTE: I CHANGED LOCATION TO NAME ON ATTRIBUTES AND STRINGS TO INTS
 def retrieve_locations():
 	locations = [
 					{
-					    'id':                   1,
+					    'id':                   0,
 					    'name':      	      	u'Baltimore, Maryland',
-					    'winter_avgTemp':       u'45',
-					    'spring_avgTemp':       u'65',
-					    'summer_avgTemp':       u'87',
-					    'fall_avgTemp':         u'69',
-					    'winter_avgHumidity':   u'63%',
-					    'spring_avgHumidity':   u'61%',
-					    'summer_avgHumidity':   u'69%',
-					    'fall_avgHumidity':     u'69%',
+					    'nickname':				u'The Charm City',
+					    'winter_avgTemp':       45,
+					    'spring_avgTemp':       65,
+					    'summer_avgTemp':       87,
+					    'fall_avgTemp':         69,
+					    'winter_avgHumidity':   63,
+					    'spring_avgHumidity':   61,
+					    'summer_avgHumidity':   69,
+					    'fall_avgHumidity':     69,
 					    'altitude':             u'33ft',
 					    'annual_rainfall':      u'40.72in',
-					    'landmarks':            u'National Aquarium in Baltimore, Fort McHenry'
+					    'landmarks':            u'National Aquarium in Baltimore, Fort McHenry',
+					    'website_url':				u'http://www.baltimorecity.gov/',
+					    'description':			u'Baltimore is the largest city in the State of Maryland, the largest independent city in the United States, and the 26th-most populous city in the country.'
 					},
 					{
 					    'id':                   2,
-					    'name':      	      	u'Dallas, Texas',
-					    'winter_avgTemp':	      u'59',
-					    'spring_avgTemp':       u'77',
-					    'summer_avgTemp':       u'95',
-					    'fall_avgTemp':         u'78',
-					    'winter_avgHumidity':   u'52%',
-					    'spring_avgHumidity':   u'49%',
-					    'summer_avgHumidity':   u'44%',
-					    'fall_avgHumidity':     u'47%',
-					    'altitude':             u'430ft',
-					    'annual_rainfall':      u'40.55in',
-					    'landmarks':            u'Sixth Floor Museum at Dealey Plaza, Dallas World Aquarium'
-					},
-					{
-					    'id':                   3,
 					    'name':             	u'Cleveland, Ohio',
-					    'winter_avgTemp':       u'37',
-					    'spring_avgTemp':       u'58',
-					    'summer_avgTemp':       u'81',
-					    'fall_avgTemp':         u'72',
-					    'winter_avgHumidity':   u'71%',
-					    'spring_avgHumidity':   u'59%',
-					    'summer_avgHumidity':   u'55%',
-					    'fall_avgHumidity':     u'58%',
+					    'nickname':				u'The Forest City',
+					    'winter_avgTemp':       37,
+					    'spring_avgTemp':       58,
+					    'summer_avgTemp':       81,
+					    'fall_avgTemp':         72,
+					    'winter_avgHumidity':   71,
+					    'spring_avgHumidity':   59,
+					    'summer_avgHumidity':   55,
+					    'fall_avgHumidity':     58,
 					    'altitude':             u'653ft',
 					    'annual_rainfall':      u'39.12in',
-					    'landmarks':            u'Rock and Roll Hall of Fame, Cleveland Metroparks Zoo'
+					    'landmarks':            u'Rock and Roll Hall of Fame, Cleveland Metroparks Zoo',
+					    'website_url':				u'http://www.city.cleveland.oh.us/CityofCleveland/Home',
+					    'description':			u'Cleveland is a city in the state of Ohio and is the county seat of Cuyahoga County, the most populous county in the state.'
+					},
+					{
+					    'id':                   1,
+					    'name':      	      	u'Dallas, Texas',
+					    'nickname':				u'Home of the Cowboys',
+					    'winter_avgTemp':	    59,
+					    'spring_avgTemp':       77,
+					    'summer_avgTemp':       95,
+					    'fall_avgTemp':         78,
+					    'winter_avgHumidity':   52,
+					    'spring_avgHumidity':   49,
+					    'summer_avgHumidity':   44,
+					    'fall_avgHumidity':     47,
+					    'altitude':             u'430ft',
+					    'annual_rainfall':      u'40.55in',
+					    'landmarks':            u'Sixth Floor Museum at Dealey Plaza, Dallas World Aquarium',
+					    'website_url':				u'http://dallascityhall.com/Pages/default.aspx',
+					    'description':			u'Dallas is a major city in Texas and is the largest urban center of the fourth most populous metropolitan area in the United States. The city proper ranks ninth in the U.S. and third in Texas after Houston and San Antonio.'
 					}
 				]
 	return locations

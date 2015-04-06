@@ -45,6 +45,7 @@
   myApp.controller('LocationGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
     $http.get("http://104.239.139.43:8000/api/locations/" + {{locationID}}).success(function(data) {
       $scope.location = data.locations;
+      $scope.website_url = $sce.trustAsResourceUrl($scope.location.website_url);
       console.log($scope.location);
     });
   }]);
@@ -115,19 +116,40 @@
                     <img src="img/gallery/gallery-img-1-full.jpg" class="align-left thumbnail" alt="image">
                 </div>
                 <div class="span6">
-                    <h2>Custom Illustration</h2>
-                    <p class="lead">For an international ad campaign. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem, quis gravida nunc iaculis ac. Proin tristique tellus in est vulputate luctus fermentum ipsum molestie. Vivamus tincidunt sem eu magna varius elementum. Maecenas felis tellus, fermentum vitae laoreet vitae, volutpat et urna. Nulla faucibus ligula eget ante varius ac euismod odio placerat. Nam sit amet felis non lorem faucibus rhoncus vitae id dui.</p>
+                    <h2>[[location.nickname]]</h2>
+                    <p class="lead">[[location.description]]</p>
 
                     <ul class="project-info">
-                        <li><h6>Date:</h6> 09/12/15</li>
-                        <li><h6>Client:</h6> John Doe, Inc.</li>
-                        <li><h6>Services:</h6> Design, Illustration</li>
-                        <li><h6>Art Director:</h6> Jane Doe</li>
-                        <li><h6>Designer:</h6> Jimmy Doe</li>
+                        <li><h6><i class="icon-star"></i>Landmarks:</h6> [[location.landmarks]]</li>
+                        <li><h6><i class="icon-star"></i>Altitude:</h6> [[location.altitude]]</li>
+                        <li><h6><i class="icon-star"></i>Annual Rainfall:</h6> [[location.annual_rainfall]]</li>
+                        <li><h6><i class="icon-calendar"></i>Average Temperatures</h6> 
+                          <ul>Spring: [[location.spring_avgTemp]]&deg; Fahrenheit</ul>
+                          <ul>Summer: [[location.summer_avgTemp]]&deg; Fahrenheit</ul>
+                          <ul>Fall: [[location.fall_avgTemp]]&deg; Fahrenheit</ul>
+                          <ul>Winter: [[location.winter_avgTemp]]&deg; Fahrenheit</ul>
+                        </li>
+                        <li><h6><i class="icon-tint"></i>Average Humidity</h6>
+                          <ul>Spring: <div class="progress progress-success progress-striped">
+                            <div class="bar" style="width: [[location.spring_avgHumidity]]%"></div>
+                          </ul>
+                          <ul>Summer: <div class="progress progress-danger progress-striped">
+                            <div class="bar" style="width: [[location.summer_avgHumidity]]%"></div>
+                          </ul>
+                          <ul>Fall: <div class="progress progress-warning progress-striped">
+                            <div class="bar" style="width: [[location.fall_avgHumidity]]%"></div>
+                          </ul>
+                          <ul>Winter: <div class="progress progress-info progress-striped">
+                            <div class="bar" style="width: [[location.winter_avgHumidity]]%"></div>
+                          </ul>
+                        </li>
                     </ul>
 
-                    <button class="btn btn-inverse pull-left" type="button">Visit Website</button>
+                    <button class="btn btn-warning pull-left" type="button">
+                    <a ng-href="[[website_url]]" alt="website">
+                      <div style="color: white">Visit Website</div>
+                    </a>
+                    </button>
                 </div>
             </div>
 
