@@ -161,6 +161,41 @@ def retrieve_funruns():
 			        'challenges':   [
 			                            1
 			                        ]
+			    },
+			    	{
+			        'id':           4,
+			        'name':         u'Zombie Run',
+			        'city':         u'Riverhead, New York',
+			        'address':      u'3186 DPH 4-H Camp\nSound Avenue\nRiverhead, New York 11901',
+			        'date':         u'May 10th, 2015',
+			        'distance':     u'5K, 15k',
+			        'price':        u'Before February 6th: $55\nFebruary 7th - February 27th: $65\nFebruary 28th - March 27th: $75\nMarch 28th - April 17th: $85\nApril 18th - May 1st: $95',
+			        'hosts':        u'Great Vision Productions LLC',
+			        'sponsors':     u'WholeSale Halloween Costumes',
+			        'charities':    u'Local charities',
+			        'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!',
+			        'short':		u'There will be zombie on the course attempting to steal your health flags and eat your brains! Where will they be? You won\'t know until race weekend.!',
+			        'quotes':       [
+			                            u'They don\'t like fast food',
+			                            u'Run like zombies are chasing you!',
+			                            u'This is one of the funnest events I\'ve ever attended!'
+			                        ],
+			        'website':      u'http://www.zombierace.co/index.php',
+			        'map_url':      u'https://www.google.com/maps/place/Nassau+County+4H+Camp/@40.9584252,-72.7160401,13z/data=!4m2!3m1!1s0x89e861d37b7288b9:0x67dff709a1d00494',
+			        'video_url':    u'https://www.youtube.com/watch?v=yhrC2CO9gKM',
+			        'fb_url':       u'https://www.facebook.com/zombieracellc',
+			        'landing_img':	u'/static/img/landing/funruns/zombierunLanding.jpg',
+			        'imgs':         [
+			                            u'/static/img/runTempl/zombierun1.jpg',
+			                            u'/static/img/runTempl/zombierun2.jpg',
+			                            u'/static/img/runTempl/zombierun3.jpg'
+			                        ],
+			        'themes':       [
+			                            1
+			                        ],
+			        'challenges':   [
+			                            0
+			                        ]
 			    }
 			]
 	return funruns
