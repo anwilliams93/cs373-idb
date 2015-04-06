@@ -14,7 +14,8 @@ def retrieve_entry_points():
 	root_urls = {
               		"funruns_url": "/funruns",
                 	"themes_url": "/themes",
-                	"challenges_url": "/challenges"
+                	"challenges_url": "/challenges",
+                	"locations_url": "/locations"
             	}
 	return root_urls
 
@@ -257,3 +258,54 @@ def retrieve_challenges():
 				    }
 				]
 	return challenges
+
+def retrieve_locations():
+	locations = [
+					{
+					    'id':                   1,
+					    'name':      	      	u'Baltimore, Maryland',
+					    'winter_avgTemp':       u'45',
+					    'spring_avgTemp':       u'65',
+					    'summer_avgTemp':       u'87',
+					    'fall_avgTemp':         u'69',
+					    'winter_avgHumidity':   u'63%',
+					    'spring_avgHumidity':   u'61%',
+					    'summer_avgHumidity':   u'69%',
+					    'fall_avgHumidity':     u'69%',
+					    'altitude':             u'33ft',
+					    'annual_rainfall':      u'40.72in',
+					    'landmarks':            u'National Aquarium in Baltimore, Fort McHenry'
+					},
+					{
+					    'id':                   2,
+					    'name':      	      	u'Dallas, Texas',
+					    'winter_avgTemp':	      u'59',
+					    'spring_avgTemp':       u'77',
+					    'summer_avgTemp':       u'95',
+					    'fall_avgTemp':         u'78',
+					    'winter_avgHumidity':   u'52%',
+					    'spring_avgHumidity':   u'49%',
+					    'summer_avgHumidity':   u'44%',
+					    'fall_avgHumidity':     u'47%',
+					    'altitude':             u'430ft',
+					    'annual_rainfall':      u'40.55in',
+					    'landmarks':            u'Sixth Floor Museum at Dealey Plaza, Dallas World Aquarium'
+					},
+					{
+					    'id':                   3,
+					    'name':             	u'Cleveland, Ohio',
+					    'winter_avgTemp':       u'37',
+					    'spring_avgTemp':       u'58',
+					    'summer_avgTemp':       u'81',
+					    'fall_avgTemp':         u'72',
+					    'winter_avgHumidity':   u'71%',
+					    'spring_avgHumidity':   u'59%',
+					    'summer_avgHumidity':   u'55%',
+					    'fall_avgHumidity':     u'58%',
+					    'altitude':             u'653ft',
+					    'annual_rainfall':      u'39.12in',
+					    'landmarks':            u'Rock and Roll Hall of Fame, Cleveland Metroparks Zoo'
+					}
+				]
+	return locations
+

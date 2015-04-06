@@ -166,3 +166,16 @@ def get_challenge_themes(id):
 	for i in challenges[id]['themes']:
 		chosen_themes += [themes[i]]
 	return jsonify({'themes': chosen_themes})
+
+
+### ALYSSA ADDED THIS SHIZ ###
+# Location Section of API
+@funruns_api.route('/locations', methods = ['GET'])
+def get_locations():
+	locations = api_helpers.retrieve_locations()
+	return jsonify({'locations': locations})
+
+@funruns_api.route('/locations/<int:id>', methods = ['GET'])
+def get_location_by_id(id):
+	locations = api_helpers.retrieve_locations()
+	return jsonify({'locations': locations[id]})
