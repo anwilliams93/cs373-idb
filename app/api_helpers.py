@@ -137,6 +137,8 @@ def retrieve_themes():
 			        'name':         u'Holiday', 
 			        'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
 			        'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\'re a sure way of making any holiday a memorable one.',
+			        'short':		u'Celebrate the holidays with a festive run',
+			        'landing_img':	u'/static/img/landing/themes/holiday1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/holiday1.jpg',
 			                            u'/static/img/themeTempl/holiday2.jpg',
@@ -160,6 +162,8 @@ def retrieve_themes():
 			        'name':         u'Intense',
 			        'buzzwords':    u'Training, Diet, Hardcore, Recovery, Cutthroat',
 			        'description':  u'More interested in proving how much you can take than how much fun you\'ll actually have? Intense runs are exactly what you need - a good dose of body-numbing, soul-crushing exercise to show your stuff. See if you can survive the brutal difficulty of these events.',
+			        'short':		u'Test your endurance in these hardcore races',
+			        'landing_img':	u'/static/img/landing/themes/intense1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/intense1.jpg',
 			                            u'/static/img/themeTempl/intense2.jpg',
@@ -183,6 +187,8 @@ def retrieve_themes():
 			        'name':         u'Costume',
 			        'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
 			        'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
+			        'short':		u'Put on your silliest outfit and get running',
+			        'landing_img':	u'/static/img/landing/themes/costume1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/costume1.jpg',
 			                            u'/static/img/themeTempl/costume2.jpg',
@@ -211,6 +217,7 @@ def retrieve_challenges():
 				        'difficulty':   60,
 				        'flavors':      u'Ice, Inflatable Balls, Mud',
 				        'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.',
+				        'landing_img':	u'/static/img/landing/challenges/oddGround1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/oddGround1.jpg',
 				                            u'/static/img/challengeTempl/oddGround2.jpg',
@@ -230,6 +237,7 @@ def retrieve_challenges():
 				        'difficulty':   40,
 				        'flavors':      u'Mascots, Nude, Speedos, Costumes',
 				        'description':  u'Ideally, running should be done in comfortable shorts and shirt. Instead, some dare to run in costumes - or a lack of costume - in self expression and, oftentimes, silliness.',
+				        'landing_img':	u'/static/img/landing/challenges/costume1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/costume1.jpg',
 				                            u'/static/img/challengeTempl/costume2.jpg',
@@ -248,6 +256,7 @@ def retrieve_challenges():
 				        'difficulty':   80,
 				        'flavors':      u'Snow, Ice, Freezing Temperatures',
 				        'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
@@ -283,8 +292,9 @@ def retrieve_locations():
 					    'altitude':             u'33ft',
 					    'annual_rainfall':      u'40.72in',
 					    'landmarks':            u'National Aquarium in Baltimore, Fort McHenry',
-					    'website_url':				u'http://www.baltimorecity.gov/',
-					    'description':			u'Baltimore is the largest city in the State of Maryland, the largest independent city in the United States, and the 26th-most populous city in the country.'
+					    'website_url':			u'http://www.baltimorecity.gov/',
+					    'description':			u'Baltimore is the largest city in the State of Maryland, the largest independent city in the United States, and the 26th-most populous city in the country.',
+					    'landing_img':			u'/static/img/landing/locations/baltimoreMDLanding.jpg'
 					},
 					{
 					    'id':                   2,
@@ -301,8 +311,9 @@ def retrieve_locations():
 					    'altitude':             u'653ft',
 					    'annual_rainfall':      u'39.12in',
 					    'landmarks':            u'Rock and Roll Hall of Fame, Cleveland Metroparks Zoo',
-					    'website_url':				u'http://www.city.cleveland.oh.us/CityofCleveland/Home',
-					    'description':			u'Cleveland is a city in the state of Ohio and is the county seat of Cuyahoga County, the most populous county in the state.'
+					    'website_url':			u'http://www.city.cleveland.oh.us/CityofCleveland/Home',
+					    'description':			u'Cleveland is a city in the state of Ohio and is the county seat of Cuyahoga County, the most populous county in the state.',
+					    'landing_img':			u'/static/img/landing/locations/clevelandOHLanding.jpg'
 					},
 					{
 					    'id':                   1,
@@ -319,8 +330,9 @@ def retrieve_locations():
 					    'altitude':             u'430ft',
 					    'annual_rainfall':      u'40.55in',
 					    'landmarks':            u'Sixth Floor Museum at Dealey Plaza, Dallas World Aquarium',
-					    'website_url':				u'http://dallascityhall.com/Pages/default.aspx',
-					    'description':			u'Dallas is a major city in Texas and is the largest urban center of the fourth most populous metropolitan area in the United States. The city proper ranks ninth in the U.S. and third in Texas after Houston and San Antonio.'
+					    'website_url':			u'http://dallascityhall.com/Pages/default.aspx',
+					    'description':			u'Dallas is a major city in Texas and is the largest urban center of the fourth most populous metropolitan area in the United States. The city proper ranks ninth in the U.S. and third in Texas after Houston and San Antonio.',
+					    'landing_img':			u'/static/img/landing/locations/dallasTXLanding.jpg'		
 					}
 				]
 	return locations

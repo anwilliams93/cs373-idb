@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="LocationModule" ng-controller="LocationGetter">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Fun Runs 2015: Locations</title>
@@ -27,13 +27,26 @@
 
 <!-- JS
 ================================================== -->
+<script src="{{ url_for('static', filename='angular/angular.js') }}"></script>
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script src="{{ url_for('static', filename='js/jquery.easing.1.3.js') }}"></script>
 <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.prettyPhoto.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.quicksand.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.custom.js') }}"></script>
+<script>
+  var myApp = angular.module('LocationModule', [], function($interpolateProvider) {
+      $interpolateProvider.startSymbol('[[');
+      $interpolateProvider.endSymbol(']]');
+  });
 
+  myApp.controller('LocationGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
+    $http.get("http://104.239.139.43:8000/api/locations/").success(function(data) {
+      $scope.locations = data.locations;
+      console.log($scope.locations);
+    });
+  }]);
+</script>
 
 </head>
 
@@ -117,44 +130,20 @@
             </ul> -->
 
             <div class="row clearfix">
-                <ul class="gallery-post-grid holder">
-
-                    <!-- Gallery Item 1 -->
-                    <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
-                        <a href="/locations/0">
-                        <span class="gallery-hover-3col hidden-phone hidden-tablet">
+              <ul class="gallery-post-grid holder">
+                <div ng-repeat="location in locations">
+                  <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
+                      <a ng-href="http://104.239.139.43:8000/locations/[[ location.id ]]">
+                        <span class="gallery-hover-3col hidden-phone hidden-tablet"> <!-- Need to look into gallery-hover -->
                         </span>
                         <div style="max-height: 300px; max-width: 370px; overflow: hidden">
-                            <img src="{{ url_for('static', filename='img/landing/locations/baltimoreMDLanding.jpg') }}" alt="Gallery">
+                          <img ng-src="[[location.landing_img]]" alt="Gallery">
                         </div>
-                        </a>
-                      <span class="project-details"><a href="/locations/0">Baltimore, Maryland</a>The Charm City.</span>
+                      </a>
+                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/locations/[[ location.id ]]">[[location.name]]</a>[[location.nickname]]</span>
                     </li>
-
-                    <!-- Gallery Item 2 -->
-                    <li  class="span4 gallery-item" data-id="id-2" data-type="illustration">
-                        <a href="/locations/1">
-                        <span class="gallery-hover-3col hidden-phone hidden-tablet">
-                        </span>
-                        <div style="max-height: 300px; max-width: 370px; overflow: hidden">
-                            <img src="{{ url_for('static', filename='img/landing/locations/clevelandOHLanding.jpg') }}" alt="Gallery">
-                        </div>
-                        </a>
-                      <span class="project-details"><a href="/locations/1">Cleveland, Ohio</a>The Forest City.</span>
-                    </li>
-
-                    <!-- Gallery Item 3 -->
-                    <li  class="span4 gallery-item" data-id="id-3" data-type="illustration">
-                        <a href="/locations/2">
-                        <span class="gallery-hover-3col hidden-phone hidden-tablet">
-                        </span>
-                        <div style="max-height: 300px; max-width: 370px; overflow: hidden">
-                            <img src="{{ url_for('static', filename='img/landing/locations/dallasTXLanding.jpg') }}" alt="Gallery">
-                        </div>
-                        </a>
-                      <span class="project-details"><a href="/locations/2">Dallas, Texas</a>Home of the Cowboys.</span>
-                    </li>
-                </ul>
+                </div>
+              </ul>
             </div>
 
             <!-- Pagination -->
