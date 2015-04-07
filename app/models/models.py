@@ -174,4 +174,4 @@ db.session.add(loc1)
 db.session.add(frun1)
 # print("whatjkalsdjfkla;sjdfkl;asdf\n\n\n")
 
- db.session.commit()
+db.session.commit()
