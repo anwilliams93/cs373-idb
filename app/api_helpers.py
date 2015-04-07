@@ -626,9 +626,9 @@ def retrieve_themes():
 			    # {
 			    #     'id':           7,
 			    #     'name':         u'Food',
-			    #     'buzzwords':    u'',
-			    #     'description':  u'',
-			    #     'short':		u'',
+			    #     'buzzwords':    u'Sweet, sour, healthy',
+			    #     'description':  u'Forget bananas and postrace barbecues. In these races, chowing down is part of the competition.',
+			    #     'short':		u'Enjoy a nice meal with these runs.',
 			    #     'landing_img':	u'/static/img/landing/themes/food1.jpg',
 			    #     'imgs':         [
 			    #                         u'/static/img/themeTempl/food1.jpg',
@@ -641,7 +641,7 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/food8.jpg'
 			    #                     ],
 			    #     'funruns':         [
-			    #                         2
+			    #                         9
 			    #                     ],
 			    #     'challenges':   [
 			    #                         1
@@ -665,7 +665,7 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/music8.jpg'
 			    #                     ],
 			    #     'funruns':         [
-			    #                         2
+			    #                         1
 			    #                     ],
 			    #     'challenges':   [
 			    #                         1
