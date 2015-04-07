@@ -55,7 +55,7 @@ class FunRun(db.Model):
     # Fun Runs & Challenges are many to many
     funRuns_challenges = db.relationship('challenges', secondary = funRuns_challenges, backref = db.backref('funruns'))
 
-    def __init__(self, id, name, address, date, distance, price, hosts, sponsors, charities, website, description, map_url, location_id):
+    def __init__(self, id, name, address, date, distance, price, hosts, sponsors, charities, website, description, map_url, location_id, funRuns_themes = [], funRuns_challenges = []):
         self.id = id
         self.name = name
         self.address = address
@@ -69,6 +69,8 @@ class FunRun(db.Model):
         self.description = description 
         self.map_url = map_url
         self.location_id = location_id
+        self.funRuns_themes = funRuns_themes
+        self.funRuns_challenges = funRuns_challenges
 
 
     def __repr__(self):
@@ -89,11 +91,13 @@ class Theme(db.Model):
     themes_challenges = db.relationship('challenges', secondary = themes_challenges, backref = db.backref('themes'))
     # Fun Runs & Themes are many to many (see FunRun)
 
-    def __init__(self, id, name, address, date):
+    def __init__(self, id, name, address, date, themes_challenges = []):
         self.id = id
         self.name = name
         self.buzzwords = buzzwords
         self.description = description
+        self.themes_challenges = themes_challenges
+
     def __repr__(self):
         return '<Id %r>' % self.id
 
