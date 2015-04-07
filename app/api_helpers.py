@@ -314,8 +314,7 @@ def retrieve_funruns():
 			        'sponsors':     u'Toyo Tires, Cellucor, Shock-Top, MET-Rx, Oberto, Radisson, Wheaties, Under Armour',
 			        'charities':    u'Wounded Warrior Project, U.S. Army',
 			        'description':  u'Tough Mudder is a team-oriented obstacle course designed to test physical strength and mental grit. It puts camaraderie over finisher rankings and is not a timed race but a team challenge that allows participants to experience exhilarating, yet safe, world-class obstacles they won\'t find anywhere else',
-			        'short':		u'Run through a 12 mile course filled with military-style obstacles',
-			        'quotes':       [
+			        'short':		u'Run through a 12 mile course filled with military-style obstacles', 'quotes':       [
 			                            u'The teamwork and camaraderie out there was amazing.',
 			                            u'The idea of Tough Mudder is not to win..but to have a story to tell.',
 			                            u'Tough Mudder is a culture and Community of taking on challenges and supporting each other.'
@@ -329,6 +328,41 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/toughmudder1.jpg',
 			                            u'/static/img/runTempl/toughmudder2.jpg',
 			                            u'/static/img/runTempl/toughmudder3.jpg'
+			                        ],
+			        'themes':       [
+			                            1
+			                        ],
+			        'challenges':   [
+			                            0
+			                        ]
+			    },
+			    {
+			        'id':           9,
+			        'name':         u'Fit Foodie 5k',
+			        'city':         u'Austin, Texas',
+			        'address':      u'Browning Hangar\n4550 Mueller Blvd.\nAustin, TX\n78723',
+			        'date':         u'June 12-14, 2015',
+			        'distance':     u'5K',
+			        'price':        u'$55',
+			        'hosts':        u'Cooking Light & Health',
+			        'sponsors':     u'Fast Forward Event Productions',
+			        'charities':    u'N/A',
+			        'description':  u'Cooking Light & Health\'s The Fit Foodie 5K Race is the ultimate celebration of food, fitness and fun. Put those running shoes to work as you navigate your way around a beautiful 5K course.',
+			        'short':		u'Cruise across the finish line and get ready to celebrate your success with delicious, healthy food.',
+			        'quotes':       [
+			                            u'The race was great, but the festivities after were even greater!',
+			                            u'It\'s more than a race, it is a fitness and culinary experience.',
+			                            u'Where delicious meets fitness.'
+			                        ],
+			        'website':      u'http://fitfoodierun.com/',
+			        'map_url':      u'https://www.google.com/maps/place/4550+Mueller+Blvd,+Austin,+TX+78723/data=!4m2!3m1!1s0x8644b5f84578082f:0x42afd5562f2f2df1?sa=X&ei=WDEjVeWaF9fsoAS45IGwAw&ved=0CB4Q8gEwAA',
+			        'video_url':    u'https://www.youtube.com/watch?v=cVG9FATjIyk',
+			        'fb_url':       u'https://www.facebook.com/pages/The-Fit-Foodie-Race-Series/177814812394419',
+			        'landing_img':	u'/static/img/landing/funruns/fitfoodieLanding.jpg',
+			        'imgs':         [
+			                            u'/static/img/runTempl/fitfoodie1.jpg',
+			                            u'/static/img/runTempl/fitfoodie2.jpg',
+			                            u'/static/img/runTempl/fitfoodie3.jpg'
 			                        ],
 			        'themes':       [
 			                            1
