@@ -162,7 +162,7 @@ class Location(db.Model):
         return '<Id %r>' % self.id
 
 
-
+db.reflect()
 db.drop_all()
 db.session.commit()
 
