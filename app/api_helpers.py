@@ -44,6 +44,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/1uOII9K5c0c',
 			        'fb_url':       u'https://www.facebook.com/WIPEOUTRUN',
 			        'landing_img':	u'/static/img/landing/funruns/wipeoutLanding.jpg',
+			        'loc':			0,
 			        'imgs':         [
 			                            u'/static/img/runTempl/wipeout1.jpg',
 			                            u'/static/img/runTempl/wipeout2.jpg',
@@ -55,6 +56,7 @@ def retrieve_funruns():
 			        'challenges':   [
 			                            0
 			                        ]
+
 			    },  
 			    {
 			        'id':           1,
@@ -79,6 +81,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/uPiN-_p7q2k',
 			        'fb_url':       u'https://www.facebook.com/AChristmasStoryRun',
 			        'landing_img':	u'/static/img/landing/funruns/christmasStoryRunLanding.jpg',
+			        'loc':			1,
 			        'imgs':         [
 			                            u'/static/img/runTempl/christmasstory1.jpg',
 			                            u'/static/img/runTempl/christmasstory2.jpg',
@@ -114,6 +117,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/qdnzjhWgCOg',
 			        'fb_url':       u'https://www.facebook.com/DallasYMCATrot',
 			        'landing_img':	u'/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg',
+			        'loc':			2,
 			        'imgs':         [
 			                            u'/static/img/runTempl/dallasturkey1.jpg',
 			                            u'/static/img/runTempl/dallasturkey2.jpg',
@@ -125,7 +129,8 @@ def retrieve_funruns():
 			        'challenges':   [
 			                            1,
 			                            2
-			                        ]
+			                        ],
+			        'loc':		2
 			    },
 					{
 			        'id':           3,
