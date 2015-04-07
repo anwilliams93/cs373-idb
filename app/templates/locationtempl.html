@@ -64,7 +64,7 @@
         ================================================== -->
         <div class="span5 logo">
             <h1>Location: [[location.name]]</h1>
-            <a href="http://104.239.139.43:8000/locations" class="pull-left"><i class="icon-arrow-left"></i>Back to Locations</a>
+            <a href="/locations" class="pull-left"><i class="icon-arrow-left"></i>Back to Locations</a>
         </div>
         
         <!-- Main Navigation
@@ -113,23 +113,23 @@
 
             <div class="row">
                 <div class="span6">
-                    <img src="img/gallery/gallery-img-1-full.jpg" class="align-left thumbnail" alt="image">
+                    <img src="[[location.img]]" class="align-left thumbnail" style="height: 100%; width: 100%" alt="image">
                 </div>
                 <div class="span6">
                     <h2>[[location.nickname]]</h2>
                     <p class="lead">[[location.description]]</p>
 
                     <ul class="project-info">
-                        <li><h6><i class="icon-star"></i>Landmarks:</h6> [[location.landmarks]]</li>
-                        <li><h6><i class="icon-star"></i>Altitude:</h6> [[location.altitude]]</li>
-                        <li><h6><i class="icon-star"></i>Annual Rainfall:</h6> [[location.annual_rainfall]]</li>
+                        <li><h6><i class="icon-plane"></i>Landmarks:</h6> [[location.landmarks]]</li>
+                        <li><h6><i class="icon-chevron-up"></i>Altitude:</h6> [[location.altitude]]</li>
+                        <li><h6><i class="icon-tint"></i>Annual Rainfall:</h6> [[location.annual_rainfall]]</li>
                         <li><h6><i class="icon-calendar"></i>Average Temperatures</h6> 
                           <ul>Spring: [[location.spring_avgTemp]]&deg; Fahrenheit</ul>
                           <ul>Summer: [[location.summer_avgTemp]]&deg; Fahrenheit</ul>
                           <ul>Fall: [[location.fall_avgTemp]]&deg; Fahrenheit</ul>
                           <ul>Winter: [[location.winter_avgTemp]]&deg; Fahrenheit</ul>
                         </li>
-                        <li><h6><i class="icon-tint"></i>Average Humidity</h6>
+                        <li><h6><i class="icon-tasks"></i>Average Humidity</h6>
                           <ul>Spring: <div class="progress progress-success progress-striped">
                             <div class="bar" style="width: [[location.spring_avgHumidity]]%"></div>
                           </ul>
