@@ -135,7 +135,7 @@ def retrieve_funruns():
 			        'name':         u'Bay to Breakers',
 			        'city':         u'San Francisco, California',
 			        'address':      u'219 Howard St.\nSan Francisco, CA 94105',
-			        'date':         u'May 17, 2015',
+			        'date':         u'May 17th, 2015',
 			        'distance':     u'12 km',
 			        'price':        u'Adult: $59 \nChild: $29.50\n VIP: $139\nGroup: $54',
 			        'hosts':        u'Zappos.com',
@@ -344,7 +344,7 @@ def retrieve_funruns():
 			        'name':         u'Fit Foodie 5k',
 			        'city':         u'Austin, Texas',
 			        'address':      u'Browning Hangar\n4550 Mueller Blvd.\nAustin, TX\n78723',
-			        'date':         u'June 12-14, 2015',
+			        'date':         u'June 12-14th, 2015',
 			        'distance':     u'5K',
 			        'price':        u'$55',
 			        'hosts':        u'Cooking Light & Health',
@@ -373,7 +373,78 @@ def retrieve_funruns():
 			        'challenges':   [
 			                            0
 			                        ]
+			    },
+			    {
+			        'id':           10,
+			        'name':         u'Keep Austin Weird 5K',
+			        'city':         u'Austin, Texas',
+			        'address':      u'The Long Center Grounds\n701 W Riverside Dr.\nAustin, TX\n78704',
+			        'date':         u'June 27th, 2015',
+			        'distance':     u'5K',
+			        'price':        u'Adults: $22.50\nKids: $12',
+			        'hosts':        u'The Long Center',
+			        'sponsors':     u'HotSchedules, AT&T U-verse, Amy\'s Ice Cream, Babyearth, Beatbox Beverages',
+			        'charities':    u'Capital Area Food Bank of Texas',
+			        'description':  u'Slip into your weirdest costume, slap on your favorite light up running shoes and throw your timer into Lady Bird Lake!',
+			        'short':		u'This is the slowest 5K on the planet!',
+			        'quotes':       [
+			                            u'So much fun! Drove down from Oklahoma City to attend!',
+			                            u'So well done! Loads of fun!',
+			                            u'It was our first time attending the fest and we had a blast! I will be back next year for sure!'
+			                        ],
+			        'website':      u'http://keepaustinweirdfest.com/festival/',
+			        'map_url':      u'https://www.google.com/maps/place/701+W+Riverside+Dr,+Austin,+TX+78704/@30.259982,-97.751079,17z/data=!3m1!4b1!4m2!3m1!1s0x8644b504ea2084d7:0xa8a514235a56453e?hl=en-US',
+			        'video_url':    u'https://www.youtube.com/watch?v=9sL-B1D7v34',
+			        'fb_url':       u'https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639',
+			        'landing_img':	u'/static/img/landing/funruns/keepAustinWeirdLanding.jpg',
+			        'imgs':         [
+			                            u'/static/img/runTempl/keepAustinWeird1.jpg',
+			                            u'/static/img/runTempl/keepAustinweird2.jpg',
+			                            u'/static/img/runTempl/keepAustinweird3.jpg'
+			                        ],
+			        'themes':       [
+			                            1
+			                        ],
+			        'challenges':   [
+			                            0
+			                        ]
+			    },
+			    {
+			        'id':           11,
+			        'name':         u'North American Wife Carrying Championship',
+			        'city':         u'Newry, Maine',
+			        'address':      u'Sunday River Ski Resort\n15 S Ridge Rd.\nNewry, ME\n04261',
+			        'date':         u'October 10th, 2015',
+			        'distance':     u'278yd',
+			        'price':        u'N/A',
+			        'hosts':        u'Sunday River',
+			        'sponsors':     u'BudLight, Bethel Inn Resort',
+			        'charities':    u'N/A',
+			        'description':  u'Qualifying events are also held in Australia, Sweden, and Estonia. The course at Sunday River is built to international specifications at 278 yards in length;with two dry obstacles and one water obstacle.',
+			        'short':		u'To prove their worth,men had to compete through a difficult course with a heavy sack (or woman grabbed from neighboring villages) on their back',
+			        'quotes':       [
+			                            u'It was a very cool event! Sunday River does a good job with it!',
+			                            u'I\'m wicked strong and she\'s wicked small!',
+			                            u'Hardly fair playing field but fun to watch none the less.'
+			                        ],
+			        'website':      u'http://www.sundayriver.com/events-and-activities/events-calendar/north-american-wife-carrying-championship',
+			        'map_url':      u'https://www.google.com/maps/place/Sunday+River+Ski+Resort/@44.473492,-70.856894,17z/data=!3m1!4b1!4m2!3m1!1s0x4cb3dd81009e321b:0xd2eb7c1aecb4af6e',
+			        'video_url':    u'https://vimeo.com/112507533',
+			        'fb_url':       u'https://www.facebook.com/sundayriver',
+			        'landing_img':	u'/static/img/landing/funruns/wifecarryLanding.jpg',
+			        'imgs':         [
+			                            u'/static/img/runTempl/wifecarry1.jpg',
+			                            u'/static/img/runTempl/wifecarry2.jpg',
+			                            u'/static/img/runTempl/wifecarry3.jpg'
+			                        ],
+			        'themes':       [
+			                            1
+			                        ],
+			        'challenges':   [
+			                            0
+			                        ]
 			    }
+
 			]
 	return funruns
 
@@ -709,8 +780,7 @@ def retrieve_locations():
 					    'landmarks':            u'National Aquarium in Baltimore, Fort McHenry',
 					    'website_url':			u'http://www.baltimorecity.gov/',
 					    'description':			u'Baltimore is the largest city in the State of Maryland, the largest independent city in the United States, and the 26th-most populous city in the country.',
-					    'landing_img':			u'/static/img/landing/locations/baltimoreMDLanding.jpg',
-					    'img':					u'/static/img/locationTempl/baltimore1.jpg'
+					    'landing_img':			u'/static/img/landing/locations/baltimoreMDLanding.jpg'
 					},
 					{
 					    'id':                   2,
@@ -729,8 +799,7 @@ def retrieve_locations():
 					    'landmarks':            u'Rock and Roll Hall of Fame, Cleveland Metroparks Zoo',
 					    'website_url':			u'http://www.city.cleveland.oh.us/CityofCleveland/Home',
 					    'description':			u'Cleveland is a city in the state of Ohio and is the county seat of Cuyahoga County, the most populous county in the state.',
-					    'landing_img':			u'/static/img/landing/locations/clevelandOHLanding.jpg',
-					    'img':					u'/static/img/locationTempl/cleveland1.jpg'
+					    'landing_img':			u'/static/img/landing/locations/clevelandOHLanding.jpg'
 					},
 					{
 					    'id':                   1,
@@ -749,8 +818,7 @@ def retrieve_locations():
 					    'landmarks':            u'Sixth Floor Museum at Dealey Plaza, Dallas World Aquarium',
 					    'website_url':			u'http://dallascityhall.com/Pages/default.aspx',
 					    'description':			u'Dallas is a major city in Texas and is the largest urban center of the fourth most populous metropolitan area in the United States. The city proper ranks ninth in the U.S. and third in Texas after Houston and San Antonio.',
-					    'landing_img':			u'/static/img/landing/locations/dallasTXLanding.jpg',
-					    'img':					u'/static/img/locationTempl/dallas1.jpg'		
+					    'landing_img':			u'/static/img/landing/locations/dallasTXLanding.jpg'		
 					}
 				]
 	return locations
