@@ -551,9 +551,9 @@ def retrieve_themes():
 			    # {
 			    #     'id':           4,
 			    #     'name':         u'Dirty',
-			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
-			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
-			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'buzzwords':    u'Mud, Color Paint, Wet',
+			    #     'description':  u'Want to run through mud pits, climb walls, and get blasted with paint? Challenge yourself with these get down-and-dirty runs.',
+			    #     'short':		u'Get ready to take a long shower afterwards.',
 			    #     'landing_img':	u'/static/img/landing/themes/dirty1.jpg',
 			    #     'imgs':         [
 			    #                         u'/static/img/themeTempl/dirty1.jpg',
@@ -566,7 +566,10 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/dirty8.jpg'
 			    #                     ],
 			    #     'funruns':         [
-			    #                         2
+			    #                         8,
+			    #						  11,
+			    #						  6,
+			    #						  5
 			    #                     ],
 			    #     'challenges':   [
 			    #                         1
