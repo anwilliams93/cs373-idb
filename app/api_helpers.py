@@ -780,26 +780,8 @@ def retrieve_locations():
 					    'landmarks':            u'National Aquarium in Baltimore, Fort McHenry',
 					    'website_url':			u'http://www.baltimorecity.gov/',
 					    'description':			u'Baltimore is the largest city in the State of Maryland, the largest independent city in the United States, and the 26th-most populous city in the country.',
-					    'landing_img':			u'/static/img/landing/locations/baltimoreMDLanding.jpg'
-					},
-					{
-					    'id':                   2,
-					    'name':             	u'Cleveland, Ohio',
-					    'nickname':				u'The Forest City',
-					    'winter_avgTemp':       37,
-					    'spring_avgTemp':       58,
-					    'summer_avgTemp':       81,
-					    'fall_avgTemp':         72,
-					    'winter_avgHumidity':   71,
-					    'spring_avgHumidity':   59,
-					    'summer_avgHumidity':   55,
-					    'fall_avgHumidity':     58,
-					    'altitude':             u'653ft',
-					    'annual_rainfall':      u'39.12in',
-					    'landmarks':            u'Rock and Roll Hall of Fame, Cleveland Metroparks Zoo',
-					    'website_url':			u'http://www.city.cleveland.oh.us/CityofCleveland/Home',
-					    'description':			u'Cleveland is a city in the state of Ohio and is the county seat of Cuyahoga County, the most populous county in the state.',
-					    'landing_img':			u'/static/img/landing/locations/clevelandOHLanding.jpg'
+					    'landing_img':			u'/static/img/landing/locations/baltimoreMDLanding.jpg',
+					    'img':					u'/static/img/locationTempl/baltimore1.jpg'
 					},
 					{
 					    'id':                   1,
@@ -818,7 +800,28 @@ def retrieve_locations():
 					    'landmarks':            u'Sixth Floor Museum at Dealey Plaza, Dallas World Aquarium',
 					    'website_url':			u'http://dallascityhall.com/Pages/default.aspx',
 					    'description':			u'Dallas is a major city in Texas and is the largest urban center of the fourth most populous metropolitan area in the United States. The city proper ranks ninth in the U.S. and third in Texas after Houston and San Antonio.',
-					    'landing_img':			u'/static/img/landing/locations/dallasTXLanding.jpg'		
+					    'landing_img':			u'/static/img/landing/locations/dallasTXLanding.jpg',
+					    'img':					u'/static/img/locationTempl/dallas1.jpg'
+					},
+					{
+					    'id':                   2,
+					    'name':             	u'Cleveland, Ohio',
+					    'nickname':				u'The Forest City',
+					    'winter_avgTemp':       37,
+					    'spring_avgTemp':       58,
+					    'summer_avgTemp':       81,
+					    'fall_avgTemp':         72,
+					    'winter_avgHumidity':   71,
+					    'spring_avgHumidity':   59,
+					    'summer_avgHumidity':   55,
+					    'fall_avgHumidity':     58,
+					    'altitude':             u'653ft',
+					    'annual_rainfall':      u'39.12in',
+					    'landmarks':            u'Rock and Roll Hall of Fame, Cleveland Metroparks Zoo',
+					    'website_url':			u'http://www.city.cleveland.oh.us/CityofCleveland/Home',
+					    'description':			u'Cleveland is a city in the state of Ohio and is the county seat of Cuyahoga County, the most populous county in the state.',
+					    'landing_img':			u'/static/img/landing/locations/clevelandOHLanding.jpg',
+					    'img':					u'/static/img/locationTempl/cleveland1.jpg'	
 					}
 				]
 	return locations
