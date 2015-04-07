@@ -44,6 +44,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/1uOII9K5c0c',
 			        'fb_url':       u'https://www.facebook.com/WIPEOUTRUN',
 			        'landing_img':	u'/static/img/landing/funruns/wipeoutLanding.jpg',
+			        'loc':			0,
 			        'imgs':         [
 			                            u'/static/img/runTempl/wipeout1.jpg',
 			                            u'/static/img/runTempl/wipeout2.jpg',
@@ -55,6 +56,7 @@ def retrieve_funruns():
 			        'challenges':   [
 			                            0
 			                        ]
+
 			    },  
 			    {
 			        'id':           1,
@@ -79,6 +81,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/uPiN-_p7q2k',
 			        'fb_url':       u'https://www.facebook.com/AChristmasStoryRun',
 			        'landing_img':	u'/static/img/landing/funruns/christmasStoryRunLanding.jpg',
+			        'loc':			1,
 			        'imgs':         [
 			                            u'/static/img/runTempl/christmasstory1.jpg',
 			                            u'/static/img/runTempl/christmasstory2.jpg',
@@ -114,6 +117,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/qdnzjhWgCOg',
 			        'fb_url':       u'https://www.facebook.com/DallasYMCATrot',
 			        'landing_img':	u'/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg',
+			        'loc':			2,
 			        'imgs':         [
 			                            u'/static/img/runTempl/dallasturkey1.jpg',
 			                            u'/static/img/runTempl/dallasturkey2.jpg',
@@ -125,7 +129,8 @@ def retrieve_funruns():
 			        'challenges':   [
 			                            1,
 			                            2
-			                        ]
+			                        ],
+			        'loc':		2
 			    }
 			]
 	return funruns
@@ -294,10 +299,11 @@ def retrieve_locations():
 					    'landmarks':            u'National Aquarium in Baltimore, Fort McHenry',
 					    'website_url':			u'http://www.baltimorecity.gov/',
 					    'description':			u'Baltimore is the largest city in the State of Maryland, the largest independent city in the United States, and the 26th-most populous city in the country.',
-					    'landing_img':			u'/static/img/landing/locations/baltimoreMDLanding.jpg'
+					    'landing_img':			u'/static/img/landing/locations/baltimoreMDLanding.jpg',
+					    'img':					u'/static/img/locationTempl/baltimore1.jpg'
 					},
 					{
-					    'id':                   2,
+					    'id':                   1,
 					    'name':             	u'Cleveland, Ohio',
 					    'nickname':				u'The Forest City',
 					    'winter_avgTemp':       37,
@@ -313,10 +319,12 @@ def retrieve_locations():
 					    'landmarks':            u'Rock and Roll Hall of Fame, Cleveland Metroparks Zoo',
 					    'website_url':			u'http://www.city.cleveland.oh.us/CityofCleveland/Home',
 					    'description':			u'Cleveland is a city in the state of Ohio and is the county seat of Cuyahoga County, the most populous county in the state.',
-					    'landing_img':			u'/static/img/landing/locations/clevelandOHLanding.jpg'
+					    'landing_img':			u'/static/img/landing/locations/clevelandOHLanding.jpg',
+					    'img':					u'/static/img/locationTempl/cleveland1.jpg'
+
 					},
 					{
-					    'id':                   1,
+					    'id':                   2,
 					    'name':      	      	u'Dallas, Texas',
 					    'nickname':				u'Home of the Cowboys',
 					    'winter_avgTemp':	    59,
@@ -332,7 +340,8 @@ def retrieve_locations():
 					    'landmarks':            u'Sixth Floor Museum at Dealey Plaza, Dallas World Aquarium',
 					    'website_url':			u'http://dallascityhall.com/Pages/default.aspx',
 					    'description':			u'Dallas is a major city in Texas and is the largest urban center of the fourth most populous metropolitan area in the United States. The city proper ranks ninth in the U.S. and third in Texas after Houston and San Antonio.',
-					    'landing_img':			u'/static/img/landing/locations/dallasTXLanding.jpg'		
+					    'landing_img':			u'/static/img/landing/locations/dallasTXLanding.jpg',	
+					    'img':					u'/static/img/locationTempl/dallas1.jpg'
 					}
 				]
 	return locations
