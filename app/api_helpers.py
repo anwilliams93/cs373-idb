@@ -603,8 +603,8 @@ def retrieve_themes():
 			    #     'id':           6,
 			    #     'name':         u'Drink',
 			    #     'buzzwords':    u'Beer, beer, and more beer',
-			    #     'description':  u'',
-			    #     'short':		u'',
+			    #     'description':  u'Ever try keeping down a couple of drinks while running long distances? These runs test your endurance and bladder',
+			    #     'short':			u'Hold yourself together while being part ofthese runs.',
 			    #     'landing_img':	u'/static/img/landing/themes/drink1.jpg',
 			    #     'imgs':         [
 			    #                         u'/static/img/themeTempl/drink1.jpg',
@@ -626,9 +626,9 @@ def retrieve_themes():
 			    # {
 			    #     'id':           7,
 			    #     'name':         u'Food',
-			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
-			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
-			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'buzzwords':    u'',
+			    #     'description':  u'',
+			    #     'short':		u'',
 			    #     'landing_img':	u'/static/img/landing/themes/food1.jpg',
 			    #     'imgs':         [
 			    #                         u'/static/img/themeTempl/food1.jpg',
