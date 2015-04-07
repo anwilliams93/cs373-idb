@@ -51,11 +51,11 @@ class FunRun(db.Model):
     location_id = db.Column(db.Integer, db.ForeignKey('locations.id'))
     
     # Fun Runs & Themes are many to many
-    # funRuns_themes = db.relationship('themes', secondary = funRuns_themes, backref = db.backref('funruns'))
+   # funRuns_themes = db.relationship('themes', secondary = funRuns_themes, backref = db.backref('funruns'))
     # Fun Runs & Challenges are many to many
     # funRuns_challenges = db.relationship('challenges', secondary = funRuns_challenges, backref = db.backref('funruns'))
 
-    def __init__(self, id, name, address, date, distance, price, hosts, sponsors, charities, website, description, map_url):
+    def __init__(self, id, name, address, date, distance, price, hosts, sponsors, charities, website, description, map_url, location_id):
         self.id = id
         self.name = name
         self.address = address
@@ -68,15 +68,16 @@ class FunRun(db.Model):
         self.website = website
         self.description = description 
         self.map_url = map_url
+        self.location_id = location_id
 
 
     def __repr__(self):
         return '<Id %r>' % self.id
 
 
-# # ------------
-# # Themes table
-# # ------------ 
+# ------------
+# Themes table
+# ------------ 
 # class Theme(db.Model):
 #     __tablename__ = 'themes'
 #     id = db.Column(db.Integer, primary_key=True)
@@ -85,7 +86,7 @@ class FunRun(db.Model):
 #     description = db.Column(db.String(600), unique=False)
     
 #     # Themes & Challenges are many to many
-#     themes_challenges = db.relationship('challenges', secondary = themes_challenges, backref = db.backref('themes'))
+#    # themes_challenges = db.relationship('challenges', secondary = themes_challenges, backref = db.backref('themes'))
 #     # Fun Runs & Themes are many to many (see FunRun)
 
 #     def __init__(self, id, name, address, date):
@@ -138,10 +139,10 @@ class Location(db.Model):
     landmarks = db.Column(db.String(350), unique=False)
     
     # Locations & Fun Runs are one to many
-    funruns = db.relationship('FunRun', backref=db.backref('locations'))
+    #funruns = db.relationship('FunRun', backref=db.backref('locations'))
     
     def __init__(self, id, city, winter_avgTemp, spring_avgTemp, summer_avgTemp, fall_avgTemp, winter_avgHumidity, spring_avgHumidity, summer_avgHumidity, 
-                fall_avgHumidity, altitude, annual_rainfall, landmarks, funruns = []):
+                fall_avgHumidity, altitude, annual_rainfall, landmarks):
         self.id = id
         self.city = city
         self.winter_avgTemp = winter_avgTemp
@@ -155,17 +156,22 @@ class Location(db.Model):
         self.altitude = altitude 
         self.annual_rainfall = annual_rainfall
         self.landmarks = landmarks
-        self.funruns = funruns
+        #self.funruns = funruns
 
     def __repr__(self):
         return '<Id %r>' % self.id
 
-db.create_all()
-db.session.commit()
-frun1 = FunRun(0, 'name', 'addr', 'date', 'dist', 'price', 'hosts', 'spons', 'charit', 'web', 'desc', 'map')
-loc1 = Location(0, 'blah', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'LANDMARK', [frun1])
-db.session.add(loc1)
-db.session.add(frun1)
-print("whatjkalsdjfkla;sjdfkl;asdf\n\n\n")
 
+
+db.drop_all()
 db.session.commit()
+
+# db.create_all()
+# db.session.commit()
+# frun1 = FunRun(0, 'name', 'addr', 'date', 'dist', 'price', 'hosts', 'spons', 'charit', 'web', 'desc', 'map')
+# loc1 = Location(0, 'blah', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'LANDMARK', [frun1])
+# db.session.add(loc1)
+# db.session.add(frun1)
+# print("whatjkalsdjfkla;sjdfkl;asdf\n\n\n")
+
+# db.session.commit()
