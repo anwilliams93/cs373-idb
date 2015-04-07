@@ -173,7 +173,7 @@ def retrieve_funruns():
 			        'hosts':        u'Great Vision Productions LLC',
 			        'sponsors':     u'WholeSale Halloween Costumes',
 			        'charities':    u'Local charities',
-			        'description':  u'Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!',
+			        'description':  u'We have obstacles but we aren\'t going to tell you what they are! The element of surprise makes the race more fun. Zombie Race is offering a 3.1 mile race and a 9.3 mile race in the Long Island area.',
 			        'short':		u'There will be zombie on the course attempting to steal your health flags and eat your brains! Where will they be? You won\'t know until race weekend.!',
 			        'quotes':       [
 			                            u'They don\'t like fast food',
@@ -224,6 +224,41 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/blacklight1.jpg',
 			                            u'/static/img/runTempl/blacklight2.jpg',
 			                            u'/static/img/runTempl/blacklight3.jpg'
+			                        ],
+			        'themes':       [
+			                            1
+			                        ],
+			        'challenges':   [
+			                            0
+			                        ]
+			    },
+			    	{
+			        'id':           6,
+			        'name':         u'Electric Run',
+			        'city':         u'Puyallup, Washington',
+			        'address':      u'Washington State Fair Events Center\n110 9th Avenue\nPuyallup, WA 98371',
+			        'date':         u'May 23rd, 2015',
+			        'distance':     u'5K',
+			        'price':        u'Before April 15th: $45\nApril 16th - May 1st: $50',
+			        'hosts':        u'Washington State Fair Events Center',
+			        'sponsors':     u'WholeSale Halloween Costumes',
+			        'charities':    u'Mary Bridge Children\'s Foundation',
+			        'description':  u'Electric Run is the ultimate nighttime 5k run/walk adventure, where the participants are an integrated part of the show',
+			        'short':		u'Come join the electric movement and dive into an unforgettable experience for the mind, body, and soul.',
+			        'quotes':       [
+			                            u'You\'ve GOT to bring The Electric Run back to ATLANTA!',
+			                            u' I loved the event last year!',
+			                            u'It was a blast! Can\'t wait for this year!',
+			                        ],
+			        'website':      u'http://electricrun.com/seatac',
+			        'map_url':      u'https://www.google.com/maps/place/Washington+State+Fair/@47.1856237,-122.3073378,14z/data=!4m2!3m1!1s0x5490fc035e7af37d:0x5fb822881e1b0c46',
+			        'video_url':    u'https://www.youtube.com/watch?v=R0uhmZI1yy4',
+			        'fb_url':       u'https://www.facebook.com/electricrun',
+			        'landing_img':	u'/static/img/landing/funruns/electricrunLanding.jpg',
+			        'imgs':         [
+			                            u'/static/img/runTempl/electricrun1.jpg',
+			                            u'/static/img/runTempl/electricrun2.jpg',
+			                            u'/static/img/runTempl/electricrun3.jpg'
 			                        ],
 			        'themes':       [
 			                            1
