@@ -384,7 +384,7 @@ def retrieve_themes():
 			        'name':         u'Holiday', 
 			        'buzzwords':    u'Christmas, Thanksgiving, Easter, Valentine\'s Day, St. Patrick\'s Day, New Year\'s, Halloween, 4th of July',
 			        'description':  u'Instead of sitting around the fire, talking of presents and Santa, why not go for a run with the family? Holiday runs are a great way to get out and celebrate during the festivities! Often featuring thematic competitions and costumes, they\'re a sure way of making any holiday a memorable one.',
-			        'short':		u'Celebrate the holidays with a festive run',
+			        'short':		u'Celebrate the holidays with a festive run.',
 			        'landing_img':	u'/static/img/landing/themes/holiday1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/holiday1.jpg',
@@ -409,7 +409,7 @@ def retrieve_themes():
 			        'name':         u'Intense',
 			        'buzzwords':    u'Training, Diet, Hardcore, Recovery, Cutthroat',
 			        'description':  u'More interested in proving how much you can take than how much fun you\'ll actually have? Intense runs are exactly what you need - a good dose of body-numbing, soul-crushing exercise to show your stuff. See if you can survive the brutal difficulty of these events.',
-			        'short':		u'Test your endurance in these hardcore races',
+			        'short':		u'Test your endurance in these hardcore races.',
 			        'landing_img':	u'/static/img/landing/themes/intense1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/intense1.jpg',
@@ -434,7 +434,7 @@ def retrieve_themes():
 			        'name':         u'Costume',
 			        'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
 			        'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
-			        'short':		u'Put on your silliest outfit and get running',
+			        'short':		u'Put on your silliest outfit and get running.',
 			        'landing_img':	u'/static/img/landing/themes/costume1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/costume1.jpg',
@@ -452,6 +452,174 @@ def retrieve_themes():
 			        'challenges':   [
 			                            1
 			                        ]
+			    # },
+			    # {
+			    #     'id':           3,
+			    #     'name':         u'Location',
+			    #     'buzzwords':    u'Landmarks, Rivers, Downtown, Parks, Lakes, Views',
+			    #     'description':  u'Whether it is an excuse to travel and exercise, or a good distraction from the aches and pains of running, the location of a race is a great factor in deciding which run works for you!',
+			    #     'short':		u'Enjoy the scenic views while getting in some exercise.',
+			    #     'landing_img':	u'/static/img/landing/themes/location1.jpg',
+			    #     'imgs':         [
+			    #                         u'/static/img/themeTempl/location1.jpg',
+			    #                         u'/static/img/themeTempl/location2.jpg',
+			    #                         u'/static/img/themeTempl/location3.jpg',
+			    #                         u'/static/img/themeTempl/location4.jpg',
+			    #                         u'/static/img/themeTempl/location5.jpg',
+			    #                         u'/static/img/themeTempl/location6.jpg',
+			    #                         u'/static/img/themeTempl/location7.jpg',
+			    #                         u'/static/img/themeTempl/location8.jpg'
+			    #                     ],
+			    #     'funruns':         [
+			    #                         2
+			    #                     ],
+			    #     'challenges':   [
+			    #                         1
+			    #                     ]
+			    # },
+			    # {
+			    #     'id':           4,
+			    #     'name':         u'Dirty',
+			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
+			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
+			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'landing_img':	u'/static/img/landing/themes/dirty1.jpg',
+			    #     'imgs':         [
+			    #                         u'/static/img/themeTempl/dirty1.jpg',
+			    #                         u'/static/img/themeTempl/dirty2.jpg',
+			    #                         u'/static/img/themeTempl/dirty3.jpg',
+			    #                         u'/static/img/themeTempl/dirty4.jpg',
+			    #                         u'/static/img/themeTempl/dirty5.jpg',
+			    #                         u'/static/img/themeTempl/dirty6.jpg',
+			    #                         u'/static/img/themeTempl/dirty7.jpg',
+			    #                         u'/static/img/themeTempl/dirty8.jpg'
+			    #                     ],
+			    #     'funruns':         [
+			    #                         2
+			    #                     ],
+			    #     'challenges':   [
+			    #                         1
+			    #                     ]
+			    # },
+			    # {
+			    #     'id':           5,
+			    #     'name':         u'Team',
+			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
+			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
+			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'landing_img':	u'/static/img/landing/themes/team1.jpg',
+			    #     'imgs':         [
+			    #                         u'/static/img/themeTempl/team1.jpg',
+			    #                         u'/static/img/themeTempl/team2.jpg',
+			    #                         u'/static/img/themeTempl/team3.jpg',
+			    #                         u'/static/img/themeTempl/team4.jpg',
+			    #                         u'/static/img/themeTempl/team5.jpg',
+			    #                         u'/static/img/themeTempl/team6.jpg',
+			    #                         u'/static/img/themeTempl/team7.jpg',
+			    #                         u'/static/img/themeTempl/team8.jpg'
+			    #                     ],
+			    #     'funruns':         [
+			    #                         2
+			    #                     ],
+			    #     'challenges':   [
+			    #                         1
+			    #                     ]
+			    # },
+			    # {
+			    #     'id':           6,
+			    #     'name':         u'Drink',
+			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
+			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
+			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'landing_img':	u'/static/img/landing/themes/drink1.jpg',
+			    #     'imgs':         [
+			    #                         u'/static/img/themeTempl/drink1.jpg',
+			    #                         u'/static/img/themeTempl/drink2.jpg',
+			    #                         u'/static/img/themeTempl/drink3.jpg',
+			    #                         u'/static/img/themeTempl/drink4.jpg',
+			    #                         u'/static/img/themeTempl/drink5.jpg',
+			    #                         u'/static/img/themeTempl/drink6.jpg',
+			    #                         u'/static/img/themeTempl/drink7.jpg',
+			    #                         u'/static/img/themeTempl/drink8.jpg'
+			    #                     ],
+			    #     'funruns':         [
+			    #                         2
+			    #                     ],
+			    #     'challenges':   [
+			    #                         1
+			    #                     ]
+			    # },
+			    # {
+			    #     'id':           7,
+			    #     'name':         u'Food',
+			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
+			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
+			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'landing_img':	u'/static/img/landing/themes/food1.jpg',
+			    #     'imgs':         [
+			    #                         u'/static/img/themeTempl/food1.jpg',
+			    #                         u'/static/img/themeTempl/food2.jpg',
+			    #                         u'/static/img/themeTempl/food3.jpg',
+			    #                         u'/static/img/themeTempl/food4.jpg',
+			    #                         u'/static/img/themeTempl/food5.jpg',
+			    #                         u'/static/img/themeTempl/food6.jpg',
+			    #                         u'/static/img/themeTempl/food7.jpg',
+			    #                         u'/static/img/themeTempl/food8.jpg'
+			    #                     ],
+			    #     'funruns':         [
+			    #                         2
+			    #                     ],
+			    #     'challenges':   [
+			    #                         1
+			    #                     ]
+			    # },
+			    # {
+			    #     'id':           8,
+			    #     'name':         u'Music',
+			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
+			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
+			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'landing_img':	u'/static/img/landing/themes/music1.jpg',
+			    #     'imgs':         [
+			    #                         u'/static/img/themeTempl/music1.jpg',
+			    #                         u'/static/img/themeTempl/music2.jpg',
+			    #                         u'/static/img/themeTempl/music3.jpg',
+			    #                         u'/static/img/themeTempl/music4.jpg',
+			    #                         u'/static/img/themeTempl/music5.jpg',
+			    #                         u'/static/img/themeTempl/music6.jpg',
+			    #                         u'/static/img/themeTempl/music7.jpg',
+			    #                         u'/static/img/themeTempl/music8.jpg'
+			    #                     ],
+			    #     'funruns':         [
+			    #                         2
+			    #                     ],
+			    #     'challenges':   [
+			    #                         1
+			    #                     ]
+			    # },
+			    # {
+			    #     'id':           9,
+			    #     'name':         u'Fantasy',
+			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
+			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
+			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'landing_img':	u'/static/img/landing/themes/fantasy1.jpg',
+			    #     'imgs':         [
+			    #                         u'/static/img/themeTempl/fantasy1.jpg',
+			    #                         u'/static/img/themeTempl/fantasy2.jpg',
+			    #                         u'/static/img/themeTempl/fantasy3.jpg',
+			    #                         u'/static/img/themeTempl/fantasy4.jpg',
+			    #                         u'/static/img/themeTempl/fantasy5.jpg',
+			    #                         u'/static/img/themeTempl/fantasy6.jpg',
+			    #                         u'/static/img/themeTempl/fantasy7.jpg',
+			    #                         u'/static/img/themeTempl/fantasy8.jpg'
+			    #                     ],
+			    #     'funruns':         [
+			    #                         2
+			    #                     ],
+			    #     'challenges':   [
+			    #                         1
+			    #                     ]
 			    }
 			]
 	return themes
