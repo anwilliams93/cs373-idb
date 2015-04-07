@@ -86,7 +86,7 @@ class Theme(db.Model):
     description = db.Column(db.String(600), unique=False)
     
     # Themes & Challenges are many to many
-   # themes_challenges = db.relationship('challenges', secondary = themes_challenges, backref = db.backref('themes'))
+    themes_challenges = db.relationship('challenges', secondary = themes_challenges, backref = db.backref('themes'))
     # Fun Runs & Themes are many to many (see FunRun)
 
     def __init__(self, id, name, address, date):
