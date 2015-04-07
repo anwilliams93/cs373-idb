@@ -578,9 +578,9 @@ def retrieve_themes():
 			    # {
 			    #     'id':           5,
 			    #     'name':         u'Team',
-			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
-			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
-			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'buzzwords':    u'Group, Partner(s), Family',
+			    #     'description':  u'You don't have to run a race by yourself. Instead, put together a team of your friends and take part in one of these races.',
+			    #     'short':		u'Share the fun with a group or that special someone',
 			    #     'landing_img':	u'/static/img/landing/themes/team1.jpg',
 			    #     'imgs':         [
 			    #                         u'/static/img/themeTempl/team1.jpg',
@@ -602,9 +602,9 @@ def retrieve_themes():
 			    # {
 			    #     'id':           6,
 			    #     'name':         u'Drink',
-			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
-			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
-			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'buzzwords':    u'Beer, beer, and more beer',
+			    #     'description':  u'',
+			    #     'short':		u'',
 			    #     'landing_img':	u'/static/img/landing/themes/drink1.jpg',
 			    #     'imgs':         [
 			    #                         u'/static/img/themeTempl/drink1.jpg',
@@ -617,7 +617,7 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/drink8.jpg'
 			    #                     ],
 			    #     'funruns':         [
-			    #                         2
+			    #                         11
 			    #                     ],
 			    #     'challenges':   [
 			    #                         1
