@@ -134,7 +134,7 @@ def retrieve_funruns():
 			        'id':           3,
 			        'name':         u'Bay to Breakers',
 			        'city':         u'San Francisco, California',
-			        'address':      u'219 Howard St.\nSan Francisco, CA 94105',
+			        'address':      u'Fort Mason Center\n2 Marina Blvd\nSan Francisco, CA 94105',
 			        'date':         u'May 17th, 2015',
 			        'distance':     u'12 km',
 			        'price':        u'Adult: $59 \nChild: $29.50\n VIP: $139\nGroup: $54',
