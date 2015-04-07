@@ -232,7 +232,7 @@ def retrieve_funruns():
 			                            0
 			                        ]
 			    },
-			    	{
+		    	{
 			        'id':           6,
 			        'name':         u'Electric Run',
 			        'city':         u'Puyallup, Washington',
@@ -259,6 +259,40 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/electricrun1.jpg',
 			                            u'/static/img/runTempl/electricrun2.jpg',
 			                            u'/static/img/runTempl/electricrun3.jpg'
+			                        ],
+			        'themes':       [
+			                            1
+			                        ],
+			        'challenges':   [
+			                            0
+			                        ]
+			    },
+			    {
+			        'id':           7,
+			        'name':         u'Brew Mile',
+			        'city':         u'Dallas, Texas',
+			        'address':      u'1300 Robert B Cullum Boulevard\nDallas, Texas\n78210',
+			        'date':         u'May 1st, 2015',
+			        'distance':     u'5K',
+			        'price':        u'Before May 1st: $75\nOn May 1st: $80',
+			        'hosts':        u'Blacklight Run Corporate',
+			        'sponsors':     u'Local breweries, food, music organizations',
+			        'description':  u'The Brew Mile is your chance to combine your love of running with the finest beverage on the face of this good green earth – BEER. Finally an event that tests your liver as much as it tests your lungs, and is followed by one of the best parties of the year!',
+			        'short':		u'Run a mile while chugging beer!',
+			        'quotes':       [
+			                            u'Super excited for us to do this run.',
+			                            u'Drinking a beer after a run is freakin awesome.',
+			                            u'I HAVE NEVER BEEN SO EXCITED TO RUN A MILE'
+			                        ],
+			        'website':      u'http://brewmile.com/',
+			        'map_url':      u'https://www.google.com/maps/place/Fair+Park/@32.781453,-96.761736,17z/data=!3m1!4b1!4m2!3m1!1s0x864e9897a14862d7:0x64277dc82ee9144',
+			        'video_url':    u'https://www.youtube.com/watch?v=cXrafhIBdlI',
+			        'fb_url':       u'https://www.facebook.com/brewmileseries',
+			        'landing_img':	u'/static/img/landing/funruns/brewrunLanding.jpg',
+			        'imgs':         [
+			                            u'/static/img/runTempl/brewmile1.jpg',
+			                            u'/static/img/runTempl/brewmile2.jpg',
+			                            u'/static/img/runTempl/brewmile3.jpg'
 			                        ],
 			        'themes':       [
 			                            1
