@@ -277,6 +277,7 @@ def retrieve_funruns():
 			        'price':        u'Before May 1st: $75\nOn May 1st: $80',
 			        'hosts':        u'Blacklight Run Corporate',
 			        'sponsors':     u'Local breweries, food, music organizations',
+			        'charities':    u'Local charities',
 			        'description':  u'The Brew Mile is your chance to combine your love of running with the finest beverage on the face of this good green earth – BEER. Finally an event that tests your liver as much as it tests your lungs, and is followed by one of the best parties of the year!',
 			        'short':		u'Run a mile while chugging beer!',
 			        'quotes':       [
@@ -293,6 +294,41 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/brewmile1.jpg',
 			                            u'/static/img/runTempl/brewmile2.jpg',
 			                            u'/static/img/runTempl/brewmile3.jpg'
+			                        ],
+			        'themes':       [
+			                            1
+			                        ],
+			        'challenges':   [
+			                            0
+			                        ]
+			    },
+			    {
+			        'id':           8,
+			        'name':         u'Tough Mudder',
+			        'city':         u'Fairburn, Georgia',
+			        'address':      u'10045 Cedar Grove\nFairburn, Georgia\n30213',
+			        'date':         u'May 2nd & 3rd, 2015',
+			        'distance':     u'19K',
+			        'price':        u'$185-$195',
+			        'hosts':        u'Tough Mudder',
+			        'sponsors':     u'Toyo Tires, Cellucor, Shock-Top, MET-Rx, Oberto, Radisson, Wheaties, Under Armour',
+			        'charities':    u'Wounded Warrior Project, U.S. Army',
+			        'description':  u'Tough Mudder is a team-oriented obstacle course designed to test physical strength and mental grit. It puts camaraderie over finisher rankings and is not a timed race but a team challenge that allows participants to experience exhilarating, yet safe, world-class obstacles they won\'t find anywhere else',
+			        'short':		u'Run through a 12 mile course filled with military-style obstacles',
+			        'quotes':       [
+			                            u'The teamwork and camaraderie out there was amazing.',
+			                            u'The idea of Tough Mudder is not to win..but to have a story to tell.',
+			                            u'Tough Mudder is a culture and Community of taking on challenges and supporting each other.'
+			                        ],
+			        'website':      u'https://toughmudder.com/',
+			        'map_url':      u'https://www.google.com/maps?q=10045+Cedar+Grove+Rd,+Fairburn,+GA,+30213,+us',
+			        'video_url':    u'https://www.youtube.com/watch?v=Jim-ksScOoc',
+			        'fb_url':       u'https://www.facebook.com/toughmudder',
+			        'landing_img':	u'/static/img/landing/funruns/toughmudderLanding.jpg',
+			        'imgs':         [
+			                            u'/static/img/runTempl/toughmudder1.jpg',
+			                            u'/static/img/runTempl/toughmudder2.jpg',
+			                            u'/static/img/runTempl/toughmudder3.jpg'
 			                        ],
 			        'themes':       [
 			                            1
