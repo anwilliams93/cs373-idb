@@ -48,7 +48,7 @@ class FunRun(db.Model):
     map_url = db.Column(db.String(350), unique=False)
     
     # Fun Runs & Locations are many to one
-    location_id = db.Column(db.Integer, db.ForeignKey('locations.id'))
+    location_id = db.Column(db.Integer, db.ForeignKey('location.id'))
     
     # Fun Runs & Themes are many to many
     funRun_theme = db.relationship('Theme', secondary = funRun_theme, backref = db.backref('funruns'))
