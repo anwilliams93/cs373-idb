@@ -55,7 +55,7 @@ class FunRun(db.Model):
     # Fun Runs & Challenges are many to many
     funRun_challenge = db.relationship('Challenge', secondary = funRun_challenge, backref = db.backref('funruns'))
 
-    def __init__(self, id, name, address, date, distance, price, hosts, sponsors, charities, website, description, map_url, location_id, funRuns_themes = [], funRuns_challenges = []):
+    def __init__(self, id, name, address, date, distance, price, hosts, sponsors, charities, website, description, map_url, location_id): # funRuns_themes = [], funRuns_challenges = []):
         self.id = id
         self.name = name
         self.address = address
@@ -69,8 +69,8 @@ class FunRun(db.Model):
         self.description = description 
         self.map_url = map_url
         self.location_id = location_id
-        self.funRuns_themes = funRuns_themes
-        self.funRuns_challenges = funRuns_challenges
+        #self.funRuns_themes = funRuns_themes
+        #self.funRuns_challenges = funRuns_challenges
 
 
     def __repr__(self):
@@ -91,12 +91,12 @@ class Theme(db.Model):
     theme_challenge = db.relationship('Challenge', secondary = theme_challenge, backref = db.backref('theme'))
     # Fun Runs & Themes are many to many (see FunRun)
 
-    def __init__(self, id, name, buzzwords, description, theme_challenge = []):
+    def __init__(self, id, name, buzzwords, description): #theme_challenge = []):
         self.id = id
         self.name = name
         self.buzzwords = buzzwords
         self.description = description
-        self.theme_challenge = theme_challenge
+        #self.theme_challenge = theme_challenge
 
     def __repr__(self):
         return '<Id %r>' % self.id
@@ -177,7 +177,7 @@ db.session.commit()
 
 chal1 = Challenge(0, '1', '2', '3')
 db.session.add(chal1)
-theme1 = Theme(0, '1', '2', '3', [0])
+theme1 = Theme(0, '1', '2', '3', 0)
 db.session.add(theme1)
 loc1 = Location(0, 'blah', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'LANDMARK')
 db.session.add(loc1)
