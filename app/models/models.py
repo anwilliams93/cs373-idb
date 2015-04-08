@@ -181,7 +181,6 @@ loc1 = Location(0, 'blah', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'LANDMARK')
 frun1 = FunRun(0, 'name', 'addr', 'date', 'dist', 'price', 'hosts', 'spons', 'charit', 'web', 'desc', 'map', 0)
 
 theme1.theme_challenge.append(chal1)
-frun1.location_id.append(loc1)
 frun1.funRun_theme.append(theme1)
 frun1.funRun_challenge.append(chal1)
 
@@ -192,5 +191,7 @@ db.session.add(frun1)
 
 db.session.commit()
 
+print (frun1.funRun_theme.count())
+print (frun1.funRun_theme.filter_by(name = '1').count())
 print (frun1.location_id.count())
 print (frun1.location_id.filter_by(name = 'blah').count())
