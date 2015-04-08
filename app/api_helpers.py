@@ -675,9 +675,9 @@ def retrieve_themes():
 			    # {
 			    #     'id':           9,
 			    #     'name':         u'Fantasy',
-			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
-			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
-			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'buzzwords':    u'Dreams, Monsters, Supernatural',
+			    #     'description':  u'These runs will make your imagination run wild with their supernatural sights and experiences.',
+			    #     'short':		u'Run through your wildest fantasies.',
 			    #     'landing_img':	u'/static/img/landing/themes/fantasy1.jpg',
 			    #     'imgs':         [
 			    #                         u'/static/img/themeTempl/fantasy1.jpg',
@@ -690,7 +690,7 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/fantasy8.jpg'
 			    #                     ],
 			    #     'funruns':         [
-			    #                         2
+			    #                         4
 			    #                     ],
 			    #     'challenges':   [
 			    #                         1
