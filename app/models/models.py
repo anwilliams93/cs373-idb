@@ -191,7 +191,4 @@ db.session.add(frun1)
 
 db.session.commit()
 
-print (frun1.count(funRun_theme))
-print (frun1.funRun_theme.filter_by(name = '1').count())
-print (frun1.location_id.count())
-print (frun1.location_id.filter_by(name = 'blah').count())
+
