@@ -760,6 +760,279 @@ def retrieve_challenges():
 				                            0,
 				                            1
 				                        ]
+				    },
+				    {
+				        'id':           3,
+				        'name':         u'Going Over Hills',
+				        'difficulty':   70,
+				        'flavors':      u'High elevation, Incline, Steep',
+				        'description':  u'Fight against gravity and prepare to go over steep hills in these runs',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           4,
+				        'name':         u'Getting Chased',
+				        'difficulty':   60,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           5,
+				        'name':         u'Getting Covered in Stuff',
+				        'difficulty':   40,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           6,
+				        'name':         u'Consuming',
+				        'difficulty':   40,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           7,
+				        'name':         u'Carrying an Object',
+				        'difficulty':   70,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           8,
+				        'name':         u'Scaling a Wall',
+				        'difficulty':   80,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           9,
+				        'name':         u'Sliding Down Slopes',
+				        'difficulty':   50,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           10,
+				        'name':         u'Crawling Underneath Obstacles',
+				        'difficulty':   60,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           11,
+				        'name':         u'Being Suspended',
+				        'difficulty':   70,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           12,
+				        'name':         u'Staying Balanced',
+				        'difficulty':   70,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           13,
+				        'name':         u'Getting Hit by Objects',
+				        'difficulty':   80,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           14,
+				        'name':         u'Performing Urban Parkouring',
+				        'difficulty':   70,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
+				    },
+				    {
+				        'id':           15,
+				        'name':         u'Running with Limited Visibility',
+				        'difficulty':   60,
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ],
+				        'funruns':      [
+				        					1,
+				                            2
+				                        ],
+				        'themes':       [
+				                            0,
+				                            1
+				                        ]
 				    }
 				]
 	return challenges
