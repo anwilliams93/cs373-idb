@@ -244,10 +244,18 @@ db.session.commit()
 
 
 
-chal1 = Challenge(0, '1', '2', '3')
-theme1 = Theme(0, '1', '2', '3')
-loc1 = Location(0, 'blah', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'LANDMARK')
-frun1 = FunRun(0, 'name', 'addr', 'date', 'dist', 'price', 'hosts', 'spons', 'charit', 'web', 'desc', 'map', 0)
+chal1 = Challenge(name = 'test1 chal1', difficulty = 100, flavors = 'la la'
+                , description = 'lalalalala')
+
+theme1 = Theme(name = 'test1 theme1', buzzwords = 'christmas', short = 'lalala'
+                , description = 'lalalalala')
+loc1 = Location(name ='blah', winter_avgTemp = 1, winter_avgHumidity = 2, fall_avgTemp = 3, 
+                fall_avgHumidity= 4, summer_avgTemp = 5, summer_avgHumidity = 6, landmarks ='LANDMARK')
+
+
+frun1 = FunRun( name ='name', address= 'addr', date = 'date', distance = 'dist', 
+                price ='price', hosts ='hosts', sponsors ='spons', charities ='charit', 
+                        map_url =' web')
 
 theme1.theme_challenge.append(chal1)
 frun1.funRun_theme.append(theme1)
