@@ -650,9 +650,9 @@ def retrieve_themes():
 			    # {
 			    #     'id':           8,
 			    #     'name':         u'Music',
-			    #     'buzzwords':    u'Silly, Uncomfortable, Dress-Up, Make-Believe',
-			    #     'description':  u'Ever run a 5K in a hot and heavy mascot uniform? How about amongst hundreds of other runners in similarly ridiculous outfits? Try a costume run to experience the unique challenge of running in something other than athletic clothes and join a hodge-podge mob of other costumed crazies!',
-			    #     'short':		u'Put on your silliest outfit and get running',
+			    #     'buzzwords':    u'Rhythm, Dance, Banger',
+			    #     'description':  u'No need for a pre-workout for these runs. The music will get you pumped and ready to hit the ground running.',
+			    #     'short':		u'Jam out to some tunes during these runs.',
 			    #     'landing_img':	u'/static/img/landing/themes/music1.jpg',
 			    #     'imgs':         [
 			    #                         u'/static/img/themeTempl/music1.jpg',
@@ -665,7 +665,8 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/music8.jpg'
 			    #                     ],
 			    #     'funruns':         [
-			    #                         1
+			    #                         5,
+			    #							6
 			    #                     ],
 			    #     'challenges':   [
 			    #                         1
