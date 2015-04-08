@@ -268,7 +268,9 @@ db.session.add(frun1)
 
 db.session.commit()
 
-frun1.id
 print (frun1.id)
+print (chal1.id)
+print (loc1.id)
+print (theme1.id)
 
 
