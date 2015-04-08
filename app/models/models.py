@@ -192,4 +192,4 @@ db.session.add(frun1)
 
 db.session.commit()
 
-print loc1.funrun.count()
+print frun1.location.count()
