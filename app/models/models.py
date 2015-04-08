@@ -255,7 +255,7 @@ loc1 = Location(name ='blah', winter_avgTemp = 1, winter_avgHumidity = 2, fall_a
 
 frun1 = FunRun( name ='name', address= 'addr', date = 'date', distance = 'dist', 
                 price ='price', hosts ='hosts', sponsors ='spons', charities ='charit', 
-                        map_url =' web')
+                        map_url =' web', location_id = 1)
 
 theme1.theme_challenge.append(chal1)
 frun1.funRun_theme.append(theme1)
