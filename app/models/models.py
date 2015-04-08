@@ -91,7 +91,7 @@ class Theme(db.Model):
     #themes_challenges = db.relationship('challenges', secondary = themes_challenges, backref = db.backref('themes'))
     # Fun Runs & Themes are many to many (see FunRun)
 
-    def __init__(self, id, name, address, date):
+    def __init__(self, id, name, buzzwords, description):
         self.id = id
         self.name = name
         self.buzzwords = buzzwords
@@ -178,9 +178,9 @@ db.session.add(theme1)
 chal1 = Challenge(0, '1', '2', '3')
 db.session.add(chal1)
 loc1 = Location(0, 'blah', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'LANDMARK')
-#frun1 = FunRun(0, 'name', 'addr', 'date', 'dist', 'price', 'hosts', 'spons', 'charit', 'web', 'desc', 'map', 0, 0, 0)
+frun1 = FunRun(0, 'name', 'addr', 'date', 'dist', 'price', 'hosts', 'spons', 'charit', 'web', 'desc', 'map', 0, 0, 0)
 db.session.add(loc1)
-#db.session.add(frun1)
-# print("whatjkalsdjfkla;sjdfkl;asdf\n\n\n")
+db.session.add(frun1)
+#print("whatjkalsdjfkla;sjdfkl;asdf\n\n\n")
 
 db.session.commit()
