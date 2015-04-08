@@ -9,16 +9,16 @@ db = SQLAlchemy(app)
 # Many to many table, FunRuns to Themes
 # -------------------------------------
 funRuns_themes = db.Table('funRuns_themes', 
-    db.Column('funrun_id', db.Integer, db.ForeignKey('funrun.id')),
-    db.Column('theme_id', db.Integer, db.ForeignKey('theme.id'))
+    db.Column('funrun_id', db.Integer, db.ForeignKey('FunRun.id')),
+    db.Column('theme_id', db.Integer, db.ForeignKey('Theme.id'))
 )
 
 # -----------------------------------------
 # Many to many table, FunRuns to Challenges
 # -----------------------------------------
 funRuns_challenges = db.Table('funRuns_challenges', 
-    db.Column('funrun_id', db.Integer, db.ForeignKey('funrun.id')),
-    db.Column('challenge_id', db.Integer, db.ForeignKey('challenge.id'))
+    db.Column('funrun_id', db.Integer, db.ForeignKey('FunRun.id')),
+    db.Column('challenge_id', db.Integer, db.ForeignKey('Challenge.id'))
 )
 
 # ----------------------------------------
