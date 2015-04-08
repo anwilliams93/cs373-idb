@@ -268,4 +268,7 @@ db.session.add(frun1)
 
 db.session.commit()
 
+frun1.id
+print (frun1.id)
+
 
