@@ -149,7 +149,7 @@ def retrieve_funruns():
 			                            u'This is an amazing experience that will last forever. It is not only a race, but an incredible party throughout the streets of San Francisco.'
 			                        ],
 			        'website':      u'http://zapposbaytobreakers.com/',
-			        'map_url':      u'https://www.google.com/maps/place/219+Howard+St,+San+Francisco,+CA+94105/@37.7905136,-122.3935597,17z/data=!3m1!4b1!4m2!3m1!1s0x80858064dca37cb7:0x3509f87b15b8eae5',
+			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3152.984846292559!2d-122.39335585211597!3d37.79039490045594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dca37cb7%3A0x3509f87b15b8eae5!2s219+Howard+St%2C+San+Francisco%2C+CA+94105!5e0!3m2!1sen!2sus!4v1428532134914',
 			        'video_url':    u'https://www.youtube.com/embed/NVEVGSEJmOc',
 			        'fb_url':       u'https://www.facebook.com/zapposbaytobreakers',
 			        'landing_img':	u'/static/img/landing/funruns/baytobreakersLanding.jpg',
@@ -184,7 +184,7 @@ def retrieve_funruns():
 			                            u'This is one of the funnest events I\'ve ever attended!'
 			                        ],
 			        'website':      u'http://www.zombierace.co/index.php',
-			        'map_url':      u'https://www.google.com/maps/place/Nassau+County+4H+Camp/@40.9584252,-72.7160401,13z/data=!4m2!3m1!1s0x89e861d37b7288b9:0x67dff709a1d00494',
+			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48208.84256933457!2d-72.7160401!3d40.9584252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e861d37b7288b9%3A0x67dff709a1d00494!2sNassau+County+4H+Camp!5e0!3m2!1sen!2sus!4v1428532216187',
 			        'video_url':    u'https://www.youtube.com/embed/yhrC2CO9gKM',
 			        'fb_url':       u'https://www.facebook.com/zombieracellc',
 			        'landing_img':	u'/static/img/landing/funruns/zombierunLanding.jpg',
@@ -219,7 +219,7 @@ def retrieve_funruns():
 			                            u'This run leaves runners looking like they fell into a Ghost Buster\'s movie (minus the slime).'
 			                        ],
 			        'website':      u'http://www.blacklightrun.com/',
-			        'map_url':      u'https://www.google.com/maps/place/Memphis+International+Raceway/@35.282994,-89.9476,17z/data=!3m1!4b1!4m2!3m1!1s0x887f7ec1c0a48aa5:0x7ef6ea23d0ad044a',
+			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3256.9248763636133!2d-89.9476!3d35.282993999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x887f7ec1c0a48aa5%3A0x7ef6ea23d0ad044a!2sMemphis+International+Raceway!5e0!3m2!1sen!2sus!4v1428532262614',
 			        'video_url':    u'https://www.youtube.com/embed/TgMgEtXjSUk',
 			        'fb_url':       u'https://www.facebook.com/BlacklightRun',
 			        'landing_img':	u'/static/img/landing/funruns/blacklightrunLanding.jpg',
@@ -254,7 +254,7 @@ def retrieve_funruns():
 			                            u'It was a blast! Can\'t wait for this year!',
 			                        ],
 			        'website':      u'http://electricrun.com/seatac',
-			        'map_url':      u'https://www.google.com/maps/place/Washington+State+Fair/@47.1856237,-122.3073378,14z/data=!4m2!3m1!1s0x5490fc035e7af37d:0x5fb822881e1b0c46',
+			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21692.65452180003!2d-122.3073378!3d47.1856237!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490fc035e7af37d%3A0x5fb822881e1b0c46!2sWashington+State+Fair!5e0!3m2!1sen!2sus!4v1428532299643',
 			        'video_url':    u'https://www.youtube.com/embed/R0uhmZI1yy4',
 			        'fb_url':       u'https://www.facebook.com/electricrun',
 			        'landing_img':	u'/static/img/landing/funruns/electricrunLanding.jpg',
@@ -289,7 +289,7 @@ def retrieve_funruns():
 			                            u'I HAVE NEVER BEEN SO EXCITED TO RUN A MILE'
 			                        ],
 			        'website':      u'http://brewmile.com/',
-			        'map_url':      u'https://www.google.com/maps/place/Fair+Park/@32.781453,-96.761736,17z/data=!3m1!4b1!4m2!3m1!1s0x864e9897a14862d7:0x64277dc82ee9144',
+			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3354.4074902321736!2d-96.76173600000001!3d32.781453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e9897a14862d7%3A0x64277dc82ee9144!2sFair+Park!5e0!3m2!1sen!2sus!4v1428532340130',
 			        'video_url':    u'https://www.youtube.com/embed/cXrafhIBdlI',
 			        'fb_url':       u'https://www.facebook.com/brewmileseries',
 			        'landing_img':	u'/static/img/landing/funruns/brewrunLanding.jpg',
@@ -323,7 +323,7 @@ def retrieve_funruns():
 			                            u'Tough Mudder is a culture and Community of taking on challenges and supporting each other.'
 			                        ],
 			        'website':      u'https://toughmudder.com/',
-			        'map_url':      u'https://www.google.com/maps?q=10045+Cedar+Grove+Rd,+Fairburn,+GA,+30213,+us',
+			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3322.038929257956!2d-84.7159338!3d33.6302326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4d91a281b01bf%3A0x5e4b7c6398a7c91e!2s10045+Cedar+Grove+Rd%2C+Fairburn%2C+GA+30213!5e0!3m2!1sen!2sus!4v1428532369676',
 			        'video_url':    u'https://www.youtube.com/embed/Jim-ksScOoc',
 			        'fb_url':       u'https://www.facebook.com/toughmudder',
 			        'landing_img':	u'/static/img/landing/funruns/toughmudderLanding.jpg',
@@ -358,7 +358,7 @@ def retrieve_funruns():
 			                            u'Where delicious meets fitness.'
 			                        ],
 			        'website':      u'http://fitfoodierun.com/',
-			        'map_url':      u'https://www.google.com/maps/place/4550+Mueller+Blvd,+Austin,+TX+78723/data=!4m2!3m1!1s0x8644b5f84578082f:0x42afd5562f2f2df1?sa=X&ei=WDEjVeWaF9fsoAS45IGwAw&ved=0CB4Q8gEwAA',
+			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3444.8924904757855!2d-97.7073052!3d30.297122100000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5f84578082f%3A0x42afd5562f2f2df1!2s4550+Mueller+Blvd%2C+Austin%2C+TX+78723!5e0!3m2!1sen!2sus!4v1428532415527',
 			        'video_url':    u'https://www.youtube.com/embed/cVG9FATjIyk',
 			        'fb_url':       u'https://www.facebook.com/pages/The-Fit-Foodie-Race-Series/177814812394419',
 			        'landing_img':	u'/static/img/landing/funruns/fitfoodieLanding.jpg',
@@ -393,7 +393,7 @@ def retrieve_funruns():
 			                            u'It was our first time attending the fest and we had a blast! I will be back next year for sure!'
 			                        ],
 			        'website':      u'http://keepaustinweirdfest.com/festival/',
-			        'map_url':      u'https://www.google.com/maps/place/701+W+Riverside+Dr,+Austin,+TX+78704/@30.259982,-97.751079,17z/data=!3m1!4b1!4m2!3m1!1s0x8644b504ea2084d7:0xa8a514235a56453e?hl=en-US',
+			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3446.1964982159493!2d-97.751079!3d30.259982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b504ea2084d7%3A0xa8a514235a56453e!2s701+W+Riverside+Dr%2C+Austin%2C+TX+78704!5e0!3m2!1sen!2sus!4v1428532467708',
 			        'video_url':    u'https://www.youtube.com/embed/9sL-B1D7v34',
 			        'fb_url':       u'https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639',
 			        'landing_img':	u'/static/img/landing/funruns/keepAustinWeirdLanding.jpg',
@@ -428,7 +428,7 @@ def retrieve_funruns():
 			                            u'Hardly fair playing field but fun to watch none the less.'
 			                        ],
 			        'website':      u'http://www.sundayriver.com/events-and-activities/events-calendar/north-american-wife-carrying-championship',
-			        'map_url':      u'https://www.google.com/maps/place/Sunday+River+Ski+Resort/@44.473492,-70.856894,17z/data=!3m1!4b1!4m2!3m1!1s0x4cb3dd81009e321b:0xd2eb7c1aecb4af6e',
+			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2847.0332106871697!2d-70.856894!3d44.473492!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb3dd81009e321b%3A0xd2eb7c1aecb4af6e!2sSunday+River+Ski+Resort!5e0!3m2!1sen!2sus!4v1428532505050',
 			        'video_url':    u'https://player.vimeo.com/video/112507533',
 			        'fb_url':       u'https://www.facebook.com/sundayriver',
 			        'landing_img':	u'/static/img/landing/funruns/wifecarryLanding.jpg',
