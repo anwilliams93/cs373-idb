@@ -192,5 +192,5 @@ db.session.add(frun1)
 
 db.session.commit()
 
-print frun1.location_id.count()
-print frun1.location_id.filter_by(name = 'blah').count()
+print (frun1.location_id.count())
+print (frun1.location_id.filter_by(name = 'blah').count())
