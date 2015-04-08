@@ -9,16 +9,16 @@ db = SQLAlchemy(app)
 # Many to many table, FunRuns to Themes
 # -------------------------------------
 funRuns_themes = db.Table('funRuns_themes', 
-    db.Column('funrun_id', db.Integer, db.ForeignKey('FunRun.id')),
-    db.Column('theme_id', db.Integer, db.ForeignKey('Theme.id'))
+    db.Column('funrun_id', db.Integer, db.ForeignKey('funrun.id')),
+    db.Column('theme_id', db.Integer, db.ForeignKey('theme.id'))
 )
 
 # -----------------------------------------
 # Many to many table, FunRuns to Challenges
 # -----------------------------------------
 funRuns_challenges = db.Table('funRuns_challenges', 
-    db.Column('funrun_id', db.Integer, db.ForeignKey('FunRun.id')),
-    db.Column('challenge_id', db.Integer, db.ForeignKey('Challenge.id'))
+    db.Column('funrun_id', db.Integer, db.ForeignKey('funrun.id')),
+    db.Column('challenge_id', db.Integer, db.ForeignKey('challenge.id'))
 )
 
 # ----------------------------------------
@@ -33,7 +33,7 @@ funRuns_challenges = db.Table('funRuns_challenges',
 # FunRuns Table 
 # -------------
 class FunRun(db.Model):
-    #__tablename__ = 'funruns'
+    __tablename__ = 'funrun'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=False)
     address= db.Column(db.String(300), unique=True)
@@ -81,7 +81,7 @@ class FunRun(db.Model):
 # Themes table
 # ------------ 
 class Theme(db.Model):
-    #__tablename__ = 'themes'
+    __tablename__ = 'theme'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=False)
     buzzwords= db.Column(db.String(300), unique=False)
@@ -104,7 +104,7 @@ class Theme(db.Model):
 # Challenges table
 # ----------------
 class Challenge(db.Model):
-    #__tablename__ = 'challenges'
+    __tablename__ = 'challenge'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80), unique=False)
     flavors= db.Column(db.String(300), unique=False)
