@@ -24,10 +24,10 @@ funRun_challenge = db.Table('funRuns_challenges',
 # ----------------------------------------
 # Many to many table, Themes to Challenges
 # ----------------------------------------
-# themes_challenges = db.Table('themes_challenges', 
-#     db.Column('theme_id', db.Integer, db.ForeignKey('theme.id')),
-#     db.Column('challenge_id', db.Integer, db.ForeignKey('challenge.id'))
-# )
+theme_challenge = db.Table('theme_challenge', 
+    db.Column('theme_id', db.Integer, db.ForeignKey('theme.id')),
+    db.Column('challenge_id', db.Integer, db.ForeignKey('challenge.id'))
+)
 
 # -------------
 # FunRuns Table 
@@ -88,14 +88,15 @@ class Theme(db.Model):
     description = db.Column(db.String(600), unique=False)
     
     # Themes & Challenges are many to many
-    #themes_challenges = db.relationship('challenges', secondary = themes_challenges, backref = db.backref('themes'))
+    theme_challenge = db.relationship('challenge', secondary = themes_challenges, backref = db.backref('theme'))
     # Fun Runs & Themes are many to many (see FunRun)
 
-    def __init__(self, id, name, buzzwords, description):
+    def __init__(self, id, name, buzzwords, description, theme_challenge = []):
         self.id = id
         self.name = name
         self.buzzwords = buzzwords
         self.description = description
+        self.theme_challenge = theme_challenge
 
     def __repr__(self):
         return '<Id %r>' % self.id
@@ -173,14 +174,13 @@ db.create_all()
 db.session.commit()
 
 
-theme1 = Theme(0, '1', '2', '3')
-db.session.add(theme1)
+
 chal1 = Challenge(0, '1', '2', '3')
 db.session.add(chal1)
+theme1 = Theme(0, '1', '2', '3', 0)
+db.session.add(theme1)
 loc1 = Location(0, 'blah', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 'LANDMARK')
 db.session.add(loc1)
-
-db.session.commit()
 frun1 = FunRun(0, 'name', 'addr', 'date', 'dist', 'price', 'hosts', 'spons', 'charit', 'web', 'desc', 'map', 0, 0, 0)
 db.session.add(frun1)
 #print("whatjkalsdjfkla;sjdfkl;asdf\n\n\n")
