@@ -1,5 +1,5 @@
 from flask import request, jsonify, Blueprint
-import api_helpers
+import old_api_helpers
 
 funruns_api = Blueprint('funruns_api', __name__, url_prefix='/api')
 

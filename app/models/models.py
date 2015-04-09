@@ -320,7 +320,7 @@ frun4 = FunRun(id = 4, name = 'Bay To Breakers', \
     hosts = 'Zappos.com', \
     sponsors = 'Under Armour, MapMyRun, Geico, Hyatt Regency, TomTom, Kron4, Kettle Brand, Big 5 Sporting Goods, Hangzhou, Mio', \
     charities = 'Mo\'MAGIC, United Way of the Bay Area, National Kidney Foundation', \
-    description = 'The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coast’s Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.', \
+    description = 'The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coasts Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.', \
     short = 'Explore SF from the bay to the Ocean Beach breakers.', \
     quote_1 = 'Bay to Breakers is a direct route to the city\'s heart and soul.', \
     quote_2 = 'This 12k seriously looks like a party!', \
@@ -343,7 +343,7 @@ frun5 = FunRun(id = 5, name = 'Zombie Run', \
     hosts = 'Great Vision Productions LLC', \
     sponsors = 'WholeSale Halloween Costumes', \
     charities = 'Local Charities', \
-    description = 'Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, they’ll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don\'t let the zombies pull your flags!', \
+    description = 'Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don\'t let the zombies pull your flags!', \
     short = 'Escape the zombies and get to the finish line!', \
     quote_1 = 'They don\'t like fast food', \
     quote_2 = 'Run like zombies are chasing you!', \
@@ -412,7 +412,7 @@ frun8 = FunRun(id = 8, name = 'Brew Mile', \
     hosts = 'Blacklight Run Corporate', \
     sponsors = 'Upslope Brewing Co, TwinPeaks Brewing Co, Nine Band Brewing Co, Pedernales Brewing Co, Saint Arnold Brewing Co', \
     charities = 'Local Breweries, Local Food, Local Music', \
-    description = 'The Brew Mile is your chance to combine your love of running with the finest beverage on the face of this good green earth – BEER. Finally an event that tests your liver as much as it tests your lungs, and is followed by one of the best parties of the year!', \
+    description = 'The Brew Mile is your chance to combine your love of running with the finest beverage on the face of this good green earth  BEER. Finally an event that tests your liver as much as it tests your lungs, and is followed by one of the best parties of the year!', \
     short = 'Take on a mile while chugging beer!', \
     quote_1 = 'Super excited for us to do this run.', \
     quote_2 = 'Drinking a beer after a run is freaking awesome.', \
