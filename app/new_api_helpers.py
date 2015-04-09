@@ -154,7 +154,7 @@ def retrieve_locations():
 		object_dict['img'] = location.img
 
 		run_ids = []
-		for run in location.funruns
+		for run in location.funruns:
 			run_ids += [run.id]
 		object_dict['funruns'] = sorted(run_ids)
 
