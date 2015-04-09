@@ -310,7 +310,7 @@ def populateDatabase():
         img_8 = '/static/img/themeTempl/holiday8.jpg')
 
     theme2 = Theme(id = 2, name = 'Intense', \
-        buzzwords = 'Training, Diet, Hardcore, Recovery, Cutthroat', \
+        buzzwords = 'Training, Hardcore, Cutthroat, Military-Style', \
         description = 'More interested in proving how much you can take than how much fun you\'ll actually have? Intense runs are exactly what you need - a good dose of body-numbing, soul-crushing exercise to show your stuff. See if you can survive the brutal difficulty of these events.', \
         short = 'Test your endurance in these hardcore races.', \
         landing_img = '/static/img/landing/themes/intense1.jpg', \
@@ -338,9 +338,9 @@ def populateDatabase():
         img_8 = '/static/img/themeTempl/costume8.jpg')
 
     theme4 = Theme(id = 4, name = 'Location', \
-        buzzwords = 'Landmarks, Rivers, Downtown, Parks, Lakes, Views', \
-        description = 'Whether it is an excuse to travel and exercise, or a good distraction from the aches and pains of running, the location of a race is a great factor in deciding which run works for you! Explore famous landmarks as you race to glory!', \
-        short = 'Enjoy the scenic views while getting in some exercise.', \
+        buzzwords = 'Landmarks, Rivers, Downtown, Parks, Lakes, Views, Monuments', \
+        description = 'Whether it is an excuse to travel and exercise or just a good distraction from the aches and pains of running, the location of a race is a great factor in deciding which run works for you! Explore famous landmarks as you race to glory!', \
+        short = 'Enjoy scenic views while getting your exercise on.', \
         landing_img = '/static/img/landing/themes/location1.jpg', \
         img_1 = '/static/img/themeTempl/location1.jpg', \
         img_2 = '/static/img/themeTempl/location2.jpg', \
@@ -352,9 +352,9 @@ def populateDatabase():
         img_8 = '/static/img/themeTempl/location8.jpg')
 
     theme5 = Theme(id = 5, name = 'Dirty', \
-        buzzwords = 'Mud, Color Paint, Wet', \
-        description = 'Want to run through mud pits, climb walls, and get blasted with paint? Challenge yourself with these get down-and-dirty runs.', \
-        short = 'Get ready to take a long shower afterwards.', \
+        buzzwords = 'Mud, Color Paint, Wet, Powder, Foam', \
+        description = 'Want to run through mud pits, climb walls, and get blasted with paint? Challenge yourself with get-down-and-dirty runs. You\'ll be covered with all sorts of stuff all the way to the finish line!', \
+        short = 'Get ready to take a long shower after these runs!', \
         landing_img = '/static/img/landing/themes/dirty1.jpg', \
         img_1 = '/static/img/themeTempl/dirty1.jpg', \
         img_2 = '/static/img/themeTempl/dirty2.jpg', \
@@ -366,9 +366,9 @@ def populateDatabase():
         img_8 = '/static/img/themeTempl/dirty8.jpg')
 
     theme6 = Theme(id = 6, name = 'Team', \
-        buzzwords = 'Group, Partner(s), Family', \
-        description = 'You don\'t have to run a race by yourself. Instead, put together a team of your friends and take part in one of these races.', \
-        short = 'Share the fun with a group or that special someone', \
+        buzzwords = 'Group, Partner(s), Family, Friends', \
+        description = 'Everything is more enjoyable with friends! Get crazy in crazy runs with a posse! Register for races in a team - whether you\'re sporting a theme or just running together for support - you\'ll be glad you did!', \
+        short = 'Share the fun and join a team to run!', \
         landing_img = '/static/img/landing/themes/team1.jpg', \
         img_1 = '/static/img/themeTempl/team1.jpg', \
         img_2 = '/static/img/themeTempl/team2.jpg', \
@@ -380,9 +380,9 @@ def populateDatabase():
         img_8 = '/static/img/themeTempl/team8.jpg')
 
     theme7 = Theme(id = 7, name = 'Drink', \
-        buzzwords = 'Beer, beer, and more beer', \
-        description = 'Ever try keeping down a couple of drinks while running long distances? These runs test your endurance and bladder', \
-        short = 'Hold yourself together while being part ofthese runs.', \
+        buzzwords = 'Beer, Hot Chocolate, Water', \
+        description = 'Ever try keeping down a couple of drinks while running long distances? Or maybe you want to enjoy the post-race with a nice swig? There are runs out there just for enjoying the liquid-y things in life! Drink runs test your endurance... and your bladder.', \
+        short = 'Run, drink liquids, and drown in utter victory.', \
         landing_img = '/static/img/landing/themes/drink1.jpg', \
         img_1 = '/static/img/themeTempl/drink1.jpg', \
         img_2 = '/static/img/themeTempl/drink2.jpg', \
@@ -394,9 +394,9 @@ def populateDatabase():
         img_8 = '/static/img/themeTempl/drink8.jpg')
 
     theme8 = Theme(id = 8, name = 'Food', \
-        buzzwords = 'Sweet, sour, healthy', \
-        description = 'Forget bananas and postrace barbecues. In these races, chowing down is part of the competition.', \
-        short = 'Enjoy a nice meal with these runs.', \
+        buzzwords = 'Hot Dogs, Pizza, Twinkies, Candy', \
+        description = 'Forget pre-race bananas and post-race barbecues. How about food as part of the race itself? Start on an empty stomach, because in food races, chowing down is part of the competition - so eat, swallow, rinse, repeat!', \
+        short = 'Start on an empty stomach: to beat, you must eat.', \
         landing_img = '/static/img/landing/themes/food1.jpg', \
         img_1 = '/static/img/themeTempl/food1.jpg', \
         img_2 = '/static/img/themeTempl/food2.jpg', \
@@ -409,8 +409,8 @@ def populateDatabase():
 
     theme9 = Theme(id = 9, name = 'Music', \
         buzzwords = 'Rhythm, Dance, Banger', \
-        description = 'No need for a pre-workout for these runs. The music will get you pumped and ready to hit the ground running.', \
-        short = 'Jam out to some tunes during these runs.', \
+        description = 'No need for a pre-workout for these runs. Let the bass warm you and the melodies move you! You\'ll be moved by the rhythms and busting to the beats. The music will get you pumped and ready to hit the ground running!', \
+        short = 'Let the music move you until the very end.', \
         landing_img = '/static/img/landing/themes/music1.jpg', \
         img_1 = '/static/img/themeTempl/music1.jpg', \
         img_2 = '/static/img/themeTempl/music2.jpg', \
@@ -422,9 +422,9 @@ def populateDatabase():
         img_8 = '/static/img/themeTempl/music8.jpg')
 
     theme10 = Theme(id = 10, name = 'Fantasy', \
-        buzzwords = 'Dreams, Monsters, Supernatural', \
-        description = 'These runs will make your imagination run wild with their supernatural sights and experiences.', \
-        short = 'Run through your wildest fantasies.', \
+        buzzwords = 'Dreams, Monsters, Supernatural, Disney', \
+        description = 'Fantasy runs will make your imagination fly wild with their supernatural sights and experiences. See for yourself and get immersed into a run that is out of this world! Live out apocalyptic scenarios, Disney magic, or anything your heart desires!', \
+        short = 'Race through your wildest fantasies - come true.', \
         landing_img = '/static/img/landing/themes/fantasy1.jpg', \
         img_1 = '/static/img/themeTempl/fantasy1.jpg', \
         img_2 = '/static/img/themeTempl/fantasy2.jpg', \
@@ -690,7 +690,7 @@ def populateDatabase():
         annual_rainfall = '34.53in', \
         landmarks = 'Bob Bullock Texas State History Museum, Zilker Park, Hamilton Pool, Austin Zoo', \
         website_url = 'http://www.austintexas.org/', \
-        description = 'Austin is the capital of Texas.  It has vibrant entertainment and culture, inspiring cuisine and stunning outdoor settings.', \
+        description = 'Austin is the capital of Texas. It has vibrant entertainment and culture, inspiring cuisine and stunning outdoor settings.', \
         landing_img = '/static/img/landing/locations/austinTXLanding.jpg', \
         img = '/static/img/locationTempl/austin1.jpg')
 
@@ -709,7 +709,7 @@ def populateDatabase():
         annual_rainfall = '42.13in', \
         landmarks = 'Artists\' Covered Bridge, Step Falls Preserve, Sunday River Ski Resort, Grafton Notch State Park', \
         website_url = 'http://www.newrymaine.org/', \
-        description = 'Newry is a town in Oxfor County, Maine.  It is the home of Sunday River Ski Resort and has a proportionately large population during winter.', \
+        description = 'Newry is a town in Oxfor County, Maine. It is the home of Sunday River Ski Resort and has a proportionately large population during winter.', \
         landing_img = '/static/img/landing/locations/newryMELanding.jpg', \
         img = '/static/img/locationTempl/newry1.jpg')
 
@@ -728,7 +728,7 @@ def populateDatabase():
         annual_rainfall = '23.64in', \
         landmarks = 'Chinatown, Golden Gate Bridge, Golden Gate Park', \
         website_url = 'http://www.sanfrancisco.travel/', \
-        description = 'San Francisco is home to a little bit of everything. Whether you\'re a first time visitor or a long-time local. This is the place to find out about all things San Francisco.', \
+        description = 'Perched atop hills and filled-in marshland at the entrance to one of the Pacific’s largest natural harbors, San Francisco has had an outsized influence on the history of California and the United States. San Francisco is a center of wealth, military power, progressive culture and high technology.', \
         landing_img = '/static/img/landing/locations/sanfranciscoCALanding.jpg', \
         img = '/static/img/locationTempl/sanfrancisco1.jpg')
 
