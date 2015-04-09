@@ -1,15 +1,21 @@
 from models.models import db, FunRun, Theme, Challenge, Location
 
 def emptyDatabase():
+    print("EMPTYING\n")
     db.reflect()
+    print("EMPTYING\n")
     db.drop_all()
+    print("EMPTYING\n")
     db.session.commit()
+    print("EMPTYING\n")
 
 def createDatabase():
+    print("CREATING\n")
     db.create_all()
     db.session.commit()
 
 def populateDatabase():
+    print("POPULATING\n")
     # Create the funruns
     frun1 = FunRun(id = 1, name = 'Wipeout Run', \
         address = 'Camden Yards\n333 W Camden St.\nBaltimore, MD 21201', \
@@ -333,7 +339,7 @@ def populateDatabase():
 
     theme4 = Theme(id = 4, name = 'Location', \
         buzzwords = 'Landmarks, Rivers, Downtown, Parks, Lakes, Views', \
-        description = 'Whether it is an excuse to travel and exercise, or a good distraction from the aches and pains of running, the location of a race is a great factor in deciding which run works for you!', \
+        description = 'Whether it is an excuse to travel and exercise, or a good distraction from the aches and pains of running, the location of a race is a great factor in deciding which run works for you! Explore famous landmarks as you race to glory!', \
         short = 'Enjoy the scenic views while getting in some exercise.', \
         landing_img = '/static/img/landing/themes/location1.jpg', \
         img_1 = '/static/img/themeTempl/location1.jpg', \
@@ -465,7 +471,7 @@ def populateDatabase():
         name = 'Going Over Hills', \
         difficulty = 30, \
         flavors = 'High Elevation, Inclines, Steep Roads', \
-        description = 'Fight against gravity and prepare to go over steep hills in runs with hilly landscape. Feel those legs burn!', \
+        description = 'Fight against gravity and prepare to go over steep hills in runs with hilly landscape. Feel those legs burn as you scale those inclines to the very end!', \
         landing_img = '/static/img/landing/challenges/hill1.jpg', \
         img_1 = '/static/img/challengeTempl/hill1.jpg', \
         img_2 = '/static/img/challengeTempl/hill2.jpg', \
@@ -475,7 +481,7 @@ def populateDatabase():
         name = 'Getting Chased', \
         difficulty = 70, \
         flavors = 'Pursued, Zombies, Capture The Flag', \
-        description = '', \
+        description = 'You don\'t have to outrun your pursuers, you just have to outrun the other people being chased! Don\'t let yourself get caught in hardcore survival runs where it\'s kill... or be killed.', \
         landing_img = '/static/img/landing/challenges/chased1.jpg', \
         img_1 = '/static/img/challengeTempl/chased1.jpg', \
         img_2 = '/static/img/challengeTempl/chased2.jpg', \
@@ -485,7 +491,7 @@ def populateDatabase():
         name = 'Getting Covered in Stuff', \
         difficulty = 10, \
         flavors = 'Foam, Bubbles, Mud, Water, Powder', \
-        description = '', \
+        description = 'Want to run through a waterfall of bubbles and foam? Or would you rather stay away from the suds and go for the muds!? Either way, get dirty and have fun!', \
         landing_img = '/static/img/landing/challenges/covered1.jpg', \
         img_1 = '/static/img/challengeTempl/covered1.jpg', \
         img_2 = '/static/img/challengeTempl/covered2.jpg', \
@@ -495,7 +501,7 @@ def populateDatabase():
         name = 'Consuming', \
         difficulty = 30, \
         flavors = 'Food, Drink, Quick Consumption', \
-        description = '', \
+        description = 'Take the food on the go and eat as fast as you can - it\'s part of the race! Some races will reward you with treats at the end or in the middle of the race, but not as a break - as a challenge!', \
         landing_img = '/static/img/landing/challenges/consuming1.jpg', \
         img_1 = '/static/img/challengeTempl/consuming1.jpg', \
         img_2 = '/static/img/challengeTempl/consuming2.jpg', \
@@ -505,7 +511,7 @@ def populateDatabase():
         name = 'Carrying an Object', \
         difficulty = 70, \
         flavors = 'Sandbags, Other People, Logs', \
-        description = '', \
+        description = 'As if carrying yourself to the finish was hard enough, try moving other objects from point A to point B as well! You better have worked those arms and not just your legs for these weight lifting obstacles.', \
         landing_img = '/static/img/landing/challenges/carry1.jpg', \
         img_1 = '/static/img/challengeTempl/carry1.jpg', \
         img_2 = '/static/img/challengeTempl/carry2.jpg', \
@@ -515,7 +521,7 @@ def populateDatabase():
         name = 'Scaling a Wall', \
         difficulty = 70, \
         flavors = 'Wooden Walls, Rope Walls, Chains, Rope Ladders', \
-        description = '', \
+        description = 'You thought you were almost there, but not you\'re blocked by an insurmountable wall! If you want to make it to the end, be ready to climb to the top of the wall or you better be ready to fall!', \
         landing_img = '/static/img/landing/challenges/scaling1.jpg', \
         img_1 = '/static/img/challengeTempl/scaling1.jpg', \
         img_2 = '/static/img/challengeTempl/scaling2.jpg', \
@@ -525,7 +531,7 @@ def populateDatabase():
         name = 'Sliding Down Slopes', \
         difficulty = 10, \
         flavors = 'Large Inflatable Slides, Mud Slides, Foam Slides', \
-        description = '', \
+        description = 'These fun slides are a few moments of much-needed thrills. Give your legs a rest and get ready to go fast down these steep declines!', \
         landing_img = '/static/img/landing/challenges/sliding1.jpg', \
         img_1 = '/static/img/challengeTempl/sliding1.jpg', \
         img_2 = '/static/img/challengeTempl/sliding2.jpg', \
@@ -535,7 +541,7 @@ def populateDatabase():
         name = 'Crawling Underneath Obstacles', \
         difficulty = 40, \
         flavors = 'Barbed Wire, Tunnels, Electrical Wiring', \
-        description = '', \
+        description = 'Don\'t raise your head - you might just lose it! These challenges force you to get down and dirty, crawling beneath the danger and coming out unscathed.', \
         landing_img = '/static/img/landing/challenges/crawling1.jpg', \
         img_1 = '/static/img/challengeTempl/crawling1.jpg', \
         img_2 = '/static/img/challengeTempl/crawling2.jpg', \
@@ -545,7 +551,7 @@ def populateDatabase():
         name = 'Being Suspended', \
         difficulty = 60, \
         flavors = 'Monkey Bars, Rope Swings, Metal Swings', \
-        description = '', \
+        description = 'Better have worked that upper body - you\'ll be needing it now! Whether it\'s monkey bars, a swing, or just a rope, you\'ll be flying high or failing.', \
         landing_img = '/static/img/landing/challenges/suspended1.jpg', \
         img_1 = '/static/img/challengeTempl/suspended1.jpg', \
         img_2 = '/static/img/challengeTempl/suspended2.jpg', \
@@ -555,7 +561,7 @@ def populateDatabase():
         name = 'Staying Balanced', \
         difficulty = 70, \
         flavors = 'Balance beams, wooden beams, inflated walkways', \
-        description = '', \
+        description = 'Fall and face the consequences. These challenges keep you on your toes across planks, ropes, and anything you can shake a toe at!', \
         landing_img = '/static/img/landing/challenges/balance1.jpg', \
         img_1 = '/static/img/challengeTempl/balance1.jpg', \
         img_2 = '/static/img/challengeTempl/balance2.jpg', \
@@ -565,7 +571,7 @@ def populateDatabase():
         name = 'Getting Hit by Objects', \
         difficulty = 80, \
         flavors = 'Inflated Bulldozer Balls, Thrown Items', \
-        description = '', \
+        description = 'Hope you\'re sturdy - because you\'re going to need to face all sorts of projectiles and bulldozing objects! Keep your feet on solid ground, or it might be your head instead!', \
         landing_img = '/static/img/landing/challenges/gettinghit1.jpg', \
         img_1 = '/static/img/challengeTempl/gettinghit1.jpg', \
         img_2 = '/static/img/challengeTempl/gettinghit2.jpg', \
@@ -575,7 +581,7 @@ def populateDatabase():
         name = 'Performing Urban Parkour', \
         difficulty = 60, \
         flavors = 'Buildings, Construction Areas, Urban Areas', \
-        description = '', \
+        description = 'This isn\'t your average trail - these are buildings, roads, and the urban environment for you to run and jump to your heart\'s content!', \
         landing_img = '/static/img/landing/challenges/parkour1.jpg', \
         img_1 = '/static/img/challengeTempl/parkour1.jpg', \
         img_2 = '/static/img/challengeTempl/parkour2.jpg', \
@@ -585,7 +591,7 @@ def populateDatabase():
         name = 'Running with Limited Visibility', \
         difficulty = 40, \
         flavors = 'Darkness, Face Powder, Fog', \
-        description = '', \
+        description = 'Hope you have a 6th sense, because you\'ll need it where you\'ll be! Face the darkness and the unknown as you run to somewhere you can\'t even see!', \
         landing_img = '/static/img/landing/challenges/visibility1.jpg', \
         img_1 = '/static/img/challengeTempl/visibility1.jpg', \
         img_2 = '/static/img/challengeTempl/visibility2.jpg', \
@@ -949,11 +955,10 @@ def populateDatabase():
     db.session.add(loc9)
     db.session.add(loc10)
 
-
     db.session.commit()
 
-
 if __name__ == '__main__':
+    print("MAIN\n")
     emptyDatabase()
     createDatabase()
     populateDatabase()
