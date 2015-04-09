@@ -1,4 +1,4 @@
-from api_helpers import retrieve_funruns, retrieve_themes, retrieve_challenges, retrieve_locations
+from old_api_helpers import retrieve_funruns, retrieve_themes, retrieve_challenges, retrieve_locations
 # Creates a file called create_database.py with commands to populate
 # all of the data we have stored in api_helpers.py
 
@@ -15,79 +15,78 @@ def dealWithEscapedNLandApost(s) :
 	return newS
 
 def funRunsParser(run) :
-	return ("frun" + str(run['id']) + " = FunRun(" + str(run['id']) + ", " + "'"\
-	 + dealWithEscapedNLandApost(run['name']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['city']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['address']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['date']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['distance']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['price']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['hosts']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['sponsors']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['charities']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['description']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['short']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['quotes'][0]) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['quotes'][1]) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['quotes'][2]) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['website']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['map_url']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['video_url']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['fb_url']) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['landing_img']) + "', \\\n\t"\
-	 + str(run['loc']) + ", " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['imgs'][0]) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['imgs'][1]) + "', " + "\\\n\t'"\
-	 + dealWithEscapedNLandApost(run['imgs'][2]) + "')\n\n")
+	return ("frun" + str(run['id']) + " = FunRun(" + "id = " + str(run['id']) + ", " + "'"\
+	 + "name = '" + dealWithEscapedNLandApost(run['name']) + "', " + "\\\n\t"\
+	 + "address = '" + dealWithEscapedNLandApost(run['address']) + "', " + "\\\n\t"\
+	 + "date = '" + dealWithEscapedNLandApost(run['date']) + "', " + "\\\n\t"\
+	 + "distance = '" + dealWithEscapedNLandApost(run['distance']) + "', " + "\\\n\t"\
+	 + "price = '" + dealWithEscapedNLandApost(run['price']) + "', " + "\\\n\t"\
+	 + "hosts = '" + dealWithEscapedNLandApost(run['hosts']) + "', " + "\\\n\t"\
+	 + "sponsors = '" + dealWithEscapedNLandApost(run['sponsors']) + "', " + "\\\n\t"\
+	 + "charities = '" + dealWithEscapedNLandApost(run['charities']) + "', " + "\\\n\t"\
+	 + "description = '" + dealWithEscapedNLandApost(run['description']) + "', " + "\\\n\t"\
+	 + "short = '" + dealWithEscapedNLandApost(run['short']) + "', " + "\\\n\t"\
+	 + "quote_1 = '" + dealWithEscapedNLandApost(run['quotes'][0]) + "', " + "\\\n\t"\
+	 + "quote_2 = '" + dealWithEscapedNLandApost(run['quotes'][1]) + "', " + "\\\n\t"\
+	 + "quote_3 = '" + dealWithEscapedNLandApost(run['quotes'][2]) + "', " + "\\\n\t"\
+	 + "website = '" + dealWithEscapedNLandApost(run['website']) + "', " + "\\\n\t"\
+	 + "map_url = '" + dealWithEscapedNLandApost(run['map_url']) + "', " + "\\\n\t"\
+	 + "video_url = '" + dealWithEscapedNLandApost(run['video_url']) + "', " + "\\\n\t"\
+	 + "fb_url = '" + dealWithEscapedNLandApost(run['fb_url']) + "', " + "\\\n\t"\
+	 + "landing_img = '" + dealWithEscapedNLandApost(run['landing_img']) + "', \\\n\t"\
+	 + "location_id = " + str(run['loc']) + ", " + "\\\n\t"\
+	 + "img_1 = '" + dealWithEscapedNLandApost(run['imgs'][0]) + "', " + "\\\n\t"\
+	 + "img_2 = '" + dealWithEscapedNLandApost(run['imgs'][1]) + "', " + "\\\n\t"\
+	 + "img_3 = '" + dealWithEscapedNLandApost(run['imgs'][2]) + "')\n\n")
 
 def themesParser(theme) :
-	return ("theme" + str(theme['id']) + " = Theme(" + str(theme['id'])\
-	+ ", " + "'" + theme['name'] + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['buzzwords']) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['description']) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['short']) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['landing_img']) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['imgs'][0]) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['imgs'][1]) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['imgs'][2]) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['imgs'][3]) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['imgs'][4]) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['imgs'][5]) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['imgs'][6]) + "', " + "\\\n\t'"\
-	+ dealWithEscapedNLandApost(theme['imgs'][7]) + "')\n\n")
+	return ("theme" + str(theme['id']) + " = Theme(" + "id = " + str(theme['id'])\
+	+ ", " + "name = '" + theme['name'] + "', " + "\\\n\t"\
+	+ "buzzwords = '" + dealWithEscapedNLandApost(theme['buzzwords']) + "', " + "\\\n\t"\
+	+ "description = '" + dealWithEscapedNLandApost(theme['description']) + "', " + "\\\n\t"\
+	+ "short = '" + dealWithEscapedNLandApost(theme['short']) + "', " + "\\\n\t"\
+	+ "landing_img = '" + dealWithEscapedNLandApost(theme['landing_img']) + "', " + "\\\n\t"\
+	+ "img_1 = '" + dealWithEscapedNLandApost(theme['imgs'][0]) + "', " + "\\\n\t"\
+	+ "img_2 = '" + dealWithEscapedNLandApost(theme['imgs'][1]) + "', " + "\\\n\t"\
+	+ "img_3 = '" + dealWithEscapedNLandApost(theme['imgs'][2]) + "', " + "\\\n\t"\
+	+ "img_4 = '" + dealWithEscapedNLandApost(theme['imgs'][3]) + "', " + "\\\n\t"\
+	+ "img_5 = '" + dealWithEscapedNLandApost(theme['imgs'][4]) + "', " + "\\\n\t"\
+	+ "img_6 = '" + dealWithEscapedNLandApost(theme['imgs'][5]) + "', " + "\\\n\t"\
+	+ "img_7 = '" + dealWithEscapedNLandApost(theme['imgs'][6]) + "', " + "\\\n\t"\
+	+ "img_8 = '" + dealWithEscapedNLandApost(theme['imgs'][7]) + "')\n\n")
 
 def challengesParser(challenge) :
-	return ("challenge" + str(challenge['id']) + " = Challenge("\
-		+ str(challenge['id']) + ", " + "\\\n\t'"\
-		+ dealWithEscapedNLandApost(challenge['name']) + "', \\\n\t"\
-		+ str(challenge['difficulty']) + ", " + "\\\n\t'"\
-		+ dealWithEscapedNLandApost(challenge['flavors']) + "', " + "\\\n\t'"\
-		+ dealWithEscapedNLandApost(challenge['description']) + "', " + "\\\n\t'"\
-		+ dealWithEscapedNLandApost(challenge['landing_img']) + "', " + "\\\n\t'"\
-		+ dealWithEscapedNLandApost(challenge['imgs'][0]) + "', " + "\\\n\t'"\
-		+ dealWithEscapedNLandApost(challenge['imgs'][1]) + "', " + "\\\n\t'"\
-		+ dealWithEscapedNLandApost(challenge['imgs'][2]) + "')\n\n")
+	return ("challenge" + str(challenge['id']) + " = Challenge(" + "id = "\
+		+ str(challenge['id']) + ", " + "\\\n\t"\
+		+ "name = '" + dealWithEscapedNLandApost(challenge['name']) + "', \\\n\t"\
+		+ "difficulty = " + str(challenge['difficulty']) + ", " + "\\\n\t"\
+		+ "flavors = '" + dealWithEscapedNLandApost(challenge['flavors']) + "', " + "\\\n\t"\
+		+ "description = '" + dealWithEscapedNLandApost(challenge['description']) + "', " + "\\\n\t"\
+		+ "landing_img = '" + dealWithEscapedNLandApost(challenge['landing_img']) + "', " + "\\\n\t"\
+		+ "img_1 = '" + dealWithEscapedNLandApost(challenge['imgs'][0]) + "', " + "\\\n\t"\
+		+ "img_2 = '" + dealWithEscapedNLandApost(challenge['imgs'][1]) + "', " + "\\\n\t"\
+		+ "img_3 = '" + dealWithEscapedNLandApost(challenge['imgs'][2]) + "')\n\n")
 
 def locationsParser(location) :
-	return ("loc" + str(location['id']) + " = Location("\
-		+ str(location['id']) + ", " + "\\\n\t'"\
-		+ dealWithEscapedNLandApost(location['name']) + "', " + "\\\n\t'"\
-		+ dealWithEscapedNLandApost(location['nickname']) + "', \\\n\t"\
-		+ str(location['winter_avgTemp']) + ", \\\n\t"\
-		+ str(location['spring_avgTemp']) + ", \\\n\t"\
-		+ str(location['summer_avgTemp']) + ", \\\n\t"\
-		+ str(location['fall_avgTemp']) + ", \\\n\t"\
-		+ str(location['winter_avgHumidity']) + ", \\\n\t"\
-		+ str(location['spring_avgHumidity']) + ", \\\n\t"\
-		+ str(location['summer_avgHumidity']) + ", \\\n\t"\
-		+ str(location['fall_avgHumidity']) + ", "+ "\\\n\t'"\
-		+ dealWithEscapedNLandApost(location['altitude']) + "', "+ "\\\n\t'"\
-		+ dealWithEscapedNLandApost(location['annual_rainfall']) + "', "+ "\\\n\t'"\
-		+ dealWithEscapedNLandApost(location['landmarks']) + "', "+ "\\\n\t'"\
-		+ dealWithEscapedNLandApost(location['website_url']) + "', "+ "\\\n\t'"\
-		+ dealWithEscapedNLandApost(location['description']) + "', "+ "\\\n\t'"\
-		+ dealWithEscapedNLandApost(location['landing_img']) + "', "+ "\\\n\t'"\
-		+ dealWithEscapedNLandApost(location['img']) + "')\n\n")
+	return ("loc" + str(location['id']) + " = Location(" + "id = "\
+		+ str(location['id']) + ", " + "\\\n\t"\
+		+ "name = '" + dealWithEscapedNLandApost(location['name']) + "', " + "\\\n\t"\
+		+ "nickname = '" + dealWithEscapedNLandApost(location['nickname']) + "', \\\n\t"\
+		+ "winter_avgTemp = " + str(location['winter_avgTemp']) + ", \\\n\t"\
+		+ "spring_avgTemp = " + str(location['spring_avgTemp']) + ", \\\n\t"\
+		+ "summer_avgTemp = " + str(location['summer_avgTemp']) + ", \\\n\t"\
+		+ "fall_avgTemp = " + str(location['fall_avgTemp']) + ", \\\n\t"\
+		+ "winter_avgHumidity = " + str(location['winter_avgHumidity']) + ", \\\n\t"\
+		+ "spring_avgHumidity = " + str(location['spring_avgHumidity']) + ", \\\n\t"\
+		+ "summer_avgHumidity = " + str(location['summer_avgHumidity']) + ", \\\n\t"\
+		+ "fall_avgHumidity = " + str(location['fall_avgHumidity']) + ", "+ "\\\n\t"\
+		+ "altitude = '" + dealWithEscapedNLandApost(location['altitude']) + "', "+ "\\\n\t"\
+		+ "annual_rainfall = '" + dealWithEscapedNLandApost(location['annual_rainfall']) + "', "+ "\\\n\t"\
+		+ "landmarks = '" + dealWithEscapedNLandApost(location['landmarks']) + "', "+ "\\\n\t"\
+		+ "website_url = '" + dealWithEscapedNLandApost(location['website_url']) + "', "+ "\\\n\t"\
+		+ "description = '" + dealWithEscapedNLandApost(location['description']) + "', "+ "\\\n\t"\
+		+ "landing_img = '" + dealWithEscapedNLandApost(location['landing_img']) + "', "+ "\\\n\t"\
+		+ "img = '" + dealWithEscapedNLandApost(location['img']) + "')\n\n")
 
 def funRunsRelationships(run) :
 	s = ""
