@@ -42,7 +42,7 @@
   });
 
   myApp.controller('FunRunGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
-    $http.get("http://104.239.139.43:8000/api/funruns/" + {{runID}}).success(function(data) {
+    $http.get("http://localhost:8000/api/funruns/" + {{runID}}).success(function(data) {
       $scope.run = data.funruns;
       $scope.map_url = $sce.trustAsResourceUrl($scope.run.map_url); 
       $scope.video_url = $sce.trustAsResourceUrl($scope.run.video_url);
@@ -57,17 +57,17 @@
       // console.log($scope.themesIDs);
 
     });
-    $http.get("http://104.239.139.43:8000/api/challenges").success(function(data) {
+    $http.get("http://localhost:8000/api/challenges").success(function(data) {
       $scope.challenges = data.challenges;
       // console.log($scope.challenges);
 
     });
-    $http.get("http://104.239.139.43:8000/api/themes").success(function(data) {
+    $http.get("http://localhost:8000/api/themes").success(function(data) {
       $scope.themes = data.themes;
       // console.log($scope.themes);
 
     });
-    $http.get("http://104.239.139.43:8000/api/locations").success(function(data) {
+    $http.get("http://localhost:8000/api/locations").success(function(data) {
       $scope.locations = data.locations;
       // console.log($scope.locations);
 
@@ -221,20 +221,20 @@ $(document).ready(function () {
           <!--Related Runs-->
           <h5 class="title-bg">Related Themes</h5>
           <div ng-repeat="tidx in themesIDs">
-            <a ng-href="http://104.239.139.43:8000/themes/[[ themes[tidx].id ]]">
+            <a ng-href="http://localhost:8000/themes/[[ themes[tidx].id ]]">
               <p class="quote-text side">[[ themes[tidx].name ]]</p>
             </a>
           </div>
           <h5 class="title-bg">Related Challenges</h5>
           <div ng-repeat="cidx in challengesIDs">
-            <a ng-href="http://104.239.139.43:8000/challenges/[[ challenges[cidx].id ]]">
+            <a ng-href="http://localhost:8000/challenges/[[ challenges[cidx].id ]]">
               <p class="quote-text side">[[ challenges[cidx].name ]]</p>
             </a>
           </div>
 
             <!--Address-->
             <h5 class="title-bg">Location</h5>
-            <a ng-href="http://104.239.139.43:8000/locations/[[run.loc]]">
+            <a ng-href="http://localhost:8000/locations/[[run.loc]]">
               <p class="quote-text side">[[locations[run.loc].name]]</p>
             </a>
             <pre class="quote-text side">[[run.address]]</pre>
