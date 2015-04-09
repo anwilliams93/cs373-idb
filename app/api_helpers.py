@@ -37,7 +37,7 @@ def retrieve_funruns():
 			        'quotes':       [
 			                            u'Seriously, best race I\'ve done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!',
 			                            u'Had a great time participating in the WIPEOUTRUN!',
-			                            u'Such a blast! Let\'s do it again next year!!'
+			                            u'Such a blast! Let\'s do it again next year!'
 			                        ],
 			        'website':      u'http://wipeoutrun.com/',
 			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235',
@@ -87,7 +87,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/christmasstory3.jpg'
 			                        ],
 			        'themes':       [
-			                            0
+			                            0, 2, 3
 			                        ],
 			        'challenges':   [
 			                            1, 2
@@ -123,7 +123,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/dallasturkey3.jpg'
 			                        ],
 			        'themes':       [
-			                            2
+			                            0, 2
 			                        ],
 			        'challenges':   [
 			                            1, 2
@@ -159,7 +159,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/baytobreakers3.jpg'
 			                        ],
 			        'themes':       [
-			                            2
+			                            2, 5
 			                        ],
 			        'challenges':   [
 			                            1, 3, 6
@@ -195,7 +195,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/zombierun3.jpg'
 			                        ],
 			        'themes':       [
-			                            1
+			                            1, 2, 9
 			                        ],
 			        'challenges':   [
 			                            1, 4, 10, 12, 14
@@ -231,7 +231,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/blacklight3.jpg'
 			                        ],
 			        'themes':       [
-			                            1
+			                            4, 8
 			                        ],
 			        'challenges':   [
 			                            5, 15
@@ -267,7 +267,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/electricrun3.jpg'
 			                        ],
 			        'themes':       [
-			                            1
+			                            4, 8
 			                        ],
 			        'challenges':   [
 			                            5, 15
@@ -303,7 +303,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/brewmile3.jpg'
 			                        ],
 			        'themes':       [
-			                            1
+			                            6
 			                        ],
 			        'challenges':   [
 			                            6
@@ -313,18 +313,19 @@ def retrieve_funruns():
 			        'id':           8,
 			        'name':         u'Tough Mudder',
 			        'city':         u'Fairburn, Georgia',
-			        'address':      u'10045 Cedar Grove\nFairburn, GA\n30213',
-			        'date':         u'May 2nd & 3rd, 2015',
+			        'address':      u'Bouckaert Farm\n10045 Cedar Grove\nFairburn, GA 30213',
+			        'date':         u'May 2nd, 2015',
 			        'distance':     u'19K',
-			        'price':        u'$185-$195',
+			        'price':        u'Before May 2nd: $185\nMay 2nd: $185',
 			        'hosts':        u'Tough Mudder',
 			        'sponsors':     u'Toyo Tires, Cellucor, Shock-Top, MET-Rx, Oberto, Radisson, Wheaties, Under Armour',
 			        'charities':    u'Wounded Warrior Project, U.S. Army',
 			        'description':  u'Tough Mudder is a team-oriented obstacle course designed to test physical strength and mental grit. It puts camaraderie over finisher rankings and is not a timed race but a team challenge that allows participants to experience exhilarating, yet safe, world-class obstacles they won\'t find anywhere else',
-			        'short':		u'Run through a 12 mile course filled with military-style obstacles', 'quotes':       [
+			        'short':		u'Get through 12 miles of military-style obstacles!', 
+			        'quotes':       [
 			                            u'The teamwork and camaraderie out there was amazing.',
-			                            u'The idea of Tough Mudder is not to win..but to have a story to tell.',
-			                            u'Tough Mudder is a culture and Community of taking on challenges and supporting each other.'
+			                            u'The idea of Tough Mudder is not to win... but to have a story to tell.',
+			                            u'Tough Mudder is a culture and community of taking on challenges and supporting each other.'
 			                        ],
 			        'website':      u'https://toughmudder.com/',
 			        'map_url':      u'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3322.038929257956!2d-84.7159338!3d33.6302326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4d91a281b01bf%3A0x5e4b7c6398a7c91e!2s10045+Cedar+Grove+Rd%2C+Fairburn%2C+GA+30213!5e0!3m2!1sen!2sus!4v1428532369676',
@@ -338,7 +339,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/toughmudder3.jpg'
 			                        ],
 			        'themes':       [
-			                            1
+			                            1, 4, 5
 			                        ],
 			        'challenges':   [
 			                            0, 2, 3, 5, 7, 8, 9, 10, 11, 12, 13
@@ -348,15 +349,15 @@ def retrieve_funruns():
 			        'id':           9,
 			        'name':         u'Fit Foodie 5K',
 			        'city':         u'Austin, Texas',
-			        'address':      u'Browning Hangar\n4550 Mueller Blvd.\nAustin, TX\n78723',
-			        'date':         u'June 12-14th, 2015',
+			        'address':      u'Browning Hangar\n4550 Mueller Blvd.\nAustin, TX 78723',
+			        'date':         u'June 13th, 2015',
 			        'distance':     u'5K',
-			        'price':        u'$55',
+			        'price':        u'Before June 13th: $55\nJune 13th: $60',
 			        'hosts':        u'Cooking Light & Health',
-			        'sponsors':     u'Fast Forward Event Productions',
-			        'charities':    u'N/A',
-			        'description':  u'Cooking Light & Health\'s The Fit Foodie 5K Race is the ultimate celebration of food, fitness and fun. Put those running shoes to work as you navigate your way around a beautiful 5K course.',
-			        'short':		u'Cruise across the finish line and get ready to celebrate your success with delicious, healthy food.',
+			        'sponsors':     u'Cooking Light, Health, Aveeno, Hawaiian Host, Fabletics, Rove, Sartori, Tom\'s, Mueller, Fast Forward Ventures',
+			        'charities':    u'Make A Film Foundation, American Diabetes Association',
+			        'description':  u'Cooking Light & Health\'s The Fit Foodie 5K Race is the ultimate celebration of food, fitness, and fun. Put those running shoes to work as you navigate your way around a beautiful 5K course.',
+			        'short':		u'Cruise to the finish and food away!',
 			        'quotes':       [
 			                            u'The race was great, but the festivities after were even greater!',
 			                            u'It\'s more than a race, it is a fitness and culinary experience.',
@@ -374,7 +375,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/fitfoodie3.jpg'
 			                        ],
 			        'themes':       [
-			                            1
+			                            7
 			                        ],
 			        'challenges':   [
 			                            6
@@ -384,15 +385,15 @@ def retrieve_funruns():
 			        'id':           10,
 			        'name':         u'Keep Austin Weird 5K',
 			        'city':         u'Austin, Texas',
-			        'address':      u'The Long Center Grounds\n701 W Riverside Dr.\nAustin, TX\n78704',
+			        'address':      u'The Long Center Grounds\n701 W Riverside Dr.\nAustin, TX 78704',
 			        'date':         u'June 27th, 2015',
 			        'distance':     u'5K',
-			        'price':        u'Adults: $22.50\nKids: $12',
+			        'price':        u'VIP: $75\nAdults: $22.50\nKids: $12',
 			        'hosts':        u'The Long Center',
 			        'sponsors':     u'HotSchedules, AT&T U-verse, Amy\'s Ice Cream, Babyearth, Beatbox Beverages',
 			        'charities':    u'Capital Area Food Bank of Texas',
-			        'description':  u'Slip into your weirdest costume, slap on your favorite light up running shoes and throw your timer into Lady Bird Lake!',
-			        'short':		u'This is the slowest 5K on the planet!',
+			        'description':  u'Slip into your weirdest costume, slap on your favorite light up running shoes and throw your timer into Lady Bird Lake! This is the slowest 5K on the planet - the wildest, weirdest and most memorable!',
+			        'short':		u'Make Austin weird in the slowest race ever!',
 			        'quotes':       [
 			                            u'So much fun! Drove down from Oklahoma City to attend!',
 			                            u'So well done! Loads of fun!',
@@ -410,7 +411,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/keepAustinweird3.jpg'
 			                        ],
 			        'themes':       [
-			                            1
+			                            2, 3, 8
 			                        ],
 			        'challenges':   [
 			                            1, 2
@@ -420,15 +421,15 @@ def retrieve_funruns():
 			        'id':           11,
 			        'name':         u'North American Wife Carrying Championship',
 			        'city':         u'Newry, Maine',
-			        'address':      u'Sunday River Ski Resort\n15 S Ridge Rd.\nNewry, ME\n04261',
+			        'address':      u'Sunday River Ski Resort\n15 S Ridge Rd.\nNewry, ME 04261',
 			        'date':         u'October 10th, 2015',
 			        'distance':     u'278yd',
 			        'price':        u'N/A',
 			        'hosts':        u'Sunday River',
 			        'sponsors':     u'BudLight, Bethel Inn Resort',
 			        'charities':    u'N/A',
-			        'description':  u'Qualifying events are also held in Australia, Sweden, and Estonia. The course at Sunday River is built to international specifications at 278 yards in length;with two dry obstacles and one water obstacle.',
-			        'short':		u'To prove their worth,men had to compete through a difficult course with a heavy sack (or woman grabbed from neighboring villages) on their back',
+			        'description':  u'Carry your wife to the finish and win her weight in beer! The course at Sunday River is built to international specifications at 278 yards in length, with two dry obstacles and one water obstacle.',
+			        'short':		u'Carry your wife and win her weight in beer!',
 			        'quotes':       [
 			                            u'It was a very cool event! Sunday River does a good job with it!',
 			                            u'I\'m wicked strong and she\'s wicked small!',
@@ -446,7 +447,7 @@ def retrieve_funruns():
 			                            u'/static/img/runTempl/wifecarry3.jpg'
 			                        ],
 			        'themes':       [
-			                            1
+			                            4, 5
 			                        ],
 			        'challenges':   [
 			                            0, 3, 5, 7, 11, 12
@@ -497,7 +498,7 @@ def retrieve_themes():
 			                            u'/static/img/themeTempl/intense8.jpg'
 			                        ],
 			        'challenges':   [
-			                            0, 2, 3, 7, 8, 9, 10, 11, 12, 13, 14
+			                            0, 2, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14
 			                        ]
 			    },
 			    {
@@ -520,153 +521,153 @@ def retrieve_themes():
 			        'challenges':   [
 			                            1
 			                        ]
-			    # },
-			    # {
-			    #     'id':           3,
-			    #     'name':         u'Location',
-			    #     'buzzwords':    u'Landmarks, Rivers, Downtown, Parks, Lakes, Views',
-			    #     'description':  u'Whether it is an excuse to travel and exercise, or a good distraction from the aches and pains of running, the location of a race is a great factor in deciding which run works for you!',
-			    #     'short':		u'Enjoy the scenic views while getting in some exercise.',
-			    #     'landing_img':	u'/static/img/landing/themes/location1.jpg',
-			    #     'imgs':         [
-			    #                         u'/static/img/themeTempl/location1.jpg',
-			    #                         u'/static/img/themeTempl/location2.jpg',
-			    #                         u'/static/img/themeTempl/location3.jpg',
-			    #                         u'/static/img/themeTempl/location4.jpg',
-			    #                         u'/static/img/themeTempl/location5.jpg',
-			    #                         u'/static/img/themeTempl/location6.jpg',
-			    #                         u'/static/img/themeTempl/location7.jpg',
-			    #                         u'/static/img/themeTempl/location8.jpg'
-			    #                     ],
-			    #     'challenges':   [
-			    #                         
-			    #                     ]
-			    # },
-			    # {
-			    #     'id':           4,
-			    #     'name':         u'Dirty',
-			    #     'buzzwords':    u'Mud, Color Paint, Wet',
-			    #     'description':  u'Want to run through mud pits, climb walls, and get blasted with paint? Challenge yourself with these get down-and-dirty runs.',
-			    #     'short':		u'Get ready to take a long shower afterwards.',
-			    #     'landing_img':	u'/static/img/landing/themes/dirty1.jpg',
-			    #     'imgs':         [
-			    #                         u'/static/img/themeTempl/dirty1.jpg',
-			    #                         u'/static/img/themeTempl/dirty2.jpg',
-			    #                         u'/static/img/themeTempl/dirty3.jpg',
-			    #                         u'/static/img/themeTempl/dirty4.jpg',
-			    #                         u'/static/img/themeTempl/dirty5.jpg',
-			    #                         u'/static/img/themeTempl/dirty6.jpg',
-			    #                         u'/static/img/themeTempl/dirty7.jpg',
-			    #                         u'/static/img/themeTempl/dirty8.jpg'
-			    #                     ],
-			    #     'challenges':   [
-			    #                         0, 5, 8, 9, 10, 11, 12, 13, 15
-			    #                     ]
-			    # },
-			    # {
-			    #     'id':           5,
-			    #     'name':         u'Team',
-			    #     'buzzwords':    u'Group, Partner(s), Family',
-			    #     'description':  u'You don't have to run a race by yourself. Instead, put together a team of your friends and take part in one of these races.',
-			    #     'short':		u'Share the fun with a group or that special someone',
-			    #     'landing_img':	u'/static/img/landing/themes/team1.jpg',
-			    #     'imgs':         [
-			    #                         u'/static/img/themeTempl/team1.jpg',
-			    #                         u'/static/img/themeTempl/team2.jpg',
-			    #                         u'/static/img/themeTempl/team3.jpg',
-			    #                         u'/static/img/themeTempl/team4.jpg',
-			    #                         u'/static/img/themeTempl/team5.jpg',
-			    #                         u'/static/img/themeTempl/team6.jpg',
-			    #                         u'/static/img/themeTempl/team7.jpg',
-			    #                         u'/static/img/themeTempl/team8.jpg'
-			    #                     ],
-			    #     'challenges':   [
-			    #                         7, 12
-			    #                     ]
-			    # },
-			    # {
-			    #     'id':           6,
-			    #     'name':         u'Drink',
-			    #     'buzzwords':    u'Beer, beer, and more beer',
-			    #     'description':  u'Ever try keeping down a couple of drinks while running long distances? These runs test your endurance and bladder',
-			    #     'short':			u'Hold yourself together while being part ofthese runs.',
-			    #     'landing_img':	u'/static/img/landing/themes/drink1.jpg',
-			    #     'imgs':         [
-			    #                         u'/static/img/themeTempl/drink1.jpg',
-			    #                         u'/static/img/themeTempl/drink2.jpg',
-			    #                         u'/static/img/themeTempl/drink3.jpg',
-			    #                         u'/static/img/themeTempl/drink4.jpg',
-			    #                         u'/static/img/themeTempl/drink5.jpg',
-			    #                         u'/static/img/themeTempl/drink6.jpg',
-			    #                         u'/static/img/themeTempl/drink7.jpg',
-			    #                         u'/static/img/themeTempl/drink8.jpg'
-			    #                     ],
-			    #     'challenges':   [
-			    #                         6, 7
-			    #                     ]
-			    # },
-			    # {
-			    #     'id':           7,
-			    #     'name':         u'Food',
-			    #     'buzzwords':    u'Sweet, sour, healthy',
-			    #     'description':  u'Forget bananas and postrace barbecues. In these races, chowing down is part of the competition.',
-			    #     'short':		u'Enjoy a nice meal with these runs.',
-			    #     'landing_img':	u'/static/img/landing/themes/food1.jpg',
-			    #     'imgs':         [
-			    #                         u'/static/img/themeTempl/food1.jpg',
-			    #                         u'/static/img/themeTempl/food2.jpg',
-			    #                         u'/static/img/themeTempl/food3.jpg',
-			    #                         u'/static/img/themeTempl/food4.jpg',
-			    #                         u'/static/img/themeTempl/food5.jpg',
-			    #                         u'/static/img/themeTempl/food6.jpg',
-			    #                         u'/static/img/themeTempl/food7.jpg',
-			    #                         u'/static/img/themeTempl/food8.jpg'
-			    #                     ],
-			    #     'challenges':   [
-			    #                         6, 7
-			    #                     ]
-			    # },
-			    # {
-			    #     'id':           8,
-			    #     'name':         u'Music',
-			    #     'buzzwords':    u'Rhythm, Dance, Banger',
-			    #     'description':  u'No need for a pre-workout for these runs. The music will get you pumped and ready to hit the ground running.',
-			    #     'short':		u'Jam out to some tunes during these runs.',
-			    #     'landing_img':	u'/static/img/landing/themes/music1.jpg',
-			    #     'imgs':         [
-			    #                         u'/static/img/themeTempl/music1.jpg',
-			    #                         u'/static/img/themeTempl/music2.jpg',
-			    #                         u'/static/img/themeTempl/music3.jpg',
-			    #                         u'/static/img/themeTempl/music4.jpg',
-			    #                         u'/static/img/themeTempl/music5.jpg',
-			    #                         u'/static/img/themeTempl/music6.jpg',
-			    #                         u'/static/img/themeTempl/music7.jpg',
-			    #                         u'/static/img/themeTempl/music8.jpg'
-			    #                     ],
-			    #     'challenges':   [
-			    #                         
-			    #                     ]
-			    # },
-			    # {
-			    #     'id':           9,
-			    #     'name':         u'Fantasy',
-			    #     'buzzwords':    u'Dreams, Monsters, Supernatural',
-			    #     'description':  u'These runs will make your imagination run wild with their supernatural sights and experiences.',
-			    #     'short':		u'Run through your wildest fantasies.',
-			    #     'landing_img':	u'/static/img/landing/themes/fantasy1.jpg',
-			    #     'imgs':         [
-			    #                         u'/static/img/themeTempl/fantasy1.jpg',
-			    #                         u'/static/img/themeTempl/fantasy2.jpg',
-			    #                         u'/static/img/themeTempl/fantasy3.jpg',
-			    #                         u'/static/img/themeTempl/fantasy4.jpg',
-			    #                         u'/static/img/themeTempl/fantasy5.jpg',
-			    #                         u'/static/img/themeTempl/fantasy6.jpg',
-			    #                         u'/static/img/themeTempl/fantasy7.jpg',
-			    #                         u'/static/img/themeTempl/fantasy8.jpg'
-			    #                     ],
-			    #     'challenges':   [
-			    #                         1, 4, 14
-			    #                     ]
+			    },
+			    {
+			        'id':           3,
+			        'name':         u'Location',
+			        'buzzwords':    u'Landmarks, Rivers, Downtown, Parks, Lakes, Views',
+			        'description':  u'Whether it is an excuse to travel and exercise, or a good distraction from the aches and pains of running, the location of a race is a great factor in deciding which run works for you!',
+			        'short':		u'Enjoy the scenic views while getting in some exercise.',
+			        'landing_img':	u'/static/img/landing/themes/location1.jpg',
+			        'imgs':         [
+			                            u'/static/img/themeTempl/location1.jpg',
+			                            u'/static/img/themeTempl/location2.jpg',
+			                            u'/static/img/themeTempl/location3.jpg',
+			                            u'/static/img/themeTempl/location4.jpg',
+			                            u'/static/img/themeTempl/location5.jpg',
+			                            u'/static/img/themeTempl/location6.jpg',
+			                            u'/static/img/themeTempl/location7.jpg',
+			                            u'/static/img/themeTempl/location8.jpg'
+			                        ],
+			        'challenges':   [
+			                            3
+			                        ]
+			    },
+			    {
+			        'id':           4,
+			        'name':         u'Dirty',
+			        'buzzwords':    u'Mud, Color Paint, Wet',
+			        'description':  u'Want to run through mud pits, climb walls, and get blasted with paint? Challenge yourself with these get down-and-dirty runs.',
+			        'short':		u'Get ready to take a long shower afterwards.',
+			        'landing_img':	u'/static/img/landing/themes/dirty1.jpg',
+			        'imgs':         [
+			                            u'/static/img/themeTempl/dirty1.jpg',
+			                            u'/static/img/themeTempl/dirty2.jpg',
+			                            u'/static/img/themeTempl/dirty3.jpg',
+			                            u'/static/img/themeTempl/dirty4.jpg',
+			                            u'/static/img/themeTempl/dirty5.jpg',
+			                            u'/static/img/themeTempl/dirty6.jpg',
+			                            u'/static/img/themeTempl/dirty7.jpg',
+			                            u'/static/img/themeTempl/dirty8.jpg'
+			                        ],
+			        'challenges':   [
+			                            0, 5, 8, 9, 10, 11, 12, 13, 15
+			                        ]
+			    },
+			    {
+			        'id':           5,
+			        'name':         u'Team',
+			        'buzzwords':    u'Group, Partner(s), Family',
+			        'description':  u'You don\'t have to run a race by yourself. Instead, put together a team of your friends and take part in one of these races.',
+			        'short':		u'Share the fun with a group or that special someone',
+			        'landing_img':	u'/static/img/landing/themes/team1.jpg',
+			        'imgs':         [
+			                            u'/static/img/themeTempl/team1.jpg',
+			                            u'/static/img/themeTempl/team2.jpg',
+			                            u'/static/img/themeTempl/team3.jpg',
+			                            u'/static/img/themeTempl/team4.jpg',
+			                            u'/static/img/themeTempl/team5.jpg',
+			                            u'/static/img/themeTempl/team6.jpg',
+			                            u'/static/img/themeTempl/team7.jpg',
+			                            u'/static/img/themeTempl/team8.jpg'
+			                        ],
+			        'challenges':   [
+			                            7, 12
+			                        ]
+			    },
+			    {
+			        'id':           6,
+			        'name':         u'Drink',
+			        'buzzwords':    u'Beer, beer, and more beer',
+			        'description':  u'Ever try keeping down a couple of drinks while running long distances? These runs test your endurance and bladder',
+			        'short':			u'Hold yourself together while being part ofthese runs.',
+			        'landing_img':	u'/static/img/landing/themes/drink1.jpg',
+			        'imgs':         [
+			                            u'/static/img/themeTempl/drink1.jpg',
+			                            u'/static/img/themeTempl/drink2.jpg',
+			                            u'/static/img/themeTempl/drink3.jpg',
+			                            u'/static/img/themeTempl/drink4.jpg',
+			                            u'/static/img/themeTempl/drink5.jpg',
+			                            u'/static/img/themeTempl/drink6.jpg',
+			                            u'/static/img/themeTempl/drink7.jpg',
+			                            u'/static/img/themeTempl/drink8.jpg'
+			                        ],
+			        'challenges':   [
+			                            6, 7
+			                        ]
+			    },
+			    {
+			        'id':           7,
+			        'name':         u'Food',
+			        'buzzwords':    u'Sweet, sour, healthy',
+			        'description':  u'Forget bananas and postrace barbecues. In these races, chowing down is part of the competition.',
+			        'short':		u'Enjoy a nice meal with these runs.',
+			        'landing_img':	u'/static/img/landing/themes/food1.jpg',
+			        'imgs':         [
+			                            u'/static/img/themeTempl/food1.jpg',
+			                            u'/static/img/themeTempl/food2.jpg',
+			                            u'/static/img/themeTempl/food3.jpg',
+			                            u'/static/img/themeTempl/food4.jpg',
+			                            u'/static/img/themeTempl/food5.jpg',
+			                            u'/static/img/themeTempl/food6.jpg',
+			                            u'/static/img/themeTempl/food7.jpg',
+			                            u'/static/img/themeTempl/food8.jpg'
+			                        ],
+			        'challenges':   [
+			                            6, 7
+			                        ]
+			    },
+			    {
+			        'id':           8,
+			        'name':         u'Music',
+			        'buzzwords':    u'Rhythm, Dance, Banger',
+			        'description':  u'No need for a pre-workout for these runs. The music will get you pumped and ready to hit the ground running.',
+			        'short':		u'Jam out to some tunes during these runs.',
+			        'landing_img':	u'/static/img/landing/themes/music1.jpg',
+			        'imgs':         [
+			                            u'/static/img/themeTempl/music1.jpg',
+			                            u'/static/img/themeTempl/music2.jpg',
+			                            u'/static/img/themeTempl/music3.jpg',
+			                            u'/static/img/themeTempl/music4.jpg',
+			                            u'/static/img/themeTempl/music5.jpg',
+			                            u'/static/img/themeTempl/music6.jpg',
+			                            u'/static/img/themeTempl/music7.jpg',
+			                            u'/static/img/themeTempl/music8.jpg'
+			                        ],
+			        'challenges':   [
+			                            1, 5, 15
+			                        ]
+			    },
+			    {
+			        'id':           9,
+			        'name':         u'Fantasy',
+			        'buzzwords':    u'Dreams, Monsters, Supernatural',
+			        'description':  u'These runs will make your imagination run wild with their supernatural sights and experiences.',
+			        'short':		u'Run through your wildest fantasies.',
+			        'landing_img':	u'/static/img/landing/themes/fantasy1.jpg',
+			        'imgs':         [
+			                            u'/static/img/themeTempl/fantasy1.jpg',
+			                            u'/static/img/themeTempl/fantasy2.jpg',
+			                            u'/static/img/themeTempl/fantasy3.jpg',
+			                            u'/static/img/themeTempl/fantasy4.jpg',
+			                            u'/static/img/themeTempl/fantasy5.jpg',
+			                            u'/static/img/themeTempl/fantasy6.jpg',
+			                            u'/static/img/themeTempl/fantasy7.jpg',
+			                            u'/static/img/themeTempl/fantasy8.jpg'
+			                        ],
+			        'challenges':   [
+			                            1, 4, 14
+			                        ]
 			    }
 			]
 	return themes
