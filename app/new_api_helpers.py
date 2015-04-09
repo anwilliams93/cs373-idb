@@ -407,8 +407,8 @@ def retrieve_funruns():
 			        'loc':			4,
 			        'imgs':         [
 			                            u'/static/img/runTempl/keepAustinWeird1.jpg',
-			                            u'/static/img/runTempl/keepAustinWeird2.jpg',
-			                            u'/static/img/runTempl/keepAustinWeird3.jpg'
+			                            u'/static/img/runTempl/keepAustinweird2.jpg',
+			                            u'/static/img/runTempl/keepAustinweird3.jpg'
 			                        ],
 			        'themes':       [
 			                            2, 3, 8
@@ -676,7 +676,7 @@ def retrieve_challenges():
 	challenges = [
 				    {
 				        'id':           0,
-				        'name':         u'Stepping On Awkward Ground',
+				        'name':         u'Running On Awkward Ground',
 				        'difficulty':   60,
 				        'flavors':      u'Ice, Inflatable Balls, Mud',
 				        'description':  u'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.',
@@ -689,8 +689,8 @@ def retrieve_challenges():
 				    },
 				    {
 				        'id':           1,
-				        'name':         u'Moving In A Costume',
-				        'difficulty':   20,
+				        'name':         u'Running In A Costume',
+				        'difficulty':   40,
 				        'flavors':      u'Mascots, Nude, Speedos, Costumes',
 				        'description':  u'Ideally, running should be done in comfortable shorts and shirt. Instead, some dare to run in costumes - or a lack of costume - in self expression and, oftentimes, silliness.',
 				        'landing_img':	u'/static/img/landing/challenges/costume1.jpg',
@@ -702,23 +702,23 @@ def retrieve_challenges():
 				    },
 				    {
 				        'id':           2,
-				        'name':         u'Enduring Extreme Temperatures',
+				        'name':         u'Running In Cold Weather',
 				        'difficulty':   80,
-				        'flavors':      u'Snow, Ice, Fire, Heat',
-				        'description':  u'Take on extreme temps fearlessly with fun runs in less than ideal temperatures. Will the icy winds or intense heat get to you or will you make it to the finish line and prevail?',
-				        'landing_img':	u'/static/img/landing/challenges/extremetemp1.jpg',
+				        'flavors':      u'Snow, Ice, Freezing Temperatures',
+				        'description':  u'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/extremetemp1.jpg',
-				                            u'/static/img/challengeTempl/extremetemp2.jpg',
-				                            u'/static/img/challengeTempl/extremetemp3.jpg'
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
 				                        ]
 				    },
 				    {
 				        'id':           3,
 				        'name':         u'Going Over Hills',
-				        'difficulty':   30,
-				        'flavors':      u'High Elevation, Inclines, Steep Roads',
-				        'description':  u'Fight against gravity and prepare to go over steep hills in runs with hilly landscape. Feel those legs burn!',
+				        'difficulty':   70,
+				        'flavors':      u'High elevation, Incline, Steep',
+				        'description':  u'Fight against gravity and prepare to go over steep hills in these runs',
 				        'landing_img':	u'/static/img/landing/challenges/hill1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/hill1.jpg',
@@ -729,8 +729,8 @@ def retrieve_challenges():
 				    {
 				        'id':           4,
 				        'name':         u'Getting Chased',
-				        'difficulty':   70,
-				        'flavors':      u'Pursued, Zombies, Capture The Flag',
+				        'difficulty':   60,
+				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
 				        'landing_img':	u'/static/img/landing/challenges/chased1.jpg',
 				        'imgs':         [
@@ -742,8 +742,8 @@ def retrieve_challenges():
 				    {
 				        'id':           5,
 				        'name':         u'Getting Covered in Stuff',
-				        'difficulty':   10,
-				        'flavors':      u'Foam, Bubbles, Mud, Water, Powder',
+				        'difficulty':   40,
+				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
 				        'landing_img':	u'/static/img/landing/challenges/covered1.jpg',
 				        'imgs':         [
@@ -755,8 +755,8 @@ def retrieve_challenges():
 				    {
 				        'id':           6,
 				        'name':         u'Consuming',
-				        'difficulty':   30,
-				        'flavors':      u'Food, Drink, Quick Consumption',
+				        'difficulty':   40,
+				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
 				        'landing_img':	u'/static/img/landing/challenges/consuming1.jpg',
 				        'imgs':         [
@@ -769,7 +769,7 @@ def retrieve_challenges():
 				        'id':           7,
 				        'name':         u'Carrying an Object',
 				        'difficulty':   70,
-				        'flavors':      u'Sandbags, Other People, Logs',
+				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
 				        'landing_img':	u'/static/img/landing/challenges/carry1.jpg',
 				        'imgs':         [
@@ -781,8 +781,8 @@ def retrieve_challenges():
 				    {
 				        'id':           8,
 				        'name':         u'Scaling a Wall',
-				        'difficulty':   70,
-				        'flavors':      u'Wooden Walls, Rope Walls, Chains, Rope Ladders',
+				        'difficulty':   80,
+				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
 				        'landing_img':	u'/static/img/landing/challenges/scaling1.jpg',
 				        'imgs':         [
@@ -794,21 +794,21 @@ def retrieve_challenges():
 				    {
 				        'id':           9,
 				        'name':         u'Sliding Down Slopes',
-				        'difficulty':   10,
+				        'difficulty':   50,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/sliding1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/slide1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/sliding1.jpg',
-				                            u'/static/img/challengeTempl/sliding2.jpg',
-				                            u'/static/img/challengeTempl/sliding3.jpg'
+				                            u'/static/img/challengeTempl/slide1.jpg',
+				                            u'/static/img/challengeTempl/slide2.jpg',
+				                            u'/static/img/challengeTempl/slide3.jpg'
 				                        ]
 				    },
 				    {
 				        'id':           10,
 				        'name':         u'Crawling Underneath Obstacles',
-				        'difficulty':   40,
-				        'flavors':      u'Barbed Wire, Tunnels, Electrical Wiring',
+				        'difficulty':   60,
+				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
 				        'landing_img':	u'/static/img/landing/challenges/crawling1.jpg',
 				        'imgs':         [
@@ -820,8 +820,8 @@ def retrieve_challenges():
 				    {
 				        'id':           11,
 				        'name':         u'Being Suspended',
-				        'difficulty':   60,
-				        'flavors':      u'Monkey Bars, Rope Swings, Metal Swings',
+				        'difficulty':   70,
+				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
 				        'landing_img':	u'/static/img/landing/challenges/suspended1.jpg',
 				        'imgs':         [
@@ -834,7 +834,7 @@ def retrieve_challenges():
 				        'id':           12,
 				        'name':         u'Staying Balanced',
 				        'difficulty':   70,
-				        'flavors':      u'Balance beams, wooden beams, inflated walkways',
+				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
 				        'landing_img':	u'/static/img/landing/challenges/balance1.jpg',
 				        'imgs':         [
@@ -847,7 +847,20 @@ def retrieve_challenges():
 				        'id':           13,
 				        'name':         u'Getting Hit by Objects',
 				        'difficulty':   80,
-				        'flavors':      u'Inflated Bulldozer Balls, Hanging Sacks, Thrown Items',
+				        'flavors':      u'Pursued, Zombies',
+				        'description':  u'',
+				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'imgs':         [
+				                            u'/static/img/challengeTempl/cold1.jpg',
+				                            u'/static/img/challengeTempl/cold2.jpg',
+				                            u'/static/img/challengeTempl/cold3.jpg'
+				                        ]
+				    },
+				    {
+				        'id':           14,
+				        'name':         u'Performing Urban Parkouring',
+				        'difficulty':   70,
+				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
 				        'landing_img':	u'/static/img/landing/challenges/gettinghit1.jpg',
 				        'imgs':         [
@@ -857,23 +870,10 @@ def retrieve_challenges():
 				                        ]
 				    },
 				    {
-				        'id':           14,
-				        'name':         u'Performing Urban Parkouring',
-				        'difficulty':   60,
-				        'flavors':      u'Buildings, Construction Areas, Urban Areas',
-				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/parkour1.jpg',
-				        'imgs':         [
-				                            u'/static/img/challengeTempl/parkour1.jpg',
-				                            u'/static/img/challengeTempl/parkour2.jpg',
-				                            u'/static/img/challengeTempl/parkour3.jpg'
-				                        ]
-				    },
-				    {
 				        'id':           15,
 				        'name':         u'Running with Limited Visibility',
-				        'difficulty':   40,
-				        'flavors':      u'Darkness, Face Powder, Fog',
+				        'difficulty':   60,
+				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
 				        'landing_img':	u'/static/img/landing/challenges/visibility1.jpg',
 				        'imgs':         [
