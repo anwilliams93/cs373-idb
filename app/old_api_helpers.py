@@ -407,8 +407,8 @@ def retrieve_funruns():
 			        'loc':			4,
 			        'imgs':         [
 			                            u'/static/img/runTempl/keepAustinWeird1.jpg',
-			                            u'/static/img/runTempl/keepAustinweird2.jpg',
-			                            u'/static/img/runTempl/keepAustinweird3.jpg'
+			                            u'/static/img/runTempl/keepAustinWeird2.jpg',
+			                            u'/static/img/runTempl/keepAustinWeird3.jpg'
 			                        ],
 			        'themes':       [
 			                            2, 3, 8

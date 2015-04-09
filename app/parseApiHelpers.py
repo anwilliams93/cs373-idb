@@ -15,7 +15,7 @@ def dealWithEscapedNLandApost(s) :
 	return newS
 
 def funRunsParser(run) :
-	return ("frun" + str(run['id']) + " = FunRun(" + "id = " + str(run['id']) + ", " + "'"\
+	return ("frun" + str(run['id'] + 1) + " = FunRun(" + "id = " + str(run['id'] + 1) + ", "\
 	 + "name = '" + dealWithEscapedNLandApost(run['name']) + "', " + "\\\n\t"\
 	 + "address = '" + dealWithEscapedNLandApost(run['address']) + "', " + "\\\n\t"\
 	 + "date = '" + dealWithEscapedNLandApost(run['date']) + "', " + "\\\n\t"\
@@ -34,13 +34,13 @@ def funRunsParser(run) :
 	 + "video_url = '" + dealWithEscapedNLandApost(run['video_url']) + "', " + "\\\n\t"\
 	 + "fb_url = '" + dealWithEscapedNLandApost(run['fb_url']) + "', " + "\\\n\t"\
 	 + "landing_img = '" + dealWithEscapedNLandApost(run['landing_img']) + "', \\\n\t"\
-	 + "location_id = " + str(run['loc']) + ", " + "\\\n\t"\
+	 + "location_id = " + str(run['loc'] + 1) + ", " + "\\\n\t"\
 	 + "img_1 = '" + dealWithEscapedNLandApost(run['imgs'][0]) + "', " + "\\\n\t"\
 	 + "img_2 = '" + dealWithEscapedNLandApost(run['imgs'][1]) + "', " + "\\\n\t"\
 	 + "img_3 = '" + dealWithEscapedNLandApost(run['imgs'][2]) + "')\n\n")
 
 def themesParser(theme) :
-	return ("theme" + str(theme['id']) + " = Theme(" + "id = " + str(theme['id'])\
+	return ("theme" + str(theme['id'] + 1) + " = Theme(" + "id = " + str(theme['id'] + 1)\
 	+ ", " + "name = '" + theme['name'] + "', " + "\\\n\t"\
 	+ "buzzwords = '" + dealWithEscapedNLandApost(theme['buzzwords']) + "', " + "\\\n\t"\
 	+ "description = '" + dealWithEscapedNLandApost(theme['description']) + "', " + "\\\n\t"\
@@ -56,8 +56,8 @@ def themesParser(theme) :
 	+ "img_8 = '" + dealWithEscapedNLandApost(theme['imgs'][7]) + "')\n\n")
 
 def challengesParser(challenge) :
-	return ("challenge" + str(challenge['id']) + " = Challenge(" + "id = "\
-		+ str(challenge['id']) + ", " + "\\\n\t"\
+	return ("chal" + str(challenge['id'] + 1) + " = Challenge(" + "id = "\
+		+ str(challenge['id'] + 1) + ", " + "\\\n\t"\
 		+ "name = '" + dealWithEscapedNLandApost(challenge['name']) + "', \\\n\t"\
 		+ "difficulty = " + str(challenge['difficulty']) + ", " + "\\\n\t"\
 		+ "flavors = '" + dealWithEscapedNLandApost(challenge['flavors']) + "', " + "\\\n\t"\
@@ -68,8 +68,8 @@ def challengesParser(challenge) :
 		+ "img_3 = '" + dealWithEscapedNLandApost(challenge['imgs'][2]) + "')\n\n")
 
 def locationsParser(location) :
-	return ("loc" + str(location['id']) + " = Location(" + "id = "\
-		+ str(location['id']) + ", " + "\\\n\t"\
+	return ("loc" + str(location['id'] + 1) + " = Location(" + "id = "\
+		+ str(location['id'] + 1) + ", " + "\\\n\t"\
 		+ "name = '" + dealWithEscapedNLandApost(location['name']) + "', " + "\\\n\t"\
 		+ "nickname = '" + dealWithEscapedNLandApost(location['nickname']) + "', \\\n\t"\
 		+ "winter_avgTemp = " + str(location['winter_avgTemp']) + ", \\\n\t"\
@@ -90,20 +90,20 @@ def locationsParser(location) :
 
 def funRunsRelationships(run) :
 	s = ""
-	runName = "frun" + str(run['id'])
+	runName = "frun" + str(run['id'] + 1)
 	for themeId in run['themes'] :
-		themeName = "theme" + str(themeId)
+		themeName = "theme" + str(themeId + 1)
 		s += runName + ".funRun_theme.append(" + themeName + ")\n"
 	for chalId in run['challenges'] :
-		chalName = "chal" + str(chalId)
+		chalName = "chal" + str(chalId + 1)
 		s += runName + ".funRun_challenge.append(" + chalName + ")\n"
 	return s
 
 def themesRelationships(theme) :
 	s = ""
-	themeName = "theme" + str(theme['id'])
+	themeName = "theme" + str(theme['id'] + 1)
 	for chalId in theme['challenges'] :
-		chalName = "chal" + str(chalId)
+		chalName = "chal" + str(chalId + 1)
 		s += themeName + ".theme_challenge.append(" + chalName + ")\n"
 	return s
 
@@ -140,19 +140,19 @@ def makeCreateDatabaseFile() :
 
 	f.write('\n# Populate the funruns\n')
 	for run in fRunDicList :
-		f.write("db.session.add(frun" + str(run['id']) + ")\n")
+		f.write("db.session.add(frun" + str(run['id'] + 1) + ")\n")
 
 	f.write('\n# Populate the themes\n')
 	for theme in themeDicList :
-		f.write("db.session.add(theme" + str(theme['id']) + ")\n")
+		f.write("db.session.add(theme" + str(theme['id'] + 1) + ")\n")
 
 	f.write('\n# Populate the challenges\n')
 	for challenge in challengeDicList :
-		f.write("db.session.add(chal" + str(challenge['id']) + ")\n")
+		f.write("db.session.add(chal" + str(challenge['id'] + 1) + ")\n")
 
 	f.write('\n# Populate the locations\n')
 	for location in locationDicList :
-		f.write("db.session.add(loc" + str(location['id']) + ")\n")
+		f.write("db.session.add(loc" + str(location['id'] + 1) + ")\n")
 
 
 makeCreateDatabaseFile()
