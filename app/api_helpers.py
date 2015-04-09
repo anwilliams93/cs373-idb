@@ -718,7 +718,7 @@ def retrieve_challenges():
 				        'name':         u'Going Over Hills',
 				        'difficulty':   30,
 				        'flavors':      u'High Elevation, Inclines, Steep Roads',
-				        'description':  u'Fight against gravity and prepare to go over steep hills in runs with hilly landscape. Feel those legs burn!',
+				        'description':  u'Fight against gravity and prepare to go over steep hills in runs with hilly landscape. Feel those legs burn as you scale those inclines to the very end!',
 				        'landing_img':	u'/static/img/landing/challenges/hill1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/hill1.jpg',
@@ -731,7 +731,7 @@ def retrieve_challenges():
 				        'name':         u'Getting Chased',
 				        'difficulty':   70,
 				        'flavors':      u'Pursued, Zombies, Capture The Flag',
-				        'description':  u'',
+				        'description':  u'You don\'t have to outrun your pursuers, you just have to outrun the other people being chased! Don\'t let yourself get caught in hardcore survival runs where it\'s kill... or be killed.',
 				        'landing_img':	u'/static/img/landing/challenges/chased1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/chased1.jpg',
@@ -744,7 +744,7 @@ def retrieve_challenges():
 				        'name':         u'Getting Covered in Stuff',
 				        'difficulty':   10,
 				        'flavors':      u'Foam, Bubbles, Mud, Water, Powder',
-				        'description':  u'',
+				        'description':  u'Want to run through a waterfall of bubbles and foam? Or would you rather stay away from the suds and go for the muds!? Either way, this stuff is going to make you feel ',
 				        'landing_img':	u'/static/img/landing/challenges/covered1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/covered1.jpg',

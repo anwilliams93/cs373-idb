@@ -27,7 +27,7 @@ def retrieve_funruns():
 
 	for run in results:
 		object_dict = {}
-		object_dict['id'] = run.id
+		object_dict['id'] = run.id - 1
 		object_dict['name'] = run.name
 		object_dict['address'] = run.address
 		object_dict['distance'] = run.distance
@@ -48,16 +48,16 @@ def retrieve_funruns():
 		imgs = [run.img_1, run.img_2, run.img_3]
 		object_dict['imgs'] = imgs
 
-		object_dict['loc'] = run.location_id
+		object_dict['loc'] = run.location_id - 1
 
 		theme_ids = []
 		for theme in run.funRun_theme:
-			theme_ids += [theme.id]
+			theme_ids += [theme.id - 1]
 		object_dict['themes'] = sorted(theme_ids)
 
 		challenge_ids = []
 		for challenge in run.funRun_challenge:
-			challenge_ids += [challenge.id]
+			challenge_ids += [challenge.id - 1]
 		object_dict['challenges'] = sorted(challenge_ids)
 
 		funruns += [object_dict]
@@ -84,12 +84,12 @@ def retrieve_themes():
 
 		run_ids = []
 		for run in theme.funruns:
-			run_ids += [run.id]
+			run_ids += [run.id - 1]
 		object_dict['funruns'] = sorted(run_ids)
 
 		challenge_ids = []
 		for challenge in theme.theme_challenge:
-			challenge_ids += [challenge.id]
+			challenge_ids += [challenge.id - 1]
 		object_dict['challenges'] = sorted(challenge_ids)
 
 		themes += [object_dict]
@@ -103,7 +103,7 @@ def retrieve_challenges():
 
 	for challenge in results:
 		object_dict = {}
-		object_dict['id'] = challenge.id
+		object_dict['id'] = challenge.id - 1
 		object_dict['name'] = challenge.name
 		object_dict['difficulty'] = challenge.difficulty
 		object_dict['flavors'] = challenge.flavors
@@ -115,12 +115,12 @@ def retrieve_challenges():
 
 		run_ids = []
 		for run in challenge.funruns:
-			run_ids += [run.id]
+			run_ids += [run.id - 1]
 		object_dict['funruns'] = sorted(run_ids)
 
 		theme_ids = []
 		for theme in challenge.theme:
-			theme_ids += [theme.id]
+			theme_ids += [theme.id - 1]
 		object_dict['themes'] = sorted(theme_ids)
 
 		challenges += [object_dict]
@@ -134,7 +134,7 @@ def retrieve_locations():
 
 	for location in results:
 		object_dict = {}
-		object_dict['id'] = location.id
+		object_dict['id'] = location.id - 1
 		object_dict['name'] = location.name
 		object_dict['nickname'] = location.nickname
 		object_dict['winter_avgTemp'] = location.winter_avgTemp
@@ -155,7 +155,7 @@ def retrieve_locations():
 
 		run_ids = []
 		for run in location.funruns:
-			run_ids += [run.id]
+			run_ids += [run.id - 1]
 		object_dict['funruns'] = sorted(run_ids)
 
 		locations += [object_dict]
