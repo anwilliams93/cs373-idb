@@ -54,7 +54,7 @@ def retrieve_funruns():
 			                            1
 			                        ],
 			        'challenges':   [
-			                            0
+			                            0, 3, 5, 8, 9, 11, 12, 13
 			                        ]
 			    },  
 			    {
@@ -80,7 +80,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/uPiN-_p7q2k',
 			        'fb_url':       u'https://www.facebook.com/AChristmasStoryRun',
 			        'landing_img':	u'/static/img/landing/funruns/christmasStoryRunLanding.jpg',
-			        'loc':			1,
+			        'loc':			2,
 			        'imgs':         [
 			                            u'/static/img/runTempl/christmasstory1.jpg',
 			                            u'/static/img/runTempl/christmasstory2.jpg',
@@ -90,7 +90,7 @@ def retrieve_funruns():
 			                            0
 			                        ],
 			        'challenges':   [
-			                            2
+			                            1, 2
 			                        ]
 			    },
 			    {
@@ -116,7 +116,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/qdnzjhWgCOg',
 			        'fb_url':       u'https://www.facebook.com/DallasYMCATrot',
 			        'landing_img':	u'/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg',
-			        'loc':			2,
+			        'loc':			1,
 			        'imgs':         [
 			                            u'/static/img/runTempl/dallasturkey1.jpg',
 			                            u'/static/img/runTempl/dallasturkey2.jpg',
@@ -126,8 +126,7 @@ def retrieve_funruns():
 			                            2
 			                        ],
 			        'challenges':   [
-			                            1,
-			                            2
+			                            1, 2
 			                        ]
 			    },
 					{
@@ -153,6 +152,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/NVEVGSEJmOc',
 			        'fb_url':       u'https://www.facebook.com/zapposbaytobreakers',
 			        'landing_img':	u'/static/img/landing/funruns/baytobreakersLanding.jpg',
+			        'loc':			6,
 			        'imgs':         [
 			                            u'/static/img/runTempl/baytobreakers1.jpg',
 			                            u'/static/img/runTempl/baytobreakers2.jpg',
@@ -162,7 +162,7 @@ def retrieve_funruns():
 			                            2
 			                        ],
 			        'challenges':   [
-			                            1
+			                            1, 3, 6
 			                        ]
 			    },
 			    	{
@@ -188,6 +188,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/yhrC2CO9gKM',
 			        'fb_url':       u'https://www.facebook.com/zombieracellc',
 			        'landing_img':	u'/static/img/landing/funruns/zombierunLanding.jpg',
+			        'loc':			7,
 			        'imgs':         [
 			                            u'/static/img/runTempl/zombierun1.jpg',
 			                            u'/static/img/runTempl/zombierun2.jpg',
@@ -197,7 +198,7 @@ def retrieve_funruns():
 			                            1
 			                        ],
 			        'challenges':   [
-			                            0
+			                            1, 4, 10, 12, 14
 			                        ]
 			    },
 					{
@@ -223,6 +224,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/TgMgEtXjSUk',
 			        'fb_url':       u'https://www.facebook.com/BlacklightRun',
 			        'landing_img':	u'/static/img/landing/funruns/blacklightrunLanding.jpg',
+			        'loc':			8,
 			        'imgs':         [
 			                            u'/static/img/runTempl/blacklight1.jpg',
 			                            u'/static/img/runTempl/blacklight2.jpg',
@@ -232,7 +234,7 @@ def retrieve_funruns():
 			                            1
 			                        ],
 			        'challenges':   [
-			                            0
+			                            5, 15
 			                        ]
 			    },
 		    	{
@@ -258,6 +260,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/R0uhmZI1yy4',
 			        'fb_url':       u'https://www.facebook.com/electricrun',
 			        'landing_img':	u'/static/img/landing/funruns/electricrunLanding.jpg',
+			        'loc':			9,
 			        'imgs':         [
 			                            u'/static/img/runTempl/electricrun1.jpg',
 			                            u'/static/img/runTempl/electricrun2.jpg',
@@ -267,7 +270,7 @@ def retrieve_funruns():
 			                            1
 			                        ],
 			        'challenges':   [
-			                            0
+			                            5, 15
 			                        ]
 			    },
 			    {
@@ -293,6 +296,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/cXrafhIBdlI',
 			        'fb_url':       u'https://www.facebook.com/brewmileseries',
 			        'landing_img':	u'/static/img/landing/funruns/brewrunLanding.jpg',
+			        'loc':			1,
 			        'imgs':         [
 			                            u'/static/img/runTempl/brewmile1.jpg',
 			                            u'/static/img/runTempl/brewmile2.jpg',
@@ -302,14 +306,14 @@ def retrieve_funruns():
 			                            1
 			                        ],
 			        'challenges':   [
-			                            0
+			                            6
 			                        ]
 			    },
 			    {
 			        'id':           8,
 			        'name':         u'Tough Mudder',
 			        'city':         u'Fairburn, Georgia',
-			        'address':      u'10045 Cedar Grove\nFairburn, Georgia\n30213',
+			        'address':      u'10045 Cedar Grove\nFairburn, GA\n30213',
 			        'date':         u'May 2nd & 3rd, 2015',
 			        'distance':     u'19K',
 			        'price':        u'$185-$195',
@@ -327,6 +331,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/Jim-ksScOoc',
 			        'fb_url':       u'https://www.facebook.com/toughmudder',
 			        'landing_img':	u'/static/img/landing/funruns/toughmudderLanding.jpg',
+			        'loc':			3,
 			        'imgs':         [
 			                            u'/static/img/runTempl/toughmudder1.jpg',
 			                            u'/static/img/runTempl/toughmudder2.jpg',
@@ -336,7 +341,7 @@ def retrieve_funruns():
 			                            1
 			                        ],
 			        'challenges':   [
-			                            0
+			                            0, 2, 3, 5, 7, 8, 9, 10, 11, 12, 13
 			                        ]
 			    },
 			    {
@@ -362,6 +367,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/cVG9FATjIyk',
 			        'fb_url':       u'https://www.facebook.com/pages/The-Fit-Foodie-Race-Series/177814812394419',
 			        'landing_img':	u'/static/img/landing/funruns/fitfoodieLanding.jpg',
+			        'loc':			4,
 			        'imgs':         [
 			                            u'/static/img/runTempl/fitfoodie1.jpg',
 			                            u'/static/img/runTempl/fitfoodie2.jpg',
@@ -371,7 +377,7 @@ def retrieve_funruns():
 			                            1
 			                        ],
 			        'challenges':   [
-			                            0
+			                            6
 			                        ]
 			    },
 			    {
@@ -397,6 +403,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://www.youtube.com/embed/9sL-B1D7v34',
 			        'fb_url':       u'https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639',
 			        'landing_img':	u'/static/img/landing/funruns/keepAustinWeirdLanding.jpg',
+			        'loc':			4,
 			        'imgs':         [
 			                            u'/static/img/runTempl/keepAustinWeird1.jpg',
 			                            u'/static/img/runTempl/keepAustinweird2.jpg',
@@ -406,7 +413,7 @@ def retrieve_funruns():
 			                            1
 			                        ],
 			        'challenges':   [
-			                            0
+			                            1, 2
 			                        ]
 			    },
 			    {
@@ -432,6 +439,7 @@ def retrieve_funruns():
 			        'video_url':    u'https://player.vimeo.com/video/112507533',
 			        'fb_url':       u'https://www.facebook.com/sundayriver',
 			        'landing_img':	u'/static/img/landing/funruns/wifecarryLanding.jpg',
+			        'loc':			5,
 			        'imgs':         [
 			                            u'/static/img/runTempl/wifecarry1.jpg',
 			                            u'/static/img/runTempl/wifecarry2.jpg',
@@ -441,7 +449,7 @@ def retrieve_funruns():
 			                            1
 			                        ],
 			        'challenges':   [
-			                            0
+			                            0, 3, 5, 7, 11, 12
 			                        ]
 			    }
 
@@ -467,12 +475,8 @@ def retrieve_themes():
 			                            u'/static/img/themeTempl/holiday7.jpg',
 			                            u'/static/img/themeTempl/holiday8.jpg'
 			                        ],
-			        'funruns':         [
-			                            1
-			                        ],
 			        'challenges':   [
-			                            0,
-			                            2
+			                            1, 2
 			                        ]
 			    },
 			    {
@@ -492,12 +496,8 @@ def retrieve_themes():
 			                            u'/static/img/themeTempl/intense7.jpg',
 			                            u'/static/img/themeTempl/intense8.jpg'
 			                        ],
-			        'funruns':         [
-			                            0
-			                        ],
 			        'challenges':   [
-			                            0,
-			                            2
+			                            0, 2, 3, 7, 8, 9, 10, 11, 12, 13, 14
 			                        ]
 			    },
 			    {
@@ -516,9 +516,6 @@ def retrieve_themes():
 			                            u'/static/img/themeTempl/costume6.jpg',
 			                            u'/static/img/themeTempl/costume7.jpg',
 			                            u'/static/img/themeTempl/costume8.jpg'
-			                        ],
-			        'funruns':         [
-			                            2
 			                        ],
 			        'challenges':   [
 			                            1
@@ -541,11 +538,8 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/location7.jpg',
 			    #                         u'/static/img/themeTempl/location8.jpg'
 			    #                     ],
-			    #     'funruns':         [
-			    #                         2
-			    #                     ],
 			    #     'challenges':   [
-			    #                         1
+			    #                         
 			    #                     ]
 			    # },
 			    # {
@@ -565,14 +559,8 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/dirty7.jpg',
 			    #                         u'/static/img/themeTempl/dirty8.jpg'
 			    #                     ],
-			    #     'funruns':         [
-			    #                         8,
-			    #						  11,
-			    #						  6,
-			    #						  5
-			    #                     ],
 			    #     'challenges':   [
-			    #                         1
+			    #                         0, 5, 8, 9, 10, 11, 12, 13, 15
 			    #                     ]
 			    # },
 			    # {
@@ -592,11 +580,8 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/team7.jpg',
 			    #                         u'/static/img/themeTempl/team8.jpg'
 			    #                     ],
-			    #     'funruns':         [
-			    #                         2
-			    #                     ],
 			    #     'challenges':   [
-			    #                         1
+			    #                         7, 12
 			    #                     ]
 			    # },
 			    # {
@@ -616,11 +601,8 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/drink7.jpg',
 			    #                         u'/static/img/themeTempl/drink8.jpg'
 			    #                     ],
-			    #     'funruns':         [
-			    #                         11
-			    #                     ],
 			    #     'challenges':   [
-			    #                         1
+			    #                         6, 7
 			    #                     ]
 			    # },
 			    # {
@@ -640,11 +622,8 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/food7.jpg',
 			    #                         u'/static/img/themeTempl/food8.jpg'
 			    #                     ],
-			    #     'funruns':         [
-			    #                         9
-			    #                     ],
 			    #     'challenges':   [
-			    #                         1
+			    #                         6, 7
 			    #                     ]
 			    # },
 			    # {
@@ -664,12 +643,8 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/music7.jpg',
 			    #                         u'/static/img/themeTempl/music8.jpg'
 			    #                     ],
-			    #     'funruns':         [
-			    #                         5,
-			    #							6
-			    #                     ],
 			    #     'challenges':   [
-			    #                         1
+			    #                         
 			    #                     ]
 			    # },
 			    # {
@@ -689,11 +664,8 @@ def retrieve_themes():
 			    #                         u'/static/img/themeTempl/fantasy7.jpg',
 			    #                         u'/static/img/themeTempl/fantasy8.jpg'
 			    #                     ],
-			    #     'funruns':         [
-			    #                         4
-			    #                     ],
 			    #     'challenges':   [
-			    #                         1
+			    #                         1, 4, 14
 			    #                     ]
 			    }
 			]
@@ -712,13 +684,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/oddGround1.jpg',
 				                            u'/static/img/challengeTempl/oddGround2.jpg',
 				                            u'/static/img/challengeTempl/oddGround3.jpg'
-				                        ],
-				        'funruns':      [
-				                            0
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -732,12 +697,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/costume1.jpg',
 				                            u'/static/img/challengeTempl/costume2.jpg',
 				                            u'/static/img/challengeTempl/costume3.jpg'
-				                        ],
-				        'funruns':      [
-				                            2
-				                        ],
-				        'themes':       [
-				                            2
 				                        ]
 				    },
 				    {
@@ -751,14 +710,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -772,14 +723,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -793,14 +736,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -814,14 +749,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -835,14 +762,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -856,14 +775,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -877,14 +788,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -898,14 +801,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -919,14 +814,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -940,14 +827,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -961,14 +840,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -982,14 +853,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -1003,14 +866,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    },
 				    {
@@ -1024,14 +879,6 @@ def retrieve_challenges():
 				                            u'/static/img/challengeTempl/cold1.jpg',
 				                            u'/static/img/challengeTempl/cold2.jpg',
 				                            u'/static/img/challengeTempl/cold3.jpg'
-				                        ],
-				        'funruns':      [
-				        					1,
-				                            2
-				                        ],
-				        'themes':       [
-				                            0,
-				                            1
 				                        ]
 				    }
 				]
