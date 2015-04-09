@@ -48,6 +48,7 @@
       $scope.video_url = $sce.trustAsResourceUrl($scope.run.video_url);
       $scope.fb_url = $sce.trustAsHtml($scope.run.fb_url);
       $scope.imgs = $scope.run.imgs;
+      $scope.quotes = $scope.run.quotes;
       $scope.themesIDs = $scope.run.themes;
       $scope.challengesIDs = $scope.run.challenges;
       // console.log($scope.run);
@@ -211,6 +212,13 @@ $(document).ready(function () {
         ================================================== -->
         <h3 class="title-bg">Video For Getting Hyped</h3>
          <iframe ng-src= "[[video_url]]" style="width: 100%; height: 500px; max-height: 500px; frameborder: 0; border: 0"></iframe>
+
+         <!-- Quotes
+         ================================================= -->
+         <h4 class="title-bg">Quotes</h4>
+          <pre class="quote-text side">[[ quotes[0] ]]</pre>
+          <pre class="quote-text side">[[ quotes[1] ]]</pre>
+          <pre class="quote-text side">[[ quotes[2] ]]</pre>
 
         </div> <!--End page content column-->
 

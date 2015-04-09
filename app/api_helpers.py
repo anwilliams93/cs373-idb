@@ -483,7 +483,7 @@ def retrieve_themes():
 			    {
 			        'id':           1,
 			        'name':         u'Intense',
-			        'buzzwords':    u'Training, Diet, Hardcore, Recovery, Cutthroat',
+			        'buzzwords':    u'Training, Hardcore, Cutthroat, Military-Style',
 			        'description':  u'More interested in proving how much you can take than how much fun you\'ll actually have? Intense runs are exactly what you need - a good dose of body-numbing, soul-crushing exercise to show your stuff. See if you can survive the brutal difficulty of these events.',
 			        'short':		u'Test your endurance in these hardcore races.',
 			        'landing_img':	u'/static/img/landing/themes/intense1.jpg',
@@ -525,9 +525,9 @@ def retrieve_themes():
 			    {
 			        'id':           3,
 			        'name':         u'Location',
-			        'buzzwords':    u'Landmarks, Rivers, Downtown, Parks, Lakes, Views',
-			        'description':  u'Whether it is an excuse to travel and exercise, or a good distraction from the aches and pains of running, the location of a race is a great factor in deciding which run works for you!',
-			        'short':		u'Enjoy the scenic views while getting in some exercise.',
+			        'buzzwords':    u'Landmarks, Rivers, Downtown, Parks, Lakes, Views, Monuments',
+			        'description':  u'Whether it is an excuse to travel and exercise or just a good distraction from the aches and pains of running, the location of a race is a great factor in deciding which run works for you! Explore famous landmarks as you race to glory!',
+			        'short':		u'Enjoy scenic views while getting your exercise on.',
 			        'landing_img':	u'/static/img/landing/themes/location1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/location1.jpg',
@@ -546,9 +546,9 @@ def retrieve_themes():
 			    {
 			        'id':           4,
 			        'name':         u'Dirty',
-			        'buzzwords':    u'Mud, Color Paint, Wet',
-			        'description':  u'Want to run through mud pits, climb walls, and get blasted with paint? Challenge yourself with these get down-and-dirty runs.',
-			        'short':		u'Get ready to take a long shower afterwards.',
+			        'buzzwords':    u'Mud, Color Paint, Wet, Powder, Foam',
+			        'description':  u'Want to run through mud pits, climb walls, and get blasted with paint? Challenge yourself with get-down-and-dirty runs. You\'ll be covered with all sorts of stuff all the way to the finish line!',
+			        'short':		u'Get ready to take a long shower after these runs!',
 			        'landing_img':	u'/static/img/landing/themes/dirty1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/dirty1.jpg',
@@ -567,9 +567,9 @@ def retrieve_themes():
 			    {
 			        'id':           5,
 			        'name':         u'Team',
-			        'buzzwords':    u'Group, Partner(s), Family',
-			        'description':  u'You don\'t have to run a race by yourself. Instead, put together a team of your friends and take part in one of these races.',
-			        'short':		u'Share the fun with a group or that special someone',
+			        'buzzwords':    u'Group, Partner(s), Family, Friends',
+			        'description':  u'Everything is more enjoyable with friends! Get crazy in crazy runs with a posse! Register for races in a team - whether you\'re sporting a theme or just running together for support - you\'ll be glad you did!',
+			        'short':		u'Share the fun and join a team to run!',
 			        'landing_img':	u'/static/img/landing/themes/team1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/team1.jpg',
@@ -588,9 +588,9 @@ def retrieve_themes():
 			    {
 			        'id':           6,
 			        'name':         u'Drink',
-			        'buzzwords':    u'Beer, beer, and more beer',
-			        'description':  u'Ever try keeping down a couple of drinks while running long distances? These runs test your endurance and bladder',
-			        'short':			u'Hold yourself together while being part ofthese runs.',
+			        'buzzwords':    u'Beer, Hot Chocolate, Water',
+			        'description':  u'Ever try keeping down a couple of drinks while running long distances? Or maybe you want to enjoy the post-race with a nice swig? There are runs out there just for enjoying the liquid-y things in life! Drink runs test your endurance... and your bladder.',
+			        'short':		u'Run, drink liquids, and drown in utter victory.',
 			        'landing_img':	u'/static/img/landing/themes/drink1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/drink1.jpg',
@@ -609,9 +609,9 @@ def retrieve_themes():
 			    {
 			        'id':           7,
 			        'name':         u'Food',
-			        'buzzwords':    u'Sweet, sour, healthy',
-			        'description':  u'Forget bananas and postrace barbecues. In these races, chowing down is part of the competition.',
-			        'short':		u'Enjoy a nice meal with these runs.',
+			        'buzzwords':    u'Hot Dogs, Pizza, Twinkies, Candy',
+			        'description':  u'Forget pre-race bananas and post-race barbecues. How about food as part of the race itself? Start on an empty stomach, because in food races, chowing down is part of the competition - so eat, swallow, rinse, repeat!',
+			        'short':		u'Start on an empty stomach: to beat, you must eat.',
 			        'landing_img':	u'/static/img/landing/themes/food1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/food1.jpg',
@@ -631,8 +631,8 @@ def retrieve_themes():
 			        'id':           8,
 			        'name':         u'Music',
 			        'buzzwords':    u'Rhythm, Dance, Banger',
-			        'description':  u'No need for a pre-workout for these runs. The music will get you pumped and ready to hit the ground running.',
-			        'short':		u'Jam out to some tunes during these runs.',
+			        'description':  u'No need for a pre-workout for these runs. Let the bass warm you and the melodies move you! You\'ll be moved by the rhythms and busting to the beats. The music will get you pumped and ready to hit the ground running!',
+			        'short':		u'Let the music move you until the very end.',
 			        'landing_img':	u'/static/img/landing/themes/music1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/music1.jpg',
@@ -651,9 +651,9 @@ def retrieve_themes():
 			    {
 			        'id':           9,
 			        'name':         u'Fantasy',
-			        'buzzwords':    u'Dreams, Monsters, Supernatural',
-			        'description':  u'These runs will make your imagination run wild with their supernatural sights and experiences.',
-			        'short':		u'Run through your wildest fantasies.',
+			        'buzzwords':    u'Dreams, Monsters, Supernatural, Disney',
+			        'description':  u'Fantasy runs will make your imagination fly wild with their supernatural sights and experiences. See for yourself and get immersed into a run that is out of this world! Live out apocalyptic scenarios, Disney magic, or anything your heart desires!',
+			        'short':		u'Race through your wildest fantasies - come true.',
 			        'landing_img':	u'/static/img/landing/themes/fantasy1.jpg',
 			        'imgs':         [
 			                            u'/static/img/themeTempl/fantasy1.jpg',
@@ -744,7 +744,7 @@ def retrieve_challenges():
 				        'name':         u'Getting Covered in Stuff',
 				        'difficulty':   10,
 				        'flavors':      u'Foam, Bubbles, Mud, Water, Powder',
-				        'description':  u'Want to run through a waterfall of bubbles and foam? Or would you rather stay away from the suds and go for the muds!? Either way, this stuff is going to make you feel ',
+				        'description':  u'Want to run through a waterfall of bubbles and foam? Or would you rather stay away from the suds and go for the muds!? Either way, get dirty and have fun!',
 				        'landing_img':	u'/static/img/landing/challenges/covered1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/covered1.jpg',
@@ -757,7 +757,7 @@ def retrieve_challenges():
 				        'name':         u'Consuming',
 				        'difficulty':   30,
 				        'flavors':      u'Food, Drink, Quick Consumption',
-				        'description':  u'',
+				        'description':  u'Take the food on the go and eat as fast as you can - it\'s part of the race! Some races will reward you with treats at the end or in the middle of the race, but not as a break - as a challenge!',
 				        'landing_img':	u'/static/img/landing/challenges/consuming1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/consuming1.jpg',
@@ -770,7 +770,7 @@ def retrieve_challenges():
 				        'name':         u'Carrying an Object',
 				        'difficulty':   70,
 				        'flavors':      u'Sandbags, Other People, Logs',
-				        'description':  u'',
+				        'description':  u'As if carrying yourself to the finish was hard enough, try moving other objects from point A to point B as well! You better have worked those arms and not just your legs for these weight lifting obstacles.',
 				        'landing_img':	u'/static/img/landing/challenges/carry1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/carry1.jpg',
@@ -783,7 +783,7 @@ def retrieve_challenges():
 				        'name':         u'Scaling a Wall',
 				        'difficulty':   70,
 				        'flavors':      u'Wooden Walls, Rope Walls, Chains, Rope Ladders',
-				        'description':  u'',
+				        'description':  u'You thought you were almost there, but not you\'re blocked by an insurmountable wall! If you want to make it to the end, be ready to climb to the top of the wall or you better be ready to fall!',
 				        'landing_img':	u'/static/img/landing/challenges/scaling1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/scaling1.jpg',
@@ -796,7 +796,7 @@ def retrieve_challenges():
 				        'name':         u'Sliding Down Slopes',
 				        'difficulty':   10,
 				        'flavors':      u'Large Inflatable Slides, Mud Slides, Foam Slides',
-				        'description':  u'',
+				        'description':  u'These fun slides are a few moments of much-needed thrills. Give your legs a rest and get ready to go fast down these steep declines!',
 				        'landing_img':	u'/static/img/landing/challenges/sliding1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/sliding1.jpg',
@@ -809,7 +809,7 @@ def retrieve_challenges():
 				        'name':         u'Crawling Underneath Obstacles',
 				        'difficulty':   40,
 				        'flavors':      u'Barbed Wire, Tunnels, Electrical Wiring',
-				        'description':  u'',
+				        'description':  u'Don\'t raise your head - you might just lose it! These challenges force you to get down and dirty, crawling beneath the danger and coming out unscathed.',
 				        'landing_img':	u'/static/img/landing/challenges/crawling1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/crawling1.jpg',
@@ -822,7 +822,7 @@ def retrieve_challenges():
 				        'name':         u'Being Suspended',
 				        'difficulty':   60,
 				        'flavors':      u'Monkey Bars, Rope Swings, Metal Swings',
-				        'description':  u'',
+				        'description':  u'Better have worked that upper body - you\'ll be needing it now! Whether it\'s monkey bars, a swing, or just a rope, you\'ll be flying high or failing.',
 				        'landing_img':	u'/static/img/landing/challenges/suspended1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/suspended1.jpg',
@@ -835,7 +835,7 @@ def retrieve_challenges():
 				        'name':         u'Staying Balanced',
 				        'difficulty':   70,
 				        'flavors':      u'Balance beams, wooden beams, inflated walkways',
-				        'description':  u'',
+				        'description':  u'Fall and face the consequences. These challenges keep you on your toes across planks, ropes, and anything you can shake a toe at!',
 				        'landing_img':	u'/static/img/landing/challenges/balance1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/balance1.jpg',
@@ -848,7 +848,7 @@ def retrieve_challenges():
 				        'name':         u'Getting Hit by Objects',
 				        'difficulty':   80,
 				        'flavors':      u'Inflated Bulldozer Balls, Thrown Items',
-				        'description':  u'',
+				        'description':  u'Hope you\'re sturdy - because you\'re going to need to face all sorts of projectiles and bulldozing objects! Keep your feet on solid ground, or it might be your head instead!',
 				        'landing_img':	u'/static/img/landing/challenges/gettinghit1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/gettinghit1.jpg',
@@ -861,7 +861,7 @@ def retrieve_challenges():
 				        'name':         u'Performing Urban Parkour',
 				        'difficulty':   60,
 				        'flavors':      u'Buildings, Construction Areas, Urban Areas',
-				        'description':  u'',
+				        'description':  u'This isn\'t your average trail - these are buildings, roads, and the urban environment for you to run and jump to your heart\'s content!',
 				        'landing_img':	u'/static/img/landing/challenges/parkour1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/parkour1.jpg',
@@ -874,7 +874,7 @@ def retrieve_challenges():
 				        'name':         u'Running with Limited Visibility',
 				        'difficulty':   40,
 				        'flavors':      u'Darkness, Face Powder, Fog',
-				        'description':  u'',
+				        'description':  u'Hope you have a 6th sense, because you\'ll need it where you\'ll be! Face the darkness and the unknown as you run to somewhere you can\'t even see!',
 				        'landing_img':	u'/static/img/landing/challenges/visibility1.jpg',
 				        'imgs':         [
 				                            u'/static/img/challengeTempl/visibility1.jpg',
@@ -983,7 +983,7 @@ def retrieve_locations():
 					    'annual_rainfall':      u'34.53in',
 					    'landmarks':            u'Bob Bullock Texas State History Museum, Zilker Park, Hamilton Pool, Austin Zoo',
 					    'website_url':			u'http://www.austintexas.org/',
-					    'description':			u'Austin is the capital of Texas.  It has vibrant entertainment and culture, inspiring cuisine and stunning outdoor settings.',
+					    'description':			u'Austin is the capital of Texas. It has vibrant entertainment and culture, inspiring cuisine and stunning outdoor settings.',
 					    'landing_img':			u'/static/img/landing/locations/austinTXLanding.jpg',
 					    'img':					u'/static/img/locationTempl/austin1.jpg'	
 					},
@@ -1003,7 +1003,7 @@ def retrieve_locations():
 					    'annual_rainfall':      u'42.13in',
 					    'landmarks':            u'Artists\' Covered Bridge, Step Falls Preserve, Sunday River Ski Resort, Grafton Notch State Park',
 					    'website_url':			u'http://www.newrymaine.org/',
-					    'description':			u'Newry is a town in Oxfor County, Maine.  It is the home of Sunday River Ski Resort and has a proportionately large population during winter.',
+					    'description':			u'Newry is a town in Oxfor County, Maine. It is the home of Sunday River Ski Resort and has a proportionately large population during winter.',
 					    'landing_img':			u'/static/img/landing/locations/newryMELanding.jpg',
 					    'img':					u'/static/img/locationTempl/newry1.jpg'	
 					},
@@ -1023,7 +1023,7 @@ def retrieve_locations():
 					    'annual_rainfall':      u'23.64in',
 					    'landmarks':            u'Chinatown, Golden Gate Bridge, Golden Gate Park',
 					    'website_url':			u'http://www.sanfrancisco.travel/',
-					    'description':			u'San Francisco is home to a little bit of everything. Whether you\'re a first time visitor or a long-time local. This is the place to find out about all things San Francisco.',
+					    'description':			u'Perched atop hills and filled-in marshland at the entrance to one of the Pacific’s largest natural harbors, San Francisco has had an outsized influence on the history of California and the United States. San Francisco is a center of wealth, military power, progressive culture and high technology.',
 					    'landing_img':			u'/static/img/landing/locations/sanfranciscoCALanding.jpg',
 					    'img':					u'/static/img/locationTempl/sanfrancisco1.jpg'	
 					},
