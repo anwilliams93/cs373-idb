@@ -719,11 +719,11 @@ def retrieve_challenges():
 				        'difficulty':   70,
 				        'flavors':      u'High elevation, Incline, Steep',
 				        'description':  u'Fight against gravity and prepare to go over steep hills in these runs',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/hill1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/hill1.jpg',
+				                            u'/static/img/challengeTempl/hill2.jpg',
+				                            u'/static/img/challengeTempl/hill3.jpg'
 				                        ]
 				    },
 				    {
@@ -732,11 +732,11 @@ def retrieve_challenges():
 				        'difficulty':   60,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/chased1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/chased1.jpg',
+				                            u'/static/img/challengeTempl/chased2.jpg',
+				                            u'/static/img/challengeTempl/chased3.jpg'
 				                        ]
 				    },
 				    {
@@ -745,11 +745,11 @@ def retrieve_challenges():
 				        'difficulty':   40,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/covered1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/covered1.jpg',
+				                            u'/static/img/challengeTempl/covered2.jpg',
+				                            u'/static/img/challengeTempl/covered3.jpg'
 				                        ]
 				    },
 				    {
@@ -758,11 +758,11 @@ def retrieve_challenges():
 				        'difficulty':   40,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/consuming1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/consuming1.jpg',
+				                            u'/static/img/challengeTempl/consuming2.jpg',
+				                            u'/static/img/challengeTempl/consuming3.jpg'
 				                        ]
 				    },
 				    {
@@ -771,11 +771,11 @@ def retrieve_challenges():
 				        'difficulty':   70,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/carry1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/carry1.jpg',
+				                            u'/static/img/challengeTempl/carry2.jpg',
+				                            u'/static/img/challengeTempl/carry3.jpg'
 				                        ]
 				    },
 				    {
@@ -784,11 +784,11 @@ def retrieve_challenges():
 				        'difficulty':   80,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/scaling1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/scaling1.jpg',
+				                            u'/static/img/challengeTempl/scaling2.jpg',
+				                            u'/static/img/challengeTempl/scaling3.jpg'
 				                        ]
 				    },
 				    {
@@ -797,11 +797,11 @@ def retrieve_challenges():
 				        'difficulty':   50,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/slide1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/slide1.jpg',
+				                            u'/static/img/challengeTempl/slide2.jpg',
+				                            u'/static/img/challengeTempl/slide3.jpg'
 				                        ]
 				    },
 				    {
@@ -810,11 +810,11 @@ def retrieve_challenges():
 				        'difficulty':   60,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/crawling1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/crawling1.jpg',
+				                            u'/static/img/challengeTempl/crawling2.jpg',
+				                            u'/static/img/challengeTempl/crawling3.jpg'
 				                        ]
 				    },
 				    {
@@ -823,11 +823,11 @@ def retrieve_challenges():
 				        'difficulty':   70,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/suspended1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/suspended1.jpg',
+				                            u'/static/img/challengeTempl/suspended2.jpg',
+				                            u'/static/img/challengeTempl/suspended3.jpg'
 				                        ]
 				    },
 				    {
@@ -836,11 +836,11 @@ def retrieve_challenges():
 				        'difficulty':   70,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/balance1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/balance1.jpg',
+				                            u'/static/img/challengeTempl/balance2.jpg',
+				                            u'/static/img/challengeTempl/balance3.jpg'
 				                        ]
 				    },
 				    {
@@ -862,11 +862,11 @@ def retrieve_challenges():
 				        'difficulty':   70,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/gettinghit1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/gettinghit1.jpg',
+				                            u'/static/img/challengeTempl/gettinghit2.jpg',
+				                            u'/static/img/challengeTempl/gettinghit3.jpg'
 				                        ]
 				    },
 				    {
@@ -875,11 +875,11 @@ def retrieve_challenges():
 				        'difficulty':   60,
 				        'flavors':      u'Pursued, Zombies',
 				        'description':  u'',
-				        'landing_img':	u'/static/img/landing/challenges/cold1.jpg',
+				        'landing_img':	u'/static/img/landing/challenges/visibility1.jpg',
 				        'imgs':         [
-				                            u'/static/img/challengeTempl/cold1.jpg',
-				                            u'/static/img/challengeTempl/cold2.jpg',
-				                            u'/static/img/challengeTempl/cold3.jpg'
+				                            u'/static/img/challengeTempl/visibility1.jpg',
+				                            u'/static/img/challengeTempl/visibility2.jpg',
+				                            u'/static/img/challengeTempl/visibility3.jpg'
 				                        ]
 				    }
 				]
