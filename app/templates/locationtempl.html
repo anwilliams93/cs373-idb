@@ -43,7 +43,7 @@
   });
 
   myApp.controller('LocationGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
-    $http.get("http://localhost:8000/api/locations/" + {{locationID}}).success(function(data) {
+    $http.get("http://104.239.139.43:8000/api/locations/" + {{locationID}}).success(function(data) {
       $scope.location = data.locations;
       $scope.website_url = $sce.trustAsResourceUrl($scope.location.website_url);
       console.log($scope.location);

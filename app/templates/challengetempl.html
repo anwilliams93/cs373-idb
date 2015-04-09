@@ -42,7 +42,7 @@
   });
 
   myApp.controller('ChallengeGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
-    $http.get("http://localhost:8000/api/challenges/" + {{challengeID}}).success(function(data) {
+    $http.get("http://104.239.139.43:8000/api/challenges/" + {{challengeID}}).success(function(data) {
       $scope.challenge = data.challenges;
       $scope.imgs = $scope.challenge.imgs;
 
@@ -51,12 +51,12 @@
       console.log($scope.imgs[0]);
 
     });
-    $http.get("http://localhost:8000/api/funruns").success(function(data) {
+    $http.get("http://104.239.139.43:8000/api/funruns").success(function(data) {
       $scope.runs = data.funruns;
       console.log($scope.runs);
 
     });
-    $http.get("http://localhost:8000/api/themes").success(function(data) {
+    $http.get("http://104.239.139.43:8000/api/themes").success(function(data) {
       $scope.themes = data.themes;
       console.log($scope.themes);
 
@@ -199,13 +199,13 @@ $(document).ready(function () {
           <!--Related Runs-->
           <h5 class="title-bg">Related Runs</h5>
           <div ng-repeat="ridx in runsIDs">
-            <a ng-href="http://localhost:8000/funruns/[[ runs[ridx].id ]]">
+            <a ng-href="http://104.239.139.43:8000/funruns/[[ runs[ridx].id ]]">
               <p class="quote-text side">[[ runs[ridx].name ]]</p>
             </a>
           </div>
           <h5 class="title-bg">Related Challenges</h5>
           <div ng-repeat="tidx in themesIDs">
-            <a ng-href="http://localhost:8000/themes/[[ themes[tidx].id ]]">
+            <a ng-href="http://104.239.139.43:8000/themes/[[ themes[tidx].id ]]">
               <p class="quote-text side">[[ themes[tidx].name ]]</p>
             </a>
           </div>

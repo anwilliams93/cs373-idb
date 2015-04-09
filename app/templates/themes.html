@@ -41,7 +41,7 @@
   });
 
   myApp.controller('ThemeGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
-    $http.get("http://localhost:8000/api/themes/").success(function(data) {
+    $http.get("http://104.239.139.43:8000/api/themes/").success(function(data) {
       $scope.themes = data.themes;
       console.log($scope.themes);
     });
@@ -121,14 +121,14 @@
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="theme in themes">
                   <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
-                      <a ng-href="http://localhost:8000/themes/[[ theme.id ]]">
+                      <a ng-href="http://104.239.139.43:8000/themes/[[ theme.id ]]">
                         <span class="gallery-hover-3col hidden-phone hidden-tablet"> <!-- Need to look into gallery-hover -->
                         </span>
                         <div style="max-height: 300px; max-width: 370px; overflow: hidden">
                           <img ng-src="[[theme.landing_img]]" alt="Gallery" class="grayscale">
                         </div>
                       </a>
-                      <span class="project-details"><a ng-href="http://localhost:8000/themes/[[ theme.id ]]">[[theme.name]]</a>[[theme.short]]</span>
+                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/themes/[[ theme.id ]]">[[theme.name]]</a>[[theme.short]]</span>
                     </li>
                 </div>
               </ul>
