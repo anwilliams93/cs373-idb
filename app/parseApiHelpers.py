@@ -1,4 +1,4 @@
-from old_api_helpers import retrieve_funruns, retrieve_themes, retrieve_challenges, retrieve_locations
+from api_helpers import retrieve_funruns, retrieve_themes, retrieve_challenges, retrieve_locations
 # Creates a file called create_database.py with commands to populate
 # all of the data we have stored in api_helpers.py
 
@@ -110,7 +110,7 @@ def themesRelationships(theme) :
 
 
 def makeCreateDatabaseFile() :
-	f = open('create_database.py', 'w')
+	f = open('database_commands.txt', 'w')
 	fRunDicList = retrieve_funruns()
 	themeDicList = retrieve_themes()
 	challengeDicList = retrieve_challenges()

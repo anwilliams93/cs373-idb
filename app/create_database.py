@@ -261,8 +261,8 @@ def populateDatabase():
         landing_img = '/static/img/landing/funruns/keepAustinWeirdLanding.jpg', \
         location_id = 5, \
         img_1 = '/static/img/runTempl/keepAustinWeird1.jpg', \
-        img_2 = '/static/img/runTempl/keepAustinweird2.jpg', \
-        img_3 = '/static/img/runTempl/keepAustinweird3.jpg')
+        img_2 = '/static/img/runTempl/keepAustinWeird2.jpg', \
+        img_3 = '/static/img/runTempl/keepAustinWeird3.jpg')
 
     frun12 = FunRun(id = 12, name = 'North American Wife Carrying Championship', \
         address = 'Sunday River Ski Resort\n15 S Ridge Rd.\nNewry, ME 04261', \
@@ -432,7 +432,7 @@ def populateDatabase():
 
     # Create the challenges
     chal1 = Challenge(id = 1, \
-        name = 'Running On Awkward Ground', \
+        name = 'Stepping On Awkward Ground', \
         difficulty = 60, \
         flavors = 'Ice, Inflatable Balls, Mud', \
         description = 'Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.', \
@@ -442,8 +442,8 @@ def populateDatabase():
         img_3 = '/static/img/challengeTempl/oddGround3.jpg')
 
     chal2 = Challenge(id = 2, \
-        name = 'Running In A Costume', \
-        difficulty = 40, \
+        name = 'Moving In A Costume', \
+        difficulty = 20, \
         flavors = 'Mascots, Nude, Speedos, Costumes', \
         description = 'Ideally, running should be done in comfortable shorts and shirt. Instead, some dare to run in costumes - or a lack of costume - in self expression and, oftentimes, silliness.', \
         landing_img = '/static/img/landing/challenges/costume1.jpg', \
@@ -452,144 +452,144 @@ def populateDatabase():
         img_3 = '/static/img/challengeTempl/costume3.jpg')
 
     chal3 = Challenge(id = 3, \
-        name = 'Running In Cold Weather', \
+        name = 'Enduring Extreme Temperatures', \
         difficulty = 80, \
-        flavors = 'Snow, Ice, Freezing Temperatures', \
-        description = 'Take on the cold fearlessly with fun runs in less than ideal temperatures. Will the icy winds get to you or will you make it to the finish line and prevail?', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        flavors = 'Snow, Ice, Fire, Heat', \
+        description = 'Take on extreme temps fearlessly with fun runs in less than ideal temperatures. Will the icy winds or intense heat get to you or will you make it to the finish line and prevail?', \
+        landing_img = '/static/img/landing/challenges/extremetemp1.jpg', \
+        img_1 = '/static/img/challengeTempl/extremetemp1.jpg', \
+        img_2 = '/static/img/challengeTempl/extremetemp2.jpg', \
+        img_3 = '/static/img/challengeTempl/extremetemp3.jpg')
 
     chal4 = Challenge(id = 4, \
         name = 'Going Over Hills', \
-        difficulty = 70, \
-        flavors = 'High elevation, Incline, Steep', \
-        description = 'Fight against gravity and prepare to go over steep hills in these runs', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        difficulty = 30, \
+        flavors = 'High Elevation, Inclines, Steep Roads', \
+        description = 'Fight against gravity and prepare to go over steep hills in runs with hilly landscape. Feel those legs burn!', \
+        landing_img = '/static/img/landing/challenges/hill1.jpg', \
+        img_1 = '/static/img/challengeTempl/hill1.jpg', \
+        img_2 = '/static/img/challengeTempl/hill2.jpg', \
+        img_3 = '/static/img/challengeTempl/hill3.jpg')
 
     chal5 = Challenge(id = 5, \
         name = 'Getting Chased', \
-        difficulty = 60, \
-        flavors = 'Pursued, Zombies', \
+        difficulty = 70, \
+        flavors = 'Pursued, Zombies, Capture The Flag', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/chased1.jpg', \
+        img_1 = '/static/img/challengeTempl/chased1.jpg', \
+        img_2 = '/static/img/challengeTempl/chased2.jpg', \
+        img_3 = '/static/img/challengeTempl/chased3.jpg')
 
     chal6 = Challenge(id = 6, \
         name = 'Getting Covered in Stuff', \
-        difficulty = 40, \
-        flavors = 'Pursued, Zombies', \
+        difficulty = 10, \
+        flavors = 'Foam, Bubbles, Mud, Water, Powder', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/covered1.jpg', \
+        img_1 = '/static/img/challengeTempl/covered1.jpg', \
+        img_2 = '/static/img/challengeTempl/covered2.jpg', \
+        img_3 = '/static/img/challengeTempl/covered3.jpg')
 
     chal7 = Challenge(id = 7, \
         name = 'Consuming', \
-        difficulty = 40, \
-        flavors = 'Pursued, Zombies', \
+        difficulty = 30, \
+        flavors = 'Food, Drink, Quick Consumption', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/consuming1.jpg', \
+        img_1 = '/static/img/challengeTempl/consuming1.jpg', \
+        img_2 = '/static/img/challengeTempl/consuming2.jpg', \
+        img_3 = '/static/img/challengeTempl/consuming3.jpg')
 
     chal8 = Challenge(id = 8, \
         name = 'Carrying an Object', \
         difficulty = 70, \
-        flavors = 'Pursued, Zombies', \
+        flavors = 'Sandbags, Other People, Logs', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/carry1.jpg', \
+        img_1 = '/static/img/challengeTempl/carry1.jpg', \
+        img_2 = '/static/img/challengeTempl/carry2.jpg', \
+        img_3 = '/static/img/challengeTempl/carry3.jpg')
 
     chal9 = Challenge(id = 9, \
         name = 'Scaling a Wall', \
-        difficulty = 80, \
-        flavors = 'Pursued, Zombies', \
+        difficulty = 70, \
+        flavors = 'Wooden Walls, Rope Walls, Chains, Rope Ladders', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/scaling1.jpg', \
+        img_1 = '/static/img/challengeTempl/scaling1.jpg', \
+        img_2 = '/static/img/challengeTempl/scaling2.jpg', \
+        img_3 = '/static/img/challengeTempl/scaling3.jpg')
 
     chal10 = Challenge(id = 10, \
         name = 'Sliding Down Slopes', \
-        difficulty = 50, \
-        flavors = 'Pursued, Zombies', \
+        difficulty = 10, \
+        flavors = 'Large Inflatable Slides, Mud Slides, Foam Slides', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/sliding1.jpg', \
+        img_1 = '/static/img/challengeTempl/sliding1.jpg', \
+        img_2 = '/static/img/challengeTempl/sliding2.jpg', \
+        img_3 = '/static/img/challengeTempl/sliding3.jpg')
 
     chal11 = Challenge(id = 11, \
         name = 'Crawling Underneath Obstacles', \
-        difficulty = 60, \
-        flavors = 'Pursued, Zombies', \
+        difficulty = 40, \
+        flavors = 'Barbed Wire, Tunnels, Electrical Wiring', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/crawling1.jpg', \
+        img_1 = '/static/img/challengeTempl/crawling1.jpg', \
+        img_2 = '/static/img/challengeTempl/crawling2.jpg', \
+        img_3 = '/static/img/challengeTempl/crawling3.jpg')
 
     chal12 = Challenge(id = 12, \
         name = 'Being Suspended', \
-        difficulty = 70, \
-        flavors = 'Pursued, Zombies', \
+        difficulty = 60, \
+        flavors = 'Monkey Bars, Rope Swings, Metal Swings', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/suspended1.jpg', \
+        img_1 = '/static/img/challengeTempl/suspended1.jpg', \
+        img_2 = '/static/img/challengeTempl/suspended2.jpg', \
+        img_3 = '/static/img/challengeTempl/suspended3.jpg')
 
     chal13 = Challenge(id = 13, \
         name = 'Staying Balanced', \
         difficulty = 70, \
-        flavors = 'Pursued, Zombies', \
+        flavors = 'Balance beams, wooden beams, inflated walkways', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/balance1.jpg', \
+        img_1 = '/static/img/challengeTempl/balance1.jpg', \
+        img_2 = '/static/img/challengeTempl/balance2.jpg', \
+        img_3 = '/static/img/challengeTempl/balance3.jpg')
 
     chal14 = Challenge(id = 14, \
         name = 'Getting Hit by Objects', \
         difficulty = 80, \
-        flavors = 'Pursued, Zombies', \
+        flavors = 'Inflated Bulldozer Balls, Thrown Items', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/gettinghit1.jpg', \
+        img_1 = '/static/img/challengeTempl/gettinghit1.jpg', \
+        img_2 = '/static/img/challengeTempl/gettinghit2.jpg', \
+        img_3 = '/static/img/challengeTempl/gettinghit3.jpg')
 
     chal15 = Challenge(id = 15, \
-        name = 'Performing Urban Parkouring', \
-        difficulty = 70, \
-        flavors = 'Pursued, Zombies', \
+        name = 'Performing Urban Parkour', \
+        difficulty = 60, \
+        flavors = 'Buildings, Construction Areas, Urban Areas', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/parkour1.jpg', \
+        img_1 = '/static/img/challengeTempl/parkour1.jpg', \
+        img_2 = '/static/img/challengeTempl/parkour2.jpg', \
+        img_3 = '/static/img/challengeTempl/parkour3.jpg')
 
     chal16 = Challenge(id = 16, \
         name = 'Running with Limited Visibility', \
-        difficulty = 60, \
-        flavors = 'Pursued, Zombies', \
+        difficulty = 40, \
+        flavors = 'Darkness, Face Powder, Fog', \
         description = '', \
-        landing_img = '/static/img/landing/challenges/cold1.jpg', \
-        img_1 = '/static/img/challengeTempl/cold1.jpg', \
-        img_2 = '/static/img/challengeTempl/cold2.jpg', \
-        img_3 = '/static/img/challengeTempl/cold3.jpg')
+        landing_img = '/static/img/landing/challenges/visibility1.jpg', \
+        img_1 = '/static/img/challengeTempl/visibility1.jpg', \
+        img_2 = '/static/img/challengeTempl/visibility2.jpg', \
+        img_3 = '/static/img/challengeTempl/visibility3.jpg')
 
 
     # Create the locations
@@ -948,6 +948,7 @@ def populateDatabase():
     db.session.add(loc8)
     db.session.add(loc9)
     db.session.add(loc10)
+
 
     db.session.commit()
 

@@ -140,7 +140,7 @@ def retrieve_funruns():
 			        'hosts':        u'Zappos.com',
 			        'sponsors':     u'Under Armour, MapMyRun, Geico, Hyatt Regency, TomTom, Kron4, Kettle Brand, Big 5 Sporting Goods, Hangzhou, Mio',
 			        'charities':    u'Mo\'MAGIC, United Way of the Bay Area, National Kidney Foundation',
-			        'description':  u'The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coast’s Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.',
+			        'description':  u'The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coasts Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.',
 			        'short':		u'Explore SF from the bay to the Ocean Beach breakers.',
 			        'quotes':       [
 			                            u'Bay to Breakers is a direct route to the city\'s heart and soul.',
@@ -176,7 +176,7 @@ def retrieve_funruns():
 			        'hosts':        u'Great Vision Productions LLC',
 			        'sponsors':     u'WholeSale Halloween Costumes',
 			        'charities':    u'Local Charities',
-			        'description':  u'Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, they’ll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don\'t let the zombies pull your flags!',
+			        'description':  u'Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don\'t let the zombies pull your flags!',
 			        'short':		u'Escape the zombies and get to the finish line!',
 			        'quotes':       [
 			                            u'They don\'t like fast food',
@@ -284,7 +284,7 @@ def retrieve_funruns():
 			        'hosts':        u'Blacklight Run Corporate',
 			        'sponsors':     u'Upslope Brewing Co, TwinPeaks Brewing Co, Nine Band Brewing Co, Pedernales Brewing Co, Saint Arnold Brewing Co',
 			        'charities':    u'Local Breweries, Local Food, Local Music',
-			        'description':  u'The Brew Mile is your chance to combine your love of running with the finest beverage on the face of this good green earth – BEER. Finally an event that tests your liver as much as it tests your lungs, and is followed by one of the best parties of the year!',
+			        'description':  u'The Brew Mile is your chance to combine your love of running with the finest beverage on the face of this good green earth  BEER. Finally an event that tests your liver as much as it tests your lungs, and is followed by one of the best parties of the year!',
 			        'short':		u'Take on a mile while chugging beer!',
 			        'quotes':       [
 			                            u'Super excited for us to do this run.',
