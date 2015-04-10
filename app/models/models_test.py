@@ -54,13 +54,23 @@ class sql_dbTestCase(unittest.TestCase):
     	assert (result == 10)
 
     def test_add_challenge(self):
-    	chal1 = Callenge(id = 17, name = 'testing')
+    	chal1 = Challenge(id = 17, name = 'testing')
     	db.session.add(chal1)
     	result = db.session.query(Challenge).count()
     	assert (result == 17)
     	db.session.delete(chal1)
     	db.session.flush()
     	result = db.session.query(Challenge).count()
+    	assert (result == 16)
+
+     def test_add_location(self):
+    	location1 = Location(id = 11, name = 'testing')
+    	db.session.add(location1)
+    	result = db.session.query(Location).count()
+    	assert (result == 17)
+    	db.session.delete(Location1)
+    	db.session.flush()
+    	result = db.session.query(Location).count()
     	assert (result == 16)
 
 
