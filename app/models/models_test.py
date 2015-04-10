@@ -21,9 +21,9 @@ class sql_dbTestCase(unittest.TestCase):
     	result = db.session.query(FunRun).count()
     	assert (result == 12)
 
-    # def test_themes(self):
-    # 	result = db.session.query(Theme).count()
-    # 	assert (result == 10)
+    def test_themes(self):
+    	result = db.session.query(Theme).count()
+    	assert (result == 10)
 
     # def test_challenges(self):
     # 	result = db.session.query(Challenge).count()
