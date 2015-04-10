@@ -40,6 +40,7 @@ class sql_dbTestCase(unittest.TestCase):
     	assert (result == 13)
     	db.session.delete(frun1)
     	db.session.flush()
+    	result = db.session.query(FunRun).count()
     	assert (result == 12)
 
 
