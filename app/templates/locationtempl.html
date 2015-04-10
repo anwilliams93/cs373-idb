@@ -45,8 +45,14 @@
   myApp.controller('LocationGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
     $http.get("http://104.239.139.43:8000/api/locations/" + {{locationID}}).success(function(data) {
       $scope.location = data.locations;
+      $scope.runsIDs = $scope.location.funruns;
       $scope.website_url = $sce.trustAsResourceUrl($scope.location.website_url);
       console.log($scope.location);
+    });
+    $http.get("http://104.239.139.43:8000/api/funruns").success(function(data) {
+      $scope.runs = data.funruns;
+      console.log($scope.runs);
+
     });
   }]);
 </script>
@@ -153,7 +159,16 @@
                 </div>
             </div>
 
+          <h4 class="title-bg">Related Runs</h5>
+          <div ng-repeat="ridx in runsIDs">
+            <a ng-href="http://104.239.139.43:8000/funruns/[[ runs[ridx].id ]]">
+              <p class="quote-text side">[[ runs[ridx].name ]]</p>
+            </a>
+          </div>
+          <br/>
+
         </div><!-- End gallery-single-->
+
 
     </div><!-- End container row -->
     
