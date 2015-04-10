@@ -67,11 +67,16 @@ class sql_dbTestCase(unittest.TestCase):
 		location1 = Location(id = 11, name = 'testing')
 		db.session.add(location1)
 		result = db.session.query(Location).count()
-		assert (result == 17)
+		assert (result == 11)
 		db.session.delete(location1)
 		db.session.flush()
 		result = db.session.query(Location).count()
-		assert (result == 16)
+		assert (result == 10)
+
+	def test_fun_location_relationship(self):
+		results = db.session.query(Theme).order_by(Theme.id)
+		assert(results[0].location_id ==  0)
+
 
 
 
