@@ -45,8 +45,14 @@
   myApp.controller('LocationGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
     $http.get("http://104.239.139.43:8000/api/locations/" + {{locationID}}).success(function(data) {
       $scope.location = data.locations;
+      $scope.runsIDs = $scope.location.funruns;
       $scope.website_url = $sce.trustAsResourceUrl($scope.location.website_url);
       console.log($scope.location);
+    });
+    $http.get("http://104.239.139.43:8000/api/funruns").success(function(data) {
+      $scope.runs = data.funruns;
+      console.log($scope.runs);
+
     });
   }]);
 </script>
@@ -78,6 +84,7 @@
               <li><a href="/themes">Fun Themes</a></li>
               <li><a href="/challenges">Fun Challenges</a></li>
               <li class="active"><a href="/locations">Fun Locations</a></li>
+              <li><a href="/tech">Technical</a></li>
               <li><a href="/about">About</a></li>
             </ul>
          
@@ -94,6 +101,7 @@
                     <option value="/themes">Fun Themes</option>
                     <option value="/challenges">Fun Challenges</option>
                     <option value="/locations">Fun Locations</option>
+                    <option value="/tech">Technical</option>
                     <option value="/about">About</option>
                 </select>
               </div>
@@ -153,7 +161,16 @@
                 </div>
             </div>
 
+          <h4 class="title-bg">Related Runs</h5>
+          <div ng-repeat="ridx in runsIDs">
+            <a ng-href="http://104.239.139.43:8000/funruns/[[ runs[ridx].id ]]">
+              <p class="quote-text side">[[ runs[ridx].name ]]</p>
+            </a>
+          </div>
+          <br/>
+
         </div><!-- End gallery-single-->
+
 
     </div><!-- End container row -->
     
@@ -171,7 +188,7 @@
                         <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
                         <div class="span6">
                             <span class="right">
-                            <a href="/">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/funruns">Fun Events</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/themes">Fun Themes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/challenges">Fun Challenges</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/locations">Fun Locations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/about">About</a>
+                            <a href="/">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/funruns">Fun Events</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/themes">Fun Themes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/challenges">Fun Challenges</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/locations">Fun Locations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/tech">Technical</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/about">About</a>
                             </span>
                         </div>
                     </div>

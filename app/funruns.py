@@ -31,6 +31,11 @@ def locations():
 def about():
     return render_template('about.html') 
 
+@app.route('/tech')
+def tech():
+    # output = runTests()
+    return render_template('tech.html', output = output) 
+
 @app.route('/funruns/<runID>')
 def funruntempl(runID):
     return render_template('funruntempl.html', runID = runID)

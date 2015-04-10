@@ -273,12 +273,48 @@ def get_challenge_themes(id):
 
 ### ALYSSA ADDED THIS SHIZ ###
 # Location Section of API
+
+location_query_parameters = {'funrun', 'min_winter_temp', 'max_winter_temp', 'min_spring_temp', 'max_spring_temp', 'min_summer_temp', 'max_summer_temp', 'min_fall_temp', 'max_fall_temp',
+										'min_winter_humid', 'max_winter_humid', 'min_spring_humid', 'max_spring_humid', 'min_summer_humid', 'max_summer_humid', 'min_fall_humid', 'max_fall_humid'}
+
 @funruns_api.route('/locations', methods = ['GET'])
 def get_locations():
+	filtered_params = filter_query_parameters(location_query_parameters, request.args)
+	
+	# ASSUMING FUNRUNS IS THE ENTIRE LIST OF FUNRUNS
 	locations = retrieve_locations()
-	return jsonify({'locations': locations})
+
+	filtered_locations = locations
+
+	for k in filtered_params:
+		if k == 'funrun':
+			if isInt(filtered_params[k]):
+				def fxn(e):
+					for p in filtered_params[k]:
+						return int(p) in e[k + str('s')]
+				filtered_locations = select(filtered_locations, fxn)
+		elif k.startswith('min_') or k.startswith('max_'):
+			if isNumber(filtered_params[k]):
+				fxn = lambda: None
+				if k.startswith('min_'):
+					fxn = operator.le
+				else:
+					fxn = operator.ge
+				object_key = ''
+				if 'temp' in k:
+					season = k[4:-5]
+					object_key = season + '_avgTemp'
+				elif 'humid' in k:	
+					season = k[4:-6]
+					object_key = season + '_avgHumidity'
+				filtered_locations = select(filtered_locations, lambda e : fxn(float(filtered_params[k]), e[object_key]))
+	return jsonify({'locations': list(filtered_locations)})
 
 @funruns_api.route('/locations/<int:id>', methods = ['GET'])
 def get_location_by_id(id):
 	locations = retrieve_locations()
 	return jsonify({'locations': locations[id]})
+
+
+
+
