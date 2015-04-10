@@ -142,7 +142,7 @@ class sql_dbTestCase(unittest.TestCase):
 	def test_theme_challenge_relationship_3(self):
 		results = db.session.query(Theme).order_by(Theme.id)
 		challenge = db.session.query(Challenge).order_by(Challenge.id)
-		assert(results[1].theme_challenge[0] == challenge[0])
+		assert(results[1].theme_challenge[1] == challenge[2])
 
 	def test_theme_challenge_relationship_4(self):
 		results = db.session.query(Theme).order_by(Theme.id)
