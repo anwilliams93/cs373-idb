@@ -15,10 +15,10 @@ Hector Garcia | Team Member
 
 File Locations
 	*.py files: 	/app
-	apiary.apib: 	/
-	models.html: 	/app
+	apiary.apib: 	/documentation
+	models.html: 	/app/models
 		This is an HTML file that redirects to /app/html/index.html
-	Report.pdf:		/
-	tests.out:		/app
-	tests.py:		/app
-	UML.pdf:		/
+	Report.pdf:		/documentation
+	tests.out:		/app/test
+	tests.py:		/app/test
+	UML.pdf:		/documentation
