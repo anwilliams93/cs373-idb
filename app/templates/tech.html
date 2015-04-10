@@ -103,6 +103,8 @@
         </div>
       
     </div><!-- End Header -->
+
+
      
     <!-- Page Content
     ================================================== --> 
@@ -117,7 +119,7 @@
                     </div>
                     <h5>Alyssa Williams</h5>
                     <p>
-                        <i class="icon-cog"></i><strong>Commits: </strong>97 <br/>
+                        <i class="icon-cog"></i><strong>Commits: </strong>98 <br/>
                         <i class="icon-list"></i><strong>Issues: </strong>147 <br/>
                         <i class="icon-check"></i><strong>Unit Tests: </strong>0 <br/>
                         <i class="icon-star"></i><strong>Major Responsibilities: </strong>Bootstrap, nginx, uWSGI, initial setup, data mining, github issue tracking, front end design, and angular. <br/>
@@ -128,7 +130,7 @@
                     </div>
                     <h5>Kurt Bixby</h5>
                     <p>
-                        <i class="icon-cog"></i><strong>Commits: </strong>57 <br/>
+                        <i class="icon-cog"></i><strong>Commits: </strong>63 <br/>
                         <i class="icon-list"></i><strong>Issues: </strong>25 <br/>
                         <i class="icon-check"></i><strong>Unit Tests: </strong>28 <br/>
                         <i class="icon-star"></i><strong>Major Responsibilities: </strong>Initial setup, data mining, API design, API implementation, API documentation, and unit tests. <br/>
@@ -140,9 +142,9 @@
                     <h5>Kevin Byers</h5>
                     <p>
                         <i class="icon-cog"></i><strong>Commits: </strong>100 <br/>
-                        <i class="icon-list"></i><strong>Issues: </strong>20 <br/>
+                        <i class="icon-list"></i><strong>Issues: </strong>21 <br/>
                         <i class="icon-check"></i><strong>Unit Tests: </strong>0 <br/>
-                        <i class="icon-star"></i><strong>Major Responsibilities: </strong>Front end design, bug fixes, embedding media, data mining, initial setup, nginx and bootstrap. <br/>
+                        <i class="icon-star"></i><strong>Major Responsibilities: </strong>Front end design, bug fixes, embedding media, database, data mining, initial setup, nginx and bootstrap. <br/>
                     </p>
                 </div>
             </div>
@@ -152,10 +154,10 @@
                     </div>
                     <h5>David Aguirre</h5>
                     <p>
-                        <i class="icon-cog"></i><strong>Commits: </strong>148 <br/>
-                        <i class="icon-list"></i><strong>Issues: </strong>23 <br/>
-                        <i class="icon-check"></i><strong>Unit Tests: </strong>11 <br/>
-                        <i class="icon-star"></i><strong>Major Responsibilities: </strong>Flask models, test cases, UML model, and data mining. <br/>
+                        <i class="icon-cog"></i><strong>Commits: </strong>160 <br/>
+                        <i class="icon-list"></i><strong>Issues: </strong>24 <br/>
+                        <i class="icon-check"></i><strong>Unit Tests: </strong>34 <br/>
+                        <i class="icon-star"></i><strong>Major Responsibilities: </strong>Flask models, test cases, UML model, database, and data mining. <br/>
                     </p>
                 </div>
                 <div class="span4">
@@ -163,7 +165,7 @@
                     </div>
                     <h5>Edgar Treto</h5>
                     <p>
-                        <i class="icon-cog"></i><strong>Commits: </strong>39 <br/>
+                        <i class="icon-cog"></i><strong>Commits: </strong>42 <br/>
                         <i class="icon-list"></i><strong>Issues: </strong>23 <br/>
                         <i class="icon-check"></i><strong>Unit Tests: </strong>0 <br/>
                         <i class="icon-star"></i><strong>Major Responsibilities: </strong>Front end design, data mining, using angular to dynamically fill pages, and embedding media. <br/>
@@ -183,10 +185,88 @@
             </div>
 
             <h2 class="title-bg">Test Output</h2>
-            <h5>Tests are run upon page load</h1>
             <div class="row">
-                <div class="span4">
-                    {{ output }}
+                <div class="span12">
+                    <h3>RESTful API TESTS</h1>
+                    test_challenge_run_0 (__main__.TestAPI) ... ok<br/>
+                    test_challenge_run_1 (__main__.TestAPI) ... ok<br/>
+                    test_challenge_run_2 (__main__.TestAPI) ... ok<br/>
+                    test_challenge_themes_0 (__main__.TestAPI) ... ok<br/>
+                    test_challenge_themes_1 (__main__.TestAPI) ... ok<br/>
+                    test_challenge_themes_2 (__main__.TestAPI) ... ok</br>
+                    test_challenges_by_id_0 (__main__.TestAPI) ... ok<br/>
+                    test_challenges_by_id_1 (__main__.TestAPI) ... ok<br/>
+                    test_challenges_by_id_2 (__main__.TestAPI) ... ok<br/>
+                    test_get_challenges (__main__.TestAPI) ... ok<br/>
+                    test_get_challenges_slash (__main__.TestAPI) ... ok</br>
+                    test_get_run_by_id_0 (__main__.TestAPI) ... ok<br/>
+                    test_get_run_by_id_0_slash (__main__.TestAPI) ... ok<br/>
+                    test_get_run_by_id_1 (__main__.TestAPI) ... ok</br>
+                    test_get_run_by_id_2 (__main__.TestAPI) ... ok</br>
+                    test_get_run_challenges_0 (__main__.TestAPI) ... ok<br/>
+                    test_get_run_challenges_1 (__main__.TestAPI) ... ok</br>
+                    test_get_run_challenges_2 (__main__.TestAPI) ... ok</br>
+                    test_get_run_themes_0 (__main__.TestAPI) ... ok<br/>
+                    test_get_run_themes_1 (__main__.TestAPI) ... ok</br>
+                    test_get_run_themes_2 (__main__.TestAPI) ... ok<br/>
+                    test_get_runs (__main__.TestAPI) ... ok</br>
+                    test_get_runs_slash (__main__.TestAPI) ... ok</br>
+                    test_get_themes (__main__.TestAPI) ... ok</br>
+                    test_get_themes_slash (__main__.TestAPI) ... ok</br>
+                    test_locations (__main__.TestAPI) ... ok</br>
+                    test_locations_by_id_0 (__main__.TestAPI) ... ok</br>
+                    test_locations_by_id_1 (__main__.TestAPI) ... ok</br>
+                    test_locations_by_id_2 (__main__.TestAPI) ... ok</br>
+                    test_locations_by_id_3 (__main__.TestAPI) ... ok</br>
+                    test_root (__main__.TestAPI) ... ok</br>
+                    test_root_slash (__main__.TestAPI) ... ok</br>
+                    test_theme_challenges_0 (__main__.TestAPI) ... ok</br>
+                    test_theme_challenges_0_slash (__main__.TestAPI) ... ok</br>
+                    test_theme_challenges_1 (__main__.TestAPI) ... ok</br>
+                    test_theme_challenges_2 (__main__.TestAPI) ... ok</br>
+                    test_theme_run_0 (__main__.TestAPI) ... ok</br>
+                    test_theme_run_1 (__main__.TestAPI) ... ok</br>
+                    test_theme_run_2 (__main__.TestAPI) ... ok</br>
+                    test_themes_by_id_0 (__main__.TestAPI) ... ok</br>
+                    test_themes_by_id_0_slash (__main__.TestAPI) ... ok</br>
+                    test_themes_by_id_1 (__main__.TestAPI) ... ok</br>
+                    test_themes_by_id_1_slash (__main__.TestAPI) ... ok</br>
+                    test_themes_by_id_2 (__main__.TestAPI) ... ok</br>
+
+                    ----------------------------------------------------------------------<br/>
+                    Ran 44 tests in 1.233s<br/>
+
+                    OK<br/>
+
+                    <h3>Model Tests</h1>
+                    test_add_challenge (__main__.sql_dbTestCase) ... ok<br/>
+                    test_add_funrun (__main__.sql_dbTestCase) ... ok<br/>
+                    test_add_location (__main__.sql_dbTestCase) ... ok<br/>
+                    test_add_themes (__main__.sql_dbTestCase) ... ok<br/>
+                    test_challenges (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_challenge_relationship_1 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_challenge_relationship_2 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_challenge_relationship_3 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_location_relationship_1 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_location_relationship_2 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_location_relationship_3 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_location_relationship_4 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_theme_relationship_1 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_theme_relationship_2 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_theme_relationship_3 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_fun_theme_relationship_4 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_funrun (__main__.sql_dbTestCase) ... ok<br/>
+                    test_location (__main__.sql_dbTestCase) ... ok<br/>
+                    test_theme_challenge_relationship_1 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_theme_challenge_relationship_2 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_theme_challenge_relationship_3 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_theme_challenge_relationship_4 (__main__.sql_dbTestCase) ... ok<br/>
+                    test_themes (__main__.sql_dbTestCase) ... ok<br/>
+
+                    ----------------------------------------------------------------------</br>
+                    Ran 23 tests in 0.232s<br/><br/>
+
+                    OK
                 </div>
             </div>
 

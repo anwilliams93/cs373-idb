@@ -1,10 +1,11 @@
 from flask import Flask, render_template, jsonify, url_for, redirect
 from api import funruns_api
-from test_functions import runTests
+# from test_functions import runTests
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 app.register_blueprint(funruns_api)
+
 
 ### PAGES ###
 
@@ -34,8 +35,8 @@ def about():
 
 @app.route('/tech')
 def tech():
-    output = runTests()
-    return render_template('tech.html', output = output) 
+    # output = runTests()
+    return render_template('tech.html') 
 
 @app.route('/funruns/<runID>')
 def funruntempl(runID):
