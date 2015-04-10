@@ -79,18 +79,15 @@ class sql_dbTestCase(unittest.TestCase):
 
 	def test_fun_location_relationship_2(self):
 		results = db.session.query(FunRun).order_by(FunRun.id)
-		print(esults[1].location_id)
-		assert(results[1].location_id ==  2)
+		assert(results[1].location_id ==  3)
 
 	def test_fun_location_relationship_3(self):
 		results = db.session.query(FunRun).order_by(FunRun.id)
-		print(results[2].location_id)
-		assert(results[2].location_id ==  7)
+		assert(results[2].location_id ==  2)
 
 	def test_fun_location_relationship_4(self):
 		results = db.session.query(FunRun).order_by(FunRun.id)
-		print(results[3].location_id)
-		assert(results[3].location_id ==  1)
+		assert(results[3].location_id ==  7)
 
 
 
