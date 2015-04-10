@@ -91,9 +91,23 @@ class sql_dbTestCase(unittest.TestCase):
 
 	def test_fun_theme_relationship_1(self):
 		results = db.session.query(FunRun).order_by(FunRun.id)
-		print(results[0].funRun_theme[0])
-		assert(results[0].funRun_theme[0] == '<Id 2>')
+		theme = db.session.query(Theme).order_by(Theme.id)
+		assert(results[0].funRun_theme[0] == theme[1])
 
+	def test_fun_theme_relationship_2(self):
+		results = db.session.query(FunRun).order_by(FunRun.id)
+		theme = db.session.query(Theme).order_by(Theme.id)
+		assert(results[1].funRun_theme[0] == theme[0])
+
+	def test_fun_theme_relationship_3(self):
+		results = db.session.query(FunRun).order_by(FunRun.id)
+		theme = db.session.query(Theme).order_by(Theme.id)
+		assert(results[2].funRun_theme[0] == theme[0])
+
+	def test_fun_theme_relationship_4(self):
+		results = db.session.query(FunRun).order_by(FunRun.id)
+		theme = db.session.query(Theme).order_by(Theme.id)
+		assert(results[2].funRun_theme[1] == theme[2])
 
 
 
