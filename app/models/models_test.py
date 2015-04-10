@@ -91,8 +91,9 @@ class sql_dbTestCase(unittest.TestCase):
 
 	def test_fun_theme_relationship_1(self):
 		results = db.session.query(FunRun).order_by(FunRun.id)
+		theme = db.session.query(Theme).order_by(Theme.id)
 		print(results[0].funRun_theme[0])
-		assert(results[0].funRun_theme[0] == '<Id 2>')
+		assert(results[0].funRun_theme[0] == theme[1])
 
 
 
