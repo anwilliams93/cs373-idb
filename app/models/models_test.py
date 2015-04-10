@@ -75,7 +75,8 @@ class sql_dbTestCase(unittest.TestCase):
 
 	def test_fun_location_relationship(self):
 		results = db.session.query(FunRun).order_by(FunRun.id)
-		assert(results[0].location_id ==  0)
+		print(results[0].location_id )
+		assert(results[0].location_id ==  1)
 
 
 
