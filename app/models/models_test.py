@@ -33,12 +33,12 @@ class sql_dbTestCase(unittest.TestCase):
     	result = db.session.query(Location).count()
     	assert (result == 10)
 
-    # def test_add_funrun(self):
-    # 	frun1 = FunRun(name = 'testing')
-    # 	db.session.add(frun1)
-    # 	result = db.session.query(FunRun).count()
-    # 	assert (result == 13)
-    # 	db.session.flush()
+    def test_add_funrun(self):
+    	frun1 = FunRun(name = 'testing')
+    	db.session.add(frun1)
+    	result = db.session.query(FunRun).count()
+    	assert (result == 13)
+    	db.session.flush()
     # 	assert (result == 12)
 
 
