@@ -29,6 +29,7 @@ def retrieve_funruns():
 		object_dict = {}
 		object_dict['id'] = run.id - 1
 		object_dict['name'] = run.name
+		object_dict['city'] = run.location.name
 		object_dict['address'] = run.address
 		object_dict['distance'] = run.distance
 		object_dict['price'] = run.price
@@ -71,7 +72,7 @@ def retrieve_themes():
 
 	for theme in results:
 		object_dict = {}
-		object_dict['id'] = theme.id
+		object_dict['id'] = theme.id - 1
 		object_dict['name'] = theme.name
 		object_dict['buzzwords'] = theme.buzzwords
 		object_dict['description'] = theme.description

@@ -72,7 +72,6 @@ def get_funruns():
 						if match is not None:
 							price = float(match.group(1))
 							prices += [price]
-					print prices
 					return prices
 
 				def price_check(record, predicate):
@@ -103,18 +102,18 @@ def get_funruns():
 						if match is not None:
 							temp_len = match.group(1)
 							units = match.group(2)
-							if units.upper().startsWith('Y'):
-								length = temp_len * 0.0009144
+							if units.upper().startswith('Y'):
+								length = float(temp_len) * 0.0009144
 								lengths += [length]
-							elif units.upper().startsWith('MI'):
-								length = temp_len * 1.60934
+							elif units.upper().startswith('MI'):
+								length = float(temp_len) * 1.60934
 								lengths += [length]
 					return lengths
 
 				def length_check(record, predicate):
 					lengths = get_lengths(record)
 					for length in lengths:
-						if predicate(int(filtered_params[k]), price):
+						if predicate(int(filtered_params[k]), length):
 							return True
 					return False
 
@@ -127,10 +126,9 @@ def get_funruns():
 					def use_max(record):
 						return length_check(record, operator.ge)
 
-					filtered_funruns = select(filtered_funruns, use_min)
+					filtered_funruns = select(filtered_funruns, use_max)
 
-	# print filtered_funruns
-	return jsonify({'funruns': filtered_funruns})
+	return jsonify({'funruns': list(filtered_funruns)})
 
 @funruns_api.route('/funruns/<int:id>', methods = ['GET'])
 def get_funrun_by_id(id):
