@@ -68,7 +68,7 @@ class sql_dbTestCase(unittest.TestCase):
 		db.session.add(location1)
 		result = db.session.query(Location).count()
 		assert (result == 17)
-		db.session.delete(Location1)
+		db.session.delete(location1)
 		db.session.flush()
 		result = db.session.query(Location).count()
 		assert (result == 16)
