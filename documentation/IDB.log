@@ -1,3 +1,1725 @@
+commit dfe2b76b37f9d65cda7326b627191068dc1753f4
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 02:46:17 2015 +0000
+
+    Done
+
+commit ae822f6781eafa4eec2fbb38aff4b92901ff1ef9
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 21:44:32 2015 -0500
+
+    Finished unit tests
+
+commit e3d2deaf3308519da87e4d6766c00b42cdd93d2c
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 21:03:28 2015 -0500
+
+    Added init
+
+commit 44fd4339bd8969cd3cac64aa07c134ee86fe7b42
+Merge: 22523df 065d30d
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 21:01:47 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 22523dfaa57e69fe624aa90e22d4cfdf3e4e768c
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 21:01:35 2015 -0500
+
+    Caught output of my tests
+
+commit 065d30d65ca83cc74fcc344dea19484df80b03fd
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 02:01:01 2015 +0000
+
+    Making pictures smaller
+
+commit ccb8ce2fdcf6f3c89afe5ad9ff74e95010649f10
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:53:39 2015 -0500
+
+    Testing
+
+commit fda5d12032bfdf2ec925a3869b5e05412182f6a8
+Merge: 390ad36 c6c7595
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:44:26 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 390ad36b76327bd7d51aae5a226e4c512eac3cf6
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:44:22 2015 -0500
+
+    Testing
+
+commit c6c7595b34c05cfc25d6a302ac06f9f55a0d9b5b
+Merge: 9285987 014ce68
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 20:42:38 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 9285987949b5e913849eef1c3037c37497e438ce
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 20:42:19 2015 -0500
+
+    Fixed hosts
+
+commit 014ce6893190b720fcc9f936038dbf90a67b8824
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:41:28 2015 -0500
+
+    Testing
+
+commit 4b05ab8ed3e2902c558b37758bc639671069b281
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:40:19 2015 -0500
+
+    Testing
+
+commit 9289ff48a2cd857de80e155a6370584378fa43e6
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:38:19 2015 -0500
+
+    Testing
+
+commit 052da14211551b237145f6b4fbcc3f8fd1dc8f10
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:36:23 2015 -0500
+
+    Testing
+
+commit 6a50a5bec186e1e98f789b32d85abfed8a8d45a5
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:34:42 2015 -0500
+
+    Testing
+
+commit 7a93ccca21954e359d1d6377f3c39db84aeb0556
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:33:48 2015 -0500
+
+    Testing
+
+commit 93f14825f17624f6a9d3b55570ad708e2e0d0129
+Merge: c952aaf 6b98506
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:32:20 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit c952aaf8dd5cb7c6a806b8929845f5595d0fee9e
+Merge: ba029c2 e24454d
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:31:37 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 6b98506d7cf70d33ddb47a56ae013a9ddd452cd4
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 20:31:37 2015 -0500
+
+    Fixed size
+
+commit ba029c2f77514093cfad14c007beadaab7030a0f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:31:31 2015 -0500
+
+    Testing
+
+commit e24454df1ba04b4a4b26bb2be272cc8b8c34274e
+Merge: e4a43f8 1cbde13
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 20:28:25 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit e4a43f82a4f04d7819501e7f95b2aad70ceb47cb
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 20:28:20 2015 -0500
+
+    Created dummy output
+
+commit 1cbde131134d4fc43e0c08a6f54a110dc6837a71
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:28:07 2015 -0500
+
+    Testing
+
+commit 98ed6e5b53f53439ff12103fbf017d769b6a7397
+Merge: c06dd4e 56d4f17
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:26:59 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit c06dd4ecd3a509f96f4e14ab5141160ddc176f81
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:26:56 2015 -0500
+
+    Testing
+
+commit 56d4f17391bb2a90646a969de02d3b9c3b32af8c
+Author: fuzzyassassin <kurtbixby@mac.com>
+Date:   Thu Apr 9 20:26:33 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 8a4db2d8cf948932865cd1702cb064a79fae5822
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 20:26:06 2015 -0500
+
+    Updated stats
+
+commit aa75f9711d21a4f3dee023861a05531088d76b87
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:24:17 2015 -0500
+
+    Testing
+
+commit 9b8640ce9ec61e05f92716d586ff567dffe3be36
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 20:19:44 2015 -0500
+
+    Moved README
+
+commit 1e128a989510ef14216a349ebc9d9a335882edb4
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:19:38 2015 +0000
+
+    Tech
+
+commit 4ee13b08b2753a0090c32409cd0af928742c3ae6
+Merge: e0bded9 a4e69e0
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:19:15 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit e0bded9bd38ffc28b17bc2262327763eaab3fb48
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:19:12 2015 -0500
+
+    Testing
+
+commit a4e69e044589ff1938fddba781dd46f74ee78087
+Merge: 873179b b3942cc
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 20:18:21 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 873179bcc91ad778bac3c2103f9c54537d996c17
+Merge: 0ad48e9 0c7e9a4
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 20:18:02 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit b3942cc63aa3459d40f7d1aa395aa1f8ed71eb07
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:17:56 2015 -0500
+
+    Testing
+
+commit 0ad48e9730c5358377cbcf95446f866f2c349ccf
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 20:17:51 2015 -0500
+
+    htmls
+
+commit 0c7e9a4f7f8cbc604ccdd244409ad7e07ae71f8e
+Merge: c530f98 2b7aa8c
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:17:09 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit c530f9806c97aadd3804345ed236e1f82eec4ed5
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:16:53 2015 -0500
+
+    Testing
+
+commit 2b7aa8ccb84db385932f809a1d5c0182c62c5af6
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 20:16:20 2015 -0500
+
+    Moved shiz
+
+commit fc56f3fd41d1ef47d9c6a74fce40fd93917c28d8
+Merge: e148f8a a89332d
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:15:19 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit e148f8a2f5b060b97d3b7f054bd442f931411d01
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:15:13 2015 -0500
+
+    Testing
+
+commit a89332dd4c43ebf589fa08b95ec6bd8d7d77c70c
+Merge: 4906caf 19c7f25
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:14:44 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 4906cafc2647e160a380dfc75f5dbdfc7a40e6e1
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:14:36 2015 +0000
+
+    Added tech
+
+commit 19c7f250ec39b760535aa65b7de129dbb7aea5fe
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 20:13:21 2015 -0500
+
+    Wrote a few unit tests
+
+commit 6678579b146815d2e9dc81b9d7200f906fbf48ce
+Merge: 159ee2e 565add8
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:09:17 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 565add8c0f3908f965e0695999c7c7639b57c73a
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:08:55 2015 -0500
+
+    Testing
+
+commit 159ee2e1d581c503ac8c44a0435df3d63bf324e9
+Merge: dc3fc8b e710d38
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:07:36 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit e710d3848f39a177d5251b5977490a33b3c67ffa
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:07:15 2015 -0500
+
+    Testing
+
+commit dc3fc8bdc19e6d5389dd648a64f21da215eb0c43
+Merge: babc716 0d9e71d
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:06:41 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 0d9e71d42567fffd58f0348d293c5fb64a9341c4
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:06:16 2015 -0500
+
+    Testing
+
+commit babc716beb05f998305b8a45c0c07d284c98bf40
+Merge: 5afa8dd f10d11c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:05:02 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit f10d11c88763d0f6e09bb90a8d46e4e028155b95
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:04:41 2015 -0500
+
+    Testing
+
+commit 5afa8dd81b28f3b38a85523c24212bfdb72b2d61
+Merge: 1d945f3 283f683
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:04:13 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 283f683535e180375e43991b63820039944a7e1c
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:03:53 2015 -0500
+
+    Testing
+
+commit 1d945f35f719d637a1181a453eb3845b998cd837
+Merge: 6de54b5 10393ef
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:01:46 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 10393efdc8d409870373f48aec87fbc7ca011aa4
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:01:23 2015 -0500
+
+    Testing
+
+commit 6de54b50e2d02c3549f5935feeb5b75903fb50da
+Merge: 98f3983 51662b2
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:00:58 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 51662b2f3ebe5039088aaf4b498b190d54cb6f77
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 20:00:33 2015 -0500
+
+    Testing
+
+commit 98f3983e5c7646950dc2c761761c45472dc8ba85
+Merge: ad55411 b64ca88
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 01:00:07 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit b64ca886a287e58680311e91ebc3afebc4ceed6a
+Merge: b951942 d23bb50
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:59:43 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit b95194234d833c49ddca12f11f52a04b221ba915
+Merge: 67d4b83 3d07b01
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:59:18 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit d23bb50352abf55918eeae67e886eaf221ca27b5
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 19:59:11 2015 -0500
+
+    compressed themetempl
+
+commit 67d4b831d59f5c3bf6c65d5c55c257447830762a
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:59:10 2015 -0500
+
+    Testing
+
+commit 3d07b01e00e95058dfd38b20550f5798dcf04e88
+Merge: ce97418 6bbd58f
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 19:47:06 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit ce974187daabf307fa92f974f7e1e6e07684d5f6
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 19:46:55 2015 -0500
+
+    fix crops
+
+commit ad55411106a30c0691a7a6ee37a1cd7fbf80ce09
+Merge: d97d1ba 6bbd58f
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 00:44:20 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 6bbd58ff882c305a6d8021d2c724863b7bf8b683
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:44:01 2015 -0500
+
+    Switched to tabs
+
+commit d97d1ba91b33ea56d5a2e446a4eb4a9cb02e3776
+Merge: a52a5b0 1452bd4
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 00:43:22 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 1452bd4d000ec1620503888316b52203fb0d7374
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:43:01 2015 -0500
+
+    Testing
+
+commit a52a5b02bdcd135a5426e41bd25e196d8b8c828a
+Merge: 5a754fd 76b2d0e
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 00:42:34 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 76b2d0eda07106550b0f91abd59eff3d343c8444
+Merge: 1f36043 9c4363d
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Apr 9 19:41:02 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 5a754fdf31ab722355fd32e385e908f772e83d3d
+Merge: 0c13e49 9c4363d
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 00:40:18 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 1f3604338cab17346d65ada9d95ee897741682c7
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Apr 9 19:40:04 2015 -0500
+
+    resized image for templ
+
+commit 9c4363dc98d84a7f8e59149e7c0505316e551b81
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:39:41 2015 -0500
+
+    moddel testsing
+
+commit 0c13e4958a5278fcc75badea112cc841b002f022
+Merge: 67c0fe4 42ca485
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 00:38:57 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 67c0fe4a49837e62a18eb8e02e299834908e55f0
+Merge: 737453c 14ead88
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 00:38:52 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 737453c9b741eb526c247d7ddabca72ee3f49d5b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 00:38:46 2015 +0000
+
+    updated ids and locationTempl now has runs
+
+commit 42ca4851d4fe803abf03d21ab25d694da8b30c61
+Merge: 41dab78 14ead88
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:38:14 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 41dab786a7f9df675127361216bd1ce1e869845d
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:38:00 2015 -0500
+
+    moddel testsing
+
+commit 14ead88aa14bcc35ccaac71840079caa95e8ddfd
+Merge: 9c655cb 4e8e1d8
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 19:37:00 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 9c655cb6f3ae24cd9c9eef551b72b7c10974b334
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 19:36:47 2015 -0500
+
+    Make dirty and location theme images square
+
+commit 4e8e1d8ef1f1e9a61a2d3ff84179d831b9c367a4
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:36:01 2015 -0500
+
+    moddel testsing
+
+commit 508b049e2009e6e53f291a198301c241dc5763a0
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:35:16 2015 -0500
+
+    moddel testsing
+
+commit cd7528521c0d6ea160db5c0021576d7c4c3c18ea
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:33:25 2015 -0500
+
+    moddel testsing
+
+commit 3740710fa988127bc0f132a0d0b8f5493eb23b89
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:32:09 2015 -0500
+
+    moddel testsing
+
+commit 0e15bdcfb9beea52ce45ee5ebfba06099f2a1fe3
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:30:30 2015 -0500
+
+    moddel testsing
+
+commit cbbe0439cbbffd6fbf35a29f19be8f82a4a23d76
+Merge: 7dca4ef 1521a98
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:26:57 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 7dca4ef9ff0d33136166bc2ae2f3f71c5acbecc6
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:26:42 2015 -0500
+
+    moddel testsing
+
+commit 1521a98db6eccdf5009fcbba07889e2476a4fed7
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 00:26:01 2015 +0000
+
+    Updated locationTempl photos
+
+commit f4ca8321201329c628e8478976db8d133ccb4465
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:25:31 2015 -0500
+
+    moddel testsing
+
+commit 4046be4bd20e2c4f7d5730e7a281da08d89a6870
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:23:41 2015 -0500
+
+    moddel testsing
+
+commit a8a96f97e1193485010e20b7c27891febb240a88
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:21:20 2015 -0500
+
+    moddel testsing
+
+commit 81bd7640b39e9e7dd838e3937dde85035badf175
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:20:13 2015 -0500
+
+    moddel testsing
+
+commit c4e0d540c08f56cca669c3dd86a7513ea0a77907
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:19:41 2015 -0500
+
+    moddel testsing
+
+commit cfc49ab04f2c2fb43eea884af97b989c5e043d60
+Merge: 2766f37 84a8f40
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:17:47 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 2766f37cdda1a41abd572b9d1bb54b8410895dd6
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:17:25 2015 -0500
+
+    moddel testsing
+
+commit 84a8f40b9d09b7f2a37c22a446d36e3bf3cc1255
+Merge: 4d5a029 04933e0
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 19:16:57 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 04933e032e7514aba107becdecd09b73201c286f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:16:35 2015 -0500
+
+    moddel testsing
+
+commit 4d5a029a3bab27d632769bbf83b2eb49b77d6248
+Merge: fb1a3f0 671a149
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 19:16:28 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit fb1a3f046e3b955154bde8ac9be0fcbf103682ac
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 19:16:07 2015 -0500
+
+    Make team theme images square
+
+commit 671a149e90ad7cc24167f8c32eccbfa5d4e8e5e5
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:15:39 2015 -0500
+
+    moddel testsing
+
+commit f4cc1296e23b518c4bb1e8ce1231ca582541c3e8
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:15:15 2015 -0500
+
+    moddel testsing
+
+commit f47008aa4f2c9dc15ade61f894276a45585a7a75
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:14:35 2015 -0500
+
+    moddel testsing
+
+commit 6b936efabb11278365caf3b90cbe4c77e9ca9b6e
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:13:48 2015 -0500
+
+    moddel testsing
+
+commit 365b3ed2e5c6ab753b3a60f65d2fa63c8283b6c6
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 19:09:42 2015 -0500
+
+    moddel testsing
+
+commit 1fe95790a02b11db05595010ec61c34a49a52ffd
+Merge: f2add88 5fbcbd0
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 00:02:57 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit f2add8868094bfa6129b85ab41c60d1c7f6a89b7
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 00:02:47 2015 +0000
+
+    Fixed landing page photos
+
+commit 5fbcbd0aee55b1d4de49483ede1074bd50c22fde
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Apr 9 19:02:36 2015 -0500
+
+    cropped images and added music images
+
+commit 0b9342639dd0443268b004e2b7298b7d503f81b6
+Author: blimpz <blimpz@ubuntu.(none)>
+Date:   Thu Apr 9 18:58:23 2015 -0500
+
+    Compressed themeTempl images
+
+commit 680e9ea467dfff2f5eb0f1cc2c885bc6ca02092a
+Merge: 41ce0b3 f1b7d90
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 18:47:57 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit f1b7d900ffb4c7708d9612f963b65ab17e6d101c
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Apr 9 18:46:19 2015 -0500
+
+    added images for music to themeTempl
+
+commit 1546c62bd5a851f65623af815d797c8dc93db9f6
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 18:44:06 2015 -0500
+
+    moddel testsing
+
+commit 41ce0b3f4af417e86045bdc71cc3567eb511a787
+Merge: ba4619d e3a7124
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 18:43:40 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit e3a71248a3683096d3302e2888385e4534c4b2a4
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 18:42:31 2015 -0500
+
+    moddel testsing
+
+commit 4bef5271f3b3f3737f78a37ac69b108bc40bee19
+Merge: e53d1ba 26b06d8
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 18:41:21 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit e53d1bad601672fa3623b05f45217e082a5f1a07
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 18:40:58 2015 -0500
+
+    moddel testsing
+
+commit 26b06d8450119694aba6e73d1855bdecf311d59b
+Merge: a62f847 de9d26c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 23:40:41 2015 +0000
+
+    Fixing merge conflict
+
+commit a62f847b753a757117df8d4b32606611ef38d0bb
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 23:40:11 2015 +0000
+
+    Themes fixed
+
+commit ba4619d54f1bf342d623e55515458d7b9dd3d21a
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 9 18:39:11 2015 -0500
+
+    Breaklines for quotes
+
+commit de9d26cfa730d39c010fee63a4fcd74cb093098c
+Merge: 97c9d7b 64ddc9f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 18:38:52 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 97c9d7b5a5f4e9ab5dea24081c04846d79fdfd7f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Thu Apr 9 18:38:26 2015 -0500
+
+    moddel testsing
+
+commit 64ddc9f7351065aa832088dd0bc296ef8c908078
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Apr 9 18:30:58 2015 -0500
+
+    image for music landing
+
+commit a4130cc59b1108e2066e7110fef1aa2bbcb80257
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 18:29:51 2015 -0500
+
+    Updated API
+
+commit 1ff27eb586f1a2cfd0d6f4cee26cb747c5c20474
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 23:24:38 2015 +0000
+
+    Data finished.
+
+commit a921fc3ac6da757121a3b9b1106f041a3a505556
+Author: blimpz <blimpz@ubuntu.(none)>
+Date:   Thu Apr 9 18:09:54 2015 -0500
+
+    Compress landing, challengeTemple, and runTempl images
+
+commit 08d80d83198aa9a76d9ed2eb3215ed6777145be6
+Author: blimpz <blimpz@ubuntu.(none)>
+Date:   Thu Apr 9 18:04:37 2015 -0500
+
+    Compress landing, challengeTemple, and runTempl images
+
+commit 218545cd90da0defd9c2faa17a4ce557077ff005
+Merge: a837811 a22619c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 22:49:23 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit a837811d4c212b51a946d296fc51a7904c626b74
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 22:49:15 2015 +0000
+
+    Themes and fun runs photos are done
+
+commit a22619cfd3ddfb9ccf2e15506d36ed79271108d9
+Author: Blimpz <blimpz@ubuntu.(none)>
+Date:   Thu Apr 9 17:32:02 2015 -0500
+
+    Add quotes to run pages
+
+commit 5ffe8f8800f4edd96774713a18460ed30815226e
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Apr 9 17:23:25 2015 -0500
+
+    added missing images to theme landing
+
+commit 7f4d6ac8474fba747574f47fe3e8a684e54d73ce
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Apr 9 17:16:24 2015 -0500
+
+    added images for themes landing
+
+commit f762d6a9b7ce0b890747aabe040f85cd0c688e76
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Thu Apr 9 15:58:04 2015 -0500
+
+    adding Kevin's location images from our drive
+
+commit 44c85e0d2c4420c02877124657a33e0086fed33b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 20:51:28 2015 +0000
+
+    NGINX USWGI working with database, fixing up themes
+
+commit ec9ee0fc8b7dd5b0a59e86bd7d7d05cd11375a9e
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 13:59:50 2015 -0500
+
+    Changed from localhost
+
+commit f1777873291b53314d7f68ff4909932c9d3624f7
+Merge: f3ae776 bb70132
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 13:54:03 2015 -0500
+
+    Merge branch 'localhosttest'
+
+commit bb70132bc7fd7869ff75cd98256bea2dd3decace
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 13:51:39 2015 -0500
+
+    Updated the database
+
+commit f3ae776f313b042066655d266d88166d6ce33b3a
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 13:47:42 2015 -0500
+
+    Updated the database commands
+
+commit 18122a7ccb057f42a5fbabf997364bcc5c23970c
+Merge: 2831f7e a9f3b4b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 18:38:00 2015 +0000
+
+    Deleting cache
+
+commit 2831f7e07a7fea7def72c3e30e6b5d172663e0a8
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 18:35:56 2015 +0000
+
+    Photo updates and api_helpers
+
+commit d6da1f5dcb070cda990521ab6d3b1c4d1317f182
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 13:18:19 2015 -0500
+
+    Changed to using localhost for the API calls
+
+commit a9f3b4bca377c87a9b28d36845ea1a55c8b0012e
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 06:31:39 2015 -0500
+
+    Now create_database creates the database and populates it. There are 3 fxns to empty, create, and populate the database.
+
+commit 11851a9515eadaff8d07e50de5dc044977f7c774
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 06:05:44 2015 -0500
+
+    Cleaned models a bit. Created populate_database script. Finished writing the new api_helper.
+
+commit 44f0211652b138721cc4839a8dd374d10fb2e516
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 03:11:58 2015 -0500
+
+    Renamed api_helper files
+
+commit bd492a3616fcc287a68311bbaafc7fb013eb420e
+Merge: d146524 22f5c9c
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 03:11:18 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 22f5c9c12bf4731af5a9c426c230b34a9bb29fa4
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 08:01:26 2015 +0000
+
+    Fixing up challenges
+
+commit d1465241897323c10637be8e46f9336e4fc201c9
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 9 03:00:37 2015 -0500
+
+    Updated some things
+
+commit 6b958284079a72f4d80237a8f927479881bfae9c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 07:29:22 2015 +0000
+
+    Working on revamping photos
+
+commit 8763ced0f2cf9d1f336a6b2a73bfb7826fbb0c4b
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Wed Apr 8 23:40:10 2015 -0500
+
+    Updated picture file locations
+
+commit 534cf69f099d27f17fa7c710844f34fc07e74d46
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Apr 8 23:25:29 2015 -0500
+
+    Created old helpers
+
+commit bce8f8e4850e2966fa4996fd1831f4edaa71c70e
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 03:18:12 2015 +0000
+
+    Updates
+
+commit 4a7aa16614a287201cdb4b644f3d47e5a106c4d3
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 02:50:13 2015 +0000
+
+    Fun runs done being checked and themes mapping done
+
+commit 234679aafdffa3f289cbbc496af772e4e70cc201
+Merge: e098668 80d86fc
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 02:00:13 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit e098668b27f882af5b49cff472b588c8cf0de5cf
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 02:00:01 2015 +0000
+
+    Updated ids
+
+commit 80d86fce3996afb947ed07b77d7da2e2c7e2d3f1
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Wed Apr 8 20:55:39 2015 -0500
+
+    updated location images for locationTempl
+
+commit 00db9ba94067bea4b47d2dedf081b428d37cd3d4
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Wed Apr 8 20:52:22 2015 -0500
+
+    Added landing images
+
+commit c37be4d150e1fc68cd52f57344100bd48d9c30de
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Wed Apr 8 20:47:59 2015 -0500
+
+    Puyallup, WA pictures
+
+commit 05754b64f2497abb2430cf9c02d3ab8720a5c3db
+Merge: 16a66ed 0d9d95a
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 01:36:59 2015 +0000
+
+    Fixing merge
+
+commit 16a66ed0e5877bf7b4e97fe9c86f608a6827f12c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 9 01:36:03 2015 +0000
+
+    Almost done with runs
+
+commit 0d9d95ad61cee0b9f70a2671f05b31c0f02dea69
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Wed Apr 8 20:10:13 2015 -0500
+
+    Made UML into pdf
+
+commit c07bc84240bdc78f64a0297cea30fe97e6f3e587
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Wed Apr 8 20:08:02 2015 -0500
+
+    ALL the pictures (for challenges)
+
+commit 0929073e16c002084b629091ab84aedcab0f70fe
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Apr 8 20:05:01 2015 -0500
+
+    Added images for the wiki from the Google Doc
+
+commit 5b33da8cfbb5472d8864f0cc9c9a192d74d13e82
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Apr 8 18:21:05 2015 -0500
+
+    modified models to fit with api
+
+commit e52ced164cfb4c5682c5b59abaf466a6d2aef83a
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Apr 8 18:20:00 2015 -0500
+
+    modified models to fit with api
+
+commit 220dccc6d8d8799b4408d0e006aa3ef712be7446
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Apr 8 18:15:15 2015 -0500
+
+    modified models to fit with api
+
+commit 3067d9d1a64dc70effce936b006e47fcc30102c0
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Apr 8 18:12:32 2015 -0500
+
+    modified models to fit with api
+
+commit af59c8ec2348c9945d26b21882c45f104626abaf
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Wed Apr 8 17:56:32 2015 -0500
+
+    modified models to fit with api
+
+commit 5e1eb58d76631f86644bcafc22e5ad77ac71b6b4
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Wed Apr 8 17:49:23 2015 -0500
+
+    Updated Challenges. Missing Description and Images
+
+commit 15ad5d8ffc1ca0eaed2dc6947019dd9ef0ab1c0b
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Wed Apr 8 17:36:24 2015 -0500
+
+    Fixed bug regarding embedding of the map for the run
+
+commit c03d7e43b7c1e110dd60b27e9884de107238ad18
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Apr 8 07:36:23 2015 +0000
+
+    made parser and added 3 complete locations (the last 4 still need to be filled in)
+
+commit 6038741d37e2d544f70ebf8cee5dbcd515e72b6d
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Tue Apr 7 22:03:08 2015 -0500
+
+    finished food images
+
+commit 354f945a864dfb93438784723ee027816d10fa69
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Apr 7 21:56:54 2015 -0500
+
+    Pictures for Food theme
+
+commit 61944178bdd2c98effb194ebb39cff1ad913bfb9
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Tue Apr 7 21:30:06 2015 -0500
+
+    finished data mining drink images
+
+commit 93b752bde24d72fac96ee2554eb41e43890e0510
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Apr 8 02:20:20 2015 +0000
+
+    Making sure data consistent until fun run 6
+
+commit 8e0fe6edee6b25271a487524f6368335315cec41
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Tue Apr 7 20:57:06 2015 -0500
+
+    images for drink theme
+
+commit e6f74c080b6cef6c5da3356eb953597fdd42e2f9
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Tue Apr 7 20:40:32 2015 -0500
+
+    included fantasy images in themeTempl
+
+commit e71afefcce5fb1d4751ed6245102a17568542a69
+Merge: e9898ed 2effdac
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Tue Apr 7 20:38:30 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit e9898ed8c4bd878ab7b738e3ff4a968ec141e398
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Tue Apr 7 20:37:42 2015 -0500
+
+    add location images to themeTempl
+
+commit 2effdac674e03f2d2f88d454c78030b6d4f14a78
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Apr 7 20:37:00 2015 -0500
+
+    Pictures for team theme
+
+commit dceff9b6205228a9739893c1ef2c05aa4ab7ac8f
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Tue Apr 7 20:34:36 2015 -0500
+
+    Updated images for themeTempl
+
+commit aa63ab4241c7bc0d83f6da74b505133bbb160547
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 20:05:12 2015 -0500
+
+    models debugging with all tables added
+
+commit 8c21bda9eb76b6f37f7d60ffe6c629879611c937
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 20:03:56 2015 -0500
+
+    models debugging with all tables added
+
+commit e457711e2d8feeeed6ac49f5a1b0e5b755fc96a9
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 20:01:01 2015 -0500
+
+    models debugging with all tables added
+
+commit 7643e11d789b21104504156d5962745753b79072
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:56:53 2015 -0500
+
+    models debugging with all tables added
+
+commit bd6323f9b24e84213651e654931709162a10aa5f
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:52:08 2015 -0500
+
+    models debugging with all tables added
+
+commit 22bd1ca5272ba71dcbc5b4d0411c03cdae75b00c
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:47:01 2015 -0500
+
+    models debugging with all tables added
+
+commit 377053f0b79952d193035304247c0cc003fc5f95
+Merge: 35909c9 d8de704
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:44:49 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 35909c99110dbd5b3178d3a960d0eb5381e30e70
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:44:37 2015 -0500
+
+    models debugging with all tables added
+
+commit d8de70480d64d8d13d8009abe856f2a00162db37
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Apr 7 19:42:40 2015 -0500
+
+    Updated Music theme. Missing landing/templ pictures
+
+commit 8064c7703d700f65a2caa7bca8cbd6d0951c764d
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:30:45 2015 -0500
+
+    models debugging with all tables added
+
+commit f18ed1c5a281275fb070af01037e654a17f9bb4b
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:29:55 2015 -0500
+
+    models debugging with all tables added
+
+commit 60b35d813ae3efa52ffd05f7f81b6c92a92b29b1
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:28:03 2015 -0500
+
+    models debugging with all tables added
+
+commit 6283b32d7438d213a7d013c796b2d7a8e75e1700
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:26:23 2015 -0500
+
+    models debugging with all tables added
+
+commit c2355da8d8fad262d37e93c8dd90e2d1922229ca
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:25:32 2015 -0500
+
+    models debugging with all tables added
+
+commit 338c776fa7fd72e0577e9dfb8fec81147256491e
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:24:24 2015 -0500
+
+    models debugging with all tables added
+
+commit 80a2a344a02d2861d677b319edbccbc52347fce0
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:22:24 2015 -0500
+
+    models debugging with all tables added
+
+commit 2bcb5e8ffd24b6071920de711d06658ec7d4ff1a
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:19:49 2015 -0500
+
+    models debugging with all tables added
+
+commit e1a38b54b860041a5f69eeb8ce2aa85692a413d0
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:18:09 2015 -0500
+
+    models debugging with all tables added
+
+commit f67f199d5ad40410458d8c4d260ffcec51fade34
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:16:50 2015 -0500
+
+    models debugging with all tables added
+
+commit ac2d9fe4fd21b965fb0e6b4d0ed3bd96f473e138
+Merge: da854e3 6a545a0
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:12:45 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit da854e3da01c8279f8f6ba2652927a2bf6adc389
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:12:28 2015 -0500
+
+    models debugging with all tables added
+
+commit 6a545a08843f9dcc68eeec232ff1effd3c392a34
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Apr 7 19:12:15 2015 -0500
+
+    Updated Music theme. Missing landing/templ pictures
+
+commit 6258c8bf966e8a6b46dce8a04bc5797b79bfc27b
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:11:00 2015 -0500
+
+    models debugging with all tables added
+
+commit e747538f1ba2d807d547a1430d1b4abbc9f427f6
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:08:33 2015 -0500
+
+    models debugging with all tables added
+
+commit e29041248fe6c404e778e4f4fcbde388ffc2d962
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:07:32 2015 -0500
+
+    models debugging with all tables added
+
+commit 0ff94a5b5a054dfd79016c528874d8bab6e45a61
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:05:15 2015 -0500
+
+    models debugging with all tables added
+
+commit 94b6834068552f832ee9629e730b775981e03211
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:03:48 2015 -0500
+
+    models debugging with all tables added
+
+commit 3432b440450b5a1781d6cc92247b0e97bc23c642
+Merge: 900a688 34d08e1
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 19:00:27 2015 -0500
+
+    models debugging with all tables added
+
+commit 900a688917d651013cc4e757d1c2d2446e2efb55
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:59:47 2015 -0500
+
+    models debugging with all tables added
+
+commit 34d08e1b9c53d2946c420038128d9fd159ca004f
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Apr 7 18:55:18 2015 -0500
+
+    Updated Food theme. Missing landing/templ pictures
+
+commit 1524f7dfe5b5d8033cd246ae3c3410b1c9bbdb0c
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:54:11 2015 -0500
+
+    models debugging with all tables added
+
+commit d36d595e6aedd1a6e6c7bb8df048f2d3beda06c4
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:49:25 2015 -0500
+
+    models debugging with all tables added
+
+commit ed42947b0abcab65969f9ac41c7b0fa847483eef
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:44:41 2015 -0500
+
+    models debugging with all tables added
+
+commit 0b94914a1ba99742b1d64ef8b8dad01c7b320fee
+Merge: c55d011 a18a106
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:42:24 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit c55d011e4720454b52861b72fbdeb41765b85362
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:42:08 2015 -0500
+
+    models debugging with all tables added
+
+commit a18a10652e1a23b96b4af7c49c6946facd9c7d5a
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Apr 7 18:40:10 2015 -0500
+
+    Updated Drink theme. Missing landing/templ pictures
+
+commit 660f78b734f4eb56eb7638fc8d6718127ee68219
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:39:30 2015 -0500
+
+    models debugging with all tables added
+
+commit 5b63eba63509df1c07ca17e71d18079c07d107a0
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:38:27 2015 -0500
+
+    models debugging with all tables added
+
+commit d1e57b247b823ee362106db2317b381c04e9e9d5
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:34:14 2015 -0500
+
+    models debugging with all tables added
+
+commit c5a52863a99b4d5f92c071d60cd058b0baf09524
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:32:53 2015 -0500
+
+    models debugging with all tables added
+
+commit 4e8127bafb70bfaab2380316fe35b276ced2d482
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:19:19 2015 -0500
+
+    models debugging with all tables added
+
+commit 1610f56aa9d93cd611af71395931e23f07a96f58
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Apr 7 18:15:29 2015 -0500
+
+    Updated Team theme. Missing landing/templ pictures
+
+commit 288afb4320118d191f6ac94fdcbb3fd1b1e4ae8a
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:12:32 2015 -0500
+
+    models debugging with all tables added
+
+commit 4e65454734ac97deaaad93d3b9d364cbaaee2c61
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:07:52 2015 -0500
+
+    models debugging with all tables added
+
+commit 0092d1b19dba77b5955eff83f20a51e732da2d18
+Merge: 0b9c497 aaa0cbf
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:06:25 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 0b9c49734d0fee1032b94c9a0b0586c4a5d2fc4c
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 18:06:13 2015 -0500
+
+    models debugging with all tables added
+
+commit aaa0cbfe8babab6776517d6ac7bc2fea39082370
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Tue Apr 7 18:01:13 2015 -0500
+
+    Updated Dirty theme. Missing landing/templ pictures
+
+commit ba5db65606b4ae1c5cd6bba0ca909712a6e60279
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 17:59:07 2015 -0500
+
+    models debugging
+
+commit 0c4a4dca480d6dc3c2f3ba14d5b6732c20a15ab2
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 17:58:32 2015 -0500
+
+    models debugging
+
+commit dba536045d8370931bac1a6fd7172dec7c43fa0c
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 17:56:31 2015 -0500
+
+    models debugging
+
+commit 773006075872e8a2944018210bd1aa398ccc5d2c
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 17:54:53 2015 -0500
+
+    models debugging
+
+commit 7ee353777a89a3d853564e32608119577e7334af
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Tue Apr 7 17:53:18 2015 -0500
+
+    models debugging
+
+commit 1e95fdc937cf1f12ed50d2b9a00a91a8e50cf28f
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Tue Apr 7 17:46:59 2015 -0500
+
+    Fixed youtube videos to be embedded
+
+commit 66944a203ed3680dbc93cc36ed2d4f3173ba7b4b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 7 20:19:06 2015 +0000
+
+    Trying to normalize info still
+
+commit b82bf482053e22e3d29bd1a3484d90c8bf8be96a
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 7 18:42:56 2015 +0000
+
+    Modifying data
+
+commit bd6276f286194c747a07b37e85b3a7a0ca0ce1a2
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 7 04:54:03 2015 +0000
+
+    added the pictures back to locations AGAIN, also fixed link error (dallas link was going to baltimore or something)
+
+commit ac102dd786530e45e8410e05e7c6f831a8ae40fb
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Mon Apr 6 23:27:42 2015 -0500
+
+    Included more runs to keep display symmetrical
+
+commit d57be107c9e688fe223796c443860b0ad3d941c1
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 7 03:38:18 2015 +0000
+
+    added pictures back to location pages
+
+commit ddf95424ce253e6abaae587c75aa55e95504a72e
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 7 02:37:18 2015 +0000
+
+    added some of the modified themes (commented out because we have not added the pictures they will use yet)
+
+commit 5c99d8834e00b2a26a3867e7102e1f435d8c913e
+Merge: c3983f4 afa02a8
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 7 02:01:31 2015 +0000
+
+    BLAH
+
+commit c3983f402fe63208f88c8943dee2c472a2b168e6
+Merge: 7fe2dc2 62b2b5d
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 7 02:00:10 2015 +0000
+
+    omfg work
+
+commit afa02a803a6beb541f6fab92923e6753742690d4
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Apr 6 20:47:03 2015 -0500
+
+    pls work
+
+commit 7821530f7ba84cc4bbd9cb6b0e8662b8637cf0fa
+Merge: 47b72db 62b2b5d
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Apr 6 20:45:05 2015 -0500
+
+    pls work
+
+commit 47b72db0de8b9d9a82fa2e320968295c59842f7f
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Apr 6 20:44:02 2015 -0500
+
+    pls work
+
+commit 7fe2dc24bf89d01d69c37a4735f2a0f01e62dec4
+Merge: 80f130f 63ab204
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 7 01:37:50 2015 +0000
+
+    hopefully fixed the api_helpers merge conflict
+
+commit 62b2b5d3492163289d2ff33802e5d58453c059f0
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Mon Apr 6 20:35:24 2015 -0500
+
+    added loc to the first 3 funruns
+
+commit fdca4665bab3e0479591489acc90f4ce9b7a2bba
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Apr 6 20:26:12 2015 -0500
+
+    Updated json for Fit Foodie 5k
+
+commit 80f130f9eab8c2e019be6f2dbdb7fd982c51898f
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 7 01:25:07 2015 +0000
+
+    checking what was changed in api_helpers
+
+commit 63ab204fb843d516ef293ebc2e541e8f13c0ce20
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Apr 6 19:40:54 2015 -0500
+
+    Updated json for Tough Mudder
+
+commit 9e4ffb764be7b54f116cb88531e69e08ef4e79f0
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Apr 6 19:25:35 2015 -0500
+
+    Updated json for Brew Mile
+
+commit d2c936be989f2a2d3e80ace0614079c93a0a7cea
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Mon Apr 6 19:11:02 2015 -0500
+
+    Updated api_helpers.py to include electric run
+
+commit a3ea744b9421236c8643d00470a92942e714fd05
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Apr 6 18:58:12 2015 -0500
+
+    Updated json for Blacklight Run
+
+commit fc38572f0603e633bc4dae846f13c374327c4db8
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Apr 6 18:57:08 2015 -0500
+
+    Updated json for Blacklight Run
+
+commit 867cc10c9e83a4cc0b34b6284bdef2c985b384d8
+Author: Hector Garcia <hektor11@cs.utexas.edu>
+Date:   Mon Apr 6 18:10:04 2015 -0500
+
+    Updated api_helpers.py to include zombierun
+
+commit b232f025b6fbdf8f7c90643de598d13927bab56c
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Mon Apr 6 18:06:42 2015 -0500
+
+    Updated json for Bay to Breakers
+
+commit 3a88c16df6afca38fef3da20f308f2ccd3b72f8a
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Apr 6 02:43:53 2015 +0000
+
+    All landing pages are dynamic. Roll over graying doesn't work anymore though
+
+commit ec0d373ad64fcbc385a7b134848e9c8c648a0099
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Apr 6 01:34:55 2015 +0000
+
+    added total commits to the bottom of the about page
+
+commit 513fcda3393234c1ea55cc39732042476d550bf1
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Apr 6 01:33:36 2015 +0000
+
+    Making landing pages dynamic
+
+commit d43fa028635652bb7a8b9d9d47960e26b72b5b24
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Apr 6 01:27:39 2015 +0000
+
+    embedded twitter
+
+commit 55f3ff91883d597bb83f698476c88fc9fa0417ea
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Apr 6 00:04:18 2015 +0000
+
+    Adding a locations templ page and fixing API for it
+
+commit d2bb65e974c8259b513dbb27dbd71432717ad7db
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Apr 5 22:41:09 2015 +0000
+
+    stuck with location_id of relation funruns does not exist bug when trying to populate database with one to many
+
+commit 3a5a62c4bd4162a493fc5108c7a3ecaeead35ed2
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Apr 5 21:37:52 2015 +0000
+
+    Flipped the relationship, oops
+
+commit f226a73d0b1ae1c14d6c0db77ebd1e09fe364fbc
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Apr 5 21:20:47 2015 +0000
+
+    Reworked some of the relationship logic
+
+commit 5f14978519231d01dc128cdb0f8e5f7e26ff6f2e
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Apr 5 21:06:43 2015 +0000
+
+    fixed models.py --we think, Alyssas fault if we did not
+
+commit 13a2768768eae5989aaa817a7c5fd79ce83cc931
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Apr 5 21:04:44 2015 +0000
+
+    Updated images for zombie run
+
+commit ff4c9c8c0f45ca28292fcb528c5a35a321416363
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Apr 5 20:56:15 2015 +0000
+
+    Updated icon to be transparent
+
+commit 3f01f15ee38c8686ac33d3f4338a78941b115596
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sun Apr 5 20:00:49 2015 +0000
+
+    Landing pictures for new runs
+
+commit 53f0d1082bd5fbe4e6a58f52ae934a4d45df9d02
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Apr 4 23:37:18 2015 +0000
+
+    database works! (without relationships though)
+
+commit ec46954ab7f026b055cdd27ec5eca34a1c4c6f17
+Merge: 6ddcf7a 8ecb34f
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Apr 4 23:13:58 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 6ddcf7ad6dd6ce9788a3d1e74ae123bee61e27f1
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Sat Apr 4 23:13:45 2015 +0000
+
+    added pictures for funrun pages
+
+commit 8ecb34f2c972605f0a86a1e359743f5151367da5
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Apr 4 17:48:06 2015 -0500
+
+    added landing images for funruns (color run and keep austin weird)
+
+commit ca1c1961724d8ca9a3e63c51bc498be88c0924fc
+Author: Kevin Byers <kevinb@cs.utexas.edu>
+Date:   Sat Apr 4 17:34:24 2015 -0500
+
+    added photos for funruns (color and keep austin weird)
+
+commit 66a7cb69bf40684f609cb6e025c56e23e7c4c813
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 3 14:48:55 2015 +0000
+
+    Moved files around
+
+commit cc9bc6491377eb20d0e9a3a27e9150031df4fa79
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 3 14:39:35 2015 +0000
+
+    Before tinkering with nginx and uswgi
+
+commit 5e8a93358fab368482ff8d07d7b5f618677271b2
+Author: Alyssa Williams <anwilliams93@gmail.com>
+Date:   Wed Apr 1 14:00:39 2015 -0500
+
+    Updated file structure
+
+commit 6dfa050ae90beffac8c5980f2b7c89ce38ef30b8
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Sun Mar 29 16:18:58 2015 -0500
+
+     modify models.py
+
+commit e989bb5505414a473f74b69dafc461c0b335b288
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Mar 27 02:32:55 2015 +0000
+
+    Added log
+
 commit 9e3a3c29496159659a25183c402016c68af8a241
 Author: Bear Grylls <anwilliams93@gmail.com>
 Date:   Fri Mar 27 02:31:43 2015 +0000
