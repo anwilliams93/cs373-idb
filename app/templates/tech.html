@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fun Runs 2015: Technical Information</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS
+================================================== -->
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-responsive.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/prettyPhoto.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/custom-styles.css') }}">
+
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/style-ie.css"/>
+<![endif]--> 
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/icon.png') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/icon.png') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/icon.png') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/icon.png') }}">
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/apple-touch-icon-72x72.png') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/apple-touch-icon-114x114.png') }}">
+
+<!-- JS
+================================================== -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.custom.js') }}"></script>
+<script type="text/javascript">
+     $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+</script>
+
+<body>
+    <div class="color-bar-1"></div>
+    <div class="color-bar-2 color-bg"></div>
+    
+    <div class="container main-container">
+    
+      <div class="row header"><!-- Begin Header -->
+      
+        <!-- Logo
+        ================================================== -->
+        <div class="span5 logo">
+            <h1>Fun Runs 2k15: Technical Information</h1>
+        </div>
+        
+        <!-- Main Navigation
+        ================================================== -->
+        <div class="span7 navigation">
+          <div class="navbar hidden-phone">
+          
+            <ul class="nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/funruns">Fun Runs</a></li>
+              <li><a href="/themes">Fun Themes</a></li>
+              <li><a href="/challenges">Fun Challenges</a></li>
+              <li><a href="/locations">Fun Locations</a></li>
+              <li class="active"><a href="/tech">Technical</a></li>
+              <li><a href="/about">About</a></li>
+            </ul>
+         
+          </div>
+
+            <!-- Mobile Nav
+            ================================================== -->
+            <form action="#" id="mobile-nav" class="visible-phone">
+              <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Navigate...</option>
+                    <option value="/">Home</option>
+                    <option value="/funruns">Fun Runs</option>
+                    <option value="/themes">Fun Themes</option>
+                    <option value="/challenges">Fun Challenges</option>
+                    <option value="/locations">Fun Locations</option>
+                    <option value="/tech">Technical</option>
+                    <option value="/about">About</option>
+                </select>
+              </div>
+            </form>
+            
+        </div>
+      
+    </div><!-- End Header -->
+     
+    <!-- Page Content
+    ================================================== --> 
+    
+    <!-- Title Header -->
+    <div class="row">
+        <div class="span12">
+            <h2 class="title-bg">Group Data</h2>
+            <div class="row">
+                <div class="span4">
+                    <div class="resize">
+                    </div>
+                    <h5>Alyssa Williams</h5>
+                    <p>
+                        <i class="icon-cog"></i><strong>Commits: </strong>50 <br/>
+                        <i class="icon-list"></i><strong>Issues: </strong>17 <br/>
+                        <i class="icon-check"></i><strong>Unit Tests: </strong>0 <br/>
+                        <i class="icon-star"></i><strong>Major Responsibilities: </strong>Bootstrap, nginx, uWSGI, initial setup, data mining, github issue tracking, front end design, and angular. <br/>
+                    </p>
+                </div>
+                <div class="span4">
+                    <div class="resize">
+                    </div>
+                    <h5>Kurt Bixby</h5>
+                    <p>
+                        <i class="icon-cog"></i><strong>Commits: </strong>40 <br/>
+                        <i class="icon-list"></i><strong>Issues: </strong>18 <br/>
+                        <i class="icon-check"></i><strong>Unit Tests: </strong>28 <br/>
+                        <i class="icon-star"></i><strong>Major Responsibilities: </strong>Initial setup, data mining, API design, API implementation, API documentation, and unit tests. <br/>
+                    </p>
+                </div>
+                <div class="span4">
+                    <div class="resize">
+                    </div>
+                    <h5>Kevin Byers</h5>
+                    <p>
+                        <i class="icon-cog"></i><strong>Commits: </strong>97 <br/>
+                        <i class="icon-list"></i><strong>Issues: </strong>8 <br/>
+                        <i class="icon-check"></i><strong>Unit Tests: </strong>0 <br/>
+                        <i class="icon-star"></i><strong>Major Responsibilities: </strong>Front end design, bug fixes, embedding media, data mining, initial setup, nginx and bootstrap. <br/>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span4">
+                    <div class="resize">
+                    </div>
+                    <h5>David Aguirre</h5>
+                    <p>
+                        <i class="icon-cog"></i><strong>Commits: </strong>63 <br/>
+                        <i class="icon-list"></i><strong>Issues: </strong>14 <br/>
+                        <i class="icon-check"></i><strong>Unit Tests: </strong>11 <br/>
+                        <i class="icon-star"></i><strong>Major Responsibilities: </strong>Flask models, test cases, UML model, and data mining. <br/>
+                    </p>
+                </div>
+                <div class="span4">
+                    <div class="resize">
+                    </div>
+                    <h5>Edgar Treto</h5>
+                    <p>
+                        <i class="icon-cog"></i><strong>Commits: </strong>13 <br/>
+                        <i class="icon-list"></i><strong>Issues: </strong>10 <br/>
+                        <i class="icon-check"></i><strong>Unit Tests: </strong>0 <br/>
+                        <i class="icon-star"></i><strong>Major Responsibilities: </strong>Front end design, data mining, using angular to dynamically fill pages, and embedding media. <br/>
+					</p>
+                </div>
+                <div class="span4">
+                    <div class="resize">
+                    </div>
+                    <h5>Hector Garcia</h5>
+                    <p>
+                        <i class="icon-cog"></i><strong>Commits: </strong>7 <br/>
+                        <i class="icon-list"></i><strong>Issues: </strong>6 <br/>
+                        <i class="icon-check"></i><strong>Unit Tests: </strong>0 <br/>
+                        <i class="icon-star"></i><strong>Major Responsibilities: </strong>Front end design, data mining, using angular to dynamically fill pages, and embedding media. <br/>
+                    </p>
+                </div>
+            </div>
+
+            <h2 class="title-bg">Test Output</h2>
+            <h5>Tests are run upon page load</h1>
+            <div class="row">
+                <div class="span4">
+                    {{ output }}
+                </div>
+            </div>
+
+            <h2 class="title-bg"> _(┐「ε:)_ &nbsp The Tools We Used &nbsp _(┐「ε:)_</h3>
+            <div class="row">
+                <div class="span12">
+                    <li><strong>Python</strong></li>
+                    <p> Python is one of the languages used to help bring our application to life. Its functionality allows for easy data manipulation. In combination with other tools, its syntax provides for easier interpretation and cleaner presentation.</p>
+                    <li><strong>Flask</strong></li>
+                    <p> Flask is a microframework for Python and serves as the foundation for our application. It uses Jinja2 templating and RESTful request dispatching. This tool helped facilitate our web application development process overall.</p>
+                    <li><strong>Bootstrap</strong></li>
+                     <p> Bootstrap is an open source framework that uses HTML, CSS, and JS. It helped both speed up and ease our front end development because of how flexible it is. </p>
+                    <li><strong>Piccolo</strong></li>
+                    <p> Piccolo is a bootstrap HTML template. We implemented this tool to enhance the presentation of our application and give it a more aesthethically pleasing appearance.</p>
+                    <li><strong>nginx</strong></li>
+                    <p> nginx is a high-performance HTTP server and reverse proxy. This tool was used to serve our application by handling the requests sent by our API. </p>
+                    <li><strong>uWSGI</strong></li>
+                    <p> uWSGI is a deployment option for severs. Because we decided to use nginx, combining it with uWSGI gives us more flexibility and better performance because of the configurations it offers.  </p>
+                    <li><strong>Apiary</strong></li>
+                    <p> Apiary is a tool that allowed for an easier, faster and more efficient creation of our API. It offers different tools to prototype your API and configure it to your liking. </p>
+                    <li><strong>Github</strong></li>
+                    <p> Github is a web-based Git repository. Since the project is being worked on
+                    by several team members concurrently, it allows for more efficient contributions towards the overall project. In addition, it helps simulate a real world environment of software development and version control. </p>
+                    <li><strong>Rackspace</strong></li>
+                    <p> Rackspace has allowed our team to host our application using one of their virtual machines which has 1gb RAM and 20gb of storage. </p>
+                    <li><strong>AngularJS</strong></li>
+                    <p> Angular is a web application framework that allows us to dynamically fill the pages with content. We utilized Angular by calling GET on our RESTful API and using the content to fill a template page for each race/theme/challenge. It has been a great tool for separating our front end from the back end.</p>
+                    <li><strong>Jinja2</strong></li>
+                    <p> Jinja is a templating framework that comes with Flask. It allows us to push information through our funruns app file straight to the page, but is not a good way to decouple the front end from the back end. Therefore, it is used sparingly and only in the template pages to provide an ID of what page to load.</p>
+                    <li><strong>PostgreSQL</strong></li>
+                    <p> PostgreSQL is an open source object-relational database system. We currently store our data in the database within four tables, mirroring our pillars</p>
+                    <li><strong>SQLAlchemy</strong></li>
+                    <p>SQLAlchemy is a Python SQL toolkit and Object Relational Mapper that interacts between our application and the database system.</p>
+                </div>
+            </div>
+            <div>
+                <p><strong>Total Github Commits:</strong> 270</p>
+            </div>
+
+            <a href="https://github.com/anwilliams93/cs373-idb"> Github Repo</a><br/><br/>
+	    <a href="http://docs.funruns2k15.apiary.io/"> Apiary</a><br/><br/>
+        </div> 
+    </div>
+    
+    </div> <!-- End Container -->
+
+    <!-- Footer Area
+        ================================================== -->
+
+  <div class="footer-container hidden-phone hidden-tablet"><!-- Begin Footer -->
+      <div class="container">
+        <br/>
+            <div class="row"><!-- Begin Sub Footer -->
+                <div class="span12 footer-col footer-sub">
+                    <div class="row no-margin">
+                        <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
+                        <div class="span6">
+                            <span class="right">
+                            <a href="/">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/funruns">Fun Events</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/themes">Fun Themes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/challenges">Fun Challenges</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/locations">Fun Locations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/tech">Technical</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/about">About</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Sub Footer -->
+
+        </div>
+    </div><!-- End Footer -->
+    
+    <!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+    
+</body>
+</html>
