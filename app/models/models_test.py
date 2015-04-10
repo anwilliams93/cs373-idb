@@ -129,6 +129,11 @@ class sql_dbTestCase(unittest.TestCase):
 		challenge = db.session.query(Challenge).order_by(Challenge.id)
 		assert(results[2].funRun_challenge[0] == challenge[1])
 
+	def test_theme_challenge_relationship_1(self):
+		results = db.session.query(Theme).order_by(Theme.id)
+		challenge = db.session.query(Challenge).order_by(Challenge.id)
+		assert(results[1].theme_challenge[0] == challenge[1])
+
 
 
 if __name__ == '__main__':
