@@ -39,9 +39,9 @@ class sql_dbTestCase(unittest.TestCase):
     	result = db.session.query(FunRun).count()
     	assert (result == 13)
 
-
     def test_delete_funrun(self):
     	frun1 = FunRun(id = 13, name = 'testing')
+    	db.session.add(frun1)
     	db.session.delete(frun1)
     	db.session.flush()
     	result = db.session.query(FunRun).count()
