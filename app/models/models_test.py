@@ -43,6 +43,26 @@ class sql_dbTestCase(unittest.TestCase):
     	result = db.session.query(FunRun).count()
     	assert (result == 12)
 
+    def test_add_themes(self):
+    	theme1 = Theme(id = 11, name = 'testing')
+    	db.session.add(theme1)
+    	result = db.session.query(Theme).count()
+    	assert (result == 11)
+    	db.session.delete(theme1)
+    	db.session.flush()
+    	result = db.session.query(Theme).count()
+    	assert (result == 10)
+
+    def test_add_challenge(self):
+    	chal1 = Theme(id = 17, name = 'testing')
+    	db.session.add(chal1)
+    	result = db.session.query(Challenge).count()
+    	assert (result == 11)
+    	db.session.delete(chal1)
+    	db.session.flush()
+    	result = db.session.query(Challenge).count()
+    	assert (result == 10)
+
 
 
 
