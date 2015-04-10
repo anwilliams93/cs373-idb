@@ -34,7 +34,7 @@ def about():
 
 @app.route('/tech')
 def tech():
-    # output = runTests()
+    output = runTests()
     return render_template('tech.html', output = output) 
 
 @app.route('/funruns/<runID>')
