@@ -25,13 +25,13 @@ class sql_dbTestCase(unittest.TestCase):
     	result = db.session.query(Theme).count()
     	assert (result == 10)
 
-    # def test_challenges(self):
-    # 	result = db.session.query(Challenge).count()
-    # 	assert (result == 16)
+    def test_challenges(self):
+    	result = db.session.query(Challenge).count()
+    	assert (result == 16)
 
-    # def test_location(self):
-    # 	result = db.session.query(Location).count()
-    # 	assert (result == 10)
+    def test_location(self):
+    	result = db.session.query(Location).count()
+    	assert (result == 10)
 
     # def test_add_funrun(self):
     # 	frun1 = FunRun(name = 'testing')
