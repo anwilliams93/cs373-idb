@@ -63,7 +63,7 @@ class sql_dbTestCase(unittest.TestCase):
     	result = db.session.query(Challenge).count()
     	assert (result == 16)
 
-     def test_add_location(self):
+	def test_add_location(self):
     	location1 = Location(id = 11, name = 'testing')
     	db.session.add(location1)
     	result = db.session.query(Location).count()
