@@ -73,10 +73,24 @@ class sql_dbTestCase(unittest.TestCase):
 		result = db.session.query(Location).count()
 		assert (result == 10)
 
-	def test_fun_location_relationship(self):
+	def test_fun_location_relationship_1(self):
 		results = db.session.query(FunRun).order_by(FunRun.id)
-		print(results[0].location_id )
 		assert(results[0].location_id ==  1)
+
+	def test_fun_location_relationship_2(self):
+		results = db.session.query(FunRun).order_by(FunRun.id)
+		print(" here1 = " results[1].location_id)
+		assert(results[1].location_id ==  1)
+
+	def test_fun_location_relationship_3(self):
+		results = db.session.query(FunRun).order_by(FunRun.id)
+		print(" here1 = " results[2].location_id)
+		assert(results[2].location_id ==  1)
+
+	def test_fun_location_relationship_4(self):
+		results = db.session.query(FunRun).order_by(FunRun.id)
+		print(" here1 = " results[3].location_id)
+		assert(results[3].location_id ==  1)
 
 
 
