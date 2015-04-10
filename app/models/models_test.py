@@ -22,21 +22,21 @@ class sql_dbTestCase(unittest.TestCase):
     	assert (result == 12)
 
     def test_themes(self):
-    	result = db.session.query(theme).count()
+    	result = db.session.query(Theme).count()
     	assert (result == 10)
 
     def test_challenges(self):
-    	result = db.session.query(challenge).count()
+    	result = db.session.query(Challenge).count()
     	assert (result == 16)
 
     def test_location(self):
-    	result = db.session.query(location).count()
+    	result = db.session.query(Location).count()
     	assert (result == 10)
 
     def test_add_funrun(self):
     	frun1 = FunRun(name = 'testing')
     	db.session.add(frun1)
-    	result = db.session.query(location).count()
+    	result = db.session.query(FunRun).count()
     	assert (result == 13)
     	db.session.flush()
     	assert (result == 12)
