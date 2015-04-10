@@ -91,7 +91,7 @@ class sql_dbTestCase(unittest.TestCase):
 
 	def test_fun_theme_relationship_1(self):
 		results = db.session.query(FunRun).order_by(FunRun.id)
-		assert(results[0].funRun_theme[0] ==  1)
+		assert(results[0].funRun_theme[0] ==  2)
 
 
 
