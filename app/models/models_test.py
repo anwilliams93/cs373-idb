@@ -112,7 +112,7 @@ class sql_dbTestCase(unittest.TestCase):
 	def test_fun_challenge_relationship_1(self):
 		results = db.session.query(FunRun).order_by(FunRun.id)
 		challenge = db.session.query(Challenge).order_by(Challenge.id)
-		assert(results[4].funRun_challenge[0] == challenge[1])
+		assert(results[7].funRun_challenge[0] == challenge[6])
 
 	def test_fun_challenge_relationship_2(self):
 		results = db.session.query(FunRun).order_by(FunRun.id)
