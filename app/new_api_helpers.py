@@ -33,6 +33,7 @@ def retrieve_funruns():
 		object_dict['address'] = run.address
 		object_dict['distance'] = run.distance
 		object_dict['price'] = run.price
+		object_dict['hosts'] = run.hosts
 		object_dict['sponsors'] = run.sponsors
 		object_dict['charities'] = run.charities
 		object_dict['website'] = run.website
