@@ -34,7 +34,7 @@ class sql_dbTestCase(unittest.TestCase):
     	assert (result == 10)
 
     def test_add_funrun(self):
-    	frun1 = FunRun(name = 'testing')
+    	frun1 = FunRun(id = 13, name = 'testing')
     	db.session.add(frun1)
     	result = db.session.query(FunRun).count()
     	assert (result == 13)
