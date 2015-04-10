@@ -54,7 +54,7 @@ class sql_dbTestCase(unittest.TestCase):
     	assert (result == 10)
 
     def test_add_challenge(self):
-    	chal1 = Theme(id = 17, name = 'testing')
+    	chal1 = Callenge(id = 17, name = 'testing')
     	db.session.add(chal1)
     	result = db.session.query(Challenge).count()
     	assert (result == 17)
