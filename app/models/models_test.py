@@ -57,11 +57,11 @@ class sql_dbTestCase(unittest.TestCase):
     	chal1 = Theme(id = 17, name = 'testing')
     	db.session.add(chal1)
     	result = db.session.query(Challenge).count()
-    	assert (result == 11)
+    	assert (result == 17)
     	db.session.delete(chal1)
     	db.session.flush()
     	result = db.session.query(Challenge).count()
-    	assert (result == 10)
+    	assert (result == 16)
 
 
 
