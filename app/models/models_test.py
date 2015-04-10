@@ -89,6 +89,11 @@ class sql_dbTestCase(unittest.TestCase):
 		results = db.session.query(FunRun).order_by(FunRun.id)
 		assert(results[3].location_id ==  7)
 
+	def test_fun_theme_relationship_1(self):
+		results = db.session.query(FunRun).order_by(FunRun.id)
+		assert(results[0].funRun_theme[0] ==  1)
+
+
 
 
 
