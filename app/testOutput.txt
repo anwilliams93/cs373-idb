@@ -1,0 +1,49 @@
+test_challenge_run_0 (test.tests.TestAPI) ... ok
+test_challenge_run_1 (test.tests.TestAPI) ... ok
+test_challenge_run_2 (test.tests.TestAPI) ... ok
+test_challenge_themes_0 (test.tests.TestAPI) ... ok
+test_challenge_themes_1 (test.tests.TestAPI) ... ok
+test_challenge_themes_2 (test.tests.TestAPI) ... ok
+test_challenges_by_id_0 (test.tests.TestAPI) ... ok
+test_challenges_by_id_1 (test.tests.TestAPI) ... ok
+test_challenges_by_id_2 (test.tests.TestAPI) ... ok
+test_get_challenges (test.tests.TestAPI) ... ok
+test_get_challenges_slash (test.tests.TestAPI) ... ok
+test_get_run_by_id_0 (test.tests.TestAPI) ... ok
+test_get_run_by_id_0_slash (test.tests.TestAPI) ... ok
+test_get_run_by_id_1 (test.tests.TestAPI) ... ok
+test_get_run_by_id_2 (test.tests.TestAPI) ... ok
+test_get_run_challenges_0 (test.tests.TestAPI) ... ok
+test_get_run_challenges_1 (test.tests.TestAPI) ... ok
+test_get_run_challenges_2 (test.tests.TestAPI) ... ok
+test_get_run_themes_0 (test.tests.TestAPI) ... ok
+test_get_run_themes_1 (test.tests.TestAPI) ... ok
+test_get_run_themes_2 (test.tests.TestAPI) ... ok
+test_get_runs (test.tests.TestAPI) ... ok
+test_get_runs_slash (test.tests.TestAPI) ... ok
+test_get_themes (test.tests.TestAPI) ... ok
+test_get_themes_slash (test.tests.TestAPI) ... ok
+test_locations (test.tests.TestAPI) ... ok
+test_locations_by_id_0 (test.tests.TestAPI) ... ok
+test_locations_by_id_1 (test.tests.TestAPI) ... ok
+test_locations_by_id_2 (test.tests.TestAPI) ... ok
+test_locations_by_id_3 (test.tests.TestAPI) ... ok
+test_root (test.tests.TestAPI) ... ok
+test_root_slash (test.tests.TestAPI) ... ok
+test_theme_challenges_0 (test.tests.TestAPI) ... ok
+test_theme_challenges_0_slash (test.tests.TestAPI) ... ok
+test_theme_challenges_1 (test.tests.TestAPI) ... ok
+test_theme_challenges_2 (test.tests.TestAPI) ... ok
+test_theme_run_0 (test.tests.TestAPI) ... ok
+test_theme_run_1 (test.tests.TestAPI) ... ok
+test_theme_run_2 (test.tests.TestAPI) ... ok
+test_themes_by_id_0 (test.tests.TestAPI) ... ok
+test_themes_by_id_0_slash (test.tests.TestAPI) ... ok
+test_themes_by_id_1 (test.tests.TestAPI) ... ok
+test_themes_by_id_1_slash (test.tests.TestAPI) ... ok
+test_themes_by_id_2 (test.tests.TestAPI) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 1.759s
+
+OK
