@@ -17,7 +17,7 @@ check_file "UML.pdf"
 check_file "apiary.apib"
 check_file "IDB.log"
 check_file "Report.pdf"
-cd..
+cd ..
 
 cd app
 check_file "funruns.py"
