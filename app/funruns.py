@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify, url_for, redirect
 from api import funruns_api
-# from test_functions import runTests
+from test_functions import runTests
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
@@ -36,13 +36,16 @@ def about():
 @app.route('/tech')
 def tech():
     # output = runTests()
-    return render_template('tech.html') 
+    # print(output)
+    runTests()
+    output = open('testOutput.txt', 'r').read()
+    return render_template('tech.html', output = output) 
 
 @app.route('/funruns/<runID>')
 def funruntempl(runID):
     return render_template('funruntempl.html', runID = runID)
 
-@app.route('/themes/<themeID>')
+@app.route('/themes/<themeID>') 
 def themetempl(themeID):
     return render_template('themetempl.html', themeID = themeID)
 
