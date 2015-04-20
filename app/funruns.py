@@ -38,7 +38,7 @@ def tech():
     # output = runTests()
     # print(output)
     runTests()
-    output = open('testOutput.txt', 'r').read()
+    output = open('test_output.txt', 'r').read()
     return render_template('tech.html', output = output) 
 
 @app.route('/funruns/<runID>')

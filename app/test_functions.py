@@ -13,7 +13,7 @@ def runTests():
 	# return stream.read()
 	print("****************************** TESTS RUNNING ******************************")
 	# oldStdOut = sys.stdout
-	catchOutput = open('testOutput.txt', "w")
+	catchOutput = open('test_output.txt', "w")
 	# catchOutput = StringIO()
 	testCatcher = unittest.TestLoader().loadTestsFromTestCase(TestAPI)
 	unittest.TextTestRunner(stream=catchOutput, verbosity=2).run(testCatcher)
