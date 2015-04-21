@@ -21,20 +21,26 @@ cd ..
 
 cd app
 check_file "funruns.py"
+check_file "run_tests.py"
+check_file "database_commands.txt"
+check_file "test_output.txt"
+
+cd api
 check_file "api.py"
-check_file "test_functions.py"
+check_file "api_helpers.py"
+check_file "api_test.py"
+check_file "__init__.py"
+check_file "test_output.txt"
+cd ..
 
 cd models
 check_file "__init__.py"
 check_file "models.py"
 check_file "models_test.py"
 check_file "models.html"
-cd ..
-
-cd 'test'
-check_file "__init__.py"
-check_file "tests.py"
-check_file "tests.out"
+check_file "create_database.py"
+check_file "crate_db_tuples.py"
+check_file "test_output.txt"
 cd ..
 cd ..
 
@@ -42,10 +48,16 @@ cd ..
 
 echo "Running tests"
 
-coverage3 run app/test/tests.py 2> app/test/tests.out
-coverage3 run app/models/models_test.py >> app/test/tests.out
-coverage3 report -m app/test/tests.py >> app/test/tests.out
+coverage3 run app/api/api_test.py 2> app/api/test_output.txt
+coverage3 report app/api/api_test.py >> app/api/test_output.txt
 
+
+coverage3 run app/models/models_test.py 2> app/models/test_output.txt
+coverage3 report -m app/models/models_test.py >> app/models/test_output.txt
+
+
+#models_test
+#api_Tests
 
 # echo "Making pydoc3"
 

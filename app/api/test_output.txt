@@ -1,0 +1,49 @@
+test_challenge_run_0 (api.api_test.TestAPI) ... ok
+test_challenge_run_1 (api.api_test.TestAPI) ... ok
+test_challenge_run_2 (api.api_test.TestAPI) ... ok
+test_challenge_themes_0 (api.api_test.TestAPI) ... ok
+test_challenge_themes_1 (api.api_test.TestAPI) ... ok
+test_challenge_themes_2 (api.api_test.TestAPI) ... ok
+test_challenges_by_id_0 (api.api_test.TestAPI) ... ok
+test_challenges_by_id_1 (api.api_test.TestAPI) ... ok
+test_challenges_by_id_2 (api.api_test.TestAPI) ... ok
+test_get_challenges (api.api_test.TestAPI) ... ok
+test_get_challenges_slash (api.api_test.TestAPI) ... ok
+test_get_run_by_id_0 (api.api_test.TestAPI) ... ok
+test_get_run_by_id_0_slash (api.api_test.TestAPI) ... ok
+test_get_run_by_id_1 (api.api_test.TestAPI) ... ok
+test_get_run_by_id_2 (api.api_test.TestAPI) ... ok
+test_get_run_challenges_0 (api.api_test.TestAPI) ... ok
+test_get_run_challenges_1 (api.api_test.TestAPI) ... ok
+test_get_run_challenges_2 (api.api_test.TestAPI) ... ok
+test_get_run_themes_0 (api.api_test.TestAPI) ... ok
+test_get_run_themes_1 (api.api_test.TestAPI) ... ok
+test_get_run_themes_2 (api.api_test.TestAPI) ... ok
+test_get_runs (api.api_test.TestAPI) ... ok
+test_get_runs_slash (api.api_test.TestAPI) ... ok
+test_get_themes (api.api_test.TestAPI) ... ok
+test_get_themes_slash (api.api_test.TestAPI) ... ok
+test_locations (api.api_test.TestAPI) ... ok
+test_locations_by_id_0 (api.api_test.TestAPI) ... ok
+test_locations_by_id_1 (api.api_test.TestAPI) ... ok
+test_locations_by_id_2 (api.api_test.TestAPI) ... ok
+test_locations_by_id_3 (api.api_test.TestAPI) ... ok
+test_root (api.api_test.TestAPI) ... ok
+test_root_slash (api.api_test.TestAPI) ... ok
+test_theme_challenges_0 (api.api_test.TestAPI) ... ok
+test_theme_challenges_0_slash (api.api_test.TestAPI) ... ok
+test_theme_challenges_1 (api.api_test.TestAPI) ... ok
+test_theme_challenges_2 (api.api_test.TestAPI) ... ok
+test_theme_run_0 (api.api_test.TestAPI) ... ok
+test_theme_run_1 (api.api_test.TestAPI) ... ok
+test_theme_run_2 (api.api_test.TestAPI) ... ok
+test_themes_by_id_0 (api.api_test.TestAPI) ... ok
+test_themes_by_id_0_slash (api.api_test.TestAPI) ... ok
+test_themes_by_id_1 (api.api_test.TestAPI) ... ok
+test_themes_by_id_1_slash (api.api_test.TestAPI) ... ok
+test_themes_by_id_2 (api.api_test.TestAPI) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.223s
+
+OK
