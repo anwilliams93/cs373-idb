@@ -39,7 +39,6 @@ check_file "models.py"
 check_file "models_test.py"
 check_file "models.html"
 check_file "create_database.py"
-check_file "crate_db_tuples.py"
 check_file "test_output.txt"
 cd ..
 cd ..
