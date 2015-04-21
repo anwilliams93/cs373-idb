@@ -42,8 +42,10 @@ cd ..
 
 echo "Running tests"
 
-coverage run app/test/tests.py 2> app/test/tests.out
-coverage report -m app/models/models_test.py >> app/test/tests.out
+coverage3 run app/test/tests.py 2> app/test/tests.out
+coverage3 run app/models/models_test.py >> app/test/tests.out
+coverage report -m app/test/tests.py >> app/test/tests.out
+
 
 # echo "Making pydoc3"
 
