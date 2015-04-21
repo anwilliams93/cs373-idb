@@ -1,4 +1,5 @@
 from api.api_test import TestAPI
+from models.models_test import TestDBModels
 import unittest
 import sys
 from io import StringIO
@@ -13,15 +14,22 @@ def runTests():
 	# return stream.read()
 	print("****************************** TESTS RUNNING ******************************")
 	# oldStdOut = sys.stdout
-	catchOutput = open('test_output.txt', "w")
-	# catchOutput = StringIO()
-	testCatcher = unittest.TestLoader().loadTestsFromTestCase(TestAPI)
-	unittest.TextTestRunner(stream=catchOutput, verbosity=2).run(testCatcher)
-	# catchOutput.write("hello")
+	catch_api_output = open('api/test_output.txt', "w")
+	# catch_api_output = StringIO()
+	api_tests = unittest.TestLoader().loadTestsFromTestCase(TestAPI)
+	unittest.TextTestRunner(stream=catch_api_output, verbosity=2).run(api_tests)
+	# catch_api_output.write("hello")
 	# sys.stdout = oldStdOut
-	# print("Hi" + catchOutput.getvalue())
-	catchOutput.close()
-	# return catchOutput.getvalue()
+	# print("Hi" + catch_api_output.getvalue())
+	catch_api_output.close()
+	# return catch_api_output.getvalue()
+
+
+	# Models
+	catch_model_output = open('models/test_output.txt', "w")
+	model_tests = unittest.TestLoader().loadTestsFromTestCase(TestDBModels)
+	unittest.TextTestRunner(stream=catch_model_output, verbosity=2).run(model_tests)
+	catch_model_output.close()
 	print("****************************** TESTS DONE ******************************")	
 
 

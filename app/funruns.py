@@ -44,8 +44,9 @@ def tech():
     # output = runTests()
     # print(output)
     runTests()
-    output = open('api/test_output.txt', 'r').read()
-    return render_template('tech.html', output = output) 
+    api_output = open('api/test_output.txt', 'r').read()
+    model_output = open('models/test_output.txt', 'r').read()
+    return render_template('tech.html', api_output = api_output, model_output = model_output) 
 
 @app.route('/funruns/<runID>')
 def funruntempl(runID):
