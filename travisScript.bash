@@ -48,14 +48,13 @@ cd ..
 echo "Running tests"
 
 coverage3 run app/api/api_test.py 2> app/api/test_output.txt
-coverage3 report app/api/api_test.py >> app/api/test_output.txt
+coverage3 report app/api/*.py >> app/api/test_output.txt
 
 
 coverage3 run app/models/models_test.py 2> app/models/test_output.txt
-coverage3 report -m app/models/models_test.py >> app/models/test_output.txt
+coverage3 report -m app/models/*.py >> app/models/test_output.txt
 
 
-#models_test
 #api_Tests
 
 # echo "Making pydoc3"
