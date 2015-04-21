@@ -1,0 +1,39 @@
+INFO  - 2015-04-21 00:57:05.277; [   ] org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2015-04-21 00:57:05.321; [   ] org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor /home/bear/cs373-idb/solr/server/contexts at interval 0
+INFO  - 2015-04-21 00:57:05.327; [   ] org.eclipse.jetty.deploy.DeploymentManager; Deployable added: /home/bear/cs373-idb/solr/server/contexts/solr-jetty-context.xml
+INFO  - 2015-04-21 00:57:05.422; [   ] org.eclipse.jetty.webapp.WebInfConfiguration; Extract jar:file:/home/bear/cs373-idb/solr/server/webapps/solr.war!/ to /home/bear/cs373-idb/solr/server/solr-webapp/webapp
+INFO  - 2015-04-21 00:57:07.707; [   ] org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2015-04-21 00:57:07.841; [   ] org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()WebAppClassLoader=1721979929@66a35419
+INFO  - 2015-04-21 00:57:07.865; [   ] org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2015-04-21 00:57:07.865; [   ] org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /home/bear/cs373-idb/solr/server/solr
+INFO  - 2015-04-21 00:57:07.870; [   ] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/home/bear/cs373-idb/solr/server/solr/'
+INFO  - 2015-04-21 00:57:08.066; [   ] org.apache.solr.core.SolrXmlConfig; Loading container configuration from /home/bear/cs373-idb/solr/server/solr/solr.xml
+INFO  - 2015-04-21 00:57:08.293; [   ] org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /home/bear/cs373-idb/solr/server/solr
+INFO  - 2015-04-21 00:57:08.317; [   ] org.apache.solr.core.CoreContainer; New CoreContainer 1145794654
+INFO  - 2015-04-21 00:57:08.318; [   ] org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=/home/bear/cs373-idb/solr/server/solr/]
+INFO  - 2015-04-21 00:57:08.318; [   ] org.apache.solr.core.CoreContainer; loading shared library: /home/bear/cs373-idb/solr/server/solr/lib
+WARN  - 2015-04-21 00:57:08.318; [   ] org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: lib (resolved as: /home/bear/cs373-idb/solr/server/solr/lib).
+INFO  - 2015-04-21 00:57:08.341; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 600000
+INFO  - 2015-04-21 00:57:08.343; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: null
+INFO  - 2015-04-21 00:57:08.347; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 60000
+INFO  - 2015-04-21 00:57:08.347; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2015-04-21 00:57:08.348; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnections to: 10000
+INFO  - 2015-04-21 00:57:08.348; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2015-04-21 00:57:08.348; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2015-04-21 00:57:08.348; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2015-04-21 00:57:08.349; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2015-04-21 00:57:08.349; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2015-04-21 00:57:08.349; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; Setting useRetries to: false
+INFO  - 2015-04-21 00:57:08.723; [   ] org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+INFO  - 2015-04-21 00:57:08.725; [   ] org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2015-04-21 00:57:08.726; [   ] org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2015-04-21 00:57:08.727; [   ] org.apache.solr.core.CoreContainer; Node Name: 
+INFO  - 2015-04-21 00:57:08.759; [   ] org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /home/bear/cs373-idb/solr/server/solr
+INFO  - 2015-04-21 00:57:08.768; [   ] org.apache.solr.core.CorePropertiesLocator; Found 0 core definitions
+INFO  - 2015-04-21 00:57:08.770; [   ] org.apache.solr.servlet.SolrDispatchFilter; user.dir=/home/bear/cs373-idb/solr/server
+INFO  - 2015-04-21 00:57:08.770; [   ] org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2015-04-21 00:57:08.819; [   ] org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2015-04-21 00:57:15.333; [   ] org.eclipse.jetty.server.Server; Graceful shutdown SocketConnector@0.0.0.0:8983
+INFO  - 2015-04-21 00:57:15.337; [   ] org.eclipse.jetty.server.Server; Graceful shutdown o.e.j.w.WebAppContext{/solr,file:/home/bear/cs373-idb/solr/server/solr-webapp/webapp/},/home/bear/cs373-idb/solr/server/webapps/solr.war
+INFO  - 2015-04-21 00:57:16.338; [   ] org.apache.solr.core.CoreContainer; Shutting down CoreContainer instance=1145794654
+INFO  - 2015-04-21 00:57:16.346; [   ] org.eclipse.jetty.server.handler.ContextHandler; stopped o.e.j.w.WebAppContext{/solr,file:/home/bear/cs373-idb/solr/server/solr-webapp/webapp/},/home/bear/cs373-idb/solr/server/webapps/solr.war

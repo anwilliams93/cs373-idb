@@ -1,6 +1,12 @@
 from flask import Flask, render_template, jsonify, url_for, redirect
-from api import funruns_api
-from test_functions import runTests
+import sys
+
+# So can find files :)
+sys.path.append("api")
+sys.path.append("models")
+
+from api.api import funruns_api
+from run_tests import runTests
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
@@ -38,7 +44,7 @@ def tech():
     # output = runTests()
     # print(output)
     runTests()
-    output = open('test_output.txt', 'r').read()
+    output = open('api/test_output.txt', 'r').read()
     return render_template('tech.html', output = output) 
 
 @app.route('/funruns/<runID>')
