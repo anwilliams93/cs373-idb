@@ -47,12 +47,12 @@ cd ..
 
 echo "Running tests"
 
-coverage3 run app/api/api_test.py 2> app/api/test_output.txt
-coverage3 report -m 			  >> app/api/test_output.txt
+coverage run app/api/api_test.py 2> app/api/test_output.txt
+coverage report -m 			  >> app/api/test_output.txt
 
 
-coverage3 run app/models/models_test.py 2> app/models/test_output.txt
-coverage3 report -m 					 >> app/models/test_output.txt
+coverage run app/models/models_test.py 2> app/models/test_output.txt
+coverage report -m 					 >> app/models/test_output.txt
 
 
 #api_Tests
