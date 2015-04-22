@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fun Runs 2015: Tests</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS
+================================================== -->
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-responsive.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/prettyPhoto.css') }}" />
+<link rel="stylesheet" href="{{ url_for('static', filename='css/custom-styles.css') }}">
+
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="css/style-ie.css"/>
+<![endif]--> 
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/icon.png') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/icon.png') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/icon.png') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/icon.png') }}">
+
+<!-- Favicons
+================================================== -->
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+<link rel="apple-touch-icon" href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='img/apple-touch-icon-72x72.png') }}">
+<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='img/apple-touch-icon-114x114.png') }}">
+
+<!-- JS
+================================================== -->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.custom.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.prettyPhoto.js') }}"></script>
+<script type="text/javascript">
+     $(window).load(function(){
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+    });  
+});
+</script>
+
+<body>
+    <div class="color-bar-1"></div>
+    <div class="color-bar-2 color-bg"></div>
+    
+    <div class="container main-container">
+    
+      <div class="row header"><!-- Begin Header -->
+      
+        <!-- Logo
+        ================================================== -->
+        <div class="span5 logo">
+            <h1>Fun Runs 2k15: Tests</h1>
+        </div>
+        
+        <!-- Main Navigation
+        ================================================== -->
+        <div class="span7 navigation">
+          <div class="navbar hidden-phone">
+          
+            <ul class="nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/funruns">Fun Runs</a></li>
+              <li><a href="/themes">Fun Themes</a></li>
+              <li><a href="/challenges">Fun Challenges</a></li>
+              <li><a href="/locations">Fun Locations</a></li>
+              <li class="active"><a href="/tech">Technical</a></li>
+              <li><a href="/about">About</a></li>
+            </ul>
+         
+          </div>
+
+            <!-- Mobile Nav
+            ================================================== -->
+            <form action="#" id="mobile-nav" class="visible-phone">
+              <div class="mobile-nav-select">
+                <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+                    <option value="">Navigate...</option>
+                    <option value="/">Home</option>
+                    <option value="/funruns">Fun Runs</option>
+                    <option value="/themes">Fun Themes</option>
+                    <option value="/challenges">Fun Challenges</option>
+                    <option value="/locations">Fun Locations</option>
+                    <option value="/tech">Technical</option>
+                    <option value="/about">About</option>
+                </select>
+              </div>
+            </form>
+            
+        </div>
+      
+    </div><!-- End Header -->
+
+
+     
+    <!-- Page Content
+    ================================================== --> 
+    
+    <!-- Title Header -->
+
+    <h2 class="title-bg">NBA API</h2>
+    <div class="row">
+        <div class="span12">
+            <h3>Hollinger Scores for teams and players</h3>
+            <Li>John Hollinger is currently the Vice President of Basketball Operations for the Memphis Grizzlies and has worked as an analyst for ESPN. During the late 90s, he developed the Player Efficiency Rating (PER) which attempts to combine all of a player's contributions into one number. Hollinger later developed a simpler formula as an extension to the PER as an attempt to quantify a player's performance in a given game. Instead of applying it to players, we used this simpler formula with the NBA DB API to find the most efficient teams in a given season<li>
+            
+            <Li><strong>Top 5 teams for 2012</strong><li>
+            <p>Denver Nuggets 75.48</p>
+            <p>Oklahoma City Thunder 75.39</p>
+            <p>San Antonio Spurs 71.91</p>
+            <p>Miami Heat 71.91</p>
+            <p>Los Angeles Clippers 69.83</p>
+
+            <Li><strong>Top 5 teams for 2013</strong><li>
+            <p>San Antonio Spurs 73.53</p>
+            <p>Los Angeles Clippers 73.01</p>
+            <p>Minnesota Timberwolves 71.87</p>
+            <p>Dallas Mavericks 70.87</p>
+            <p>Oklahoma City Thunder 70.80</p>
+
+            <Li><strong>Top 5 teams for 2014</strong><li>
+            <p>Golden State Warriors 77.07</p>
+            <p>Los Angeles Clippers 70.49</p>
+            <p>San Antonio Spurs 69.22</p>
+            <p>Atlanta Hawks 68.69</p>
+            <p>Memphis Grizzlies 68.00</p>
+
+        </div>
+    </div>   
+</div>         
+    
+    <!-- Footer Area
+        ================================================== -->
+
+  <div class="footer-container hidden-phone hidden-tablet"><!-- Begin Footer -->
+      <div class="container">
+        <br/>
+            <div class="row"><!-- Begin Sub Footer -->
+                <div class="span12 footer-col footer-sub">
+                    <div class="row no-margin">
+                        <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
+                        <div class="span6">
+                            <span class="right">
+                            <a href="/">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/funruns">Fun Events</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/themes">Fun Themes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/challenges">Fun Challenges</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/locations">Fun Locations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/tech">Technical</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/about">About</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End Sub Footer -->
+
+        </div>
+    </div><!-- End Footer -->
+    
+    <!-- Scroll to Top -->  
+    <div id="toTop" class="hidden-phone hidden-tablet">Back to Top</div>
+    
+</body>
+</html>
