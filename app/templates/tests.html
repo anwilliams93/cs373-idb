@@ -51,6 +51,12 @@
     });  
 });
 </script>
+<script type="text/javascript">
+function validate(){
+    if (returnvalue=="test") alert(test)
+    else alert ("unsuccessful")
+}
+</script>
 
 <body>
     <div class="color-bar-1"></div>
@@ -116,7 +122,8 @@
         <div class="span12">
             <h3>RESTful API TESTS</h3>
             <pre>{{ api_output }}</pre>
-
+            <button id="myButton" onclick="getResults()">RESULTS</button>
+            </button>
             <h3>Model Tests</h3>
             <pre>{{ model_output }}</pre>
         </div>

@@ -72,6 +72,13 @@ def tests():
     model_file.close()
     return render_template('tests.html', api_output = api_output, model_output = model_output)
 
+@app.route('/tests/apiTests', methods = ['GET'])
+def apiTests():
+    runTests()
+    api_file = open('api/test_output.txt', 'r')
+    api_output = api_file.read()
+    api_file.close()
+    return jsonify({'api_output': api_output})
 ### REST API CALLS ###
 
 # @app.route('/api/funruns', methods=['GET'])
