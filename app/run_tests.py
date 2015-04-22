@@ -14,10 +14,11 @@ def runTests():
 	# return stream.read()
 	print("****************************** TESTS RUNNING ******************************")
 	# oldStdOut = sys.stdout
-	catch_api_output = open('api/test_output.txt', "w")
+	# catch_api_output = open('api/test_output.txt', "w")
 	# catch_api_output = StringIO()
 	api_tests = unittest.TestLoader().loadTestsFromTestCase(TestAPI)
-	unittest.TextTestRunner(stream=catch_api_output, verbosity=2).run(api_tests)
+	# unittest.TextTestRunner(stream=catch_api_output, verbosity=2).run(api_tests)
+	unittest.TextTestRunner(stream=sys.stdout, verbosity=2).run(api_tests)
 	# catch_api_output.write("hello")
 	# sys.stdout = oldStdOut
 	# print("Hi" + catch_api_output.getvalue())
@@ -26,7 +27,7 @@ def runTests():
 
 
 	# Models
-	catch_model_output = open('models/test_output.txt', "w")
+	# catch_model_output = open('models/test_output.txt', "w")
 	model_tests = unittest.TestLoader().loadTestsFromTestCase(TestDBModels)
 	unittest.TextTestRunner(stream=catch_model_output, verbosity=2).run(model_tests)
 	catch_model_output.close()

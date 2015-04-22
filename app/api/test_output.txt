@@ -49,7 +49,7 @@ FAIL: test_challenge_run_0 (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 4296, in test_challenge_run_0
     self.assertEqual(response_object, expected)
-AssertionError: {'funruns': [{'challenges': [0, 3, 5, 8, 9, 11, 12, 13],[4800 chars]d'}]} != {'funruns': [{'imgs': ['/static/img/runTempl/wipeout1.jp[4719 chars]e'}]}
+AssertionError: {'fun[298 chars]!', 'short': 'Try out the obstacles from the h[4507 chars]1'}]} != {'fun[298 chars]!', 'city': 'Baltimore, Maryland', 'short': 'T[4426 chars]1'}]}
 Diff is 7411 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
@@ -58,7 +58,7 @@ FAIL: test_challenge_run_1 (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 4498, in test_challenge_run_1
     self.assertEqual(response_object, expected)
-AssertionError: {'funruns': [{'challenges': [1, 2], 'date': 'December 5t[9174 chars]K'}]} != {'funruns': [{'imgs': ['/static/img/runTempl/christmasst[9034 chars]s'}]}
+AssertionError: {'fun[483 chars].", 'short': 'Experience the classic movie "A [8696 chars]4'}]} != {'fun[483 chars].", 'city': 'Cleveland, Ohio', 'short': 'Exper[8556 chars]4'}]}
 Diff is 14223 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
@@ -67,7 +67,7 @@ FAIL: test_challenge_run_2 (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 4669, in test_challenge_run_2
     self.assertEqual(response_object, expected)
-AssertionError: {'funruns': [{'challenges': [1, 2], 'date': 'December 5t[7123 chars]K'}]} != {'funruns': [{'imgs': ['/static/img/runTempl/christmasst[7010 chars]s'}]}
+AssertionError: {'fun[483 chars].", 'short': 'Experience the classic movie "A [6645 chars]4'}]} != {'fun[483 chars].", 'city': 'Cleveland, Ohio', 'short': 'Exper[6532 chars]4'}]}
   {'funruns': [{'address': 'Cleveland Public Square\nCleveland, OH 44113',
                 'challenges': [1, 2],
                 'charities': 'A Christmas Story House Foundation, Inc. '
@@ -237,7 +237,7 @@ FAIL: test_get_run_by_id_0 (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 1045, in test_get_run_by_id_0
     self.assertEqual(response_object, expected)
-AssertionError: {'funruns': {'challenges': [0, 3, 5, 8, 9, 11, 12, 13],[1582 chars]5K'}} != {'funruns': {'imgs': ['/static/img/runTempl/wipeout1.jp[1556 chars]nd'}}
+AssertionError: {'fun[297 chars]!', 'short': 'Try out the obstacles from the h[1289 chars]01'}} != {'fun[297 chars]!', 'city': 'Baltimore, Maryland', 'short': 'T[1263 chars]01'}}
 Diff is 2418 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
@@ -246,7 +246,7 @@ FAIL: test_get_run_by_id_0_slash (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 1095, in test_get_run_by_id_0_slash
     self.assertEqual(response_object, expected)
-AssertionError: {'funruns': {'challenges': [0, 3, 5, 8, 9, 11, 12, 13],[1582 chars]5K'}} != {'funruns': {'imgs': ['/static/img/runTempl/wipeout1.jp[1556 chars]nd'}}
+AssertionError: {'fun[297 chars]!', 'short': 'Try out the obstacles from the h[1289 chars]01'}} != {'fun[297 chars]!', 'city': 'Baltimore, Maryland', 'short': 'T[1263 chars]01'}}
 Diff is 2418 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
@@ -255,7 +255,7 @@ FAIL: test_get_run_by_id_1 (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 1141, in test_get_run_by_id_1
     self.assertEqual(response_object, expected)
-AssertionError: {'funruns': {'challenges': [1, 2], 'date': 'December 5t[1898 chars]0K'}} != {'funruns': {'imgs': ['/static/img/runTempl/christmasst[1868 chars]io'}}
+AssertionError: {'fun[482 chars].", 'short': 'Experience the classic movie "A [1420 chars]13'}} != {'fun[482 chars].", 'city': 'Cleveland, Ohio', 'short': 'Exper[1390 chars]13'}}
 Diff is 2875 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
@@ -264,7 +264,7 @@ FAIL: test_get_run_by_id_2 (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 1187, in test_get_run_by_id_2
     self.assertEqual(response_object, expected)
-AssertionError: {'funruns': {'challenges': [1, 2], 'date': 'November 26[1846 chars]mi'}} != {'funruns': {'imgs': ['/static/img/runTempl/dallasturke[1815 chars]as'}}
+AssertionError: {'fun[323 chars].", 'short': 'Run in the largest Thanksgiving [1527 chars]01'}} != {'fun[323 chars].", 'city': 'Dallas, Texas', 'short': 'Run in [1496 chars]01'}}
 Diff is 2807 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
@@ -273,7 +273,7 @@ FAIL: test_get_runs (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 517, in test_get_runs
     self.assertEqual(response_object, expected)
-AssertionError: {'funruns': [{'challenges': [0, 3, 5, 8, 9, 11, 12, 13],[20611 chars]d'}]} != {'funruns': [{'imgs': ['/static/img/runTempl/wipeout1.jp[20287 chars]e'}]}
+AssertionError: {'fun[298 chars]!', 'short': 'Try out the obstacles from the h[20318 chars]1'}]} != {'fun[298 chars]!', 'city': 'Baltimore, Maryland', 'short': 'T[19994 chars]1'}]}
 Diff is 31698 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
@@ -282,7 +282,7 @@ FAIL: test_get_runs_slash (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 994, in test_get_runs_slash
     self.assertEqual(response_object, expected)
-AssertionError: {'funruns': [{'challenges': [0, 3, 5, 8, 9, 11, 12, 13],[20611 chars]d'}]} != {'funruns': [{'imgs': ['/static/img/runTempl/wipeout1.jp[20287 chars]e'}]}
+AssertionError: {'fun[298 chars]!', 'short': 'Try out the obstacles from the h[20318 chars]1'}]} != {'fun[298 chars]!', 'city': 'Baltimore, Maryland', 'short': 'T[19994 chars]1'}]}
 Diff is 31698 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
@@ -291,7 +291,7 @@ FAIL: test_theme_run_0 (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 2562, in test_theme_run_0
     self.assertEqual(response_object, expected)
-AssertionError: {'themes': [{'challenges': [1, 2], 'date': 'December 5t[3794 chars]i'}]} != {'themes': [{'imgs': ['/static/img/runTempl/christmasst[3733 chars]s'}]}
+AssertionError: {'the[482 chars].", 'short': 'Experience the classic movie "A [3316 chars]1'}]} != {'the[482 chars].", 'city': 'Cleveland, Ohio', 'short': 'Exper[3255 chars]1'}]}
 Diff is 5716 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
@@ -300,7 +300,7 @@ FAIL: test_theme_run_1 (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 2702, in test_theme_run_1
     self.assertEqual(response_object, expected)
-AssertionError: {'themes': [{'challenges': [0, 3, 5, 8, 9, 11, 12, 13],[5243 chars]K'}]} != {'themes': [{'imgs': ['/static/img/runTempl/wipeout1.jp[5166 chars]a'}]}
+AssertionError: {'the[297 chars]!', 'short': 'Try out the obstacles from the h[4950 chars]3'}]} != {'the[297 chars]!', 'city': 'Baltimore, Maryland', 'short': 'T[4873 chars]3'}]}
 Diff is 8172 characters long. Set self.maxDiff to None to see it.
 
 ======================================================================
@@ -309,10 +309,10 @@ FAIL: test_theme_run_2 (api.api_test.TestAPI)
 Traceback (most recent call last):
   File "./api/api_test.py", line 2904, in test_theme_run_2
     self.assertEqual(response_object, expected)
-AssertionError: {'themes': [{'challenges': [1, 2], 'date': 'December 5t[9174 chars]K'}]} != {'themes': [{'imgs': ['/static/img/runTempl/christmasst[9034 chars]s'}]}
+AssertionError: {'the[482 chars].", 'short': 'Experience the classic movie "A [8696 chars]4'}]} != {'the[482 chars].", 'city': 'Cleveland, Ohio', 'short': 'Exper[8556 chars]4'}]}
 Diff is 13891 characters long. Set self.maxDiff to None to see it.
 
 ----------------------------------------------------------------------
-Ran 44 tests in 0.934s
+Ran 44 tests in 2.342s
 
 FAILED (failures=12)

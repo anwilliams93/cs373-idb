@@ -1,1 +1,28 @@
-test_add_challenge (models.models_test.TestDBModels) ... 
+test_add_challenge (models.models_test.TestDBModels) ... ok
+test_add_funrun (models.models_test.TestDBModels) ... ok
+test_add_location (models.models_test.TestDBModels) ... ok
+test_add_themes (models.models_test.TestDBModels) ... ok
+test_challenges (models.models_test.TestDBModels) ... ok
+test_fun_challenge_relationship_1 (models.models_test.TestDBModels) ... ok
+test_fun_challenge_relationship_2 (models.models_test.TestDBModels) ... ok
+test_fun_challenge_relationship_3 (models.models_test.TestDBModels) ... ok
+test_fun_location_relationship_1 (models.models_test.TestDBModels) ... ok
+test_fun_location_relationship_2 (models.models_test.TestDBModels) ... ok
+test_fun_location_relationship_3 (models.models_test.TestDBModels) ... ok
+test_fun_location_relationship_4 (models.models_test.TestDBModels) ... ok
+test_fun_theme_relationship_1 (models.models_test.TestDBModels) ... ok
+test_fun_theme_relationship_2 (models.models_test.TestDBModels) ... ok
+test_fun_theme_relationship_3 (models.models_test.TestDBModels) ... ok
+test_fun_theme_relationship_4 (models.models_test.TestDBModels) ... ok
+test_funrun (models.models_test.TestDBModels) ... ok
+test_location (models.models_test.TestDBModels) ... ok
+test_theme_challenge_relationship_1 (models.models_test.TestDBModels) ... ok
+test_theme_challenge_relationship_2 (models.models_test.TestDBModels) ... ok
+test_theme_challenge_relationship_3 (models.models_test.TestDBModels) ... ok
+test_theme_challenge_relationship_4 (models.models_test.TestDBModels) ... ok
+test_themes (models.models_test.TestDBModels) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.160s
+
+OK

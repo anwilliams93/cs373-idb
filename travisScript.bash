@@ -58,12 +58,12 @@ coverage report -m 					 >> app/models/test_output.txt
 #api_Tests
 
 # echo "Making pydoc3"
-
+echo "Documentation"
 # #need to do this 
-# sphinx-apidoc . --full -o documentation -H 'Funruns' -A 'FlaskMeAnything' -V '1.0'
-# cd documentation
-# make html
-# cd ..
+sphinx-apidoc . --full -o documentation -H 'Funruns' -A 'FlaskMeAnything' -V '1.0'
+cd documentation
+make html
+cd ..
 
 
 # echo "Making IDB.log"
