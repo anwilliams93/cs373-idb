@@ -14,22 +14,35 @@ def runTests():
 	# return stream.read()
 	print("****************************** TESTS RUNNING ******************************")
 	# oldStdOut = sys.stdout
-	# catch_api_output = open('api/test_output.txt', "w")
+	catch_api_output = open('api/test_output.txt', "w")
+	print("****************************** TESTS RUNNING ******************************")
+
 	# catch_api_output = StringIO()
 	api_tests = unittest.TestLoader().loadTestsFromTestCase(TestAPI)
-	# unittest.TextTestRunner(stream=catch_api_output, verbosity=2).run(api_tests)
-	unittest.TextTestRunner(stream=sys.stdout, verbosity=2).run(api_tests)
+	print("****************************** TESTS RUNNING ******************************")
+
+	unittest.TextTestRunner(stream=catch_api_output, verbosity=2).run(api_tests)
+	print("****************************** TESTS RUNNING ******************************")
+
 	# catch_api_output.write("hello")
 	# sys.stdout = oldStdOut
 	# print("Hi" + catch_api_output.getvalue())
 	catch_api_output.close()
+	print("****************************** TESTS RUNNING ******************************")
+
 	# return catch_api_output.getvalue()
 
 
 	# Models
-	# catch_model_output = open('models/test_output.txt', "w")
+	catch_model_output = open('models/test_output.txt', "w")
+	print("****************************** TESTS RUNNING ******************************")
+
 	model_tests = unittest.TestLoader().loadTestsFromTestCase(TestDBModels)
+	print("****************************** TESTS RUNNING ******************************")
+
 	unittest.TextTestRunner(stream=catch_model_output, verbosity=2).run(model_tests)
+	print("****************************** TESTS RUNNING ******************************")
+
 	catch_model_output.close()
 	print("****************************** TESTS DONE ******************************")	
 

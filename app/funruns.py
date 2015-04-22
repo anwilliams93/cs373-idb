@@ -41,16 +41,7 @@ def about():
 
 @app.route('/tech')
 def tech():
-    # output = runTests()
-    # print(output)
-    runTests()
-    api_file = open('api/test_output.txt', 'r')
-    api_output = api_file.read()
-    api_file.close()
-    model_file = open('models/test_output.txt', 'r')
-    model_output = model_file.read()
-    model_file.close()
-    return render_template('tech.html', api_output = api_output, model_output = model_output) 
+    return render_template('tech.html') 
 
 @app.route('/funruns/<runID>')
 def funruntempl(runID):
@@ -67,6 +58,19 @@ def challengetempl(challengeID):
 @app.route('/locations/<locationID>')
 def locationtempl(locationID):
     return render_template('locationtempl.html', locationID = locationID)
+
+@app.route('/tests')
+def tests():
+    # output = runTests()
+    # print(output)
+    runTests()
+    api_file = open('api/test_output.txt', 'r')
+    api_output = api_file.read()
+    api_file.close()
+    model_file = open('models/test_output.txt', 'r')
+    model_output = model_file.read()
+    model_file.close()
+    return render_template('tests.html', api_output = api_output, model_output = model_output)
 
 ### REST API CALLS ###
 
