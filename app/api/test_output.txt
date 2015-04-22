@@ -1,6 +1,6 @@
-test_challenge_run_0 (api.api_test.TestAPI) ... ok
-test_challenge_run_1 (api.api_test.TestAPI) ... ok
-test_challenge_run_2 (api.api_test.TestAPI) ... ok
+test_challenge_run_0 (api.api_test.TestAPI) ... FAIL
+test_challenge_run_1 (api.api_test.TestAPI) ... FAIL
+test_challenge_run_2 (api.api_test.TestAPI) ... FAIL
 test_challenge_themes_0 (api.api_test.TestAPI) ... ok
 test_challenge_themes_1 (api.api_test.TestAPI) ... ok
 test_challenge_themes_2 (api.api_test.TestAPI) ... ok
@@ -9,18 +9,18 @@ test_challenges_by_id_1 (api.api_test.TestAPI) ... ok
 test_challenges_by_id_2 (api.api_test.TestAPI) ... ok
 test_get_challenges (api.api_test.TestAPI) ... ok
 test_get_challenges_slash (api.api_test.TestAPI) ... ok
-test_get_run_by_id_0 (api.api_test.TestAPI) ... ok
-test_get_run_by_id_0_slash (api.api_test.TestAPI) ... ok
-test_get_run_by_id_1 (api.api_test.TestAPI) ... ok
-test_get_run_by_id_2 (api.api_test.TestAPI) ... ok
+test_get_run_by_id_0 (api.api_test.TestAPI) ... FAIL
+test_get_run_by_id_0_slash (api.api_test.TestAPI) ... FAIL
+test_get_run_by_id_1 (api.api_test.TestAPI) ... FAIL
+test_get_run_by_id_2 (api.api_test.TestAPI) ... FAIL
 test_get_run_challenges_0 (api.api_test.TestAPI) ... ok
 test_get_run_challenges_1 (api.api_test.TestAPI) ... ok
 test_get_run_challenges_2 (api.api_test.TestAPI) ... ok
 test_get_run_themes_0 (api.api_test.TestAPI) ... ok
 test_get_run_themes_1 (api.api_test.TestAPI) ... ok
 test_get_run_themes_2 (api.api_test.TestAPI) ... ok
-test_get_runs (api.api_test.TestAPI) ... ok
-test_get_runs_slash (api.api_test.TestAPI) ... ok
+test_get_runs (api.api_test.TestAPI) ... FAIL
+test_get_runs_slash (api.api_test.TestAPI) ... FAIL
 test_get_themes (api.api_test.TestAPI) ... ok
 test_get_themes_slash (api.api_test.TestAPI) ... ok
 test_locations (api.api_test.TestAPI) ... ok
@@ -34,16 +34,285 @@ test_theme_challenges_0 (api.api_test.TestAPI) ... ok
 test_theme_challenges_0_slash (api.api_test.TestAPI) ... ok
 test_theme_challenges_1 (api.api_test.TestAPI) ... ok
 test_theme_challenges_2 (api.api_test.TestAPI) ... ok
-test_theme_run_0 (api.api_test.TestAPI) ... ok
-test_theme_run_1 (api.api_test.TestAPI) ... ok
-test_theme_run_2 (api.api_test.TestAPI) ... ok
+test_theme_run_0 (api.api_test.TestAPI) ... FAIL
+test_theme_run_1 (api.api_test.TestAPI) ... FAIL
+test_theme_run_2 (api.api_test.TestAPI) ... FAIL
 test_themes_by_id_0 (api.api_test.TestAPI) ... ok
 test_themes_by_id_0_slash (api.api_test.TestAPI) ... ok
 test_themes_by_id_1 (api.api_test.TestAPI) ... ok
 test_themes_by_id_1_slash (api.api_test.TestAPI) ... ok
 test_themes_by_id_2 (api.api_test.TestAPI) ... ok
 
+======================================================================
+FAIL: test_challenge_run_0 (api.api_test.TestAPI)
 ----------------------------------------------------------------------
-Ran 44 tests in 0.223s
+Traceback (most recent call last):
+  File "./api/api_test.py", line 4296, in test_challenge_run_0
+    self.assertEqual(response_object, expected)
+AssertionError: {'funruns': [{'imgs': ['/static/img/runTempl/wipeout1.jpg[4799 chars].'}]} != {'funruns': [{'id': 0, 'quotes': ["Seriously, best race I[4718 chars]p'}]}
+Diff is 7411 characters long. Set self.maxDiff to None to see it.
 
-OK
+======================================================================
+FAIL: test_challenge_run_1 (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 4498, in test_challenge_run_1
+    self.assertEqual(response_object, expected)
+AssertionError: {'funruns': [{'imgs': ['/static/img/runTempl/christmassto[9173 chars]!'}]} != {'funruns': [{'id': 1, 'quotes': ['I was so excited to ge[9033 chars]/'}]}
+Diff is 14223 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_challenge_run_2 (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 4669, in test_challenge_run_2
+    self.assertEqual(response_object, expected)
+AssertionError: {'funruns': [{'imgs': ['/static/img/runTempl/christmassto[7122 chars]!'}]} != {'funruns': [{'id': 1, 'quotes': ['I was so excited to ge[7009 chars]/'}]}
+  {'funruns': [{'address': 'Cleveland Public Square\nCleveland, OH 44113',
+                'challenges': [1, 2],
+                'charities': 'A Christmas Story House Foundation, Inc. '
+                             'Cleveland Home Restoration Projects',
+                'city': 'Cleveland, Ohio',
+-               'date': 'December 5th, 2015',
+                'description': 'The movie producers must have been runners, '
+                               'because the distance between the former '
+                               "Higbee's Department Store and the A "
+                               'Christmas Story House and Museum is about '
+                               "5K.  Ralphie's dad, The Old Man must have "
+                               'used the 1938 Oldsmobile to track the '
+                               'distance, since there was no GPS in the '
+                               "1940's.  To accommodate both movie locations "
+                               'that made this race famous, the distance for '
+                               'the races are approximate, and perhaps a '
+                               'little shorter or longer.',
+                'distance': '5K, 10K',
+                'fb_url': 'https://www.facebook.com/AChristmasStoryRun',
+                'hosts': 'A Christmas Story House & Museum',
+                'id': 1,
+                'imgs': ['/static/img/runTempl/christmasstory1.jpg',
+                         '/static/img/runTempl/christmasstory2.jpg',
+                         '/static/img/runTempl/christmasstory3.jpg'],
+                'landing_img': '/static/img/landing/funruns/christmasStoryRunLanding.jpg',
+                'loc': 2,
+                'map_url': 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965',
+                'name': 'A Christmas Story Run',
+                'price': 'Before September 30th: $45\n'
+                         'October 1st - December 5th: $55',
+                'quotes': ['I was so excited to get my finisher medal and '
+                           'enjoy a well deserved Christmas Ale.',
+                           'Despite the crowds, it was so much fun seeing '
+                           'everyone in costume celebrating the movie and '
+                           'our city.',
+                           'All in all Pepper gives this fun run an A+!'],
+                'short': 'Experience the classic movie "A Christmas Story" '
+                         'in person.',
+                'sponsors': 'Ovaltine, Renaissance Hotels, Dannon, Walmart, '
+                            'McDonalds, The Home Depot',
+                'themes': [0, 2, 3],
+                'video_url': 'https://www.youtube.com/embed/uPiN-_p7q2k',
+                'website': 'http://achristmasstoryrun.com/'},
+               {'address': 'City Hall Plaza\n'
+                           '500 Marilla St.\n'
+                           'Dallas, TX 75201',
+                'challenges': [1, 2],
+                'charities': 'The Y Community Programs',
+                'city': 'Dallas, Texas',
+-               'date': 'November 26th, 2015',
+                'description': 'The Dallas Turkey Trot really proves that '
+                               "everything's bigger in Texas. One of the "
+                               'largest multi-event races in the country, '
+                               'this trot attracts elite runners and regular '
+                               "ol' birds alike. In fact, in 2011, it set a "
+                               'world record for the largest gathering of '
+                               'people dressed as turkeys.',
+                'distance': '5K, 8mi',
+                'fb_url': 'https://www.facebook.com/DallasYMCATrot',
+                'hosts': 'YMCA, Capital One Bank',
+                'id': 2,
+                'imgs': ['/static/img/runTempl/dallasturkey1.jpg',
+                         '/static/img/runTempl/dallasturkey2.jpg',
+                         '/static/img/runTempl/dallasturkey3.jpg'],
+                'landing_img': '/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg',
+                'loc': 1,
+                'map_url': 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.251274220785!2d-96.79709!3d32.777333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83854fdfdad6162!2sDallas+City+Hall!5e0!3m2!1sen!2sus!4v1427228610474',
+                'name': 'Dallas Turkey Trot',
+                'price': 'Before September 30th: $30\n'
+                         'September 31st - November 25th: $35\n'
+                         'November 26th: $45',
+                'quotes': ['This will be the sixth year my wife and I have '
+                           'run the Dallas Turkey Trot. We began running '
+                           'this race the first year we got married and '
+                           'have kept it a tradition every year. Love this '
+                           'race!',
+                           'This event is by far the best family friendly '
+                           'event that takes place in Dallas each year!',
+                           'I had a blast running the Turkey Trot this '
+                           "year. Even though it's my first time doing it, "
+                           'I will definitely make it a tradition every year'],
+                'short': 'Run in the largest Thanksgiving Day event of its '
+                         'kind.',
+                'sponsors': 'The Dallas Morning News, Brand Keepers, City of '
+                            'Dallas, Kroger, Nike, The Dallas Cowboys',
+                'themes': [0, 2],
+                'video_url': 'https://www.youtube.com/embed/qdnzjhWgCOg',
+                'website': 'http://thetrot.org/'},
+               {'address': 'Bouckaert Farm\n'
+                           '10045 Cedar Grove\n'
+                           'Fairburn, GA 30213',
+                'challenges': [0, 2, 3, 5, 7, 8, 9, 10, 11, 12, 13],
+                'charities': 'Wounded Warrior Project, U.S. Army',
+                'city': 'Fairburn, Georgia',
+-               'date': 'May 2nd, 2015',
+                'description': 'Tough Mudder is a team-oriented obstacle '
+                               'course designed to test physical strength '
+                               'and mental grit. It puts camaraderie over '
+                               'finisher rankings and is not a timed race '
+                               'but a team challenge that allows '
+                               'participants to experience exhilarating, yet '
+                               "safe, world-class obstacles they won't find "
+                               'anywhere else',
+                'distance': '19K',
+                'fb_url': 'https://www.facebook.com/toughmudder',
+                'hosts': 'Tough Mudder',
+                'id': 8,
+                'imgs': ['/static/img/runTempl/toughmudder1.jpg',
+                         '/static/img/runTempl/toughmudder2.jpg',
+                         '/static/img/runTempl/toughmudder3.jpg'],
+                'landing_img': '/static/img/landing/funruns/toughmudderLanding.jpg',
+                'loc': 3,
+                'map_url': 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3322.038929257956!2d-84.7159338!3d33.6302326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4d91a281b01bf%3A0x5e4b7c6398a7c91e!2s10045+Cedar+Grove+Rd%2C+Fairburn%2C+GA+30213!5e0!3m2!1sen!2sus!4v1428532369676',
+                'name': 'Tough Mudder',
+                'price': 'Before May 2nd: $185\nMay 2nd: $185',
+                'quotes': ['The teamwork and camaraderie out there was '
+                           'amazing.',
+                           'The idea of Tough Mudder is not to win... but '
+                           'to have a story to tell.',
+                           'Tough Mudder is a culture and community of '
+                           'taking on challenges and supporting each other.'],
+                'short': 'Get through 12 miles of military-style obstacles!',
+                'sponsors': 'Toyo Tires, Cellucor, Shock-Top, MET-Rx, '
+                            'Oberto, Radisson, Wheaties, Under Armour',
+                'themes': [1, 4, 5],
+                'video_url': 'https://www.youtube.com/embed/Jim-ksScOoc',
+                'website': 'https://toughmudder.com/'},
+               {'address': 'The Long Center Grounds\n'
+                           '701 W Riverside Dr.\n'
+                           'Austin, TX 78704',
+                'challenges': [1, 2],
+                'charities': 'Capital Area Food Bank of Texas',
+                'city': 'Austin, Texas',
+-               'date': 'June 27th, 2015',
+                'description': 'Slip into your weirdest costume, slap on '
+                               'your favorite light up running shoes and '
+                               'throw your timer into Lady Bird Lake! This '
+                               'is the slowest 5K on the planet - the '
+                               'wildest, weirdest and most memorable!',
+                'distance': '5K',
+                'fb_url': 'https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639',
+                'hosts': 'The Long Center',
+                'id': 10,
+                'imgs': ['/static/img/runTempl/keepAustinWeird1.jpg',
+                         '/static/img/runTempl/keepAustinWeird2.jpg',
+                         '/static/img/runTempl/keepAustinWeird3.jpg'],
+                'landing_img': '/static/img/landing/funruns/keepAustinWeirdLanding.jpg',
+                'loc': 4,
+                'map_url': 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3446.1964982159493!2d-97.751079!3d30.259982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b504ea2084d7%3A0xa8a514235a56453e!2s701+W+Riverside+Dr%2C+Austin%2C+TX+78704!5e0!3m2!1sen!2sus!4v1428532467708',
+                'name': 'Keep Austin Weird 5K',
+                'price': 'VIP: $75\nAdults: $22.50\nKids: $12',
+                'quotes': ['So much fun! Drove down from Oklahoma City to '
+                           'attend!',
+                           'So well done! Loads of fun!',
+                           'It was our first time attending the fest and we '
+                           'had a blast! I will be back next year for sure!'],
+                'short': 'Make Austin weird in the slowest race ever!',
+                'sponsors': "HotSchedules, AT&T U-verse, Amy's Ice Cream, "
+                            'Babyearth, Beatbox Beverages',
+                'themes': [2, 3, 8],
+                'video_url': 'https://www.youtube.com/embed/9sL-B1D7v34',
+                'website': 'http://keepaustinweirdfest.com/festival/'}]}
+
+======================================================================
+FAIL: test_get_run_by_id_0 (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 1045, in test_get_run_by_id_0
+    self.assertEqual(response_object, expected)
+AssertionError: {'funruns': {'imgs': ['/static/img/runTempl/wipeout1.jpg[1581 chars]t!'}} != {'funruns': {'id': 0, 'quotes': ["Seriously, best race I[1555 chars]m/'}}
+Diff is 2418 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_get_run_by_id_0_slash (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 1095, in test_get_run_by_id_0_slash
+    self.assertEqual(response_object, expected)
+AssertionError: {'funruns': {'imgs': ['/static/img/runTempl/wipeout1.jpg[1581 chars]t!'}} != {'funruns': {'id': 0, 'quotes': ["Seriously, best race I[1555 chars]m/'}}
+Diff is 2418 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_get_run_by_id_1 (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 1141, in test_get_run_by_id_1
+    self.assertEqual(response_object, expected)
+AssertionError: {'funruns': {'imgs': ['/static/img/runTempl/christmassto[1897 chars]r."}} != {'funruns': {'id': 1, 'quotes': ['I was so excited to ge[1867 chars]m/'}}
+Diff is 2875 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_get_run_by_id_2 (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 1187, in test_get_run_by_id_2
+    self.assertEqual(response_object, expected)
+AssertionError: {'funruns': {'imgs': ['/static/img/runTempl/dallasturkey[1845 chars]s."}} != {'funruns': {'id': 2, 'quotes': ['This will be the sixth[1814 chars]g/'}}
+Diff is 2807 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_get_runs (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 517, in test_get_runs
+    self.assertEqual(response_object, expected)
+AssertionError: {'funruns': [{'imgs': ['/static/img/runTempl/wipeout1.jpg[20610 chars].'}]} != {'funruns': [{'id': 0, 'quotes': ["Seriously, best race I[20286 chars]p'}]}
+Diff is 31698 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_get_runs_slash (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 994, in test_get_runs_slash
+    self.assertEqual(response_object, expected)
+AssertionError: {'funruns': [{'imgs': ['/static/img/runTempl/wipeout1.jpg[20610 chars].'}]} != {'funruns': [{'id': 0, 'quotes': ["Seriously, best race I[20286 chars]p'}]}
+Diff is 31698 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_theme_run_0 (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 2562, in test_theme_run_0
+    self.assertEqual(response_object, expected)
+AssertionError: {'themes': [{'imgs': ['/static/img/runTempl/christmassto[3793 chars]."}]} != {'themes': [{'id': 1, 'quotes': ['I was so excited to ge[3732 chars]/'}]}
+Diff is 5716 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_theme_run_1 (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 2702, in test_theme_run_1
+    self.assertEqual(response_object, expected)
+AssertionError: {'themes': [{'imgs': ['/static/img/runTempl/wipeout1.jpg[5242 chars]e"}]} != {'themes': [{'id': 0, 'quotes': ["Seriously, best race I[5165 chars]/'}]}
+Diff is 8172 characters long. Set self.maxDiff to None to see it.
+
+======================================================================
+FAIL: test_theme_run_2 (api.api_test.TestAPI)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "./api/api_test.py", line 2904, in test_theme_run_2
+    self.assertEqual(response_object, expected)
+AssertionError: {'themes': [{'imgs': ['/static/img/runTempl/christmassto[9173 chars]!'}]} != {'themes': [{'id': 1, 'quotes': ['I was so excited to ge[9033 chars]/'}]}
+Diff is 13891 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 44 tests in 1.189s
+
+FAILED (failures=12)
