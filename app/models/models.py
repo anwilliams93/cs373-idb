@@ -1,5 +1,8 @@
 from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
+import re
+from datetime import date
+import calendar
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://bear@localhost/models'
@@ -67,6 +70,50 @@ class FunRun(db.Model):
     def __repr__(self):
         return '<Id %r>' % self.id
 
+    def get_prices(self):
+        price_strings = re.split("\n", self.price)
+        prices = []
+        for s in price_strings:
+            match = re.search("[^\w$]*[$](\d*.\d*)", s)
+            if match is not None:
+                price = float(match.group(1))
+                prices += [price]
+        return prices
+
+    def get_lengths(self):
+        length_strings = re.split(",\s", self.distance)
+        lengths = []
+        for s in length_strings:
+            match = re.search("(\d*)([a-zA-Z]*)", s)
+            if match is not None:
+                print("FOUND MATCH")
+                length = float(match.group(1))
+                units = match.group(2)
+                if units.upper().startswith('Y'):
+                    length *= 0.0009144
+                elif units.upper().startswith('MI'):
+                    length *= 1.60934
+                lengths += [length]
+        return lengths
+
+    def get_date_object(self):
+        date_components = re.search("([a-zA-Z]+)\s(\d+)[a-zA-Z]+,\s(\d+)", self.date)
+        if date_components is not None:
+            month_string = date_components.group(1)
+            day = int(date_components.group(2))
+            year = int(date_components.group(3))
+            months_dict = {v: k for k,v in enumerate(calendar.month_abbr)}
+            month_int = months_dict[month_string[:3]]
+            date_object = date(year, month_int, day)
+            return date_object
+        return None
+
+    def get_related_theme_ids(self):
+        return [theme.id for theme in self.funRun_theme]
+
+    def get_related_challenge_ids(self):
+        return [challenge.id for challenge in self.funRun_challenge]
+
 
 # ------------
 # Themes table
@@ -94,6 +141,15 @@ class Theme(db.Model):
     def __repr__(self):
         return '<Id %r>' % self.id
 
+    def get_buzzwords(self):
+        return re.split(",\s", self.buzzwords)
+
+    def get_related_funrun_ids(self):
+        return [funrun.id for funrun in self.funruns]
+
+    def get_related_challenge_ids(self):
+        return [challenge.id for challenge in self.theme_challenge]
+
 # ----------------
 # Challenges table
 # ----------------
@@ -111,6 +167,12 @@ class Challenge(db.Model):
 
     def __repr__(self):
         return '<Id %r>' % self.id
+
+    def get_related_funrun_ids(self):
+        return [funrun.id for funrun in self.funruns]
+
+    def get_related_theme_ids(self):
+        return [theme.id for theme in self.theme]
 
 # --------------
 # Location table
@@ -140,3 +202,16 @@ class Location(db.Model):
 
     def __repr__(self):
         return '<Id %r>' % self.id
+
+    def get_related_funrun_ids(self):
+        return [funrun.id for funrun in self.funruns]
+
+    def get_altitude_as_integer(self):
+        altitude_match = re.search('(\d+)[a-zA-Z]+', self.altitude)
+        if altitude_match is not None:
+            return int(altitude_match.group(1))
+
+    def get_annual_rainfall_as_integer(self):
+        rainfall_match = re.search('(\d+)[a-zA-Z]+', self.annual_rainfall)
+        if rainfall_match is not None:
+            return int(rainfall_match.group(1))
