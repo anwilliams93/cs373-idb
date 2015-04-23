@@ -41,10 +41,72 @@
   });
 
   myApp.controller('ChallengeGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
-    $http.get("http://104.239.139.43:8000/api/challenges/").success(function(data) {
+    
+    // Default Order = Sort Name
+    $http.get("/api/challenges/?sort=name:asc").success(function(data) {
+      $scope.order = "asc";
+      $scope.sort = "name";
       $scope.challenges = data.challenges;
       console.log($scope.challenges);
     });
+
+      // Sort Name
+      $('#sort_name').on('click', function() {
+        $http.get("/api/challenges/?sort=name:" + $scope.order).success(function(data) {
+          $scope.sort = "name";
+          $scope.challenges = data.challenges;
+          console.log($scope.challenges);
+        });
+      });
+
+      // Sort Difficulty
+      $('#sort_difficulty').on('click', function() {
+        $http.get("/api/challenges/?sort=difficulty:" + $scope.order).success(function(data) {
+          $scope.sort = "difficulty";
+          $scope.challenges = data.challenges;
+          console.log($scope.challenges);
+        });
+      });      
+
+      // Sort Themes
+      $('#sort_themes').on('click', function() {
+        $http.get("/api/challenges/?sort=number_of_themes:" + $scope.order).success(function(data) {
+          $scope.sort = "number_of_themes";
+          $scope.challenges = data.challenges;
+          console.log($scope.challenges);
+        });
+      });      
+
+      // Sort Runs
+      $('#sort_runs').on('click', function() {
+        $http.get("/api/challenges/?sort=number_of_runs:" + $scope.order).success(function(data) {
+          $scope.sort = "number_of_runs";
+          $scope.challenges = data.challenges;
+          console.log($scope.challenges);
+        });
+      });   
+
+      // Ascending
+      $('#asc').on('click', function() {
+        if($scope.order === "desc") {
+          $http.get("/api/challenges/?sort=" + $scope.sort + ":asc").success(function(data) {
+            $scope.order = "asc";
+            $scope.challenges = data.challenges;
+            console.log($scope.challenges);
+          });
+        }
+      });  
+
+      // Descending
+      $('#desc').on('click', function() {
+        if($scope.order === "asc") {
+          $http.get("/api/challenges/?sort=" + $scope.sort + ":desc").success(function(data) {
+            $scope.order = "desc";
+            $scope.challenges = data.challenges;
+            console.log($scope.challenges);
+          });
+        }
+      });        
   }]);
 </script>
 
@@ -109,16 +171,24 @@
 
         <!-- Gallery Items
         ================================================== --> 
+        <!-- SORTING -->        
+        <div class="span12">
+          <h6 class="title-bg">CURRENT SORT: By [[ sort ]] in [[ order ]]ending order</h6>
+            <div class="gallery-cats pull-left">
+              <li><a href="#" id="sort_name">Name</a></li>
+              <li><a href="#" id="sort_difficulty">Difficulty</a></li>
+              <li><a href="#" id="sort_runs">Number Of Related Runs</a></li>
+              <li><a href="#" id="sort_themes">Number Of Related Themes</a></li>
+            </div>
+            <div class= "gallery-cats pull-right">
+              <li><a href="#" id="asc">Ascending</a></li>
+              <li><a href="#" id="desc">Descending</a></li>  
+            </div>  
+        </div>
+
         <div class="span12 gallery">
 
-            <!-- <ul id="filterOptions" class="gallery-cats clearfix">
-                <li class="active"><a href="#" class="all">All</a></li> 
-                <li><a href="#" class="illustration">Illustration</a></li>
-                <li><a href="#" class="design">Design</a></li>
-                <li><a href="#" class="video">Video</a></li>
-                <li><a href="#" class="web">Web</a></li>
-            </ul> -->
-
+            <!-- CONTENT -->
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="challenge in challenges">

@@ -72,7 +72,6 @@ def tests():
         model_output = run_models_tests()
         # model_output = ""
         return render_template('tests.html', api_output = api_output.getvalue(), model_output = model_output.getvalue())
-
 ### REST API CALLS ###
 
 # @app.route('/api/funruns', methods=['GET'])

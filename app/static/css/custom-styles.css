@@ -290,7 +290,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
 	.gallery-post-grid {text-align: center}
 	.project-details {margin-left:auto; margin-right: auto;}
 	.gallery {text-align: center; }
-	.gallery-cats { display: none;}
+	/*.gallery-cats { display: none;}*/
 	li.span2 .project-details {
 	    -o-text-overflow: ellipsis;
 	    text-overflow:    ellipsis;
