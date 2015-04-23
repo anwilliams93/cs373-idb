@@ -75,7 +75,10 @@ cd ..
  git config --global credential.helper store
  echo "https://${GITHUB_KEY}:x-oauth-basic@github.com" >> ~/.git-credentials
 
+
+ git branch travis-ci
  git checkout travis-ci
+ git log > IDB.log
  git add -A
  git commit -m "Auto Travis CI"
  git reset --soft HEAD~1
