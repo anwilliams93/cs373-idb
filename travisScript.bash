@@ -72,8 +72,10 @@ echo "Making IDB.log"
  git config --global user.name "$commit_author"
  git config --global user.email "$commit_email"
  git config --global push.default simple
- git config --global credential.helper store
- echo "https://${GITHUB_KEY}:x-oauth-basic@github.com" >> ~/.git-credentials
+ #git config --global credential.helper store
+ git config credential.helper "store --file=.git/credentials"
+ echo "https://${GH_TOKEN}:@github.com" > .git/credentials
+ #echo "https://${GITHUB_KEY}:x-oauth-basic@github.com" >> ~/.git-credentials
 
 
  git branch travis-ci
