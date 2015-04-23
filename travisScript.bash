@@ -80,7 +80,9 @@ echo "Making IDB.log"
 
  git branch travis-ci
  git checkout travis-ci
+ cd documentation
  git log > IDB.log
+ cd ..
  git add -A
  git commit -m "Auto Travis CI"
  git reset --soft HEAD~1
