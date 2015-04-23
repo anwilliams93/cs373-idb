@@ -23,7 +23,6 @@ cd app
 check_file "funruns.py"
 check_file "run_tests.py"
 check_file "database_commands.txt"
-check_file "test_output.txt"
 
 cd api
 check_file "api.py"
@@ -78,12 +77,11 @@ cd ..
 # git config --global credential.helper store
 # echo "https://${GITHUB_KEY}:x-oauth-basic@github.com" >> ~/.git-credentials
 
-# git checkout travis-ci
-# git log > IDB.log
-# git add -A
-# git commit -m "Added IDB.log (Travis CI)"
-# git reset --soft HEAD~1
-# git commit -m "$commit_message"
-# git push -f "https://github.com/anwilliams93/cs373-idb.git" HEAD:travis-ci
+ git checkout travis-ci
+ git add -A
+ git commit -m "Auto Travis CI"
+ git reset --soft HEAD~1
+ git commit -m "$commit_message"
+ git push -f "https://github.com/anwilliams93/cs373-idb.git" HEAD:travis-ci
 
 echo "Done."
