@@ -32,13 +32,12 @@ def get_funruns():
 	for k in filtered_params:
 		if k == 'theme'	or k == 'challenge':
 			if isInt(filtered_params[k]):
-				related_ids = []
-				if k == 'theme':
-					related_ids = e.get_related_theme_ids()
-				elif k == 'challenge':
-					related_ids = e.get_related_challenge_ids()
-
 				def fxn(e):
+					related_ids = []
+					if k == 'theme':
+						related_ids = e.get_related_theme_ids()
+					elif k == 'challenge':
+						related_ids = e.get_related_challenge_ids()
 					for p in filtered_params[k]:
 						return (int(p) + 1) in related_ids
 
@@ -114,13 +113,12 @@ def get_themes():
 	for k in filtered_params:
 		if k == 'funrun' or k == 'challenge':
 			if isInt(filtered_params[k]):
-				related_ids = []
-				if k == 'funrun':
-					related_ids = e.get_related_funrun_ids()
-				elif k == 'challenge':
-					related_ids = e.get_related_challenge_ids()
-
 				def fxn(e):
+					related_ids = []
+					if k == 'funrun':
+						related_ids = e.get_related_funrun_ids()
+					elif k == 'challenge':
+						related_ids = e.get_related_challenge_ids()
 					for p in filtered_params[k]:
 						return (int(p) + 1) in related_ids
 
@@ -177,13 +175,12 @@ def get_challenges():
 	for k in filtered_params:
 		if k == 'funrun' or k == 'theme':
 			if isInt(filtered_params[k]):
-				related_ids = []
-				if k == 'funrun':
-					related_ids = e.get_related_funrun_ids()
-				elif k == 'theme':
-					related_ids = e.get_related_theme_ids()
-
 				def fxn(e):
+					related_ids = []
+					if k == 'funrun':
+						related_ids = e.get_related_funrun_ids()
+					elif k == 'theme':
+						related_ids = e.get_related_theme_ids()
 					for p in filtered_params[k]:
 						return (int(p) + 1) in related_ids
 
