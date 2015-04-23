@@ -121,6 +121,7 @@ def get_themes():
 						related_ids = e.get_related_challenge_ids()
 					for p in filtered_params[k]:
 						return (int(p) + 1) in related_ids
+					return False
 
 				filtered_themes = select(filtered_themes, fxn)
 		elif k == 'buzzword':
