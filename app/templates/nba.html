@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Fun Runs 2015: Tests</title>
+<title>NBA API</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS
@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-responsive.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/prettyPhoto.css') }}" />
 <link rel="stylesheet" href="{{ url_for('static', filename='css/custom-styles.css') }}">
+
 
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -39,6 +40,7 @@
 <script src="{{ url_for('static', filename='js/jquery.flexslider.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.custom.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.prettyPhoto.js') }}"></script>
+<script src="{{ url_for('static', filename='js/Chart.min.js') }}"></script>
 <script type="text/javascript">
      $(window).load(function(){
 
@@ -52,6 +54,62 @@
 });
 </script>
 
+<!-- Create tables for each season -->
+<script>
+ $(document).ready(function() {
+    
+    // 2012 Stats
+    var ctx = $("#hch12").get(0).getContext("2d");
+    var c = new Chart(ctx).Bar({
+    labels: ["Denver Nuggets", "Oklahoma City Thunder", "San Antonio Spurs", "Miami Heat", "Los Angeles Clippers"],
+    datasets: [
+    {
+        label: "5 most efficient teams",
+        fillColor: "rgba(255,140,0,0.9)",
+        strokeColor: "rgba(255,140,0,0.5)",
+        highlightFill: "rgba(255,140,0,0.5)",
+        highlightStroke: "rgba(255,140,0,0.5)",
+        data: [75.48, 75.39, 71.91, 71.91, 69.83]
+    }
+                ]
+        }); 
+
+    // 2013 Stats
+    var ctx = $("#hch13").get(0).getContext("2d");
+    var c = new Chart(ctx).Bar({
+    labels: ["San Antonio Spurs", "Los Angeles Clippers", "Minnesota Timberwolves", "Dallas Mavericks", "Oklahoma City Thunder"],
+    datasets: [
+    {
+        label: "Total number of jobs",
+        fillColor: "rgba(255,140,0,0.9)",
+        strokeColor: "rgba(255,140,0,0.5)",
+        highlightFill: "rgba(255,140,0,0.5)",
+        highlightStroke: "rgba(255,140,0,0.5)",
+        data: [73.53, 73.01, 71.87, 70.87, 70.80]
+    }
+                ]
+        }); 
+
+    // 2014 Stats
+    var ctx = $("#hch14").get(0).getContext("2d");
+    var c = new Chart(ctx).Bar({
+    labels: ["Golden State Warriors", "Los Angeles Clippers", "San Antonio Spurs", "Atlanta Hawks", "Memphis Grizzlies"],
+    datasets: [
+    {
+        label: "Total number of jobs",
+        fillColor: "rgba(255,140,0,0.9)",
+        strokeColor: "rgba(255,140,0,0.5)",
+        highlightFill: "rgba(255,140,0,0.5)",
+        highlightStroke: "rgba(255,140,0,0.5)",
+        data: [77.07, 70.49, 69.22, 68.69, 68]
+    }
+                ]
+        });         
+
+
+        });//End of function
+</script>
+
 <body>
     <div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
@@ -63,7 +121,7 @@
         <!-- Logo
         ================================================== -->
         <div class="span5 logo">
-            <h1>Fun Runs 2k15: Tests</h1>
+            <h1>Fun Runs 2k15: NBA API</h1>
         </div>
         
         <!-- Main Navigation
@@ -111,32 +169,20 @@
     
     <!-- Title Header -->
 
-    <h2 class="title-bg">NBA API</h2>
     <div class="row">
         <div class="span12">
             <h3>Hollinger Scores for teams and players</h3>
             <Li>John Hollinger is currently the Vice President of Basketball Operations for the Memphis Grizzlies and has worked as an analyst for ESPN. During the late 90s, he developed the Player Efficiency Rating (PER) which attempts to combine all of a player's contributions into one number. Hollinger later developed a simpler formula as an extension to the PER as an attempt to quantify a player's performance in a given game. Instead of applying it to players, we used this simpler formula with the NBA DB API to find the most efficient teams in a given season<li>
             
             <Li><strong>Top 5 teams for 2012</strong><li>
-            <p>Denver Nuggets 75.48</p>
-            <p>Oklahoma City Thunder 75.39</p>
-            <p>San Antonio Spurs 71.91</p>
-            <p>Miami Heat 71.91</p>
-            <p>Los Angeles Clippers 69.83</p>
+            <canvas id="hch12" width="600" height="400"></canvas>
 
             <Li><strong>Top 5 teams for 2013</strong><li>
-            <p>San Antonio Spurs 73.53</p>
-            <p>Los Angeles Clippers 73.01</p>
-            <p>Minnesota Timberwolves 71.87</p>
-            <p>Dallas Mavericks 70.87</p>
-            <p>Oklahoma City Thunder 70.80</p>
+            <canvas id="hch13" width="600" height="400"></canvas>
 
             <Li><strong>Top 5 teams for 2014</strong><li>
-            <p>Golden State Warriors 77.07</p>
-            <p>Los Angeles Clippers 70.49</p>
-            <p>San Antonio Spurs 69.22</p>
-            <p>Atlanta Hawks 68.69</p>
-            <p>Memphis Grizzlies 68.00</p>
+            <canvas id="hch14" width="600" height="400"></canvas>
+
 
         </div>
     </div>   
