@@ -10,6 +10,6 @@ script: bash travisScript.bash
 branches:
   except:
     - travis-ci
-env: 
-	global:
-		secure: "MRhbsk09t387YxPqw4Fccvs/cpLZDqsJidw574Jo03mnBJZL3GHAU6EYttQaeaeNEU5OOl/JFCMBG1E7WoOv6tbgZ7v5U/Z2VCDIwSAhcGkAiV+hw0RiPlkZJYkcIUMIs4ItLF4kStDsqAa9IhwYKoP28CO3dRr79vUAuif3V/E="
+env:
+  global:
+    secure: "MRhbsk09t387YxPqw4Fccvs/cpLZDqsJidw574Jo03mnBJZL3GHAU6EYttQaeaeNEU5OOl/JFCMBG1E7WoOv6tbgZ7v5U/Z2VCDIwSAhcGkAiV+hw0RiPlkZJYkcIUMIs4ItLF4kStDsqAa9IhwYKoP28CO3dRr79vUAuif3V/E="
