@@ -29,7 +29,6 @@ check_file "api.py"
 check_file "api_helpers.py"
 check_file "api_test.py"
 check_file "__init__.py"
-check_file "test_output.txt"
 cd ..
 
 cd models
@@ -38,7 +37,6 @@ check_file "models.py"
 check_file "models_test.py"
 check_file "models.html"
 check_file "create_database.py"
-check_file "test_output.txt"
 cd ..
 cd ..
 
