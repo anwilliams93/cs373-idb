@@ -53,6 +53,8 @@ def retrieve_locations():
 def split_sort_string(sort_string):
 	# Sort string is of format 'field:[asc or desc]'
 	strings = re.split(':', sort_string)
+	if len(strings) < 2:
+		strings += ['']	
 	return (strings[0], strings[1])
 
 def is_sort_descending(sort_order):
@@ -80,6 +82,8 @@ def sort_funruns(funruns, sort_string):
 		return sorted(funruns, key=lambda funrun:len(funrun.funRun_theme), reverse=is_sort_descending(sort_order))
 	elif sort_field == 'number_of_challenges':
 		return sorted(funruns, key=lambda funrun:len(funrun.funRun_challenge), reverse=is_sort_descending(sort_order))
+	else:
+		return funruns
 
 def sort_themes(themes, sort_string):
 	sort_field, sort_order = split_sort_string(sort_string)
@@ -90,6 +94,8 @@ def sort_themes(themes, sort_string):
 		return sorted(themes, key=lambda theme:len(theme.funruns), reverse=is_sort_descending(sort_order))
 	elif sort_field == 'number_of_challenges':
 		return sorted(themes, key=lambda theme:len(theme.theme_challenge), reverse=is_sort_descending(sort_order))
+	else:
+		return themes
 
 def sort_challenges(challenges, sort_string):
 	sort_field, sort_order = split_sort_string(sort_string)
@@ -102,6 +108,8 @@ def sort_challenges(challenges, sort_string):
 		return sorted(challenges, key=lambda challenge:len(challenge.funruns), reverse=is_sort_descending(sort_order))
 	elif sort_field == 'number_of_themes':
 		return sorted(challenges, key=lambda challenge:len(challenge.theme), reverse=is_sort_descending(sort_order))
+	else:
+		return challenges
 
 def sort_locations(locations, sort_string):
 	sort_field, sort_order = split_sort_string(sort_string)
@@ -120,6 +128,8 @@ def sort_locations(locations, sort_string):
 		return sorted(locations, key=lambda location:location.get_altitude_as_integer(), reverse=is_sort_descending(sort_order))
 	elif sort_field == 'annual_rainfall':
 		return sorted(locations, key=lambda location:location.get_annual_rainfall_as_integer(), reverse=is_sort_descending(sort_order))
+	else:
+		return locations
 
 # MOVE OBJECT TO DICT FUNCTIONS TO MODELS
 def funrun_object_to_dict(funrun):
