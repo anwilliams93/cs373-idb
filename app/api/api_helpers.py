@@ -126,6 +126,7 @@ def funrun_object_to_dict(funrun):
 	funrun_dict = {}
 	funrun_dict['id'] = funrun.id - 1
 	funrun_dict['name'] = funrun.name
+	funrun_dict['date'] = funrun.date
 	funrun_dict['city'] = funrun.location.name
 	funrun_dict['address'] = funrun.address
 	funrun_dict['distance'] = funrun.distance

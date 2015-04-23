@@ -41,11 +41,11 @@ def about():
 
 @app.route('/tech')
 def tech():
-    # output = runTests()
-    # print(output)
-    runTests()
-    output = open('api/test_output.txt', 'r').read()
-    return render_template('tech.html', output = output) 
+    return render_template('tech.html') 
+
+@app.route('/tech/nba')
+def technba():
+    return render_template('nba.html') 
 
 @app.route('/funruns/<runID>')
 def funruntempl(runID):
@@ -63,6 +63,26 @@ def challengetempl(challengeID):
 def locationtempl(locationID):
     return render_template('locationtempl.html', locationID = locationID)
 
+@app.route('/tech/tests')
+def tests():
+    # output = runTests()
+    # print(output)
+    runTests()
+    api_file = open('api/test_output.txt', 'r')
+    api_output = api_file.read()
+    api_file.close()
+    model_file = open('models/test_output.txt', 'r')
+    model_output = model_file.read()
+    model_file.close()
+    return render_template('tests.html', api_output = api_output, model_output = model_output)
+
+@app.route('/tech/tests/apiTests', methods = ['GET'])
+def apiTests():
+    runTests()
+    api_file = open('api/test_output.txt', 'r')
+    api_output = api_file.read()
+    api_file.close()
+    return jsonify({'api_output': api_output})
 ### REST API CALLS ###
 
 # @app.route('/api/funruns', methods=['GET'])

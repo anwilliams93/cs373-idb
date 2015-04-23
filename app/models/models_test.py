@@ -1,11 +1,11 @@
 
-from models import db, Location, FunRun, Theme, Challenge
+from models.models import db, Location, FunRun, Theme, Challenge
 import os
 #import sql_db
 import unittest
 import tempfile
 
-class sql_dbTestCase(unittest.TestCase):
+class TestDBModels(unittest.TestCase):
 
 
 	def test_funrun(self):

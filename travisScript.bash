@@ -21,20 +21,25 @@ cd ..
 
 cd app
 check_file "funruns.py"
+check_file "run_tests.py"
+check_file "database_commands.txt"
+check_file "test_output.txt"
+
+cd api
 check_file "api.py"
-check_file "test_functions.py"
+check_file "api_helpers.py"
+check_file "api_test.py"
+check_file "__init__.py"
+check_file "test_output.txt"
+cd ..
 
 cd models
 check_file "__init__.py"
 check_file "models.py"
 check_file "models_test.py"
 check_file "models.html"
-cd ..
-
-cd 'test'
-check_file "__init__.py"
-check_file "tests.py"
-check_file "tests.out"
+check_file "create_database.py"
+check_file "test_output.txt"
 cd ..
 cd ..
 
@@ -42,18 +47,23 @@ cd ..
 
 echo "Running tests"
 
-coverage3 run app/test/tests.py 2> app/test/tests.out
-coverage3 run app/models/models_test.py >> app/test/tests.out
-coverage report -m app/test/tests.py >> app/test/tests.out
+coverage run app/api/api_test.py 2> app/api/test_output.txt
+coverage report -m 			  >> app/api/test_output.txt
 
+
+coverage run app/models/models_test.py 2> app/models/test_output.txt
+coverage report -m 					 >> app/models/test_output.txt
+
+
+#api_Tests
 
 # echo "Making pydoc3"
-
+echo "Documentation"
 # #need to do this 
-# sphinx-apidoc . --full -o documentation -H 'Funruns' -A 'FlaskMeAnything' -V '1.0'
-# cd documentation
-# make html
-# cd ..
+sphinx-apidoc . --full -o documentation -H 'Funruns' -A 'FlaskMeAnything' -V '1.0'
+cd documentation
+make html
+cd ..
 
 
 # echo "Making IDB.log"

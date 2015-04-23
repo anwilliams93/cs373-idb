@@ -1,4 +1,5 @@
 from api.api_test import TestAPI
+from models.models_test import TestDBModels
 import unittest
 import sys
 from io import StringIO
@@ -11,18 +12,38 @@ def runTests():
 	# result = runner.run(unittest.makeSuite(TestAPI))
 	# stream.seek(0)
 	# return stream.read()
-	print("****************************** TESTS RUNNING ******************************")
+	print("///////////////////////////////////////////// OPEN API OUTPUT FILE /////////////////////////////////////////////")
 	# oldStdOut = sys.stdout
-	catchOutput = open('test_output.txt', "w")
-	# catchOutput = StringIO()
-	testCatcher = unittest.TestLoader().loadTestsFromTestCase(TestAPI)
-	unittest.TextTestRunner(stream=catchOutput, verbosity=2).run(testCatcher)
-	# catchOutput.write("hello")
+	catch_api_output = open('api/test_output.txt', "w")
+	print("///////////////////////////////////////////// LOAD API TESTS /////////////////////////////////////////////")
+
+	# catch_api_output = StringIO()
+	api_tests = unittest.TestLoader().loadTestsFromTestCase(TestAPI)
+	print("///////////////////////////////////////////// RUN API TESTS /////////////////////////////////////////////")
+
+	unittest.TextTestRunner(stream=catch_api_output, verbosity=2).run(api_tests)
+	print("///////////////////////////////////////////// CLOSE API OUTPUT FILE /////////////////////////////////////////////")
+
+	# catch_api_output.write("hello")
 	# sys.stdout = oldStdOut
-	# print("Hi" + catchOutput.getvalue())
-	catchOutput.close()
-	# return catchOutput.getvalue()
-	print("****************************** TESTS DONE ******************************")	
+	# print("Hi" + catch_api_output.getvalue())
+	catch_api_output.close()
+
+	# return catch_api_output.getvalue()
+
+	print("///////////////////////////////////////////// OPEN MODELS OUTPUT FILE /////////////////////////////////////////////")
+	# Models
+	catch_model_output = open('models/test_output.txt', "w")
+	print("///////////////////////////////////////////// LOAD MODELS TESTS /////////////////////////////////////////////")
+
+	model_tests = unittest.TestLoader().loadTestsFromTestCase(TestDBModels)
+	print("///////////////////////////////////////////// RUN MODELS TESTS /////////////////////////////////////////////")
+
+	unittest.TextTestRunner(stream=catch_model_output, verbosity=2).run(model_tests)
+	print("///////////////////////////////////////////// CLOSE MODELS OUTPUT FILE /////////////////////////////////////////////")
+
+	catch_model_output.close()
+	print("///////////////////////////////////////////// TESTS DONE /////////////////////////////////////////////")	
 
 
 if __name__ == '__main__':
