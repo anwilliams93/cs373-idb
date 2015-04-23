@@ -6,7 +6,7 @@ sys.path.append("api")
 sys.path.append("models")
 
 from api.api import funruns_api
-from run_tests import runTests
+from run_tests import *
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
@@ -65,24 +65,14 @@ def locationtempl(locationID):
 
 @app.route('/tech/tests')
 def tests():
-    # output = runTests()
-    # print(output)
-    runTests()
-    api_file = open('api/test_output.txt', 'r')
-    api_output = api_file.read()
-    api_file.close()
-    model_file = open('models/test_output.txt', 'r')
-    model_output = model_file.read()
-    model_file.close()
-    return render_template('tests.html', api_output = api_output, model_output = model_output)
+    lock = threading.Lock()
 
-@app.route('/tech/tests/apiTests', methods = ['GET'])
-def apiTests():
-    runTests()
-    api_file = open('api/test_output.txt', 'r')
-    api_output = api_file.read()
-    api_file.close()
-    return jsonify({'api_output': api_output})
+    with lock:
+        api_output = run_api_tests()
+        model_output = run_models_tests()
+        # model_output = ""
+        return render_template('tests.html', api_output = api_output.getvalue(), model_output = model_output.getvalue())
+
 ### REST API CALLS ###
 
 # @app.route('/api/funruns', methods=['GET'])

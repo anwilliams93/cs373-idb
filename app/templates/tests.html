@@ -51,13 +51,18 @@
     });  
 });
 </script>
-<script type="text/javascript">
-function validate(){
-    if (returnvalue=="test") alert(test)
-    else alert ("unsuccessful")
-}
-</script>
+<script>
+    var xmlHttp = null;
+    function getResults() {
+        xmlHttp = new XMLHttpRequest(); 
+        // xmlHttp.onreadystatechange = ProcessRequest;
+        xmlHttp.open( "GET", "http://104.239.139.43:8000/tech/tests/apiTests", true);
+        xmlHttp.send( null );
+        var info = eval("(" + xmlHttp.responseTest + ")");
+        alert(info);
+    }
 
+</script>
 <body>
     <div class="color-bar-1"></div>
     <div class="color-bar-2 color-bg"></div>
