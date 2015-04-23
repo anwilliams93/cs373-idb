@@ -59,6 +59,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "N/A",
       "city": "Baltimore, Maryland",
+      "date": "June 6th, 2015",
       "description": "Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/WIPEOUTRUN",
@@ -95,6 +96,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
       "city": "Cleveland, Ohio",
+      "date": "December 5th, 2015",
       "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
       "distance": "5K, 10K",
       "fb_url": "https://www.facebook.com/AChristmasStoryRun",
@@ -133,6 +135,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "The Y Community Programs",
       "city": "Dallas, Texas",
+      "date": "November 26th, 2015",
       "description": "The Dallas Turkey Trot really proves that everything's bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.",
       "distance": "5K, 8mi",
       "fb_url": "https://www.facebook.com/DallasYMCATrot",
@@ -171,6 +174,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Mo'MAGIC, United Way of the Bay Area, National Kidney Foundation",
       "city": "San Francisco, California",
+      "date": "May 17th, 2015",
       "description": "The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coasts Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.",
       "distance": "12K",
       "fb_url": "https://www.facebook.com/zapposbaytobreakers",
@@ -211,6 +215,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Local Charities",
       "city": "Riverhead, New York",
+      "date": "May 10th, 2015",
       "description": "Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don't let the zombies pull your flags!",
       "distance": "5K, 15K",
       "fb_url": "https://www.facebook.com/zombieracellc",
@@ -249,6 +254,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Children's Hospital",
       "city": "Memphis, Tennessee",
+      "date": "May 9th, 2015",
       "description": "Blacklight Run is a unique night 5K fun run focused less on speed and more on UV Neon Glowing fun with friends and family. Glowing participants come from all different ages, shapes, sizes, and speeds; every participant will get Glowed and will have the time of their life!",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/BlacklightRun",
@@ -286,6 +292,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Mary Bridge Children's Foundation",
       "city": "Puyallup, Washington",
+      "date": "May 23rd, 2015",
       "description": "Electric Run is the ultimate nighttime 5k run/walk adventure, where the participants are an integrated part of the show. Featuring immersive \"Lands\" of light and sound that transport the participant into an electric wonderland.",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/electricrun",
@@ -322,6 +329,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Local Breweries, Local Food, Local Music",
       "city": "Dallas, Texas",
+      "date": "May 1st, 2015",
       "description": "The Brew Mile is your chance to combine your love of running with the finest beverage on the face of this good green earth  BEER. Finally an event that tests your liver as much as it tests your lungs, and is followed by one of the best parties of the year!",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/brewmileseries",
@@ -367,6 +375,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Wounded Warrior Project, U.S. Army",
       "city": "Fairburn, Georgia",
+      "date": "May 2nd, 2015",
       "description": "Tough Mudder is a team-oriented obstacle course designed to test physical strength and mental grit. It puts camaraderie over finisher rankings and is not a timed race but a team challenge that allows participants to experience exhilarating, yet safe, world-class obstacles they won't find anywhere else",
       "distance": "19K",
       "fb_url": "https://www.facebook.com/toughmudder",
@@ -404,6 +413,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Make A Film Foundation, American Diabetes Association",
       "city": "Austin, Texas",
+      "date": "June 13th, 2015",
       "description": "Cooking Light & Health's The Fit Foodie 5K Race is the ultimate celebration of food, fitness, and fun. Put those running shoes to work as you navigate your way around a beautiful 5K course.",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/pages/The-Fit-Foodie-Race-Series/177814812394419",
@@ -440,6 +450,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Capital Area Food Bank of Texas",
       "city": "Austin, Texas",
+      "date": "June 27th, 2015",
       "description": "Slip into your weirdest costume, slap on your favorite light up running shoes and throw your timer into Lady Bird Lake! This is the slowest 5K on the planet - the wildest, weirdest and most memorable!",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639",
@@ -482,6 +493,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "N/A",
       "city": "Newry, Maine",
+      "date": "October 10th, 2015",
       "description": "Carry your wife to the finish and win her weight in beer! The course at Sunday River is built to international specifications at 278 yards in length, with two dry obstacles and one water obstacle.",
       "distance": "278yd",
       "fb_url": "https://www.facebook.com/sundayriver",
@@ -536,6 +548,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "N/A",
       "city": "Baltimore, Maryland",
+      "date": "June 6th, 2015",
       "description": "Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/WIPEOUTRUN",
@@ -572,6 +585,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
       "city": "Cleveland, Ohio",
+      "date": "December 5th, 2015",
       "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
       "distance": "5K, 10K",
       "fb_url": "https://www.facebook.com/AChristmasStoryRun",
@@ -610,6 +624,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "The Y Community Programs",
       "city": "Dallas, Texas",
+      "date": "November 26th, 2015",
       "description": "The Dallas Turkey Trot really proves that everything's bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.",
       "distance": "5K, 8mi",
       "fb_url": "https://www.facebook.com/DallasYMCATrot",
@@ -648,6 +663,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Mo'MAGIC, United Way of the Bay Area, National Kidney Foundation",
       "city": "San Francisco, California",
+      "date": "May 17th, 2015",
       "description": "The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coasts Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.",
       "distance": "12K",
       "fb_url": "https://www.facebook.com/zapposbaytobreakers",
@@ -688,6 +704,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Local Charities",
       "city": "Riverhead, New York",
+      "date": "May 10th, 2015",
       "description": "Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don't let the zombies pull your flags!",
       "distance": "5K, 15K",
       "fb_url": "https://www.facebook.com/zombieracellc",
@@ -726,6 +743,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Children's Hospital",
       "city": "Memphis, Tennessee",
+      "date": "May 9th, 2015",
       "description": "Blacklight Run is a unique night 5K fun run focused less on speed and more on UV Neon Glowing fun with friends and family. Glowing participants come from all different ages, shapes, sizes, and speeds; every participant will get Glowed and will have the time of their life!",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/BlacklightRun",
@@ -763,6 +781,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Mary Bridge Children's Foundation",
       "city": "Puyallup, Washington",
+      "date": "May 23rd, 2015",
       "description": "Electric Run is the ultimate nighttime 5k run/walk adventure, where the participants are an integrated part of the show. Featuring immersive \"Lands\" of light and sound that transport the participant into an electric wonderland.",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/electricrun",
@@ -799,6 +818,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Local Breweries, Local Food, Local Music",
       "city": "Dallas, Texas",
+      "date": "May 1st, 2015",
       "description": "The Brew Mile is your chance to combine your love of running with the finest beverage on the face of this good green earth  BEER. Finally an event that tests your liver as much as it tests your lungs, and is followed by one of the best parties of the year!",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/brewmileseries",
@@ -844,6 +864,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Wounded Warrior Project, U.S. Army",
       "city": "Fairburn, Georgia",
+      "date": "May 2nd, 2015",
       "description": "Tough Mudder is a team-oriented obstacle course designed to test physical strength and mental grit. It puts camaraderie over finisher rankings and is not a timed race but a team challenge that allows participants to experience exhilarating, yet safe, world-class obstacles they won't find anywhere else",
       "distance": "19K",
       "fb_url": "https://www.facebook.com/toughmudder",
@@ -881,6 +902,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Make A Film Foundation, American Diabetes Association",
       "city": "Austin, Texas",
+      "date": "June 13th, 2015",
       "description": "Cooking Light & Health's The Fit Foodie 5K Race is the ultimate celebration of food, fitness, and fun. Put those running shoes to work as you navigate your way around a beautiful 5K course.",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/pages/The-Fit-Foodie-Race-Series/177814812394419",
@@ -917,6 +939,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "Capital Area Food Bank of Texas",
       "city": "Austin, Texas",
+      "date": "June 27th, 2015",
       "description": "Slip into your weirdest costume, slap on your favorite light up running shoes and throw your timer into Lady Bird Lake! This is the slowest 5K on the planet - the wildest, weirdest and most memorable!",
       "distance": "5K",
       "fb_url": "https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639",
@@ -959,6 +982,7 @@ class TestAPI (TestCase) :
       ],
       "charities": "N/A",
       "city": "Newry, Maine",
+      "date": "October 10th, 2015",
       "description": "Carry your wife to the finish and win her weight in beer! The course at Sunday River is built to international specifications at 278 yards in length, with two dry obstacles and one water obstacle.",
       "distance": "278yd",
       "fb_url": "https://www.facebook.com/sundayriver",
@@ -1000,47 +1024,48 @@ class TestAPI (TestCase) :
 		response_object = http_response_to_json_object(response)
 		expected = 	json.loads(json.dumps({
   "funruns": {
-    "address": "Camden Yards\n333 W Camden St.\nBaltimore, MD 21201",
-    "challenges": [
-      0,
-      3,
-      5,
-      8,
-      9,
-      11,
-      12,
-      13
-    ],
-    "charities": "N/A",
-    "city": "Baltimore, Maryland",
-    "description": "Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!",
-    "distance": "5K",
-    "fb_url": "https://www.facebook.com/WIPEOUTRUN",
-    "hosts": "Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.",
-    "id": 0,
-    "imgs": [
-      "/static/img/runTempl/wipeout1.jpg",
-      "/static/img/runTempl/wipeout2.jpg",
-      "/static/img/runTempl/wipeout3.jpg"
-    ],
-    "landing_img": "/static/img/landing/funruns/wipeoutLanding.jpg",
-    "loc": 0,
-    "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235",
-    "name": "Wipeout Run",
-    "price": "March 6th - April 9th: $56\nApril 10th - May 7th: $61\nMay 8th - May 21st: $66\nMay 22nd - June 5th: $71\nJune 6th: $81",
-    "quotes": [
-      "Seriously, best race I've done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!",
-      "Had a great time participating in the WIPEOUTRUN!",
-      "Such a blast! Let's do it again next year!"
-    ],
-    "short": "Try out the obstacles from the hit TV show \"Wipeout\"!",
-    "sponsors": "VaVi Sport & Social",
-    "themes": [
-      1
-    ],
-    "video_url": "https://www.youtube.com/embed/1uOII9K5c0c",
-    "website": "http://wipeoutrun.com/"
-  }
+      "address": "Camden Yards\n333 W Camden St.\nBaltimore, MD 21201",
+      "challenges": [
+        0,
+        3,
+        5,
+        8,
+        9,
+        11,
+        12,
+        13
+      ],
+      "charities": "N/A",
+      "city": "Baltimore, Maryland",
+      "date": "June 6th, 2015",
+      "description": "Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!",
+      "distance": "5K",
+      "fb_url": "https://www.facebook.com/WIPEOUTRUN",
+      "hosts": "Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.",
+      "id": 0,
+      "imgs": [
+        "/static/img/runTempl/wipeout1.jpg",
+        "/static/img/runTempl/wipeout2.jpg",
+        "/static/img/runTempl/wipeout3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/wipeoutLanding.jpg",
+      "loc": 0,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235",
+      "name": "Wipeout Run",
+      "price": "March 6th - April 9th: $56\nApril 10th - May 7th: $61\nMay 8th - May 21st: $66\nMay 22nd - June 5th: $71\nJune 6th: $81",
+      "quotes": [
+        "Seriously, best race I've done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!",
+        "Had a great time participating in the WIPEOUTRUN!",
+        "Such a blast! Let's do it again next year!"
+      ],
+      "short": "Try out the obstacles from the hit TV show \"Wipeout\"!",
+      "sponsors": "VaVi Sport & Social",
+      "themes": [
+        1
+      ],
+      "video_url": "https://www.youtube.com/embed/1uOII9K5c0c",
+      "website": "http://wipeoutrun.com/"
+    }
 }))
 		self.assertEqual(response_object, expected)
 
@@ -1050,47 +1075,48 @@ class TestAPI (TestCase) :
 		response_object = http_response_to_json_object(response)
 		expected = 	json.loads(json.dumps({
   "funruns": {
-    "address": "Camden Yards\n333 W Camden St.\nBaltimore, MD 21201",
-    "challenges": [
-      0,
-      3,
-      5,
-      8,
-      9,
-      11,
-      12,
-      13
-    ],
-    "charities": "N/A",
-    "city": "Baltimore, Maryland",
-    "description": "Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!",
-    "distance": "5K",
-    "fb_url": "https://www.facebook.com/WIPEOUTRUN",
-    "hosts": "Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.",
-    "id": 0,
-    "imgs": [
-      "/static/img/runTempl/wipeout1.jpg",
-      "/static/img/runTempl/wipeout2.jpg",
-      "/static/img/runTempl/wipeout3.jpg"
-    ],
-    "landing_img": "/static/img/landing/funruns/wipeoutLanding.jpg",
-    "loc": 0,
-    "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235",
-    "name": "Wipeout Run",
-    "price": "March 6th - April 9th: $56\nApril 10th - May 7th: $61\nMay 8th - May 21st: $66\nMay 22nd - June 5th: $71\nJune 6th: $81",
-    "quotes": [
-      "Seriously, best race I've done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!",
-      "Had a great time participating in the WIPEOUTRUN!",
-      "Such a blast! Let's do it again next year!"
-    ],
-    "short": "Try out the obstacles from the hit TV show \"Wipeout\"!",
-    "sponsors": "VaVi Sport & Social",
-    "themes": [
-      1
-    ],
-    "video_url": "https://www.youtube.com/embed/1uOII9K5c0c",
-    "website": "http://wipeoutrun.com/"
-  }
+      "address": "Camden Yards\n333 W Camden St.\nBaltimore, MD 21201",
+      "challenges": [
+        0,
+        3,
+        5,
+        8,
+        9,
+        11,
+        12,
+        13
+      ],
+      "charities": "N/A",
+      "city": "Baltimore, Maryland",
+      "date": "June 6th, 2015",
+      "description": "Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!",
+      "distance": "5K",
+      "fb_url": "https://www.facebook.com/WIPEOUTRUN",
+      "hosts": "Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.",
+      "id": 0,
+      "imgs": [
+        "/static/img/runTempl/wipeout1.jpg",
+        "/static/img/runTempl/wipeout2.jpg",
+        "/static/img/runTempl/wipeout3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/wipeoutLanding.jpg",
+      "loc": 0,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235",
+      "name": "Wipeout Run",
+      "price": "March 6th - April 9th: $56\nApril 10th - May 7th: $61\nMay 8th - May 21st: $66\nMay 22nd - June 5th: $71\nJune 6th: $81",
+      "quotes": [
+        "Seriously, best race I've done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!",
+        "Had a great time participating in the WIPEOUTRUN!",
+        "Such a blast! Let's do it again next year!"
+      ],
+      "short": "Try out the obstacles from the hit TV show \"Wipeout\"!",
+      "sponsors": "VaVi Sport & Social",
+      "themes": [
+        1
+      ],
+      "video_url": "https://www.youtube.com/embed/1uOII9K5c0c",
+      "website": "http://wipeoutrun.com/"
+    }
 }))
 		self.assertEqual(response_object, expected)
 
@@ -1100,43 +1126,44 @@ class TestAPI (TestCase) :
 		response_object = http_response_to_json_object(response)
 		expected = 	json.loads(json.dumps({
   "funruns": {
-    "address": "Cleveland Public Square\nCleveland, OH 44113",
-    "challenges": [
-      1,
-      2
-    ],
-    "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
-    "city": "Cleveland, Ohio",
-    "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
-    "distance": "5K, 10K",
-    "fb_url": "https://www.facebook.com/AChristmasStoryRun",
-    "hosts": "A Christmas Story House & Museum",
-    "id": 1,
-    "imgs": [
-      "/static/img/runTempl/christmasstory1.jpg",
-      "/static/img/runTempl/christmasstory2.jpg",
-      "/static/img/runTempl/christmasstory3.jpg"
-    ],
-    "landing_img": "/static/img/landing/funruns/christmasStoryRunLanding.jpg",
-    "loc": 2,
-    "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965",
-    "name": "A Christmas Story Run",
-    "price": "Before September 30th: $45\nOctober 1st - December 5th: $55",
-    "quotes": [
-      "I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.",
-      "Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.",
-      "All in all Pepper gives this fun run an A+!"
-    ],
-    "short": "Experience the classic movie \"A Christmas Story\" in person.",
-    "sponsors": "Ovaltine, Renaissance Hotels, Dannon, Walmart, McDonalds, The Home Depot",
-    "themes": [
-      0,
-      2,
-      3
-    ],
-    "video_url": "https://www.youtube.com/embed/uPiN-_p7q2k",
-    "website": "http://achristmasstoryrun.com/"
-  }
+      "address": "Cleveland Public Square\nCleveland, OH 44113",
+      "challenges": [
+        1,
+        2
+      ],
+      "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
+      "city": "Cleveland, Ohio",
+      "date": "December 5th, 2015",
+      "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
+      "distance": "5K, 10K",
+      "fb_url": "https://www.facebook.com/AChristmasStoryRun",
+      "hosts": "A Christmas Story House & Museum",
+      "id": 1,
+      "imgs": [
+        "/static/img/runTempl/christmasstory1.jpg",
+        "/static/img/runTempl/christmasstory2.jpg",
+        "/static/img/runTempl/christmasstory3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/christmasStoryRunLanding.jpg",
+      "loc": 2,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965",
+      "name": "A Christmas Story Run",
+      "price": "Before September 30th: $45\nOctober 1st - December 5th: $55",
+      "quotes": [
+        "I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.",
+        "Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.",
+        "All in all Pepper gives this fun run an A+!"
+      ],
+      "short": "Experience the classic movie \"A Christmas Story\" in person.",
+      "sponsors": "Ovaltine, Renaissance Hotels, Dannon, Walmart, McDonalds, The Home Depot",
+      "themes": [
+        0,
+        2,
+        3
+      ],
+      "video_url": "https://www.youtube.com/embed/uPiN-_p7q2k",
+      "website": "http://achristmasstoryrun.com/"
+    }
 }))
 		self.assertEqual(response_object, expected)
 
@@ -1154,6 +1181,7 @@ class TestAPI (TestCase) :
     ],
     "charities": "The Y Community Programs",
     "city": "Dallas, Texas",
+    "date": "November 26th, 2015",
     "description": "The Dallas Turkey Trot really proves that everything's bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.",
     "distance": "5K, 8mi",
     "fb_url": "https://www.facebook.com/DallasYMCATrot",
@@ -1234,7 +1262,7 @@ class TestAPI (TestCase) :
 		self.assertEqual(response_object, expected)
 
 	def test_get_run_themes_1 (self) :
-		self.maxDiff = None
+		# self.maxDiff = None
 		url = server_address + '/api/funruns/1/themes/'
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
@@ -2481,84 +2509,86 @@ class TestAPI (TestCase) :
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
 		expected = 	json.loads(json.dumps({
+  "funruns": [
+    {
+      "address": "Cleveland Public Square\nCleveland, OH 44113",
+      "challenges": [
+        1,
+        2
+      ],
+      "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
+      "city": "Cleveland, Ohio",
+      "date": "December 5th, 2015",
+      "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
+      "distance": "5K, 10K",
+      "fb_url": "https://www.facebook.com/AChristmasStoryRun",
+      "hosts": "A Christmas Story House & Museum",
+      "id": 1,
+      "imgs": [
+        "/static/img/runTempl/christmasstory1.jpg",
+        "/static/img/runTempl/christmasstory2.jpg",
+        "/static/img/runTempl/christmasstory3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/christmasStoryRunLanding.jpg",
+      "loc": 2,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965",
+      "name": "A Christmas Story Run",
+      "price": "Before September 30th: $45\nOctober 1st - December 5th: $55",
+      "quotes": [
+        "I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.",
+        "Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.",
+        "All in all Pepper gives this fun run an A+!"
+      ],
+      "short": "Experience the classic movie \"A Christmas Story\" in person.",
+      "sponsors": "Ovaltine, Renaissance Hotels, Dannon, Walmart, McDonalds, The Home Depot",
       "themes": [
-        {
-          "address": "Cleveland Public Square\nCleveland, OH 44113",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
-          "city": "Cleveland, Ohio",
-          "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
-          "distance": "5K, 10K",
-          "fb_url": "https://www.facebook.com/AChristmasStoryRun",
-          "hosts": "A Christmas Story House & Museum",
-          "id": 1,
-          "imgs": [
-            "/static/img/runTempl/christmasstory1.jpg",
-            "/static/img/runTempl/christmasstory2.jpg",
-            "/static/img/runTempl/christmasstory3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/christmasStoryRunLanding.jpg",
-          "loc": 2,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965",
-          "name": "A Christmas Story Run",
-          "price": "Before September 30th: $45\nOctober 1st - December 5th: $55",
-          "quotes": [
-            "I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.",
-            "Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.",
-            "All in all Pepper gives this fun run an A+!"
-          ],
-          "short": "Experience the classic movie \"A Christmas Story\" in person.",
-          "sponsors": "Ovaltine, Renaissance Hotels, Dannon, Walmart, McDonalds, The Home Depot",
-          "themes": [
-            0,
-            2,
-            3
-          ],
-          "video_url": "https://www.youtube.com/embed/uPiN-_p7q2k",
-          "website": "http://achristmasstoryrun.com/"
-        },
-        {
-          "address": "City Hall Plaza\n500 Marilla St.\nDallas, TX 75201",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "The Y Community Programs",
-          "city": "Dallas, Texas",
-          "description": "The Dallas Turkey Trot really proves that everything's bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.",
-          "distance": "5K, 8mi",
-          "fb_url": "https://www.facebook.com/DallasYMCATrot",
-          "hosts": "YMCA, Capital One Bank",
-          "id": 2,
-          "imgs": [
-            "/static/img/runTempl/dallasturkey1.jpg",
-            "/static/img/runTempl/dallasturkey2.jpg",
-            "/static/img/runTempl/dallasturkey3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg",
-          "loc": 1,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.251274220785!2d-96.79709!3d32.777333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83854fdfdad6162!2sDallas+City+Hall!5e0!3m2!1sen!2sus!4v1427228610474",
-          "name": "Dallas Turkey Trot",
-          "price": "Before September 30th: $30\nSeptember 31st - November 25th: $35\nNovember 26th: $45",
-          "quotes": [
-            "This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!",
-            "This event is by far the best family friendly event that takes place in Dallas each year!",
-            "I had a blast running the Turkey Trot this year. Even though it's my first time doing it, I will definitely make it a tradition every year"
-          ],
-          "short": "Run in the largest Thanksgiving Day event of its kind.",
-          "sponsors": "The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys",
-          "themes": [
-            0,
-            2
-          ],
-          "video_url": "https://www.youtube.com/embed/qdnzjhWgCOg",
-          "website": "http://thetrot.org/"
-        }
-      ]
-    }))
+        0,
+        2,
+        3
+      ],
+      "video_url": "https://www.youtube.com/embed/uPiN-_p7q2k",
+      "website": "http://achristmasstoryrun.com/"
+    },
+    {
+      "address": "City Hall Plaza\n500 Marilla St.\nDallas, TX 75201",
+      "challenges": [
+        1,
+        2
+      ],
+      "charities": "The Y Community Programs",
+      "city": "Dallas, Texas",
+      "date": "November 26th, 2015",
+      "description": "The Dallas Turkey Trot really proves that everything's bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.",
+      "distance": "5K, 8mi",
+      "fb_url": "https://www.facebook.com/DallasYMCATrot",
+      "hosts": "YMCA, Capital One Bank",
+      "id": 2,
+      "imgs": [
+        "/static/img/runTempl/dallasturkey1.jpg",
+        "/static/img/runTempl/dallasturkey2.jpg",
+        "/static/img/runTempl/dallasturkey3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg",
+      "loc": 1,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.251274220785!2d-96.79709!3d32.777333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83854fdfdad6162!2sDallas+City+Hall!5e0!3m2!1sen!2sus!4v1427228610474",
+      "name": "Dallas Turkey Trot",
+      "price": "Before September 30th: $30\nSeptember 31st - November 25th: $35\nNovember 26th: $45",
+      "quotes": [
+        "This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!",
+        "This event is by far the best family friendly event that takes place in Dallas each year!",
+        "I had a blast running the Turkey Trot this year. Even though it's my first time doing it, I will definitely make it a tradition every year"
+      ],
+      "short": "Run in the largest Thanksgiving Day event of its kind.",
+      "sponsors": "The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys",
+      "themes": [
+        0,
+        2
+      ],
+      "video_url": "https://www.youtube.com/embed/qdnzjhWgCOg",
+      "website": "http://thetrot.org/"
+    }
+  ]
+}))
 		self.assertEqual(response_object, expected)
 
 	def test_theme_run_1 (self) :
@@ -2566,139 +2596,142 @@ class TestAPI (TestCase) :
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
 		expected = 	json.loads(json.dumps({
+  "funruns": [
+    {
+      "address": "Camden Yards\n333 W Camden St.\nBaltimore, MD 21201",
+      "challenges": [
+        0,
+        3,
+        5,
+        8,
+        9,
+        11,
+        12,
+        13
+      ],
+      "charities": "N/A",
+      "city": "Baltimore, Maryland",
+      "date": "June 6th, 2015",
+      "description": "Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!",
+      "distance": "5K",
+      "fb_url": "https://www.facebook.com/WIPEOUTRUN",
+      "hosts": "Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.",
+      "id": 0,
+      "imgs": [
+        "/static/img/runTempl/wipeout1.jpg",
+        "/static/img/runTempl/wipeout2.jpg",
+        "/static/img/runTempl/wipeout3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/wipeoutLanding.jpg",
+      "loc": 0,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235",
+      "name": "Wipeout Run",
+      "price": "March 6th - April 9th: $56\nApril 10th - May 7th: $61\nMay 8th - May 21st: $66\nMay 22nd - June 5th: $71\nJune 6th: $81",
+      "quotes": [
+        "Seriously, best race I've done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!",
+        "Had a great time participating in the WIPEOUTRUN!",
+        "Such a blast! Let's do it again next year!"
+      ],
+      "short": "Try out the obstacles from the hit TV show \"Wipeout\"!",
+      "sponsors": "VaVi Sport & Social",
       "themes": [
-        {
-          "address": "Camden Yards\n333 W Camden St.\nBaltimore, MD 21201",
-          "challenges": [
-            0,
-            3,
-            5,
-            8,
-            9,
-            11,
-            12,
-            13
-          ],
-          "charities": "N/A",
-          "city": "Baltimore, Maryland",
-          "description": "Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!",
-          "distance": "5K",
-          "fb_url": "https://www.facebook.com/WIPEOUTRUN",
-          "hosts": "Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.",
-          "id": 0,
-          "imgs": [
-            "/static/img/runTempl/wipeout1.jpg",
-            "/static/img/runTempl/wipeout2.jpg",
-            "/static/img/runTempl/wipeout3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/wipeoutLanding.jpg",
-          "loc": 0,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235",
-          "name": "Wipeout Run",
-          "price": "March 6th - April 9th: $56\nApril 10th - May 7th: $61\nMay 8th - May 21st: $66\nMay 22nd - June 5th: $71\nJune 6th: $81",
-          "quotes": [
-            "Seriously, best race I've done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!",
-            "Had a great time participating in the WIPEOUTRUN!",
-            "Such a blast! Let's do it again next year!"
-          ],
-          "short": "Try out the obstacles from the hit TV show \"Wipeout\"!",
-          "sponsors": "VaVi Sport & Social",
-          "themes": [
-            1
-          ],
-          "video_url": "https://www.youtube.com/embed/1uOII9K5c0c",
-          "website": "http://wipeoutrun.com/"
-        },
-        {
-          "address": "3186 DPH 4-H Camp\nSound Avenue\nRiverhead, NY 11901",
-          "challenges": [
-            1,
-            4,
-            10,
-            12,
-            14
-          ],
-          "charities": "Local Charities",
-          "city": "Riverhead, New York",
-          "description": "Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don't let the zombies pull your flags!",
-          "distance": "5K, 15K",
-          "fb_url": "https://www.facebook.com/zombieracellc",
-          "hosts": "Great Vision Productions LLC",
-          "id": 4,
-          "imgs": [
-            "/static/img/runTempl/zombierun1.jpg",
-            "/static/img/runTempl/zombierun2.jpg",
-            "/static/img/runTempl/zombierun3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/zombierunLanding.jpg",
-          "loc": 7,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48208.84256933457!2d-72.7160401!3d40.9584252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e861d37b7288b9%3A0x67dff709a1d00494!2sNassau+County+4H+Camp!5e0!3m2!1sen!2sus!4v1428532216187",
-          "name": "Zombie Run",
-          "price": "5K Prices\nBefore February 6th: $55\nFebruary 7th - February 27th: $65\nFebruary 28th - March 27th: $75\nMarch 28th - April 17th: $85\nApril 18th - May 1st: $95\n15K Prices\nBefore February 6th: $75\nFebruary 7th - February 27th: $85\nFebruary 28th - March 27th: $95\nMarch 28th - April 17th: $105\nApril 18th - May 1st: $155\nZombie Price\nBefore February 6th: $20\nFebruary 7th - February 27th: $25\nFebruary 28th - March 27th: $30\nMarch 28th - April 17th: $35\nApril 18th - May 1st: $40",
-          "quotes": [
-            "They don't like fast food",
-            "Run like zombies are chasing you!",
-            "This is one of the funnest events I've ever attended!"
-          ],
-          "short": "Escape the zombies and get to the finish line!",
-          "sponsors": "WholeSale Halloween Costumes",
-          "themes": [
-            1,
-            2,
-            9
-          ],
-          "video_url": "https://www.youtube.com/embed/yhrC2CO9gKM",
-          "website": "http://www.zombierace.co/index.php"
-        },
-        {
-          "address": "Bouckaert Farm\n10045 Cedar Grove\nFairburn, GA 30213",
-          "challenges": [
-            0,
-            2,
-            3,
-            5,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13
-          ],
-          "charities": "Wounded Warrior Project, U.S. Army",
-          "city": "Fairburn, Georgia",
-          "description": "Tough Mudder is a team-oriented obstacle course designed to test physical strength and mental grit. It puts camaraderie over finisher rankings and is not a timed race but a team challenge that allows participants to experience exhilarating, yet safe, world-class obstacles they won't find anywhere else",
-          "distance": "19K",
-          "fb_url": "https://www.facebook.com/toughmudder",
-          "hosts": "Tough Mudder",
-          "id": 8,
-          "imgs": [
-            "/static/img/runTempl/toughmudder1.jpg",
-            "/static/img/runTempl/toughmudder2.jpg",
-            "/static/img/runTempl/toughmudder3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/toughmudderLanding.jpg",
-          "loc": 3,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3322.038929257956!2d-84.7159338!3d33.6302326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4d91a281b01bf%3A0x5e4b7c6398a7c91e!2s10045+Cedar+Grove+Rd%2C+Fairburn%2C+GA+30213!5e0!3m2!1sen!2sus!4v1428532369676",
-          "name": "Tough Mudder",
-          "price": "Before May 2nd: $185\nMay 2nd: $185",
-          "quotes": [
-            "The teamwork and camaraderie out there was amazing.",
-            "The idea of Tough Mudder is not to win... but to have a story to tell.",
-            "Tough Mudder is a culture and community of taking on challenges and supporting each other."
-          ],
-          "short": "Get through 12 miles of military-style obstacles!",
-          "sponsors": "Toyo Tires, Cellucor, Shock-Top, MET-Rx, Oberto, Radisson, Wheaties, Under Armour",
-          "themes": [
-            1,
-            4,
-            5
-          ],
-          "video_url": "https://www.youtube.com/embed/Jim-ksScOoc",
-          "website": "https://toughmudder.com/"
-        }
-      ]
-    }))
+        1
+      ],
+      "video_url": "https://www.youtube.com/embed/1uOII9K5c0c",
+      "website": "http://wipeoutrun.com/"
+    },
+    {
+      "address": "3186 DPH 4-H Camp\nSound Avenue\nRiverhead, NY 11901",
+      "challenges": [
+        1,
+        4,
+        10,
+        12,
+        14
+      ],
+      "charities": "Local Charities",
+      "city": "Riverhead, New York",
+      "date": "May 10th, 2015",
+      "description": "Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don't let the zombies pull your flags!",
+      "distance": "5K, 15K",
+      "fb_url": "https://www.facebook.com/zombieracellc",
+      "hosts": "Great Vision Productions LLC",
+      "id": 4,
+      "imgs": [
+        "/static/img/runTempl/zombierun1.jpg",
+        "/static/img/runTempl/zombierun2.jpg",
+        "/static/img/runTempl/zombierun3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/zombierunLanding.jpg",
+      "loc": 7,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48208.84256933457!2d-72.7160401!3d40.9584252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e861d37b7288b9%3A0x67dff709a1d00494!2sNassau+County+4H+Camp!5e0!3m2!1sen!2sus!4v1428532216187",
+      "name": "Zombie Run",
+      "price": "5K Prices\nBefore February 6th: $55\nFebruary 7th - February 27th: $65\nFebruary 28th - March 27th: $75\nMarch 28th - April 17th: $85\nApril 18th - May 1st: $95\n15K Prices\nBefore February 6th: $75\nFebruary 7th - February 27th: $85\nFebruary 28th - March 27th: $95\nMarch 28th - April 17th: $105\nApril 18th - May 1st: $155\nZombie Price\nBefore February 6th: $20\nFebruary 7th - February 27th: $25\nFebruary 28th - March 27th: $30\nMarch 28th - April 17th: $35\nApril 18th - May 1st: $40",
+      "quotes": [
+        "They don't like fast food",
+        "Run like zombies are chasing you!",
+        "This is one of the funnest events I've ever attended!"
+      ],
+      "short": "Escape the zombies and get to the finish line!",
+      "sponsors": "WholeSale Halloween Costumes",
+      "themes": [
+        1,
+        2,
+        9
+      ],
+      "video_url": "https://www.youtube.com/embed/yhrC2CO9gKM",
+      "website": "http://www.zombierace.co/index.php"
+    },
+    {
+      "address": "Bouckaert Farm\n10045 Cedar Grove\nFairburn, GA 30213",
+      "challenges": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "charities": "Wounded Warrior Project, U.S. Army",
+      "city": "Fairburn, Georgia",
+      "date": "May 2nd, 2015",
+      "description": "Tough Mudder is a team-oriented obstacle course designed to test physical strength and mental grit. It puts camaraderie over finisher rankings and is not a timed race but a team challenge that allows participants to experience exhilarating, yet safe, world-class obstacles they won't find anywhere else",
+      "distance": "19K",
+      "fb_url": "https://www.facebook.com/toughmudder",
+      "hosts": "Tough Mudder",
+      "id": 8,
+      "imgs": [
+        "/static/img/runTempl/toughmudder1.jpg",
+        "/static/img/runTempl/toughmudder2.jpg",
+        "/static/img/runTempl/toughmudder3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/toughmudderLanding.jpg",
+      "loc": 3,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3322.038929257956!2d-84.7159338!3d33.6302326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4d91a281b01bf%3A0x5e4b7c6398a7c91e!2s10045+Cedar+Grove+Rd%2C+Fairburn%2C+GA+30213!5e0!3m2!1sen!2sus!4v1428532369676",
+      "name": "Tough Mudder",
+      "price": "Before May 2nd: $185\nMay 2nd: $185",
+      "quotes": [
+        "The teamwork and camaraderie out there was amazing.",
+        "The idea of Tough Mudder is not to win... but to have a story to tell.",
+        "Tough Mudder is a culture and community of taking on challenges and supporting each other."
+      ],
+      "short": "Get through 12 miles of military-style obstacles!",
+      "sponsors": "Toyo Tires, Cellucor, Shock-Top, MET-Rx, Oberto, Radisson, Wheaties, Under Armour",
+      "themes": [
+        1,
+        4,
+        5
+      ],
+      "video_url": "https://www.youtube.com/embed/Jim-ksScOoc",
+      "website": "https://toughmudder.com/"
+    }
+  ]
+}))
 		self.assertEqual(response_object, expected)
 
 	def test_theme_run_2 (self) :
@@ -2706,201 +2739,206 @@ class TestAPI (TestCase) :
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
 		expected = 	json.loads(json.dumps({
+  "funruns": [
+    {
+      "address": "Cleveland Public Square\nCleveland, OH 44113",
+      "challenges": [
+        1,
+        2
+      ],
+      "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
+      "city": "Cleveland, Ohio",
+      "date": "December 5th, 2015",
+      "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
+      "distance": "5K, 10K",
+      "fb_url": "https://www.facebook.com/AChristmasStoryRun",
+      "hosts": "A Christmas Story House & Museum",
+      "id": 1,
+      "imgs": [
+        "/static/img/runTempl/christmasstory1.jpg",
+        "/static/img/runTempl/christmasstory2.jpg",
+        "/static/img/runTempl/christmasstory3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/christmasStoryRunLanding.jpg",
+      "loc": 2,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965",
+      "name": "A Christmas Story Run",
+      "price": "Before September 30th: $45\nOctober 1st - December 5th: $55",
+      "quotes": [
+        "I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.",
+        "Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.",
+        "All in all Pepper gives this fun run an A+!"
+      ],
+      "short": "Experience the classic movie \"A Christmas Story\" in person.",
+      "sponsors": "Ovaltine, Renaissance Hotels, Dannon, Walmart, McDonalds, The Home Depot",
       "themes": [
-        {
-          "address": "Cleveland Public Square\nCleveland, OH 44113",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
-          "city": "Cleveland, Ohio",
-          "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
-          "distance": "5K, 10K",
-          "fb_url": "https://www.facebook.com/AChristmasStoryRun",
-          "hosts": "A Christmas Story House & Museum",
-          "id": 1,
-          "imgs": [
-            "/static/img/runTempl/christmasstory1.jpg",
-            "/static/img/runTempl/christmasstory2.jpg",
-            "/static/img/runTempl/christmasstory3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/christmasStoryRunLanding.jpg",
-          "loc": 2,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965",
-          "name": "A Christmas Story Run",
-          "price": "Before September 30th: $45\nOctober 1st - December 5th: $55",
-          "quotes": [
-            "I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.",
-            "Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.",
-            "All in all Pepper gives this fun run an A+!"
-          ],
-          "short": "Experience the classic movie \"A Christmas Story\" in person.",
-          "sponsors": "Ovaltine, Renaissance Hotels, Dannon, Walmart, McDonalds, The Home Depot",
-          "themes": [
-            0,
-            2,
-            3
-          ],
-          "video_url": "https://www.youtube.com/embed/uPiN-_p7q2k",
-          "website": "http://achristmasstoryrun.com/"
-        },
-        {
-          "address": "City Hall Plaza\n500 Marilla St.\nDallas, TX 75201",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "The Y Community Programs",
-          "city": "Dallas, Texas",
-          "description": "The Dallas Turkey Trot really proves that everything's bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.",
-          "distance": "5K, 8mi",
-          "fb_url": "https://www.facebook.com/DallasYMCATrot",
-          "hosts": "YMCA, Capital One Bank",
-          "id": 2,
-          "imgs": [
-            "/static/img/runTempl/dallasturkey1.jpg",
-            "/static/img/runTempl/dallasturkey2.jpg",
-            "/static/img/runTempl/dallasturkey3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg",
-          "loc": 1,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.251274220785!2d-96.79709!3d32.777333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83854fdfdad6162!2sDallas+City+Hall!5e0!3m2!1sen!2sus!4v1427228610474",
-          "name": "Dallas Turkey Trot",
-          "price": "Before September 30th: $30\nSeptember 31st - November 25th: $35\nNovember 26th: $45",
-          "quotes": [
-            "This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!",
-            "This event is by far the best family friendly event that takes place in Dallas each year!",
-            "I had a blast running the Turkey Trot this year. Even though it's my first time doing it, I will definitely make it a tradition every year"
-          ],
-          "short": "Run in the largest Thanksgiving Day event of its kind.",
-          "sponsors": "The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys",
-          "themes": [
-            0,
-            2
-          ],
-          "video_url": "https://www.youtube.com/embed/qdnzjhWgCOg",
-          "website": "http://thetrot.org/"
-        },
-        {
-          "address": "Main St & Howard St\nSan Francisco, CA 94105",
-          "challenges": [
-            1,
-            3,
-            6
-          ],
-          "charities": "Mo'MAGIC, United Way of the Bay Area, National Kidney Foundation",
-          "city": "San Francisco, California",
-          "description": "The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coasts Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.",
-          "distance": "12K",
-          "fb_url": "https://www.facebook.com/zapposbaytobreakers",
-          "hosts": "Zappos.com",
-          "id": 3,
-          "imgs": [
-            "/static/img/runTempl/baytobreakers1.jpg",
-            "/static/img/runTempl/baytobreakers2.jpg",
-            "/static/img/runTempl/baytobreakers3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/baytobreakersLanding.jpg",
-          "loc": 6,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3152.984846292559!2d-122.39335585211597!3d37.79039490045594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dca37cb7%3A0x3509f87b15b8eae5!2s219+Howard+St%2C+San+Francisco%2C+CA+94105!5e0!3m2!1sen!2sus!4v1428532134914",
-          "name": "Bay To Breakers",
-          "price": "Adult: $59\nChild: $29.50\nVIP: $139\nGroup/Centipede: $54",
-          "quotes": [
-            "Bay to Breakers is a direct route to the city's heart and soul.",
-            "This 12k seriously looks like a party!",
-            "This is an amazing experience that will last forever. It is not only a race, but an incredible party throughout the streets of San Francisco."
-          ],
-          "short": "Explore SF from the bay to the Ocean Beach breakers.",
-          "sponsors": "Under Armour, MapMyRun, Geico, Hyatt Regency, TomTom, Kron4, Kettle Brand, Big 5 Sporting Goods, Hangzhou, Mio",
-          "themes": [
-            2,
-            5
-          ],
-          "video_url": "https://www.youtube.com/embed/NVEVGSEJmOc",
-          "website": "http://zapposbaytobreakers.com/"
-        },
-        {
-          "address": "3186 DPH 4-H Camp\nSound Avenue\nRiverhead, NY 11901",
-          "challenges": [
-            1,
-            4,
-            10,
-            12,
-            14
-          ],
-          "charities": "Local Charities",
-          "city": "Riverhead, New York",
-          "description": "Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don't let the zombies pull your flags!",
-          "distance": "5K, 15K",
-          "fb_url": "https://www.facebook.com/zombieracellc",
-          "hosts": "Great Vision Productions LLC",
-          "id": 4,
-          "imgs": [
-            "/static/img/runTempl/zombierun1.jpg",
-            "/static/img/runTempl/zombierun2.jpg",
-            "/static/img/runTempl/zombierun3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/zombierunLanding.jpg",
-          "loc": 7,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48208.84256933457!2d-72.7160401!3d40.9584252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e861d37b7288b9%3A0x67dff709a1d00494!2sNassau+County+4H+Camp!5e0!3m2!1sen!2sus!4v1428532216187",
-          "name": "Zombie Run",
-          "price": "5K Prices\nBefore February 6th: $55\nFebruary 7th - February 27th: $65\nFebruary 28th - March 27th: $75\nMarch 28th - April 17th: $85\nApril 18th - May 1st: $95\n15K Prices\nBefore February 6th: $75\nFebruary 7th - February 27th: $85\nFebruary 28th - March 27th: $95\nMarch 28th - April 17th: $105\nApril 18th - May 1st: $155\nZombie Price\nBefore February 6th: $20\nFebruary 7th - February 27th: $25\nFebruary 28th - March 27th: $30\nMarch 28th - April 17th: $35\nApril 18th - May 1st: $40",
-          "quotes": [
-            "They don't like fast food",
-            "Run like zombies are chasing you!",
-            "This is one of the funnest events I've ever attended!"
-          ],
-          "short": "Escape the zombies and get to the finish line!",
-          "sponsors": "WholeSale Halloween Costumes",
-          "themes": [
-            1,
-            2,
-            9
-          ],
-          "video_url": "https://www.youtube.com/embed/yhrC2CO9gKM",
-          "website": "http://www.zombierace.co/index.php"
-        },
-        {
-          "address": "The Long Center Grounds\n701 W Riverside Dr.\nAustin, TX 78704",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "Capital Area Food Bank of Texas",
-          "city": "Austin, Texas",
-          "description": "Slip into your weirdest costume, slap on your favorite light up running shoes and throw your timer into Lady Bird Lake! This is the slowest 5K on the planet - the wildest, weirdest and most memorable!",
-          "distance": "5K",
-          "fb_url": "https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639",
-          "hosts": "The Long Center",
-          "id": 10,
-          "imgs": [
-            "/static/img/runTempl/keepAustinWeird1.jpg",
-            "/static/img/runTempl/keepAustinWeird2.jpg",
-            "/static/img/runTempl/keepAustinWeird3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/keepAustinWeirdLanding.jpg",
-          "loc": 4,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3446.1964982159493!2d-97.751079!3d30.259982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b504ea2084d7%3A0xa8a514235a56453e!2s701+W+Riverside+Dr%2C+Austin%2C+TX+78704!5e0!3m2!1sen!2sus!4v1428532467708",
-          "name": "Keep Austin Weird 5K",
-          "price": "VIP: $75\nAdults: $22.50\nKids: $12",
-          "quotes": [
-            "So much fun! Drove down from Oklahoma City to attend!",
-            "So well done! Loads of fun!",
-            "It was our first time attending the fest and we had a blast! I will be back next year for sure!"
-          ],
-          "short": "Make Austin weird in the slowest race ever!",
-          "sponsors": "HotSchedules, AT&T U-verse, Amy's Ice Cream, Babyearth, Beatbox Beverages",
-          "themes": [
-            2,
-            3,
-            8
-          ],
-          "video_url": "https://www.youtube.com/embed/9sL-B1D7v34",
-          "website": "http://keepaustinweirdfest.com/festival/"
-        }
-      ]
-    }))
+        0,
+        2,
+        3
+      ],
+      "video_url": "https://www.youtube.com/embed/uPiN-_p7q2k",
+      "website": "http://achristmasstoryrun.com/"
+    },
+    {
+      "address": "City Hall Plaza\n500 Marilla St.\nDallas, TX 75201",
+      "challenges": [
+        1,
+        2
+      ],
+      "charities": "The Y Community Programs",
+      "city": "Dallas, Texas",
+      "date": "November 26th, 2015",
+      "description": "The Dallas Turkey Trot really proves that everything's bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.",
+      "distance": "5K, 8mi",
+      "fb_url": "https://www.facebook.com/DallasYMCATrot",
+      "hosts": "YMCA, Capital One Bank",
+      "id": 2,
+      "imgs": [
+        "/static/img/runTempl/dallasturkey1.jpg",
+        "/static/img/runTempl/dallasturkey2.jpg",
+        "/static/img/runTempl/dallasturkey3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg",
+      "loc": 1,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.251274220785!2d-96.79709!3d32.777333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83854fdfdad6162!2sDallas+City+Hall!5e0!3m2!1sen!2sus!4v1427228610474",
+      "name": "Dallas Turkey Trot",
+      "price": "Before September 30th: $30\nSeptember 31st - November 25th: $35\nNovember 26th: $45",
+      "quotes": [
+        "This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!",
+        "This event is by far the best family friendly event that takes place in Dallas each year!",
+        "I had a blast running the Turkey Trot this year. Even though it's my first time doing it, I will definitely make it a tradition every year"
+      ],
+      "short": "Run in the largest Thanksgiving Day event of its kind.",
+      "sponsors": "The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys",
+      "themes": [
+        0,
+        2
+      ],
+      "video_url": "https://www.youtube.com/embed/qdnzjhWgCOg",
+      "website": "http://thetrot.org/"
+    },
+    {
+      "address": "Main St & Howard St\nSan Francisco, CA 94105",
+      "challenges": [
+        1,
+        3,
+        6
+      ],
+      "charities": "Mo'MAGIC, United Way of the Bay Area, National Kidney Foundation",
+      "city": "San Francisco, California",
+      "date": "May 17th, 2015",
+      "description": "The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coasts Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.",
+      "distance": "12K",
+      "fb_url": "https://www.facebook.com/zapposbaytobreakers",
+      "hosts": "Zappos.com",
+      "id": 3,
+      "imgs": [
+        "/static/img/runTempl/baytobreakers1.jpg",
+        "/static/img/runTempl/baytobreakers2.jpg",
+        "/static/img/runTempl/baytobreakers3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/baytobreakersLanding.jpg",
+      "loc": 6,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3152.984846292559!2d-122.39335585211597!3d37.79039490045594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dca37cb7%3A0x3509f87b15b8eae5!2s219+Howard+St%2C+San+Francisco%2C+CA+94105!5e0!3m2!1sen!2sus!4v1428532134914",
+      "name": "Bay To Breakers",
+      "price": "Adult: $59\nChild: $29.50\nVIP: $139\nGroup/Centipede: $54",
+      "quotes": [
+        "Bay to Breakers is a direct route to the city's heart and soul.",
+        "This 12k seriously looks like a party!",
+        "This is an amazing experience that will last forever. It is not only a race, but an incredible party throughout the streets of San Francisco."
+      ],
+      "short": "Explore SF from the bay to the Ocean Beach breakers.",
+      "sponsors": "Under Armour, MapMyRun, Geico, Hyatt Regency, TomTom, Kron4, Kettle Brand, Big 5 Sporting Goods, Hangzhou, Mio",
+      "themes": [
+        2,
+        5
+      ],
+      "video_url": "https://www.youtube.com/embed/NVEVGSEJmOc",
+      "website": "http://zapposbaytobreakers.com/"
+    },
+    {
+      "address": "3186 DPH 4-H Camp\nSound Avenue\nRiverhead, NY 11901",
+      "challenges": [
+        1,
+        4,
+        10,
+        12,
+        14
+      ],
+      "charities": "Local Charities",
+      "city": "Riverhead, New York",
+      "date": "May 10th, 2015",
+      "description": "Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don't let the zombies pull your flags!",
+      "distance": "5K, 15K",
+      "fb_url": "https://www.facebook.com/zombieracellc",
+      "hosts": "Great Vision Productions LLC",
+      "id": 4,
+      "imgs": [
+        "/static/img/runTempl/zombierun1.jpg",
+        "/static/img/runTempl/zombierun2.jpg",
+        "/static/img/runTempl/zombierun3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/zombierunLanding.jpg",
+      "loc": 7,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48208.84256933457!2d-72.7160401!3d40.9584252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e861d37b7288b9%3A0x67dff709a1d00494!2sNassau+County+4H+Camp!5e0!3m2!1sen!2sus!4v1428532216187",
+      "name": "Zombie Run",
+      "price": "5K Prices\nBefore February 6th: $55\nFebruary 7th - February 27th: $65\nFebruary 28th - March 27th: $75\nMarch 28th - April 17th: $85\nApril 18th - May 1st: $95\n15K Prices\nBefore February 6th: $75\nFebruary 7th - February 27th: $85\nFebruary 28th - March 27th: $95\nMarch 28th - April 17th: $105\nApril 18th - May 1st: $155\nZombie Price\nBefore February 6th: $20\nFebruary 7th - February 27th: $25\nFebruary 28th - March 27th: $30\nMarch 28th - April 17th: $35\nApril 18th - May 1st: $40",
+      "quotes": [
+        "They don't like fast food",
+        "Run like zombies are chasing you!",
+        "This is one of the funnest events I've ever attended!"
+      ],
+      "short": "Escape the zombies and get to the finish line!",
+      "sponsors": "WholeSale Halloween Costumes",
+      "themes": [
+        1,
+        2,
+        9
+      ],
+      "video_url": "https://www.youtube.com/embed/yhrC2CO9gKM",
+      "website": "http://www.zombierace.co/index.php"
+    },
+    {
+      "address": "The Long Center Grounds\n701 W Riverside Dr.\nAustin, TX 78704",
+      "challenges": [
+        1,
+        2
+      ],
+      "charities": "Capital Area Food Bank of Texas",
+      "city": "Austin, Texas",
+      "date": "June 27th, 2015",
+      "description": "Slip into your weirdest costume, slap on your favorite light up running shoes and throw your timer into Lady Bird Lake! This is the slowest 5K on the planet - the wildest, weirdest and most memorable!",
+      "distance": "5K",
+      "fb_url": "https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639",
+      "hosts": "The Long Center",
+      "id": 10,
+      "imgs": [
+        "/static/img/runTempl/keepAustinWeird1.jpg",
+        "/static/img/runTempl/keepAustinWeird2.jpg",
+        "/static/img/runTempl/keepAustinWeird3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/keepAustinWeirdLanding.jpg",
+      "loc": 4,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3446.1964982159493!2d-97.751079!3d30.259982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b504ea2084d7%3A0xa8a514235a56453e!2s701+W+Riverside+Dr%2C+Austin%2C+TX+78704!5e0!3m2!1sen!2sus!4v1428532467708",
+      "name": "Keep Austin Weird 5K",
+      "price": "VIP: $75\nAdults: $22.50\nKids: $12",
+      "quotes": [
+        "So much fun! Drove down from Oklahoma City to attend!",
+        "So well done! Loads of fun!",
+        "It was our first time attending the fest and we had a blast! I will be back next year for sure!"
+      ],
+      "short": "Make Austin weird in the slowest race ever!",
+      "sponsors": "HotSchedules, AT&T U-verse, Amy's Ice Cream, Babyearth, Beatbox Beverages",
+      "themes": [
+        2,
+        3,
+        8
+      ],
+      "video_url": "https://www.youtube.com/embed/9sL-B1D7v34",
+      "website": "http://keepaustinweirdfest.com/festival/"
+    }
+  ]
+}))
 		self.assertEqual(response_object, expected)
 
 	def test_theme_challenges_0 (self) :
@@ -3026,270 +3064,270 @@ class TestAPI (TestCase) :
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
 		expected = json.loads(json.dumps(	{
-      "challenges": [
-        {
-          "description": "Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.",
-          "difficulty": 60,
-          "flavors": "Ice, Inflatable Balls, Mud",
-          "funruns": [
-            0,
-            8,
-            11
-          ],
-          "id": 0,
-          "imgs": [
-            "/static/img/challengeTempl/oddGround1.jpg",
-            "/static/img/challengeTempl/oddGround2.jpg",
-            "/static/img/challengeTempl/oddGround3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/oddGround1.jpg",
-          "name": "Stepping On Awkward Ground",
-          "themes": [
-            1,
-            4
-          ]
-        },
-        {
-          "description": "Take on extreme temps fearlessly with fun runs in less than ideal temperatures. Will the icy winds or intense heat get to you or will you make it to the finish line and prevail?",
-          "difficulty": 80,
-          "flavors": "Snow, Ice, Fire, Heat",
-          "funruns": [
-            1,
-            2,
-            8,
-            10
-          ],
-          "id": 2,
-          "imgs": [
-            "/static/img/challengeTempl/extremetemp1.jpg",
-            "/static/img/challengeTempl/extremetemp2.jpg",
-            "/static/img/challengeTempl/extremetemp3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/extremetemp1.jpg",
-          "name": "Enduring Extreme Temperatures",
-          "themes": [
-            0,
-            1
-          ]
-        },
-        {
-          "description": "Fight against gravity and prepare to go over steep hills in runs with hilly landscape. Feel those legs burn as you scale those inclines to the very end!",
-          "difficulty": 30,
-          "flavors": "High Elevation, Inclines, Steep Roads",
-          "funruns": [
-            0,
-            3,
-            8,
-            11
-          ],
-          "id": 3,
-          "imgs": [
-            "/static/img/challengeTempl/hill1.jpg",
-            "/static/img/challengeTempl/hill2.jpg",
-            "/static/img/challengeTempl/hill3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/hill1.jpg",
-          "name": "Going Over Hills",
-          "themes": [
-            1,
-            3
-          ]
-        },
-        {
-          "description": "You don't have to outrun your pursuers, you just have to outrun the other people being chased! Don't let yourself get caught in hardcore survival runs where it's kill... or be killed.",
-          "difficulty": 70,
-          "flavors": "Pursued, Zombies, Capture The Flag",
-          "funruns": [
-            4
-          ],
-          "id": 4,
-          "imgs": [
-            "/static/img/challengeTempl/chased1.jpg",
-            "/static/img/challengeTempl/chased2.jpg",
-            "/static/img/challengeTempl/chased3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/chased1.jpg",
-          "name": "Getting Chased",
-          "themes": [
-            1,
-            9
-          ]
-        },
-        {
-          "description": "As if carrying yourself to the finish was hard enough, try moving other objects from point A to point B as well! You better have worked those arms and not just your legs for these weight lifting obstacles.",
-          "difficulty": 70,
-          "flavors": "Sandbags, Other People, Logs",
-          "funruns": [
-            8,
-            11
-          ],
-          "id": 7,
-          "imgs": [
-            "/static/img/challengeTempl/carry1.jpg",
-            "/static/img/challengeTempl/carry2.jpg",
-            "/static/img/challengeTempl/carry3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/carry1.jpg",
-          "name": "Carrying an Object",
-          "themes": [
-            1,
-            5,
-            6,
-            7
-          ]
-        },
-        {
-          "description": "You thought you were almost there, but not you're blocked by an insurmountable wall! If you want to make it to the end, be ready to climb to the top of the wall or you better be ready to fall!",
-          "difficulty": 70,
-          "flavors": "Wooden Walls, Rope Walls, Chains, Rope Ladders",
-          "funruns": [
-            0,
-            8
-          ],
-          "id": 8,
-          "imgs": [
-            "/static/img/challengeTempl/scaling1.jpg",
-            "/static/img/challengeTempl/scaling2.jpg",
-            "/static/img/challengeTempl/scaling3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/scaling1.jpg",
-          "name": "Scaling a Wall",
-          "themes": [
-            1,
-            4
-          ]
-        },
-        {
-          "description": "These fun slides are a few moments of much-needed thrills. Give your legs a rest and get ready to go fast down these steep declines!",
-          "difficulty": 10,
-          "flavors": "Large Inflatable Slides, Mud Slides, Foam Slides",
-          "funruns": [
-            0,
-            8
-          ],
-          "id": 9,
-          "imgs": [
-            "/static/img/challengeTempl/sliding1.jpg",
-            "/static/img/challengeTempl/sliding2.jpg",
-            "/static/img/challengeTempl/sliding3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/sliding1.jpg",
-          "name": "Sliding Down Slopes",
-          "themes": [
-            1,
-            4
-          ]
-        },
-        {
-          "description": "Don't raise your head - you might just lose it! These challenges force you to get down and dirty, crawling beneath the danger and coming out unscathed.",
-          "difficulty": 40,
-          "flavors": "Barbed Wire, Tunnels, Electrical Wiring",
-          "funruns": [
-            4,
-            8
-          ],
-          "id": 10,
-          "imgs": [
-            "/static/img/challengeTempl/crawling1.jpg",
-            "/static/img/challengeTempl/crawling2.jpg",
-            "/static/img/challengeTempl/crawling3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/crawling1.jpg",
-          "name": "Crawling Underneath Obstacles",
-          "themes": [
-            1,
-            4
-          ]
-        },
-        {
-          "description": "Better have worked that upper body - you'll be needing it now! Whether it's monkey bars, a swing, or just a rope, you'll be flying high or failing.",
-          "difficulty": 60,
-          "flavors": "Monkey Bars, Rope Swings, Metal Swings",
-          "funruns": [
-            0,
-            8,
-            11
-          ],
-          "id": 11,
-          "imgs": [
-            "/static/img/challengeTempl/suspended1.jpg",
-            "/static/img/challengeTempl/suspended2.jpg",
-            "/static/img/challengeTempl/suspended3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/suspended1.jpg",
-          "name": "Being Suspended",
-          "themes": [
-            1,
-            4
-          ]
-        },
-        {
-          "description": "Fall and face the consequences. These challenges keep you on your toes across planks, ropes, and anything you can shake a toe at!",
-          "difficulty": 70,
-          "flavors": "Balance beams, wooden beams, inflated walkways",
-          "funruns": [
-            0,
-            4,
-            8,
-            11
-          ],
-          "id": 12,
-          "imgs": [
-            "/static/img/challengeTempl/balance1.jpg",
-            "/static/img/challengeTempl/balance2.jpg",
-            "/static/img/challengeTempl/balance3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/balance1.jpg",
-          "name": "Staying Balanced",
-          "themes": [
-            1,
-            4,
-            5
-          ]
-        },
-        {
-          "description": "Hope you're sturdy - because you're going to need to face all sorts of projectiles and bulldozing objects! Keep your feet on solid ground, or it might be your head instead!",
-          "difficulty": 80,
-          "flavors": "Inflated Bulldozer Balls, Thrown Items",
-          "funruns": [
-            0,
-            8
-          ],
-          "id": 13,
-          "imgs": [
-            "/static/img/challengeTempl/gettinghit1.jpg",
-            "/static/img/challengeTempl/gettinghit2.jpg",
-            "/static/img/challengeTempl/gettinghit3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/gettinghit1.jpg",
-          "name": "Getting Hit by Objects",
-          "themes": [
-            1,
-            4
-          ]
-        },
-        {
-          "description": "This isn't your average trail - these are buildings, roads, and the urban environment for you to run and jump to your heart's content!",
-          "difficulty": 60,
-          "flavors": "Buildings, Construction Areas, Urban Areas",
-          "funruns": [
-            4
-          ],
-          "id": 14,
-          "imgs": [
-            "/static/img/challengeTempl/parkour1.jpg",
-            "/static/img/challengeTempl/parkour2.jpg",
-            "/static/img/challengeTempl/parkour3.jpg"
-          ],
-          "landing_img": "/static/img/landing/challenges/parkour1.jpg",
-          "name": "Performing Urban Parkour",
-          "themes": [
-            1,
-            9
-          ]
-        }
+  "challenges": [
+    {
+      "description": "This isn't your average trail - these are buildings, roads, and the urban environment for you to run and jump to your heart's content!",
+      "difficulty": 60,
+      "flavors": "Buildings, Construction Areas, Urban Areas",
+      "funruns": [
+        4
+      ],
+      "id": 14,
+      "imgs": [
+        "/static/img/challengeTempl/parkour1.jpg",
+        "/static/img/challengeTempl/parkour2.jpg",
+        "/static/img/challengeTempl/parkour3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/parkour1.jpg",
+      "name": "Performing Urban Parkour",
+      "themes": [
+        1,
+        9
       ]
-    }))
+    },
+    {
+      "description": "Don't raise your head - you might just lose it! These challenges force you to get down and dirty, crawling beneath the danger and coming out unscathed.",
+      "difficulty": 40,
+      "flavors": "Barbed Wire, Tunnels, Electrical Wiring",
+      "funruns": [
+        4,
+        8
+      ],
+      "id": 10,
+      "imgs": [
+        "/static/img/challengeTempl/crawling1.jpg",
+        "/static/img/challengeTempl/crawling2.jpg",
+        "/static/img/challengeTempl/crawling3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/crawling1.jpg",
+      "name": "Crawling Underneath Obstacles",
+      "themes": [
+        1,
+        4
+      ]
+    },
+    {
+      "description": "Take on extreme temps fearlessly with fun runs in less than ideal temperatures. Will the icy winds or intense heat get to you or will you make it to the finish line and prevail?",
+      "difficulty": 80,
+      "flavors": "Snow, Ice, Fire, Heat",
+      "funruns": [
+        1,
+        2,
+        8,
+        10
+      ],
+      "id": 2,
+      "imgs": [
+        "/static/img/challengeTempl/extremetemp1.jpg",
+        "/static/img/challengeTempl/extremetemp2.jpg",
+        "/static/img/challengeTempl/extremetemp3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/extremetemp1.jpg",
+      "name": "Enduring Extreme Temperatures",
+      "themes": [
+        0,
+        1
+      ]
+    },
+    {
+      "description": "Better have worked that upper body - you'll be needing it now! Whether it's monkey bars, a swing, or just a rope, you'll be flying high or failing.",
+      "difficulty": 60,
+      "flavors": "Monkey Bars, Rope Swings, Metal Swings",
+      "funruns": [
+        0,
+        8,
+        11
+      ],
+      "id": 11,
+      "imgs": [
+        "/static/img/challengeTempl/suspended1.jpg",
+        "/static/img/challengeTempl/suspended2.jpg",
+        "/static/img/challengeTempl/suspended3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/suspended1.jpg",
+      "name": "Being Suspended",
+      "themes": [
+        1,
+        4
+      ]
+    },
+    {
+      "description": "As if carrying yourself to the finish was hard enough, try moving other objects from point A to point B as well! You better have worked those arms and not just your legs for these weight lifting obstacles.",
+      "difficulty": 70,
+      "flavors": "Sandbags, Other People, Logs",
+      "funruns": [
+        8,
+        11
+      ],
+      "id": 7,
+      "imgs": [
+        "/static/img/challengeTempl/carry1.jpg",
+        "/static/img/challengeTempl/carry2.jpg",
+        "/static/img/challengeTempl/carry3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/carry1.jpg",
+      "name": "Carrying an Object",
+      "themes": [
+        1,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "description": "Fight against gravity and prepare to go over steep hills in runs with hilly landscape. Feel those legs burn as you scale those inclines to the very end!",
+      "difficulty": 30,
+      "flavors": "High Elevation, Inclines, Steep Roads",
+      "funruns": [
+        0,
+        3,
+        8,
+        11
+      ],
+      "id": 3,
+      "imgs": [
+        "/static/img/challengeTempl/hill1.jpg",
+        "/static/img/challengeTempl/hill2.jpg",
+        "/static/img/challengeTempl/hill3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/hill1.jpg",
+      "name": "Going Over Hills",
+      "themes": [
+        1,
+        3
+      ]
+    },
+    {
+      "description": "Fall and face the consequences. These challenges keep you on your toes across planks, ropes, and anything you can shake a toe at!",
+      "difficulty": 70,
+      "flavors": "Balance beams, wooden beams, inflated walkways",
+      "funruns": [
+        0,
+        4,
+        8,
+        11
+      ],
+      "id": 12,
+      "imgs": [
+        "/static/img/challengeTempl/balance1.jpg",
+        "/static/img/challengeTempl/balance2.jpg",
+        "/static/img/challengeTempl/balance3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/balance1.jpg",
+      "name": "Staying Balanced",
+      "themes": [
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "description": "You thought you were almost there, but not you're blocked by an insurmountable wall! If you want to make it to the end, be ready to climb to the top of the wall or you better be ready to fall!",
+      "difficulty": 70,
+      "flavors": "Wooden Walls, Rope Walls, Chains, Rope Ladders",
+      "funruns": [
+        0,
+        8
+      ],
+      "id": 8,
+      "imgs": [
+        "/static/img/challengeTempl/scaling1.jpg",
+        "/static/img/challengeTempl/scaling2.jpg",
+        "/static/img/challengeTempl/scaling3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/scaling1.jpg",
+      "name": "Scaling a Wall",
+      "themes": [
+        1,
+        4
+      ]
+    },
+    {
+      "description": "You don't have to outrun your pursuers, you just have to outrun the other people being chased! Don't let yourself get caught in hardcore survival runs where it's kill... or be killed.",
+      "difficulty": 70,
+      "flavors": "Pursued, Zombies, Capture The Flag",
+      "funruns": [
+        4
+      ],
+      "id": 4,
+      "imgs": [
+        "/static/img/challengeTempl/chased1.jpg",
+        "/static/img/challengeTempl/chased2.jpg",
+        "/static/img/challengeTempl/chased3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/chased1.jpg",
+      "name": "Getting Chased",
+      "themes": [
+        1,
+        9
+      ]
+    },
+    {
+      "description": "Hope you're sturdy - because you're going to need to face all sorts of projectiles and bulldozing objects! Keep your feet on solid ground, or it might be your head instead!",
+      "difficulty": 80,
+      "flavors": "Inflated Bulldozer Balls, Thrown Items",
+      "funruns": [
+        0,
+        8
+      ],
+      "id": 13,
+      "imgs": [
+        "/static/img/challengeTempl/gettinghit1.jpg",
+        "/static/img/challengeTempl/gettinghit2.jpg",
+        "/static/img/challengeTempl/gettinghit3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/gettinghit1.jpg",
+      "name": "Getting Hit by Objects",
+      "themes": [
+        1,
+        4
+      ]
+    },
+    {
+      "description": "Think running is hard enough? Try running on mud, inflatable balls, or slippery surfaces! Just be ready for the fall - and to get back up again to keep trying.",
+      "difficulty": 60,
+      "flavors": "Ice, Inflatable Balls, Mud",
+      "funruns": [
+        0,
+        8,
+        11
+      ],
+      "id": 0,
+      "imgs": [
+        "/static/img/challengeTempl/oddGround1.jpg",
+        "/static/img/challengeTempl/oddGround2.jpg",
+        "/static/img/challengeTempl/oddGround3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/oddGround1.jpg",
+      "name": "Stepping On Awkward Ground",
+      "themes": [
+        1,
+        4
+      ]
+    },
+    {
+      "description": "These fun slides are a few moments of much-needed thrills. Give your legs a rest and get ready to go fast down these steep declines!",
+      "difficulty": 10,
+      "flavors": "Large Inflatable Slides, Mud Slides, Foam Slides",
+      "funruns": [
+        0,
+        8
+      ],
+      "id": 9,
+      "imgs": [
+        "/static/img/challengeTempl/sliding1.jpg",
+        "/static/img/challengeTempl/sliding2.jpg",
+        "/static/img/challengeTempl/sliding3.jpg"
+      ],
+      "landing_img": "/static/img/landing/challenges/sliding1.jpg",
+      "name": "Sliding Down Slopes",
+      "themes": [
+        1,
+        4
+      ]
+    }
+  ]
+}))
 		self.assertEqual(response_object, expected)
 
 	def test_theme_challenges_2 (self) :
@@ -4162,135 +4200,138 @@ class TestAPI (TestCase) :
 		expected = 	json.loads(json.dumps({
       "funruns": [
         {
-          "address": "Camden Yards\n333 W Camden St.\nBaltimore, MD 21201",
-          "challenges": [
-            0,
-            3,
-            5,
-            8,
-            9,
-            11,
-            12,
-            13
-          ],
-          "charities": "N/A",
-          "city": "Baltimore, Maryland",
-          "description": "Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!",
-          "distance": "5K",
-          "fb_url": "https://www.facebook.com/WIPEOUTRUN",
-          "hosts": "Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.",
-          "id": 0,
-          "imgs": [
-            "/static/img/runTempl/wipeout1.jpg",
-            "/static/img/runTempl/wipeout2.jpg",
-            "/static/img/runTempl/wipeout3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/wipeoutLanding.jpg",
-          "loc": 0,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235",
-          "name": "Wipeout Run",
-          "price": "March 6th - April 9th: $56\nApril 10th - May 7th: $61\nMay 8th - May 21st: $66\nMay 22nd - June 5th: $71\nJune 6th: $81",
-          "quotes": [
-            "Seriously, best race I've done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!",
-            "Had a great time participating in the WIPEOUTRUN!",
-            "Such a blast! Let's do it again next year!"
-          ],
-          "short": "Try out the obstacles from the hit TV show \"Wipeout\"!",
-          "sponsors": "VaVi Sport & Social",
-          "themes": [
-            1
-          ],
-          "video_url": "https://www.youtube.com/embed/1uOII9K5c0c",
-          "website": "http://wipeoutrun.com/"
-        },
-        {
-          "address": "Bouckaert Farm\n10045 Cedar Grove\nFairburn, GA 30213",
-          "challenges": [
-            0,
-            2,
-            3,
-            5,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13
-          ],
-          "charities": "Wounded Warrior Project, U.S. Army",
-          "city": "Fairburn, Georgia",
-          "description": "Tough Mudder is a team-oriented obstacle course designed to test physical strength and mental grit. It puts camaraderie over finisher rankings and is not a timed race but a team challenge that allows participants to experience exhilarating, yet safe, world-class obstacles they won't find anywhere else",
-          "distance": "19K",
-          "fb_url": "https://www.facebook.com/toughmudder",
-          "hosts": "Tough Mudder",
-          "id": 8,
-          "imgs": [
-            "/static/img/runTempl/toughmudder1.jpg",
-            "/static/img/runTempl/toughmudder2.jpg",
-            "/static/img/runTempl/toughmudder3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/toughmudderLanding.jpg",
-          "loc": 3,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3322.038929257956!2d-84.7159338!3d33.6302326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4d91a281b01bf%3A0x5e4b7c6398a7c91e!2s10045+Cedar+Grove+Rd%2C+Fairburn%2C+GA+30213!5e0!3m2!1sen!2sus!4v1428532369676",
-          "name": "Tough Mudder",
-          "price": "Before May 2nd: $185\nMay 2nd: $185",
-          "quotes": [
-            "The teamwork and camaraderie out there was amazing.",
-            "The idea of Tough Mudder is not to win... but to have a story to tell.",
-            "Tough Mudder is a culture and community of taking on challenges and supporting each other."
-          ],
-          "short": "Get through 12 miles of military-style obstacles!",
-          "sponsors": "Toyo Tires, Cellucor, Shock-Top, MET-Rx, Oberto, Radisson, Wheaties, Under Armour",
-          "themes": [
-            1,
-            4,
-            5
-          ],
-          "video_url": "https://www.youtube.com/embed/Jim-ksScOoc",
-          "website": "https://toughmudder.com/"
-        },
-        {
-          "address": "Sunday River Ski Resort\n15 S Ridge Rd.\nNewry, ME 04261",
-          "challenges": [
-            0,
-            3,
-            5,
-            7,
-            11,
-            12
-          ],
-          "charities": "N/A",
-          "city": "Newry, Maine",
-          "description": "Carry your wife to the finish and win her weight in beer! The course at Sunday River is built to international specifications at 278 yards in length, with two dry obstacles and one water obstacle.",
-          "distance": "278yd",
-          "fb_url": "https://www.facebook.com/sundayriver",
-          "hosts": "Sunday River",
-          "id": 11,
-          "imgs": [
-            "/static/img/runTempl/wifecarry1.jpg",
-            "/static/img/runTempl/wifecarry2.jpg",
-            "/static/img/runTempl/wifecarry3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/wifecarryLanding.jpg",
-          "loc": 5,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2847.0332106871697!2d-70.856894!3d44.473492!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb3dd81009e321b%3A0xd2eb7c1aecb4af6e!2sSunday+River+Ski+Resort!5e0!3m2!1sen!2sus!4v1428532505050",
-          "name": "North American Wife Carrying Championship",
-          "price": "N/A",
-          "quotes": [
-            "It was a very cool event! Sunday River does a good job with it!",
-            "I'm wicked strong and she's wicked small!",
-            "Hardly fair playing field but fun to watch none the less."
-          ],
-          "short": "Carry your wife and win her weight in beer!",
-          "sponsors": "BudLight, Bethel Inn Resort",
-          "themes": [
-            4,
-            5
-          ],
-          "video_url": "https://player.vimeo.com/video/112507533",
-          "website": "http://www.sundayriver.com/events-and-activities/events-calendar/north-american-wife-carrying-championship"
-        }
+      "address": "Camden Yards\n333 W Camden St.\nBaltimore, MD 21201",
+      "challenges": [
+        0,
+        3,
+        5,
+        8,
+        9,
+        11,
+        12,
+        13
+      ],
+      "charities": "N/A",
+      "city": "Baltimore, Maryland",
+      "date": "June 6th, 2015",
+      "description": "Crash, smash, and splash your way through a 5k course with larger-than-life obstacles and elements inspired by the hit TV show Wipeout! Take on the infamous Big Balls, Sweeper, Wrecking Balls, and Happy Endings! Hilarious thrills and magnificent spills await!",
+      "distance": "5K",
+      "fb_url": "https://www.facebook.com/WIPEOUTRUN",
+      "hosts": "Ridiculous Obstacle Challenge Race LLC, Endemol USA Inc.",
+      "id": 0,
+      "imgs": [
+        "/static/img/runTempl/wipeout1.jpg",
+        "/static/img/runTempl/wipeout2.jpg",
+        "/static/img/runTempl/wipeout3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/wipeoutLanding.jpg",
+      "loc": 0,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12352.756020060675!2d-76.621608!3d39.283964!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2428d93f0397c539!2sOriole+Park+at+Camden+Yards!5e0!3m2!1sen!2sus!4v1427230426235",
+      "name": "Wipeout Run",
+      "price": "March 6th - April 9th: $56\nApril 10th - May 7th: $61\nMay 8th - May 21st: $66\nMay 22nd - June 5th: $71\nJune 6th: $81",
+      "quotes": [
+        "Seriously, best race I've done. So much fun. Thanks for coming to Dallas! Hope to see you here in the future!",
+        "Had a great time participating in the WIPEOUTRUN!",
+        "Such a blast! Let's do it again next year!"
+      ],
+      "short": "Try out the obstacles from the hit TV show \"Wipeout\"!",
+      "sponsors": "VaVi Sport & Social",
+      "themes": [
+        1
+      ],
+      "video_url": "https://www.youtube.com/embed/1uOII9K5c0c",
+      "website": "http://wipeoutrun.com/"
+    },
+    {
+      "address": "Bouckaert Farm\n10045 Cedar Grove\nFairburn, GA 30213",
+      "challenges": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "charities": "Wounded Warrior Project, U.S. Army",
+      "city": "Fairburn, Georgia",
+      "date": "May 2nd, 2015",
+      "description": "Tough Mudder is a team-oriented obstacle course designed to test physical strength and mental grit. It puts camaraderie over finisher rankings and is not a timed race but a team challenge that allows participants to experience exhilarating, yet safe, world-class obstacles they won't find anywhere else",
+      "distance": "19K",
+      "fb_url": "https://www.facebook.com/toughmudder",
+      "hosts": "Tough Mudder",
+      "id": 8,
+      "imgs": [
+        "/static/img/runTempl/toughmudder1.jpg",
+        "/static/img/runTempl/toughmudder2.jpg",
+        "/static/img/runTempl/toughmudder3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/toughmudderLanding.jpg",
+      "loc": 3,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3322.038929257956!2d-84.7159338!3d33.6302326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4d91a281b01bf%3A0x5e4b7c6398a7c91e!2s10045+Cedar+Grove+Rd%2C+Fairburn%2C+GA+30213!5e0!3m2!1sen!2sus!4v1428532369676",
+      "name": "Tough Mudder",
+      "price": "Before May 2nd: $185\nMay 2nd: $185",
+      "quotes": [
+        "The teamwork and camaraderie out there was amazing.",
+        "The idea of Tough Mudder is not to win... but to have a story to tell.",
+        "Tough Mudder is a culture and community of taking on challenges and supporting each other."
+      ],
+      "short": "Get through 12 miles of military-style obstacles!",
+      "sponsors": "Toyo Tires, Cellucor, Shock-Top, MET-Rx, Oberto, Radisson, Wheaties, Under Armour",
+      "themes": [
+        1,
+        4,
+        5
+      ],
+      "video_url": "https://www.youtube.com/embed/Jim-ksScOoc",
+      "website": "https://toughmudder.com/"
+    },
+    {
+      "address": "Sunday River Ski Resort\n15 S Ridge Rd.\nNewry, ME 04261",
+      "challenges": [
+        0,
+        3,
+        5,
+        7,
+        11,
+        12
+      ],
+      "charities": "N/A",
+      "city": "Newry, Maine",
+      "date": "October 10th, 2015",
+      "description": "Carry your wife to the finish and win her weight in beer! The course at Sunday River is built to international specifications at 278 yards in length, with two dry obstacles and one water obstacle.",
+      "distance": "278yd",
+      "fb_url": "https://www.facebook.com/sundayriver",
+      "hosts": "Sunday River",
+      "id": 11,
+      "imgs": [
+        "/static/img/runTempl/wifecarry1.jpg",
+        "/static/img/runTempl/wifecarry2.jpg",
+        "/static/img/runTempl/wifecarry3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/wifecarryLanding.jpg",
+      "loc": 5,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2847.0332106871697!2d-70.856894!3d44.473492!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb3dd81009e321b%3A0xd2eb7c1aecb4af6e!2sSunday+River+Ski+Resort!5e0!3m2!1sen!2sus!4v1428532505050",
+      "name": "North American Wife Carrying Championship",
+      "price": "N/A",
+      "quotes": [
+        "It was a very cool event! Sunday River does a good job with it!",
+        "I'm wicked strong and she's wicked small!",
+        "Hardly fair playing field but fun to watch none the less."
+      ],
+      "short": "Carry your wife and win her weight in beer!",
+      "sponsors": "BudLight, Bethel Inn Resort",
+      "themes": [
+        4,
+        5
+      ],
+      "video_url": "https://player.vimeo.com/video/112507533",
+      "website": "http://www.sundayriver.com/events-and-activities/events-calendar/north-american-wife-carrying-championship"
+    }
       ]
     }))
 		self.assertEqual(response_object, expected)
@@ -4300,370 +4341,257 @@ class TestAPI (TestCase) :
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
 		expected = 	json.loads(json.dumps({
-      "funruns": [
-        {
-          "address": "Cleveland Public Square\nCleveland, OH 44113",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
-          "city": "Cleveland, Ohio",
-          "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
-          "distance": "5K, 10K",
-          "fb_url": "https://www.facebook.com/AChristmasStoryRun",
-          "hosts": "A Christmas Story House & Museum",
-          "id": 1,
-          "imgs": [
-            "/static/img/runTempl/christmasstory1.jpg",
-            "/static/img/runTempl/christmasstory2.jpg",
-            "/static/img/runTempl/christmasstory3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/christmasStoryRunLanding.jpg",
-          "loc": 2,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965",
-          "name": "A Christmas Story Run",
-          "price": "Before September 30th: $45\nOctober 1st - December 5th: $55",
-          "quotes": [
-            "I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.",
-            "Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.",
-            "All in all Pepper gives this fun run an A+!"
-          ],
-          "short": "Experience the classic movie \"A Christmas Story\" in person.",
-          "sponsors": "Ovaltine, Renaissance Hotels, Dannon, Walmart, McDonalds, The Home Depot",
-          "themes": [
-            0,
-            2,
-            3
-          ],
-          "video_url": "https://www.youtube.com/embed/uPiN-_p7q2k",
-          "website": "http://achristmasstoryrun.com/"
-        },
-        {
-          "address": "City Hall Plaza\n500 Marilla St.\nDallas, TX 75201",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "The Y Community Programs",
-          "city": "Dallas, Texas",
-          "description": "The Dallas Turkey Trot really proves that everything's bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.",
-          "distance": "5K, 8mi",
-          "fb_url": "https://www.facebook.com/DallasYMCATrot",
-          "hosts": "YMCA, Capital One Bank",
-          "id": 2,
-          "imgs": [
-            "/static/img/runTempl/dallasturkey1.jpg",
-            "/static/img/runTempl/dallasturkey2.jpg",
-            "/static/img/runTempl/dallasturkey3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg",
-          "loc": 1,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.251274220785!2d-96.79709!3d32.777333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83854fdfdad6162!2sDallas+City+Hall!5e0!3m2!1sen!2sus!4v1427228610474",
-          "name": "Dallas Turkey Trot",
-          "price": "Before September 30th: $30\nSeptember 31st - November 25th: $35\nNovember 26th: $45",
-          "quotes": [
-            "This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!",
-            "This event is by far the best family friendly event that takes place in Dallas each year!",
-            "I had a blast running the Turkey Trot this year. Even though it's my first time doing it, I will definitely make it a tradition every year"
-          ],
-          "short": "Run in the largest Thanksgiving Day event of its kind.",
-          "sponsors": "The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys",
-          "themes": [
-            0,
-            2
-          ],
-          "video_url": "https://www.youtube.com/embed/qdnzjhWgCOg",
-          "website": "http://thetrot.org/"
-        },
-        {
-          "address": "Main St & Howard St\nSan Francisco, CA 94105",
-          "challenges": [
-            1,
-            3,
-            6
-          ],
-          "charities": "Mo'MAGIC, United Way of the Bay Area, National Kidney Foundation",
-          "city": "San Francisco, California",
-          "description": "The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coasts Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.",
-          "distance": "12K",
-          "fb_url": "https://www.facebook.com/zapposbaytobreakers",
-          "hosts": "Zappos.com",
-          "id": 3,
-          "imgs": [
-            "/static/img/runTempl/baytobreakers1.jpg",
-            "/static/img/runTempl/baytobreakers2.jpg",
-            "/static/img/runTempl/baytobreakers3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/baytobreakersLanding.jpg",
-          "loc": 6,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3152.984846292559!2d-122.39335585211597!3d37.79039490045594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dca37cb7%3A0x3509f87b15b8eae5!2s219+Howard+St%2C+San+Francisco%2C+CA+94105!5e0!3m2!1sen!2sus!4v1428532134914",
-          "name": "Bay To Breakers",
-          "price": "Adult: $59\nChild: $29.50\nVIP: $139\nGroup/Centipede: $54",
-          "quotes": [
-            "Bay to Breakers is a direct route to the city's heart and soul.",
-            "This 12k seriously looks like a party!",
-            "This is an amazing experience that will last forever. It is not only a race, but an incredible party throughout the streets of San Francisco."
-          ],
-          "short": "Explore SF from the bay to the Ocean Beach breakers.",
-          "sponsors": "Under Armour, MapMyRun, Geico, Hyatt Regency, TomTom, Kron4, Kettle Brand, Big 5 Sporting Goods, Hangzhou, Mio",
-          "themes": [
-            2,
-            5
-          ],
-          "video_url": "https://www.youtube.com/embed/NVEVGSEJmOc",
-          "website": "http://zapposbaytobreakers.com/"
-        },
-        {
-          "address": "3186 DPH 4-H Camp\nSound Avenue\nRiverhead, NY 11901",
-          "challenges": [
-            1,
-            4,
-            10,
-            12,
-            14
-          ],
-          "charities": "Local Charities",
-          "city": "Riverhead, New York",
-          "description": "Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don't let the zombies pull your flags!",
-          "distance": "5K, 15K",
-          "fb_url": "https://www.facebook.com/zombieracellc",
-          "hosts": "Great Vision Productions LLC",
-          "id": 4,
-          "imgs": [
-            "/static/img/runTempl/zombierun1.jpg",
-            "/static/img/runTempl/zombierun2.jpg",
-            "/static/img/runTempl/zombierun3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/zombierunLanding.jpg",
-          "loc": 7,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48208.84256933457!2d-72.7160401!3d40.9584252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e861d37b7288b9%3A0x67dff709a1d00494!2sNassau+County+4H+Camp!5e0!3m2!1sen!2sus!4v1428532216187",
-          "name": "Zombie Run",
-          "price": "5K Prices\nBefore February 6th: $55\nFebruary 7th - February 27th: $65\nFebruary 28th - March 27th: $75\nMarch 28th - April 17th: $85\nApril 18th - May 1st: $95\n15K Prices\nBefore February 6th: $75\nFebruary 7th - February 27th: $85\nFebruary 28th - March 27th: $95\nMarch 28th - April 17th: $105\nApril 18th - May 1st: $155\nZombie Price\nBefore February 6th: $20\nFebruary 7th - February 27th: $25\nFebruary 28th - March 27th: $30\nMarch 28th - April 17th: $35\nApril 18th - May 1st: $40",
-          "quotes": [
-            "They don't like fast food",
-            "Run like zombies are chasing you!",
-            "This is one of the funnest events I've ever attended!"
-          ],
-          "short": "Escape the zombies and get to the finish line!",
-          "sponsors": "WholeSale Halloween Costumes",
-          "themes": [
-            1,
-            2,
-            9
-          ],
-          "video_url": "https://www.youtube.com/embed/yhrC2CO9gKM",
-          "website": "http://www.zombierace.co/index.php"
-        },
-        {
-          "address": "The Long Center Grounds\n701 W Riverside Dr.\nAustin, TX 78704",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "Capital Area Food Bank of Texas",
-          "city": "Austin, Texas",
-          "description": "Slip into your weirdest costume, slap on your favorite light up running shoes and throw your timer into Lady Bird Lake! This is the slowest 5K on the planet - the wildest, weirdest and most memorable!",
-          "distance": "5K",
-          "fb_url": "https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639",
-          "hosts": "The Long Center",
-          "id": 10,
-          "imgs": [
-            "/static/img/runTempl/keepAustinWeird1.jpg",
-            "/static/img/runTempl/keepAustinWeird2.jpg",
-            "/static/img/runTempl/keepAustinWeird3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/keepAustinWeirdLanding.jpg",
-          "loc": 4,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3446.1964982159493!2d-97.751079!3d30.259982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b504ea2084d7%3A0xa8a514235a56453e!2s701+W+Riverside+Dr%2C+Austin%2C+TX+78704!5e0!3m2!1sen!2sus!4v1428532467708",
-          "name": "Keep Austin Weird 5K",
-          "price": "VIP: $75\nAdults: $22.50\nKids: $12",
-          "quotes": [
-            "So much fun! Drove down from Oklahoma City to attend!",
-            "So well done! Loads of fun!",
-            "It was our first time attending the fest and we had a blast! I will be back next year for sure!"
-          ],
-          "short": "Make Austin weird in the slowest race ever!",
-          "sponsors": "HotSchedules, AT&T U-verse, Amy's Ice Cream, Babyearth, Beatbox Beverages",
-          "themes": [
-            2,
-            3,
-            8
-          ],
-          "video_url": "https://www.youtube.com/embed/9sL-B1D7v34",
-          "website": "http://keepaustinweirdfest.com/festival/"
-        }
-      ]
-    }))
+  "funruns": [
+    {
+      "address": "Cleveland Public Square\nCleveland, OH 44113",
+      "challenges": [
+        1,
+        2
+      ],
+      "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
+      "city": "Cleveland, Ohio",
+      "date": "December 5th, 2015",
+      "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
+      "distance": "5K, 10K",
+      "fb_url": "https://www.facebook.com/AChristmasStoryRun",
+      "hosts": "A Christmas Story House & Museum",
+      "id": 1,
+      "imgs": [
+        "/static/img/runTempl/christmasstory1.jpg",
+        "/static/img/runTempl/christmasstory2.jpg",
+        "/static/img/runTempl/christmasstory3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/christmasStoryRunLanding.jpg",
+      "loc": 2,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965",
+      "name": "A Christmas Story Run",
+      "price": "Before September 30th: $45\nOctober 1st - December 5th: $55",
+      "quotes": [
+        "I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.",
+        "Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.",
+        "All in all Pepper gives this fun run an A+!"
+      ],
+      "short": "Experience the classic movie \"A Christmas Story\" in person.",
+      "sponsors": "Ovaltine, Renaissance Hotels, Dannon, Walmart, McDonalds, The Home Depot",
+      "themes": [
+        0,
+        2,
+        3
+      ],
+      "video_url": "https://www.youtube.com/embed/uPiN-_p7q2k",
+      "website": "http://achristmasstoryrun.com/"
+    },
+    {
+      "address": "City Hall Plaza\n500 Marilla St.\nDallas, TX 75201",
+      "challenges": [
+        1,
+        2
+      ],
+      "charities": "The Y Community Programs",
+      "city": "Dallas, Texas",
+      "date": "November 26th, 2015",
+      "description": "The Dallas Turkey Trot really proves that everything's bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.",
+      "distance": "5K, 8mi",
+      "fb_url": "https://www.facebook.com/DallasYMCATrot",
+      "hosts": "YMCA, Capital One Bank",
+      "id": 2,
+      "imgs": [
+        "/static/img/runTempl/dallasturkey1.jpg",
+        "/static/img/runTempl/dallasturkey2.jpg",
+        "/static/img/runTempl/dallasturkey3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg",
+      "loc": 1,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.251274220785!2d-96.79709!3d32.777333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83854fdfdad6162!2sDallas+City+Hall!5e0!3m2!1sen!2sus!4v1427228610474",
+      "name": "Dallas Turkey Trot",
+      "price": "Before September 30th: $30\nSeptember 31st - November 25th: $35\nNovember 26th: $45",
+      "quotes": [
+        "This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!",
+        "This event is by far the best family friendly event that takes place in Dallas each year!",
+        "I had a blast running the Turkey Trot this year. Even though it's my first time doing it, I will definitely make it a tradition every year"
+      ],
+      "short": "Run in the largest Thanksgiving Day event of its kind.",
+      "sponsors": "The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys",
+      "themes": [
+        0,
+        2
+      ],
+      "video_url": "https://www.youtube.com/embed/qdnzjhWgCOg",
+      "website": "http://thetrot.org/"
+    },
+    {
+      "address": "Main St & Howard St\nSan Francisco, CA 94105",
+      "challenges": [
+        1,
+        3,
+        6
+      ],
+      "charities": "Mo'MAGIC, United Way of the Bay Area, National Kidney Foundation",
+      "city": "San Francisco, California",
+      "date": "May 17th, 2015",
+      "description": "The Zappos.com Bay to Breakers 12K race runs west through the city and finishes at the Great Highway along the Pacific Coasts Ocean Beach. Participants run up the iconic Hayes Street Hill, along the Panhandle and through Golden Gate Park, while the city of San Francisco cheers them on.",
+      "distance": "12K",
+      "fb_url": "https://www.facebook.com/zapposbaytobreakers",
+      "hosts": "Zappos.com",
+      "id": 3,
+      "imgs": [
+        "/static/img/runTempl/baytobreakers1.jpg",
+        "/static/img/runTempl/baytobreakers2.jpg",
+        "/static/img/runTempl/baytobreakers3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/baytobreakersLanding.jpg",
+      "loc": 6,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3152.984846292559!2d-122.39335585211597!3d37.79039490045594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064dca37cb7%3A0x3509f87b15b8eae5!2s219+Howard+St%2C+San+Francisco%2C+CA+94105!5e0!3m2!1sen!2sus!4v1428532134914",
+      "name": "Bay To Breakers",
+      "price": "Adult: $59\nChild: $29.50\nVIP: $139\nGroup/Centipede: $54",
+      "quotes": [
+        "Bay to Breakers is a direct route to the city's heart and soul.",
+        "This 12k seriously looks like a party!",
+        "This is an amazing experience that will last forever. It is not only a race, but an incredible party throughout the streets of San Francisco."
+      ],
+      "short": "Explore SF from the bay to the Ocean Beach breakers.",
+      "sponsors": "Under Armour, MapMyRun, Geico, Hyatt Regency, TomTom, Kron4, Kettle Brand, Big 5 Sporting Goods, Hangzhou, Mio",
+      "themes": [
+        2,
+        5
+      ],
+      "video_url": "https://www.youtube.com/embed/NVEVGSEJmOc",
+      "website": "http://zapposbaytobreakers.com/"
+    },
+    {
+      "address": "3186 DPH 4-H Camp\nSound Avenue\nRiverhead, NY 11901",
+      "challenges": [
+        1,
+        4,
+        10,
+        12,
+        14
+      ],
+      "charities": "Local Charities",
+      "city": "Riverhead, New York",
+      "date": "May 10th, 2015",
+      "description": "Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don't let the zombies pull your flags!",
+      "distance": "5K, 15K",
+      "fb_url": "https://www.facebook.com/zombieracellc",
+      "hosts": "Great Vision Productions LLC",
+      "id": 4,
+      "imgs": [
+        "/static/img/runTempl/zombierun1.jpg",
+        "/static/img/runTempl/zombierun2.jpg",
+        "/static/img/runTempl/zombierun3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/zombierunLanding.jpg",
+      "loc": 7,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48208.84256933457!2d-72.7160401!3d40.9584252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e861d37b7288b9%3A0x67dff709a1d00494!2sNassau+County+4H+Camp!5e0!3m2!1sen!2sus!4v1428532216187",
+      "name": "Zombie Run",
+      "price": "5K Prices\nBefore February 6th: $55\nFebruary 7th - February 27th: $65\nFebruary 28th - March 27th: $75\nMarch 28th - April 17th: $85\nApril 18th - May 1st: $95\n15K Prices\nBefore February 6th: $75\nFebruary 7th - February 27th: $85\nFebruary 28th - March 27th: $95\nMarch 28th - April 17th: $105\nApril 18th - May 1st: $155\nZombie Price\nBefore February 6th: $20\nFebruary 7th - February 27th: $25\nFebruary 28th - March 27th: $30\nMarch 28th - April 17th: $35\nApril 18th - May 1st: $40",
+      "quotes": [
+        "They don't like fast food",
+        "Run like zombies are chasing you!",
+        "This is one of the funnest events I've ever attended!"
+      ],
+      "short": "Escape the zombies and get to the finish line!",
+      "sponsors": "WholeSale Halloween Costumes",
+      "themes": [
+        1,
+        2,
+        9
+      ],
+      "video_url": "https://www.youtube.com/embed/yhrC2CO9gKM",
+      "website": "http://www.zombierace.co/index.php"
+    },
+    {
+      "address": "The Long Center Grounds\n701 W Riverside Dr.\nAustin, TX 78704",
+      "challenges": [
+        1,
+        2
+      ],
+      "charities": "Capital Area Food Bank of Texas",
+      "city": "Austin, Texas",
+      "date": "June 27th, 2015",
+      "description": "Slip into your weirdest costume, slap on your favorite light up running shoes and throw your timer into Lady Bird Lake! This is the slowest 5K on the planet - the wildest, weirdest and most memorable!",
+      "distance": "5K",
+      "fb_url": "https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639",
+      "hosts": "The Long Center",
+      "id": 10,
+      "imgs": [
+        "/static/img/runTempl/keepAustinWeird1.jpg",
+        "/static/img/runTempl/keepAustinWeird2.jpg",
+        "/static/img/runTempl/keepAustinWeird3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/keepAustinWeirdLanding.jpg",
+      "loc": 4,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3446.1964982159493!2d-97.751079!3d30.259982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b504ea2084d7%3A0xa8a514235a56453e!2s701+W+Riverside+Dr%2C+Austin%2C+TX+78704!5e0!3m2!1sen!2sus!4v1428532467708",
+      "name": "Keep Austin Weird 5K",
+      "price": "VIP: $75\nAdults: $22.50\nKids: $12",
+      "quotes": [
+        "So much fun! Drove down from Oklahoma City to attend!",
+        "So well done! Loads of fun!",
+        "It was our first time attending the fest and we had a blast! I will be back next year for sure!"
+      ],
+      "short": "Make Austin weird in the slowest race ever!",
+      "sponsors": "HotSchedules, AT&T U-verse, Amy's Ice Cream, Babyearth, Beatbox Beverages",
+      "themes": [
+        2,
+        3,
+        8
+      ],
+      "video_url": "https://www.youtube.com/embed/9sL-B1D7v34",
+      "website": "http://keepaustinweirdfest.com/festival/"
+    }
+  ]
+}))
 		self.assertEqual(response_object, expected)
 
-	def test_challenge_run_2 (self) :
-		self.maxDiff = None
-		url = server_address + '/api/challenges/2/funruns'
+	def test_challenge_run_4 (self) :
+		# self.maxDiff = None
+		url = server_address + '/api/challenges/4/funruns'
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
 		expected = 	json.loads(json.dumps({
       "funruns": [
         {
-          "address": "Cleveland Public Square\nCleveland, OH 44113",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "A Christmas Story House Foundation, Inc. Cleveland Home Restoration Projects",
-          "city": "Cleveland, Ohio",
-          "description": "The movie producers must have been runners, because the distance between the former Higbee's Department Store and the A Christmas Story House and Museum is about 5K.  Ralphie's dad, The Old Man must have used the 1938 Oldsmobile to track the distance, since there was no GPS in the 1940's.  To accommodate both movie locations that made this race famous, the distance for the races are approximate, and perhaps a little shorter or longer.",
-          "distance": "5K, 10K",
-          "fb_url": "https://www.facebook.com/AChristmasStoryRun",
-          "hosts": "A Christmas Story House & Museum",
-          "id": 1,
-          "imgs": [
-            "/static/img/runTempl/christmasstory1.jpg",
-            "/static/img/runTempl/christmasstory2.jpg",
-            "/static/img/runTempl/christmasstory3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/christmasStoryRunLanding.jpg",
-          "loc": 2,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2988.260792402495!2d-81.694473!3d41.498622999999995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f07e4562d241%3A0x94e8396bc5227630!2sRenaissance+Cleveland+Hotel!5e0!3m2!1sen!2sus!4v1427230544965",
-          "name": "A Christmas Story Run",
-          "price": "Before September 30th: $45\nOctober 1st - December 5th: $55",
-          "quotes": [
-            "I was so excited to get my finisher medal and enjoy a well deserved Christmas Ale.",
-            "Despite the crowds, it was so much fun seeing everyone in costume celebrating the movie and our city.",
-            "All in all Pepper gives this fun run an A+!"
-          ],
-          "short": "Experience the classic movie \"A Christmas Story\" in person.",
-          "sponsors": "Ovaltine, Renaissance Hotels, Dannon, Walmart, McDonalds, The Home Depot",
-          "themes": [
-            0,
-            2,
-            3
-          ],
-          "video_url": "https://www.youtube.com/embed/uPiN-_p7q2k",
-          "website": "http://achristmasstoryrun.com/"
-        },
-        {
-          "address": "City Hall Plaza\n500 Marilla St.\nDallas, TX 75201",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "The Y Community Programs",
-          "city": "Dallas, Texas",
-          "description": "The Dallas Turkey Trot really proves that everything's bigger in Texas. One of the largest multi-event races in the country, this trot attracts elite runners and regular ol' birds alike. In fact, in 2011, it set a world record for the largest gathering of people dressed as turkeys.",
-          "distance": "5K, 8mi",
-          "fb_url": "https://www.facebook.com/DallasYMCATrot",
-          "hosts": "YMCA, Capital One Bank",
-          "id": 2,
-          "imgs": [
-            "/static/img/runTempl/dallasturkey1.jpg",
-            "/static/img/runTempl/dallasturkey2.jpg",
-            "/static/img/runTempl/dallasturkey3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/dallasTurkeyTrotLanding.jpg",
-          "loc": 1,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13418.251274220785!2d-96.79709!3d32.777333!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc83854fdfdad6162!2sDallas+City+Hall!5e0!3m2!1sen!2sus!4v1427228610474",
-          "name": "Dallas Turkey Trot",
-          "price": "Before September 30th: $30\nSeptember 31st - November 25th: $35\nNovember 26th: $45",
-          "quotes": [
-            "This will be the sixth year my wife and I have run the Dallas Turkey Trot. We began running this race the first year we got married and have kept it a tradition every year. Love this race!",
-            "This event is by far the best family friendly event that takes place in Dallas each year!",
-            "I had a blast running the Turkey Trot this year. Even though it's my first time doing it, I will definitely make it a tradition every year"
-          ],
-          "short": "Run in the largest Thanksgiving Day event of its kind.",
-          "sponsors": "The Dallas Morning News, Brand Keepers, City of Dallas, Kroger, Nike, The Dallas Cowboys",
-          "themes": [
-            0,
-            2
-          ],
-          "video_url": "https://www.youtube.com/embed/qdnzjhWgCOg",
-          "website": "http://thetrot.org/"
-        },
-        {
-          "address": "Bouckaert Farm\n10045 Cedar Grove\nFairburn, GA 30213",
-          "challenges": [
-            0,
-            2,
-            3,
-            5,
-            7,
-            8,
-            9,
-            10,
-            11,
-            12,
-            13
-          ],
-          "charities": "Wounded Warrior Project, U.S. Army",
-          "city": "Fairburn, Georgia",
-          "description": "Tough Mudder is a team-oriented obstacle course designed to test physical strength and mental grit. It puts camaraderie over finisher rankings and is not a timed race but a team challenge that allows participants to experience exhilarating, yet safe, world-class obstacles they won't find anywhere else",
-          "distance": "19K",
-          "fb_url": "https://www.facebook.com/toughmudder",
-          "hosts": "Tough Mudder",
-          "id": 8,
-          "imgs": [
-            "/static/img/runTempl/toughmudder1.jpg",
-            "/static/img/runTempl/toughmudder2.jpg",
-            "/static/img/runTempl/toughmudder3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/toughmudderLanding.jpg",
-          "loc": 3,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3322.038929257956!2d-84.7159338!3d33.6302326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f4d91a281b01bf%3A0x5e4b7c6398a7c91e!2s10045+Cedar+Grove+Rd%2C+Fairburn%2C+GA+30213!5e0!3m2!1sen!2sus!4v1428532369676",
-          "name": "Tough Mudder",
-          "price": "Before May 2nd: $185\nMay 2nd: $185",
-          "quotes": [
-            "The teamwork and camaraderie out there was amazing.",
-            "The idea of Tough Mudder is not to win... but to have a story to tell.",
-            "Tough Mudder is a culture and community of taking on challenges and supporting each other."
-          ],
-          "short": "Get through 12 miles of military-style obstacles!",
-          "sponsors": "Toyo Tires, Cellucor, Shock-Top, MET-Rx, Oberto, Radisson, Wheaties, Under Armour",
-          "themes": [
-            1,
-            4,
-            5
-          ],
-          "video_url": "https://www.youtube.com/embed/Jim-ksScOoc",
-          "website": "https://toughmudder.com/"
-        },
-        {
-          "address": "The Long Center Grounds\n701 W Riverside Dr.\nAustin, TX 78704",
-          "challenges": [
-            1,
-            2
-          ],
-          "charities": "Capital Area Food Bank of Texas",
-          "city": "Austin, Texas",
-          "description": "Slip into your weirdest costume, slap on your favorite light up running shoes and throw your timer into Lady Bird Lake! This is the slowest 5K on the planet - the wildest, weirdest and most memorable!",
-          "distance": "5K",
-          "fb_url": "https://www.facebook.com/pages/Keep-Austin-Weird-Festival-5K/121126484577639",
-          "hosts": "The Long Center",
-          "id": 10,
-          "imgs": [
-            "/static/img/runTempl/keepAustinWeird1.jpg",
-            "/static/img/runTempl/keepAustinWeird2.jpg",
-            "/static/img/runTempl/keepAustinWeird3.jpg"
-          ],
-          "landing_img": "/static/img/landing/funruns/keepAustinWeirdLanding.jpg",
-          "loc": 4,
-          "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3446.1964982159493!2d-97.751079!3d30.259982!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b504ea2084d7%3A0xa8a514235a56453e!2s701+W+Riverside+Dr%2C+Austin%2C+TX+78704!5e0!3m2!1sen!2sus!4v1428532467708",
-          "name": "Keep Austin Weird 5K",
-          "price": "VIP: $75\nAdults: $22.50\nKids: $12",
-          "quotes": [
-            "So much fun! Drove down from Oklahoma City to attend!",
-            "So well done! Loads of fun!",
-            "It was our first time attending the fest and we had a blast! I will be back next year for sure!"
-          ],
-          "short": "Make Austin weird in the slowest race ever!",
-          "sponsors": "HotSchedules, AT&T U-verse, Amy's Ice Cream, Babyearth, Beatbox Beverages",
-          "themes": [
-            2,
-            3,
-            8
-          ],
-          "video_url": "https://www.youtube.com/embed/9sL-B1D7v34",
-          "website": "http://keepaustinweirdfest.com/festival/"
-        }
+      "address": "3186 DPH 4-H Camp\nSound Avenue\nRiverhead, NY 11901",
+      "challenges": [
+        1,
+        4,
+        10,
+        12,
+        14
+      ],
+      "charities": "Local Charities",
+      "city": "Riverhead, New York",
+      "date": "May 10th, 2015",
+      "description": "Join us at ZOMBIE RACE! A 5k & 15k run infested with zombies. From the moment the humans leave the start line, theyll be running, crawling, and fleeing in horror from the hordes of undead whose only mission is to devour them alive! Don't let the zombies pull your flags!",
+      "distance": "5K, 15K",
+      "fb_url": "https://www.facebook.com/zombieracellc",
+      "hosts": "Great Vision Productions LLC",
+      "id": 4,
+      "imgs": [
+        "/static/img/runTempl/zombierun1.jpg",
+        "/static/img/runTempl/zombierun2.jpg",
+        "/static/img/runTempl/zombierun3.jpg"
+      ],
+      "landing_img": "/static/img/landing/funruns/zombierunLanding.jpg",
+      "loc": 7,
+      "map_url": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48208.84256933457!2d-72.7160401!3d40.9584252!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e861d37b7288b9%3A0x67dff709a1d00494!2sNassau+County+4H+Camp!5e0!3m2!1sen!2sus!4v1428532216187",
+      "name": "Zombie Run",
+      "price": "5K Prices\nBefore February 6th: $55\nFebruary 7th - February 27th: $65\nFebruary 28th - March 27th: $75\nMarch 28th - April 17th: $85\nApril 18th - May 1st: $95\n15K Prices\nBefore February 6th: $75\nFebruary 7th - February 27th: $85\nFebruary 28th - March 27th: $95\nMarch 28th - April 17th: $105\nApril 18th - May 1st: $155\nZombie Price\nBefore February 6th: $20\nFebruary 7th - February 27th: $25\nFebruary 28th - March 27th: $30\nMarch 28th - April 17th: $35\nApril 18th - May 1st: $40",
+      "quotes": [
+        "They don't like fast food",
+        "Run like zombies are chasing you!",
+        "This is one of the funnest events I've ever attended!"
+      ],
+      "short": "Escape the zombies and get to the finish line!",
+      "sponsors": "WholeSale Halloween Costumes",
+      "themes": [
+        1,
+        2,
+        9
+      ],
+      "video_url": "https://www.youtube.com/embed/yhrC2CO9gKM",
+      "website": "http://www.zombierace.co/index.php"
+    }
       ]
     }))
 		self.assertEqual(response_object, expected)
