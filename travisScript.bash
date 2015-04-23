@@ -65,15 +65,15 @@ cd ..
 
 # echo "Making IDB.log"
 
-# commit_message=`git log -1 --pretty=%B`
-# commit_author=`git log -1 --pretty=%cn`
-# commit_email=`git log -1 --pretty=%ce`
+ commit_message=`git log -1 --pretty=%B`
+ commit_author=`git log -1 --pretty=%cn`
+ commit_email=`git log -1 --pretty=%ce`
 
-# git config --global user.name "$commit_author"
-# git config --global user.email "$commit_email"
-# git config --global push.default simple
-# git config --global credential.helper store
-# echo "https://${GITHUB_KEY}:x-oauth-basic@github.com" >> ~/.git-credentials
+ git config --global user.name "$commit_author"
+ git config --global user.email "$commit_email"
+ git config --global push.default simple
+ git config --global credential.helper store
+ echo "https://${GITHUB_KEY}:x-oauth-basic@github.com" >> ~/.git-credentials
 
  git checkout travis-ci
  git add -A
