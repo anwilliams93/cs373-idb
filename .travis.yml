@@ -1,15 +1,13 @@
 language: python
 python:
-  - "3.4"
-# command to install dependencies
+- '3.4'
 install:
-  #- "pip install --upgrade pip" 
-  - "pip install -r requirements.txt"
-# command to run tests
+- pip install -r requirements.txt
 script: bash travisScript.bash
 branches:
   except:
-    - travis-ci
+  - travis-ci
 env:
   global:
-    secure: "MRhbsk09t387YxPqw4Fccvs/cpLZDqsJidw574Jo03mnBJZL3GHAU6EYttQaeaeNEU5OOl/JFCMBG1E7WoOv6tbgZ7v5U/Z2VCDIwSAhcGkAiV+hw0RiPlkZJYkcIUMIs4ItLF4kStDsqAa9IhwYKoP28CO3dRr79vUAuif3V/E="
+  - secure: MRhbsk09t387YxPqw4Fccvs/cpLZDqsJidw574Jo03mnBJZL3GHAU6EYttQaeaeNEU5OOl/JFCMBG1E7WoOv6tbgZ7v5U/Z2VCDIwSAhcGkAiV+hw0RiPlkZJYkcIUMIs4ItLF4kStDsqAa9IhwYKoP28CO3dRr79vUAuif3V/E=
+  - secure: VuqdwfWVV+uBOOfz1NJ75lvpPtH61JeQ7MAw6nvxhMK3shAxcIKYmq7tZdXpv6YSg4FALTnydxXznJe5uNGpma4Gy98xxc38YKp8sumNsydsI5d/PlfkvZOWDD3LyZxUApKkWa5h6da9sD+FISgg7ITU1O7fpVIj8x197OmVlXs=
