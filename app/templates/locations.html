@@ -41,10 +41,135 @@
   });
 
   myApp.controller('LocationGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
-    $http.get("http://104.239.139.43:8000/api/locations/").success(function(data) {
+    
+    // Default Order = Sort Name
+    $http.get("/api/locations/?sort=name:asc").success(function(data) {
+      $scope.order = "asc";
+      $scope.sort = "name";
       $scope.locations = data.locations;
       console.log($scope.locations);
     });
+
+    // Sort Name
+    $('#sort_name').on('click', function() {
+      $http.get("/api/locations/?sort=name:" + $scope.order).success(function(data) {
+        $scope.sort = "name";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });    
+
+    // Sort Altitude
+    $('#sort_altitude').on('click', function() {
+      $http.get("/api/locations/?sort=altitude:" + $scope.order).success(function(data) {
+        $scope.sort = "altitude";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });   
+
+    // Sort Annual Rainfall
+    $('#sort_annual_rainfall').on('click', function() {
+      $http.get("/api/locations/?sort=annual_rainfall:" + $scope.order).success(function(data) {
+        $scope.sort = "annual_rainfall";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });  
+
+    // Sort Winter Avg Temp
+    $('#sort_winter_avgTemp').on('click', function() {
+      $http.get("/api/locations/?sort=winter_avgTemp:" + $scope.order).success(function(data) {
+        $scope.sort = "winter_avgTemp";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });         
+
+    // Sort Spring Avg Temp
+    $('#sort_spring_avgTemp').on('click', function() {
+      $http.get("/api/locations/?sort=spring_avgTemp:" + $scope.order).success(function(data) {
+        $scope.sort = "spring_avgTemp";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });      
+
+    // Sort Summer Avg Temp
+    $('#sort_summer_avgTemp').on('click', function() {
+      $http.get("/api/locations/?sort=summer_avgTemp:" + $scope.order).success(function(data) {
+        $scope.sort = "summer_avgTemp";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });      
+
+    // Sort Fall Avg Temp
+    $('#sort_fall_avgTemp').on('click', function() {
+      $http.get("/api/locations/?sort=fall_avgTemp:" + $scope.order).success(function(data) {
+        $scope.sort = "fall_avgTemp";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });  
+
+    // Sort Winter Avg Humidity
+    $('#sort_winter_avgHumidity').on('click', function() {
+      $http.get("/api/locations/?sort=winter_avgHumidity:" + $scope.order).success(function(data) {
+        $scope.sort = "winter_avgHumidity";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });    
+
+    // Sort Spring Avg Humidity
+    $('#sort_spring_avgHumidity').on('click', function() {
+      $http.get("/api/locations/?sort=spring_avgHumidity:" + $scope.order).success(function(data) {
+        $scope.sort = "spring_avgHumidity";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });      
+
+    // Sort Summer Avg Humidity
+    $('#sort_summer_avgHumidity').on('click', function() {
+      $http.get("/api/locations/?sort=summer_avgHumidity:" + $scope.order).success(function(data) {
+        $scope.sort = "summer_avgHumidity";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });      
+
+    // Sort Fall Avg Humidity
+    $('#sort_fall_avgHumidity').on('click', function() {
+      $http.get("/api/locations/?sort=fall_avgHumidity:" + $scope.order).success(function(data) {
+        $scope.sort = "fall_avgHumidity";
+        $scope.locations = data.locations;
+        console.log($scope.locations);
+      });
+    });      
+
+    // Ascending
+    $('#asc').on('click', function() {
+      if($scope.order === "desc") {
+        $http.get("/api/locations/?sort=" + $scope.sort + ":asc").success(function(data) {
+          $scope.order = "asc";
+          $scope.locations = data.locations;
+          console.log($scope.locations);
+        });
+      }
+    });  
+
+    // Descending
+    $('#desc').on('click', function() {
+      if($scope.order === "asc") {
+        $http.get("/api/locations/?sort=" + $scope.sort + ":desc").success(function(data) {
+          $scope.order = "desc";
+          $scope.locations = data.locations;
+          console.log($scope.locations);
+        });
+      }
+    });                              
   }]);
 </script>
 
@@ -105,21 +230,36 @@
      
     <!-- Page Content
     ================================================== --> 
-
+    <div class="row">
         <!-- Gallery Items
         ================================================== --> 
-        <div class="row">            
-        <div class="span12 gallery">
-            <h2 class="title-bg"> Cities</h2>
+        <!-- SORTING -->
 
-            <!-- Possible Filter -->
-            <!-- <ul id="filterOptions" class="gallery-cats clearfix">
-                <li class="active"><a href="#" class="all">All</a></li> 
-                <li><a href="#" class="illustration">Illustration</a></li>
-                <li><a href="#" class="design">Design</a></li>
-                <li><a href="#" class="video">Video</a></li>
-                <li><a href="#" class="web">Web</a></li>
-            </ul> -->
+        <div class="span12">
+
+          <h6 class="title-bg">CURRENT SORT: By [[ sort ]] in [[ order ]]ending order</h6>
+          <div class="gallery-cats pull-left">
+            <li><a href="#" id="sort_name">Name</a></li>
+            <li><a href="#" id="sort_altitude">Altitude</a></li>
+            <li><a href="#" id="sort_annual_rainfall">Annual Rainfall</a></li>            
+            <li><a href="#" id="sort_winter_avgTemp">Winter Temp</a></li>
+            <li><a href="#" id="sort_spring_avgTemp">Spring Temp</a></li>
+            <li><a href="#" id="sort_summer_avgTemp">Summer Temp</a></li>
+            <li><a href="#" id="sort_fall_avgTemp">Fall Temp</a></li>   
+            <li><a href="#" id="sort_winter_avgHumidity">Winter Humidity</a></li>
+            <li><a href="#" id="sort_spring_avgHumidity">Spring Humidity</a></li>
+            <li><a href="#" id="sort_summer_avgHumidity">Summer Humidity</a></li>
+            <li><a href="#" id="sort_fall_avgHumidity">Fall Humidity</a></li>                                   
+          </div>
+          <div class= "gallery-cats pull-right">
+            <li><a href="#" id="asc">Ascending</a></li>
+            <li><a href="#" id="desc">Descending</a></li>  
+          </div>  
+        </div>
+        <!-- CONTENT -->        
+
+        <!-- <div class="row">             -->
+        <div class="span12 gallery">
 
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">

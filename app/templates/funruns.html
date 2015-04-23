@@ -34,6 +34,7 @@
 <script src="{{ url_for('static', filename='js/jquery.prettyPhoto.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.quicksand.js') }}"></script>
 <script src="{{ url_for('static', filename='js/jquery.custom.js') }}"></script>
+
 <script>
   var myApp = angular.module('FunRunModule', [], function($interpolateProvider) {
       $interpolateProvider.startSymbol('[[');
@@ -41,23 +42,91 @@
   });
 
   myApp.controller('FunRunGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
-    $http.get("http://104.239.139.43:8000/api/funruns/").success(function(data) {
-      $scope.funruns = data.funruns;
-      console.log($scope.funruns);
-    });
+
+      // Default Order = Sort Name
+      $http.get("/api/funruns/?sort=name:asc").success(function(data) {
+        $scope.order = "asc";
+        $scope.sort = "name";
+        $scope.funruns = data.funruns;
+        console.log($scope.funruns);
+      });
+
+      // Sort Name
+      $('#sort_name').on('click', function() {
+        $http.get("/api/funruns/?sort=name:" + $scope.order).success(function(data) {
+          $scope.sort = "name";
+          $scope.funruns = data.funruns;
+          console.log($scope.funruns);
+        });
+      });
+
+      // Sort Date
+      $('#sort_date').on('click', function() {
+        $http.get("/api/funruns/?sort=date:" + $scope.order).success(function(data) {
+          $scope.sort = "date";
+          $scope.funruns = data.funruns;
+          console.log($scope.funruns);
+        });
+      });     
+
+      // Sort Distance
+      $('#sort_distance').on('click', function() {
+        $http.get("/api/funruns/?sort=distance:" + $scope.order).success(function(data) {
+          $scope.sort = "distance";
+          $scope.funruns = data.funruns;
+          console.log($scope.funruns);
+        });
+      });         
+
+      // Sort Price
+      $('#sort_price').on('click', function() {
+        $http.get("/api/funruns/?sort=price:" + $scope.order).success(function(data) {
+          $scope.sort = "price";
+          $scope.funruns = data.funruns;
+          console.log($scope.funruns);
+        });
+      });     
+
+      // Sort Themes
+      $('#sort_themes').on('click', function() {
+        $http.get("/api/funruns/?sort=number_of_themes:" + $scope.order).success(function(data) {
+          $scope.sort = "number_of_themes";
+          $scope.funruns = data.funruns;
+          console.log($scope.funruns);
+        });
+      });       
+
+      // Sort Challenges
+      $('#sort_challenges').on('click', function() {
+        $http.get("/api/funruns/?sort=number_of_challenges:" + $scope.order).success(function(data) {
+          $scope.sort = "number_of_challenges";
+          $scope.funruns = data.funruns;
+          console.log($scope.funruns);
+        });
+      });                           
+
+      // Ascending
+      $('#asc').on('click', function() {
+        if($scope.order === "desc") {
+          $http.get("/api/funruns/?sort=" + $scope.sort + ":asc").success(function(data) {
+            $scope.order = "asc";
+            $scope.funruns = data.funruns;
+            console.log($scope.funruns);
+          });
+        }
+      });  
+
+      // Descending
+      $('#desc').on('click', function() {
+        if($scope.order === "asc") {
+          $http.get("/api/funruns/?sort=" + $scope.sort + ":desc").success(function(data) {
+            $scope.order = "desc";
+            $scope.funruns = data.funruns;
+            console.log($scope.funruns);
+          });
+        }
+      });          
   }]);
-</script>
-<script>
-  $(document).ready(
-      // function() {
-      //   setInterval(function() {
-      //     var randomnumber = Math.floor(Math.random() * 100);
-      //     $('#show').text(
-      //       'WHOOOO UPDATED ' + randomnumber);
-      //   }, 3000);
-      // }
-      $("$show")
-    );
 </script>
 
 </head>
@@ -115,7 +184,7 @@
     </div><!-- End Header -->
      
     <!-- Sort -->   
-    <div class="dropdown">
+<!--     <div class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown">
         <h4>
           Sort by
@@ -128,7 +197,7 @@
         <li><a>Distance</a></li>
         <li><a>Date</a></li>
       </ul>
-    </div>
+    </div> -->
     <!-- End Sort -->
 
 
@@ -138,19 +207,30 @@
 
         <!-- Gallery Items
         ================================================== --> 
-        <div class="span12 gallery">
+        <!-- SORTING -->
 
-            <!-- <ul id="filterOptions" class="gallery-cats clearfix">
-                <li class="active"><a href="#" class="all">All</a></li> 
-                <li><a href="#" class="illustration">Illustration</a></li>
-                <li><a href="#" class="design">Design</a></li>
-                <li><a href="#" class="video">Video</a></li>
-                <li><a href="#" class="web">Web</a></li>
-            </ul> -->
-            <div class="row clearfix" id="show">
+        <div class="span12">
+
+          <h6 class="title-bg">CURRENT SORT: By [[ sort ]] in [[ order ]]ending order</h6>
+          <div class="gallery-cats pull-left">
+            <li><a href="#" id="sort_name">Name</a></li>
+            <li><a href="#" id="sort_date">Date</a></li>
+            <li><a href="#" id="sort_distance">Distance</a></li>            
+            <li><a href="#" id="sort_price">Price</a></li>
+            <li><a href="#" id="sort_themes">Number Of Related Themes</a></li>
+            <li><a href="#" id="sort_challenges">Number Of Related Challenges</a></li>
+          </div>
+          <div class= "gallery-cats pull-right">
+            <li><a href="#" id="asc">Ascending</a></li>
+            <li><a href="#" id="desc">Descending</a></li>  
+          </div>  
+        </div>
+        <!-- CONTENT -->
+        <div class="span12 gallery">
+            <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="run in funruns">
-                  <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
+                  <li  class="span4 gallery-item">
                       <a ng-href="http://104.239.139.43:8000/funruns/[[ run.id ]]">
                         <span class="gallery-hover-3col hidden-phone hidden-tablet"> <!-- Need to look into gallery-hover -->
                         </span>
@@ -158,7 +238,7 @@
                           <img ng-src="[[run.landing_img]]" alt="Gallery" class="grayscale">
                         </div>
                       </a>
-                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/funruns/[[ run.id ]]">[[run.name]]</a>[[run.distance]] course<br/>[[run.short]]</span>
+                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/funruns/[[ run.id ]]">[[run.name]]</a>[[run.date]] | [[run.distance]] course<br/>[[run.short]]</span>
                     </li>
                 </div>
               </ul>

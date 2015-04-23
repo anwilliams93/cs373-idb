@@ -41,10 +41,63 @@
   });
 
   myApp.controller('ThemeGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
-    $http.get("http://104.239.139.43:8000/api/themes/").success(function(data) {
+
+    // Default Order = Sort Name
+    $http.get("http://104.239.139.43:8000/api/themes/?sort=name:asc").success(function(data) {
+      $scope.order = "asc";
+      $scope.sort = "name";      
       $scope.themes = data.themes;
       console.log($scope.themes);
     });
+
+      // Sort Name
+      $('#sort_name').on('click', function() {
+        $http.get("/api/themes/?sort=name:" + $scope.order).success(function(data) {
+          $scope.sort = "name";
+          $scope.themes = data.themes;
+          console.log($scope.themes);
+        });
+      });
+
+      // Sort Challenges
+      $('#sort_challenges').on('click', function() {
+        $http.get("/api/themes/?sort=number_of_challenges:" + $scope.order).success(function(data) {
+          $scope.sort = "number_of_challenges";
+          $scope.themes = data.themes;
+          console.log($scope.themes);
+        });
+      });
+
+      // Sort Runs
+      $('#sort_runs').on('click', function() {
+        $http.get("/api/themes/?sort=number_of_runs:" + $scope.order).success(function(data) {
+          $scope.sort = "number_of_runs";
+          $scope.themes = data.themes;
+          console.log($scope.themes);
+        });
+      });
+
+      // Ascending
+      $('#asc').on('click', function() {
+        if($scope.order === "desc") {
+          $http.get("/api/themes/?sort=" + $scope.sort + ":asc").success(function(data) {
+            $scope.order = "asc";
+            $scope.themes = data.themes;
+            console.log($scope.themes);
+          });
+        }
+      });  
+
+      // Descending
+      $('#desc').on('click', function() {
+        if($scope.order === "asc") {
+          $http.get("/api/themes/?sort=" + $scope.sort + ":desc").success(function(data) {
+            $scope.order = "desc";
+            $scope.themes = data.themes;
+            console.log($scope.themes);
+          });
+        }
+      });        
   }]);
 </script>
 
@@ -109,16 +162,22 @@
 
         <!-- Gallery Items
         ================================================== --> 
+        <div class="span12">
+        <h6 class="title-bg">CURRENT SORT: By [[ sort ]] in [[ order ]]ending order</h6>
+          <div class="gallery-cats pull-left">
+            <li><a href="#" id="sort_name">Name</a></li>
+            <li><a href="#" id="sort_runs">Number Of Related Runs</a></li>
+            <li><a href="#" id="sort_challenges">Number Of Related Challenges</a></li>
+          </div>
+          <div class= "gallery-cats pull-right">
+            <li><a href="#" id="asc">Ascending</a></li>
+            <li><a href="#" id="desc">Descending</a></li>  
+          </div>  
+        </div>        
+
         <div class="span12 gallery">
 
-            <!-- <ul id="filterOptions" class="gallery-cats clearfix">
-                <li class="active"><a href="#" class="all">All</a></li> 
-                <li><a href="#" class="illustration">Illustration</a></li>
-                <li><a href="#" class="design">Design</a></li>
-                <li><a href="#" class="video">Video</a></li>
-                <li><a href="#" class="web">Web</a></li>
-            </ul> -->
-
+            <!-- CONTENT -->
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="theme in themes">
