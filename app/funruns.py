@@ -43,6 +43,10 @@ def about():
 def tech():
     return render_template('tech.html') 
 
+@app.route('/tech/nba')
+def technba():
+    return render_template('nba.html') 
+
 @app.route('/funruns/<runID>')
 def funruntempl(runID):
     return render_template('funruntempl.html', runID = runID)
@@ -59,7 +63,7 @@ def challengetempl(challengeID):
 def locationtempl(locationID):
     return render_template('locationtempl.html', locationID = locationID)
 
-@app.route('/tests')
+@app.route('/tech/tests')
 def tests():
     # output = runTests()
     # print(output)
@@ -72,7 +76,7 @@ def tests():
     model_file.close()
     return render_template('tests.html', api_output = api_output, model_output = model_output)
 
-@app.route('/tests/apiTests', methods = ['GET'])
+@app.route('/tech/tests/apiTests', methods = ['GET'])
 def apiTests():
     runTests()
     api_file = open('api/test_output.txt', 'r')
