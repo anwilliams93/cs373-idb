@@ -47,6 +47,18 @@
     });
   }]);
 </script>
+<script>
+  $(document).ready(
+      // function() {
+      //   setInterval(function() {
+      //     var randomnumber = Math.floor(Math.random() * 100);
+      //     $('#show').text(
+      //       'WHOOOO UPDATED ' + randomnumber);
+      //   }, 3000);
+      // }
+      $("$show")
+    );
+</script>
 
 </head>
 
@@ -135,7 +147,7 @@
                 <li><a href="#" class="video">Video</a></li>
                 <li><a href="#" class="web">Web</a></li>
             </ul> -->
-            <div class="row clearfix">
+            <div class="row clearfix" id="show">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="run in funruns">
                   <li  class="span4 gallery-item" data-id="id-1" data-type="illustration">
