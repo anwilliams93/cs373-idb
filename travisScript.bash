@@ -63,7 +63,7 @@ make html
 cd ..
 
 
-# echo "Making IDB.log"
+echo "Making IDB.log"
 
  commit_message=`git log -1 --pretty=%B`
  commit_author=`git log -1 --pretty=%cn`
