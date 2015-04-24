@@ -1,0 +1,185 @@
+test_challenge_run_0 (api.api_test.TestAPI) ... ok
+test_challenge_run_1 (api.api_test.TestAPI) ... ok
+test_challenge_run_4 (api.api_test.TestAPI) ... ok
+test_challenge_themes_0 (api.api_test.TestAPI) ... ok
+test_challenge_themes_1 (api.api_test.TestAPI) ... ok
+test_challenge_themes_2 (api.api_test.TestAPI) ... ok
+test_challenges_by_id_0 (api.api_test.TestAPI) ... ok
+test_challenges_by_id_1 (api.api_test.TestAPI) ... ok
+test_challenges_by_id_2 (api.api_test.TestAPI) ... ok
+test_get_challenges (api.api_test.TestAPI) ... ok
+test_get_challenges_slash (api.api_test.TestAPI) ... ok
+test_get_run_by_id_0 (api.api_test.TestAPI) ... ok
+test_get_run_by_id_0_slash (api.api_test.TestAPI) ... ok
+test_get_run_by_id_1 (api.api_test.TestAPI) ... ok
+test_get_run_by_id_2 (api.api_test.TestAPI) ... ok
+test_get_run_challenges_0 (api.api_test.TestAPI) ... ok
+test_get_run_challenges_1 (api.api_test.TestAPI) ... ok
+test_get_run_challenges_2 (api.api_test.TestAPI) ... ok
+test_get_run_themes_0 (api.api_test.TestAPI) ... ok
+test_get_run_themes_1 (api.api_test.TestAPI) ... ok
+test_get_run_themes_2 (api.api_test.TestAPI) ... ok
+test_get_runs (api.api_test.TestAPI) ... ok
+test_get_runs_slash (api.api_test.TestAPI) ... ok
+test_get_themes (api.api_test.TestAPI) ... ok
+test_get_themes_slash (api.api_test.TestAPI) ... ok
+test_locations (api.api_test.TestAPI) ... ok
+test_locations_by_id_0 (api.api_test.TestAPI) ... ok
+test_locations_by_id_1 (api.api_test.TestAPI) ... ok
+test_locations_by_id_2 (api.api_test.TestAPI) ... ok
+test_locations_by_id_3 (api.api_test.TestAPI) ... ok
+test_root (api.api_test.TestAPI) ... ok
+test_root_slash (api.api_test.TestAPI) ... ok
+test_theme_challenges_0 (api.api_test.TestAPI) ... ok
+test_theme_challenges_0_slash (api.api_test.TestAPI) ... ok
+test_theme_challenges_1 (api.api_test.TestAPI) ... ok
+test_theme_challenges_2 (api.api_test.TestAPI) ... ok
+test_theme_run_0 (api.api_test.TestAPI) ... ok
+test_theme_run_1 (api.api_test.TestAPI) ... ok
+test_theme_run_2 (api.api_test.TestAPI) ... ok
+test_themes_by_id_0 (api.api_test.TestAPI) ... ok
+test_themes_by_id_0_slash (api.api_test.TestAPI) ... ok
+test_themes_by_id_1 (api.api_test.TestAPI) ... ok
+test_themes_by_id_1_slash (api.api_test.TestAPI) ... ok
+test_themes_by_id_2 (api.api_test.TestAPI) ... ok
+
+----------------------------------------------------------------------
+Ran 44 tests in 0.573s
+
+OK
+test_sort_difficulty_asc (api.api_sorting_challenges_test.TestChallengesSort) ... ok
+test_sort_difficulty_desc (api.api_sorting_challenges_test.TestChallengesSort) ... ok
+test_sort_name_asc (api.api_sorting_challenges_test.TestChallengesSort) ... ok
+test_sort_name_desc (api.api_sorting_challenges_test.TestChallengesSort) ... ok
+test_sort_numberOfRuns_asc (api.api_sorting_challenges_test.TestChallengesSort) ... ok
+test_sort_numberOfRuns_desc (api.api_sorting_challenges_test.TestChallengesSort) ... ok
+test_sort_numberOfThemes_asc (api.api_sorting_challenges_test.TestChallengesSort) ... ok
+test_sort_numberOfThemes_desc (api.api_sorting_challenges_test.TestChallengesSort) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.580s
+
+OK
+test_sort_altitude_asc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_altitude_desc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_fallAvgHum_asc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_fallAvgHum_desc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_fallAvgTemp_asc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_fallAvgTemp_desc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_names_asc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_names_desc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_springAvgHum_asc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_springAvgHum_desc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_springAvgTemp_asc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_springAvgTemp_desc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_summerAvgHum_asc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_summerAvgHum_desc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_summerAvgTemp_asc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_summerAvgTemp_desc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_winterAvgHum_asc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_winterAvgHum_desc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_winterAvgTemp_asc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+test_sort_winterAvgTemp_desc (api.api_sorting_locations_test.TestLocationsSort) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 0.515s
+
+OK
+test_filter_buzzword (api.api_filtering_themes_test.TestThemesFilter) ... ok
+test_filter_challenge (api.api_filtering_themes_test.TestThemesFilter) ... ok
+test_filter_funrun (api.api_filtering_themes_test.TestThemesFilter) ... ok
+test_filter_two_buzzwords (api.api_filtering_themes_test.TestThemesFilter) ... ok
+test_filter_two_challenges (api.api_filtering_themes_test.TestThemesFilter) ... ok
+test_filter_two_funruns (api.api_filtering_themes_test.TestThemesFilter) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.150s
+
+OK
+test_challenge_filter_run1 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run10 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run11 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run12 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run13 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run14 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run15 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run16 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run17 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run18 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run2 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run3 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run4 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run5 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run6 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run7 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run8 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+test_challenge_filter_run9 (api.api_filtering_challenges_test.TestChallengeFilter) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.666s
+
+OK
+test_filter_1 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_10 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_11 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_12 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_13 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_14 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_15 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_16 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_17 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_18 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_19 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_2 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_20 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_21 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_22 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_23 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_24 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_25 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_26 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_27 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_28 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_29 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_3 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_30 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_4 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_5 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_6 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_7 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_8 (api.loc_filter_test.TestLocationFilter) ... ok
+test_filter_9 (api.loc_filter_test.TestLocationFilter) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.420s
+
+OK
+
+test_add_challenge (models.models_test.TestDBModels) ... ok
+test_add_funrun (models.models_test.TestDBModels) ... ok
+test_add_location (models.models_test.TestDBModels) ... ok
+test_add_themes (models.models_test.TestDBModels) ... ok
+test_challenges (models.models_test.TestDBModels) ... ok
+test_fun_challenge_relationship_1 (models.models_test.TestDBModels) ... ok
+test_fun_challenge_relationship_2 (models.models_test.TestDBModels) ... ok
+test_fun_challenge_relationship_3 (models.models_test.TestDBModels) ... ok
+test_fun_location_relationship_1 (models.models_test.TestDBModels) ... ok
+test_fun_location_relationship_2 (models.models_test.TestDBModels) ... ok
+test_fun_location_relationship_3 (models.models_test.TestDBModels) ... ok
+test_fun_location_relationship_4 (models.models_test.TestDBModels) ... ok
+test_fun_theme_relationship_1 (models.models_test.TestDBModels) ... ok
+test_fun_theme_relationship_2 (models.models_test.TestDBModels) ... ok
+test_fun_theme_relationship_3 (models.models_test.TestDBModels) ... ok
+test_fun_theme_relationship_4 (models.models_test.TestDBModels) ... ok
+test_funrun (models.models_test.TestDBModels) ... ok
+test_location (models.models_test.TestDBModels) ... ok
+test_theme_challenge_relationship_1 (models.models_test.TestDBModels) ... ok
+test_theme_challenge_relationship_2 (models.models_test.TestDBModels) ... ok
+test_theme_challenge_relationship_3 (models.models_test.TestDBModels) ... ok
+test_theme_challenge_relationship_4 (models.models_test.TestDBModels) ... ok
+test_themes (models.models_test.TestDBModels) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.132s
+
+OK

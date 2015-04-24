@@ -1,3 +1,735 @@
+commit b6f55093345d71e9d04a0fc798bbf2172b7c0542
+Merge: 62e7e75 3a3cd8c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 02:39:16 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 3a3cd8cf41c57073d28d2c932921894a96dfdc6e
+Author: fuzzyassassin <kurtbixby@mac.com>
+Date:   Thu Apr 23 21:38:47 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 62e7e75a76d7fb3f77fc02f1ec7943ff0ac2ab15
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 02:38:00 2015 +0000
+
+    Final commit before log
+
+commit 43c4441e1397723b9bf708cfbac2eeca9e088553
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 21:37:24 2015 -0500
+
+    apiary logo
+
+commit 98d024f91fede838798bb1f4489f0db30203ce4e
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 21:33:45 2015 -0500
+
+    flask logo
+
+commit 97dd1f548aef5b5d2de282831b0c5d634c4d7430
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 21:33:02 2015 -0500
+
+    picturez
+
+commit 16de3cff2d98cec06693ed4410a6878ebce1e933
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 21:29:19 2015 -0500
+
+    Updated tech.html
+
+commit a19e02a8356d606bcea9b208fb8ee7aaf3b64d8d
+Merge: 0a229dc 513f851
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 02:24:25 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 0a229dc1757211b302e33f476bbc13de147181db
+Merge: fbe441b 9756b10
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 02:24:23 2015 +0000
+
+    Searching now working
+
+commit 513f8515978090ccbc3de6da08cceef5ce9fa132
+Merge: 4932c43 9756b10
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 21:22:09 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 4932c433d83ce26dfe10421f1e71a295c9f58090
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 21:22:01 2015 -0500
+
+    Resize logos
+
+commit 9756b1022e938576bce60f269ca991acd3d9bcd5
+Author: Hector <hektor11@utexas.edu>
+Date:   Thu Apr 23 21:20:50 2015 -0500
+
+    missing tools logos
+
+commit fbe441b7002c39d22498bc4fcd47d13365e0bbe8
+Merge: bdaa618 211f7ff
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 02:16:20 2015 +0000
+
+    Fixed merge
+
+commit bdaa6183cd7b5e524f34b85be81a1822c76ba542
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 02:14:28 2015 +0000
+
+    Added search
+
+commit 211f7ffa666ceff6b56d9c4cbd530fcab8b4f933
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 21:12:40 2015 -0500
+
+    Updated image name from .jpg to .png
+
+commit ebd1a8ea0d676d10e59e502d3ee35a943bde3b37
+Merge: dec1120 1cd6291
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 21:11:48 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit dec1120ff1cc2814ada1d22491f8a3afa2cb9737
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 21:11:46 2015 -0500
+
+    Fixed spaces
+
+commit 1cd62915e684d602db97a6ff9bd3cd9fdc6bcae9
+Merge: 4d09019 00d0dc4
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 21:09:55 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 4d090192c61605dacd3e27c9dc7c04816cd8e282
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 21:09:35 2015 -0500
+
+    Tool logos on about page
+
+commit 00d0dc4a8b29dcb739eed0711ef13c0964d4b9dd
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 21:06:29 2015 -0500
+
+    Fixed html spaces
+
+commit fafa5fb8792b418b441766b473f868142a9215fc
+Merge: 71d57c7 7e90031
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 21:01:25 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 71d57c7a57f175e6b88897c1cfff95b0dda31983
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 21:01:16 2015 -0500
+
+    Now searches everything
+
+commit 7e900310b887ca208d67ba8374c4cd2c397ce086
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 01:59:16 2015 +0000
+
+    Tools images
+
+commit 18f0141e4a68a1fb2cbac845ff021aee7c643e4c
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 20:50:38 2015 -0500
+
+    Updated funruns.py with new tests
+
+commit 1b3f1f3a1a53437b70dc4061a958f56154a3e8c6
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 20:46:47 2015 -0500
+
+    Updated run_tests.py
+
+commit fa2cb2d1cebda1abaf3b1661b26429f863265f1d
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 20:45:39 2015 -0500
+
+    Added challenge and location filter tests to run_tests.py
+
+commit 79e8dde17eb521c413da60c0c84198e4bd00986c
+Merge: fceea51 31af1a6
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 01:37:36 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit fceea51369c878db0cc241ca11280179c9964cf2
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 01:37:33 2015 +0000
+
+    messing with pycache
+
+commit 2d73281e7cabfe4a7a1d7b0bb98852784c4d72e0
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 01:33:39 2015 +0000
+
+    Current searching
+
+commit 31af1a69f598034b8c5b64093859ec097fdfcc3d
+Merge: 1cae9f8 25021e0
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 20:31:08 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 1cae9f8be293fad8aeb69fc561f63e0cfa635f35
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 20:31:03 2015 -0500
+
+    Searches FunRuns
+
+commit 25021e0f5451f81fab92f85637f1c9f83fe7162c
+Author: Hector <hektor11@utexas.edu>
+Date:   Thu Apr 23 20:30:51 2015 -0500
+
+    Hector's unit test for location filtering
+
+commit b6ac5d2cb11dac604134cb1701b27781305e2a42
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 20:29:31 2015 -0500
+
+    Deleted unnecessary files
+
+commit a367148c2a7c196ef97593787415d32a4a1f2592
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 20:25:57 2015 -0500
+
+    Challenge filter tests
+
+commit 032b34ec8750608ea3d1006ffb9d6a4989c42885
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 01:10:04 2015 +0000
+
+    updated readme
+
+commit a5ebbbc772e42c2b1174f5f73f1fe11d88498808
+Merge: fc9c6a9 80d1583
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 01:02:34 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit fc9c6a991652227931cb74a5a4ceec24d2b7a154
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 24 01:02:25 2015 +0000
+
+    More tests added to test page
+
+commit 80d1583080d0fff61c0443bfbfe2f3cf7b8f350e
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Thu Apr 23 19:38:45 2015 -0500
+
+    Challenger filter tests
+
+commit 998b06743c90cf10cf9f2cfc94ac248224c206e1
+Merge: c86bfb9 3c6bc2f
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 18:30:23 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit c86bfb9bf54a92b8730ffedb2da8d4af5a729740
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 18:29:37 2015 -0500
+
+    Fixed broken tests
+
+commit 3c6bc2f043f5b10258d610c1afb50f0e0a568377
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 23:19:27 2015 +0000
+
+    travis fix
+
+commit 5830a64f3d4d158fe360627a74491bccfa12a269
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 23:11:31 2015 +0000
+
+    travis fix
+
+commit 125277e651e1f99d95a6255ee00aa962313f44dd
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 23:00:38 2015 +0000
+
+    travis fix
+
+commit 7727b2af4c76ec3337f3fc1ef07ce71e71580d9e
+Author: Hector <hektor11@utexas.edu>
+Date:   Thu Apr 23 17:45:49 2015 -0500
+
+    Fixed minor bug
+
+commit 90bd550f8f7dbe51454ba0fb1511542fd86deeb2
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 21:29:10 2015 +0000
+
+    travis authentication added
+
+commit 657125083462c40af608508e3cb24bba93094970
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 21:19:43 2015 +0000
+
+    travis authentication added
+
+commit dbf93a3fcda0cd4d3534a927ade730c12da98684
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 21:18:48 2015 +0000
+
+    travis authentication added
+
+commit 2c5bce9c4f0a5b2cd27a542ada91b41f35ce876b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 20:32:44 2015 +0000
+
+    travis modifications
+
+commit 5f3fca27efd8586bcfb212491d8da8f86e0e2b48
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 20:22:42 2015 +0000
+
+    travis modifications
+
+commit c2bb0421782258351a6d9139a57917de7177818b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 20:15:24 2015 +0000
+
+    travis modifications
+
+commit 2fa50dc91a8d64c7ccf1b3101dd567f50b715d4f
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 20:10:47 2015 +0000
+
+    travis modifications
+
+commit 42b2ca1a27f26c1b4f50f479356df8d97bebcd29
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 10:04:22 2015 +0000
+
+    Tests and sorting done
+
+commit 135db59a45ebd8c1f162fbffe9cc556662394f36
+Merge: 760ff6a 13fefea
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 00:14:42 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 760ff6a39b12fa793e4be2bd803ac4c0a8e93a0e
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 00:14:37 2015 -0500
+
+    Fixed both?
+
+commit 13fefea07e4027ffef476dcb4554a8534b54aac0
+Merge: 5d34438 9dec4d1
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 05:12:45 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 5d344382df9a8ebc6018a0863e7dbb959e4bb17e
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 05:12:43 2015 +0000
+
+    Photos updated
+
+commit 9dec4d1e250669e7a1aaf0265353c92b2b5bd9ec
+Merge: 1c0f537 13b498b
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 00:11:55 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 1c0f537cabe667a08244d6ad1f62c308729cdee6
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Thu Apr 23 00:11:53 2015 -0500
+
+    Fixed filtering by other pillars
+
+commit 13b498baca67c18b1a9102e975a5991bf8592102
+Merge: e47f264 2e27502
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 04:01:37 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit e47f264aac8772c45609efc6658e3d16cdaeb643
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 04:01:33 2015 +0000
+
+    Got tests working finally
+
+commit 2e27502306f3467f895de575da0b22eeb8f769bc
+Merge: 80d8877 b37ddff
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Apr 22 22:51:55 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 80d887711debc76d913b079c25a1af3c1114038f
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Apr 22 22:51:51 2015 -0500
+
+    Fixed broken unit tests
+
+commit b37ddffbc25aa507434a2f0801b9f8ff8e6e30ae
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Wed Apr 22 21:32:32 2015 -0500
+
+    Add Challenge filter tests
+
+commit 838b45317476a3d36632763bd0d08f5cf02be9b9
+Author: Hector <hektor11@utexas.edu>
+Date:   Wed Apr 22 20:17:46 2015 -0500
+
+    changed color of graphs
+
+commit 72053afec64ed2b7bdf963b4da8e00e29be7ad6c
+Merge: bf7be75 efe79b8
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 01:07:40 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit bf7be755529d5b5f2e1f80a86a79472e5b92282e
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 01:07:33 2015 +0000
+
+    More deleting
+
+commit 3ae08f005067cb7f84e72000dfdc3dd332aac52a
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 01:07:02 2015 +0000
+
+    Deleting pyc files
+
+commit efe79b89f1a22021ddfd6711880d227aa1f05878
+Author: Hector <hektor11@utexas.edu>
+Date:   Wed Apr 22 19:59:52 2015 -0500
+
+    fixed minor bug regarding new lines
+
+commit d14091bb87ac911d1657538266e556122f36a07b
+Author: fuzzyassassin <kurtbixby@mac.com>
+Date:   Wed Apr 22 19:56:14 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit d0394d462f0bbe46542bb8490f6db27cd0acce92
+Merge: 33dff3f cf961a8
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Apr 22 19:55:29 2015 -0500
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 33dff3fd1d895749d70060561f64fbb75e8d4dc3
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Apr 22 19:55:26 2015 -0500
+
+    Added some robustness to sorting
+
+commit cf961a80592b593a610450df3e1f8ea2049ffd2f
+Author: Hector <hektor11@utexas.edu>
+Date:   Wed Apr 22 19:54:29 2015 -0500
+
+    fixed minor bug
+
+commit 0b7e189c1735529a21373f68b554ab3d6155b6bc
+Author: Hector <hektor11@utexas.edu>
+Date:   Wed Apr 22 19:52:10 2015 -0500
+
+    fixed minor bug
+
+commit f178e7dbaece4fffedefdca1fe2d085c54e7a291
+Author: Hector <hektor11@utexas.edu>
+Date:   Wed Apr 22 19:50:42 2015 -0500
+
+    removed <li> tag to remove bullet points
+
+commit 19a2f580053815599016df9366a2f1896887ea00
+Author: Hector <hektor11@utexas.edu>
+Date:   Wed Apr 22 19:43:11 2015 -0500
+
+    Updated step size and included graphs
+
+commit f63d516bc2ea416157d7258183a3466ec903314f
+Merge: 60b3e6c 427ef2d
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Apr 22 19:09:12 2015 -0500
+
+    Fixed merge conflict
+
+commit 60b3e6c36939d0275fb56732406b3f686bf194a9
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Wed Apr 22 19:08:11 2015 -0500
+
+    Rewrote API, API_helpers, changed models
+
+commit 427ef2d5b9f9de01f90dc64bbe79aa5a8f4572cb
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Thu Apr 23 00:01:51 2015 +0000
+
+    now under tech
+
+commit a0be6d110d9dff54b2974067e48a0b1df299e1bb
+Merge: cf87fc8 163686b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Apr 22 23:56:48 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit cf87fc84b3fddb0f03223a3986979a23c51f5a43
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Apr 22 23:56:46 2015 +0000
+
+    Working on buttons
+
+commit 163686beb698521712bd6cab13350df5d109c0b5
+Author: Hector <hektor11@utexas.edu>
+Date:   Wed Apr 22 18:50:49 2015 -0500
+
+    Javascript file to add tables with effects
+
+commit 00ea220c0667d46986c69e0a8afbbd30412ef740
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Wed Apr 22 18:31:29 2015 -0500
+
+    Added description and placeholder data to be replaced with graphs
+
+commit dc8cc6337f8a85de1e4f74a76fc5357d3fa09035
+Author: Edgar Treto <edgar.treto45@gmail.com>
+Date:   Wed Apr 22 17:56:58 2015 -0500
+
+    NBA API test page
+
+commit c59de741703896519a077752d09c05443eea5a32
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Apr 22 20:39:43 2015 +0000
+
+    Trying to get tests to run better
+
+commit ec3506362c796c1b0870b5ea0f6a49b1d888d827
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Apr 22 02:50:00 2015 +0000
+
+    documentation for travis
+
+commit bde303fcefafcd2d27d4ddd8cdc6886ee55a53c7
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Apr 22 02:46:22 2015 +0000
+
+    documentation for travis
+
+commit bb487e6fc9b4a78cf4b040b1b914a88caf24d927
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Apr 22 02:03:21 2015 +0000
+
+    travis
+
+commit e39ccb5a447fd79f937e112bc37dfec93fe5d683
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Wed Apr 22 02:02:17 2015 +0000
+
+    travis requiremts.txt
+
+commit 4e6315c517a2a126c132f812340fb52828355e1c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 21 04:02:57 2015 +0000
+
+    Added sort by drop down menu
+
+commit 484af65dcd71fdac9ab2203c30eb5d18b2df86d5
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 21 02:51:57 2015 +0000
+
+    travis
+
+commit e73b5779abf694f6526648f7f1ea8a943cd3a52b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 21 02:47:46 2015 +0000
+
+    travis
+
+commit 4a1917e39cf99a27a4fb90fc78b70e6176d6866e
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 21 02:40:12 2015 +0000
+
+    travis
+
+commit 15db0d7807c61352a98340a7ddabdfdc2f903f57
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 21 02:36:28 2015 +0000
+
+    travis
+
+commit cc6adeb5ffe43f87da3c5af70d3eaa383dd9a71f
+Merge: fa3a935 5783f12
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 21 02:22:46 2015 +0000
+
+    Fixing merge
+
+commit fa3a93557ccd40878a9ce6f76fde178ebda5f071
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 21 02:21:41 2015 +0000
+
+    Trying to make models test work
+
+commit 5783f121f337d25270dd32e65cff270ceb9aaab0
+Author: Kurt Bixby <kurtbixby@utexas.edu>
+Date:   Mon Apr 20 21:20:15 2015 -0500
+
+    Removed all pyc files.
+
+commit 9fa720c79dbbf2b354041c7b5b3f6847da7b9bbf
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 21 02:05:00 2015 +0000
+
+    Deleted solr example
+
+commit bf0ad4a5727007f6ba3f79b8699016fc7c992e34
+Merge: d8dbf62 d1f0be8
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 21 02:02:49 2015 +0000
+
+    Fixing conflict
+
+commit d8dbf62115da17f0734440a6c42ec1e0683b4923
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Tue Apr 21 01:59:55 2015 +0000
+
+    Reworked file structure and added solr
+
+commit d1f0be87b99b660d095f4a7093166f62b76e3ddc
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 17:55:02 2015 -0500
+
+    travis
+
+commit 569934d5207cae9806b6494c13eb1aae1dce1757
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 17:50:35 2015 -0500
+
+    travis
+
+commit c975d728e71baffecd295702f28220aa7ce88989
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 17:35:09 2015 -0500
+
+    travis
+
+commit ecd375675fe2acdb110a7df9629dc369828a3064
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 17:28:36 2015 -0500
+
+    travis debug
+
+commit adc2967bbc4a3fa00a03ee8c3dcb51b0d85c79a3
+Merge: 916fb61 5eb5ddb
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Apr 20 22:24:25 2015 +0000
+
+    Merge branch 'master' of https://github.com/anwilliams93/cs373-idb
+
+commit 916fb61e28da51a19f6b040d763b2065e5b9680b
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Apr 20 22:24:04 2015 +0000
+
+    Renamed new_api_heleprs to api_helpers and installed tmux
+
+commit 5eb5ddbb14632b29a3f9b2728e06d09353c4f4d1
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 17:13:58 2015 -0500
+
+    travis debug
+
+commit c973a14167d874d7527a744356c7a1814fe9f117
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 17:05:30 2015 -0500
+
+    travis
+
+commit 87293d662dbce53b6965ef5a51a905a0da12b1fd
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 16:47:39 2015 -0500
+
+    travis
+
+commit 76e840e444252a1967c061a8c3afb35745fc9334
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 16:40:34 2015 -0500
+
+    travis script
+
+commit 0c6e9feb370fe8b784d1569bd54cfb7220319fb2
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 16:36:47 2015 -0500
+
+     travis
+
+commit 0075bdbd319d5048208618e970d7d3d763be1b98
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 16:18:02 2015 -0500
+
+     rename travis file
+
+commit e444390e89d79bb2ff56f260ffdd1dd160f9b012
+Author: daguirre <daguirre_92@hotmail.com>
+Date:   Mon Apr 20 16:14:36 2015 -0500
+
+    Delete travis.yml
+
+commit 3ac959bdef2e2c60d6b253c55635ebc7001af0ba
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 14:28:21 2015 -0500
+
+    travis bash
+
+commit 653bde44269726bbee02580619d9c1ae928e10b9
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Apr 20 19:14:42 2015 +0000
+
+    travis
+
+commit 7512aebb14fd667fa5c7100606d3e406511ae0b3
+Author: David Aguirre <da9492@cs.utexas.edu>
+Date:   Mon Apr 20 14:09:29 2015 -0500
+
+    adding travis ci files
+
+commit 946d05ad93e473980a5337d8ffcde9d5a153182c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Apr 20 07:55:33 2015 +0000
+
+    Tests working using a file, but does run on page
+
+commit 5f9038be5962ac26aae7b962b5028745000ae937
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Mon Apr 20 06:15:20 2015 +0000
+
+    Uh someone made changes?
+
+commit 300bb56f6379a1bbf4fee861a217e9dcec98fb5c
+Author: Bear Grylls <anwilliams93@gmail.com>
+Date:   Fri Apr 10 02:48:10 2015 +0000
+
+    ADDING LOG
+
 commit dfe2b76b37f9d65cda7326b627191068dc1753f4
 Author: Bear Grylls <anwilliams93@gmail.com>
 Date:   Fri Apr 10 02:46:17 2015 +0000
