@@ -76,6 +76,8 @@ def tests():
         api_output += run_challenges_sort_tests().getvalue()
         api_output += run_locations_sort_tests().getvalue()
         api_output += run_filtering_sort_tests().getvalue()
+        api_output += run_filtering_challenges_tests().getvalue()
+        api_output += run_filtering_locations_tests().getvalue()
         model_output = run_models_tests().getvalue()
         # model_output = ""
         return render_template('tests.html', api_output = api_output, model_output = model_output)
