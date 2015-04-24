@@ -433,12 +433,12 @@ Retrieves an array of all the Challenge objects associated with the specified Th
                             ]
         }
 
-## Theme Collection [/themes{?funrun,challenge,name,buzzword,sort}]
+## Theme Collection [/themes{?funrun,challenge,buzzword,sort}]
 
 + Parameters
     + funrun (optional, integer, `1`) ... ID of the funrun to match
     + challenge (optional, integer, `2`) ... ID of the challenge to match
-    + buzzword (optional, string, `200`) ... Buzzwords to filter the Themes with
+    + buzzword (optional, string, `Hot`) ... Buzzwords to filter the Themes with
     + sort (optional, string, `name:asc`) ... What field the returned Fun Runs will be sorted by.
         
         Each of the values below can take an optional sort order parameter in the form :asc or :desc
@@ -652,7 +652,7 @@ Retrieves an array of all the Theme objects associated with the specified Challe
                         ]
         }
         
-## Challenge Collection [/themes{?funrun,theme,min_difficulty,max_difficulty,sort}]
+## Challenge Collection [/challenges{?funrun,theme,min_difficulty,max_difficulty,sort}]
 
 + Parameters
     + funrun (optional, integer, `1`) ... ID of the Fun Run to match
@@ -751,7 +751,7 @@ A Location object has the following attributes:
 + website_url: (string) The URL of the Location's website.
 + description: (string) A description of the Location.
 
-## Location [/location/{id}]
+## Location [/locations/{id}]
 
 + Parameters
     + id (required, integer, `1`) ... ID of the Location object
@@ -834,7 +834,7 @@ Retrieves an array of all the Fun Run objects associated with the specified Loca
                     ]
         }
         
-## Location Collection [/location{?funrun,min_winter_temp,max_winter_temp,min_spring_temp,max_spring_temp,min_summer_temp,max_summer_temp,min_fall_temp,max_fall_temp,min_winter_humid,max_winter_humid,min_spring_humid,max_spring_humid,min_summer_humid,max_summer_humid,min_fall_humid,max_fall_humid,sort}]
+## Location Collection [/locations{?funrun,min_winter_temp,max_winter_temp,min_spring_temp,max_spring_temp,min_summer_temp,max_summer_temp,min_fall_temp,max_fall_temp,min_winter_humid,max_winter_humid,min_spring_humid,max_spring_humid,min_summer_humid,max_summer_humid,min_fall_humid,max_fall_humid,sort}]
 
 + Parameters
     + funrun (optional, integer, `1`) ... ID of the Fun Run to match
