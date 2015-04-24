@@ -3,9 +3,9 @@ FlaskMeAnything: Flask app hosted on Rackspace with Python and Bootstrap that em
 
 Alyssa Williams | Phase I Leader
 
-Kurt Bixby | Team Member
+Kurt Bixby | Phase II Leader
 
-Kevin Byers | Team Member
+Kevin Byers | Phase III Leader
 
 David Aguirre | Team Member
 
@@ -14,11 +14,11 @@ Edgar Treto | Team Member
 Hector Garcia | Team Member
 
 File Locations
-	*.py files: 	/app
-	apiary.apib: 	/documentation
-	models.html: 	/app/models
+	*.py files: 					/app
+	apiary.apib: 					/documentation
+	models.html: 					/app/models
 		This is an HTML file that redirects to /app/html/index.html
-	Report.pdf:		/documentation
-	tests.out:		/app/test
-	tests.py:		/app/test
-	UML.pdf:		/documentation
+	Report.pdf:						/documentation
+	tests.out:						/app
+	tests.py (run_tests.py):		/app
+	UML.pdf:						/documentation
