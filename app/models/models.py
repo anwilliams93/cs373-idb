@@ -3,6 +3,7 @@ from flask.ext.sqlalchemy import SQLAlchemy
 import re
 from datetime import date
 import calendar
+from sqlalchemy.sql import func
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://bear@localhost/models'
@@ -114,6 +115,8 @@ class FunRun(db.Model):
     def get_related_challenge_ids(self):
         return [challenge.id for challenge in self.funRun_challenge]
 
+    def get_body_text(self):
+        return(self.name + "\n" + self.description + "\nAddress: " + self.address + "\nDate: " + self.date + "\nDistance: " + self.distance + "\nHosts: " + self.hosts + "\nSponsors: " + self.sponsors + "\nCharities: " + self.charities)
 
 # ------------
 # Themes table
@@ -215,3 +218,182 @@ class Location(db.Model):
         rainfall_match = re.search('(\d+)[a-zA-Z]+', self.annual_rainfall)
         if rainfall_match is not None:
             return int(rainfall_match.group(1))
+
+
+def funrun_object_to_dict(funrun):
+    funrun_dict = {}
+    funrun_dict['id'] = funrun.id - 1
+    funrun_dict['name'] = funrun.name
+    funrun_dict['date'] = funrun.date
+    funrun_dict['city'] = funrun.location.name
+    funrun_dict['address'] = funrun.address
+    funrun_dict['distance'] = funrun.distance
+    funrun_dict['price'] = funrun.price
+    funrun_dict['hosts'] = funrun.hosts
+    funrun_dict['sponsors'] = funrun.sponsors
+    funrun_dict['charities'] = funrun.charities
+    funrun_dict['website'] = funrun.website
+    funrun_dict['description'] = funrun.description
+    funrun_dict['map_url'] = funrun.map_url
+    funrun_dict['video_url'] = funrun.video_url
+    funrun_dict['fb_url'] = funrun.fb_url
+    funrun_dict['short'] = funrun.short
+    funrun_dict['landing_img'] = funrun.landing_img
+
+    quotes = [funrun.quote_1, funrun.quote_2, funrun.quote_3]
+    funrun_dict['quotes'] = quotes
+
+    imgs = [funrun.img_1, funrun.img_2, funrun.img_3]
+    funrun_dict['imgs'] = imgs
+
+    funrun_dict['loc'] = funrun.location_id - 1
+
+    theme_ids = []
+    for theme in funrun.funRun_theme:
+        theme_ids += [theme.id - 1]
+    funrun_dict['themes'] = sorted(theme_ids)
+
+    challenge_ids = []
+    for challenge in funrun.funRun_challenge:
+        challenge_ids += [challenge.id - 1]
+    funrun_dict['challenges'] = sorted(challenge_ids)
+
+    return funrun_dict
+
+def theme_object_to_dict(theme):
+    theme_dict = {}
+    theme_dict['id'] = theme.id - 1
+    theme_dict['name'] = theme.name
+    theme_dict['buzzwords'] = theme.buzzwords
+    theme_dict['description'] = theme.description
+    theme_dict['short'] = theme.short
+    theme_dict['landing_img'] = theme.landing_img
+
+    imgs = [theme.img_1, theme.img_2, theme.img_3, theme.img_4,
+            theme.img_5, theme.img_6, theme.img_7, theme.img_8]
+    theme_dict['imgs'] = imgs
+
+    run_ids = []
+    for run in theme.funruns:
+        run_ids += [run.id - 1]
+    theme_dict['funruns'] = sorted(run_ids)
+
+    challenge_ids = []
+    for challenge in theme.theme_challenge:
+        challenge_ids += [challenge.id - 1]
+    theme_dict['challenges'] = sorted(challenge_ids)
+
+    return theme_dict
+
+def challenge_object_to_dict(challenge):
+    challenge_dict = {}
+    challenge_dict['id'] = challenge.id - 1
+    challenge_dict['name'] = challenge.name
+    challenge_dict['difficulty'] = challenge.difficulty
+    challenge_dict['flavors'] = challenge.flavors
+    challenge_dict['description'] = challenge.description
+    challenge_dict['landing_img'] = challenge.landing_img
+
+    imgs = [challenge.img_1, challenge.img_2, challenge.img_3]
+    challenge_dict['imgs'] = imgs
+
+    run_ids = []
+    for run in challenge.funruns:
+        run_ids += [run.id - 1]
+    challenge_dict['funruns'] = sorted(run_ids)
+
+    theme_ids = []
+    for theme in challenge.theme:
+        theme_ids += [theme.id - 1]
+    challenge_dict['themes'] = sorted(theme_ids)
+
+    return challenge_dict
+
+def location_object_to_dict(location):
+    location_dict = {}
+    location_dict['id'] = location.id - 1
+    location_dict['name'] = location.name
+    location_dict['nickname'] = location.nickname
+    location_dict['winter_avgTemp'] = location.winter_avgTemp
+    location_dict['spring_avgTemp'] = location.spring_avgTemp
+    location_dict['summer_avgTemp'] = location.summer_avgTemp
+    location_dict['fall_avgTemp'] = location.fall_avgTemp
+    location_dict['winter_avgHumidity'] = location.winter_avgHumidity
+    location_dict['spring_avgHumidity'] = location.spring_avgHumidity
+    location_dict['summer_avgHumidity'] = location.summer_avgHumidity
+    location_dict['fall_avgHumidity'] = location.fall_avgHumidity
+    location_dict['altitude'] = location.altitude
+    location_dict['annual_rainfall'] = location.annual_rainfall
+    location_dict['landmarks'] = location.landmarks
+    location_dict['website_url'] = location.website_url
+    location_dict['description'] = location.description
+    location_dict['landing_img'] = location.landing_img
+    location_dict['img'] = location.img
+
+    run_ids = []
+    for run in location.funruns:
+        run_ids += [run.id - 1]
+    location_dict['funruns'] = sorted(run_ids)
+
+    return location_dict
+
+
+# ------------
+# Setup Search
+# ------------
+
+def setup_funruns_search(target, connection, **kw):
+    # Add text search vector column
+    connection.execute("""ALTER TABLE {0} ADD COLUMN search_column tsvector""".format(target.name))
+
+    # Populate search column?
+    connection.execute("""UPDATE {0} SET search_column = to_tsvector('english',
+                        coalesce(name,'')           || ' ' || coalesce(address, '')     || ' ' ||
+                        coalesce(distance, '')      || ' ' || coalesce(hosts, '')       || ' ' ||
+                        coalesce(sponsors, '')      || ' ' || coalesce(charities, '')   || ' ' ||
+                        coalesce(description, '')   || ' ' || coalesce(short, ''))""".format(target.name))
+
+    # Index the search column
+    connection.execute("""CREATE INDEX funrun_search_index ON {0} USING gen(search_column)""".format(target.name))
+
+    connection.execute("""ALTER TABLE {0} ADD COLUMN body_text varchar""".format(target.name))
+
+    connection.execute("""UPDATE {0} SET body_text = 
+        coalesce(name, '') || '\n' || coalesce(description, '') ||
+        '\nAddress: ' || coalesce(address, '') || '\nDate: ' || coalesce(date, '') ||
+        '\nDistance: ' || coalesce(distance, '') || '\nHosts: ' || coalesce(hosts, '') ||
+        '\nSponsors: ' || coalesce(sponsors, '') || '\nCharities: ' || coalesce(charities, ''))""")
+    # # Create trigger to auto-update the search column
+    # connection.execute("""CREATE TRIGGER funrun_search_update BEFORE INSERT OR UPDATE
+    #                         ON {0} FOR EACH ROW EXECUTE PROCEDURE
+    #                         tsvector_update_trigger('search_column', 'pg_catalog.english',
+    #                         'name', 'address', 'distance', 'hosts', 'sponsors', 'charities', 'description', 'short')""".format(target.name))
+
+def search_funruns(search_string):
+    q = db.session.query(FunRun).filter(db.text('funrun.search_column @@ plainto_tsquery(:terms)'))
+    q = q.params(terms=search_string)
+    q = q.order_by(db.text('ts_rank_cd(funrun.search_column, plainto_tsquery(:terms)) DESC'))
+    q = q.add_column(func.ts_headline('pg_catalog.english',db.text('funrun.body_text'),func.plainto_tsquery(search_string),'MaxFragments=1, StartSel = <strong>, StopSel = </strong>'))
+
+    return [{'object':funrun_object_to_dict(funrun), 'fragment':fragment} for funrun, fragment in q]
+    # return [(funrun, fragments.split()) for funrun, fragments in query]
+
+def search_funruns_wrapper(search_string):
+    and_list = search_funruns(search_string)
+    or_list = search_funruns(re.sub(' ', ' | ', search_string))
+
+@db.event.listens_for(FunRun, 'instrument_class')
+def receive_instrument_class(mapper, class_):
+    if mapper.local_table is not None:
+        event.listen(mapper.local_table, 'after_create', setup_funruns_search)
+        trigger_for_table(mapper.local_table)
+
+def search_database(search_string):
+    return search_funruns(search_string)
+
+def search_database_wrapper(search_string):
+    and_list = search_database(search_string)
+    or_list = search_funruns(re.sub(' ', ' | ', search_string))
+
+    return {'and_results':and_list, 'or_results':or_list}
+

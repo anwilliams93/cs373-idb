@@ -2,7 +2,7 @@ from flask import request, jsonify, Blueprint
 from api_helpers import *
 import re, operator
 from types import *
-from models.models import db, Location, FunRun, Theme, Challenge
+from models.models import db, Location, FunRun, Theme, Challenge, funrun_object_to_dict, theme_object_to_dict, challenge_object_to_dict, location_object_to_dict, search_database_wrapper
 
 funruns_api = Blueprint('funruns_api', __name__, url_prefix='/api')
 
@@ -21,6 +21,12 @@ def get_entry_points():
 # Run Section of API
 
 run_query_parameters = {'theme', 'challenge', 'location', 'min_price', 'max_price', 'min_length', 'max_length', 'sort'}
+
+@funruns_api.route('/search', methods = ['GET'])
+def search_function():
+	s = request.args.get('q')
+	results = search_database_wrapper(s)
+	return jsonify({'results':results})
 
 @funruns_api.route('/funruns', methods = ['GET'])
 def get_funruns():
