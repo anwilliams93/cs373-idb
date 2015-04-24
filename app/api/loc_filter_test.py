@@ -9,7 +9,7 @@ def http_response_to_json_object (response) :
 	reader = codecs.getreader("utf-8")
 	return json.load(reader(response))
 
-class TestChallengesSort (TestCase) :
+class TestLocationFilter (TestCase) :
 
   # Filter using different temperatures
 

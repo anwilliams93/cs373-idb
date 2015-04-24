@@ -9,7 +9,7 @@ def http_response_to_json_object (response) :
 	reader = codecs.getreader("utf-8")
 	return json.load(reader(response))
 
-class TestAPI (TestCase) :
+class TestChallengeFilter (TestCase) :
 
 	def test_challenge_filter_run1 (self) :
 		url = server_address + '/api/challenges?funrun=1'
