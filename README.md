@@ -17,8 +17,9 @@ File Locations
 	*.py files: 					/app
 	apiary.apib: 					/documentation
 	models.html: 					/app/models
-		This is an HTML file that redirects to /app/html/index.html
-	Report.pdf:						/documentation
-	tests.out:						/app
-	tests.py (run_tests.py):		/app
-	UML.pdf:						/documentation
+		(This is an HTML file that redirects to /app/html/index.html)
+	Report.pdf:					/documentation
+	tests.out:					/app
+	tests.py (run_tests.py):			/app
+	UML.pdf:					/documentation
+	travis script (travisScript.bash):		/	
