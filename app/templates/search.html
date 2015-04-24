@@ -42,24 +42,16 @@
   });
 
   myApp.controller('FunRunGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
+      $scope.payload = [];
+      $scope.inputQuery = "";
 
-      // Default Order = Sort Name
-      $http.get("/api/funruns/?sort=name:asc").success(function(data) {
-        $scope.order = "asc";
-        $scope.sort = "name";
-        $scope.funruns = data.funruns;
-        console.log($scope.funruns);
-      });
-
-      // Sort Name
-      $('#sort_name').on('click', function() {
-        $http.get("/api/funruns/?sort=name:" + $scope.order).success(function(data) {
-          $scope.sort = "name";
-          $scope.funruns = data.funruns;
-          console.log($scope.funruns);
+      $scope.search = function() {
+        // Default Order = Sort Name
+        $http.get("/api/search?q=" + $scope.inputQuery).success(function(data) {
+          $scope.payload = data;
+          console.log($scope.payload);
         });
-      });
-         
+      }  
   }]);
 </script>
 
@@ -127,11 +119,12 @@
         ================================================== --> 
         <!-- CONTENT -->
         <div class="span12 gallery">
-          <form style="text-align: center" class="form-search">
-            <div class="input-append">
-              <input type="text" class="span2 search-query">
+          <form style="text-align: center" class="form-search" ng-submit="search()">
+            <!-- <div class="input-append"> -->
+              <input type="text" class="span2 search-query" ng-model="inputQuery">
               <button type="submit" class="btn">Search</button>
-            </div>
+              <!-- <input type="submit" value="Register"> -->
+            <!-- </div> -->
           </form>
 
 
