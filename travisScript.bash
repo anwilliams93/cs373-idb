@@ -22,7 +22,6 @@ cd ..
 cd app
 check_file "funruns.py"
 check_file "run_tests.py"
-check_file "database_commands.txt"
 
 cd api
 check_file "api.py"
@@ -35,6 +34,7 @@ cd models
 check_file "__init__.py"
 check_file "models.py"
 check_file "models_test.py"
+check_file "database_commands.txt"
 check_file "models.html"
 check_file "create_database.py"
 cd ..
