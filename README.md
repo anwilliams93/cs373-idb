@@ -3,9 +3,9 @@ FlaskMeAnything: Flask app hosted on Rackspace with Python and Bootstrap that em
 
 Alyssa Williams | Phase I Leader
 
-Kurt Bixby | Team Member
+Kurt Bixby | Phase II Leader
 
-Kevin Byers | Team Member
+Kevin Byers | Phase III Leader
 
 David Aguirre | Team Member
 

@@ -173,6 +173,7 @@ def get_challenges():
 
 	filtered_challenges = retrieve_challenges()
 
+	print(filtered_params)
 	for k in filtered_params:
 		if k == 'funrun' or k == 'theme':
 			if isInt(filtered_params[k]):
@@ -189,9 +190,9 @@ def get_challenges():
 		elif k == 'min_difficulty' or k == 'max_difficulty':
 			if isNumber(filtered_params[k]):
 				if k == 'min_difficulty':
-					filtered_challenges = select(filtered_challenges, lambda e : max(e.difficulty) >= float(filtered_params[k]))
+					filtered_challenges = select(filtered_challenges, lambda e : e.difficulty >= float(filtered_params[k]))
 				else:
-					filtered_challenges = select(filtered_challenges, lambda e : min(e.difficulty) <= float(filtered_params[k]))
+					filtered_challenges = select(filtered_challenges, lambda e : e.difficulty <= float(filtered_params[k]))
 	
 	if 'sort' in filtered_params:
 		filtered_challenges = sort_challenges(filtered_challenges, filtered_params['sort'])
@@ -245,7 +246,7 @@ def get_locations():
 			if isInt(filtered_params[k]):
 				def fxn(e):
 					for p in filtered_params[k]:
-						return int(p) in e.get_related_funrun_ids()
+						return (int(p) + 1) in e.get_related_funrun_ids()
 				filtered_locations = select(filtered_locations, fxn)
 		elif k.startswith('min_') or k.startswith('max_'):
 			if isNumber(filtered_params[k]):
