@@ -417,7 +417,8 @@ def search_database(search_string):
 
 def search_database_wrapper(search_string):
     and_list = search_database(search_string)
-    or_list = search_database(re.sub(' ', ' | ', search_string))
+    search_string = re.sub('%20', ' ', search_string)
+    or_list = search_database(re.sub('[\s]', ' | ', search_string))
 
     return {'and_results':and_list, 'or_results':or_list}
 
