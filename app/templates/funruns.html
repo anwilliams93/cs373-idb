@@ -79,13 +79,13 @@
       });         
 
       // Sort Price
-      $('#sort_price').on('click', function() {
-        $http.get("/api/funruns/?sort=price:" + $scope.order).success(function(data) {
-          $scope.sort = "price";
-          $scope.funruns = data.funruns;
-          console.log($scope.funruns);
-        });
-      });     
+      // $('#sort_price').on('click', function() {
+      //   $http.get("/api/funruns/?sort=price:" + $scope.order).success(function(data) {
+      //     $scope.sort = "price";
+      //     $scope.funruns = data.funruns;
+      //     console.log($scope.funruns);
+      //   });
+      // });     
 
       // Sort Themes
       $('#sort_themes').on('click', function() {
@@ -144,6 +144,8 @@
         <div class="span5 logo">
           <!-- <a href="/"><img src="{{ url_for('static', filename='img/piccolo-logo.png') }}"/></a> -->
             <h1>Fun Runs 2K15: Events</h1>
+          <button class="btn btn-small btn-inverse" type="button"><a href="/search" style="color: white">Search</a></button>
+            
         </div>
         
         <!-- Main Navigation
@@ -210,13 +212,12 @@
         <!-- SORTING -->
 
         <div class="span12">
-
           <h6 class="title-bg">CURRENT SORT: By [[ sort ]] in [[ order ]]ending order</h6>
           <div class="gallery-cats pull-left">
             <li><a href="#" id="sort_name">Name</a></li>
             <li><a href="#" id="sort_date">Date</a></li>
             <li><a href="#" id="sort_distance">Distance</a></li>            
-            <li><a href="#" id="sort_price">Price</a></li>
+            <!-- <li><a href="#" id="sort_price">Price</a></li> -->
             <li><a href="#" id="sort_themes">Number Of Related Themes</a></li>
             <li><a href="#" id="sort_challenges">Number Of Related Challenges</a></li>
           </div>

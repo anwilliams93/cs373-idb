@@ -47,6 +47,10 @@ def tech():
 def technba():
     return render_template('nba.html') 
 
+@app.route('/search')
+def search():
+    return render_template('search.html')     
+
 @app.route('/funruns/<runID>')
 def funruntempl(runID):
     return render_template('funruntempl.html', runID = runID)
