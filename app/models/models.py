@@ -115,8 +115,8 @@ class FunRun(db.Model):
     def get_related_challenge_ids(self):
         return [challenge.id for challenge in self.funRun_challenge]
 
-    def get_body_text(self):
-        return(self.name + "\n" + self.description + "\nAddress: " + self.address + "\nDate: " + self.date + "\nDistance: " + self.distance + "\nHosts: " + self.hosts + "\nSponsors: " + self.sponsors + "\nCharities: " + self.charities)
+    # def get_body_text(self):
+    #     return(self.name + "\n" + self.description + "\nAddress: " + self.address + "\nDate: " + self.date + "\nDistance: " + self.distance + "\nHosts: " + self.hosts + "\nSponsors: " + self.sponsors + "\nCharities: " + self.charities)
 
 # ------------
 # Themes table
@@ -342,58 +342,82 @@ def location_object_to_dict(location):
 # Setup Search
 # ------------
 
-def setup_funruns_search(target, connection, **kw):
-    # Add text search vector column
-    connection.execute("""ALTER TABLE {0} ADD COLUMN search_column tsvector""".format(target.name))
+# def setup_funruns_search(target, connection, **kw):
+#     # Add text search vector column
+#     connection.execute("""ALTER TABLE {0} ADD COLUMN search_column tsvector""".format(target.name))
 
-    # Populate search column?
-    connection.execute("""UPDATE {0} SET search_column = to_tsvector('english',
-                        coalesce(name,'')           || ' ' || coalesce(address, '')     || ' ' ||
-                        coalesce(distance, '')      || ' ' || coalesce(hosts, '')       || ' ' ||
-                        coalesce(sponsors, '')      || ' ' || coalesce(charities, '')   || ' ' ||
-                        coalesce(description, '')   || ' ' || coalesce(short, ''))""".format(target.name))
+#     # Populate search column?
+#     connection.execute("""UPDATE {0} SET search_column = to_tsvector('english',
+#                         coalesce(name,'')           || ' ' || coalesce(address, '')     || ' ' ||
+#                         coalesce(distance, '')      || ' ' || coalesce(hosts, '')       || ' ' ||
+#                         coalesce(sponsors, '')      || ' ' || coalesce(charities, '')   || ' ' ||
+#                         coalesce(description, '')   || ' ' || coalesce(short, ''))""".format(target.name))
 
-    # Index the search column
-    connection.execute("""CREATE INDEX funrun_search_index ON {0} USING gen(search_column)""".format(target.name))
+#     # Index the search column
+#     connection.execute("""CREATE INDEX funrun_search_index ON {0} USING gen(search_column)""".format(target.name))
 
-    connection.execute("""ALTER TABLE {0} ADD COLUMN body_text varchar""".format(target.name))
+#     connection.execute("""ALTER TABLE {0} ADD COLUMN body_text varchar""".format(target.name))
 
-    connection.execute("""UPDATE {0} SET body_text = 
-        coalesce(name, '') || '\n' || coalesce(description, '') ||
-        '\nAddress: ' || coalesce(address, '') || '\nDate: ' || coalesce(date, '') ||
-        '\nDistance: ' || coalesce(distance, '') || '\nHosts: ' || coalesce(hosts, '') ||
-        '\nSponsors: ' || coalesce(sponsors, '') || '\nCharities: ' || coalesce(charities, ''))""")
-    # # Create trigger to auto-update the search column
-    # connection.execute("""CREATE TRIGGER funrun_search_update BEFORE INSERT OR UPDATE
-    #                         ON {0} FOR EACH ROW EXECUTE PROCEDURE
-    #                         tsvector_update_trigger('search_column', 'pg_catalog.english',
-    #                         'name', 'address', 'distance', 'hosts', 'sponsors', 'charities', 'description', 'short')""".format(target.name))
+#     connection.execute("""UPDATE {0} SET body_text = 
+#         coalesce(name, '') || '\n' || coalesce(description, '') ||
+#         '\nAddress: ' || coalesce(address, '') || '\nDate: ' || coalesce(date, '') ||
+#         '\nDistance: ' || coalesce(distance, '') || '\nHosts: ' || coalesce(hosts, '') ||
+#         '\nSponsors: ' || coalesce(sponsors, '') || '\nCharities: ' || coalesce(charities, ''))""")
+#     # # Create trigger to auto-update the search column
+#     # connection.execute("""CREATE TRIGGER funrun_search_update BEFORE INSERT OR UPDATE
+#     #                         ON {0} FOR EACH ROW EXECUTE PROCEDURE
+#     #                         tsvector_update_trigger('search_column', 'pg_catalog.english',
+#     #                         'name', 'address', 'distance', 'hosts', 'sponsors', 'charities', 'description', 'short')""".format(target.name))
 
 def search_funruns(search_string):
-    q = db.session.query(FunRun).filter(db.text('funrun.search_column @@ plainto_tsquery(:terms)'))
+    q = db.session.query(FunRun).filter(db.text('funrun.search_column @@ to_tsquery(:terms)'))
     q = q.params(terms=search_string)
-    q = q.order_by(db.text('ts_rank_cd(funrun.search_column, plainto_tsquery(:terms)) DESC'))
-    q = q.add_column(func.ts_headline('pg_catalog.english',db.text('funrun.body_text'),func.plainto_tsquery(search_string),'MaxFragments=1, StartSel = <strong>, StopSel = </strong>'))
+    q = q.order_by(db.text('ts_rank_cd(funrun.search_column, to_tsquery(:terms)) DESC'))
+    q = q.add_column(func.ts_headline('pg_catalog.english',db.text('funrun.body_text'),func.to_tsquery(search_string),'MaxFragments=1, StartSel = <strong>, StopSel = </strong>'))
 
     return [{'object':funrun_object_to_dict(funrun), 'fragment':fragment} for funrun, fragment in q]
-    # return [(funrun, fragments.split()) for funrun, fragments in query]
 
-def search_funruns_wrapper(search_string):
-    and_list = search_funruns(search_string)
-    or_list = search_funruns(re.sub(' ', ' | ', search_string))
+def search_themes(search_string):
+    q = db.session.query(Theme).filter(db.text('theme.search_column @@ to_tsquery(:terms)'))
+    q = q.params(terms=search_string)
+    q = q.order_by(db.text('ts_rank_cd(theme.search_column, to_tsquery(:terms)) DESC'))
+    q = q.add_column(func.ts_headline('pg_catalog.english',db.text('theme.body_text'),func.to_tsquery(search_string),'MaxFragments=1, StartSel = <strong>, StopSel = </strong>'))
 
-@db.event.listens_for(FunRun, 'instrument_class')
-def receive_instrument_class(mapper, class_):
-    if mapper.local_table is not None:
-        event.listen(mapper.local_table, 'after_create', setup_funruns_search)
-        trigger_for_table(mapper.local_table)
+    return [{'object':theme_object_to_dict(theme), 'fragment':fragment} for theme, fragment in q]
+
+def search_challenges(search_string):
+    q = db.session.query(Challenge).filter(db.text('challenge.search_column @@ to_tsquery(:terms)'))
+    q = q.params(terms=search_string)
+    q = q.order_by(db.text('ts_rank_cd(challenge.search_column, to_tsquery(:terms)) DESC'))
+    q = q.add_column(func.ts_headline('pg_catalog.english',db.text('challenge.body_text'),func.to_tsquery(search_string),'MaxFragments=1, StartSel = <strong>, StopSel = </strong>'))
+
+    return [{'object':challenge_object_to_dict(challenge), 'fragment':fragment} for challenge, fragment in q]
+
+def search_locations(search_string):
+    q = db.session.query(Location).filter(db.text('location.search_column @@ to_tsquery(:terms)'))
+    q = q.params(terms=search_string)
+    q = q.order_by(db.text('ts_rank_cd(location.search_column, to_tsquery(:terms)) DESC'))
+    q = q.add_column(func.ts_headline('pg_catalog.english',db.text('location.body_text'),func.to_tsquery(search_string),'MaxFragments=1, StartSel = <strong>, StopSel = </strong>'))
+
+    return [{'object':location_object_to_dict(location), 'fragment':fragment} for location, fragment in q]
+
+# @db.event.listens_for(FunRun, 'instrument_class')
+# def receive_instrument_class(mapper, class_):
+#     if mapper.local_table is not None:
+#         event.listen(mapper.local_table, 'after_create', setup_funruns_search)
+#         trigger_for_table(mapper.local_table)
 
 def search_database(search_string):
-    return search_funruns(search_string)
+    funruns = search_funruns(search_string)
+    themes = search_themes(search_string)
+    challenges = search_challenges(search_string)
+    locations = search_locations(search_string)
+
+    return {'funruns':funruns, 'themes':themes, 'challenges':challenges, 'locations':locations}
 
 def search_database_wrapper(search_string):
     and_list = search_database(search_string)
-    or_list = search_funruns(re.sub(' ', ' | ', search_string))
+    or_list = search_database(re.sub(' ', ' | ', search_string))
 
     return {'and_results':and_list, 'or_results':or_list}
 
