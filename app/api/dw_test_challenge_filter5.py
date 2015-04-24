@@ -11,9 +11,8 @@ def http_response_to_json_object (response) :
 
 class TestAPI (TestCase) :
 
-	def test_challenge_filter_run4 (self) :
-		self.maxDiff = None
-		url = server_address + '/api/challenges?theme=2&funrun=1'
+	def test_challenge_filter_run1 (self) :
+		url = server_address + '/api/challenges?theme=0'
 		response = urllib.request.urlopen(url)
 		response_object = http_response_to_json_object(response)
 		expected = json.loads(json.dumps( {
@@ -34,7 +33,7 @@ class TestAPI (TestCase) :
 					"/static/img/challengeTempl/costume1.jpg",
 					"/static/img/challengeTempl/costume2.jpg",
 					"/static/img/challengeTempl/costume3.jpg"
-				],
+					],
 				"landing_img": "/static/img/landing/challenges/costume1.jpg",
 				"name": "Moving In A Costume",
 				"themes": [
@@ -42,6 +41,29 @@ class TestAPI (TestCase) :
 					2,
 					8,
 					9
+				]
+			},
+			{
+				"description": "Take on extreme temps fearlessly with fun runs in less than ideal temperatures. Will the icy winds or intense heat get to you or will you make it to the finish line and prevail?",
+				"difficulty": 80,
+				"flavors": "Snow, Ice, Fire, Heat",
+				"funruns": [
+					1,
+					2,
+					8,
+					10
+				],
+				"id": 2,
+				"imgs": [
+					"/static/img/challengeTempl/extremetemp1.jpg",
+					"/static/img/challengeTempl/extremetemp2.jpg",
+					"/static/img/challengeTempl/extremetemp3.jpg"
+				],
+				"landing_img": "/static/img/landing/challenges/extremetemp1.jpg",
+				"name": "Enduring Extreme Temperatures",
+				"themes": [
+					0,
+					1
 				]
 			}
 		]
