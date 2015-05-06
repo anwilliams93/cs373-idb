@@ -1,5 +1,9 @@
 /******* Added by Alyssa *******/
 
+.tweets_header {
+display: none;
+}
+
 .resize {
 	overflow: hidden;
 }

@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/flexslider.css') }}" />
 <link rel="stylesheet" href="{{ url_for('static', filename='css/custom-styles.css') }}">
 
+
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <link rel="stylesheet" href="css/style-ie.css"/>
@@ -63,6 +64,8 @@ $(document).ready(function () {
     });  
 });
 
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 </script>
 
 </head>
@@ -145,7 +148,7 @@ $(document).ready(function () {
         <div class="span5">
           <h2>2015 Fun Runs of America</h2>
             <p class="lead">Bored of your basic, boring 5K race? <br/><br/>We understand. You're looking for something a little more on the wild side. <br/><br/>Or maybe you're just itching to be covered in mud, carrying your wife, eating pizza, and baring it all when you run.<br/><br/></p>
-            <h1 align="center"><strong>Itch no longer.</strong></h1>
+            <h1 class="lead" align="center"><strong>Itch no longer.</strong></h1>
             <!-- <a href="#"><i class="icon-plus-sign"></i>Read More</a>  -->
         </div>
     </div><!-- End Headline -->
@@ -212,8 +215,7 @@ $(document).ready(function () {
     ================================================== -->
     <div class="span6">
 
-         <h5 class="title-bg">Featured run
-        </h5>
+         <h5 class="title-bg">Featured run</h5>
 
               <div class="active item">
                   <a class="hidden-tablet hidden-phone" href="funruns/0"><img src="{{ url_for('static', filename='img/landing/funruns/wipeoutLanding.jpg') }}" alt="" class="align-left blog-thumb-preview" width=40% height=40%/></a>
@@ -225,10 +227,28 @@ $(document).ready(function () {
                       </ul>
                   </div>
               </div>
-
-
     </div>
-  </div>
+  <div class="span12">
+    <h3 class="title-bg">Fun Runs Twitter</h3>
+  <center>
+      <a class="twitter-timeline" height="300" href="https://twitter.com/FlaskMeAnything/lists/fun-runs" data-widget-id="582725442076983296" data-theme="dark">Tweets from https://twitter.com/FlaskMeAnything/lists/fun-runs</a>
+  </center>
+</div>
+
+<!-- CRAZY TWITTER THING -->
+<!-- <br /><center><div class="container">
+
+<div class="title-bar"><center><h2>Our Latest Tweet</h2></center></div>
+
+<div class="content">
+
+<br /><center> <center><a class="twitter-timeline" href="https://twitter.com/twitterapi" data-widget-id="582725442076983296" data-theme="light" data-link-color="#2682a9" data-related="twitterapi,twitter" data-chrome="nofooter noborders noheader noscrollbar transparent" data-aria-polite="assertive" data-tweet-limit="1" width="850" height="120" lang="EN"></a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></center>
+
+</center><br /></div></div></center><br />    
+</div>
+ -->
+  <!-- END CRAZY TWITTER THING -->
   </div><!-- End Bottom Section -->
   
   </div> <!-- End Container -->
@@ -242,7 +262,7 @@ $(document).ready(function () {
             <div class="row"><!-- Begin Sub Footer -->
                 <div class="span12 footer-col footer-sub">
                     <div class="row no-margin">
-                        <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>
+                        <div class="span6"><span class="left">Copyright 2012 Piccolo Theme. All rights reserved.</span></div>                     
                         <div class="span6">
                             <span class="right">
                             <a href="/">Home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/funruns">Fun Events</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/themes">Fun Themes</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/challenges">Fun Challenges</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/locations">Fun Locations</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/tech">Technical</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/about">About</a>
