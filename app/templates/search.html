@@ -41,32 +41,87 @@
       $interpolateProvider.endSymbol(']]');
   });
 
+  myApp.config(['$sceProvider', function($sceProvider) {
+    $sceProvider.enabled(false);
+  }]);
+
+  myApp.filter('noNewLines', function() {
+    return function(text) {
+      // console.log(text);
+      storage = text.replace(/\n/g, '<br/>');
+      console.log(storage);
+      return storage;
+    }
+  });
+
   myApp.controller('FunRunGetter', [ '$scope', '$sce', '$http', function($scope, $sce, $http) {
       $scope.payload = [];
       $scope.inputQuery = "";
+      $scope.showContents = false;
 
       $scope.search = function() {
         // Default Order = Sort Name
-        $http.get("/api/search?q=" + $scope.inputQuery).success(function(data) {
+          $scope.showContents = true;
+          $http.get("/api/search?q=" + $scope.inputQuery).success(function(data) {
           $scope.payload = data;
           $scope.and_results = data.results.and_results;
 
           // AND PILLARS
+          $scope.and_funruns = $scope.and_results.funruns;    
+          $scope.and_funruns_fragments = []
+          for(i = 0; i < $scope.and_funruns.length; i++) {
+            $scope.and_funruns_fragments.push({name: $scope.and_funruns[i].object.name, frag: $sce.trustAsHtml($scope.and_funruns[i].fragment)});
+          }
+          console.log($scope.and_funruns_fragments);
+          
           $scope.and_challenges = $scope.and_results.challenges;
-          $scope.and_funruns = $scope.and_results.funruns;
+          $scope.and_challenges_fragments = []
+          for(i = 0; i < $scope.and_challenges.length; i++) {
+            $scope.and_challenges_fragments.push({name: $scope.and_challenges[i].object.name, frag: $sce.trustAsHtml($scope.and_challenges[i].fragment)});
+          }
+
           $scope.and_themes = $scope.and_results.themes;
+          $scope.and_themes_fragments = []
+          for(i = 0; i < $scope.and_themes.length; i++) {
+            $scope.and_themes_fragments.push({name: $scope.and_themes[i].object.name, frag: $sce.trustAsHtml($scope.and_themes[i].fragment)});
+          }
+
           $scope.and_locations = $scope.and_results.locations;
+          $scope.and_locations_fragments = []
+          for(i = 0; i < $scope.and_locations.length; i++) {
+            $scope.and_locations_fragments.push({name: $scope.and_locations[i].object.name, frag: $sce.trustAsHtml($scope.and_locations[i].fragment)});
+          }
 
           // OR PILLARS
           $scope.or_results = data.results.or_results;  
+
           $scope.or_challenges = $scope.or_results.challenges;
+          $scope.or_challenges_fragments = []
+          for(i = 0; i < $scope.or_challenges.length; i++) {
+            $scope.or_challenges_fragments.push({name: $scope.or_challenges[i].object.name, frag: $sce.trustAsHtml($scope.or_challenges[i].fragment)});
+          }
+
           $scope.or_funruns = $scope.or_results.funruns;
+          $scope.or_funruns_fragments = []
+          for(i = 0; i < $scope.or_funruns.length; i++) {
+            $scope.or_funruns_fragments.push({name: $scope.or_funruns[i].object.name, frag: $sce.trustAsHtml($scope.or_funruns[i].fragment)});
+          }
+
           $scope.or_themes = $scope.or_results.themes;
-          $scope.or_locations = $scope.or_results.locations;                  
-          console.log($scope.and_results);
-          console.log($scope.or_results);
-          console.log($scope.payload);
-          console.log($scope.and_themes)
+          $scope.or_themes_fragments = []
+          for(i = 0; i < $scope.or_themes.length; i++) {
+            $scope.or_themes_fragments.push({name: $scope.or_themes[i].object.name, frag: $sce.trustAsHtml($scope.or_themes[i].fragment)});
+          }
+
+          $scope.or_locations = $scope.or_results.locations;   
+          $scope.or_locations_fragments = []
+          for(i = 0; i < $scope.or_locations.length; i++) {
+            $scope.or_locations_fragments.push({name: $scope.or_locations[i].object.name, frag: $sce.trustAsHtml($scope.or_locations[i].fragment)});
+          }                         
+          // console.log($scope.and_results);
+          // console.log($scope.or_results);
+          // console.log($scope.payload);
+          // console.log($scope.and_themes)
 
         });
       }  
@@ -145,7 +200,10 @@
             <!-- </div> -->
           </form>
 
-          <h3>AND: FUN RUNS</h3>
+      <div ng-if="showContents === true">
+          <h2 class="title-bg">RESULTS (AND)</h2>
+        <div ng-if="and_funruns.length != 0">                    
+          <h3>FUN RUNS</h3>
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="funrun in and_funruns">
@@ -157,13 +215,17 @@
                           <img ng-src="[[ funrun.object.landing_img]]" alt="Gallery" class="grayscale">
                         </div>
                       </a>
-                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/funruns/[[ funrun.object.id ]]">[[funrun.object.name]]</a>[[funrun.fragment]]</span>
+                     <span class="project-details"><a ng-href="http://104.239.139.43:8000/funruns/[[ funrun.object.id ]]">[[funrun.object.name]]</a>
+                        <div data-ng-bind-html="and_funruns_fragments[$index].frag | noNewLines"></div>
+                    </span>                        
                     </li>
                 </div>
               </ul>
-            </div>          
+            </div>   
+          </div>         
 
-          <h3>AND: THEMES</h3>
+        <div ng-if="and_themes.length != 0">                    
+          <h3>THEMES</h3>
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="theme in and_themes">
@@ -175,13 +237,15 @@
                           <img ng-src="[[ theme.object.landing_img]]" alt="Gallery" class="grayscale">
                         </div>
                       </a>
-                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/themes/[[ theme.object.id ]]">[[theme.object.name]]</a>[[theme.fragment]]</span>
+                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/themes/[[ theme.object.id ]]">[[theme.object.name]]</a><div data-ng-bind-html="and_themes_fragments[$index].frag | noNewLines"></div></span>
                     </li>
                 </div>
               </ul>
             </div>
+          </div>  
 
-          <h3>AND: CHALLENGES</h3>
+        <div ng-if="and_challenges.length != 0">          
+          <h3>CHALLENGES</h3>
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="chall in and_challenges">
@@ -193,13 +257,16 @@
                           <img ng-src="[[ chall.object.landing_img]]" alt="Gallery" class="grayscale">
                         </div>
                       </a>
-                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/challenges/[[ chall.object.id ]]">[[chall.object.name]]</a>[[chall.fragment]]</span>
+                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/challenges/[[ chall.object.id ]]">[[chall.object.name]]</a>
+                        <div data-ng-bind-html="and_challenges_fragments[$index].frag | noNewLines"></div></span>
                     </li>
                 </div>
               </ul>
             </div>
+          </div>  
 
-          <h3>AND: LOCATIONS</h3>
+        <div ng-if="and_locations.length != 0">          
+          <h3>LOCATIONS</h3>
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="loc in and_locations">
@@ -211,13 +278,18 @@
                           <img ng-src="[[ loc.object.landing_img]]" alt="Gallery" class="grayscale">
                         </div>
                       </a>
-                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/locations/[[ loc.object.id ]]">[[loc.object.name]]</a>[[loc.fragment]]</span>
+                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/locations/[[ loc.object.id ]]">[[loc.object.name]]</a>
+                        <div data-ng-bind-html="and_locations_fragments[$index].frag | noNewLines"></div></span>
                     </li>
                 </div>
               </ul>
             </div>
+          </div>  
 
-          <h3>OR: FUN RUNS</h3>
+
+          <h2 class="title-bg">RESULTS (OR)</h2>     
+        <div ng-if="or_funruns.length != 0">                 
+          <h3>FUN RUNS</h3>
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="funrun in or_funruns">
@@ -229,13 +301,16 @@
                           <img ng-src="[[ funrun.object.landing_img]]" alt="Gallery" class="grayscale">
                         </div>
                       </a>
-                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/funruns/[[ funrun.object.id ]]">[[funrun.object.name]]</a>[[funrun.fragment]]</span>
+                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/funruns/[[ funrun.object.id ]]">[[funrun.object.name]]</a>
+                        <div data-ng-bind-html="or_funruns_fragments[$index].frag | noNewLines"></div></span>
                     </li>
                 </div>
               </ul>
-            </div>          
+            </div>      
+        </div>    
 
-          <h3>OR: THEMES</h3>
+        <div ng-if="or_themes.length != 0">
+          <h3>THEMES</h3>
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="theme in or_themes">
@@ -247,13 +322,15 @@
                           <img ng-src="[[ theme.object.landing_img]]" alt="Gallery" class="grayscale">
                         </div>
                       </a>
-                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/themes/[[ theme.object.id ]]">[[theme.object.name]]</a>[[theme.fragment]]</span>
+                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/themes/[[ theme.object.id ]]">[[theme.object.name]]</a><div data-ng-bind-html="or_themes_fragments[$index].frag | noNewLines"></div></span>
                     </li>
                 </div>
               </ul>
             </div>
+        </div>            
 
-          <h3>OR: CHALLENGES</h3>
+        <div ng-if="or_challenges.length != 0">        
+          <h3>CHALLENGES</h3>
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="chall in or_challenges">
@@ -265,13 +342,15 @@
                           <img ng-src="[[ chall.object.landing_img]]" alt="Gallery" class="grayscale">
                         </div>
                       </a>
-                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/challenges/[[ chall.object.id ]]">[[chall.object.name]]</a>[[chall.fragment]]</span>
+                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/challenges/[[ chall.object.id ]]">[[chall.object.name]]</a><div data-ng-bind-html="or_challenges_fragments[$index].frag | noNewLines"></div></span>
                     </li>
                 </div>
               </ul>
             </div>
+        </div>
 
-          <h3>OR: LOCATIONS</h3>
+        <div ng-if="or_locations.length != 0">
+          <h3>LOCATIONS</h3>
             <div class="row clearfix">
               <ul class="gallery-post-grid holder">
                 <div ng-repeat="loc in or_locations">
@@ -283,11 +362,13 @@
                           <img ng-src="[[ loc.object.landing_img]]" alt="Gallery" class="grayscale">
                         </div>
                       </a>
-                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/locations/[[ loc.object.id ]]">[[loc.object.name]]</a>[[loc.fragment]]</span>
+                      <span class="project-details"><a ng-href="http://104.239.139.43:8000/locations/[[ loc.object.id ]]">[[loc.object.name]]</a><div data-ng-bind-html="or_locations_fragments[$index].frag | noNewLines"></div></span>
                     </li>
                 </div>
               </ul>
-            </div>            
+            </div>   
+          </div>
+        </div>         
 
             <!-- Pagination -->
 <!--         <div class="pagination">
